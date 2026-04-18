@@ -88,9 +88,9 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       DEFAULT_MODELS: ${DEFAULT_MODELS:-qwen/qwen3.5-9b}
       DEFAULT_PINNED_MODELS: ${DEFAULT_PINNED_MODELS}
-      # Pipelines middleware
-      OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://openclaw-pipelines:9099
-      OPENAI_API_KEYS: ${OPENAI_API_KEY};0p3n-w3bu!
+      # Connections: LM Studio (direct) ; OpenClaw Gateway (agents) ; Pipelines (middleware)
+      OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://host.docker.internal:18789/v1;http://openclaw-pipelines:9099
+      OPENAI_API_KEYS: ${OPENAI_API_KEY};${OPENCLAW_GATEWAY_TOKEN};0p3n-w3bu!
       # RAG + Embeddings
       RAG_EMBEDDING_ENGINE: openai
       RAG_EMBEDDING_MODEL: text-embedding-nomic-embed-text-v1.5
