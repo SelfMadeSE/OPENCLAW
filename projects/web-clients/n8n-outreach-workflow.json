@@ -1,0 +1,65 @@
+{
+  "name": "Freelance Outreach Pipeline",
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "parameters": {},
+      "position": [100, 300]
+    },
+    {
+      "name": "Input Job Details",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "job_title", "value": "Website Design for Small Business" },
+            { "name": "budget", "value": "$500-1500" },
+            { "name": "client_name", "value": "John" },
+            { "name": "service_type", "value": "web_design" }
+          ]
+        }
+      },
+      "position": [300, 300]
+    },
+    {
+      "name": "Generate Proposal",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": "qwen/qwen3.5-9b",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are an expert freelance proposal writer for Rylee, a web designer and 3D animator. Write winning, personalized proposals. Be specific about value, not generic. Keep under 300 words. End with a clear call to action."
+            },
+            {
+              "role": "user",
+              "content": "Write a proposal for: Job='{{ $json.job_title }}', Budget='{{ $json.budget }}', Client='{{ $json.client_name }}', Service='{{ $json.service_type }}'"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": { "id": "lmstudio", "name": "LM Studio Local" }
+      },
+      "position": [500, 300]
+    },
+    {
+      "name": "Save Proposal",
+      "type": "n8n-nodes-base.writeFile",
+      "parameters": {
+        "fileName": "/outputs/proposals/proposal-{{ $json.job_title.replace(' ', '-') }}-{{ $now.format('yyyy-MM-dd') }}.txt",
+        "content": "CLIENT: {{ $node['Input Job Details'].json.client_name }}\nJOB: {{ $node['Input Job Details'].json.job_title }}\nDATE: {{ $now }}\n\n{{ $json.message.content }}"
+      },
+      "position": [700, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": { "main": [[{ "node": "Input Job Details", "type": "main", "index": 0 }]] },
+    "Input Job Details": { "main": [[{ "node": "Generate Proposal", "type": "main", "index": 0 }]] },
+    "Generate Proposal": { "main": [[{ "node": "Save Proposal", "type": "main", "index": 0 }]] }
+  }
+}

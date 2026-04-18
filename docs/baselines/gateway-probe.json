@@ -1,0 +1,82 @@
+{
+  "ok": false,
+  "degraded": false,
+  "ts": 1776539494213,
+  "durationMs": 6915,
+  "timeoutMs": 3000,
+  "primaryTargetId": null,
+  "warnings": [],
+  "network": {
+    "localLoopbackUrl": "ws://127.0.0.1:18789",
+    "localTailnetUrl": "ws://100.72.237.32:18789",
+    "tailnetIPv4": "100.72.237.32"
+  },
+  "discovery": {
+    "timeoutMs": 1200,
+    "count": 1,
+    "beacons": [
+      {
+        "instanceName": "Rylee’s MacBook Air (OpenClaw)",
+        "displayName": "Rylee’s MacBook Air (OpenClaw)",
+        "domain": "local.",
+        "host": "openclaw.local",
+        "lanHost": null,
+        "tailnetDns": null,
+        "gatewayPort": null,
+        "sshPort": null,
+        "wsUrl": "ws://openclaw.local:18789"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "id": "sshTunnel",
+      "kind": "sshTunnel",
+      "url": "ws://127.0.0.1:18789",
+      "active": true,
+      "tunnel": {
+        "kind": "ssh",
+        "target": "ryleebenson@openclaw.local",
+        "localPort": 18789,
+        "remotePort": 18789,
+        "pid": 18951
+      },
+      "connect": {
+        "ok": false,
+        "rpcOk": false,
+        "scopeLimited": false,
+        "latencyMs": null,
+        "error": "gateway closed (1008): device identity required",
+        "close": {
+          "code": 1008,
+          "reason": "device identity required"
+        }
+      },
+      "self": null,
+      "config": null,
+      "health": null,
+      "summary": null,
+      "presence": null
+    },
+    {
+      "id": "configRemote",
+      "kind": "configRemote",
+      "url": "ws://openclaw.local:18789",
+      "active": false,
+      "tunnel": null,
+      "connect": {
+        "ok": false,
+        "rpcOk": false,
+        "scopeLimited": false,
+        "latencyMs": null,
+        "error": "connect failed: SECURITY ERROR: Cannot connect to \"openclaw.local\" over plaintext ws://. Both credentials and chat data would be exposed to network interception. Use wss:// for remote URLs. Safe defaults: keep gateway.bind=loopback and connect via SSH tunnel (ssh -N -L 18789:127.0.0.1:18789 user@gateway-host), or use Tailscale Serve/Funnel. Break-glass (trusted private networks only): set OPENCLAW_ALLOW_INSECURE_PRIVATE_WS=1. Run `openclaw doctor --fix` for guidance.",
+        "close": null
+      },
+      "self": null,
+      "config": null,
+      "health": null,
+      "summary": null,
+      "presence": null
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+name: docker
+services:
+  flowise:
+    container_name: openclaw-flowise
+    environment:
+      FLOWISE_PASSWORD: HtKc0jmGdOk0cmEE6mCR1UJ
+      FLOWISE_USERNAME: admin@local
+      PORT: "3000"
+    extra_hosts:
+      - host.docker.internal=host-gateway
+    image: flowiseai/flowise:latest
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 3000
+        published: "3001"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: flowise-data
+        target: /root/.flowise
+        volume: {}
+  n8n:
+    container_name: openclaw-n8n
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: true
+    environment:
+      DB_POSTGRESDB_DATABASE: n8n
+      DB_POSTGRESDB_HOST: postgres
+      DB_POSTGRESDB_PASSWORD: openclaw2024secure
+      DB_POSTGRESDB_USER: openclaw
+      DB_TYPE: postgresdb
+      GENERIC_TIMEZONE: America/Denver
+      N8N_AI_ENABLED: "true"
+      N8N_ENCRYPTION_KEY: openclaw_n8n_32char_secret_key!!
+      N8N_HOST: localhost
+      N8N_PORT: "5678"
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: http://localhost:5678/
+    extra_hosts:
+      - host.docker.internal=host-gateway
+    image: docker.n8n.io/n8nio/n8n:latest
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 5678
+        published: "5678"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: n8n-data
+        target: /home/node/.n8n
+        volume: {}
+      - type: bind
+        source: /Users/ryleebenson/Desktop/OPENCLAW/outputs
+        target: /outputs
+        bind: {}
+      - type: bind
+        source: /Users/ryleebenson/Desktop/OPENCLAW/projects
+        target: /projects
+        bind: {}
+  open-webui:
+    container_name: openclaw-webui
+    depends_on:
+      pipelines:
+        condition: service_started
+        required: true
+      searxng:
+        condition: service_started
+        required: true
+    environment:
+      AIOHTTP_CLIENT_TIMEOUT_MODEL_LIST: "30"
+      CODE_EXECUTION_ENGINE: pyodide
+      DEFAULT_MODELS: qwen/qwen3.5-9b
+      DEFAULT_PINNED_MODELS: qwen3.5-27b-claude-4.6-opus-reasoning-distilled,qwen/qwen3.5-9b,google/gemma-4-e4b
+      ENABLE_CHANNELS: "True"
+      ENABLE_CODE_EXECUTION: "True"
+      ENABLE_PERSISTENT_CONFIG: "False"
+      ENABLE_RAG_LOCAL_WEB_FETCH: "True"
+      ENABLE_RAG_WEB_SEARCH: "True"
+      ENABLE_SIGNUP: "False"
+      OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
+      OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://openclaw-pipelines:9099
+      OPENAI_API_KEY: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
+      OPENAI_API_KEYS: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47;0p3n-w3bu!
+      RAG_EMBEDDING_ENGINE: openai
+      RAG_EMBEDDING_MODEL: text-embedding-nomic-embed-text-v1.5
+      RAG_WEB_SEARCH_CONCURRENT_REQUESTS: "8"
+      RAG_WEB_SEARCH_ENGINE: searxng
+      RAG_WEB_SEARCH_RESULT_COUNT: "10"
+      SEARXNG_QUERY_URL: http://searxng:8080/search?q=<query>&format=json
+      WEBUI_ADMIN_EMAIL: admin@local
+      WEBUI_ADMIN_NAME: Rylee
+      WEBUI_ADMIN_PASSWORD: HtKc0jmGdOk0cmEE6mCR1UJ
+      WEBUI_URL: http://localhost:3000
+    extra_hosts:
+      - host.docker.internal=host-gateway
+    image: ghcr.io/open-webui/open-webui:main
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "3000"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: open-webui-data
+        target: /app/backend/data
+        volume: {}
+  pipelines:
+    container_name: openclaw-pipelines
+    environment:
+      OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
+      OPENAI_API_KEY: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
+      PIPELINES_API_KEY: 0p3n-w3bu!
+      PIPELINES_REQUIREMENTS_PATH: /app/pipelines/custom/requirements.txt
+    extra_hosts:
+      - host.docker.internal=host-gateway
+    image: ghcr.io/open-webui/pipelines:main
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 9099
+        published: "9099"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: pipelines-data
+        target: /app/pipelines
+        volume: {}
+      - type: bind
+        source: /Users/ryleebenson/Desktop/OPENCLAW/data/pipelines
+        target: /app/pipelines/custom
+        bind: {}
+  postgres:
+    container_name: openclaw-postgres
+    environment:
+      POSTGRES_DB: openclaw
+      POSTGRES_PASSWORD: openclaw2024secure
+      POSTGRES_USER: openclaw
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U openclaw
+      timeout: 5s
+      interval: 5s
+      retries: 10
+    image: postgres:16-alpine
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+        volume: {}
+  qdrant:
+    container_name: openclaw-qdrant
+    image: qdrant/qdrant:latest
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 6333
+        published: "6333"
+        protocol: tcp
+      - mode: ingress
+        target: 6334
+        published: "6334"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: qdrant-data
+        target: /qdrant/storage
+        volume: {}
+  searxng:
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    container_name: openclaw-searxng
+    environment:
+      SEARXNG_BASE_URL: http://localhost:8080/
+    image: searxng/searxng:latest
+    networks:
+      openclaw: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /Users/ryleebenson/Desktop/OPENCLAW/data/searxng/settings.yml
+        target: /etc/searxng/settings.yml
+        read_only: true
+        bind: {}
+      - type: volume
+        source: searxng-cache
+        target: /var/cache/searxng
+        volume: {}
+networks:
+  openclaw:
+    name: docker_openclaw
+    driver: bridge
+volumes:
+  flowise-data:
+    name: docker_flowise-data
+  n8n-data:
+    name: docker_n8n-data
+  open-webui-data:
+    name: docker_open-webui-data
+  pipelines-data:
+    name: docker_pipelines-data
+  postgres-data:
+    name: docker_postgres-data
+  qdrant-data:
+    name: docker_qdrant-data
+  searxng-cache:
+    name: docker_searxng-cache

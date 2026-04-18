@@ -1,0 +1,96 @@
+{
+  "logFile": "/tmp/openclaw/openclaw-2026-04-18.log",
+  "service": {
+    "label": "LaunchAgent",
+    "loaded": true,
+    "loadedText": "loaded",
+    "notLoadedText": "not loaded",
+    "command": {
+      "programArguments": [
+        "/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin/node",
+        "/opt/homebrew/lib/node_modules/openclaw/dist/index.js",
+        "gateway",
+        "--port",
+        "18789"
+      ],
+      "environment": {
+        "OPENCLAW_GATEWAY_PORT": "18789"
+      },
+      "sourcePath": "/Users/ryleebenson/Library/LaunchAgents/ai.openclaw.gateway.plist"
+    },
+    "runtime": {
+      "status": "running",
+      "state": "active",
+      "pid": 2064,
+      "cachedLabel": false
+    },
+    "configAudit": {
+      "ok": false,
+      "issues": [
+        {
+          "code": "gateway-path-missing-dirs",
+          "message": "Gateway service PATH missing required dirs: /Users/ryleebenson/.nvm",
+          "level": "recommended"
+        },
+        {
+          "code": "gateway-path-nonminimal",
+          "message": "Gateway service PATH includes version managers or package managers; recommend a minimal PATH.",
+          "detail": "/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin",
+          "level": "recommended"
+        },
+        {
+          "code": "gateway-runtime-node-version-manager",
+          "message": "Gateway service uses Node from a version manager; it can break after upgrades.",
+          "detail": "/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin/node",
+          "level": "recommended"
+        }
+      ]
+    }
+  },
+  "config": {
+    "cli": {
+      "path": "/Users/ryleebenson/.openclaw/openclaw.json",
+      "exists": true,
+      "valid": true
+    },
+    "daemon": {
+      "path": "/Users/ryleebenson/.openclaw/openclaw.json",
+      "exists": true,
+      "valid": true
+    }
+  },
+  "gateway": {
+    "bindMode": "loopback",
+    "bindHost": "127.0.0.1",
+    "port": 18789,
+    "portSource": "service args",
+    "probeUrl": "ws://127.0.0.1:18789",
+    "probeNote": "Loopback-only gateway; only local clients can connect."
+  },
+  "port": {
+    "port": 18789,
+    "status": "busy",
+    "listeners": [
+      {
+        "pid": 2064,
+        "command": "node",
+        "address": "127.0.0.1:18789",
+        "commandLine": "openclaw-gateway",
+        "user": "ryleebenson",
+        "ppid": 1
+      }
+    ],
+    "hints": [
+      "Gateway already running locally. Stop it (openclaw gateway stop) or use a different port."
+    ]
+  },
+  "rpc": {
+    "ok": true,
+    "url": "ws://127.0.0.1:18789"
+  },
+  "health": {
+    "healthy": true,
+    "staleGatewayPids": []
+  },
+  "extraServices": []
+}

@@ -1,0 +1,71 @@
+use_default_settings: true
+
+general:
+  instance_name: openclaw-search
+  debug: false
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "en"
+  formats:
+    - html
+    - json
+
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  secret_key: "243c1d815f7af9658c706c137b1fd51da824febcad2546cac760fb582af6774d"
+  limiter: false
+  image_proxy: false
+
+ui:
+  static_use_hash: true
+  default_theme: simple
+  query_in_title: false
+
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+
+  - name: brave
+    engine: brave
+    shortcut: br
+
+  - name: github
+    engine: github
+    shortcut: gh
+
+  - name: stackoverflow
+    engine: stackoverflow
+    shortcut: so
+
+  - name: youtube
+    engine: youtube
+    shortcut: yt
+
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+
+  - name: arxiv
+    engine: arxiv
+    shortcut: ax
+    categories: science
+
+  - name: npm
+    engine: npm
+    shortcut: npm
+
+  - name: pypi
+    engine: pypi
+    shortcut: pip
+
+  - name: dockerhub
+    engine: docker hub
+    shortcut: dh

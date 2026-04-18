@@ -1,0 +1,66 @@
+{
+  "name": "YouTube Metadata Generator",
+  "nodes": [
+    {
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "parameters": {},
+      "position": [100, 300]
+    },
+    {
+      "name": "Beat Info",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "beat_name", "value": "Untitled Beat" },
+            { "name": "bpm", "value": "140" },
+            { "name": "genre", "value": "Trap/Hip-Hop" },
+            { "name": "mood", "value": "Dark, Aggressive" },
+            { "name": "key", "value": "C Minor" }
+          ]
+        }
+      },
+      "position": [300, 300]
+    },
+    {
+      "name": "Generate YouTube Metadata",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": "qwen/qwen3.5-9b",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a YouTube SEO expert for music producers. Generate optimized metadata that gets views and beat sales. Output as JSON with keys: title, description, tags (array of 10), chapters, thumbnail_text."
+            },
+            {
+              "role": "user",
+              "content": "Beat: {{ $json.beat_name }} | BPM: {{ $json.bpm }} | Genre: {{ $json.genre }} | Mood: {{ $json.mood }} | Key: {{ $json.key }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": { "id": "lmstudio", "name": "LM Studio Local" }
+      },
+      "position": [500, 300]
+    },
+    {
+      "name": "Save Metadata",
+      "type": "n8n-nodes-base.writeFile",
+      "parameters": {
+        "fileName": "/outputs/content/yt-metadata-{{ $node['Beat Info'].json.beat_name.replace(' ', '-') }}.json",
+        "content": "{{ $json.message.content }}"
+      },
+      "position": [700, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": { "main": [[{ "node": "Beat Info", "type": "main", "index": 0 }]] },
+    "Beat Info": { "main": [[{ "node": "Generate YouTube Metadata", "type": "main", "index": 0 }]] },
+    "Generate YouTube Metadata": { "main": [[{ "node": "Save Metadata", "type": "main", "index": 0 }]] }
+  }
+}

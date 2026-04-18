@@ -1,0 +1,100 @@
+[31m[bedrock-discovery][39m [33mFailed to discover Bedrock models[39m
+{
+  "configPath": "/Users/ryleebenson/.openclaw/openclaw.json",
+  "agentDir": "/Users/ryleebenson/.openclaw/agents/main/agent",
+  "defaultModel": "lmstudio/qwen/qwen3.5-9b",
+  "resolvedDefault": "lmstudio/qwen/qwen3.5-9b",
+  "fallbacks": [
+    "lmstudio/google/gemma-4-e4b"
+  ],
+  "imageModel": null,
+  "imageFallbacks": [],
+  "aliases": {},
+  "allowed": [],
+  "auth": {
+    "storePath": "/Users/ryleebenson/.openclaw/agents/main/agent/auth-profiles.json",
+    "shellEnvFallback": {
+      "enabled": false,
+      "appliedKeys": []
+    },
+    "providersWithOAuth": [],
+    "missingProvidersInUse": [],
+    "providers": [
+      {
+        "provider": "lmstudio",
+        "effective": {
+          "kind": "profiles",
+          "detail": "~/.openclaw/agents/main/agent/auth-profiles.json"
+        },
+        "profiles": {
+          "count": 1,
+          "oauth": 0,
+          "token": 0,
+          "apiKey": 1,
+          "labels": [
+            "lmstudio:default=sk-lm-lT...EyiQUU47"
+          ]
+        },
+        "modelsJson": {
+          "value": "LM...EN",
+          "source": "models.json: ~/.openclaw/agents/main/agent/models.json"
+        }
+      }
+    ],
+    "unusableProfiles": [],
+    "oauth": {
+      "warnAfterMs": 86400000,
+      "profiles": [
+        {
+          "profileId": "lmstudio:default",
+          "provider": "lmstudio",
+          "type": "api_key",
+          "status": "static",
+          "source": "store",
+          "label": "lmstudio:default"
+        }
+      ],
+      "providers": [
+        {
+          "provider": "lmstudio",
+          "status": "static",
+          "profiles": [
+            {
+              "profileId": "lmstudio:default",
+              "provider": "lmstudio",
+              "type": "api_key",
+              "status": "static",
+              "source": "store",
+              "label": "lmstudio:default"
+            }
+          ]
+        }
+      ]
+    },
+    "probes": {
+      "startedAt": 1776539497646,
+      "finishedAt": 1776539523375,
+      "durationMs": 25729,
+      "totalTargets": 1,
+      "options": {
+        "profileIds": [],
+        "timeoutMs": 8000,
+        "concurrency": 2,
+        "maxTokens": 8
+      },
+      "results": [
+        {
+          "provider": "lmstudio",
+          "model": "lmstudio/qwen/qwen3.5-9b",
+          "profileId": "lmstudio:default",
+          "label": "lmstudio:default",
+          "source": "profile",
+          "mode": "api_key",
+          "status": "timeout",
+          "error": "LLM request timed out.",
+          "latencyMs": 19715
+        }
+      ]
+    }
+  }
+}

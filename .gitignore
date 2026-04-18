@@ -1,0 +1,43 @@
+# Secrets
+.env
+*.env.local
+*.env.*.local
+
+# Docker volumes (managed by Docker, not git)
+# data/open-webui/  # empty placeholder ok
+# data/n8n/         # empty placeholder ok
+# data/qdrant/      # empty placeholder ok
+# data/flowise/     # empty placeholder ok
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ComfyUI (large model files)
+tools/comfyui/ComfyUI/models/
+tools/comfyui/ComfyUI/output/
+tools/comfyui/ComfyUI/input/
+tools/comfyui/ComfyUI/.venv/
+tools/comfyui/ComfyUI/venv/
+
+# macOS
+.DS_Store
+._*
+
+# Node
+node_modules/
+
+# Runtime artifacts (will be created by agents)
+artifacts/runs/
+
+# Logs (runtime generated)
+logs/*.jsonl
+
+# Baselines (generated snapshots, ok to commit selectively)
+
+# Copilot session state
+.copilot/
+tools/comfyui/ComfyUI/

@@ -1,0 +1,216 @@
+# ============================================================
+# OPENCLAW FULL STACK — Apple M4 / macOS
+# LM Studio runs NATIVELY (not in Docker)
+# All services connect via host.docker.internal:1234
+# ============================================================
+
+networks:
+  openclaw:
+    driver: bridge
+
+volumes:
+  open-webui-data:
+  searxng-cache:
+  n8n-data:
+  qdrant-data:
+  flowise-data:
+  pipelines-data:
+  postgres-data:
+  comfyui-data:
+
+services:
+
+  # ──────────────────────────────────────────────────────────
+  # POSTGRES — Database for n8n + future services
+  # ──────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: openclaw-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: openclaw
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-openclaw2024}
+      POSTGRES_DB: openclaw
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U openclaw"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # SEARXNG — Private Search Engine for Agents
+  # http://localhost:8080
+  # ──────────────────────────────────────────────────────────
+  searxng:
+    image: searxng/searxng:latest
+    container_name: openclaw-searxng
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SEARXNG_BASE_URL: http://localhost:8080/
+    volumes:
+      - ../data/searxng/settings.yml:/etc/searxng/settings.yml:ro
+      - searxng-cache:/var/cache/searxng
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # OPEN WEBUI — Main Chat + Agent Interface
+  # http://localhost:3000
+  # ──────────────────────────────────────────────────────────
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: openclaw-webui
+    restart: unless-stopped
+    ports:
+      - "3000:8080"
+    environment:
+      WEBUI_URL: http://localhost:3000
+      ENABLE_PERSISTENT_CONFIG: "False"
+      ENABLE_SIGNUP: "False"
+      WEBUI_ADMIN_EMAIL: ${WEBUI_ADMIN_EMAIL:-admin@local}
+      WEBUI_ADMIN_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-HtKc0jmGdOk0cmEE6mCR1UJ}
+      WEBUI_ADMIN_NAME: ${WEBUI_ADMIN_NAME:-Rylee}
+      # LM Studio via host
+      OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      DEFAULT_MODELS: ${DEFAULT_MODELS:-qwen/qwen3.5-9b}
+      DEFAULT_PINNED_MODELS: ${DEFAULT_PINNED_MODELS}
+      # Pipelines middleware
+      OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://openclaw-pipelines:9099
+      OPENAI_API_KEYS: ${OPENAI_API_KEY};0p3n-w3bu!
+      # RAG + Embeddings
+      RAG_EMBEDDING_ENGINE: openai
+      RAG_EMBEDDING_MODEL: text-embedding-nomic-embed-text-v1.5
+      ENABLE_RAG_WEB_SEARCH: "True"
+      RAG_WEB_SEARCH_ENGINE: searxng
+      RAG_WEB_SEARCH_RESULT_COUNT: 10
+      RAG_WEB_SEARCH_CONCURRENT_REQUESTS: 8
+      SEARXNG_QUERY_URL: http://searxng:8080/search?q=<query>&format=json
+      ENABLE_RAG_LOCAL_WEB_FETCH: "True"
+      # Features
+      ENABLE_CHANNELS: "True"
+      ENABLE_CODE_EXECUTION: "True"
+      CODE_EXECUTION_ENGINE: pyodide
+      AIOHTTP_CLIENT_TIMEOUT_MODEL_LIST: 30
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - open-webui-data:/app/backend/data
+    depends_on:
+      - searxng
+      - pipelines
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # OPEN WEBUI PIPELINES — Custom Middleware + Tools
+  # http://localhost:9099
+  # Add in Open WebUI: Settings > Connections > OpenAI API
+  # URL: http://localhost:9099  Key: 0p3n-w3bu!
+  # ──────────────────────────────────────────────────────────
+  pipelines:
+    image: ghcr.io/open-webui/pipelines:main
+    container_name: openclaw-pipelines
+    restart: unless-stopped
+    ports:
+      - "9099:9099"
+    environment:
+      PIPELINES_API_KEY: "0p3n-w3bu!"
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
+      PIPELINES_REQUIREMENTS_PATH: /app/pipelines/custom/requirements.txt
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - pipelines-data:/app/pipelines
+      - ../data/pipelines:/app/pipelines/custom
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # QDRANT — Vector Database for Agent Memory + RAG
+  # http://localhost:6333
+  # ──────────────────────────────────────────────────────────
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: openclaw-qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant-data:/qdrant/storage
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # N8N — Workflow Automation (Zapier-like, LLM-native)
+  # http://localhost:5678
+  # ──────────────────────────────────────────────────────────
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: openclaw-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      N8N_HOST: localhost
+      N8N_PORT: 5678
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: http://localhost:5678/
+      GENERIC_TIMEZONE: America/Denver
+      # Postgres backend
+      DB_TYPE: postgresdb
+      DB_POSTGRESDB_HOST: postgres
+      DB_POSTGRESDB_USER: openclaw
+      DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD:-openclaw2024}
+      DB_POSTGRESDB_DATABASE: n8n
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:-openclaw_n8n_key_32chars_here!}
+      # LLM (points to LM Studio)
+      N8N_AI_ENABLED: "true"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - n8n-data:/home/node/.n8n
+      - ../outputs:/outputs
+      - ../projects:/projects
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - openclaw
+
+  # ──────────────────────────────────────────────────────────
+  # FLOWISE — Visual LLM Agent Builder
+  # http://localhost:3001
+  # ──────────────────────────────────────────────────────────
+  flowise:
+    image: flowiseai/flowise:latest
+    container_name: openclaw-flowise
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      PORT: 3000
+      FLOWISE_USERNAME: ${WEBUI_ADMIN_EMAIL:-admin@local}
+      FLOWISE_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-HtKc0jmGdOk0cmEE6mCR1UJ}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - flowise-data:/root/.flowise
+    networks:
+      - openclaw
+

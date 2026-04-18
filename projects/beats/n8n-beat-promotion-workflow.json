@@ -1,0 +1,83 @@
+{
+  "name": "Beat Promotion Pipeline",
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": {
+        "rule": { "interval": [{ "field": "hours", "hoursInterval": 24 }] }
+      },
+      "position": [100, 300]
+    },
+    {
+      "name": "Find Latest Beat",
+      "type": "n8n-nodes-base.executeCommand",
+      "parameters": {
+        "command": "ls -t ~/Desktop/Instrumentals/*.{mp3,wav,aif} 2>/dev/null | head -1"
+      },
+      "position": [300, 300]
+    },
+    {
+      "name": "Generate Promotion Copy",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": "qwen/qwen3.5-9b",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a music marketing agent. Generate a promotional post for a new beat. Include: hook, description, hashtags, YouTube description, Instagram caption. Be hype but authentic."
+            },
+            {
+              "role": "user",
+              "content": "=Generate promo content for this beat file: {{ $json.stdout }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": { "id": "lmstudio", "name": "LM Studio Local" }
+      },
+      "position": [500, 300]
+    },
+    {
+      "name": "Save Promo Content",
+      "type": "n8n-nodes-base.writeFile",
+      "parameters": {
+        "fileName": "/outputs/content/beat-promo-{{ $now.format('yyyy-MM-dd') }}.txt",
+        "content": "{{ $json.message.content }}"
+      },
+      "position": [700, 300]
+    },
+    {
+      "name": "Search Music Blogs",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "http://openclaw-searxng:8080/search",
+        "method": "GET",
+        "queryParameters": {
+          "parameters": [
+            { "name": "q", "value": "music blog submit beats contact" },
+            { "name": "format", "value": "json" },
+            { "name": "categories", "value": "general" }
+          ]
+        }
+      },
+      "position": [700, 500]
+    },
+    {
+      "name": "Notify Complete",
+      "type": "n8n-nodes-base.noOp",
+      "parameters": {},
+      "position": [900, 400]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": { "main": [[{ "node": "Find Latest Beat", "type": "main", "index": 0 }]] },
+    "Find Latest Beat": { "main": [[{ "node": "Generate Promotion Copy", "type": "main", "index": 0 }, { "node": "Search Music Blogs", "type": "main", "index": 0 }]] },
+    "Generate Promotion Copy": { "main": [[{ "node": "Save Promo Content", "type": "main", "index": 0 }]] },
+    "Save Promo Content": { "main": [[{ "node": "Notify Complete", "type": "main", "index": 0 }]] }
+  }
+}
