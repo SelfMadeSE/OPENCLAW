@@ -1,0 +1,217 @@
+{
+  "updatedAt": "2026-04-18T18:00:52.174Z",
+  "createdAt": "2026-04-18T17:26:49.871Z",
+  "id": "sZ5tjYaqF0PSzCBL",
+  "name": "Freelance Outreach Pipeline",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "parameters": {
+        "path": "outreach",
+        "responseMode": "responseNode",
+        "httpMethod": "POST"
+      },
+      "position": [
+        -100,
+        300
+      ],
+      "id": "a301c56e-6109-47e1-a85f-ade82be843a1",
+      "webhookId": "c4064974-7dd8-4012-80a2-1984c55078d4"
+    },
+    {
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "parameters": {},
+      "position": [
+        100,
+        300
+      ],
+      "id": "4ed6f4f1-5fb2-4689-baf1-1c75d2118ef5"
+    },
+    {
+      "name": "Input Job Details",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "job_title",
+              "value": "Website Design for Small Business"
+            },
+            {
+              "name": "budget",
+              "value": "$500-1500"
+            },
+            {
+              "name": "client_name",
+              "value": "John"
+            },
+            {
+              "name": "service_type",
+              "value": "web_design"
+            }
+          ]
+        }
+      },
+      "position": [
+        300,
+        300
+      ],
+      "id": "cf7ce9e0-36f0-4acc-8f9a-03c0f0e2c0a8"
+    },
+    {
+      "name": "Generate Proposal",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": "qwen/qwen3.5-9b",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are an expert freelance proposal writer for Rylee, a web designer and 3D animator. Write winning, personalized proposals. Be specific about value, not generic. Keep under 300 words. End with a clear call to action."
+            },
+            {
+              "role": "user",
+              "content": "Write a proposal for: Job='{{ $json.job_title }}', Budget='{{ $json.budget }}', Client='{{ $json.client_name }}', Service='{{ $json.service_type }}'"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "G5bXR6z98Cf98Mu9",
+          "name": "LM Studio Local"
+        }
+      },
+      "position": [
+        500,
+        300
+      ],
+      "id": "766d431d-33d7-46a2-a772-04b999244b5c"
+    },
+    {
+      "name": "Save Proposal",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst content = $json.message?.content || JSON.stringify($input.all(), null, 2);\nconst outDir = process.env.HOME + '/Desktop/OPENCLAW/projects/web-clients';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/proposal-' + Date.now() + '.txt';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname, preview: content.substring(0, 300) } }];"
+      },
+      "position": [
+        700,
+        300
+      ],
+      "id": "a1ecdfd5-ceb5-49ea-9dfb-850f998343f3",
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "jsonOutput": "={{ $json }}"
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        950,
+        300
+      ],
+      "id": "respond-outreach",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Input Job Details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Input Job Details": {
+      "main": [
+        [
+          {
+            "node": "Generate Proposal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Proposal": {
+      "main": [
+        [
+          {
+            "node": "Save Proposal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Input Job Details",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Proposal": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": null,
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "9b6822a6-2367-4704-8a96-4ce3b3107010",
+  "activeVersionId": "9b6822a6-2367-4704-8a96-4ce3b3107010",
+  "versionCounter": 8,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-04-18T17:26:49.871Z",
+      "createdAt": "2026-04-18T17:26:49.871Z",
+      "role": "workflow:owner",
+      "workflowId": "sZ5tjYaqF0PSzCBL",
+      "projectId": "YnwnbHDKs47Iopq6",
+      "project": {
+        "updatedAt": "2026-04-18T17:25:36.160Z",
+        "createdAt": "2026-04-18T17:19:40.968Z",
+        "id": "YnwnbHDKs47Iopq6",
+        "name": "Rylee Benson <admin@openclaw.local>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "5c0a0513-eaf0-4d66-a523-310ca3c49ba5"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}

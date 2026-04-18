@@ -1,0 +1,221 @@
+{
+  "updatedAt": "2026-04-18T18:00:52.070Z",
+  "createdAt": "2026-04-18T17:26:49.629Z",
+  "id": "WfwP9eleQ3QJd3C5",
+  "name": "YouTube Metadata Generator",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "parameters": {
+        "path": "youtube-metadata",
+        "responseMode": "responseNode",
+        "httpMethod": "POST"
+      },
+      "position": [
+        -100,
+        300
+      ],
+      "id": "a6315e7e-cd13-4167-8e83-bee7981079d2",
+      "webhookId": "b80d9b2e-19a5-40f2-9cc2-63aefc0a3f4f"
+    },
+    {
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "parameters": {},
+      "position": [
+        100,
+        300
+      ],
+      "id": "2169361a-1950-4bec-be76-dc59dd640c06"
+    },
+    {
+      "name": "Beat Info",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "beat_name",
+              "value": "Untitled Beat"
+            },
+            {
+              "name": "bpm",
+              "value": "140"
+            },
+            {
+              "name": "genre",
+              "value": "Trap/Hip-Hop"
+            },
+            {
+              "name": "mood",
+              "value": "Dark, Aggressive"
+            },
+            {
+              "name": "key",
+              "value": "C Minor"
+            }
+          ]
+        }
+      },
+      "position": [
+        300,
+        300
+      ],
+      "id": "cfbcfa90-e8c8-4927-8dfd-56ce3a85aca4"
+    },
+    {
+      "name": "Generate YouTube Metadata",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": "qwen/qwen3.5-9b",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a YouTube SEO expert for music producers. Generate optimized metadata that gets views and beat sales. Output as JSON with keys: title, description, tags (array of 10), chapters, thumbnail_text."
+            },
+            {
+              "role": "user",
+              "content": "Beat: {{ $json.beat_name }} | BPM: {{ $json.bpm }} | Genre: {{ $json.genre }} | Mood: {{ $json.mood }} | Key: {{ $json.key }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "G5bXR6z98Cf98Mu9",
+          "name": "LM Studio Local"
+        }
+      },
+      "position": [
+        500,
+        300
+      ],
+      "id": "e38a9337-be81-4fce-886d-8653bc1eaebe"
+    },
+    {
+      "name": "Save Metadata",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst content = $json.message?.content || JSON.stringify($input.all(), null, 2);\nconst outDir = process.env.HOME + '/Desktop/OPENCLAW/projects/beats';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/youtube-meta-' + Date.now() + '.json';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname } }];"
+      },
+      "position": [
+        700,
+        300
+      ],
+      "id": "6e9931ec-a51d-46d9-a506-4b4edb4447b6",
+      "typeVersion": 2
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "jsonOutput": "={{ $json }}"
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        950,
+        300
+      ],
+      "id": "respond-youtube",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Beat Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Beat Info": {
+      "main": [
+        [
+          {
+            "node": "Generate YouTube Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate YouTube Metadata": {
+      "main": [
+        [
+          {
+            "node": "Save Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Beat Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Metadata": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": null,
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "49a8097b-f8a6-42b1-b1cf-549b1d867425",
+  "activeVersionId": "49a8097b-f8a6-42b1-b1cf-549b1d867425",
+  "versionCounter": 8,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-04-18T17:26:49.629Z",
+      "createdAt": "2026-04-18T17:26:49.629Z",
+      "role": "workflow:owner",
+      "workflowId": "WfwP9eleQ3QJd3C5",
+      "projectId": "YnwnbHDKs47Iopq6",
+      "project": {
+        "updatedAt": "2026-04-18T17:25:36.160Z",
+        "createdAt": "2026-04-18T17:19:40.968Z",
+        "id": "YnwnbHDKs47Iopq6",
+        "name": "Rylee Benson <admin@openclaw.local>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "5c0a0513-eaf0-4d66-a523-310ca3c49ba5"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}
