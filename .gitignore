@@ -51,6 +51,8 @@ logs/*.jsonl
 *.db
 *.sqlite
 *.sqlite3
+*.sqlite-shm
+*.sqlite-wal
 
 # ── Message bus runtime state ───────────────────────────────
 system/message_bus/queue.json

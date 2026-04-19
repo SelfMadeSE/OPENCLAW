@@ -30,12 +30,16 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://localhost:5678",
+        "http://localhost:18800",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-API_TOKEN = os.environ.get("OPENCLAW_API_TOKEN", "openclaw-local-dev")
+API_TOKEN = os.environ.get("OPENCLAW_API_TOKEN", "")
 
 
 def log_api(event: str, detail: dict | None = None):
@@ -52,11 +56,14 @@ def log_api(event: str, detail: dict | None = None):
 
 
 async def verify_token(authorization: str = Header(None)):
+    if not API_TOKEN:
+        raise HTTPException(
+            status_code=500,
+            detail="OPENCLAW_API_TOKEN not configured. Set it in .env",
+        )
     if authorization and authorization.replace("Bearer ", "") == API_TOKEN:
         return True
-    if not authorization and API_TOKEN == "openclaw-local-dev":
-        return True
-    raise HTTPException(status_code=401, detail="Invalid token")
+    raise HTTPException(status_code=401, detail="Invalid or missing token")
 
 
 from api.routes import bus, approval, memory, task, revenue, health  # noqa: E402
