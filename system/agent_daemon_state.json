@@ -1,0 +1,38 @@
+{
+  "last_wake": {
+    "orchestrator": "2026-04-19T20:37:27.803494+00:00",
+    "engineering": "2026-04-19T20:42:26.376417+00:00",
+    "marketing": "2026-04-19T20:15:54.680256+00:00",
+    "creative": "2026-04-19T20:33:20.185123+00:00",
+    "outreach": "2026-04-19T19:49:18.752608+00:00",
+    "media": "2026-04-19T20:18:26.901558+00:00",
+    "auditor": "2026-04-19T20:22:18.230726+00:00"
+  },
+  "last_dream": {
+    "orchestrator": "2026-04-19T20:06:22.979016+00:00",
+    "auditor": "2026-04-19T20:07:58.990055+00:00",
+    "creative": "2026-04-19T20:09:58.428632+00:00",
+    "outreach": "2026-04-19T20:11:33.429425+00:00",
+    "engineering": "2026-04-19T20:13:57.961428+00:00",
+    "marketing": "2026-04-19T20:24:04.276770+00:00",
+    "media": "2026-04-19T20:25:42.797143+00:00"
+  },
+  "wake_counts": {
+    "orchestrator": 5,
+    "engineering": 6,
+    "marketing": 3,
+    "creative": 5,
+    "outreach": 3,
+    "media": 3,
+    "auditor": 4
+  },
+  "dream_counts": {
+    "orchestrator": 1,
+    "auditor": 1,
+    "creative": 1,
+    "outreach": 1,
+    "engineering": 1,
+    "marketing": 1,
+    "media": 1
+  }
+}
