@@ -26,8 +26,9 @@ docker compose --env-file "$STACK_DIR/.env" up -d
 echo ""
 echo "🔌 Starting OPENCLAW API server..."
 if command -v uvicorn &>/dev/null; then
-  # Source API token from .env
+  # Source required env vars from .env
   export $(grep -E '^OPENCLAW_API_TOKEN=' "$STACK_DIR/.env" | xargs)
+  export $(grep -E '^OPENAI_API_KEY=' "$STACK_DIR/.env" | xargs)
   mkdir -p "$STACK_DIR/run"
   cd "$STACK_DIR"
   uvicorn api.server:app --host 127.0.0.1 --port 18800 --log-level warning &

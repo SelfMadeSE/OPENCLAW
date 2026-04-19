@@ -40,6 +40,7 @@ LOGS_DIR = BASE_DIR / "logs"
 
 QDRANT_URL = os.environ.get("QDRANT_URL", "http://localhost:6333")
 LM_STUDIO_URL = os.environ.get("LM_STUDIO_URL", "http://localhost:1234/v1")
+LM_STUDIO_KEY = os.environ.get("OPENAI_API_KEY", os.environ.get("LM_STUDIO_API_KEY", ""))
 EMBEDDING_MODEL = "text-embedding-nomic-embed-text-v1.5"
 
 MEMORY_TYPES = {
@@ -234,10 +235,13 @@ class MemoryBridge:
             "model": EMBEDDING_MODEL,
             "input": text[:2000]
         }).encode()
+        headers = {"Content-Type": "application/json"}
+        if LM_STUDIO_KEY:
+            headers["Authorization"] = f"Bearer {LM_STUDIO_KEY}"
         req = urllib.request.Request(
             f"{LM_STUDIO_URL}/embeddings",
             data=payload,
-            headers={"Content-Type": "application/json"}
+            headers=headers,
         )
         resp = urllib.request.urlopen(req, timeout=30)
         data = json.loads(resp.read())
