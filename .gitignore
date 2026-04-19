@@ -70,3 +70,8 @@ produce_deliverables.py
 *.lock
 openclaw.egg-info/
 run/*.pid
+
+# ── Memory runtime data ─────────────────────────────────
+memory/per-agent/
+memory/short-term/
+memory/shared/

@@ -203,14 +203,16 @@ def create_agents(token):
             "is_active": True,
         }
         result = api("/api/v1/models/create", "POST", payload, token)
-        if "id" in result or result.get("detail") == "Model already exists.":
-            print(f"  ✅ {agent['name']} (tools: [{TOOL_ID}])")
+        if "id" in result:
+            print(f"  ✅ {agent['name']} — created (tools: [{TOOL_ID}])")
         else:
-            print(f"  ⚠️  {agent['name']}: {result.get('detail', result)}")
-            # Try update instead
-            result2 = api(f"/api/v1/models/{agent['id']}", "POST", payload, token)
+            # Model already exists — update it with correct toolIds
+            update_url = f"/api/v1/models/model/update?id={urllib.parse.quote(agent['id'])}"
+            result2 = api(update_url, "POST", payload, token)
             if "id" in result2:
-                print(f"     Updated existing model")
+                print(f"  ✅ {agent['name']} — updated (tools: [{TOOL_ID}])")
+            else:
+                print(f"  ⚠️  {agent['name']}: create={result.get('detail','?')} update={result2.get('detail','?')}")
 
 
 def main():
