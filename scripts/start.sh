@@ -28,13 +28,12 @@ echo "🔌 Starting OPENCLAW API server..."
 if command -v uvicorn &>/dev/null; then
   # Source API token from .env
   export $(grep -E '^OPENCLAW_API_TOKEN=' "$STACK_DIR/.env" | xargs)
+  mkdir -p "$STACK_DIR/run"
   cd "$STACK_DIR"
   uvicorn api.server:app --host 127.0.0.1 --port 18800 --log-level warning &
   API_PID=$!
+  echo "$API_PID" > "$STACK_DIR/run/api.pid"
   echo "  ✅ API server started (PID $API_PID) → http://localhost:18800"
-  echo "$API_PID" > "$STACK_DIR/run/api.pid"
-  mkdir -p "$STACK_DIR/run"
-  echo "$API_PID" > "$STACK_DIR/run/api.pid"
 else
   echo "  ⚠️  uvicorn not found — install with: pip install uvicorn fastapi"
   echo "     API server not started. Agents will not have system access."
