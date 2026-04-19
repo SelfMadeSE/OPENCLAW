@@ -15,7 +15,7 @@ search:
 server:
   bind_address: "0.0.0.0"
   port: 8080
-  secret_key: "243c1d815f7af9658c706c137b1fd51da824febcad2546cac760fb582af6774d"
+  secret_key: "CHANGE-ME-generate-with-openssl-rand-hex-32"
   limiter: false
   image_proxy: false
 

@@ -31,7 +31,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: openclaw
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-openclaw2024}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}
       POSTGRES_DB: openclaw
     volumes:
       - postgres-data:/var/lib/postgresql/data
@@ -80,13 +80,13 @@ services:
       WEBUI_URL: http://localhost:3000
       ENABLE_PERSISTENT_CONFIG: "False"
       ENABLE_SIGNUP: "False"
-      WEBUI_ADMIN_EMAIL: ${WEBUI_ADMIN_EMAIL:-admin@local}
-      WEBUI_ADMIN_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-changeme}
-      WEBUI_ADMIN_NAME: ${WEBUI_ADMIN_NAME:-Rylee}
+      WEBUI_ADMIN_EMAIL: ${WEBUI_ADMIN_EMAIL:?WEBUI_ADMIN_EMAIL must be set in .env}
+      WEBUI_ADMIN_PASSWORD: ${WEBUI_ADMIN_PASSWORD:?WEBUI_ADMIN_PASSWORD must be set in .env}
+      WEBUI_ADMIN_NAME: ${WEBUI_ADMIN_NAME:?WEBUI_ADMIN_NAME must be set in .env}
       # LM Studio via host
       OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
       OPENAI_API_KEY: ${OPENAI_API_KEY}
-      DEFAULT_MODELS: ${DEFAULT_MODELS:-qwen/qwen3.5-9b}
+      DEFAULT_MODELS: ${DEFAULT_MODELS:?DEFAULT_MODELS must be set in .env}
       DEFAULT_PINNED_MODELS: ${DEFAULT_PINNED_MODELS}
       # Connections: LM Studio (direct) ; OpenClaw Gateway (agents) ; Pipelines (middleware)
       OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://host.docker.internal:18789/v1;http://openclaw-pipelines:9099
@@ -176,13 +176,13 @@ services:
       DB_TYPE: postgresdb
       DB_POSTGRESDB_HOST: postgres
       DB_POSTGRESDB_USER: openclaw
-      DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD:-openclaw2024}
+      DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}
       DB_POSTGRESDB_DATABASE: n8n
-      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:-openclaw_n8n_key_32chars_here!}
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?N8N_ENCRYPTION_KEY must be set in .env}
       # LLM (points to LM Studio)
       N8N_AI_ENABLED: "true"
-      # Allow Code nodes to use fs/child_process for file I/O
-      NODE_FUNCTION_ALLOW_BUILTIN: "fs,path,child_process"
+      # Allow Code nodes to use fs for file I/O
+      NODE_FUNCTION_ALLOW_BUILTIN: "fs,path"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
@@ -208,8 +208,8 @@ services:
       - "3001:3000"
     environment:
       PORT: 3000
-      FLOWISE_USERNAME: ${WEBUI_ADMIN_EMAIL:-admin@local}
-      FLOWISE_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-changeme}
+      FLOWISE_USERNAME: ${WEBUI_ADMIN_EMAIL:?WEBUI_ADMIN_EMAIL must be set in .env}
+      FLOWISE_PASSWORD: ${WEBUI_ADMIN_PASSWORD:?WEBUI_ADMIN_PASSWORD must be set in .env}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:

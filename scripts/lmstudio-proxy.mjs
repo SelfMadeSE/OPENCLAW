@@ -4,7 +4,7 @@ import http from "node:http";
 
 const LM_PORT = 1234;
 const PROXY_PORT = 1235;
-const API_KEY = "sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47";
+const API_KEY = process.env.LM_STUDIO_API_KEY || process.env.OPENAI_API_KEY || "";
 
 process.on("uncaughtException", (e) => console.error(`[proxy ${ts()}] uncaught:`, e.message));
 process.on("unhandledRejection", (e) => console.error(`[proxy ${ts()}] rejection:`, e));
