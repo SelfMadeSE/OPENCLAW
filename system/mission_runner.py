@@ -22,6 +22,9 @@ from task_contract import TaskContract
 from approval import ApprovalSystem
 from memory_bridge import MemoryBridge
 
+LM_STUDIO_URL = os.environ.get("LM_STUDIO_URL", "http://localhost:1234/v1")
+LM_STUDIO_KEY = os.environ.get("OPENAI_API_KEY", os.environ.get("LM_STUDIO_API_KEY", ""))
+
 LOGS_DIR = BASE / "logs"
 LOGS_DIR.mkdir(exist_ok=True)
 
@@ -215,7 +218,7 @@ class MissionRunner:
             return {"agent": agent, "task": task_name, "success": False, "error": "LLM generation failed"}
 
         # Write via task contract
-        with TaskContract(agent=agent, mission=mission_id, task=task_name) as tc:
+        with TaskContract(agent=agent, mission_id=mission_id, task_name=task_name) as tc:
             artifact_path = tc.write(filename, content)
 
         return {
@@ -228,26 +231,29 @@ class MissionRunner:
 
     def _generate_content(self, agent: str, prompt: str, min_length: int) -> str:
         """Generate content via LM Studio API."""
-        system_prompt = f"You are the {agent} agent in the OPENCLAW autonomous multi-agent system. Produce detailed, high-quality output. No placeholders. No generic filler. Be specific and actionable."
+        system_prompt = f"You are the {agent} agent in the OPENCLAW autonomous multi-agent system. Respond directly — produce detailed, high-quality output. No placeholders. No generic filler. Be specific and actionable."
 
         payload = json.dumps({
-            "model": "qwen3.5-9b",
+            "model": os.environ.get("DEFAULT_MODELS", "qwen/qwen3.5-9b"),
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt},
             ],
             "temperature": 0.7,
-            "max_tokens": 4096,
+            "max_tokens": 8192,
             "stream": False,
         }).encode()
 
         try:
+            headers = {"Content-Type": "application/json"}
+            if LM_STUDIO_KEY:
+                headers["Authorization"] = f"Bearer {LM_STUDIO_KEY}"
             req = urllib.request.Request(
-                "http://localhost:1234/v1/chat/completions",
+                f"{LM_STUDIO_URL}/chat/completions",
                 data=payload,
-                headers={"Content-Type": "application/json"},
+                headers=headers,
             )
-            with urllib.request.urlopen(req, timeout=120) as resp:
+            with urllib.request.urlopen(req, timeout=300) as resp:
                 data = json.loads(resp.read().decode())
                 content = data["choices"][0]["message"]["content"]
                 if len(content) < min_length:
