@@ -320,7 +320,7 @@ class Scheduler:
                 "Draft proposals for any viable leads.",
                 priority="high")
 
-            bus.send_message("scheduler", "marketer",
+            bus.send_message("scheduler", "marketing",
                 "Create today's social media content: 1 beat promotion post, "
                 "1 portfolio showcase, 1 engagement post.",
                 priority="normal")
@@ -332,7 +332,7 @@ class Scheduler:
             return {
                 "task_id": task["id"],
                 "status": "complete",
-                "output": "Revenue tasks queued: outreach (leads), marketer (content), media (analytics)"
+                "output": "Revenue tasks queued: outreach (leads), marketing (content), media (analytics)"
             }
         except Exception as e:
             return {"task_id": task["id"], "status": "error", "output": str(e)}
@@ -349,7 +349,7 @@ class Scheduler:
                 priority="low",
                 context={"mode": "free_time"})
 
-            bus.send_message("scheduler", "coder",
+            bus.send_message("scheduler", "engineering",
                 "FREE TIME: Research one new tool or technique relevant to our stack "
                 "(Python automation, n8n workflows, ComfyUI). Write a brief summary.",
                 priority="low",
@@ -358,7 +358,7 @@ class Scheduler:
             return {
                 "task_id": task["id"],
                 "status": "complete",
-                "output": "Free time tasks queued for creative and coder"
+                "output": "Free time tasks queued for creative and engineering"
             }
         except Exception as e:
             return {"task_id": task["id"], "status": "error", "output": str(e)}
