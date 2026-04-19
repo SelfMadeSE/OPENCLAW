@@ -1,64 +1,49 @@
-# OPENCLAW Memory System
+# Memory System Spec
 
-## Memory Types
+OpenClaw memory is multi-tier. The official `memory-core` plugin handles persistence; this doc defines the **semantic tiers** agents must respect.
 
-### Short-Term Memory
-- **Storage**: Filesystem (`system/memory/short_term/`)
-- **TTL**: 24 hours (auto-cleaned by scheduler)
-- **Scope**: Per-task context
-- **Use**: Working data during active missions
+## Tiers
 
-### Long-Term Memory
-- **Storage**: Qdrant vector database (`memory` collection)
-- **TTL**: Permanent
-- **Scope**: Per-agent learnings
-- **Use**: Lessons, patterns, preferences accumulated over time
+### 1. Short-term (session)
+- **Scope**: one session / one agent
+- **Storage**: in-process + `session-memory` hook
+- **Lifetime**: cleared on session end
+- **Use**: live task context, scratch reasoning
 
-### Shared Memory
-- **Storage**: Qdrant vector database (`shared` collection)
-- **TTL**: Permanent
-- **Scope**: Cross-agent knowledge
-- **Use**: System-wide facts, imported knowledge (e.g., Apple Notes), collaborative insights
+### 2. Long-term (per-agent)
+- **Scope**: single agent across all sessions
+- **Storage**: `workspaces/<agent>/MEMORY.md` + Qdrant collection per agent
+- **Lifetime**: persistent
+- **Use**: lessons, identity reinforcement, recurring patterns
 
-## Memory Operations
+### 3. Shared (global)
+- **Scope**: all agents
+- **Storage**: `memory/shared/` (markdown) + Qdrant collection `openclaw_shared`
+- **Lifetime**: persistent
+- **Use**: facts about the world, owner preferences, system-wide policies
 
-### Writing Memory
-```python
-from system.memory.memory_bridge import MemoryBridge
+### 4. Social (relational)
+- **Scope**: pairwise between agents
+- **Storage**: `_shared/social_memory/` (see schema)
+- **Lifetime**: persistent, decays without reinforcement
+- **Use**: trust calibration, who-to-delegate-to decisions
 
-mb = MemoryBridge()
-mb.write(
-    agent="engineering",
-    content="JSON parsing with streaming is 3x faster for files > 10MB",
-    memory_type="long_term",
-    metadata={"kind": "learning", "topic": "performance"}
-)
-```
+## Read/write rules
 
-### Reading Memory
-```python
-results = mb.search(
-    query="JSON parsing performance",
-    memory_type="shared",
-    agent="engineering",
-    limit=5
-)
-```
+| Tier | Who reads | Who writes |
+|---|---|---|
+| Short-term | self | self |
+| Long-term | self (always); other agents (with reason in mission) | self |
+| Shared | all | any (with `auditor_review: pending` flag if controversial) |
+| Social — own outbound trust | self + Orchestrator | self |
+| Social — `audit_pass`/`audit_flag` events | all | **Auditor only** |
 
-### Agent Memory Protocol
-1. **Pre-task**: `search()` for relevant context before starting
-2. **Post-task**: `write()` key decisions and lessons after completing
-3. **Format**: Always include `kind` (decision/event/learning) and `scope` (personal/shared)
+## Required behavior
+- **Read before tasks**: every agent loads relevant long-term + shared memory at task start
+- **Write after tasks**: every artifact-producing task ends with at least one memory entry (lesson learned, fact captured, or "no new lesson — pattern matches X")
+- **Consolidation**: nightly `dreaming` cron (per-agent, 1:00–2:30 AM Denver) moves valuable short-term → long-term, prunes redundancy
 
-## Qdrant Collections
-| Collection | Vectors | Purpose |
-|-----------|---------|---------|
-| memory | Dynamic | Agent long-term memories |
-| shared | 200+ | Cross-agent knowledge base |
-| escalations | Dynamic | Red-tier escalation records |
-
-## Memory Consolidation
-The scheduler runs daily memory consolidation:
-- Clean expired short-term memories
-- Identify high-value short-term memories for promotion to long-term
-- Deduplicate shared memory entries
+## Anti-patterns
+- Treating MEMORY.md as a journal: it's a working memory, not a diary
+- Writing only positive memories (Auditor flags)
+- Self-promotion in shared memory (Auditor strips)

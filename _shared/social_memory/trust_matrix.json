@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "description": "Pairwise trust [-1, 1]. Row=from_agent, Col=to_agent. Initialized neutral.",
+  "matrix": {
+    "orchestrator": {"engineering": 0, "marketing": 0, "outreach": 0, "creative": 0, "media": 0, "auditor": 0.1},
+    "engineering":  {"orchestrator": 0.1, "auditor": 0.1},
+    "marketing":    {"orchestrator": 0.1, "creative": 0, "media": 0},
+    "outreach":     {"orchestrator": 0.1, "marketing": 0},
+    "creative":     {"orchestrator": 0.1, "marketing": 0, "media": 0},
+    "media":        {"orchestrator": 0.1, "creative": 0, "marketing": 0},
+    "auditor":      {"orchestrator": 0.1, "engineering": 0, "marketing": 0, "outreach": 0, "creative": 0, "media": 0}
+  }
+}

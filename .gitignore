@@ -2,6 +2,29 @@
 .env
 *.env.local
 *.env.*.local
+# Never commit official gateway config (contains tokens)
+openclaw.json
+openclaw.json.bak*
+
+# ── OS junk ─────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+
+# ── Live runtime artifacts (mission outputs may include drafts) ─
+artifacts/runs/
+logs/
+outputs/
+_shared/scoring/history.jsonl
+_shared/social_memory/edges.jsonl
+_shared/revenue/attempts.jsonl
+_shared/revenue/approvals.jsonl
+_shared/revenue/leads/leads.jsonl
+_shared/revenue/dashboards/daily.json
+_shared/revenue/lanes/*/targets.jsonl
+
+# ── Legacy archive ──────────────────────────────────────────
+docs/MEMORY.md.legacy
+workspaces/*/legacy/
 
 # ── Docker volumes (managed by Docker) ──────────────────────
 data/open-webui/

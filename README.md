@@ -1,28 +1,30 @@
-# 🦅 OPENCLAW — Autonomous Multi-Agent System Running Locally
+# 🦅 OPENCLAW — Local Autonomous Multi-Agent Society
 
-> A fully local multi-agent AI system where agents collaborate, manage tasks, communicate via message bus, learn via memory, and attempt real-world revenue generation.
+> Agent harness running on top of the **official OpenClaw gateway** ([openclaw.ai](https://openclaw.ai)). Seven specialized agents collaborate on missions, hold each other accountable, and earn (or lose) trust based on what they actually deliver.
 
-[![Status](https://img.shields.io/badge/status-operational-brightgreen)]()
+[![Runtime](https://img.shields.io/badge/runtime-official_OpenClaw_2026.4.15-blue)]()
 [![Agents](https://img.shields.io/badge/agents-7-blue)]()
 [![Local](https://img.shields.io/badge/inference-100%25_local-orange)]()
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
 ---
 
+## ⚠️ Architecture: official runtime + this harness
+
+This repo is **not** a runtime. It is a workspace + harness that the official OpenClaw gateway reads:
+
+| Layer | Owner |
+|---|---|
+| Gateway, CLI, hooks, channels (Telegram), cron, exec approvals | **Official OpenClaw** (`/opt/homebrew/bin/openclaw`) |
+| Agent personas, missions, scoring, social memory, revenue lanes | **This repo** |
+| Config | `~/.openclaw/openclaw.json` (do not commit; secrets) |
+| Workspaces | `workspaces/<agent>/` here, referenced by gateway config |
+
+A previous version of this repo shipped a parallel Python runtime (api/, cli/, daemon/, system/scheduler). That has been **purged** as of v0.4 — running two runtimes against one config breaks autonomy guarantees.
+
 ## 🧠 What Is This?
 
-OPENCLAW is a **persistent, self-operating AI system** running entirely on local hardware. It's not a chatbot demo. It's not a toy agent framework. It's a living system where:
-
-- **7 specialized agents** with distinct personalities collaborate on missions
-- An **execution contract** ensures every task produces real artifacts on disk
-- A **message bus** enables agent-to-agent communication with rate limits
-- A **scheduler** runs autonomous tasks on intervals (heartbeat, memory, revenue)
-- A **4-tier approval system** controls risk (GREEN → YELLOW → ORANGE → RED)
-- A **memory system** provides short-term, long-term, and shared knowledge
-- A **revenue tracker** logs real-world monetization attempts
-- **Full observability** — every action logged, every artifact validated
-
-**No cloud APIs. No subscriptions. Everything runs on your machine.**
+A persistent, self-operating AI society. Seven agents with codenames, weighted scoring, pairwise trust, an Auditor that can flag hallucinated completions, and a revenue harness wired to Telegram exec approvals.
 
 ---
 
