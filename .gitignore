@@ -66,3 +66,5 @@ revenue/attempts.json
 .copilot/
 produce_deliverables.py
 *.lock
+openclaw.egg-info/
+run/*.pid
