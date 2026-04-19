@@ -31,7 +31,7 @@
           "token": 0,
           "apiKey": 1,
           "labels": [
-            "lmstudio:default=sk-lm-lT...EyiQUU47"
+            "lmstudio:default=YOUR_LM_STUDIO_API_KEY"
           ]
         },
         "modelsJson": {

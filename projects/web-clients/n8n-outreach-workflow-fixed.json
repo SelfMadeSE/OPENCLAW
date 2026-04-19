@@ -66,42 +66,43 @@
     },
     {
       "name": "Generate Proposal",
-      "type": "@n8n/n8n-nodes-langchain.openAi",
-      "parameters": {
-        "resource": "text",
-        "operation": "message",
-        "modelId": "qwen/qwen3.5-9b",
-        "messages": {
-          "values": [
-            {
-              "role": "system",
-              "content": "You are an expert freelance proposal writer for Rylee, a web designer and 3D animator. Write winning, personalized proposals. Be specific about value, not generic. Keep under 300 words. End with a clear call to action."
-            },
-            {
-              "role": "user",
-              "content": "Write a proposal for: Job='{{ $json.job_title }}', Budget='{{ $json.budget }}', Client='{{ $json.client_name }}', Service='{{ $json.service_type }}'"
-            }
-          ]
-        }
-      },
-      "credentials": {
-        "openAiApi": {
-          "id": "G5bXR6z98Cf98Mu9",
-          "name": "LM Studio Local"
-        }
-      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         500,
         300
       ],
-      "id": "766d431d-33d7-46a2-a772-04b999244b5c"
+      "id": "766d431d-33d7-46a2-a772-04b999244b5c",
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:1234/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{$env.LM_STUDIO_API_KEY}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ \"model\": \"qwen/qwen3.5-9b\", \"max_tokens\": 2000, \"reasoning_effort\": \"none\", \"messages\": [ {\"role\": \"system\", \"content\": \"You are an expert freelance proposal writer for Rylee, a web designer and 3D animator. Write winning, personalized proposals. Be specific about value, not generic. Keep under 300 words. End with a clear call to action.\"}, {\"role\": \"user\", \"content\": \"Write a proposal for: Job='\" + ($json.job_title || \"Web Design\") + \"', Budget='\" + ($json.budget || \"not specified\") + \"', Client='\" + ($json.client_name || \"Client\") + \"', Service='\" + ($json.service_type || \"Web Design & Development\") + \"'\"} ] }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      }
     },
     {
       "name": "Save Proposal",
       "type": "n8n-nodes-base.code",
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "const fs = require('fs');\nconst content = $json.message?.content || JSON.stringify($input.all(), null, 2);\nconst outDir = process.env.HOME + '/Desktop/OPENCLAW/projects/web-clients';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/proposal-' + Date.now() + '.txt';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname, preview: content.substring(0, 300) } }];"
+        "jsCode": "const fs = require('fs');\nconst content = ($json.choices && $json.choices[0] && $json.choices[0].message && $json.choices[0].message.content) || JSON.stringify($input.all(), null, 2);\nconst outDir = '/projects/web-clients';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/proposal-' + Date.now() + '.txt';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname, preview: content.substring(0, 300) } }];"
       },
       "position": [
         700,

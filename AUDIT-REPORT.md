@@ -107,7 +107,7 @@ All collections use 768-dimension Cosine vectors (matching nomic-embed-text outp
 - **Installed**: Yes, native macOS app
 - **Running**: Yes (confirmed via process list and API)
 - **Port**: http://localhost:1234
-- **Auth**: Required (`Bearer` token: `sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47`)
+- **Auth**: Required (`Bearer` token: `YOUR_LM_STUDIO_API_KEY`)
 - **Models loaded** (4):
 
 | Model ID | Role per docs |
@@ -629,7 +629,7 @@ System prompts define tools like `search_web()`, `search_memories()`, `add_memor
 | Secret | Location | Risk |
 |--------|----------|------|
 | `WEBUI_ADMIN_PASSWORD=HtKc0jmGdOk0cmEE6mCR1UJ` | `.env`, `docker-compose.yml` (defaults), `README.md`, `CHEATSHEET.md`, `start.sh`, multiple docs | ⚠️ HIGH — plaintext in multiple files, in README |
-| `OPENAI_API_KEY=sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47` | `.env`, mem0 pipeline Python file, docs, scripts, gateway plist | ⚠️ HIGH — hardcoded in Python, plist, docs |
+| `OPENAI_API_KEY=YOUR_LM_STUDIO_API_KEY` | `.env`, mem0 pipeline Python file, docs, scripts, gateway plist | ⚠️ HIGH — hardcoded in Python, plist, docs |
 | `POSTGRES_PASSWORD=openclaw2024secure` | `.env` | ⚠️ Default in compose is `openclaw2024` (different!) |
 | `N8N_ENCRYPTION_KEY=openclaw_n8n_32char_secret_key!!` | `.env` | Low risk if local-only |
 | `PIPELINES_API_KEY=0p3n-w3bu!` | `docker-compose.yml`, `CHEATSHEET.md` | Low risk (local) |

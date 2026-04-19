@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "files": {
+    "media:sessions/82ced4be-8e40-4e82-83eb-a31e1d369f8a.jsonl": {
+      "mtimeMs": 1776577070287,
+      "size": 22327,
+      "contentHash": "c8480a627a388f0662bf197d1ee19499aa1d9ad944cc696ff779cca904a870b4",
+      "lineCount": 5,
+      "lastContentLine": 5
+    },
+    "media:sessions/boot-2026-04-19_02-35-10-421-499167b2.jsonl": {
+      "mtimeMs": 1776566156209,
+      "size": 2938,
+      "contentHash": "e18f5f21d695b25351b33375ac2df3b665dd23f01fc2b968138992ad213bb595",
+      "lineCount": 2,
+      "lastContentLine": 2
+    }
+  },
+  "seenMessages": {
+    "media:82ced4be-8e40-4e82-83eb-a31e1d369f8a": [
+      "10a4c91adfc18ff866421683a2405affa6a79aa2",
+      "e3a699a671cba5a711d3efb5ceecf6cf5fa1d3a9",
+      "aa1a5e799ed9a6a5484c98c35cb12d3af94aa9be",
+      "5bf52fb62f2281663760424fd45fed6129843cb2",
+      "cb50007347e2f82e889b2fb874002f862902e034"
+    ],
+    "media:boot-2026-04-19_02-35-10-421-499167b2": [
+      "0bfd6ce4af435bd6eaaff2b35b42cf120c1a511f",
+      "79bf58291385bb36e09e65bfa6404653b02ad5ff"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "files": {
+    "outreach:sessions/1a7223e0-5d99-47b7-ae95-cca56ef1186f.jsonl": {
+      "mtimeMs": 1776576930270,
+      "size": 8354,
+      "contentHash": "5a612a09120b17f0245d6118e2d4f2df3579f6afb8eb180f45b283210a4515fd",
+      "lineCount": 8,
+      "lastContentLine": 8
+    },
+    "outreach:sessions/boot-2026-04-19_02-31-54-336-c7695eaf.jsonl": {
+      "mtimeMs": 1776565960525,
+      "size": 3000,
+      "contentHash": "41e0b0528540e43bb4a3dc323e8f7abc1e062cefae59b0524c7a63197d535d8c",
+      "lineCount": 2,
+      "lastContentLine": 2
+    }
+  },
+  "seenMessages": {
+    "outreach:1a7223e0-5d99-47b7-ae95-cca56ef1186f": [
+      "7d9e4572708164d8391daf7538caa6f06513d6fa",
+      "07f05d0650a0b88d866c3a7a56bc08aa6536bcf6",
+      "7f39022df471adef802d4a3871c57ff269d12b3f",
+      "58c835563ca22e1e971fee0f6082d7a2907543b2",
+      "6065f82e91fedc759037aaa7b9c56593f9c1666e",
+      "8e5d7ed97203cdc6bd904a63bcedf0d7e993c04b",
+      "1a2ed3b7aa2e00591c268f1e96d1e4ee288ebf01",
+      "3a83a2c02bc01e053c1e5b6f19dd78632ee39e05"
+    ],
+    "outreach:boot-2026-04-19_02-31-54-336-c7695eaf": [
+      "d780c2b9f2fb7dd8a36ad1eae292a0e6899163cb",
+      "f0f14be37ef7d7ee6e20ddb364e89c993da821f3"
+    ]
+  }
+}

@@ -1,1 +1,217 @@
-{"updatedAt":"2026-04-18T18:00:12.979Z","createdAt":"2026-04-18T17:26:49.513Z","id":"xrh00e0s98misotS","name":"Beat Promotion Pipeline","description":null,"active":true,"isArchived":false,"nodes":[{"name":"Schedule Trigger","type":"n8n-nodes-base.scheduleTrigger","parameters":{"rule":{"interval":[{"field":"hours","hoursInterval":24}]}},"position":[100,300],"id":"d076edde-d4db-428f-b7ea-23e26f76d42e"},{"name":"Find Latest Beat","type":"n8n-nodes-base.code","parameters":{"mode":"runOnceForAllItems","jsCode":"const { execSync } = require('child_process');\ntry {\n  const output = execSync('ls -t ~/Desktop/Instrumentals/*.mp3 ~/Desktop/Instrumentals/*.wav ~/Desktop/Instrumentals/*.aif 2>/dev/null | head -1').toString().trim();\n  return [{ json: { beatPath: output, beatName: require('path').basename(output) } }];\n} catch(e) {\n  return [{ json: { beatPath: '', beatName: 'No beats found', error: e.message } }];\n}"},"position":[300,300],"id":"dc82c916-f50f-4ff1-84fb-69ec436de629","typeVersion":2},{"name":"Generate Promotion Copy","type":"@n8n/n8n-nodes-langchain.openAi","parameters":{"resource":"text","operation":"message","modelId":"qwen/qwen3.5-9b","messages":{"values":[{"role":"system","content":"You are a music marketing agent. Generate a promotional post for a new beat. Include: hook, description, hashtags, YouTube description, Instagram caption. Be hype but authentic."},{"role":"user","content":"=Generate promo content for this beat file: {{ $json.stdout }}"}]}},"credentials":{"openAiApi":{"id":"G5bXR6z98Cf98Mu9","name":"LM Studio Local"}},"position":[500,300],"id":"741b39e6-d712-4b42-b55b-3d5de5f4c245"},{"name":"Save Promo Content","type":"n8n-nodes-base.code","parameters":{"mode":"runOnceForAllItems","jsCode":"const fs = require('fs');\nconst path = require('path');\nconst content = $json.message?.content || JSON.stringify($input.all(), null, 2);\nconst outDir = process.env.HOME + '/Desktop/OPENCLAW/projects/beats';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/promo-' + Date.now() + '.txt';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname, content: content.substring(0, 200) } }];"},"position":[700,300],"id":"6f27b09f-ac43-4631-93ee-f6729991fada","typeVersion":2},{"name":"Search Music Blogs","type":"n8n-nodes-base.httpRequest","parameters":{"url":"http://openclaw-searxng:8080/search","method":"GET","queryParameters":{"parameters":[{"name":"q","value":"music blog submit beats contact"},{"name":"format","value":"json"},{"name":"categories","value":"general"}]}},"position":[700,500],"id":"7070298d-5002-4727-beed-c415464fc5a7"},{"name":"Notify Complete","type":"n8n-nodes-base.noOp","parameters":{},"position":[900,400],"id":"4da619af-7bd5-421c-9be4-de320ae7f7fd"}],"connections":{"Schedule Trigger":{"main":[[{"node":"Find Latest Beat","type":"main","index":0}]]},"Find Latest Beat":{"main":[[{"node":"Generate Promotion Copy","type":"main","index":0},{"node":"Search Music Blogs","type":"main","index":0}]]},"Generate Promotion Copy":{"main":[[{"node":"Save Promo Content","type":"main","index":0}]]},"Save Promo Content":{"main":[[{"node":"Notify Complete","type":"main","index":0}]]}},"settings":null,"staticData":{"node:Schedule Trigger":{"recurrenceRules":[]}},"meta":null,"pinData":null,"versionId":"3b6d8e5a-57fe-4cc5-94b7-0dcae7e3f55e","activeVersionId":"3b6d8e5a-57fe-4cc5-94b7-0dcae7e3f55e","versionCounter":11,"triggerCount":1,"tags":[],"shared":[{"updatedAt":"2026-04-18T17:26:49.513Z","createdAt":"2026-04-18T17:26:49.513Z","role":"workflow:owner","workflowId":"xrh00e0s98misotS","projectId":"YnwnbHDKs47Iopq6","project":{"updatedAt":"2026-04-18T17:25:36.160Z","createdAt":"2026-04-18T17:19:40.968Z","id":"YnwnbHDKs47Iopq6","name":"Rylee Benson <admin@openclaw.local>","type":"personal","icon":null,"description":null,"creatorId":"5c0a0513-eaf0-4d66-a523-310ca3c49ba5"}}],"versionMetadata":{"name":null,"description":null}}
+{
+  "updatedAt": "2026-04-18T18:00:12.979Z",
+  "createdAt": "2026-04-18T17:26:49.513Z",
+  "id": "xrh00e0s98misotS",
+  "name": "Beat Promotion Pipeline",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "position": [
+        100,
+        300
+      ],
+      "id": "d076edde-d4db-428f-b7ea-23e26f76d42e"
+    },
+    {
+      "name": "Find Latest Beat",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('ls -t /instrumentals/*.mp3 /instrumentals/*.wav /instrumentals/*.aif 2>/dev/null | head -1').toString().trim();\n  return [{ json: { beatPath: output, beatName: require('path').basename(output) } }];\n} catch(e) {\n  return [{ json: { beatPath: '', beatName: 'No beats found', error: e.message } }];\n}"
+      },
+      "position": [
+        300,
+        300
+      ],
+      "id": "dc82c916-f50f-4ff1-84fb-69ec436de629",
+      "typeVersion": 2
+    },
+    {
+      "name": "Generate Promotion Copy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        300
+      ],
+      "id": "741b39e6-d712-4b42-b55b-3d5de5f4c245",
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:1234/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{$env.LM_STUDIO_API_KEY}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ \"model\": \"qwen/qwen3.5-9b\", \"max_tokens\": 2000, \"reasoning_effort\": \"none\", \"messages\": [ {\"role\": \"system\", \"content\": \"You are a music marketing agent. Generate a promotional post for a new beat. Include: hook, description, hashtags, YouTube description, Instagram caption. Be hype but authentic.\"}, {\"role\": \"user\", \"content\": \"Available beats: \" + ($json.beats || \"none found\") + \". Pick one and write social media promo copy.\"} ] }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      }
+    },
+    {
+      "name": "Save Promo Content",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\nconst content = ($json.choices && $json.choices[0] && $json.choices[0].message && $json.choices[0].message.content) || JSON.stringify($input.all(), null, 2);\nconst outDir = '/projects/beats';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/promo-' + Date.now() + '.txt';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname, content: content.substring(0, 200) } }];"
+      },
+      "position": [
+        700,
+        300
+      ],
+      "id": "6f27b09f-ac43-4631-93ee-f6729991fada",
+      "typeVersion": 2
+    },
+    {
+      "name": "Search Music Blogs",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "http://openclaw-searxng:8080/search",
+        "method": "GET",
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "q",
+              "value": "music blog submit beats contact"
+            },
+            {
+              "name": "format",
+              "value": "json"
+            },
+            {
+              "name": "categories",
+              "value": "general"
+            }
+          ]
+        }
+      },
+      "position": [
+        700,
+        500
+      ],
+      "id": "7070298d-5002-4727-beed-c415464fc5a7"
+    },
+    {
+      "name": "Notify Complete",
+      "type": "n8n-nodes-base.noOp",
+      "parameters": {},
+      "position": [
+        900,
+        400
+      ],
+      "id": "4da619af-7bd5-421c-9be4-de320ae7f7fd"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Find Latest Beat",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Latest Beat": {
+      "main": [
+        [
+          {
+            "node": "Generate Promotion Copy",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Search Music Blogs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Promotion Copy": {
+      "main": [
+        [
+          {
+            "node": "Save Promo Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Promo Content": {
+      "main": [
+        [
+          {
+            "node": "Notify Complete",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": null,
+  "staticData": {
+    "node:Schedule Trigger": {
+      "recurrenceRules": []
+    }
+  },
+  "meta": null,
+  "pinData": null,
+  "versionId": "3b6d8e5a-57fe-4cc5-94b7-0dcae7e3f55e",
+  "activeVersionId": "3b6d8e5a-57fe-4cc5-94b7-0dcae7e3f55e",
+  "versionCounter": 11,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-04-18T17:26:49.513Z",
+      "createdAt": "2026-04-18T17:26:49.513Z",
+      "role": "workflow:owner",
+      "workflowId": "xrh00e0s98misotS",
+      "projectId": "YnwnbHDKs47Iopq6",
+      "project": {
+        "updatedAt": "2026-04-18T17:25:36.160Z",
+        "createdAt": "2026-04-18T17:19:40.968Z",
+        "id": "YnwnbHDKs47Iopq6",
+        "name": "Rylee Benson <admin@openclaw.local>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "5c0a0513-eaf0-4d66-a523-310ca3c49ba5"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://stksteakhouse.com",
+  "timestamp": "2026-04-18T15:06:55.053807",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 1.52
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Homepage - STK Steakhouse",
+    "meta_description": "STK blends a modern steakhouse with a chic lounge, offering a unique vibe dining experience, offering delivery, catering, and private event spaces.",
+    "h1_tag": "award winning steaks, delicious cocktails and the ultimate vibe dining experience",
+    "images_total": 27,
+    "images_no_alt": 0,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "page_size_kb": 292.9
+  },
+  "issues": [],
+  "score": 100,
+  "max_score": 100,
+  "domain": "stksteakhouse.com",
+  "grade": "A"
+}

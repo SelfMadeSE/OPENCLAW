@@ -3,13 +3,13 @@
 ## Service URLs
 | Service | URL | Login |
 |---------|-----|-------|
-| Open WebUI (Chat) | http://localhost:3000 | admin@openclaw.local / OpenClaw2024! |
-| n8n (Workflows) | http://localhost:5678 | admin@openclaw.local / OpenClaw2024! |
+| Open WebUI (Chat) | http://localhost:3000 | See .env for credentials |
+| n8n (Workflows) | http://localhost:5678 | See .env for credentials |
 | Flowise (Flow Builder) | http://localhost:3001 | — |
 | SearXNG (Search) | http://localhost:8080 | — |
 | Qdrant (Vector DB) | http://localhost:6333 | — |
 | Pipelines | http://localhost:9099 | Key: 0p3n-w3bu! |
-| LM Studio | http://localhost:1234 | API Key: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47 |
+| LM Studio | http://localhost:1234 | API Key: YOUR_LM_STUDIO_API_KEY |
 | ComfyUI (when running) | http://localhost:8188 | — |
 
 ## Start / Stop

@@ -1,0 +1,76 @@
+{
+  "name": "OPENCLAW Agent Heartbeat",
+  "active": true,
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "hours", "hoursInterval": 1 }]
+        }
+      },
+      "position": [100, 300],
+      "id": "heartbeat-trigger"
+    },
+    {
+      "name": "Check LM Studio",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "parameters": {
+        "url": "http://host.docker.internal:1234/v1/models",
+        "method": "GET",
+        "options": { "timeout": 10000 }
+      },
+      "position": [300, 200],
+      "id": "heartbeat-lmstudio"
+    },
+    {
+      "name": "Check Qdrant",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "parameters": {
+        "url": "http://openclaw-qdrant:6333/collections",
+        "method": "GET",
+        "options": { "timeout": 10000 }
+      },
+      "position": [300, 400],
+      "id": "heartbeat-qdrant"
+    },
+    {
+      "name": "Check SearXNG",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "parameters": {
+        "url": "http://openclaw-searxng:8080/search?q=test&format=json",
+        "method": "GET",
+        "options": { "timeout": 10000 }
+      },
+      "position": [300, 600],
+      "id": "heartbeat-searxng"
+    },
+    {
+      "name": "Compile Health Report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst items = $input.all();\nconst report = {\n  ts: new Date().toISOString(),\n  event: 'heartbeat',\n  checks: {\n    lm_studio: items[0] ? 'ok' : 'down',\n    qdrant: items[1] ? 'ok' : 'down',\n    searxng: items[2] ? 'ok' : 'down'\n  },\n  healthy: true\n};\nreport.healthy = Object.values(report.checks).every(v => v === 'ok');\nconst logDir = '/outputs';\nfs.mkdirSync(logDir, { recursive: true });\nfs.appendFileSync(logDir + '/heartbeat.jsonl', JSON.stringify(report) + '\\n');\nreturn [{ json: report }];"
+      },
+      "position": [500, 400],
+      "id": "heartbeat-compile"
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [[
+        { "node": "Check LM Studio", "type": "main", "index": 0 },
+        { "node": "Check Qdrant", "type": "main", "index": 0 },
+        { "node": "Check SearXNG", "type": "main", "index": 0 }
+      ]]
+    },
+    "Check LM Studio": { "main": [[{ "node": "Compile Health Report", "type": "main", "index": 0 }]] },
+    "Check Qdrant": { "main": [[{ "node": "Compile Health Report", "type": "main", "index": 0 }]] },
+    "Check SearXNG": { "main": [[{ "node": "Compile Health Report", "type": "main", "index": 0 }]] }
+  }
+}

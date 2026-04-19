@@ -1,0 +1,32 @@
+{
+  "url": "https://www.brutodenver.com",
+  "timestamp": "2026-04-18T15:06:56.671961",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.47
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "BRUT\u00d8",
+    "meta_description": "BRUT\u00d8 offers the rare opportunity to witness each and every step in the culinary process up close. We encourage interaction at every moment and believe that food is meant to be unabashedly enjoyed, delighted in, and savored. Ask questions, share experiences, reminisce! Tradition gives way to innovation when passionate people seek to become a part of tradition itself.",
+    "h1_tag": null,
+    "images_total": 1,
+    "images_no_alt": 0,
+    "has_phone": false,
+    "has_email": false,
+    "social_links": [
+      "twitter"
+    ],
+    "page_size_kb": 16.4
+  },
+  "issues": [
+    "Missing or weak page title (hurts SEO)",
+    "No H1 tag \u2014 search engines can't determine page topic",
+    "No visible phone/email \u2014 customers can't easily contact you"
+  ],
+  "score": 65,
+  "max_score": 100,
+  "domain": "www.brutodenver.com",
+  "grade": "C"
+}

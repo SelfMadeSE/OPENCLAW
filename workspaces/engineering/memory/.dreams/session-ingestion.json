@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "files": {
+    "engineering:sessions/boot-2026-04-19_02-03-26-589-f8ad6f8f.jsonl": {
+      "mtimeMs": 1776576686588,
+      "size": 25952,
+      "contentHash": "c94d6d035587b36ddaf4059081611d720ec473cb6882bbb85b5684ec64087017",
+      "lineCount": 18,
+      "lastContentLine": 18
+    }
+  },
+  "seenMessages": {
+    "engineering:boot-2026-04-19_02-03-26-589-f8ad6f8f": [
+      "05811148e77fa41b904ed92bea7fc8aaf8022ca2",
+      "7bfe1f3800b9c63bd663031f750d23bc26db09c7",
+      "32f3a83e734b9712ed5c606d5479b29bc570e4b2",
+      "661eb2fbf1a48e3694618d656a17e1f4b9db6690",
+      "c3b7d99f026c692de9ec36c7f5ecc3da569cf811",
+      "0ac586436126819500f81f902177f36d8edc148a",
+      "cd6d0ea68af42077577f102f9fe3a1f77d9bbce9",
+      "6cae668da876e166c9053f4176487eadfac925e5",
+      "28b45ff13593a9ea6d58c5edad8539e71c9099f8",
+      "635ab7336afc722414a459f20092d8517c514b29",
+      "a896423175ed15d22aee0302904158ace0556261",
+      "22ffe9bee3f25d66fe9d7ab229def4711bd2f0e9",
+      "c93b1e565ebadd436294aec5543bb0e1d0911ee6",
+      "255efb01fe5e8ecce246e2d88a65f8679be46cce",
+      "e7ec4712b9e25055eb614f49fa6341308d4b734b",
+      "33974b12b2b8c8036905b5a84a38f9ebd1c6faf8",
+      "73b4f6e1df05c8f6746b089517447dee1974eba7",
+      "cbb1a5917a41d90feabe769b01938ea635585943"
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-19T09:00:00.372Z",
+  "entries": {
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Check",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Check",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Check",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.372Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.372Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    }
+  }
+}

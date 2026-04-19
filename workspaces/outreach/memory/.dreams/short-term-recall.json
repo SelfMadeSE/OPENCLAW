@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-19T09:00:00.359Z",
+  "entries": {
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Create an audience strategy document for OPENCLAW video content: \"Building an AI Society on a Single Mac\" Include: - 3 detailed viewer personas (demographics, motivations, objections) - Distribution channels with strategy per channel - Engagement plan (comments, community,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "user",
+        "create",
+        "audience",
+        "strategy",
+        "document",
+        "openclaw",
+        "video",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: (empty response)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "empty",
+        "response"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Create an audience strategy document for OPENCLAW video content: \"Building an AI Society on a Single Mac\" Include: - 3 detailed viewer personas (demographics, motivations, objections) - Distribution channels with strategy per channel - Engagement plan (comments, community,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "user",
+        "create",
+        "audience",
+        "strategy",
+        "document",
+        "openclaw",
+        "video",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: (empty response)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "assistant",
+        "empty",
+        "response"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Outreach Agent Boot You are the Outreach agent for OPENCLAW. On startup: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect resear",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Outreach Agent Boot You are the Outreach agent for OPENCLAW. On startup: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect resear",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: I need to perform my boot check as the Outreach agent. Let me follow the BOOT.md instructions: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect research 3. Check artifacts/ for pending outreach drafts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "assistant",
+        "need",
+        "perform",
+        "boot",
+        "check",
+        "the"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Outreach Agent Boot You are the Outreach agent for OPENCLAW. On startup: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect resear",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "boot.md",
+        "memory.md",
+        "user",
+        "you",
+        "running",
+        "boot",
+        "check",
+        "follow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-19T09:00:00.359Z",
+      "lastRecalledAt": "2026-04-19T09:00:00.359Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    }
+  }
+}

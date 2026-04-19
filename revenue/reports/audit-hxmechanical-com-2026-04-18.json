@@ -1,0 +1,35 @@
+{
+  "url": "https://hxmechanical.com",
+  "timestamp": "2026-04-18T15:06:46.661421",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.92
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Building Information Modeling",
+    "meta_description": null,
+    "h1_tag": null,
+    "images_total": 35,
+    "images_no_alt": 0,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube",
+      "tiktok"
+    ],
+    "page_size_kb": 287.9
+  },
+  "issues": [
+    "Missing or weak meta description (hurts search ranking)",
+    "No H1 tag \u2014 search engines can't determine page topic"
+  ],
+  "score": 80,
+  "max_score": 100,
+  "domain": "hxmechanical.com",
+  "grade": "B"
+}

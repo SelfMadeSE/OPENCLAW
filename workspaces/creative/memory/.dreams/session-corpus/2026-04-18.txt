@@ -1,0 +1,6 @@
+[creative/sessions/boot-2026-04-19_02-32-40-962-6920d3d0.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Ch
+[creative/sessions/boot-2026-04-19_02-32-40-962-6920d3d0.jsonl#L6] Assistant: NO_REPLY
+[creative/sessions/boot-2026-04-19_04-27-04-903-7e9d853d.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Ch
+[creative/sessions/boot-2026-04-19_04-27-04-903-7e9d853d.jsonl#L6] Assistant: NO_REPLY
+[creative/sessions/boot-2026-04-19_05-35-30-503-12cea01b.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Creative Agent Boot You are the Creative agent for OPENCLAW. On startup: 1. Read MEMORY.md for ongoing creative projects and direction 2. Read memory/ daily files for recent creative work 3. Ch
+[creative/sessions/boot-2026-04-19_05-35-30-503-12cea01b.jsonl#L6] Assistant: NO_REPLY

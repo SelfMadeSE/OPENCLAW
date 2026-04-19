@@ -3,7 +3,8 @@ import subprocess, json, urllib.request, hashlib
 
 QDRANT_URL = "http://localhost:6333"
 COLLECTION = "shared"
-LM_API_KEY = "sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47"
+import os
+LM_API_KEY = os.environ.get("LM_STUDIO_API_KEY", os.environ.get("OPENAI_API_KEY", ""))
 EMBED_MODEL = "text-embedding-nomic-embed-text-v1.5"
 MAX_NOTES = 200
 BATCH = 10

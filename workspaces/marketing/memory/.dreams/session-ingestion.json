@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "files": {
+    "marketing:sessions/54a6e0db-e399-43e5-bca3-adf62297d960.jsonl": {
+      "mtimeMs": 1776576862491,
+      "size": 42463,
+      "contentHash": "e3477b1848b7deef8fd13e76cd9e6da92db5913811cf74b1d0cb85584b691b7f",
+      "lineCount": 15,
+      "lastContentLine": 15
+    },
+    "marketing:sessions/boot-2026-04-19_02-31-10-927-34b3f4a7.jsonl": {
+      "mtimeMs": 1776565914163,
+      "size": 2956,
+      "contentHash": "47715ed816d5fc74a2b17e7838cfe6a8da85aa518be9bc93e9e042f4cecab118",
+      "lineCount": 2,
+      "lastContentLine": 2
+    }
+  },
+  "seenMessages": {
+    "marketing:54a6e0db-e399-43e5-bca3-adf62297d960": [
+      "81a3e2dc19ee3d211a206c1d03a2376f61cb7e26",
+      "25cafb58f68f00bba996962a68f7bcbdf2dec968",
+      "a6863fad07882e4c0a29546c65af3b40484d8192",
+      "d4795ae3b85506b15d711329c8063395704b3dcf",
+      "30542dd9f980f8d873f0055ab2c8e2c21ef671eb",
+      "156d26f74c2aa0066fd418c12bfa72cef9e81ed8",
+      "c210b8d0f0da9029e2a4e583d9aad672343eff6a",
+      "0a31fa2b5c45881e8d73c2c7337f2995c7f5e935",
+      "2eb611d8f77115157a890dc8b93405779b897c5f",
+      "f129c2351e2d1b182ae7b1e4e52df344edaa59d7",
+      "3cdc945028cb9a5a318ed2acdf4fa6aee33fc2b7",
+      "b2af98ce34f0e6d09bcd9ebba1ece1e58da9f87c",
+      "1d6949d07dbcda6d190f9437ac6d2594a60a3bac",
+      "f3ea779c25df4582c17395f3d8090228977acbc9",
+      "e5e8cb71fba03dc5ba338ff12d8898b3b415589b"
+    ],
+    "marketing:boot-2026-04-19_02-31-10-927-34b3f4a7": [
+      "6bb07c3a28377281e9264d1e244b68bcd5ca93a1",
+      "3a2df9b74177fb6425b5f1fa8d5961cfd37d0157"
+    ]
+  }
+}

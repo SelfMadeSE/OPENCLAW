@@ -12,7 +12,7 @@ import os
 
 WEBUI_URL = "http://localhost:3000"
 ADMIN_EMAIL = "admin@local"
-ADMIN_PASSWORD = "HtKc0jmGdOk0cmEE6mCR1UJ"
+ADMIN_PASSWORD = os.environ.get("WEBUI_ADMIN_PASSWORD", "changeme")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 AGENTS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "agents")
 

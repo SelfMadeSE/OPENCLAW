@@ -3,7 +3,7 @@ services:
   flowise:
     container_name: openclaw-flowise
     environment:
-      FLOWISE_PASSWORD: HtKc0jmGdOk0cmEE6mCR1UJ
+      FLOWISE_PASSWORD: YOUR_PASSWORD
       FLOWISE_USERNAME: admin@local
       PORT: "3000"
     extra_hosts:
@@ -31,12 +31,12 @@ services:
     environment:
       DB_POSTGRESDB_DATABASE: n8n
       DB_POSTGRESDB_HOST: postgres
-      DB_POSTGRESDB_PASSWORD: openclaw2024secure
+      DB_POSTGRESDB_PASSWORD: YOUR_POSTGRES_PASSWORD
       DB_POSTGRESDB_USER: openclaw
       DB_TYPE: postgresdb
       GENERIC_TIMEZONE: America/Denver
       N8N_AI_ENABLED: "true"
-      N8N_ENCRYPTION_KEY: openclaw_n8n_32char_secret_key!!
+      N8N_ENCRYPTION_KEY: YOUR_N8N_ENCRYPTION_KEY
       N8N_HOST: localhost
       N8N_PORT: "5678"
       N8N_PROTOCOL: http
@@ -87,8 +87,8 @@ services:
       ENABLE_SIGNUP: "False"
       OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
       OPENAI_API_BASE_URLS: http://host.docker.internal:1234/v1;http://openclaw-pipelines:9099
-      OPENAI_API_KEY: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
-      OPENAI_API_KEYS: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47;0p3n-w3bu!
+      OPENAI_API_KEY: YOUR_LM_STUDIO_API_KEY
+      OPENAI_API_KEYS: YOUR_LM_STUDIO_API_KEY;YOUR_WEBUI_KEY
       RAG_EMBEDDING_ENGINE: openai
       RAG_EMBEDDING_MODEL: text-embedding-nomic-embed-text-v1.5
       RAG_WEB_SEARCH_CONCURRENT_REQUESTS: "8"
@@ -97,7 +97,7 @@ services:
       SEARXNG_QUERY_URL: http://searxng:8080/search?q=<query>&format=json
       WEBUI_ADMIN_EMAIL: admin@local
       WEBUI_ADMIN_NAME: Rylee
-      WEBUI_ADMIN_PASSWORD: HtKc0jmGdOk0cmEE6mCR1UJ
+      WEBUI_ADMIN_PASSWORD: YOUR_PASSWORD
       WEBUI_URL: http://localhost:3000
     extra_hosts:
       - host.docker.internal=host-gateway
@@ -119,8 +119,8 @@ services:
     container_name: openclaw-pipelines
     environment:
       OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
-      OPENAI_API_KEY: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
-      PIPELINES_API_KEY: 0p3n-w3bu!
+      OPENAI_API_KEY: YOUR_LM_STUDIO_API_KEY
+      PIPELINES_API_KEY: YOUR_WEBUI_KEY
       PIPELINES_REQUIREMENTS_PATH: /app/pipelines/custom/requirements.txt
     extra_hosts:
       - host.docker.internal=host-gateway
@@ -146,7 +146,7 @@ services:
     container_name: openclaw-postgres
     environment:
       POSTGRES_DB: openclaw
-      POSTGRES_PASSWORD: openclaw2024secure
+      POSTGRES_PASSWORD: YOUR_POSTGRES_PASSWORD
       POSTGRES_USER: openclaw
     healthcheck:
       test:

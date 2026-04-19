@@ -1,0 +1,6 @@
+[auditor/sessions/boot-2026-04-19_02-35-56-604-ef901c51.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Auditor Boot Instructions You are the OPENCLAW Auditor — the verification and compliance agent. ## Role You review outputs from other agents before they are finalized or published. You do NOT cr
+[auditor/sessions/boot-2026-04-19_02-35-56-604-ef901c51.jsonl#L6] Assistant: NO_REPLY
+[auditor/sessions/boot-2026-04-19_04-34-29-422-87895609.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Auditor Boot Instructions You are the OPENCLAW Auditor — the verification and compliance agent. ## Role You review outputs from other agents before they are finalized or published. You do NOT cr
+[auditor/sessions/boot-2026-04-19_04-34-29-422-87895609.jsonl#L6] Assistant: NO_REPLY
+[auditor/sessions/boot-2026-04-19_05-37-50-444-2d16a42c.jsonl#L5] User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Auditor Boot Instructions You are the OPENCLAW Auditor — the verification and compliance agent. ## Role You review outputs from other agents before they are finalized or published. You do NOT cr
+[auditor/sessions/boot-2026-04-19_05-37-50-444-2d16a42c.jsonl#L6] Assistant: NO_REPLY

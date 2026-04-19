@@ -1,0 +1,41 @@
+```json
+{
+  "title": "{{ $json.beat_name }} - {{ $json.genre }} Beat ({{ $json.bpm }} BPM) [{{ $json.mood }}] Free/Exclusive Download",
+  "description": "Download the ultimate {{ $json.genre }} beat: {{ $json.beat_name }}! \n\n🔥 **Beat Specs:**\n🎹 Key: {{ $json.key }}\n⏱️ BPM: {{ $json.bpm }}\n😌 Mood: {{ $json.mood }}\n\nThis high-quality instrumental is perfect for your next rap, hip-hop, or R&B project. Whether you are looking for a gritty bassline or a melodic vibe, this beat fits perfectly.\n\n✅ **Purchase Options:**\n🔹 Free Download (Non-profit/Learning)\n🔹 Exclusive Lease (Radio/Streaming Ready)\n🔹 Full Ownership Transfer\n\n👉 Click 'Like' and Subscribe for more production tips and new beats!\n\n#{{ $json.genre }} #{{ $json.beat_name }} #BeatMaking",
+  "tags": [
+    "{{ $json.beat_name }}",
+    "{{ $json.genre }} beat",
+    "{{ $json.mood }} music",
+    "{{ $json.bpm }} BPM",
+    "{{ $json.key }} Key",
+    "hip hop beats for sale",
+    "rap instrumental 2024",
+    "exclusive beat download",
+    "{{ $json.genre }} producer",
+    "free beat to use"
+  ],
+  "chapters": [
+    {
+      "title": "Intro & Sound Design Breakdown",
+      "start_time": 0
+    },
+    {
+      "title": "Full Beat Loop ({{ $json.bpm }} BPM)",
+      "start_time": 15
+    },
+    {
+      "title": "Melody & Chord Progression",
+      "start_time": 45
+    },
+    {
+      "title": "Drum Breakdown (Kick/Snare/Hats)",
+      "start_time": 75
+    },
+    {
+      "title": "How to Use This Beat (Lease vs Free)",
+      "start_time": 120
+    }
+  ],
+  "thumbnail_text": "{{ $json.beat_name }} - {{ $json.genre }} ({{ $json.bpm }} BPM)"
+}
+```
