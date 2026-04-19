@@ -187,12 +187,12 @@ def run_validation():
             bus_module.ARCHIVE_FILE = tmp_bus_dir / "archive.json"
 
             bus = MessageBus()
-            msg = bus.send_message("orchestrator", "coder",
+            msg = bus.send_message("orchestrator", "engineering",
                 "Validation test message", priority="normal")
             assert msg["id"]
             assert msg["status"] == "pending"
 
-            fetched = bus.fetch_messages("coder")
+            fetched = bus.fetch_messages("engineering")
             assert any(m["id"] == msg["id"] for m in fetched)
 
             bus.acknowledge_message(msg["id"], result="test complete")
@@ -213,7 +213,7 @@ def run_validation():
         approval = ApprovalSystem()
 
         # Green tier should auto-approve
-        req = approval.request_approval("coder", "search_web")
+        req = approval.request_approval("engineering", "search_web")
         assert req["status"] == "approved"
         assert req["decided_by"] == "auto"
 

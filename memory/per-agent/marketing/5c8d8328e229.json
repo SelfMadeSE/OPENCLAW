@@ -1,0 +1,17 @@
+{
+  "id": "5c8d8328e229",
+  "content": "Completed strategy-brief for mission inaugural-001. Artifact: marketing-strategy.md (5214 chars). Validation: PASS",
+  "type": "long-term",
+  "agent": "marketing",
+  "tags": [
+    "mission",
+    "inaugural",
+    "strategy-brief"
+  ],
+  "meta": {
+    "mission_id": "inaugural-001",
+    "artifact": "marketing-strategy.md"
+  },
+  "created_at": "2026-04-19T14:55:48.851092+00:00",
+  "_qdrant_error": "HTTP Error 401: Unauthorized"
+}
