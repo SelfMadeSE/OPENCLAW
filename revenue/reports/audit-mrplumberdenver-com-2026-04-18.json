@@ -1,0 +1,30 @@
+{
+  "url": "https://mrplumberdenver.com",
+  "timestamp": "2026-04-18T15:06:30.633201",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.45
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Mr. Plumber",
+    "meta_description": null,
+    "h1_tag": "Professional Plumbing Service at a Reasonable Price",
+    "images_total": 2,
+    "images_no_alt": 1,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "twitter"
+    ],
+    "page_size_kb": 101.2
+  },
+  "issues": [
+    "Missing or weak meta description (hurts search ranking)"
+  ],
+  "score": 75,
+  "max_score": 100,
+  "domain": "mrplumberdenver.com",
+  "grade": "B"
+}

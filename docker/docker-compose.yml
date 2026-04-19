@@ -81,7 +81,7 @@ services:
       ENABLE_PERSISTENT_CONFIG: "False"
       ENABLE_SIGNUP: "False"
       WEBUI_ADMIN_EMAIL: ${WEBUI_ADMIN_EMAIL:-admin@local}
-      WEBUI_ADMIN_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-HtKc0jmGdOk0cmEE6mCR1UJ}
+      WEBUI_ADMIN_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-changeme}
       WEBUI_ADMIN_NAME: ${WEBUI_ADMIN_NAME:-Rylee}
       # LM Studio via host
       OPENAI_API_BASE_URL: http://host.docker.internal:1234/v1
@@ -181,12 +181,15 @@ services:
       N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:-openclaw_n8n_key_32chars_here!}
       # LLM (points to LM Studio)
       N8N_AI_ENABLED: "true"
+      # Allow Code nodes to use fs/child_process for file I/O
+      NODE_FUNCTION_ALLOW_BUILTIN: "fs,path,child_process"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
       - n8n-data:/home/node/.n8n
       - ../outputs:/outputs
       - ../projects:/projects
+      - ~/Instrumentals:/instrumentals:ro
     depends_on:
       postgres:
         condition: service_healthy
@@ -206,7 +209,7 @@ services:
     environment:
       PORT: 3000
       FLOWISE_USERNAME: ${WEBUI_ADMIN_EMAIL:-admin@local}
-      FLOWISE_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-HtKc0jmGdOk0cmEE6mCR1UJ}
+      FLOWISE_PASSWORD: ${WEBUI_ADMIN_PASSWORD:-changeme}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:

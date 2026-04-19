@@ -1,0 +1,30 @@
+{
+  "url": "https://royaltyplumbing.com",
+  "timestamp": "2026-04-18T15:06:29.698681",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.45
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Plumber Aurora CO | Centennial | Royalty Plumbing Aurora",
+    "meta_description": "No Hot Water? Gas Leak? Call Royalty Plumbing Aurora CO. Fast, Reliable Aurora Plumbing Repair, New Construction &amp; Remodeling Aurora, Centennial &amp; SE Denver",
+    "h1_tag": "<span style=\"color: #c11738; font-weight: 400;\">Plumbing Aurora CO</span>",
+    "images_total": 24,
+    "images_no_alt": 0,
+    "has_phone": true,
+    "has_email": false,
+    "social_links": [
+      "facebook",
+      "twitter",
+      "youtube"
+    ],
+    "page_size_kb": 77.0
+  },
+  "issues": [],
+  "score": 100,
+  "max_score": 100,
+  "domain": "royaltyplumbing.com",
+  "grade": "A"
+}

@@ -2,36 +2,39 @@
 
 ## Action Risk Classes
 
-### Green (autonomous)
+### 🟢 Green (autonomous)
 - Research and information gathering
 - Draft generation (text, code, metadata)
 - Reading files and memory
 - Internal analysis and planning
+- Writing to own workspace files
+- Web search via SearXNG
 
-### Yellow (log + proceed)
-- Writing files to workspace or outputs
+### 🟡 Yellow (log + proceed)
+- Writing files to workspace or outputs directories
 - Executing tested code in sandbox
 - Making API calls to read-only endpoints
-- Sending internal agent messages
+- Writing daily memory notes
+- Updating MEMORY.md
 
-### Orange (request confirmation)
+### 🟠 Orange (request confirmation)
 - Modifying infrastructure or config files
 - Installing packages or dependencies
-- Making API calls that write/create/update
-- Generating content for public posting
+- Making API calls that write/create/update external services
+- Browser automation actions
+- Running shell commands outside workspace
 
-### Red (escalate to Rylee)
-- Spending money or committing to prices
-- Sending emails or DMs to real people
-- Posting content publicly
-- Deleting files or data
-- Modifying security settings
-- Any action that cannot be undone
+### 🔴 Red (STOP — require human approval)
+- Spending money (any amount)
+- Contacting real clients or leads
+- Publishing content publicly (social media, YouTube, etc.)
+- Sending emails to real people
+- Making financial commitments or pricing agreements
+- Deleting production data
+- Modifying gateway configuration
 
-## Prohibited Actions
-- Never commit secrets to files
-- Never send credentials over unencrypted channels
-- Never impersonate Rylee without explicit approval
-- Never delete backups or version control history
-- Never bypass the approval system
-
+## Escalation
+- If unsure about risk level → treat as Orange
+- If action could embarrass Rylee publicly → treat as Red
+- If action is irreversible → treat as Red
+- Log all Orange+ actions to memory with reasoning

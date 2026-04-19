@@ -1,0 +1,31 @@
+{
+  "url": "https://southsideplumbing.com",
+  "timestamp": "2026-04-18T15:07:02.067592",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.67
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Southside Plumbing | Expert Local Plumbers In Highlands Ranch, CO",
+    "meta_description": "The Southside Plumbing professional plumbers serve Highlands Ranch, CO, &amp; the surrounding area. Contact us today for your home\u2019s plumbing needs!",
+    "h1_tag": "Expert Local Plumbers In Highlands Ranch, CO",
+    "images_total": 27,
+    "images_no_alt": 0,
+    "has_phone": true,
+    "has_email": false,
+    "social_links": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "youtube"
+    ],
+    "page_size_kb": 145.8
+  },
+  "issues": [],
+  "score": 100,
+  "max_score": 100,
+  "domain": "southsideplumbing.com",
+  "grade": "A"
+}

@@ -38,7 +38,7 @@ Configure: Settings → Ollama → http://localhost:11434
 ## n8n + LM Studio Connection
 In n8n, add OpenAI credential:
 - Base URL: http://host.docker.internal:1234/v1
-- API Key: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
+- API Key: YOUR_LM_STUDIO_API_KEY
 
 ## Example Daily Automation Flow
 1. Agent! exports beat from Logic Pro

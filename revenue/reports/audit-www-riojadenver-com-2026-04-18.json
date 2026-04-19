@@ -1,0 +1,32 @@
+{
+  "url": "https://www.riojadenver.com",
+  "timestamp": "2026-04-18T15:06:57.213807",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 1.91
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Mediterranean Restaurant | Mediterranean Denver | Rioja",
+    "meta_description": "Rioja, a Mediterranean restaurant in downtown Denver, featuring a menu inspired by Mediterranean ingredients, influenced by local and seasonal products - masterfully brought together by executive chef Jennifer Jasinski.|",
+    "h1_tag": "<b>reservations</b>",
+    "images_total": 21,
+    "images_no_alt": 2,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "facebook",
+      "instagram",
+      "twitter"
+    ],
+    "page_size_kb": 791.9
+  },
+  "issues": [
+    "Large page size (792KB) \u2014 may load slowly on mobile"
+  ],
+  "score": 95,
+  "max_score": 100,
+  "domain": "www.riojadenver.com",
+  "grade": "A"
+}

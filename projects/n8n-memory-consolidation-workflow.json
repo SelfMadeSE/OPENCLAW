@@ -1,0 +1,66 @@
+{
+  "name": "OPENCLAW Memory Consolidation",
+  "active": true,
+  "nodes": [
+    {
+      "name": "Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 3 * * *" }]
+        }
+      },
+      "position": [100, 300],
+      "id": "memcon-trigger"
+    },
+    {
+      "name": "Read Short-Term Memories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\nconst memDir = '/outputs/memory-short-term';\nif (!fs.existsSync(memDir)) {\n  return [{ json: { memories: [], count: 0 } }];\n}\nconst files = fs.readdirSync(memDir).filter(f => f.endsWith('.json'));\nconst memories = files.map(f => {\n  try { return JSON.parse(fs.readFileSync(path.join(memDir, f), 'utf-8')); }\n  catch(e) { return null; }\n}).filter(Boolean);\nreturn [{ json: { memories, count: memories.length } }];"
+      },
+      "position": [300, 300],
+      "id": "memcon-read"
+    },
+    {
+      "name": "Consolidate via LLM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:1234/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "Bearer {{$env.LM_STUDIO_API_KEY}}" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ \"model\": \"qwen/qwen3.5-9b\", \"max_tokens\": 2000, \"reasoning_effort\": \"none\", \"messages\": [ {\"role\": \"system\", \"content\": \"You are a memory consolidation agent. Review short-term memories and extract: 1) Key lessons learned 2) Important decisions made 3) Patterns to remember. Output as JSON with keys: lessons (array), decisions (array), patterns (array).\"}, {\"role\": \"user\", \"content\": \"Consolidate these memories: \" + JSON.stringify($json.memories)} ] }) }}",
+        "options": { "timeout": 120000 }
+      },
+      "position": [500, 300],
+      "id": "memcon-llm"
+    },
+    {
+      "name": "Save Consolidation",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const fs = require('fs');\nconst content = ($json.choices && $json.choices[0] && $json.choices[0].message && $json.choices[0].message.content) || '{}';\nconst outDir = '/outputs/memory-consolidated';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/consolidation-' + new Date().toISOString().split('T')[0] + '.json';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname } }];"
+      },
+      "position": [700, 300],
+      "id": "memcon-save"
+    }
+  ],
+  "connections": {
+    "Daily Trigger": { "main": [[{ "node": "Read Short-Term Memories", "type": "main", "index": 0 }]] },
+    "Read Short-Term Memories": { "main": [[{ "node": "Consolidate via LLM", "type": "main", "index": 0 }]] },
+    "Consolidate via LLM": { "main": [[{ "node": "Save Consolidation", "type": "main", "index": 0 }]] }
+  }
+}

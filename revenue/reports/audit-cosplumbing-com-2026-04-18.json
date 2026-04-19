@@ -1,0 +1,31 @@
+{
+  "url": "https://cosplumbing.com",
+  "timestamp": "2026-04-18T15:06:30.221180",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.34
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Experienced Plumbers for All Your Plumbing Needs",
+    "meta_description": "Looking for affordable plumbing services? COS Plumbing provides reliable and cost-effective solutions for all your plumbing problems. Our professional plumbers ensure a quick and hassle-free experience.",
+    "h1_tag": "Google 5 Star Rating\nColorado Springs Plumber",
+    "images_total": 8,
+    "images_no_alt": 5,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "facebook",
+      "twitter"
+    ],
+    "page_size_kb": 165.9
+  },
+  "issues": [
+    "5 images missing alt text (hurts SEO + accessibility)"
+  ],
+  "score": 90,
+  "max_score": 100,
+  "domain": "cosplumbing.com",
+  "grade": "A"
+}

@@ -22,12 +22,13 @@ import hashlib
 import json
 import time
 import urllib.request
+import os
 import sys
 
 QDRANT_URL = "http://localhost:6333"
 COLLECTION = "openclaw_core"
 LM_STUDIO_URL = "http://localhost:1234/v1"
-LM_STUDIO_KEY = "sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47"
+LM_STUDIO_KEY = os.environ.get("LM_STUDIO_API_KEY", "")
 EMBED_MODEL = "text-embedding-nomic-embed-text-v1.5"
 
 VALID_KINDS = ["note", "decision", "event", "reputation", "artifact", "apple_note", "dream"]

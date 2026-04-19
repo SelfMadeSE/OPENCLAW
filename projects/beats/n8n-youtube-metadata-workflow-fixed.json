@@ -70,42 +70,43 @@
     },
     {
       "name": "Generate YouTube Metadata",
-      "type": "@n8n/n8n-nodes-langchain.openAi",
-      "parameters": {
-        "resource": "text",
-        "operation": "message",
-        "modelId": "qwen/qwen3.5-9b",
-        "messages": {
-          "values": [
-            {
-              "role": "system",
-              "content": "You are a YouTube SEO expert for music producers. Generate optimized metadata that gets views and beat sales. Output as JSON with keys: title, description, tags (array of 10), chapters, thumbnail_text."
-            },
-            {
-              "role": "user",
-              "content": "Beat: {{ $json.beat_name }} | BPM: {{ $json.bpm }} | Genre: {{ $json.genre }} | Mood: {{ $json.mood }} | Key: {{ $json.key }}"
-            }
-          ]
-        }
-      },
-      "credentials": {
-        "openAiApi": {
-          "id": "G5bXR6z98Cf98Mu9",
-          "name": "LM Studio Local"
-        }
-      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
       "position": [
         500,
         300
       ],
-      "id": "e38a9337-be81-4fce-886d-8653bc1eaebe"
+      "id": "e38a9337-be81-4fce-886d-8653bc1eaebe",
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:1234/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{$env.LM_STUDIO_API_KEY}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ \"model\": \"qwen/qwen3.5-9b\", \"max_tokens\": 2000, \"reasoning_effort\": \"none\", \"messages\": [ {\"role\": \"system\", \"content\": \"You are a YouTube SEO expert for music producers. Generate optimized metadata that gets views and beat sales. Output as JSON with keys: title, description, tags (array of 10), chapters, thumbnail_text.\"}, {\"role\": \"user\", \"content\": \"Beat: \" + $json.beat_name + \" | BPM: \" + $json.bpm + \" | Genre: \" + $json.genre + \" | Mood: \" + $json.mood + \" | Key: \" + ($json.key || \"not specified\")} ] }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      }
     },
     {
       "name": "Save Metadata",
       "type": "n8n-nodes-base.code",
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "const fs = require('fs');\nconst content = $json.message?.content || JSON.stringify($input.all(), null, 2);\nconst outDir = process.env.HOME + '/Desktop/OPENCLAW/projects/beats';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/youtube-meta-' + Date.now() + '.json';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname } }];"
+        "jsCode": "const fs = require('fs');\nconst content = ($json.choices && $json.choices[0] && $json.choices[0].message && $json.choices[0].message.content) || JSON.stringify($input.all(), null, 2);\nconst outDir = '/projects/beats';\nfs.mkdirSync(outDir, { recursive: true });\nconst fname = outDir + '/youtube-meta-' + Date.now() + '.json';\nfs.writeFileSync(fname, content);\nreturn [{ json: { saved: fname } }];"
       },
       "position": [
         700,

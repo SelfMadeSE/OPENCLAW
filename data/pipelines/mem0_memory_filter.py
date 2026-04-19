@@ -7,6 +7,7 @@ license: MIT
 description: A filter that stores long-term memory using mem0 + Qdrant + LM Studio (OpenAI-compatible)
 """
 
+import os
 from typing import List, Optional
 from pydantic import BaseModel
 import json
@@ -32,7 +33,7 @@ class Pipeline:
         lmstudio_llm_temperature: float = 0.1
         lmstudio_llm_tokens: int = 4096
         lmstudio_base_url: str = "http://host.docker.internal:1234/v1"
-        lmstudio_api_key: str = "sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47"
+        lmstudio_api_key: str = os.environ.get("LM_STUDIO_API_KEY", "")
 
         # LM Studio embedding model
         lmstudio_embedder_model: str = "text-embedding-nomic-embed-text-v1.5"
