@@ -1,43 +1,66 @@
-# Secrets
+# ── Secrets ──────────────────────────────────────────────────
 .env
 *.env.local
 *.env.*.local
 
-# Docker volumes (managed by Docker, not git)
-# data/open-webui/  # empty placeholder ok
-# data/n8n/         # empty placeholder ok
-# data/qdrant/      # empty placeholder ok
-# data/flowise/     # empty placeholder ok
+# ── Docker volumes (managed by Docker) ──────────────────────
+data/open-webui/
+data/n8n/
+data/qdrant/
+data/flowise/
+data/searxng/
+data/pipelines/
 
-# Python
+# ── Python ──────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
 .venv/
 venv/
 
-# ComfyUI (large model files)
+# ── ComfyUI (large model files) ────────────────────────────
 tools/comfyui/ComfyUI/models/
 tools/comfyui/ComfyUI/output/
 tools/comfyui/ComfyUI/input/
 tools/comfyui/ComfyUI/.venv/
 tools/comfyui/ComfyUI/venv/
+tools/comfyui/ComfyUI/
 
-# macOS
+# ── Models (large files) ───────────────────────────────────
+models/
+*.safetensors
+*.gguf
+*.bin
+
+# ── macOS ───────────────────────────────────────────────────
 .DS_Store
 ._*
 
-# Node
+# ── Node ────────────────────────────────────────────────────
 node_modules/
+package-lock.json
 
-# Runtime artifacts (will be created by agents)
+# ── Runtime artifacts ───────────────────────────────────────
 artifacts/runs/
+workspaces/*/artifacts/
 
-# Logs (runtime generated)
+# ── Logs (runtime generated) ───────────────────────────────
 logs/*.jsonl
 
-# Baselines (generated snapshots, ok to commit selectively)
+# ── Databases ───────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
 
-# Copilot session state
+# ── Message bus runtime state ───────────────────────────────
+system/message_bus/queue.json
+system/message_bus/archive.json
+system/scheduler/state.json
+system/scheduler/locks/
+system/approval/requests.json
+
+# ── Revenue runtime data ────────────────────────────────────
+revenue/attempts.json
+
+# ── Copilot session state ───────────────────────────────────
 .copilot/
-tools/comfyui/ComfyUI/

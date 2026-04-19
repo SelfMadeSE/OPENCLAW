@@ -12,7 +12,7 @@ Multi-agent: Planner (decides strategy) + Navigator (executes on page).
 ## Configure LM Studio
 In Nanobrowser settings:
 - API Base URL: http://localhost:1234/v1
-- API Key: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
+- API Key: YOUR_LM_STUDIO_API_KEY
 - Planner Model: qwen3.5-27b-claude-4.6-opus-reasoning-distilled
 - Navigator Model: qwen/qwen3.5-9b
 

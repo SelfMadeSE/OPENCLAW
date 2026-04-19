@@ -1,0 +1,13 @@
+Hi {{ $json.client_name }},
+
+I've reviewed your project to develop a [[${{ $json.job_title }}]] with a budget of [[${{ $json.budget }}]], and I'm confident I can deliver the specific visual impact you need. While many designers focus solely on aesthetics, my approach blends high-fidelity web design with custom 3D animation to create immersive storytelling that retains visitors.
+
+For this role, I will craft a responsive, performance-optimized website where 3D elements aren't just decorations—they are functional tools that guide user behavior and elevate your brand narrative. Whether you need interactive product visualizations or dynamic scene transitions, I ensure every frame serves a strategic purpose within your content strategy.
+
+My workflow involves tight collaboration to align the technical constraints of web performance with the creative freedom of 3D art. I won't just build a site; I'll engineer an experience that feels seamless and innovative from the first scroll.
+
+Are you available for a brief call this week to discuss how we can integrate these unique animations into your timeline?
+
+Best regards,
+
+Rylee

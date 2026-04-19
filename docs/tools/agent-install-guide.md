@@ -21,7 +21,7 @@ Controls ANY macOS app using natural language + your local LM Studio models.
 In Agent! settings:
 - Provider: LM Studio (or "OpenAI Compatible")
 - Base URL: http://localhost:1234/v1
-- API Key: sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47
+- API Key: YOUR_LM_STUDIO_API_KEY
 - Model: qwen3.5-27b-claude-4.6-opus-reasoning-distilled (for complex tasks)
   OR: qwen/qwen3.5-9b (for speed)
 

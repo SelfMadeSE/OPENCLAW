@@ -6,6 +6,7 @@ Run: python3 ~/Desktop/OPENCLAW/scripts/import-notes.py
 import subprocess
 import json
 import sys
+import os
 import urllib.request
 import urllib.error
 import hashlib
@@ -14,7 +15,7 @@ from datetime import datetime
 QDRANT_URL = "http://localhost:6333"
 COLLECTION = "shared"
 LM_STUDIO_URL = "http://localhost:1234"
-LM_API_KEY = "sk-lm-lTx6H171:rNxT8R8M7ptHEyiQUU47"
+LM_API_KEY = os.environ.get("LM_STUDIO_API_KEY", os.environ.get("OPENAI_API_KEY", ""))
 EMBED_MODEL = "text-embedding-nomic-embed-text-v1.5"
 
 def get_apple_notes():

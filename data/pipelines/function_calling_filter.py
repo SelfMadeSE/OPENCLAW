@@ -1,3 +1,5 @@
+import ast
+import operator
 import os
 import requests
 from typing import Literal, List, Optional
@@ -5,6 +7,41 @@ from datetime import datetime
 
 
 from blueprints.function_calling_blueprint import Pipeline as FunctionCallingBlueprint
+
+SAFE_OPS = {
+    ast.Add: operator.add,
+    ast.Sub: operator.sub,
+    ast.Mult: operator.mul,
+    ast.Div: operator.truediv,
+    ast.Pow: operator.pow,
+    ast.USub: operator.neg,
+    ast.UAdd: operator.pos,
+}
+
+
+def safe_eval(expr):
+    """Safely evaluate a math expression."""
+    tree = ast.parse(expr, mode='eval')
+    def _eval(node):
+        if isinstance(node, ast.Expression):
+            return _eval(node.body)
+        elif isinstance(node, ast.Constant):
+            if isinstance(node.value, (int, float)):
+                return node.value
+            raise ValueError(f"Unsupported constant: {node.value}")
+        elif isinstance(node, ast.BinOp):
+            op_type = type(node.op)
+            if op_type not in SAFE_OPS:
+                raise ValueError(f"Unsupported operation: {op_type.__name__}")
+            return SAFE_OPS[op_type](_eval(node.left), _eval(node.right))
+        elif isinstance(node, ast.UnaryOp):
+            op_type = type(node.op)
+            if op_type not in SAFE_OPS:
+                raise ValueError(f"Unsupported operation: {op_type.__name__}")
+            return SAFE_OPS[op_type](_eval(node.operand))
+        else:
+            raise ValueError(f"Unsupported expression: {type(node).__name__}")
+    return _eval(tree)
 
 
 class Pipeline(FunctionCallingBlueprint):
@@ -73,10 +110,8 @@ class Pipeline(FunctionCallingBlueprint):
             :param equation: The equation to calculate.
             """
 
-            # Avoid using eval in production code
-            # https://nedbatchelder.com/blog/201206/eval_really_is_dangerous.html
             try:
-                result = eval(equation)
+                result = safe_eval(equation)
                 return f"{equation} = {result}"
             except Exception as e:
                 print(e)

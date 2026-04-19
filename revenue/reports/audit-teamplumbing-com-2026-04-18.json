@@ -1,0 +1,30 @@
+{
+  "url": "https://teamplumbing.com",
+  "timestamp": "2026-04-18T15:06:47.666732",
+  "checks": {
+    "connectivity": {
+      "status": 200,
+      "load_time_s": 0.69
+    },
+    "https": true,
+    "mobile_viewport": true,
+    "title": "Team Plumbing | Local Plumbers in Colorado Springs",
+    "meta_description": "Team Plumbing offers more than plumbing in Colorado Springs. We work with frozen pipes, garbage disposals, gas lines, radiant heat, and more!",
+    "h1_tag": "Local Plumbing Experts in Colorado Springs",
+    "images_total": 34,
+    "images_no_alt": 0,
+    "has_phone": true,
+    "has_email": true,
+    "social_links": [
+      "facebook",
+      "twitter",
+      "linkedin"
+    ],
+    "page_size_kb": 155.0
+  },
+  "issues": [],
+  "score": 100,
+  "max_score": 100,
+  "domain": "teamplumbing.com",
+  "grade": "A"
+}
