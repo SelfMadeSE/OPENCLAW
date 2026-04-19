@@ -6,10 +6,12 @@ description: Tools for OPENCLAW agents to interact with the system layer — mes
 """
 
 import json
+import os
 import urllib.request
 from typing import Optional
 
-API_BASE = "http://host.docker.internal:18800"
+API_BASE = os.environ.get("OPENCLAW_API_BASE", "http://host.docker.internal:18800")
+API_TOKEN = os.environ.get("OPENCLAW_API_TOKEN", "")
 
 
 class Tools:
@@ -31,6 +33,9 @@ class Tools:
                 url, data=json.dumps(data or {}).encode(), method=method
             )
             req.add_header("Content-Type", "application/json")
+
+        if API_TOKEN:
+            req.add_header("Authorization", f"Bearer {API_TOKEN}")
 
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
