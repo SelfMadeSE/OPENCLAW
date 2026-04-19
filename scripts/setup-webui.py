@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auto-configure Open WebUI — creates all 6 specialized agents
+Auto-configure Open WebUI — registers OPENCLAW tools and creates all agents with tool bindings.
 Run after Open WebUI is started: python3 scripts/setup-webui.py
 """
 import urllib.request
@@ -11,10 +11,15 @@ import sys
 import os
 
 WEBUI_URL = "http://localhost:3000"
-ADMIN_EMAIL = "admin@local"
-ADMIN_PASSWORD = os.environ.get("WEBUI_ADMIN_PASSWORD", "changeme")
+ADMIN_EMAIL = os.environ.get("WEBUI_ADMIN_EMAIL", "admin@local")
+ADMIN_PASSWORD = os.environ.get("WEBUI_ADMIN_PASSWORD", "")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-AGENTS_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "agents")
+BASE_DIR = os.path.dirname(SCRIPT_DIR)
+AGENTS_DIR = os.path.join(BASE_DIR, "agents")
+TOOLS_DIR = os.path.join(BASE_DIR, "tools")
+
+TOOL_ID = "openclaw_tools"
+
 
 def api(path, method="GET", data=None, token=None):
     url = f"{WEBUI_URL}{path}"
@@ -29,6 +34,7 @@ def api(path, method="GET", data=None, token=None):
     except urllib.error.HTTPError as e:
         return {"error": e.read().decode()}
 
+
 def wait_for_webui():
     print("⏳ Waiting for Open WebUI...", end="", flush=True)
     for _ in range(60):
@@ -36,13 +42,17 @@ def wait_for_webui():
             urllib.request.urlopen(f"{WEBUI_URL}/health", timeout=3)
             print(" ✅")
             return True
-        except:
+        except Exception:
             print(".", end="", flush=True)
             time.sleep(3)
     print(" ❌ Timeout")
     return False
 
+
 def get_token():
+    if not ADMIN_PASSWORD:
+        print("  ❌ WEBUI_ADMIN_PASSWORD not set. Export it or set in .env")
+        return None
     result = api("/api/v1/auths/signin", "POST", {
         "email": ADMIN_EMAIL, "password": ADMIN_PASSWORD
     })
@@ -51,7 +61,7 @@ def get_token():
         return result["token"]
     # Try signup first (fresh install)
     result = api("/api/v1/auths/signup", "POST", {
-        "name": "Rylee", "email": ADMIN_EMAIL, "password": ADMIN_PASSWORD
+        "name": "Admin", "email": ADMIN_EMAIL, "password": ADMIN_PASSWORD
     })
     if "token" in result:
         print(f"  ✅ Created admin account + authenticated")
@@ -59,12 +69,12 @@ def get_token():
     print(f"  ❌ Auth failed: {result}")
     return None
 
+
 def read_prompt(agent_name):
     path = os.path.join(AGENTS_DIR, agent_name, "system-prompt.md")
     if os.path.exists(path):
         with open(path) as f:
             content = f.read()
-        # Extract system prompt section (after the header metadata)
         lines = content.split("\n")
         in_instructions = False
         prompt_lines = []
@@ -76,6 +86,43 @@ def read_prompt(agent_name):
                 prompt_lines.append(line)
         return "\n".join(prompt_lines).strip() if prompt_lines else content
     return ""
+
+
+def register_tools(token):
+    """Register openclaw_tools.py as a Tool in Open WebUI."""
+    print("\n🔧 Registering OPENCLAW tools...")
+    tools_path = os.path.join(TOOLS_DIR, "openclaw_tools.py")
+    if not os.path.exists(tools_path):
+        print(f"  ❌ Tools file not found: {tools_path}")
+        return False
+
+    with open(tools_path) as f:
+        tool_source = f.read()
+
+    payload = {
+        "id": TOOL_ID,
+        "name": "OPENCLAW System Tools",
+        "content": tool_source,
+        "meta": {
+            "description": "Message bus, memory, approval, task contract, and revenue tools for OPENCLAW agents",
+        },
+    }
+
+    # Try create first, then update if exists
+    result = api("/api/v1/tools/create", "POST", payload, token)
+    if "id" in result:
+        print(f"  ✅ Tools registered: {TOOL_ID}")
+        return True
+
+    # Tool may already exist — try update
+    result = api(f"/api/v1/tools/id/{TOOL_ID}/update", "POST", payload, token)
+    if "id" in result:
+        print(f"  ✅ Tools updated: {TOOL_ID}")
+        return True
+
+    print(f"  ⚠️  Tool registration: {result.get('error', result)}")
+    return False
+
 
 AGENTS = [
     {
@@ -91,7 +138,7 @@ AGENTS = [
         "id": "openclaw-coder",
         "name": "💻 Coder",
         "base_model_id": "qwen/qwen3.5-9b",
-        "folder": "coder",
+        "folder": "engineering",
         "description": "Python automation, API integrations, macOS scripting, Docker, web scraping, Blender bpy",
         "tags": ["coding", "automation", "python"],
     },
@@ -99,7 +146,7 @@ AGENTS = [
         "id": "openclaw-marketer",
         "name": "📢 Marketer",
         "base_model_id": "qwen/qwen3.5-9b",
-        "folder": "marketer",
+        "folder": "marketing",
         "description": "Social media copy, email campaigns, YouTube metadata, SEO, brand voice",
         "tags": ["marketing", "copywriting", "social-media"],
     },
@@ -129,8 +176,9 @@ AGENTS = [
     },
 ]
 
+
 def create_agents(token):
-    print("\n🤖 Creating agents in Open WebUI...")
+    print("\n🤖 Creating agents in Open WebUI (with tool bindings)...")
     for agent in AGENTS:
         system_prompt = read_prompt(agent["folder"])
         payload = {
@@ -141,11 +189,12 @@ def create_agents(token):
                 "description": agent["description"],
                 "tags": [{"name": t} for t in agent.get("tags", [])],
                 "profile_image_url": agent.get("profile_image_url", ""),
+                "toolIds": [TOOL_ID],
                 "capabilities": {
                     "vision": agent["base_model_id"] == "google/gemma-4-e4b",
                     "web_search": True,
                     "code_execution": True,
-                }
+                },
             },
             "params": {
                 "system": system_prompt,
@@ -155,7 +204,7 @@ def create_agents(token):
         }
         result = api("/api/v1/models/create", "POST", payload, token)
         if "id" in result or result.get("detail") == "Model already exists.":
-            print(f"  ✅ {agent['name']}")
+            print(f"  ✅ {agent['name']} (tools: [{TOOL_ID}])")
         else:
             print(f"  ⚠️  {agent['name']}: {result.get('detail', result)}")
             # Try update instead
@@ -163,14 +212,9 @@ def create_agents(token):
             if "id" in result2:
                 print(f"     Updated existing model")
 
-def configure_settings(token):
-    print("\n⚙️  Configuring Open WebUI settings...")
-    # Enable RAG web search
-    settings = api("/api/v1/configs/export", "GET", token=token)
-    print(f"  ✅ Settings accessible")
 
 def main():
-    print("🦅 OpenClaw — Open WebUI Auto-Configuration")
+    print("🦅 OPENCLAW — Open WebUI Auto-Configuration")
     print("=" * 50)
 
     if not wait_for_webui():
@@ -180,20 +224,36 @@ def main():
     print("\n🔐 Authenticating...")
     token = get_token()
     if not token:
-        print("Auth failed. Check admin credentials in .env")
+        print("Auth failed. Set WEBUI_ADMIN_PASSWORD env var or check .env")
         sys.exit(1)
+
+    tools_ok = register_tools(token)
+    if not tools_ok:
+        print("\n⚠️  Tools registration failed. Agents will be created without system tools.")
+        print("   Fix the issue and re-run this script.")
 
     create_agents(token)
 
     print("\n" + "=" * 50)
     print("✅ Open WebUI configured!")
+    print("\nWhat's wired:")
+    print(f"  • Tool '{TOOL_ID}' registered with all system functions")
+    print("  • All agents created with tool bindings")
+    print("\nAgents can now call:")
+    print("  • send_message_to_agent() — message bus")
+    print("  • fetch_my_messages()     — inbox check")
+    print("  • write_memory()          — persist knowledge")
+    print("  • search_memory()         — recall knowledge")
+    print("  • request_approval()      — approval system")
+    print("  • complete_task()         — task contract")
+    print("  • log_revenue_attempt()   — revenue tracking")
+    print("  • get_system_health()     — system status")
     print("\nNext steps:")
     print("  1. Open http://localhost:3000")
     print("  2. Each agent appears in the model selector")
-    print("  3. Connect Pipelines: Settings > Connections")
-    print("     URL: http://localhost:9099  Key: 0p3n-w3bu!")
-    print("  4. Enable Web Search per model in model settings")
+    print("  3. Ensure API server is running on :18800")
     print("=" * 50)
+
 
 if __name__ == "__main__":
     main()
