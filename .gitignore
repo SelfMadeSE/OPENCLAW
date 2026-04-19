@@ -64,3 +64,5 @@ revenue/attempts.json
 
 # ── Copilot session state ───────────────────────────────────
 .copilot/
+produce_deliverables.py
+*.lock

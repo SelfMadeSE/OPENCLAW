@@ -48,7 +48,7 @@ QUEUE_FILE = BUS_DIR / "queue.json"
 ARCHIVE_FILE = BUS_DIR / "archive.json"
 LOGS_DIR = BASE_DIR / "logs"
 
-AGENTS = ["orchestrator", "coder", "marketer", "creative", "outreach", "media"]
+AGENTS = ["orchestrator", "engineering", "marketing", "creative", "outreach", "media", "auditor"]
 
 MAX_MESSAGES_PER_HOUR = 20
 COOLDOWN_SECONDS = 30
