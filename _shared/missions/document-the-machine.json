@@ -1,0 +1,16 @@
+{
+  "template": "document-the-machine",
+  "version": 1,
+  "description": "Produce a truthful self-documentation of the current OPENCLAW system state.",
+  "default_lead": "orchestrator",
+  "default_sub_agents": ["engineering", "marketing", "creative", "auditor"],
+  "risk_envelope": "green",
+  "expected_artifacts": [
+    {"path": "artifacts/system-snapshot.md",  "min_bytes": 800, "owner": "engineering"},
+    {"path": "artifacts/narrative.md",        "min_bytes": 800, "owner": "creative"},
+    {"path": "artifacts/marketing-hook.md",   "min_bytes": 500, "owner": "marketing"},
+    {"path": "artifacts/distribution-plan.md","min_bytes": 400, "owner": "media"},
+    {"path": "audit.md",                      "min_bytes": 400, "owner": "auditor"}
+  ],
+  "scoring_schema": "default-v1"
+}

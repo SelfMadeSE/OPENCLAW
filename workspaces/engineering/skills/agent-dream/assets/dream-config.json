@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering",
+  "memoryDir": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/memory",
+  "dreamsDir": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/memory/dreams",
+  "dreamLock": null,
+  "identityFiles": {
+    "MEMORY.md": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/MEMORY.md",
+    "SOUL.md": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/SOUL.md",
+    "IDENTITY.md": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/IDENTITY.md",
+    "USER.md": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/USER.md"
+  },
+  "sessionsPath": "/Users/ryleebenson/.openclaw/agents/auditor/sessions",
+  "agentId": "auditor",
+  "memoryIndexFile": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/MEMORY.md",
+  "learnFile": null,
+  "allowMemoryRewrite": null,
+  "createdAt": "2026-04-19T21:04:17.688Z"
+}

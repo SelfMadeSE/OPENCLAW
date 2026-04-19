@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "description": "Rolling aggregate standings rebuilt nightly by auditor cron.",
+  "agents": {
+    "orchestrator": {"total": 0, "by_class": {}, "last_updated": null},
+    "engineering":  {"total": 0, "by_class": {}, "last_updated": null},
+    "marketing":    {"total": 0, "by_class": {}, "last_updated": null},
+    "outreach":     {"total": 0, "by_class": {}, "last_updated": null},
+    "creative":     {"total": 0, "by_class": {}, "last_updated": null},
+    "media":        {"total": 0, "by_class": {}, "last_updated": null},
+    "auditor":      {"total": 0, "by_class": {}, "last_updated": null}
+  }
+}

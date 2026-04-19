@@ -1,0 +1,17 @@
+{
+  "template": "revenue-sprint",
+  "version": 1,
+  "description": "One end-to-end outbound attempt: research → audit → draft → approve → send → log.",
+  "default_lead": "outreach",
+  "default_sub_agents": ["marketing", "auditor"],
+  "risk_envelope": "orange",
+  "approval_required_before": "send",
+  "expected_artifacts": [
+    {"path": "artifacts/prospect-dossier.md",  "min_bytes": 500, "owner": "outreach"},
+    {"path": "artifacts/audit-findings.md",    "min_bytes": 300, "owner": "auditor"},
+    {"path": "artifacts/outreach-draft.md",    "min_bytes": 400, "owner": "outreach"},
+    {"path": "artifacts/approval-request.md",  "min_bytes": 200, "owner": "outreach"},
+    {"path": "artifacts/attempt-log.json",     "min_bytes": 100, "owner": "outreach"}
+  ],
+  "scoring_schema": "default-v1"
+}
