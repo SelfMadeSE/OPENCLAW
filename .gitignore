@@ -98,3 +98,6 @@ credentials.md
 # ── Agent dream/memory runtime files (contain ephemeral session data) ──
 **/.dreams/
 **/memory/session-corpus/
+
+# ── Short-term runtime memory ──────────────────────────────────────────────
+memory/short-term/
