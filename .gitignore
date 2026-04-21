@@ -94,3 +94,7 @@ run/*.pid
 /.secrets/
 credentials.md
 **/creds/
+
+# ── Agent dream/memory runtime files (contain ephemeral session data) ──
+**/.dreams/
+**/memory/session-corpus/

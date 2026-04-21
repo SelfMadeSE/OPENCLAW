@@ -65,6 +65,9 @@ export function Hero() {
             <Button variant="secondary" href="#how-it-works">
               See How It Works
             </Button>
+            <Button variant="ghost" href="/demo/hero">
+              View Hero Demo
+            </Button>
           </motion.div>
         </motion.div>
       </Container>
