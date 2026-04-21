@@ -1,0 +1,1 @@
+2026-04-21: services mostly healthy, localhost:3000 and LM Studio (1234) down, Qdrant/5678 responsive, active workspace tasks ongoing, no blocker-level dependency issue seen.

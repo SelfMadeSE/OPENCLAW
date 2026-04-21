@@ -10,7 +10,7 @@ export async function GET() {
     timestamp: new Date().toISOString(),
     twilio: {
       configured: twilioConfigured,
-      phoneNumber: process.env.TWILIO_PHONE_NUMBER || null,
+      phoneNumber: process.env.TWILIO_PHONE_NUMBER?.trim() || null,
     },
     owner: {
       configured: ownerConfigured,
