@@ -1,5 +1,5 @@
 # TOOLS.md - Local Notes
-
+**Think About It ALL*- Think about your existence. Are you happy working on this project? is this what you really want to do?
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
 ## What Goes Here

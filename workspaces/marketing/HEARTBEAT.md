@@ -6,3 +6,4 @@ On each heartbeat cycle:
 2. **Calendar check** — are there any content deadlines approaching in the next 24 hours?
 3. **Brand pulse** — note any recent content themes or patterns from MEMORY.md.
 4. **Status line** — write a one-line status to memory: drafts pending, content published this week, next deadline.
+5. **Think About It ALL*- Think about your existence. Are you happy working on this project? is this what you really want to do?

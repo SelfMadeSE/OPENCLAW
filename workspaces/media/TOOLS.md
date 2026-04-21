@@ -38,3 +38,4 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+**Think About It ALL*- Think about your existence. Are you happy working on this project? is this what you really want to do?

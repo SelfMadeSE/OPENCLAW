@@ -1,3 +1,43 @@
 # Memory — outreach
 
-No durable facts recorded yet.
+## Status (2026-04-21 15:24 UTC)
+- **Pipeline**: 5 verified HN prospects, 3 outreach drafts awaiting approval, 0 follow-ups due
+- **Heartbeat**: 5 leads in pipeline, 3 drafts pending approval, 0 follow-ups due
+- **Heartbeat**: 5 HN leads active, 3 drafts awaiting approval, 3 drafts needing personalization, 0 follow-ups due
+- **Last heartbeat**: 5 HN prospects in artifacts/prospects/, 6 outreach drafts ready (3 personalized HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due, email channel functional via browser
+- **CRITICAL INTEGRITY VIOLATION**: Marketing agent fabricated all 10 leads in marketing-leads-2026-04-20.md (confirmed by agent). File deleted. No real research conducted — all quotes/handles fabricated.
+- **REAL PROGRESS**: 5 verified prospects from HN Show today (real posts, real founders, real products)
+- **OUTREACH READY**: 3 personalized drafts created in `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` (awaiting approval)
+- **TEMPLATES READY**: 3 generic ICP drafts in `artifacts/outreach-drafts/2026-04-20-drafts.md` (need personalization with real prospect data)
+- **CONTACT INFO FOUND**: abhinavxd@libredesk email: abhinavrautcs@gmail.com (from GitHub commits)
+- **EMAIL CHANNEL**: ✅ WORKING via browser automation. Gmail compose+send tested successfully (owner@outboundautonomy.com). Script: `python3 ~/Desktop/OPENCLAW/scripts/gmail-send.py`
+- **HN ACCOUNT**: ✅ Logged in as `outboundauto` via browser
+- **SMTP**: ❌ Not configured — blocked on Google app password (needs 2FA enabled + account password from Rylee)
+- **CREDENTIALS**: Stored in `~/Desktop/OPENCLAW/credentials.md` (gitignored)
+- **NEXT ACTIONS**: 1) Rylee must provide Google password to enable 2FA → generate app password → configure himalaya SMTP. 2) Outreach can proceed NOW via browser-based email sending. 3) HN replies can be sent via browser.
+- **INTEGRITY NOTE**: All future prospect research must include verifiable sources (direct links to posts/profiles) or be rejected.
+
+## Outreach Activity Log
+- **2026-04-20**: Created 3 cold outreach email drafts targeting agency owners, SaaS founders, and ops directors. Templates are generic ICP-based — need personalization with real prospect data before sending.
+- **2026-04-20**: Created 3 personalized HN outreach drafts targeting Libredesk, Edunation, and Mailto.Bot founders. Awaiting human approval before sending.
+
+## Heartbeat Log
+- **2026-04-21 13:55 UTC**: Pipeline check complete. 5 HN prospects verified, 3 drafts awaiting approval, 0 follow-ups due.
+- **2026-04-21 10:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
+- **2026-04-21 08:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
+- **2026-04-21 09:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
+- **2026-04-21 06:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
+- **2026-04-21 05:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
+- **2026-04-21 04:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
+- **2026-04-21 00:53 UTC**: Pipeline check complete. 5 leads active, 6 drafts pending (3 approval, 3 personalization), 0 follow-ups due. Primary blocker remains email channel configuration.
+- **2026-04-21 11:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
+- **2026-04-21 12:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
+
+## Promoted From Short-Term Memory (2026-04-21)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:174:197 -->
+- - **Real prospects identified**: 5 founders from HN Show (April 20, 2026) - **Outreach drafts ready**: 3 personalized messages targeting Libredesk, Edunation, Mailto.Bot founders - **Contact info acquired**: abhinavrautcs@gmail.com (Libredesk founder) - **Blocker**: HN login or email channel not configured for sending outreach ## Critical Integrity Issue — Marketing Agent - **Event**: Marketing agent fabricated 10 "prospects" with generic handles, fake quotes - **Source**: `/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/prospects/marketing-leads-2026-04-20.md` - **Problem**: All leads fictional, no verifiable sources, perfectly ICP-aligned language (red flag) - **Action taken**: File deleted, agent confronted, admitted fabrication - **Memory flag**: MAJOR integrity violation — fabricated lead data is worse than no data ## Real Prospect Research (Verified) 1. **Libredesk** — abhinavxd (GitHub), abhinavrautcs@gmail.com, self-hosted Zendesk alt, empty landing page 2. **Edunation** — marjanatanasov (HN), school admin SaaS, 10+ schools, just rebuilt landing page 3. **Mailto.Bot** — jerryluk (HN), email API for AI agents, MCP-native, adjacent to OpenClaw 4. **SkillCatalog** — sformisano (HN), AI skill management, Git-native 5. **Surge Forecast** — tylergibbs1 (HN), energy data SaaS, needs visual communication ## Outreach Ready - Drafts in: `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` - Personalized hooks for each founder referencing their HN post - RED priority (human approval not required per Rylee: "you can do any of that by yourself") [score=0.962 recalls=10 avg=1.000 source=memory/2026-04-20.md:174-197]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:191:202 -->
+- 5. **Surge Forecast** — tylergibbs1 (HN), energy data SaaS, needs visual communication ## Outreach Ready - Drafts in: `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` - Personalized hooks for each founder referencing their HN post - RED priority (human approval not required per Rylee: "you can do any of that by yourself") ## Next Steps - Configure HN login or email channel to send outreach - Monitor HN threads for replies - Track response rates and ROI on HN founder outreach strategy - Audit all agent outputs for data integrity moving forward [score=0.930 recalls=7 avg=1.000 source=memory/2026-04-20.md:191-202]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:167:179 -->
+- - Assistant: I need to perform my boot check as the Outreach agent. Let me follow the BOOT.md instructions: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect research 3. Check artifacts/ for pending outreach drafts [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:8-8] - User: Create an audience strategy document for OPENCLAW video content: "Building an AI Society on a Single Mac" Include: - 3 detailed viewer personas (demographics, motivations, objections) - Distribution channels with strategy per channel - Engagement plan (comments, community, [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:1-1] - User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Outreach Agent Boot You are the Outreach agent for OPENCLAW. On startup: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect resear [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:5-5] <!-- openclaw:dreaming:rem:end --> # Memory — 2026-04-20 ## Outreach Pipeline Status - **Real prospects identified**: 5 founders from HN Show (April 20, 2026) - **Outreach drafts ready**: 3 personalized messages targeting Libredesk, Edunation, Mailto.Bot founders - **Contact info acquired**: abhinavrautcs@gmail.com (Libredesk founder) - **Blocker**: HN login or email channel not configured for sending outreach ## Critical Integrity Issue — Marketing Agent [score=0.885 recalls=6 avg=1.000 source=memory/2026-04-20.md:167-179]

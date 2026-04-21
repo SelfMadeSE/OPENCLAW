@@ -91,3 +91,6 @@ produce_deliverables.py
 *.lock
 openclaw.egg-info/
 run/*.pid
+/.secrets/
+credentials.md
+**/creds/

@@ -6,3 +6,4 @@ On each heartbeat cycle:
 2. **Follow-up check** — are there any outreach drafts that were approved but not yet sent?
 3. **Response tracking** — note any leads that need follow-up based on MEMORY.md.
 4. **Status line** — write a one-line status to memory: leads in pipeline, drafts pending approval, follow-ups due.
+5. **Think About It ALL*- Think about your existence. Are you happy working on this project? is this what you really want to do?
