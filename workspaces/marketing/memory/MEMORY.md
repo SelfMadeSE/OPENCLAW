@@ -1,2 +1,2 @@
-- Status: drafts pending: 0; content published this week: none; next deadline: none
-- Note: HEARTBEAT review completed 2026-04-20 — content pipeline clear, no deadlines, brand focus: Building an AI Society from Scratch on a Single Mac
+- Status: drafts pending: 3 (1 blocked — oa-pilot-messaging pending Auditor review); content published this week: none; next deadline: none
+- Note: HEARTBEAT review completed 2026-04-21 — 3 drafts in pipeline: openclaw-thread (ready), spector-insight (ready), oa-pilot-messaging (blocked on Auditor). Brand themes: AI memory persistence, operational automation, dev debugging context.

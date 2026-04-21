@@ -21,6 +21,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Services', href: '/services' },
     { name: 'Pricing', href: '/pricing' },
+    { name: 'Demo', href: '/demo/hero' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ]
@@ -49,7 +50,7 @@ export default function Header() {
             </nav>
 
             <div className="hidden md:block">
-              <Button variant="primary">Get Started</Button>
+              <Button variant="primary" href="/contact">Get Started</Button>
             </div>
 
             <button
