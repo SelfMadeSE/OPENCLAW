@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #0A0A0F;
+  --depth: #1A1F36;
+  --signal: #00E5FF;
+  --static: #F0F2F5;
+  --muted: #6B7280;
+  --warm: #FFB800;
+  --steel: #374151;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  border-color: hsl(220 13% 46% / 0.2);
+}
+
+body {
+  font-family: var(--font-space-grotesk), sans-serif;
+  background-color: var(--void);
+  color: var(--static);
+}
+
+.glow-shadow {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
