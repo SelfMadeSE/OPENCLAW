@@ -21,16 +21,16 @@ export default function Home() {
 
 export const metadata = {
   title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
-  description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
+  description: "Premium websites with lead capture, automated booking, and AI-powered intake for service businesses. Get a free site audit today.",
   openGraph: {
     title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
-    description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
+    description: "Premium websites with lead capture, automated booking, and AI-powered intake for service businesses.",
     type: "website",
     url: "https://outboundautonomy.com",
   },
   twitter: {
     card: "summary_large_image",
     title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
-    description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
+    description: "Premium websites with lead capture, automated booking, and AI-powered intake for service businesses.",
   },
 }

@@ -16,11 +16,11 @@ export function SocialProof() {
         <AnimatedSection>
           <Card className="p-6 max-w-3xl mx-auto">
             <p className="text-static text-lg leading-relaxed mb-4">
-              We&apos;re in closed pilot. As deployments complete, this section will document what was built,
+              We&#39;re a new studio. As deployments complete, this section will show what was built,
               what manual process it replaced, and what the client no longer does manually.
             </p>
             <p className="text-muted text-sm">
-              No mock-ups. No composite data. Real deployments only.
+              Real results only. No mock-ups or composite data.
             </p>
           </Card>
         </AnimatedSection>

@@ -53,7 +53,7 @@ export default function Footer() {
           <p>&copy; 2026 Ecosystem Global Solutions. All rights reserved.</p>
           <p>9601 64 Ave, Grande Prairie, AB</p>
           <p>
-            Closed pilot. Systems are sandbox-validated and scoped per workflow before implementation. No performance guarantees are made in advance.
+            Systems are scoped per workflow before implementation. No performance guarantees are made in advance.
           </p>
           <p>
             To stop non-transactional messages, email

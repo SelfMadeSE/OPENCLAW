@@ -17,8 +17,20 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Outbound Autonomy',
-  description: 'Autonomous solutions for the future',
+  title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
+  description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment. Book a free discovery call.',
+  openGraph: {
+    title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
+    description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment.',
+    url: 'https://outboundautonomy.com',
+    siteName: 'Outbound Autonomy',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
+    description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment.',
+  },
 }
 
 export default function RootLayout({

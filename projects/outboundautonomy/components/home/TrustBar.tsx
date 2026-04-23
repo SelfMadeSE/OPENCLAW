@@ -1,9 +1,9 @@
 import { Container } from "@/components/ui/Container";
 
 const signals = [
-  "Three offer lanes: website + automation, workflow builds, private AI systems",
-  "Built in your environment with human oversight",
-  "Closed pilot — participation based on workflow fit",
+  "Websites that capture leads and book calls automatically",
+  "Built around your workflow — not a generic template",
+  "Free site audit before any commitment",
 ];
 
 export function TrustBar() {

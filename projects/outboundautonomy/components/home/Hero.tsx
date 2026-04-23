@@ -36,27 +36,26 @@ export function Hero() {
           animate="visible"
         >
           <motion.div variants={fadeUp}>
-            <Badge>Closed Pilot</Badge>
+            <Badge>Now Accepting Clients</Badge>
           </motion.div>
 
           <motion.h1
             className="mt-6 text-5xl md:text-7xl font-bold tracking-tight text-static"
             variants={fadeUp}
           >
-            See the proof: one live demo, one clear path to deployment.
+            Your website should book jobs while you sleep.
           </motion.h1>
 
           <motion.p className="mt-6 text-xl text-muted max-w-2xl" variants={fadeUp}>
-            Outbound Autonomy builds custom AI workflows for service businesses.
-            Start with the live sandbox proof, then apply for a pilot deployment.
+            We build premium websites with lead capture, automated booking, and AI-powered intake for service businesses. From first click to booked call — handled.
           </motion.p>
 
           <motion.div className="mt-10 flex flex-col sm:flex-row gap-4" variants={fadeUp}>
-            <Button variant="primary" href="/demo/hero">
-              Run the live proof demo
+            <Button variant="primary" href="/contact?intent=discovery">
+              Get a free site audit
             </Button>
-            <Button variant="secondary" href="/contact?intent=pilot">
-              Apply for pilot deployment
+            <Button variant="secondary" href="/services">
+              See what we build
             </Button>
           </motion.div>
         </motion.div>
