@@ -41,9 +41,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+15709894873" className="hover:text-signal transition-colors">
-                  (570) 989-4873
-                </a>
+                <span className="text-muted">
+                  Response within 24 hours
+                </span>
               </li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ export default function Footer() {
           <p>&copy; 2026 Ecosystem Global Solutions. All rights reserved.</p>
           <p>9601 64 Ave, Grande Prairie, AB</p>
           <p>
-            Systems are scoped per workflow before implementation. No performance guarantees are made in advance.
+            Every project includes scoping, implementation, and support. We stand behind our work.
           </p>
           <p>
             To stop non-transactional messages, email
