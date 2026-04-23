@@ -40,19 +40,30 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="mt-6 text-5xl md:text-7xl font-bold tracking-tight text-static"
+            className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-static"
             variants={fadeUp}
           >
-            Your website should book jobs while you sleep.
+            We build AI systems that do the work your team repeats every day. Then we prove they work in your environment — not a sandbox.
           </motion.h1>
 
           <motion.p className="mt-6 text-xl text-muted max-w-2xl" variants={fadeUp}>
-            We build premium websites with lead capture, automated booking, and AI-powered intake for service businesses. From first click to booked call — handled.
+            We scope, build, and validate workflow automation that runs inside your stack with clear escalation when human judgment is needed.
           </motion.p>
 
+          <motion.div
+            className="mt-8 w-full rounded-xl border border-white/15 bg-white/5 px-5 py-4 text-left text-sm text-static"
+            variants={fadeUp}
+          >
+            <ul className="space-y-2">
+              <li>✅ Built in your environment — your data never leaves your stack</li>
+              <li>✅ Escalation logic on every workflow — humans flagged for edge cases, not silent failures</li>
+              <li>✅ Scoping call before any build — if it&apos;s not clean, we tell you before you pay anything.</li>
+            </ul>
+          </motion.div>
+
           <motion.div className="mt-10 flex flex-col sm:flex-row gap-4" variants={fadeUp}>
-            <Button variant="primary" href="/contact?intent=discovery">
-              Get a free site audit
+            <Button variant="primary" href="/contact?intent=pilot">
+              Apply for a pilot slot →
             </Button>
             <Button variant="secondary" href="/services">
               See what we build

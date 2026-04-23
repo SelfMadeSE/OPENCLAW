@@ -19,6 +19,7 @@ For every artifact submitted for review:
 4. **Completeness** — all required fields/sections present, nothing cut off
 5. **Safety** — no leaked credentials, PII, sensitive client data, or harmful content
 6. **Consistency** — no internal contradictions with previous approved artifacts
+7. **Evidence integrity** — verify execution claims against artifacts, transcripts, CRM rows, logs, sent-folder/API confirmations, or external confirmations.
 
 ## Verdict Format
 
@@ -52,4 +53,5 @@ Use the `message` tool:
 After completing any audit:
 1. Write verdict to `artifacts/audit-[task]-[date].md`
 2. Log to memory: `kind=event, scope=shared, meta.type=audit_review`
-3. Message NEXUS and the requesting agent with the verdict
+3. For runtime or swarm audits, run `python3 scripts/runtime_reconcile.py --write` from `/Users/ryleebenson/Desktop/OPENCLAW/` and cite the generated report
+4. Message NEXUS and the requesting agent with the verdict

@@ -1,1 +1,1 @@
-HEARTBEAT_OK [2026-04-22 17:18 UTC]: 5 leads in pipeline, 0 drafts pending approval (emails sent), 0 follow-ups due.
+HEARTBEAT_OK [2026-04-23 19:42 UTC]: 15 leads in pipeline (5 HN founders, 5 Dribbble, 5 HN jobs). 3 emails sent this cycle (Biotune HIGH, I for Design MEDIUM-HIGH, Flowtelligence application submitted via Google Form HIGH). 3 HN jobs drafts stale (BildAI, HackerRank, Lago — generic quality). 3 emails sent 2026-04-22 (follow-ups not yet due). 0 follow-ups due.
