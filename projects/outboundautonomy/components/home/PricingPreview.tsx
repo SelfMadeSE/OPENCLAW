@@ -10,8 +10,7 @@ export function PricingPreview() {
         <AnimatedSection className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-static mb-4">Scoping before pricing</h2>
           <p className="text-muted text-lg mb-8 max-w-xl mx-auto">
-            Every engagement is scoped to your workflow and environment first.
-            We&apos;ll define fit, buildability, and implementation approach before quoting.
+            We scope your workflow first, then give you a flat quote. No hourly billing, no scope creep surprises. Websites start at $499.
           </p>
           <Button variant="secondary" href="/contact?intent=discovery">
             Book a discovery call →

@@ -17,12 +17,12 @@ export function FinalCTA() {
       <Container>
         <AnimatedSection className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-static mb-8 max-w-2xl mx-auto">
-            Book a 30-minute discovery call — we&apos;ll tell you if we can help.
+            Book a free 30-minute discovery call.
           </h2>
           <Button variant="primary" href="/contact?intent=discovery" size="lg">
-            Book your discovery call
+            Book your free discovery call
           </Button>
-          <p className="mt-4 text-sm text-muted">Closed pilot. Sandbox-validated systems; no public client deployments yet.</p>
+          <p className="mt-4 text-sm text-muted">We&#39;ll tell you honestly if we can help — and if not, what to do instead.</p>
         </AnimatedSection>
       </Container>
     </Section>
