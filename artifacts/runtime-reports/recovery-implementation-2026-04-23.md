@@ -8,6 +8,11 @@
 - Disabled the broken `n8n-mcp` server by setting `mcp.servers` to `{}` in `~/.openclaw/openclaw.json`.
 - Reduced default heartbeat load by enabling light context and lowering default heartbeat timeout to 900 seconds.
 - Disabled prompt/system capture in diagnostics cache trace to reduce sensitive/oversized runtime logging.
+- Disabled memory search in config until an embedding provider is available; doctor now reports memory search as explicitly disabled instead of misconfigured.
+- Replaced unsupported/rate-limited active model routes:
+  - `auditor` primary changed from unsupported `openai-codex/gpt-5.2-codex` to `openai-codex/gpt-5.4-mini`.
+  - `marketing`, `outreach`, and `creative` primaries changed from rate-limited `zai/glm-5.1` to `zai/glm-4.5`.
+- Removed invalid per-job `payload.model` overrides from cron jobs so they use validated agent defaults.
 - Replaced daily-only outreach/prospect jobs with evidence-logged recurring jobs:
   - `Runtime Evidence Reconciliation` every 30 minutes
   - `Site Health Check` every 30 minutes
@@ -26,11 +31,14 @@
 - Gateway log shows `cron: started` with 18 jobs and the next wake scheduled.
 - No new `n8n-mcp` startup attempts appeared after the corrected restart.
 - Runtime reconciliation reports were generated under `artifacts/runtime-reports/`.
+- Web UI connected after restart and gateway logs show successful `sessions.list`, `node.list`, `commands.list`, `models.list`, and `chat.history` calls.
+- Site health job generated a real artifact at `workspaces/engineering/artifacts/site-health/`.
+- Outreach job generated CRM action rows and drafts under `workspaces/outreach/artifacts/`.
 
 ## Still Open
 
 - `openclaw status` still reports local WebSocket reachability failure `1006`, even while the gateway process is active and the web UI is successfully issuing `sessions.list`, `node.list`, and other gateway calls.
-- The active auditor heartbeat still shows stale `openrouter/elephant-alpha` until a fresh auditor run replaces that session.
-- Memory vector recall remains degraded because no embedding provider is configured.
+- The latest `Runtime Evidence Reconciliation` cron status is still `error` from a pre-fix run using `gpt-5.2-codex`; the next scheduled run should replace that status with the corrected auditor model.
 - Several workspace `MEMORY.md` files still exceed bootstrap limits and are being truncated.
-- CRM has leads but no recent action rows; the new hourly jobs now require CRM action logging going forward.
+- Gateway still logs a CLI/mobile-style WebSocket handshake timeout, but web UI connections succeed.
+- Remote skills/bin probing is timing out and needs a separate node-connectivity pass if remote skills are required.
