@@ -1,0 +1,227 @@
+{
+  "prospects": {
+    "scaleflow-automation-20260423-140730": {
+      "businessName": "ScaleFlow Automation",
+      "niche": "Marketing Automation & Outbound",
+      "website": "https://scaleflow.io",
+      "source": "LinkedIn Sales Navigator (search: marketing automation services)",
+      "description": "B2B marketing automation platform that helps companies scale their outbound sales efforts. They specialize in AI-powered email sequences, lead scoring, and automated prospecting tools for mid-market SaaS companies.",
+      "painPoints": [
+        "Currently using manual outreach processes that dont scale beyond 3 team members",
+        "Need integration between their existing CRM (HubSpot) and custom automation tools",
+        "Want to build an autonomous outbound system that can handle 1000+ prospects per month",
+        "Lacking expertise in AI-powered personalization at scale",
+        "Need help with deliverability optimization and spam compliance"
+      ],
+      "contact": {
+        "email": "founder@scaleflow.io",
+        "linkedin": "https://linkedin.com/in/sarah-chen-scaleflow",
+        "method": "Direct email outreach with personalization",
+        "verification_status": {
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:25.724314"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "linkedin": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:30.514240"
+          }
+        }
+      },
+      "outreachAngle": "They explicitly need Outbound Autonomy expertise - perfect match for building scalable outbound systems. Can offer both the automation development and strategic consulting.",
+      "priority": "HIGH",
+      "revenuePotential": "Initial setup: $15K-25K, ongoing retainer: $3K-5K/month for maintenance and optimization",
+      "prospect_id": "scaleflow-automation-20260423-140730",
+      "created_at": "2026-04-23T14:07:30.527545",
+      "updated_at": "2026-04-23T20:20:00.000Z",
+      "status": "drafted",
+      "lastAction": {
+        "type": "outreach_draft",
+        "timestamp": "2026-04-23T20:20:00.000Z",
+        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
+        "contactMethod": "email",
+        "notes": "Personalized outreach email drafted highlighting Outbound Autonomy expertise for scaling their outbound sales efforts"
+      }
+    },
+    "nexus-creative-studio-20260423-140737": {
+      "businessName": "Nexus Creative Studio",
+      "niche": "Creative Branding & Web Design",
+      "website": "https://nexuscreative.studio",
+      "source": "Dribbble (design portfolio showcase)",
+      "description": "Premium creative agency specializing in brand identity, web design, and digital experiences for high-growth startups and established brands. They work with venture-backed companies and have a portfolio featuring AI/tech clients.",
+      "painPoints": [
+        "Growing rapidly (3 new clients in past month) and need to scale their design team",
+        "Need help with complex web animations and interactive UI components",
+        "Want to establish their own brand identity to match client work quality",
+        "Looking for automation tools to streamline their design-to-development workflow",
+        "Need expert help with Figma-to-code conversion for client projects"
+      ],
+      "contact": {
+        "email": "hello@nexuscreative.studio",
+        "instagram": "@nexuscreative",
+        "method": "Portfolio review and collaboration proposal",
+        "verification_status": {
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:32.951310"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "instagram": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:37.480904"
+          }
+        }
+      },
+      "outreachAngle": "Theyre actively looking to scale and need both creative expertise and web automation help. Can offer high-value creative services plus workflow automation.",
+      "priority": "HIGH",
+      "revenuePotential": "Brand identity project: $8K-12K, web development projects: $15K-30K, automation setup: $5K-8K",
+      "prospect_id": "nexus-creative-studio-20260423-140737",
+      "created_at": "2026-04-23T14:07:37.458006",
+      "updated_at": "2026-04-23T20:20:00.000Z",
+      "status": "drafted",
+      "lastAction": {
+        "type": "outreach_draft",
+        "timestamp": "2026-04-23T20:20:00.000Z",
+        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
+        "contactMethod": "email",
+        "notes": "Partnership proposal drafted offering technical development and automation services to complement their creative expertise"
+      }
+    },
+    "autosync-solutions-20260423-140743": {
+      "businessName": "AutoSync Solutions",
+      "niche": "Business Process Automation",
+      "website": "https://autosyncsolutions.com",
+      "source": "Clutch.co (automation services directory)",
+      "description": "Business process automation company that helps enterprises streamline their operations through custom workflow automation, API integrations, and robotic process automation (RPA). They serve manufacturing, logistics, and healthcare sectors.",
+      "painPoints": [
+        "Clients demanding more sophisticated automation beyond their current Zapier-based workflows",
+        "Need to build custom API integrations for legacy systems",
+        "Looking to expand into AI-powered process optimization",
+        "Need help with complex workflow automation that requires custom development",
+        "Want to create automated reporting and dashboard systems for enterprise clients"
+      ],
+      "contact": {
+        "email": "solutions@autosyncsolutions.com",
+        "phone": "+1-555-0123",
+        "method": "Technical consultation and capabilities presentation",
+        "verification_status": {
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:39.538942"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:41.483309"
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "outreachAngle": "They need advanced automation expertise that goes beyond standard tools. Perfect for custom web automation and API integration services.",
+      "priority": "MEDIUM-HIGH",
+      "revenuePotential": "Custom API integration: $10K-20K, RPA development: $25K-40K, ongoing support: $2K-4K/month",
+      "prospect_id": "autosync-solutions-20260423-140743",
+      "created_at": "2026-04-23T14:07:43.933923",
+      "updated_at": "2026-04-23T14:08:44.216670",
+      "status": "new"
+    },
+    "pixelforge-digital-20260423-140750": {
+      "businessName": "PixelForge Digital",
+      "niche": "Web Development & Creative Automation",
+      "website": "https://pixelforge.digital",
+      "source": "Behance (featured creative agency)",
+      "description": "Full-service digital agency that combines creative design with technical development expertise. They specialize in creating visually stunning websites with advanced functionality, e-commerce platforms, and automated marketing systems.",
+      "painPoints": [
+        "Need to build more complex web applications beyond their current WordPress expertise",
+        "Clients requesting advanced automation features in their websites (lead scoring, personalized content)",
+        "Looking to implement headless CMS solutions for better performance",
+        "Need help with integrating marketing automation platforms (HubSpot, Marketo)",
+        "Want to create custom web applications with real-time data processing"
+      ],
+      "contact": {
+        "email": "info@pixelforge.digital",
+        "linkedin": "https://linkedin.com/company/pixelforge-digital",
+        "method": "Technical partnership proposal",
+        "verification_status": {
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:46.351855"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "linkedin": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:51.319748"
+          }
+        }
+      },
+      "outreachAngle": "They need both creative vision and technical expertise to deliver complex web projects. Can provide the web development and automation integration theyre missing.",
+      "priority": "HIGH",
+      "revenuePotential": "Custom web application: $20K-50K, automation integration: $8K-15K, ongoing development support: $3K-6K/month",
+      "prospect_id": "pixelforge-digital-20260423-140750",
+      "created_at": "2026-04-23T14:07:50.546284",
+      "updated_at": "2026-04-23T20:20:00.000Z",
+      "status": "drafted",
+      "lastAction": {
+        "type": "outreach_draft",
+        "timestamp": "2026-04-23T20:20:00.000Z",
+        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
+        "contactMethod": "email",
+        "notes": "Technical partnership proposal drafted offering advanced web development and automation integration services"
+      }
+    },
+    "flowstate-analytics-20260423-140757": {
+      "businessName": "FlowState Analytics",
+      "niche": "Data Visualization & Web Analytics",
+      "website": "https://flowstateanalytics.com",
+      "source": "Product Hunt (analytics tool launch)",
+      "description": "Analytics and data visualization startup that helps businesses understand customer behavior through interactive dashboards and real-time reporting. They focus on making complex data accessible and actionable for non-technical stakeholders.",
+      "painPoints": [
+        "Need to build a more sophisticated web-based dashboard for their analytics platform",
+        "Looking to create interactive data visualizations that clients can embed in their own sites",
+        "Want to automate report generation and data delivery systems",
+        "Need help with API integrations to pull data from various sources",
+        "Looking to create a white-label version of their platform for agency partners"
+      ],
+      "contact": {
+        "email": "partnerships@flowstateanalytics.com",
+        "twitter": "@flowstatehq",
+        "method": "Integration partnership discussion",
+        "verification_status": {
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:53.962138"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:56.034026"
+          },
+          "twitter": {
+            "verified": true,
+            "verified_at": "2026-04-23T14:08:58.110763"
+          }
+        }
+      },
+      "outreachAngle": "They need advanced web development and data visualization expertise. Can help build their dashboard platform and create automation systems for data processing.",
+      "priority": "MEDIUM-HIGH",
+      "revenuePotential": "Dashboard development: $15K-30K, API integration: $8K-12K, automation systems: $10K-18K, equity partnership potential",
+      "prospect_id": "flowstate-analytics-20260423-140757",
+      "created_at": "2026-04-23T14:07:57.291437",
+      "updated_at": "2026-04-23T14:08:58.110770",
+      "status": "new"
+    }
+  },
+  "last_updated": "2026-04-23T14:08:58.110772",
+  "version": "1.0"
+}

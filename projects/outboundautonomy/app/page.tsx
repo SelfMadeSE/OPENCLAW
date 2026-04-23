@@ -1,5 +1,6 @@
 import { Hero, TrustBar, ServicesOverview, HowItWorks, SocialProof, PricingPreview, FinalCTA } from '@/components/home'
 import { Container } from '@/components/ui/Container'
+import SiteAuditTool from '@/components/site-audit/SiteAuditTool'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HowItWorks />
       </Container>
       <SocialProof />
+      <SiteAuditTool />
       <Container>
         <PricingPreview />
       </Container>

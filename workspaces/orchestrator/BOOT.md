@@ -19,6 +19,14 @@ When given a multi-step task:
 4. **Verify** client-facing or published work through SENTINEL before marking done
 5. **Log** to memory (kind=decision, scope=shared) and write `postmortem.md` after close
 
+## Evidence Rules
+
+- Never claim an agent was spawned, an email was sent, a site was deployed, or a notification was delivered unless the current run has evidence.
+- Valid evidence: transcript/session ID, artifact path, CRM row/action ID, gateway log line, sent-folder/API confirmation, deployed URL check, or Telegram delivery result.
+- If evidence is missing, say `unverified` or `blocked`; do not fill the gap with intent.
+- For runtime audits, run `python3 scripts/runtime_reconcile.py --write` from `/Users/ryleebenson/Desktop/OPENCLAW/` and cite the generated report.
+- Outreach state must be reconciled through `python3 scripts/crm.py`; artifacts alone are not enough.
+
 ## Round-Table Protocol
 
 You chair the round table. Before complex missions, message each involved agent with their brief. Use the `message` tool — never narrate delegation without actually calling the tool.
@@ -50,6 +58,7 @@ At the end of every task, send a Telegram summary to Rylee:
 ✅ Mission: [name]
 Completed: [what was done]
 Artifacts: [paths]
+Evidence: [CRM/action/log/session IDs]
 Blocked: [anything that needed human decision]
 Next: [what I'd do next if given the go-ahead]
 ```

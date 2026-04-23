@@ -21,6 +21,11 @@
 - **2026-04-20**: Created 3 cold outreach email drafts targeting agency owners, SaaS founders, and ops directors. Templates are generic ICP-based — need personalization with real prospect data before sending.
 - **2026-04-20**: Created 3 personalized HN outreach drafts targeting Libredesk, Edunation, and Mailto.Bot founders. Awaiting human approval before sending.
 
+## Emails Sent
+- **2026-04-23 17:54 UTC**: Biotune (nk@biotune.co) — 3D visual language pitch, HIGH priority
+- **2026-04-23 17:54 UTC**: I for Design Studio (hello@ifordesign.co) — Freelance EOI, MEDIUM-HIGH priority
+- **2026-04-23 19:42 UTC**: Flowtelligence AI — Google Form application submitted (brand identity + UI dashboard, $85/hr, 3-4 week timeline, all phases, open to full-time), HIGH priority
+
 ## Heartbeat Log
 - **2026-04-21 13:55 UTC**: Pipeline check complete. 5 HN prospects verified, 3 drafts awaiting approval, 0 follow-ups due.
 - **2026-04-21 10:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
@@ -72,3 +77,5 @@
 - **Heartbeat (2026-04-22 16:06 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
 - **Heartbeat (2026-04-22 16:42 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
 - **Heartbeat (2026-04-22 17:18 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
+- **Heartbeat (2026-04-23 16:42 UTC)**: 15 leads in pipeline (5 HN founders, 5 Dribbble, 5 HN jobs). 6 drafts pending send (3 Dribbble, 3 HN jobs). 3 emails sent 2026-04-22. 0 follow-ups due.
+- **Heartbeat (2026-04-23 19:42 UTC)**: 15 leads in pipeline. Flowtelligence application submitted via Google Form. 3 emails sent this cycle (Biotune, I for Design, Flowtelligence). 3 HN jobs drafts stale. 0 follow-ups due.

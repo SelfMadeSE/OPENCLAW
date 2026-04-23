@@ -1,6 +1,6 @@
 # Media Project Memory
 
-**Heartbeat status — Thu Apr 23 2:17 AM MDT:** Publishing queue empty; next publish: none scheduled in the next 24h; platforms covered: none; no pending cross-platform adaptations.
+**Heartbeat status — Thu Apr 23 2:17 PM MDT:** Publishing queue empty; next publish: none scheduled in the next 24h; platforms covered: none; no pending cross-platform adaptations.
 
 ## Promoted From Short-Term Memory (2026-04-21)
 
