@@ -62,8 +62,8 @@ export function Hero() {
           </motion.div>
 
           <motion.div className="mt-10 flex flex-col sm:flex-row gap-4" variants={fadeUp}>
-            <Button variant="primary" href="/contact?intent=pilot">
-              Apply for a pilot slot →
+            <Button variant="primary" href="/contact?intent=discovery">
+              Book a free discovery call →
             </Button>
             <Button variant="secondary" href="/services">
               See what we build

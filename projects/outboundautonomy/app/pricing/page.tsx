@@ -14,7 +14,7 @@ export default function Pricing() {
                   Scope first. Then price.
                 </h1>
                 <p className="text-xl text-muted max-w-2xl mx-auto">
-                  During pilot, engagement pricing is set after discovery and workflow mapping.
+                  All pricing is set after discovery and workflow mapping. No two businesses are the same.
                 </p>
               </div>
             </Section>
@@ -32,10 +32,10 @@ export default function Pricing() {
 
 export const metadata = {
   title: 'Pricing — Outbound Autonomy',
-  description: 'Pilot engagement pricing is scoped per workflow after discovery. No fixed SaaS tiers are published for the current offer model.',
+  description: 'All pricing is scoped per workflow after discovery. Custom solutions for service businesses — no fixed SaaS tiers.',
   openGraph: {
     title: 'Pricing — Outbound Autonomy',
-    description: 'Pilot engagement pricing is scoped per workflow after discovery. No fixed SaaS tiers are published for the current offer model.',
+    description: 'All pricing is scoped per workflow after discovery. Custom solutions for service businesses — no fixed SaaS tiers.',
     type: 'website',
     url: 'https://outboundautonomy.com/pricing',
   },
