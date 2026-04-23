@@ -8,3 +8,4 @@ On each heartbeat cycle:
 4. **Priority check** — is there a revenue-generating task that should be active right now? If not, identify one.
 5. **Status line** — write a one-line status to memory: what's active, what's next, any blockers.
 6. **Signal** — if an agent is blocked, route a resolution or escalate. If all systems are running, write `HEARTBEAT_OK` and stand down until next cycle.
+7. 

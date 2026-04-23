@@ -8,15 +8,13 @@ export function PricingPreview() {
     <Section>
       <Container>
         <AnimatedSection className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-static mb-4">
-            Built for the bootstrapped
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-static mb-4">Scoping before pricing</h2>
           <p className="text-muted text-lg mb-8 max-w-xl mx-auto">
-            Plans starting at $299/mo for AI Receptionist. Web design from $250.
-            No hidden fees.
+            Every engagement is scoped to your workflow and environment first.
+            We&apos;ll define fit, buildability, and implementation approach before quoting.
           </p>
-          <Button variant="secondary" href="/pricing">
-            See All Pricing →
+          <Button variant="secondary" href="/contact?intent=discovery">
+            Book a discovery call →
           </Button>
         </AnimatedSection>
       </Container>

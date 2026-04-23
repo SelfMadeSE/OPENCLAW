@@ -6,7 +6,6 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 export function FinalCTA() {
   return (
     <Section className="relative overflow-hidden">
-      {/* Signal glow top edge */}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-px"
         style={{
@@ -18,12 +17,12 @@ export function FinalCTA() {
       <Container>
         <AnimatedSection className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-static mb-8 max-w-2xl mx-auto">
-            Stop losing customers to missed calls and slow responses.
+            Book a 30-minute discovery call — we&apos;ll tell you if we can help.
           </h2>
-          <Button variant="primary" href="/contact" size="lg">
-            Get Started
+          <Button variant="primary" href="/contact?intent=discovery" size="lg">
+            Book your discovery call
           </Button>
-          <p className="mt-4 text-sm text-muted">Setup takes 90 seconds.</p>
+          <p className="mt-4 text-sm text-muted">Closed pilot. Sandbox-validated systems; no public client deployments yet.</p>
         </AnimatedSection>
       </Container>
     </Section>

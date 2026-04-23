@@ -20,17 +20,17 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: "Outbound Autonomy — AI Receptionist, Web Design & Automation",
-  description: "AI-powered reception, web design, and automation for businesses that can't afford to miss a call. Plans from $299/mo. 14-day free trial.",
+  title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
+  description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
   openGraph: {
-    title: "Outbound Autonomy — AI Receptionist, Web Design & Automation",
-    description: "AI-powered reception, web design, and automation for businesses that can't afford to miss a call. Plans from $299/mo. 14-day free trial.",
+    title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
+    description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
     type: "website",
     url: "https://outboundautonomy.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Outbound Autonomy — AI Receptionist, Web Design & Automation",
-    description: "AI-powered reception, web design, and automation for businesses that can't afford to miss a call. Plans from $299/mo. 14-day free trial.",
+    title: "Outbound Autonomy — Custom AI Systems for Service Businesses",
+    description: "Closed pilot for custom AI workflow deployments. We scope first, build in your environment, and keep humans in control for edge cases.",
   },
 }

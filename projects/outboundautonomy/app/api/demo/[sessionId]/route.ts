@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sessionStore } from '@/lib/receptionist/session-store';
+import { demoSessionStore } from '@/lib/demo/session-store';
 
 export async function GET(
   request: NextRequest,
   { params }: { params: { sessionId: string } }
 ) {
   const { sessionId } = params;
-  const session = sessionStore.getSession(sessionId);
+  const session = demoSessionStore.getSession(sessionId);
   if (!session) return NextResponse.json({ error: 'Session not found' }, { status: 404 });
 
   return NextResponse.json({

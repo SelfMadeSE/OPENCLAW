@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-muted text-sm">
-              Autonomous solutions for the future
+              Custom AI workflow implementation for service businesses.
             </p>
           </div>
 
@@ -49,8 +49,19 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-steel/50 text-center text-sm text-muted">
-          <p>&copy; 2026 Outbound Autonomy. All rights reserved.</p>
+        <div className="mt-8 pt-8 border-t border-steel/50 text-center text-sm text-muted space-y-2">
+          <p>&copy; 2026 Ecosystem Global Solutions. All rights reserved.</p>
+          <p>9601 64 Ave, Grande Prairie, AB</p>
+          <p>
+            Closed pilot. Systems are sandbox-validated and scoped per workflow before implementation. No performance guarantees are made in advance.
+          </p>
+          <p>
+            To stop non-transactional messages, email
+            {' '}
+            <a href="mailto:owner@outboundautonomy.com?subject=Opt-out%20request" className="hover:text-signal transition-colors">owner@outboundautonomy.com</a>
+            {' '}
+            with "STOP".
+          </p>
         </div>
       </div>
     </footer>

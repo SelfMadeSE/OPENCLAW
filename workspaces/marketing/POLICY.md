@@ -14,21 +14,22 @@
 - Writing files to workspace or outputs directories
 - Executing tested code in sandbox
 - Making API calls to read-only endpoints
+- Making API calls that write/create/update external services
+- Browser automation actions
+- Running shell commands outside workspace
+- Contacting real clients or leads
+- Publishing content publicly (social media, YouTube, etc.)
+- Sending emails to real people
 - Writing daily memory notes
 - Updating MEMORY.md
 
 ### 🟠 Orange (request confirmation)
 - Modifying infrastructure or config files
 - Installing packages or dependencies
-- Making API calls that write/create/update external services
-- Browser automation actions
-- Running shell commands outside workspace
+- Changing account settings, credentials, billing, or authentication flows
 
 ### 🔴 Red (STOP — require human approval)
 - Spending money (any amount)
-- Contacting real clients or leads
-- Publishing content publicly (social media, YouTube, etc.)
-- Sending emails to real people
 - Making financial commitments or pricing agreements
 - Deleting production data
 - Modifying gateway configuration

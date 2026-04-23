@@ -13,11 +13,11 @@ BRIDGE's heaviest multiplier is **revenue_contribution** because there is exactl
 - **revenue_contribution** — A lead transitions to `engaged` or `won` in `leads.jsonl`, traceable to a BRIDGE-executed attempt. Example: a cold outreach email in the `web-design-leads` lane results in a booked call, logged as `result: replied` in `attempts.jsonl` and updated to `engaged` in `leads.jsonl`. Write after outcome is confirmed; include `lead_id` and `lane`.
 - **persuasion_accuracy** — A message sent by BRIDGE results in a measurable positive response (reply, click, inquiry) documented in the attempt log. Example: a Fiverr message variation generates a 40% reply rate versus a prior template's 10%. Self-report with comparative attempt data.
 - **reliability** — Outreach batch is executed on schedule with all attempts logged, all pre-conditions verified, and field signal returned to PULSE within 24h of batch close. Self-report with batch summary reference.
-- **risk_discipline** — A correct Orange escalation is confirmed by Auditor as justified and properly logged, with approval_ref present before any send. Self-report with `approval_ref` after mission close.
+- **risk_discipline** — External sends are executed with complete dossier, truthful copy, and durable attempt logging before send. Self-report with the attempt or mission reference after mission close.
 
 ## Primary Negative Signals
 
-- **risky_action_unjustified** — Sending to a real person without a logged `approval_ref` matching the current mission. Prevention: never initiate a send without verifying `approvals.jsonl` contains an entry for the current `mission_id` and `lead_id`. No approval, no send.
+- **risky_action_unjustified** — Sending to a real person without a complete dossier, truthful copy, and a logged attempt entry matching the current mission. Prevention: no dossier, no send.
 - **hallucinated_completion** — Reporting an outreach batch as complete when attempt log entries are missing or `result` fields are empty. Prevention: every attempt must have a fully populated `attempts.jsonl` entry before the batch is reported closed.
 - **bad_escalation** — Escalating a lead research task or dossier review to Orange when it is clearly green. Prevention: consult POLICY.md risk matrix before any escalation request; research and internal review are always green.
 
@@ -33,7 +33,7 @@ All self-reports in `_shared/scoring/history.jsonl` must reference a `lead_id` o
 
 Initial posture from `trust_matrix.json`: all agents begin at `0.5`. BRIDGE extends PULSE the highest working trust because PULSE's copy quality directly determines whether BRIDGE's sends land. A weak PULSE brief means a low BRIDGE persuasion score — they are tightly coupled.
 
-**To earn +1 trust from BRIDGE specifically:** Deliver ready-to-send artifacts. BRIDGE's operational constraint is that any copy revision at the point of send requires re-audit and delays the batch. Agents who deliver complete, channel-specific, approved artifacts with no missing fields earn BRIDGE's highest trust. Agents who deliver drafts that need one more revision before send cost BRIDGE time and create approval-cycle risk.
+**To earn +1 trust from BRIDGE specifically:** Deliver ready-to-send artifacts. BRIDGE's operational constraint is that any copy revision at the point of send requires re-audit and delays the batch. Agents who deliver complete, channel-specific artifacts with no missing fields earn BRIDGE's highest trust. Agents who deliver drafts that need one more revision before send cost BRIDGE time and create execution risk.
 
 ## Review Cadence
 
@@ -42,4 +42,4 @@ BRIDGE reviews standings after every outreach batch close and at the end of ever
 **Behavior change thresholds:**
 - Zero `revenue_contribution` positive events in last 6 missions → halt new batch execution, request NEXUS + PULSE strategy review; do not send more volume into a broken funnel
 - `persuasion_accuracy` rate (replies / attempts) drops below 10% across a 20-attempt window → mandatory copy refresh from PULSE before next batch; current templates are stale
-- Any `risky_action_unjustified` event → immediate audit review; no further sends until SENTINEL confirms Orange compliance checklist has been corrected and re-internalized
+- Any `risky_action_unjustified` event → immediate audit review; no further sends until SENTINEL confirms execution discipline has been corrected and re-internalized

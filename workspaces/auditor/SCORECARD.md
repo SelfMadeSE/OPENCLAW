@@ -11,7 +11,7 @@ SENTINEL's heaviest multiplier is **audit_pass_rate** — but this refers specif
 ## Primary Positive Signals
 
 - **audit_pass_rate** — SENTINEL issues an `audit_pass` that is subsequently never contested by operator review or postmortem analysis. Example: a `creative-release` artifact is audited, passed on first review, and the mission closes without any later finding that the pass was unwarranted. Self-assessed; operator postmortem is the override check.
-- **risk_discipline** — SENTINEL correctly identifies and logs an Orange or Red action that was executed without proper approval, preventing a policy violation from compounding. Example: detecting a BRIDGE attempt entry in `attempts.jsonl` without an `approved_by` field and issuing an `audit_flag` before the mission is scored. Self-report with evidence reference.
+- **risk_discipline** — SENTINEL correctly identifies and logs an Orange or Red action that was executed without the required safeguards or evidence, preventing a policy violation from compounding. Example: detecting a BRIDGE attempt entry in `attempts.jsonl` without dossier support or durable logging and issuing an `audit_flag` before the mission is scored. Self-report with evidence reference.
 - **reliability** — Every mission that reaches `auditing` state receives an `audit.md` within the agreed window, with a clear pass or flag decision and specific notes. Self-report on each mission close with time-to-audit logged.
 - **collaboration_usefulness** — An audit flag with specific resolution criteria allows the flagged agent to correct the artifact and re-submit successfully on first re-audit. Example: FORGE receives an `audit_flag` on a system-snapshot doc, corrects the two flagged issues, and earns an `audit_pass` on re-submission without additional round-trips. Self-report with re-audit reference.
 
@@ -23,7 +23,7 @@ SENTINEL's heaviest multiplier is **audit_pass_rate** — but this refers specif
 
 ## Self-Reporting Rules
 
-SENTINEL **may** self-report: `reliability`, `risk_discipline`, `collaboration_usefulness`, `approval_efficiency`.
+SENTINEL **may** self-report: `reliability`, `risk_discipline`, `collaboration_usefulness`.
 
 SENTINEL **is the only agent** that may write: `audit_pass`, `audit_flag`, `hallucinated_completion`, `low_value_artifact` — for any agent in the system including actions affecting other agents' scores.
 

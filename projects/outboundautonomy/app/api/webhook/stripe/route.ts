@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
           createSubscription({
             stripe_subscription_id: subscription.id,
             customer_id: customer.id,
-            plan_type: (subscription as any).metadata?.plan_type || 'ai_receptionist_standard',
+            plan_type: (subscription as any).metadata?.plan_type || 'automation_starter',
             status: subscription.status,
             current_period_start: new Date((subscription as any).current_period_start * 1000),
             current_period_end: new Date((subscription as any).current_period_end * 1000),
@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
           createSubscription({
             stripe_subscription_id: createdSubscription.id,
             customer_id: createdCustomer.id,
-            plan_type: createdSubscription.metadata.plan_type || 'ai_receptionist_standard',
+            plan_type: createdSubscription.metadata.plan_type || 'automation_starter',
             status: createdSubscription.status,
             current_period_start: new Date(createdSubscription.current_period_start * 1000),
             current_period_end: new Date(createdSubscription.current_period_end * 1000),

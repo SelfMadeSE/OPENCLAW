@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sessionStore } from '@/lib/receptionist/session-store';
+import { demoSessionStore } from '@/lib/demo/session-store';
 
 export async function POST(request: NextRequest) {
   try {
@@ -7,10 +7,10 @@ export async function POST(request: NextRequest) {
     if (!body.businessName || !body.phoneNumber) {
       return NextResponse.json({ error: 'businessName and phoneNumber are required' }, { status: 400 });
     }
-    const session = sessionStore.createSession(body.businessName, body.phoneNumber);
+    const session = demoSessionStore.createSession(body.businessName, body.phoneNumber);
     return NextResponse.json({
       sessionId: session.id,
-      message: `Demo session created for ${body.businessName}. Use this session ID for Twilio webhooks.`
+      message: `Demo session created for ${body.businessName}.`
     });
   } catch (error) {
     console.error('Error creating demo session:', error);

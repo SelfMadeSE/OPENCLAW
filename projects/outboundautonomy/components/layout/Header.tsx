@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import Logo from '@/components/shared/Logo'
 import { Button } from '@/components/ui/Button'
 import Navigation from './Navigation'

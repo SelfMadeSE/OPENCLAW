@@ -1,4 +1,5 @@
-import twilio from 'twilio';
+import 'server-only';
+import twilio, { Twilio } from 'twilio';
 import {
   businessHoursGreeting,
   afterHoursGreeting,
@@ -17,9 +18,43 @@ import {
   smsEmergencyInfo,
 } from './scripts';
 
-const twilioClient = process.env.TWILIO_ACCOUNT_SID && process.env.TWILIO_AUTH_TOKEN
-  ? twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
-  : null;
+let twilioClient: Twilio | null | undefined;
+
+function getTwilioConfig() {
+  const accountSid = process.env.TWILIO_ACCOUNT_SID?.trim();
+  const authToken = process.env.TWILIO_AUTH_TOKEN?.trim();
+  const phoneNumber = process.env.TWILIO_PHONE_NUMBER?.trim();
+
+  const hasValidSid = !!accountSid && /^AC[A-Za-z0-9]{32}$/.test(accountSid);
+  const hasAuthToken = !!authToken;
+
+  return {
+    accountSid,
+    authToken,
+    phoneNumber,
+    ready: hasValidSid && hasAuthToken,
+  };
+}
+
+function getTwilioClient(): Twilio | null {
+  if (twilioClient !== undefined) return twilioClient;
+
+  const { accountSid, authToken, ready } = getTwilioConfig();
+  if (!ready || !accountSid || !authToken) {
+    twilioClient = null;
+    return twilioClient;
+  }
+
+  try {
+    twilioClient = twilio(accountSid, authToken);
+  } catch (error) {
+    console.warn('Twilio client disabled due to invalid credentials format.');
+    console.warn(error);
+    twilioClient = null;
+  }
+
+  return twilioClient;
+}
 
 const DEFAULT_ADDRESS = '123 Dental Street, Suite 100';
 const DEFAULT_EMERGENCY_NUMBER = process.env.EMERGENCY_PHONE_NUMBER || '970-555-0199';
@@ -122,15 +157,18 @@ ${sayBlocks(voicemailPrompt())}
 }
 
 export async function sendSms(to: string, body: string): Promise<void> {
-  if (!twilioClient || !process.env.TWILIO_PHONE_NUMBER?.trim()) {
+  const client = getTwilioClient();
+  const { phoneNumber } = getTwilioConfig();
+
+  if (!client || !phoneNumber) {
     console.log('SMS would be sent but Twilio credentials not configured:', { to, body });
     return;
   }
   try {
-    await twilioClient.messages.create({ 
-      body, 
-      from: process.env.TWILIO_PHONE_NUMBER?.trim(), 
-      to 
+    await client.messages.create({
+      body,
+      from: phoneNumber,
+      to,
     });
     console.log('SMS sent successfully to', to);
   } catch (error) {
