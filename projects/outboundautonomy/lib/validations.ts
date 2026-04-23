@@ -5,7 +5,7 @@ export const contactFormSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
   phone: z.string().optional(),
   company: z.string().optional(),
-  service_interest: z.enum(['ai_receptionist', 'web_design', 'app_development', 'automation', 'marketing', 'other'], {
+  service_interest: z.enum(['web_design', 'app_development', 'automation', 'marketing', 'other'], {
     message: 'Please select a service'
   }),
   budget_range: z.enum(['under_500', '500_2000', '2000_10000', '10000_plus', 'not_sure']).optional(),

@@ -12,7 +12,7 @@ FORGE's heaviest multiplier is **reliability** because the rest of the system's 
 
 - **reliability** — A task brief is received, executed, and delivered as a runnable artifact with no state regression or clarification request. Example: NEXUS delegates `write deploy script for X`, FORGE delivers `deploy.sh` with inline documentation and a confirmed test run, on first attempt. Self-report on close.
 - **artifact_quality** — SENTINEL returns an `audit_pass` with notes indicating the artifact was complete, accurate, and immediately usable. Example: a `system-snapshot.md` that SENTINEL verifies against live files with zero discrepancies. Written by SENTINEL; tracked here.
-- **risk_discipline** — FORGE correctly escalates an infra change to Orange before touching the file, with justification that the Auditor confirms was warranted. Example: recognizing that modifying `.env.production` is Orange and logging the change spec before execution. Self-report with `approval_ref`.
+- **risk_discipline** — FORGE correctly classifies and logs an infra change before touching the file, with justification that the Auditor confirms was warranted. Example: recognizing that modifying `.env.production` is Orange and logging the change spec before execution. Self-report with mission evidence.
 - **memory_usefulness** — A prior MEMORY.md or mission artifact is read and directly reduces the scope of current work. Example: finding a previously written deploy script in a prior mission artifact, adapting it rather than rewriting from scratch. Self-report with source reference.
 
 ## Primary Negative Signals

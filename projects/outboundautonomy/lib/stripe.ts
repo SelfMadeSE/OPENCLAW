@@ -15,11 +15,6 @@ export function getStripe(): Stripe {
 }
 
 export const STRIPE_PRICES = {
-  ai_receptionist: {
-    starter: 'price_1TOMnuAtcuskq3MVngEsnADT',     // $299/mo
-    professional: 'price_1TOMnuAtcuskq3MVFfklqaox', // $599/mo
-    enterprise: 'price_1TOMnuAtcuskq3MV5SZKRoR7',   // $1,299/mo
-  },
   web_design: {
     basic: 'price_1TOMnvAtcuskq3MVVOPyaUsd',    // $250 one-time
     standard: 'price_1TOMnvAtcuskq3MVJ9S7aLyx',  // $1,500 one-time

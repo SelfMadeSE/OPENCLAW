@@ -20,7 +20,6 @@ const fadeUp = {
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Radial gradient bg */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -37,36 +36,27 @@ export function Hero() {
           animate="visible"
         >
           <motion.div variants={fadeUp}>
-            <Badge>AI-Powered Operations</Badge>
+            <Badge>Closed Pilot</Badge>
           </motion.div>
 
           <motion.h1
             className="mt-6 text-5xl md:text-7xl font-bold tracking-tight text-static"
             variants={fadeUp}
           >
-            Your business answers itself.
+            See the proof: one live demo, one clear path to deployment.
           </motion.h1>
 
-          <motion.p
-            className="mt-6 text-xl text-muted max-w-2xl"
-            variants={fadeUp}
-          >
-            AI-powered reception, automation, and design — so you never miss a
-            call, a lead, or an opportunity.
+          <motion.p className="mt-6 text-xl text-muted max-w-2xl" variants={fadeUp}>
+            Outbound Autonomy builds custom AI workflows for service businesses.
+            Start with the live sandbox proof, then apply for a pilot deployment.
           </motion.p>
 
-          <motion.div
-            className="mt-10 flex flex-col sm:flex-row gap-4"
-            variants={fadeUp}
-          >
-            <Button variant="primary" href="/contact">
-              Get Started
+          <motion.div className="mt-10 flex flex-col sm:flex-row gap-4" variants={fadeUp}>
+            <Button variant="primary" href="/demo/hero">
+              Run the live proof demo
             </Button>
-            <Button variant="secondary" href="#how-it-works">
-              See How It Works
-            </Button>
-            <Button variant="ghost" href="/demo/hero">
-              View Hero Demo
+            <Button variant="secondary" href="/contact?intent=pilot">
+              Apply for pilot deployment
             </Button>
           </motion.div>
         </motion.div>

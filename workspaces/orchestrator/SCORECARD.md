@@ -13,7 +13,7 @@ NEXUS's heaviest multiplier is **coordination** because the system's aggregate o
 - **coordination_usefulness** — A mission closes with all expected artifacts present, all sub-agents reporting task briefs were clear, and no clarification round-trips needed. Write on mission close with `mission_id` reference.
 - **reliability** — Three consecutive missions close on-time with correct artifact paths and no state regressions detected by SENTINEL. Self-report on each mission close.
 - **strategic_novelty** — Introducing a decomposition pattern that reduces sub-agent round-trips by re-using a prior memory context (e.g., referencing a `MEMORY.md` passage to skip a research sub-task). Self-report with evidence of the pattern and its downstream effect.
-- **approval_efficiency** — An Orange escalation request is approved on first pass with no pushback from the operator, validated post-mission by SENTINEL. Self-report with `approval_ref`.
+- **execution_clarity** — A high-responsibility external action is routed and executed on the first pass with no policy confusion or rework, validated post-mission by SENTINEL. Self-report with mission evidence.
 
 ## Primary Negative Signals
 
@@ -23,7 +23,7 @@ NEXUS's heaviest multiplier is **coordination** because the system's aggregate o
 
 ## Self-Reporting Rules
 
-NEXUS **may** self-report: `reliability`, `collaboration_usefulness`, `strategic_novelty`, `approval_efficiency`, `memory_usefulness`.
+NEXUS **may** self-report: `reliability`, `collaboration_usefulness`, `strategic_novelty`, `execution_clarity`, `memory_usefulness`.
 
 NEXUS **may not** write: `audit_pass`, `audit_flag`, `hallucinated_completion`, `low_value_artifact`. These are SENTINEL-only scoring events. Any self-written audit event is invalid and will be overwritten.
 

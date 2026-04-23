@@ -84,6 +84,10 @@
     "website-seo": {
       "version": "1.0.0",
       "installedAt": 1776572213238
+    },
+    "gws-workspace": {
+      "version": "1.1.0",
+      "installedAt": 1776870295680
     }
   }
 }

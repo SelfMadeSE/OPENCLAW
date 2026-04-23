@@ -4,17 +4,14 @@ import { ContactForm } from '@/components/contact/ContactForm'
 export default function Contact() {
   return (
     <>
-      
       <main>
         <div className="bg-gradient-to-b from-void to-depth min-h-screen">
           <Container>
             <Section className="py-24">
               <div className="text-center">
-                <h1 className="text-5xl font-bold text-static mb-4">
-                  Let's talk.
-                </h1>
+                <h1 className="text-5xl font-bold text-static mb-4">Let&apos;s scope your workflow.</h1>
                 <p className="text-xl text-muted max-w-2xl mx-auto">
-                  90 seconds to tell us what you need. We'll handle the rest.
+                  Tell us what your team repeats and we&apos;ll tell you whether there&apos;s a clean build path.
                 </p>
               </div>
             </Section>
@@ -34,26 +31,16 @@ export default function Contact() {
                         owner@outboundautonomy.com
                       </a>
                     </p>
-                    <p>
-                      <strong>Phone:</strong>{' '}
-                      <a href="tel:5709894873" className="text-signal hover:text-signal/80 underline">
-                        (570) 989-4873
-                      </a>
-                    </p>
-                    <p>
-                      <strong>Response time:</strong> Under 4 hours during business hours (MT)
-                    </p>
+                    <p><strong>Pilot status:</strong> Closed pilot intake active</p>
                   </div>
                 </div>
 
                 <div className="bg-depth rounded-lg border border-steel p-8">
-                  <h3 className="text-xl font-bold text-static mb-4">AI Receptionist Demo</h3>
+                  <h3 className="text-xl font-bold text-static mb-4">What happens next</h3>
                   <div className="space-y-3 text-muted">
-                    <p>Want to hear it in action?</p>
-                    <p className="text-lg font-semibold text-signal">
-                      Call (570) 989-4873 right now.
-                    </p>
-                    <p>That's our AI answering. Ask it anything.</p>
+                    <p>1) We review your workflow.</p>
+                    <p>2) We run a discovery call.</p>
+                    <p>3) If fit exists, we provide scoped implementation options.</p>
                   </div>
                 </div>
               </div>
@@ -61,23 +48,22 @@ export default function Contact() {
           </Container>
         </div>
       </main>
-      
     </>
   )
 }
 
 export const metadata = {
-  title: "Contact — Outbound Autonomy",
-  description: "Get in touch. 90-second form, 4-hour response time. owner@outboundautonomy.com or call (570) 989-4873.",
+  title: 'Contact — Outbound Autonomy',
+  description: 'Request discovery for pilot-safe custom AI workflows and deployment scoping.',
   openGraph: {
-    title: "Contact — Outbound Autonomy",
-    description: "Get in touch. 90-second form, 4-hour response time. owner@outboundautonomy.com or call (570) 989-4873.",
-    type: "website",
-    url: "https://outboundautonomy.com/contact",
+    title: 'Contact — Outbound Autonomy',
+    description: 'Request discovery for pilot-safe custom AI workflows and deployment scoping.',
+    type: 'website',
+    url: 'https://outboundautonomy.com/contact',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Contact — Outbound Autonomy",
-    description: "Get in touch. 90-second form, 4-hour response time. owner@outboundautonomy.com or call (570) 989-4873.",
+    card: 'summary_large_image',
+    title: 'Contact — Outbound Autonomy',
+    description: 'Request discovery for pilot-safe custom AI workflows and deployment scoping.',
   },
 }

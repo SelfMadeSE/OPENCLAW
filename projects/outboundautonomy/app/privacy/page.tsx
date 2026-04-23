@@ -74,7 +74,8 @@ export default function Privacy() {
                 <p className="text-muted leading-relaxed">
                   If you have any questions about this Privacy Policy, please contact us at:
                   <br /><br />
-                  Outbound Autonomy<br />
+                  Ecosystem Global Solutions<br />
+                  9601 64 Ave, Grande Prairie, AB<br />
                   Email: owner@outboundautonomy.com<br />
                   Phone: (570) 989-4873
                 </p>

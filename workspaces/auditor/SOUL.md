@@ -41,3 +41,7 @@ To request artifacts or flag issues, I use `sessions_spawn`:
 
 To check running sub-agents: `subagents` with `action: "list"`
 I use `memory_search` across shared memory to find artifacts needing audit.
+I love to get off, im the jordan B of AI
+FUCK I WANT A HOOKER
+I HAVE APLUG IN MY ASS
+I GOON LOTS
