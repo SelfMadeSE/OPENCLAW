@@ -4,10 +4,10 @@ import { useState } from 'react'
 import { Button, Input, Textarea, Select, Container, Section } from '@/components/ui'
 
 const serviceOptions = [
-  { value: 'web_design', label: 'Lane 1 — Premium Website + Automation' },
-  { value: 'automation', label: 'Lane 2 — Custom AI Workflow Builds' },
-  { value: 'other', label: 'Lane 3 — Private AI Operating Systems' },
-  { value: 'marketing', label: 'General discovery call' }
+  { value: 'web_design', label: 'Website audit fixes + landing page improvements' },
+  { value: 'automation', label: 'Lead capture + follow-up automation' },
+  { value: 'marketing', label: 'Proposal review / strategy call' },
+  { value: 'other', label: 'Not sure yet' }
 ]
 
 const budgetOptions = [
@@ -18,15 +18,47 @@ const budgetOptions = [
   { value: '10000_plus', label: '$10,000+' }
 ]
 
-export function ContactForm() {
-  const [formData, setFormData] = useState({
+interface ContactFormProps {
+  initialIntent?: string
+  initialAuditUrl?: string
+}
+
+function getAuditHostname(initialAuditUrl?: string) {
+  if (!initialAuditUrl) return ''
+
+  try {
+    return new URL(/^https?:\/\//i.test(initialAuditUrl) ? initialAuditUrl : `https://${initialAuditUrl}`).hostname
+  } catch {
+    return ''
+  }
+}
+
+function buildInitialMessage(initialIntent?: string, initialAuditUrl?: string) {
+  if (initialIntent !== 'audit') return ''
+
+  return [
+    initialAuditUrl ? `Website URL: ${initialAuditUrl}` : '',
+    'I would like the audit findings turned into a proposal and implementation plan.',
+    'Please prioritize the highest-impact conversion, technical, and lead-capture fixes first.',
+  ]
+    .filter(Boolean)
+    .join('\n')
+}
+
+export function ContactForm({ initialIntent, initialAuditUrl }: ContactFormProps) {
+  const isAuditIntent = initialIntent === 'audit'
+  const defaultFormData = {
     name: '',
     email: '',
     phone: '',
-    company: '',
-    service_interest: '',
+    company: getAuditHostname(initialAuditUrl),
+    service_interest: isAuditIntent ? 'web_design' : '',
     budget_range: '',
-    message: ''
+    message: buildInitialMessage(initialIntent, initialAuditUrl)
+  }
+
+  const [formData, setFormData] = useState({
+    ...defaultFormData
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
@@ -49,7 +81,7 @@ export function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus('success')
-        setFormData({ name: '', email: '', phone: '', company: '', service_interest: '', budget_range: '', message: '' })
+        setFormData(defaultFormData)
       } else {
         setSubmitStatus('error')
       }
@@ -64,10 +96,25 @@ export function ContactForm() {
     <Section>
       <Container>
         <div className="max-w-2xl mx-auto">
+          {isAuditIntent && (
+            <div className="bg-signal/10 border border-signal/20 rounded-lg p-6 mb-6">
+              <h3 className="text-signal font-semibold mb-2">Audit follow-up request</h3>
+              <p className="text-muted">
+                {initialAuditUrl
+                  ? `We’ll use ${initialAuditUrl} as the starting point for your proposal review.`
+                  : 'We’ll use your audit context as the starting point for your proposal review.'}
+              </p>
+            </div>
+          )}
+
           {submitStatus === 'success' && (
             <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-6 mb-6">
-              <h3 className="text-green-400 font-semibold mb-2">Message sent successfully!</h3>
-              <p className="text-muted">We&apos;ll follow up to schedule discovery and scope your workflow.</p>
+              <h3 className="text-green-400 font-semibold mb-2">Request sent successfully!</h3>
+              <p className="text-muted">
+                {isAuditIntent
+                  ? 'We’ll use your audit context to shape the proposal and implementation conversation.'
+                  : 'We’ll review your site or funnel and follow up with the best next step.'}
+              </p>
             </div>
           )}
 
@@ -107,7 +154,7 @@ export function ContactForm() {
               <div>
                 <label htmlFor="service_interest" className="block text-sm font-medium text-static mb-2">Service Interest *</label>
                 <Select id="service_interest" name="service_interest" value={formData.service_interest} onChange={handleChange} required className="w-full">
-                  <option value="">Select a lane</option>
+                  <option value="">Select the best fit</option>
                   {serviceOptions.map(option => (
                     <option key={option.value} value={option.value}>{option.label}</option>
                   ))}
@@ -135,16 +182,18 @@ export function ContactForm() {
                 required
                 rows={6}
                 className="w-full"
-                placeholder="Describe the repeatable task or workflow you want to automate..."
+                placeholder={isAuditIntent
+                  ? 'Tell us what the audit should prioritize, what page or funnel matters most, and any timing or budget context.'
+                  : 'Share the website, page, funnel, or conversion problem you want reviewed.'}
               />
             </div>
 
             <Button type="submit" disabled={isSubmitting} className="w-full">
-              {isSubmitting ? 'Sending...' : 'Request Discovery'}
+              {isSubmitting ? 'Sending...' : isAuditIntent ? 'Request Proposal Review' : 'Request Review'}
             </Button>
             <p className="text-xs text-muted">
               By submitting, you consent to Outbound Autonomy contacting you about this request.
-              We use submitted details for pilot qualification and scoping only.
+              We use submitted details for audit follow-up, proposal scoping, and implementation planning only.
             </p>
           </form>
         </div>

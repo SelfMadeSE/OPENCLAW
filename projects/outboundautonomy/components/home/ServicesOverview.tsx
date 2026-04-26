@@ -6,25 +6,25 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 
 const services = [
   {
-    title: "Premium Website + Automation",
+    title: "Website Audit + Fix Plan",
     description:
-      "A high-end site that actually works: lead capture forms, automated intake emails, calendar booking, and SMS confirmations — all connected to your business.",
-    link: "Get started →",
-    href: "/contact?intent=lane-1",
+      "A URL-based review of your homepage, conversion path, technical basics, trust signals, and first fixes.",
+    link: "Generate audit →",
+    href: "/#audit",
   },
   {
-    title: "Custom AI Workflows",
+    title: "Conversion Implementation",
     description:
-      "Tell us what your team repeats every day. We automate it — from follow-ups and scheduling to lead qualification and dispatch.",
-    link: "Tell us what you repeat →",
-    href: "/contact?intent=workflow",
+      "We turn the audit into clearer offers, better CTAs, lead capture, quote flows, proof sections, and follow-up routing.",
+    link: "Request proposal →",
+    href: "/contact?intent=audit",
   },
   {
-    title: "Private AI Systems",
+    title: "Automation Behind the Site",
     description:
-      "Local AI deployments for teams that need data privacy, compliance, and internal knowledge agents that stay on your infrastructure.",
-    link: "Tell us your constraints →",
-    href: "/contact?intent=architecture",
+      "When the audit shows operational leakage, we add CRM handoff, intake, follow-up, reminders, and AI-assisted workflow systems.",
+    link: "Plan implementation →",
+    href: "/contact?intent=automation",
   },
 ];
 
@@ -33,7 +33,7 @@ export function ServicesOverview() {
     <Section id="services">
       <Container>
         <AnimatedSection>
-          <h2 className="text-3xl md:text-4xl font-bold text-static text-center mb-12">What we build for you</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-static text-center mb-12">From audit to implementation</h2>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-3 gap-6">

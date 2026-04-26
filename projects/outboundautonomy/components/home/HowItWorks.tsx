@@ -5,18 +5,18 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 const steps = [
   {
     num: 1,
-    title: "Discovery",
-    description: "We map repeatable work and confirm build scope before implementation.",
+    title: "Audit",
+    description: "Enter a URL and get a read-only report with scores, issues, and targeted fixes.",
   },
   {
     num: 2,
-    title: "Build",
-    description: "We deploy a custom workflow in your environment, around your tools and data.",
+    title: "Plan",
+    description: "Save the audit to unlock sequencing, budget range, and a proposal path.",
   },
   {
     num: 3,
-    title: "Run",
-    description: "The system handles repeatable tasks with escalation paths for human judgment.",
+    title: "Implement",
+    description: "We execute the priority fixes: site, conversion, lead capture, automation, and follow-up.",
   },
 ];
 
