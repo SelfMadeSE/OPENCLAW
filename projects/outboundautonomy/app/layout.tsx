@@ -17,19 +17,19 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata = {
-  title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
-  description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment. Book a free discovery call.',
+  title: 'Outbound Autonomy — Free Website Audit With Targeted Fixes',
+  description: 'Enter your URL to get a website audit with design, conversion, technical, and lead-capture insights, plus targeted fixes and a proposal path.',
   openGraph: {
-    title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
-    description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment.',
+    title: 'Outbound Autonomy — Free Website Audit With Targeted Fixes',
+    description: 'Enter your URL to get a website audit with design, conversion, technical, and lead-capture insights, plus targeted fixes and a proposal path.',
     url: 'https://outboundautonomy.com',
     siteName: 'Outbound Autonomy',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Outbound Autonomy — Custom AI Systems for Service Businesses',
-    description: 'Custom AI workflow deployments for service businesses. Websites, automation, and AI systems scoped to your environment.',
+    title: 'Outbound Autonomy — Free Website Audit With Targeted Fixes',
+    description: 'Enter your URL to get a website audit with targeted fixes and a proposal path for implementation.',
   },
 }
 

@@ -36,18 +36,18 @@ export function Hero() {
           animate="visible"
         >
           <motion.div variants={fadeUp}>
-            <Badge>Now Accepting Clients</Badge>
+            <Badge>Free website audit for service businesses</Badge>
           </motion.div>
 
           <motion.h1
             className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-static"
             variants={fadeUp}
           >
-            We build AI systems that do the work your team repeats every day. Then we prove they work in your environment — not a sandbox.
+            Enter your URL. Get a website audit with targeted fixes.
           </motion.h1>
 
           <motion.p className="mt-6 text-xl text-muted max-w-2xl" variants={fadeUp}>
-            We scope, build, and validate workflow automation that runs inside your stack with clear escalation when human judgment is needed.
+            We review your site for design, conversion, technical, and lead-capture gaps, then map the first fixes to a proposal path.
           </motion.p>
 
           <motion.div
@@ -55,18 +55,28 @@ export function Hero() {
             variants={fadeUp}
           >
             <ul className="space-y-2">
-              <li>✅ Built in your environment — your data never leaves your stack</li>
-              <li>✅ Escalation logic on every workflow — humans flagged for edge cases, not silent failures</li>
-              <li>✅ Scoping call before any build — if it&apos;s not clean, we tell you before you pay anything.</li>
+              <li>Live URL scan with design, conversion, technical, and Lighthouse signals</li>
+              <li>Targeted fixes, implementation examples, and an estimated build range</li>
+              <li>Proposal path for redesign, lead capture, automation, and follow-up systems</li>
             </ul>
           </motion.div>
 
           <motion.div className="mt-10 flex flex-col sm:flex-row gap-4" variants={fadeUp}>
-            <Button variant="primary" href="/contact?intent=discovery">
-              Book a free discovery call →
+            <Button variant="primary" href="#audit">
+              Generate free audit
             </Button>
             <Button variant="secondary" href="/services">
-              See what we build
+              See implementation options
+            </Button>
+          </motion.div>
+          
+          <motion.div className="mt-4" variants={fadeUp}>
+            <Button
+              variant="ghost"
+              href="/sample-report"
+              className="text-blue-400 hover:text-blue-300"
+            >
+              Preview sample audit report →
             </Button>
           </motion.div>
         </motion.div>

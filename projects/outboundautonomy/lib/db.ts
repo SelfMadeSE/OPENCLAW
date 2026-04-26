@@ -6,7 +6,10 @@ let db: Database.Database
 
 export function getDb(): Database.Database {
   if (!db) {
-    const dbPath = process.env.DB_PATH || path.join(process.cwd(), 'data', 'outboundautonomy.db')
+    const defaultDbPath = process.env.VERCEL
+      ? path.join('/tmp', 'outboundautonomy.db')
+      : path.join(process.cwd(), 'data', 'outboundautonomy.db')
+    const dbPath = process.env.DB_PATH || defaultDbPath
     const dataDir = path.dirname(dbPath)
     
     // Create data directory if it doesn't exist
