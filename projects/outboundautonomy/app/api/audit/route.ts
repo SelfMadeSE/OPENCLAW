@@ -110,6 +110,12 @@ interface AuditData {
     range: string
     basis: string
   }
+  competitiveGap: {
+    oaCovers: string[]
+    typicalToolsCover: string[]
+    typicalAgenciesCover: string[]
+    positioningAngle: string
+  }
   disclaimer: string
 }
 
@@ -652,13 +658,49 @@ function analyze(
       range: priceRange(issues.length, overallScore),
       basis: `Based on ${issues.length} detected issue${issues.length === 1 ? '' : 's'}, current score ${overallScore}/100, and whether conversion plus automation work is required.`,
     },
+    competitiveGap: {
+      oaCovers: [
+        'Technical SEO',
+        'Page Speed',
+        'Mobile Friendliness',
+        'Design Quality',
+        'Conversion Funnel Analysis',
+        'Lead Capture Assessment',
+        'Trust Signal Review',
+        'Competitor Comparison',
+        'Prioritized Fix List (tailored)',
+        'Implementation Path with Pricing',
+        'Local Service Business Focus',
+        'Human-Interpreted Recommendations',
+        'Visual Evidence & Screenshots',
+      ],
+      typicalToolsCover: ['Technical SEO', 'Page Speed', 'Mobile Friendliness'],
+      typicalAgenciesCover: ['Design', 'SEO'],
+      positioningAngle: 'Tools give you data. We give you a plan.',
+    },
     disclaimer: 'This preview combines live HTML scanning, same-origin crawl sampling, and best-effort PageSpeed/Lighthouse data. Authenticated pages, analytics, and true competitor research still require the full implementation review.',
   }
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json()
+    let body: Record<string, unknown>
+    try {
+      body = await request.json()
+    } catch {
+      return NextResponse.json(
+        { error: 'Invalid or empty request body — please send a JSON object with a "url" field.' },
+        { status: 400 }
+      )
+    }
+
+    if (!body || typeof body !== 'object' || !body.url) {
+      return NextResponse.json(
+        { error: 'Missing required field: "url". Please include the website URL to audit.' },
+        { status: 400 }
+      )
+    }
+
     const { url: rawUrl } = body
     const url = normalizeUrl(String(rawUrl || ''))
     const businessDescription = typeof body.businessDescription === 'string' ? body.businessDescription.trim() : ''
@@ -690,8 +732,22 @@ export async function POST(request: NextRequest) {
       })
     )
   } catch (error) {
+    // Validation errors (from normalizeUrl, assertPublicHost, etc.) are user-facing 400s.
+    // Everything else is an internal 500.
+    const VALIDATION_ERRORS = new Set([
+      'URL is required',
+      'Only http and https URLs are supported',
+      'Local/private URLs cannot be audited',
+      'Private or unreachable host cannot be audited',
+    ])
     const message = error instanceof Error ? error.message : 'Internal server error'
-    const status = message.includes('required') || message.includes('Invalid') || message.includes('Only') ? 400 : 500
+    const isValidation =
+      message.startsWith('Invalid URL') ||
+      message.startsWith('Could not reach') ||
+      message.startsWith('Unable to verify host') ||
+      message.includes('at least 25 characters') ||
+      VALIDATION_ERRORS.has(message)
+    const status = isValidation ? 400 : 500
     return NextResponse.json({ error: message }, { status })
   }
 }
