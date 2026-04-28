@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-muted text-sm">
-              Custom AI workflow implementation for service businesses.
+              Free website audits for service businesses — find what’s leaking, then build what fixes it.
             </p>
           </div>
 
@@ -18,6 +18,8 @@ export default function Footer() {
               <li><a href="/" className="text-muted hover:text-signal transition-colors">Home</a></li>
               <li><a href="/services" className="text-muted hover:text-signal transition-colors">Services</a></li>
               <li><a href="/pricing" className="text-muted hover:text-signal transition-colors">Pricing</a></li>
+              <li><a href="/sample-report" className="text-muted hover:text-signal transition-colors">Sample Report</a></li>
+              <li><a href="/faq" className="text-muted hover:text-signal transition-colors">FAQ</a></li>
               <li><a href="/about" className="text-muted hover:text-signal transition-colors">About</a></li>
               <li><a href="/contact" className="text-muted hover:text-signal transition-colors">Contact</a></li>
             </ul>
