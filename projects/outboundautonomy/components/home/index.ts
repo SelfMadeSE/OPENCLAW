@@ -6,3 +6,4 @@ export { SocialProof } from './SocialProof';
 export { PricingPreview } from './PricingPreview';
 export { FAQ, homepageFaqs } from './FAQ';
 export { FinalCTA } from './FinalCTA';
+export { AuditReportPreview } from './AuditReportPreview';
