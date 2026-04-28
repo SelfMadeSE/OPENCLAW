@@ -1,289 +1,169 @@
-import { Container, Section, Button } from '@/components/ui'
+import { Container, Section, AnimatedSection } from '@/components/ui'
+import SiteAuditTool from '@/components/site-audit/SiteAuditTool'
 
-const scoreBands = [
+const steps = [
   {
-    score: '0–35',
-    label: 'Critical',
-    meaning: 'Design overhaul, conversion rebuild, technical debt cleanup',
-    scope: 'Full website + workflow rebuild',
+    step: '1',
+    title: 'Drop your URL',
+    description: 'No account needed. No email gate. Just your website address.',
   },
   {
-    score: '36–60',
-    label: 'Needs Work',
-    meaning: 'Good bones, broken conversion path, missing lead capture',
-    scope: 'Targeted fixes + automation integration',
+    step: '2',
+    title: 'We scan it',
+    description:
+      'Our system checks design quality, page speed, mobile experience, lead capture, technical SEO, and CTA placement.',
   },
   {
-    score: '61–85',
-    label: 'Fair',
-    meaning: 'Mostly solid, leaking on follow-up and routing',
-    scope: 'Workflow automation + optimization',
+    step: '3',
+    title: 'You see findings',
+    description:
+      'A preview shows your biggest issues immediately — no signup required.',
   },
   {
-    score: '86–100',
-    label: 'Strong',
-    meaning: 'Well-built but manual processes slow response',
-    scope: 'Lead routing + admin automation',
+    step: '4',
+    title: 'Full report (free)',
+    description:
+      'Enter your email. Get your complete breakdown: scores, specific fixes, competitor examples, and an implementation estimate.',
+  },
+  {
+    step: '5',
+    title: 'Pick what to build',
+    description:
+      'Choose the fixes that matter most. We give you a price and timeline.',
   },
 ]
 
-const services = [
+const reportSections = [
   {
-    title: 'Site redesign & conversion repair',
-    subtitle: 'Fix what the audit found — scores 0–60',
-    description:
-      'The audit found design problems, slow pages, broken CTAs, or unclear offers. We rebuild the pages that cost you leads — not a full redesign by default, only the components the audit flagged.',
-    builds: [
-      'Page-level fixes for every issue surfaced in the audit (CTA placement, load speed, mobile layout, form UX)',
-      'Lead capture components tested against your current conversion baseline',
-      'Redirect and crawl fixes for technical issues',
-      'Preview/approval workflow so you see changes before they go live',
+    title: 'Design Score',
+    items: [
+      'Visual quality, layout, brand consistency',
+      'Mobile responsiveness',
+      'Trust signals (reviews, credentials, social proof)',
+      'Call-to-action placement and clarity',
     ],
-    timeline: '2–4 weeks for a targeted fix pass. 4–8 weeks for a full site rebuild.',
-    investment: '$1,500–$5,000 depending on scope',
-    signals:
-      'Your audit showed a score below 60. Your phone isn\u2019t ringing from the website. You know the site looks dated but don\u2019t know what to fix first.',
   },
   {
-    title: 'Intake, qualification & routing',
-    subtitle: 'Close the lead gaps — any score',
-    description:
-      'Forms are submitted. Emails arrive. But leads go cold because there\u2019s no structured intake, qualification, or routing. We build the workflow between the form submission and the booked call.',
-    builds: [
-      'Multi-step intake forms that pre-qualify before routing (saves your team time)',
-      'Automated lead triage: high-intent leads get immediate notifications, lower-intent leads go to a nurture sequence',
-      'Calendar + CRM routing: leads land in the right pipeline stage with the right owner',
-      'Fallback for missed responses: if nobody follows up within a window, automated text/email re-engagement fires',
+    title: 'Conversion Score',
+    items: [
+      'Lead capture setup (forms, chat, phone)',
+      'Form length, friction points, follow-up readiness',
+      'Intake flow evaluation',
+      'Booking / scheduling path',
     ],
-    timeline: '1–3 weeks per workflow',
-    investment: '$1,500–$5,000 depending on number of workflows',
-    signals:
-      'Your audit showed strong technical scores but conversion gaps. You\u2019re getting leads but losing them in the follow-up. Your team spends too much time on \u201Cwho handles this one?\u201D',
   },
   {
-    title: 'Admin automation',
-    subtitle: 'Replace repetitive manual tasks',
-    description:
-      'After the site is fixed and leads are routing, the next bottleneck is usually manual work: follow-up sequences, status checks, reporting, customer communication, invoice reminders, review requests.',
-    builds: [
-      'Follow-up automation: scheduled email/text sequences for new leads, past clients, review requests',
-      'Status-monitoring workflows: notify you when a lead hasn\u2019t progressed, a job is at risk, or a client needs attention',
-      'Admin report generation: pull pipeline status, lead sources, response times without manual spreadsheet work',
-      'Two-way communication flows: client can reply to an automated message and a human sees it in your CRM with context',
+    title: 'Technical Score',
+    items: [
+      'Page speed (Core Web Vitals)',
+      'SEO basics (titles, meta, structure)',
+      'SSL, hosting, security headers',
+      'Crawlability and indexation',
     ],
-    timeline: '1–2 weeks per automation',
-    investment: '$1,500–$5,000 per automation. Combined scopes usually fall into the $5,000+ band.',
-    signals:
-      'Your audit was fine on the surface but your team is drowning in manual follow-up. You know leads are being lost in the gap between form submission and human response.',
   },
   {
-    title: 'Partner / white-label',
-    subtitle: 'For agencies and marketing shops',
-    description:
-      'You audit your client\u2019s site (or we audit it). We build the fixes and automation. You own the relationship. We\u2019re the implementation layer you don\u2019t need to hire for.',
-    builds: [
-      'Audit + proposal generation under your brand',
-      'Implementation of website fixes, CRM workflows, and automation',
-      'Ongoing maintenance if you don\u2019t want to manage it',
-      'Training materials you can share with your client',
+    title: 'Competitor Gap Analysis',
+    items: [
+      '3–5 local competitors benchmarked against your site',
+      'What they do better (design, conversion, messaging)',
+      'Specific gaps you can close — with examples',
     ],
-    timeline: 'Custom — scoped per client',
-    investment: 'Starting at $1,000/month retainer, per-client implementation at cost.',
-    signals:
-      'You\u2019re an agency that already sells websites or marketing services. Clients are asking about \u201CAI\u201D or \u201Cautomation\u201D and you need a credible implementation partner.',
+    note: 'Implementation Estimate: What it would cost and how long each fix takes. Tiered options: quick wins vs. full rebuild. No pressure. No pitch. Just the numbers.',
   },
+]
+
+const tiers = [
+  {
+    name: 'Quick Fixes',
+    timeline: '1–2 weeks',
+    items: [
+      'Page speed improvements',
+      'CTA and button placement fixes',
+      'Lead capture form installation',
+      'Mobile layout fixes',
+      'SEO title/meta cleanup',
+      'Trust badge placement',
+    ],
+  },
+  {
+    name: 'Lead Machine',
+    timeline: '2–4 weeks',
+    items: [
+      'Everything in Quick Fixes, plus:',
+      'Homepage or landing page redesign',
+      'Full intake form with routing',
+      'CRM connection (lead goes straight into your pipeline)',
+      'Follow-up automation (text, email, or both)',
+      'Booking / appointment scheduling flow',
+    ],
+  },
+  {
+    name: 'Full System',
+    timeline: '4–8 weeks',
+    items: [
+      'Everything in Lead Machine, plus:',
+      'Complete site rebuild (design + dev)',
+      'Automated lead qualification and scoring',
+      'Customer communication sequences',
+      'Admin workflow automation (reports, approvals, notifications)',
+      'Agency white-label package (if applicable)',
+    ],
+  },
+]
+
+const signals = [
+  'You get fewer calls than competitors',
+  'Your contact form collects dust',
+  'Your bounce rate is over 60%',
+  "You've had the same site for 3+ years",
+  'Nobody can find you on Google',
+]
+
+const industries = [
+  'HVAC, plumbing, roofing, landscaping, cleaning, electrical',
+  'Dental, chiropractic, med spa, legal',
+  'Home services, trades, professional services',
+  'Any operator-led SMB losing leads because their site is bad',
 ]
 
 export default function Services() {
   return (
     <main>
       {/* Hero */}
-      <div className="bg-gradient-to-b from-void to-depth">
+      <AnimatedSection><div className="bg-gradient-to-b from-void to-depth">
         <Container>
           <Section className="py-24">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-5xl font-bold text-static mb-6">
-                Turn audit findings into working systems
+                Your website is leaking leads. We&apos;ll show you where{' '}
+                <span className="text-signal">— and how to fix it.</span>
               </h1>
-              <p className="text-xl text-muted leading-relaxed">
-                Your website audit surfaced specific issues. This is how we fix
-                them — mapped to your score, your industry, and your actual
-                workflow.
+              <p className="text-xl text-muted leading-relaxed max-w-2xl mx-auto">
+                One URL is all it takes. Drop in your site, get a full
+                diagnostic on design, conversion, technical health, and how you
+                stack against competitors. Then get a plan to fix what matters
+                most.
               </p>
             </div>
           </Section>
         </Container>
+      </div></AnimatedSection>
 
-        {/* Score Band Mapping */}
-        <Container>
-          <Section className="pb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-static mb-4">
-                How the audit maps to services
-              </h2>
-            </div>
-            <div className="bg-depth border border-steel rounded-xl overflow-hidden max-w-4xl mx-auto">
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-steel text-muted text-left">
-                      <th className="p-4 font-medium">Audit Score</th>
-                      <th className="p-4 font-medium">What It Usually Means</th>
-                      <th className="p-4 font-medium">Typical Service Scope</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {scoreBands.map((band) => (
-                      <tr
-                        key={band.score}
-                        className="border-b border-steel last:border-0"
-                      >
-                        <td className="p-4">
-                          <span className="inline-flex items-center gap-2">
-                            <span className="text-signal font-bold text-lg">
-                              {band.score}
-                            </span>
-                            <span className="text-xs text-muted font-mono uppercase">
-                              {band.label}
-                            </span>
-                          </span>
-                        </td>
-                        <td className="p-4 text-muted">{band.meaning}</td>
-                        <td className="p-4 text-static">{band.scope}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </Section>
-        </Container>
-      </div>
-
-      {/* Service Categories */}
-      <div className="bg-depth">
-        <Container>
-          <Section className="py-20">
-            <div className="space-y-20">
-              {services.map((service, i) => (
-                <div
-                  key={service.title}
-                  className="max-w-4xl mx-auto"
-                >
-                  <div className="mb-8">
-                    <p className="text-signal text-sm font-mono tracking-widest uppercase mb-2">
-                      {service.subtitle}
-                    </p>
-                    <h2 className="text-3xl font-bold text-static mb-4">
-                      {service.title}
-                    </h2>
-                    <p className="text-lg text-muted leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-
-                  <div className="grid md:grid-cols-3 gap-8">
-                    <div className="md:col-span-2">
-                      <h3 className="text-lg font-semibold text-static mb-4">
-                        What gets built:
-                      </h3>
-                      <ul className="space-y-3">
-                        {service.builds.map((item, j) => (
-                          <li key={j} className="flex gap-3 text-muted">
-                            <span className="text-signal flex-shrink-0 mt-1">
-                              ▸
-                            </span>
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="space-y-4">
-                      <div className="bg-void border border-steel rounded-lg p-5">
-                        <p className="text-xs text-muted font-mono uppercase tracking-wider mb-1">
-                          Timeline
-                        </p>
-                        <p className="text-sm text-static">{service.timeline}</p>
-                      </div>
-                      <div className="bg-void border border-steel rounded-lg p-5">
-                        <p className="text-xs text-muted font-mono uppercase tracking-wider mb-1">
-                          Investment
-                        </p>
-                        <p className="text-sm text-static">
-                          {service.investment}
-                        </p>
-                        <a
-                          href="/pricing"
-                          className="text-xs text-signal hover:underline mt-1 inline-block"
-                        >
-                          See pricing →
-                        </a>
-                      </div>
-                      <div className="bg-void border border-steel rounded-lg p-5">
-                        <p className="text-xs text-muted font-mono uppercase tracking-wider mb-1">
-                          Signal
-                        </p>
-                        <p className="text-xs text-muted leading-relaxed">
-                          {service.signals}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {i < services.length - 1 && (
-                    <hr className="mt-16 border-steel/30" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </Section>
-        </Container>
-      </div>
-
-      {/* How We Work */}
-      <div className="bg-void">
+      {/* How It Works - 5-step audit funnel */}
+      <AnimatedSection><div className="bg-depth">
         <Container>
           <Section className="py-20">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-static mb-4">
-                How we work
+                The Audit — How It Works
               </h2>
-              <p className="text-lg text-muted max-w-xl mx-auto">
-                Every project starts the same way.
-              </p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {[
-                {
-                  step: '1',
-                  title: 'Audit',
-                  description:
-                    'We scan your site, review your current lead path, and identify what\u2019s losing you business.',
-                },
-                {
-                  step: '2',
-                  title: 'Scope',
-                  description:
-                    'We map the specific audit findings to a build plan. No generic proposals.',
-                },
-                {
-                  step: '3',
-                  title: 'Build',
-                  description:
-                    'We implement in order of impact. The biggest lead leak gets fixed first.',
-                },
-                {
-                  step: '4',
-                  title: 'Handoff',
-                  description:
-                    'You own the systems. We provide documentation, training, and a maintenance path.',
-                },
-              ].map((item) => (
+            <div className="grid md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+              {steps.map((item) => (
                 <div
                   key={item.step}
-                  className="bg-depth border border-steel rounded-lg p-6 text-center"
+                  className="bg-void border border-steel rounded-lg p-6 text-center"
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-signal/10 border border-signal/30 text-signal font-bold text-sm mb-4">
                     {item.step}
@@ -291,43 +171,199 @@ export default function Services() {
                   <h3 className="text-lg font-semibold text-static mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-muted">{item.description}</p>
+                  <p className="text-sm text-muted leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
+          </Section>
+        </Container>
+      </div></AnimatedSection>
 
-            <p className="text-center text-muted mt-10 max-w-2xl mx-auto">
-              We are currently accepting new clients in a controlled rollout.
-              Each project is scoped case-by-case because every service business
-              runs differently. We say no when the fit isn&apos;t right.
-            </p>
+      {/* What the Report Contains */}
+      <AnimatedSection><div className="bg-void">
+        <Container>
+          <Section className="py-20">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-static mb-4">
+                What the Report Contains
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {reportSections.map((section) => (
+                <div
+                  key={section.title}
+                  className="bg-depth border border-steel rounded-xl p-6"
+                >
+                  <h3 className="text-xl font-semibold text-static mb-4">
+                    {section.title}
+                  </h3>
+                  <ul className="space-y-2">
+                    {section.items.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-muted text-sm">
+                        <span className="text-signal flex-shrink-0 mt-0.5">
+                          ▸
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {section.note && (
+                    <p className="mt-4 text-sm text-muted italic border-t border-steel/30 pt-4">
+                      {section.note}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </Section>
+        </Container>
+      </div></AnimatedSection>
+
+      {/* Implementation Tiers */}
+      <div className="bg-depth">
+        <Container>
+          <Section className="py-20">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-static mb-4">
+                What You Can Build
+              </h2>
+              <p className="text-lg text-muted max-w-xl mx-auto">
+                Pick the scope that matches your business. Every option starts
+                with the audit.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {tiers.map((tier) => (
+                <div
+                  key={tier.name}
+                  className="bg-void border border-steel rounded-xl p-6 flex flex-col"
+                >
+                  <div className="mb-4">
+                    <h3 className="text-xl font-bold text-static">
+                      {tier.name}
+                    </h3>
+                    <p className="text-sm text-signal font-mono tracking-wider mt-1">
+                      {tier.timeline}
+                    </p>
+                  </div>
+                  <ul className="space-y-2 flex-1">
+                    {tier.items.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-muted text-sm">
+                        <span className="text-signal flex-shrink-0 mt-0.5">
+                          ▸
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </Section>
         </Container>
       </div>
 
-      {/* CTA */}
+      {/* Target Audience */}
+      <div className="bg-void">
+        <Container>
+          <Section className="py-20">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-static mb-4">
+                Who This Is For
+              </h2>
+              <p className="text-lg text-muted max-w-xl mx-auto">
+                Local service businesses whose website is costing them money.
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-8">
+              <div className="bg-depth border border-steel rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-static mb-4">
+                  Industries we work with
+                </h3>
+                <ul className="space-y-2">
+                  {industries.map((industry, i) => (
+                    <li key={i} className="flex gap-3 text-muted text-sm">
+                      <span className="text-signal flex-shrink-0 mt-0.5">
+                        ▸
+                      </span>
+                      <span>{industry}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-depth border border-steel rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-static mb-4">
+                  You know your website isn&apos;t working if:
+                </h3>
+                <ul className="space-y-2">
+                  {signals.map((signal, i) => (
+                    <li key={i} className="flex gap-3 text-muted text-sm">
+                      <span className="text-red-400 flex-shrink-0 mt-0.5">
+                        ✕
+                      </span>
+                      <span>{signal}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </Section>
+        </Container>
+      </div>
+
+      {/* CTA — URL Input */}
       <div className="bg-depth">
         <Container>
           <Section className="py-20">
             <div className="text-center max-w-2xl mx-auto">
-              <h2 className="text-3xl font-bold text-static mb-4">
-                Ready to turn your audit into a fix?
+              <h2 className="text-4xl font-bold text-static mb-4">
+                Stop guessing.{' '}
+                <span className="text-signal">Start fixing.</span>
               </h2>
               <p className="text-lg text-muted mb-8">
-                You already know what&apos;s wrong. We know how to build the
-                solution.
+                Enter your URL. Get your audit. See exactly what&apos;s broken,
+                how it compares, and what to do about it.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button href="/" variant="primary" size="lg">
-                  Start with Your URL →
-                </Button>
-                <Button href="/sample-report" variant="secondary" size="lg">
-                  See an Example Audit
-                </Button>
-              </div>
+              <SiteAuditTool />
               <p className="text-sm text-muted mt-6">
-                No commitment. No sales call first. If the score makes sense,
-                the proposal will too.
+                No spam. No sales calls unless you ask. Full report in under 60
+                seconds.
+              </p>
+            </div>
+          </Section>
+        </Container>
+      </div>
+
+      {/* Trust Notes */}
+      <div className="bg-void">
+        <Container>
+          <Section className="py-16">
+            <div className="max-w-3xl mx-auto space-y-3 text-center">
+              <p className="text-sm text-muted">
+                Every audit is automated and honest. We don&apos;t inflate
+                scores to sell more work.
+              </p>
+              <p className="text-sm text-muted">
+                Competitor analysis is public data only — we don&apos;t access
+                private analytics.
+              </p>
+              <p className="text-sm text-muted">
+                Your URL and email are never shared or sold.
+              </p>
+              <p className="text-sm text-muted">
+                Questions before you audit?{' '}
+                <a
+                  href="mailto:owner@outboundautonomy.com"
+                  className="text-signal hover:underline"
+                >
+                  Talk to us
+                </a>
               </p>
             </div>
           </Section>
@@ -338,20 +374,20 @@ export default function Services() {
 }
 
 export const metadata = {
-  title: 'Services — Outbound Autonomy',
+  title: 'Website Audit for Service Businesses | Outbound Autonomy',
   description:
-    'Turn website audit findings into working systems. Site redesign, lead intake & routing, admin automation, and white-label for agencies. Score-band pricing.',
+    'Free website audit that scores your design, conversion, technical health, and competitor gaps. Get specific fixes and an implementation estimate — no pressure.',
   openGraph: {
-    title: 'Services — Outbound Autonomy',
+    title: 'Website Audit for Service Businesses | Outbound Autonomy',
     description:
-      'Turn website audit findings into working systems. Mapped to your audit score, your industry, and your actual workflow.',
+      'Free website audit that scores your design, conversion, technical health, and competitor gaps. Get specific fixes — no pressure.',
     type: 'website',
     url: 'https://outboundautonomy.com/services',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Services — Outbound Autonomy',
+    title: 'Website Audit for Service Businesses | Outbound Autonomy',
     description:
-      'Turn website audit findings into working systems. Audit score to service scope.',
+      'Free website audit that scores your design, conversion, technical health, and competitor gaps.',
   },
 }

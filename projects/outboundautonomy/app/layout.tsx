@@ -2,6 +2,7 @@ import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Analytics } from '@vercel/analytics/next'
+import { PageTransition } from '@/components/layout/PageTransition'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
@@ -43,7 +44,7 @@ export default function RootLayout({
       <body className="bg-void text-static min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
-          {children}
+          <PageTransition>{children}</PageTransition>
         </main>
         <Footer />
         <Analytics />

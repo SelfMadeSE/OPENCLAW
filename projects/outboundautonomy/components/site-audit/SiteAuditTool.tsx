@@ -5,6 +5,7 @@ import { FormEvent, useState } from 'react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 interface ScoreItem {
   label: string
@@ -96,6 +97,12 @@ interface AuditData {
   implementationEstimate: {
     range: string
     basis: string
+  }
+  competitiveGap: {
+    oaCovers: string[]
+    typicalToolsCover: string[]
+    typicalAgenciesCover: string[]
+    positioningAngle: string
   }
   disclaimer: string
 }
@@ -425,6 +432,37 @@ function AuditReport({ report, onReset }: { report: AuditData; onReset: () => vo
             </div>
           </div>
 
+          <div className="rounded-3xl border border-signal/30 bg-depth p-6">
+            <p className="text-sm uppercase tracking-[0.25em] text-signal">Why Outbound Autonomy</p>
+            <h3 className="mt-3 text-2xl font-bold text-static">{report.competitiveGap.positioningAngle}</h3>
+            <div className="mt-6 grid gap-6 md:grid-cols-3">
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted">Typical tools cover</p>
+                <ul className="mt-3 space-y-2">
+                  {report.competitiveGap.typicalToolsCover.map((item) => (
+                    <li key={item} className="rounded-lg border border-steel bg-void/50 px-3 py-2 text-sm text-muted">{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted">Typical agencies cover</p>
+                <ul className="mt-3 space-y-2">
+                  {report.competitiveGap.typicalAgenciesCover.map((item) => (
+                    <li key={item} className="rounded-lg border border-steel bg-void/50 px-3 py-2 text-sm text-muted">{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-signal">Outbound Autonomy covers</p>
+                <ul className="mt-3 space-y-2">
+                  {report.competitiveGap.oaCovers.map((item) => (
+                    <li key={item} className="rounded-lg border border-signal/40 bg-signal/10 px-3 py-2 text-sm text-static">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <FullPlanGate report={report} />
         </div>
       </Container>
@@ -489,9 +527,32 @@ export default function SiteAuditTool() {
     return <AuditReport report={report} onReset={() => setReport(null)} />
   }
 
+  function AuditLoadingSkeleton() {
+    return (
+      <div className="mx-auto mt-10 max-w-2xl space-y-6">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <div key={i} className="flex items-center gap-4">
+            <div className="h-4 w-4 rounded-full bg-steel/30" />
+            <div className="audit-skeleton-bar flex-1" />
+          </div>
+        ))}
+        <div className="mt-6 flex justify-center">
+          <div className="h-10 w-48 rounded-full bg-steel/20" />
+        </div>
+        <div className="mt-6 flex flex-col items-center gap-3">
+          <div className="audit-pulse-dot" />
+          <p className="text-sm text-muted">
+            Scanning page, collecting signals…
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <Section id="audit" className="py-24">
       <Container>
+        <AnimatedSection>
         <div className="mx-auto max-w-4xl rounded-[2rem] border border-steel bg-depth p-6 text-center md:p-12">
           <p className="text-sm uppercase tracking-[0.35em] text-signal">Free URL analysis</p>
           <h1 className="mt-4 text-4xl font-black tracking-tight text-static md:text-6xl">
@@ -501,104 +562,118 @@ export default function SiteAuditTool() {
             We scan the page, score conversion signals, surface obvious issues, show implementation patterns, and map the first fixes to a proposal path.
           </p>
 
-          <form onSubmit={generateAudit} className="mx-auto mt-10 grid max-w-2xl gap-3 md:grid-cols-[1fr_auto]">
-            <input
-              type="text"
-              value={url}
-              onChange={(event) => setUrl(event.target.value)}
-              placeholder="example.com"
-              className="rounded-xl border border-steel bg-void px-5 py-4 text-static outline-none focus:border-signal"
-              required
-            />
-            <Button type="submit" variant="primary" size="lg" disabled={loading}>
-              {loading ? 'Scanning...' : 'Generate Free Audit'}
-            </Button>
-          </form>
+          {loading ? (
+            <AuditLoadingSkeleton />
+          ) : (
+            <>
+            <form onSubmit={generateAudit} className="mx-auto mt-10 grid max-w-2xl gap-3 md:grid-cols-[1fr_auto]">
+              <input
+                type="text"
+                value={url}
+                onChange={(event) => setUrl(event.target.value)}
+                placeholder="example.com"
+                className="audit-input rounded-xl border border-steel bg-void px-5 py-4 text-static outline-none caret-signal"
+                required
+              />
+              <Button type="submit" variant="primary" size="lg" disabled={loading}>
+                Generate Free Audit
+              </Button>
+            </form>
 
-          <div className="mx-auto mt-5 max-w-2xl text-left">
-            <button type="button" onClick={() => setShowAdvanced((value) => !value)} className="text-sm font-semibold text-signal hover:text-signal/80">
-              {showAdvanced ? 'Hide audit details' : 'Add business/access details'}
-            </button>
-            {showAdvanced && (
-              <div className="mt-4 space-y-4 rounded-2xl border border-steel bg-void/60 p-5">
-                <div className="grid gap-3 md:grid-cols-2">
-                  <label className="text-sm text-muted">
-                    Site type
-                    <select
-                      value={siteType}
-                      onChange={(event) => setSiteType(event.target.value)}
-                      className="mt-2 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
-                    >
-                      <option value="service-business">Service business</option>
-                      <option value="portfolio">Portfolio</option>
-                      <option value="saas">SaaS/app</option>
-                      <option value="ecommerce">Ecommerce</option>
-                      <option value="local-business">Local business</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </label>
-                  <label className="text-sm text-muted">
-                    Login or gated-page URL
-                    <input
-                      type="text"
-                      value={loginUrl}
-                      onChange={(event) => setLoginUrl(event.target.value)}
-                      placeholder="app.example.com/login"
-                      className="mt-2 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
-                    />
-                  </label>
-                </div>
-                <label className="block text-sm text-muted">
-                  Business/context description
-                  <textarea
-                    value={businessDescription}
-                    onChange={(event) => setBusinessDescription(event.target.value)}
-                    placeholder="What does the business sell, who is the audience, and what should the site make visitors do?"
-                    minLength={25}
-                    className="mt-2 min-h-24 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
-                  />
-                  <span className="mt-1 block text-xs text-muted">Optional, but if provided it must be at least 25 characters.</span>
-                </label>
-                <div className="grid gap-3 text-sm text-muted md:grid-cols-2">
-                  {[
-                    ['Account/login area', hasAccountArea, setHasAccountArea],
-                    ['CAPTCHA/bot check', hasCaptcha, setHasCaptcha],
-                    ['2FA required', hasTwoFactor, setHasTwoFactor],
-                    ['Password-protected pages', hasPasswordProtection, setHasPasswordProtection],
-                  ].map(([label, value, setter]) => (
-                    <label key={label as string} className="flex items-center gap-3 rounded-xl border border-steel bg-depth p-3">
-                      <input
-                        type="checkbox"
-                        checked={value as boolean}
-                        onChange={(event) => (setter as (next: boolean) => void)(event.target.checked)}
-                        className="h-4 w-4"
-                      />
-                      {label as string}
+            <div className="mx-auto mt-5 max-w-2xl text-left">
+              <button type="button" onClick={() => setShowAdvanced((value) => !value)} className="text-sm font-semibold text-signal hover:text-signal/80">
+                {showAdvanced ? 'Hide audit details' : 'Add business/access details'}
+              </button>
+              {showAdvanced && (
+                <div className="mt-4 space-y-4 rounded-2xl border border-steel bg-void/60 p-5">
+                  <div className="grid gap-3 md:grid-cols-2">
+                    <label className="text-sm text-muted">
+                      Site type
+                      <select
+                        value={siteType}
+                        onChange={(event) => setSiteType(event.target.value)}
+                        className="mt-2 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
+                      >
+                        <option value="service-business">Service business</option>
+                        <option value="portfolio">Portfolio</option>
+                        <option value="saas">SaaS/app</option>
+                        <option value="ecommerce">Ecommerce</option>
+                        <option value="local-business">Local business</option>
+                        <option value="other">Other</option>
+                      </select>
                     </label>
-                  ))}
+                    <label className="text-sm text-muted">
+                      Login or gated-page URL
+                      <input
+                        type="text"
+                        value={loginUrl}
+                        onChange={(event) => setLoginUrl(event.target.value)}
+                        placeholder="app.example.com/login"
+                        className="mt-2 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
+                      />
+                    </label>
+                  </div>
+                  <label className="block text-sm text-muted">
+                    Business/context description
+                    <textarea
+                      value={businessDescription}
+                      onChange={(event) => setBusinessDescription(event.target.value)}
+                      placeholder="What does the business sell, who is the audience, and what should the site make visitors do?"
+                      minLength={25}
+                      className="mt-2 min-h-24 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
+                    />
+                    <span className="mt-1 block text-xs text-muted">Optional, but if provided it must be at least 25 characters.</span>
+                  </label>
+                  <div className="grid gap-3 text-sm text-muted md:grid-cols-2">
+                    {[
+                      ['Account/login area', hasAccountArea, setHasAccountArea],
+                      ['CAPTCHA/bot check', hasCaptcha, setHasCaptcha],
+                      ['2FA required', hasTwoFactor, setHasTwoFactor],
+                      ['Password-protected pages', hasPasswordProtection, setHasPasswordProtection],
+                    ].map(([label, value, setter]) => (
+                      <label key={label as string} className="flex items-center gap-3 rounded-xl border border-steel bg-depth p-3">
+                        <input
+                          type="checkbox"
+                          checked={value as boolean}
+                          onChange={(event) => (setter as (next: boolean) => void)(event.target.checked)}
+                          className="h-4 w-4"
+                        />
+                        {label as string}
+                      </label>
+                    ))}
+                  </div>
+                  <label className="block text-sm text-muted">
+                    Test-access instructions
+                    <textarea
+                      value={accessInstructions}
+                      onChange={(event) => setAccessInstructions(event.target.value)}
+                      placeholder="Example: Create a free account, use the demo workspace, test booking flow only. Do not paste real admin passwords here."
+                      className="mt-2 min-h-24 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
+                    />
+                    <span className="mt-1 block text-xs text-yellow-200">Use temporary test accounts only. Real credentials should be coordinated securely later.</span>
+                  </label>
                 </div>
-                <label className="block text-sm text-muted">
-                  Test-access instructions
-                  <textarea
-                    value={accessInstructions}
-                    onChange={(event) => setAccessInstructions(event.target.value)}
-                    placeholder="Example: Create a free account, use the demo workspace, test booking flow only. Do not paste real admin passwords here."
-                    className="mt-2 min-h-24 w-full rounded-lg border border-steel bg-void px-4 py-3 text-static outline-none focus:border-signal"
-                  />
-                  <span className="mt-1 block text-xs text-yellow-200">Use temporary test accounts only. Real credentials should be coordinated securely later.</span>
-                </label>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          {error && <p className="mt-4 text-sm text-red-300">{error}</p>}
+            {error && <p className="mt-4 text-sm text-red-300">{error}</p>}
 
-          <div className="mt-8 grid gap-3 text-left text-sm text-muted md:grid-cols-3">
-            <p className="rounded-xl border border-steel bg-void/60 p-4">Design, conversion, technical, and Lighthouse scoring.</p>
-            <p className="rounded-xl border border-steel bg-void/60 p-4">Same-origin crawl map plus screenshot when available.</p>
-            <p className="rounded-xl border border-steel bg-void/60 p-4">Optional gated-page context for deeper implementation review.</p>
-          </div>
+            <div className="mt-8 grid gap-3 text-left text-sm text-muted md:grid-cols-3">
+              <p className="rounded-xl border border-steel bg-void/60 p-4">Design, conversion, technical, and Lighthouse scoring.</p>
+              <p className="rounded-xl border border-steel bg-void/60 p-4">Same-origin crawl map plus screenshot when available.</p>
+              <p className="rounded-xl border border-steel bg-void/60 p-4">Optional gated-page context for deeper implementation review.</p>
+            </div>
+
+            <p className="mt-6 text-sm text-muted">
+              Want to see what a full audit looks like first?{' '}
+              <a href="/try" className="font-semibold text-signal hover:text-signal/80 underline underline-offset-2">
+                Preview an example audit for a local service business →
+              </a>
+            </p>
+            </>
+          )}
         </div>
+        </AnimatedSection>
       </Container>
     </Section>
   )

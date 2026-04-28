@@ -1,54 +1,33 @@
 'use client'
 
-import { FormEvent, useMemo, useState } from 'react'
-import { ArrowRight, CalendarClock, CheckCircle2, GitBranch, Loader2, MonitorCog } from 'lucide-react'
+import { FormEvent, useState } from 'react'
+import { AlertTriangle, ArrowRight, BarChart3, Code2, Gauge, Globe, Loader2, Paintbrush, Search, TrendingUp, Users, Zap } from 'lucide-react'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/ui/Container'
 import { Input } from '@/components/ui/Input'
-import { Select } from '@/components/ui/Select'
-import { Textarea } from '@/components/ui/Textarea'
-import { DemoLeadInput, DemoLeadResult, sandboxLeads } from '@/lib/demo/hero-flow'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
+import type { AuditResult } from '@/lib/demo/audit-flow'
 
-const initialLead: DemoLeadInput = sandboxLeads[0]
+const severityColors: Record<string, string> = {
+  critical: 'border-red-500/40 bg-red-500/5',
+  high: 'border-warm/40 bg-warm/5',
+  medium: 'border-steel/40 bg-depth/70',
+}
 
-const walkthrough = [
-  {
-    title: 'Show the premium website surface',
-    detail: 'Start with the hero promise, conversion offer, and clear sandbox badge.',
-  },
-  {
-    title: 'Submit the intake form',
-    detail: 'Explain that the form is real UI, while the lead profile and downstream actions are mocked.',
-  },
-  {
-    title: 'Narrate qualification',
-    detail: 'Use the score, segment, and route to show how OA decides what should happen next.',
-  },
-  {
-    title: 'Show the handoff',
-    detail: 'Point to the booking hold or follow-up output as the operator-facing next action.',
-  },
-  {
-    title: 'Open the backend trace',
-    detail: 'Walk through each step and its real vs mocked label for truthful demo framing.',
-  },
-]
+const severityDot: Record<string, string> = {
+  critical: 'bg-red-500',
+  high: 'bg-warm',
+  medium: 'bg-steel',
+}
 
-export default function HeroDemoPage() {
-  const [lead, setLead] = useState<DemoLeadInput>(initialLead)
-  const [result, setResult] = useState<DemoLeadResult | null>(null)
+export default function AuditDemoPage() {
+  const [url, setUrl] = useState('')
+  const [result, setResult] = useState<AuditResult | null>(null)
   const [status, setStatus] = useState<'idle' | 'loading' | 'error'>('idle')
   const [error, setError] = useState('')
 
-  const resultTone = useMemo(() => {
-    if (!result) return 'border-steel/30'
-    if (result.segment === 'Priority fit') return 'border-signal/50'
-    if (result.segment === 'Needs discovery') return 'border-warm/50'
-    return 'border-steel/50'
-  }, [result])
-
-  async function submitLead(event: FormEvent<HTMLFormElement>) {
+  async function runAudit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     setStatus('loading')
     setError('')
@@ -56,13 +35,13 @@ export default function HeroDemoPage() {
     const response = await fetch('/api/demo/hero', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(lead),
+      body: JSON.stringify({ url }),
     })
 
     const payload = await response.json()
     if (!response.ok) {
       setStatus('error')
-      setError(payload.error ?? 'Unable to run demo flow.')
+      setError(payload.error ?? 'Unable to run audit.')
       return
     }
 
@@ -70,33 +49,74 @@ export default function HeroDemoPage() {
     setStatus('idle')
   }
 
+  function scoreColor(score: number) {
+    if (score >= 70) return 'text-emerald-400'
+    if (score >= 45) return 'text-warm'
+    return 'text-red-400'
+  }
+
+  function scoreBarColor(score: number) {
+    if (score >= 70) return 'bg-emerald-500'
+    if (score >= 45) return 'bg-warm'
+    return 'bg-red-500'
+  }
+
+  const overall = result
+    ? Math.round((result.scores.design + result.scores.conversion + result.scores.technical) / 3)
+    : 0
+
   return (
     <div className="bg-void">
+      {/* ── Hero ── */}
       <section className="relative overflow-hidden border-b border-steel/20">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(0,229,255,0.12),transparent_42%)]" />
-        <Container className="relative grid min-h-[calc(100vh-4rem)] items-center gap-10 py-16 lg:grid-cols-[1fr_440px]">
+        <Container className="relative grid min-h-[calc(100vh-4rem)] items-center gap-10 py-16 lg:grid-cols-[1fr_420px]">
           <div>
-            <Badge>Sandbox hero demo</Badge>
+            <div className="flex items-center gap-3">
+              <Badge>
+                <Search className="mr-1.5 h-3.5 w-3.5" />
+                Website Audit Demo
+              </Badge>
+              <span className="rounded border border-signal/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-signal">
+                Sandbox
+              </span>
+            </div>
             <h1 className="mt-6 max-w-4xl text-4xl font-bold tracking-tight text-static md:text-6xl">
-              Premium website, intake, and automation handoff in one operator view.
+              Scan any website. See what&apos;s broken, what&apos;s missing, and what to fix.
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted md:text-xl">
-              A lean OA demo that shows the website experience, lead capture, qualification logic, and workflow trace without receptionist framing or telephony dependencies.
+              A lean OA demo that shows the URL audit engine: score analysis, actionable findings,
+              competitor benchmarks, and an implementation estimate&mdash;no forms, no routing, no handoff.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="#demo-intake" size="lg">
-                Run Sandbox Flow
-                <ArrowRight className="ml-2 h-4 w-4" />
+
+            <form onSubmit={runAudit} className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="relative flex-1">
+                <Globe className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-steel" />
+                <Input
+                  className="w-full pl-10"
+                  type="url"
+                  placeholder="https://example.com"
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
+                  required
+                />
+              </div>
+              <Button type="submit" disabled={status === 'loading'} size="lg">
+                {status === 'loading' ? (
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                ) : (
+                  <Search className="mr-2 h-4 w-4" />
+                )}
+                Run Audit
               </Button>
-              <Button href="#walkthrough" variant="secondary" size="lg">
-                Narration Steps
-              </Button>
-            </div>
+            </form>
+            {error ? <p className="mt-3 text-sm text-red-400">{error}</p> : null}
+
             <dl className="mt-10 grid max-w-2xl gap-3 sm:grid-cols-3">
               {[
-                ['Real', 'Page UI + API call'],
-                ['Mocked', 'Lead profile + handoff'],
-                ['Blocked by', 'No external services'],
+                ['Real', 'Page UI + URL analysis logic'],
+                ['Mocked', 'Scores, findings, competitor data'],
+                ['Blocked by', 'No live site crawler (simulated)'],
               ].map(([label, value]) => (
                 <div key={label} className="border-l border-signal/40 pl-4">
                   <dt className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{label}</dt>
@@ -106,21 +126,30 @@ export default function HeroDemoPage() {
             </dl>
           </div>
 
+          {/* ── Sidebar card: what the audit checks ── */}
           <div className="rounded-lg border border-steel/30 bg-depth/70 p-5 shadow-card backdrop-blur">
             <div className="flex items-center justify-between border-b border-steel/30 pb-4">
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-signal">Operator Snapshot</p>
-                <h2 className="mt-1 text-xl font-semibold text-static">Website automation system</h2>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-signal">Audit Engine</p>
+                <h2 className="mt-1 text-xl font-semibold text-static">What the scan examines</h2>
               </div>
-              <MonitorCog className="h-6 w-6 text-signal" />
+              <BarChart3 className="h-6 w-6 text-signal" />
             </div>
-            <div className="mt-5 space-y-4">
-              {['Landing page viewed', 'Lead intake submitted', 'Rules evaluated', 'Handoff prepared'].map((step, index) => (
-                <div key={step} className="flex items-center gap-3 rounded-md border border-steel/25 bg-void/60 p-3">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-signal/10 font-mono text-xs text-signal">
-                    {index + 1}
+            <div className="mt-5 space-y-3">
+              {[
+                { icon: <Paintbrush className="h-4 w-4" />, label: 'Design audit', desc: 'Layout, branding, visual hierarchy, mobile responsiveness' },
+                { icon: <TrendingUp className="h-4 w-4" />, label: 'Conversion audit', desc: 'CTA placement, form UX, trust signals, funnel friction' },
+                { icon: <Code2 className="h-4 w-4" />, label: 'Technical audit', desc: 'Page speed, metadata, accessibility, structured data' },
+                { icon: <Users className="h-4 w-4" />, label: 'Competitor benchmark', desc: 'Industry comparison and proven improvement patterns' },
+              ].map((item) => (
+                <div key={item.label} className="flex items-start gap-3 rounded-md border border-steel/25 bg-void/60 p-3">
+                  <span className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-signal/10 text-signal">
+                    {item.icon}
                   </span>
-                  <span className="text-sm text-static">{step}</span>
+                  <div>
+                    <p className="text-sm font-medium text-static">{item.label}</p>
+                    <p className="mt-0.5 text-xs text-muted">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -128,179 +157,226 @@ export default function HeroDemoPage() {
         </Container>
       </section>
 
+      {/* ── Results ── */}
       <Container className="py-16">
-        <div id="demo-intake" className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_420px]">
-          <form onSubmit={submitLead} className="rounded-lg border border-steel/30 bg-depth p-6">
-            <div className="mb-6 flex items-start justify-between gap-4">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Lead capture / intake</p>
-                <h2 className="mt-2 text-2xl font-semibold text-static">Sandbox website inquiry</h2>
-              </div>
-              <span className="rounded-md border border-signal/30 px-3 py-1 font-mono text-xs text-signal">Real form</span>
-            </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              <Field label="Name">
-                <Input value={lead.name} onChange={(event) => setLead({ ...lead, name: event.target.value })} required />
-              </Field>
-              <Field label="Email">
-                <Input type="email" value={lead.email} onChange={(event) => setLead({ ...lead, email: event.target.value })} required />
-              </Field>
-              <Field label="Company">
-                <Input value={lead.company} onChange={(event) => setLead({ ...lead, company: event.target.value })} required />
-              </Field>
-              <Field label="Website">
-                <Input value={lead.website} onChange={(event) => setLead({ ...lead, website: event.target.value })} required />
-              </Field>
-              <Field label="Monthly leads">
-                <Select value={lead.monthlyLeads} onChange={(event) => setLead({ ...lead, monthlyLeads: event.target.value })}>
-                  <option value="0-25">0-25</option>
-                  <option value="26-100">26-100</option>
-                  <option value="101-250">101-250</option>
-                  <option value="250+">250+</option>
-                </Select>
-              </Field>
-              <Field label="Build budget">
-                <Select value={lead.budget} onChange={(event) => setLead({ ...lead, budget: event.target.value })}>
-                  <option value="<2500">Under $2.5k</option>
-                  <option value="2500-7500">$2.5k-$7.5k</option>
-                  <option value="7500-15000">$7.5k-$15k</option>
-                  <option value="15000+">$15k+</option>
-                </Select>
-              </Field>
-              <Field label="Timeline">
-                <Select value={lead.timeline} onChange={(event) => setLead({ ...lead, timeline: event.target.value })}>
-                  <option value="this-month">This month</option>
-                  <option value="30-60">30-60 days</option>
-                  <option value="quarter">This quarter</option>
-                  <option value="exploring">Exploring</option>
-                </Select>
-              </Field>
-              <div className="md:col-span-2">
-                <Field label="Automation goal">
-                  <Textarea
-                    rows={4}
-                    value={lead.automationGoal}
-                    onChange={(event) => setLead({ ...lead, automationGoal: event.target.value })}
-                    required
-                  />
-                </Field>
-              </div>
-            </div>
-
-            {error ? <p className="mt-4 text-sm text-red-400">{error}</p> : null}
-            <Button className="mt-6" type="submit" disabled={status === 'loading'}>
-              {status === 'loading' ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <GitBranch className="mr-2 h-4 w-4" />}
-              Run Qualification
-            </Button>
-          </form>
-
-          <aside className={`rounded-lg border bg-depth p-6 ${resultTone}`}>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Qualification / routing logic</p>
-            {result ? (
-              <div className="mt-5">
-                <div className="flex items-end justify-between gap-4">
-                  <div>
-                    <p className="text-sm text-muted">Result</p>
-                    <h2 className="mt-1 text-3xl font-semibold text-static">{result.segment}</h2>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-mono text-4xl text-signal">{result.score}</p>
-                    <p className="text-xs text-muted">score / 100</p>
-                  </div>
-                </div>
-                <div className="mt-6 space-y-4">
-                  <ResultBlock icon={<GitBranch className="h-5 w-5" />} label="Route" value={result.route} flag="Real rule" />
-                  <ResultBlock icon={<CalendarClock className="h-5 w-5" />} label="Booking handoff or follow-up" value={result.bookingHandoff} flag="Mock output" />
-                  <ResultBlock icon={<CheckCircle2 className="h-5 w-5" />} label="Follow-up copy" value={result.followUpOutput} flag="Mock copy" />
-                </div>
-              </div>
-            ) : (
-              <div className="mt-10 rounded-md border border-steel/30 bg-void/60 p-5 text-sm text-muted">
-                Submit the intake form to generate a sandbox qualification result and handoff output.
-              </div>
-            )}
-          </aside>
-        </div>
-
-        <section className="mt-6 rounded-lg border border-steel/30 bg-depth p-6">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Operator-visible backend trace</p>
-              <h2 className="mt-2 text-2xl font-semibold text-static">Workflow timeline</h2>
-            </div>
-            <span className="rounded-md border border-steel/40 px-3 py-1 font-mono text-xs text-muted">In-memory API data</span>
-          </div>
-          <div className="mt-6 grid gap-3">
-            {(result?.trace ?? []).length ? (
-              result?.trace.map((step) => (
-                <div key={step.label} className="grid gap-3 rounded-md border border-steel/25 bg-void/60 p-4 md:grid-cols-[170px_minmax(0,1fr)_110px]">
-                  <span className="font-mono text-xs uppercase tracking-[0.16em] text-signal">{step.status}</span>
-                  <div>
-                    <h3 className="font-semibold text-static">{step.label}</h3>
-                    <p className="mt-1 text-sm text-muted">{step.detail}</p>
-                  </div>
-                  <span className="self-start rounded-md border border-steel/40 px-2 py-1 text-center font-mono text-xs text-muted">
-                    {step.source === 'real' ? 'Real' : 'Mocked'}
-                  </span>
-                </div>
-              ))
-            ) : (
-              <p className="rounded-md border border-steel/25 bg-void/60 p-4 text-sm text-muted">
-                The trace populates after the API processes a sandbox lead.
+        {!result ? (
+          /* ── Idle state ── */
+          <AnimatedSection>
+            <div className="mx-auto max-w-lg rounded-lg border border-steel/30 bg-depth p-10 text-center">
+              <Search className="mx-auto h-12 w-12 text-steel/50" />
+              <h2 className="mt-6 text-2xl font-semibold text-static">Enter a URL to begin</h2>
+              <p className="mt-3 text-muted">
+                Paste any website URL above and click &ldquo;Run Audit&rdquo;. The sandbox engine will
+                generate a simulated audit with scores, findings, competitor data, and a proposal estimate.
               </p>
-            )}
-          </div>
-        </section>
-
-        <section id="walkthrough" className="mt-6 rounded-lg border border-steel/30 bg-depth p-6">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Reusable walkthrough</p>
-          <h2 className="mt-2 text-2xl font-semibold text-static">Marketing / Media narration path</h2>
-          <div className="mt-6 grid gap-3 md:grid-cols-5">
-            {walkthrough.map((item, index) => (
-              <div key={item.title} className="rounded-md border border-steel/25 bg-void/60 p-4">
-                <span className="font-mono text-xs text-signal">Step {index + 1}</span>
-                <h3 className="mt-3 font-semibold text-static">{item.title}</h3>
-                <p className="mt-2 text-sm text-muted">{item.detail}</p>
+            </div>
+          </AnimatedSection>
+        ) : (
+          <>
+            {/* ── Score Cards ── */}
+            <AnimatedSection className="grid gap-6 md:grid-cols-4">
+              {/* Overall */}
+              <div className="rounded-lg border border-steel/30 bg-depth p-6 text-center">
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Overall</p>
+                <p className={`mt-3 text-5xl font-bold ${scoreColor(overall)}`}>{overall}</p>
+                <p className="mt-1 text-xs text-muted">/ 100</p>
+                <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-steel/20">
+                  <div
+                    className={`h-full rounded-full transition-all duration-700 ${scoreBarColor(overall)}`}
+                    style={{ width: `${overall}%` }}
+                  />
+                </div>
+                <p className="mt-4 text-xs text-muted">
+                  {overall >= 70
+                    ? 'Solid baseline — targeted fixes will lift further'
+                    : overall >= 45
+                      ? 'Moderate issues — address critical items first'
+                      : 'Significant overhaul recommended'}
+                </p>
               </div>
-            ))}
-          </div>
-        </section>
-      </Container>
-    </div>
-  )
-}
 
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <label className="grid gap-2 text-sm text-muted">
-      <span>{label}</span>
-      {children}
-    </label>
-  )
-}
+              {([
+                { key: 'design' as const, label: 'Design', icon: <Paintbrush className="h-5 w-5" /> },
+                { key: 'conversion' as const, label: 'Conversion', icon: <TrendingUp className="h-5 w-5" /> },
+                { key: 'technical' as const, label: 'Technical', icon: <Code2 className="h-5 w-5" /> },
+              ]).map(({ key, label, icon }) => (
+                <div key={key} className="rounded-lg border border-steel/30 bg-depth p-6">
+                  <div className="flex items-center justify-between">
+                    <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">{label}</p>
+                    <span className="text-signal">{icon}</span>
+                  </div>
+                  <p className={`mt-3 text-5xl font-bold ${scoreColor(result.scores[key])}`}>
+                    {result.scores[key]}
+                  </p>
+                  <p className="mt-1 text-xs text-muted">/ 100</p>
+                  <div className="mt-4 h-2 w-full overflow-hidden rounded-full bg-steel/20">
+                    <div
+                      className={`h-full rounded-full transition-all duration-700 ${scoreBarColor(result.scores[key])}`}
+                      style={{ width: `${result.scores[key]}%` }}
+                    />
+                  </div>
+                  <p className="mt-4 text-xs text-muted">
+                    {result.scores[key] >= 70
+                      ? 'Well-optimized'
+                      : result.scores[key] >= 45
+                        ? 'Needs improvement'
+                        : 'Critical attention required'}
+                  </p>
+                </div>
+              ))}
+            </AnimatedSection>
 
-function ResultBlock({
-  icon,
-  label,
-  value,
-  flag,
-}: {
-  icon: React.ReactNode
-  label: string
-  value: string
-  flag: string
-}) {
-  return (
-    <div className="rounded-md border border-steel/25 bg-void/60 p-4">
-      <div className="flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2 text-signal">
-          {icon}
-          <p className="font-mono text-xs uppercase tracking-[0.16em]">{label}</p>
+            {/* ── Findings ── */}
+            <AnimatedSection className="mt-10">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
+                    Specific Findings
+                  </p>
+                  <h2 className="mt-2 text-2xl font-semibold text-static">
+                    What the audit surfaced
+                  </h2>
+                </div>
+                <span className="rounded-md border border-signal/30 px-3 py-1 font-mono text-xs text-signal">
+                  {result.findings.length} issues found
+                </span>
+              </div>
+              <div className="mt-6 grid gap-3">
+                {result.findings.map((finding, i) => (
+                  <div
+                    key={`${finding.title}-${i}`}
+                    className={`rounded-md border p-4 ${severityColors[finding.severity]}`}
+                  >
+                    <div className="flex items-start gap-3">
+                      <span
+                        className={`mt-1 h-2.5 w-2.5 shrink-0 rounded-full ${severityDot[finding.severity]}`}
+                      />
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h3 className="font-semibold text-static">{finding.title}</h3>
+                          <span className="rounded border border-steel/30 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted">
+                            {finding.severity}
+                          </span>
+                          <span className="rounded border border-steel/30 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted">
+                            {finding.category}
+                          </span>
+                        </div>
+                        <p className="mt-2 text-sm text-muted">{finding.detail}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+
+            {/* ── Competitor Angle ── */}
+            <AnimatedSection className="mt-10 rounded-lg border border-steel/30 bg-depth p-6">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
+                    Competitor Comparison
+                  </p>
+                  <h2 className="mt-2 text-2xl font-semibold text-static">
+                    What competitors who fixed this did
+                  </h2>
+                </div>
+                <span className="rounded-md border border-steel/40 px-3 py-1 font-mono text-xs text-muted">
+                  Industry: {result.competitorAngle.industry}
+                </span>
+              </div>
+              <div className="mt-6 grid gap-4 md:grid-cols-[1fr_auto]">
+                <div className="rounded-md border border-signal/20 bg-signal/5 p-5">
+                  <div className="flex items-center gap-2 text-signal">
+                    <Zap className="h-5 w-5" />
+                    <p className="font-mono text-xs uppercase tracking-[0.16em]">Improvement</p>
+                  </div>
+                  <p className="mt-2 text-static">{result.competitorAngle.improvement}</p>
+                </div>
+                <div className="rounded-md border border-emerald-500/20 bg-emerald-500/5 p-5">
+                  <div className="flex items-center gap-2 text-emerald-400">
+                    <TrendingUp className="h-5 w-5" />
+                    <p className="font-mono text-xs uppercase tracking-[0.16em]">Result</p>
+                  </div>
+                  <p className="mt-2 text-static">{result.competitorAngle.result}</p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* ── Implementation Estimate + Proposal CTA ── */}
+            <AnimatedSection className="mt-10 rounded-lg border border-steel/30 bg-depth p-6">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">
+                    Implementation Estimate
+                  </p>
+                  <h2 className="mt-2 text-2xl font-semibold text-static">
+                    What it would take to fix this site
+                  </h2>
+                </div>
+                <span className="rounded-md border border-steel/40 px-3 py-1 font-mono text-xs text-muted">
+                  {result.implementation.effort === 'high'
+                    ? 'Full overhaul'
+                    : result.implementation.effort === 'medium'
+                      ? 'Mid-scope'
+                      : 'Tactical fixes'}
+                </span>
+              </div>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <div className="rounded-md border border-steel/25 bg-void/60 p-4">
+                  <div className="flex items-center gap-2 text-signal">
+                    <Gauge className="h-5 w-5" />
+                    <p className="font-mono text-xs uppercase tracking-[0.16em]">Effort Level</p>
+                  </div>
+                  <p className="mt-2 text-lg font-semibold text-static capitalize">
+                    {result.implementation.effort}
+                  </p>
+                </div>
+                <div className="rounded-md border border-steel/25 bg-void/60 p-4">
+                  <div className="flex items-center gap-2 text-signal">
+                    <AlertTriangle className="h-5 w-5" />
+                    <p className="font-mono text-xs uppercase tracking-[0.16em]">Timeline</p>
+                  </div>
+                  <p className="mt-2 text-lg font-semibold text-static">
+                    {result.implementation.timeline}
+                  </p>
+                </div>
+                <div className="rounded-md border border-steel/25 bg-void/60 p-4">
+                  <div className="flex items-center gap-2 text-signal">
+                    <BarChart3 className="h-5 w-5" />
+                    <p className="font-mono text-xs uppercase tracking-[0.16em]">Estimated Range</p>
+                  </div>
+                  <p className="mt-2 text-lg font-semibold text-static">
+                    {result.implementation.estimatedRange}
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm text-muted">{result.implementation.proposalSummary}</p>
+
+              <div className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-md border border-signal/20 bg-signal/5 p-5">
+                <div>
+                  <p className="font-medium text-static">Ready for a full proposal?</p>
+                  <p className="mt-1 text-sm text-muted">
+                    We&rsquo;ll walk through every finding, prioritize by impact, and deliver a phased
+                    implementation plan tailored to your stack and timeline.
+                  </p>
+                </div>
+                <Button href="/try" size="lg">
+                  Get the Full Proposal
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </AnimatedSection>
+          </>
+        )}
+
+        {/* ── Sandbox footer badge ── */}
+        <div className="mt-16 border-t border-steel/20 pt-6 text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-signal/30 bg-signal/5 px-4 py-2 font-mono text-xs uppercase tracking-[0.2em] text-signal">
+            <Zap className="h-3.5 w-3.5" />
+            Sandbox Mode — All audit output is simulated
+          </span>
         </div>
-        <span className="rounded-md border border-steel/40 px-2 py-1 font-mono text-xs text-muted">{flag}</span>
-      </div>
-      <p className="mt-3 text-sm text-static">{value}</p>
+      </Container>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { Hero, TrustBar, ServicesOverview, HowItWorks, SocialProof, PricingPreview, FAQ, FinalCTA, homepageFaqs } from '@/components/home'
+import { Hero, TrustBar, ServicesOverview, HowItWorks, SocialProof, AuditReportPreview, PricingPreview, FAQ, FinalCTA, homepageFaqs } from '@/components/home'
 import { Container } from '@/components/ui/Container'
 import SiteAuditTool from '@/components/site-audit/SiteAuditTool'
 
@@ -53,6 +53,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Hero />
+      <AuditReportPreview />
       <TrustBar />
       <ServicesOverview />
       <Container>

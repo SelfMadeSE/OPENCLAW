@@ -13,38 +13,38 @@ type Finding = {
 
 const findings: Finding[] = [
   {
-    title: 'Homepage CTA is too generic',
-    impact: 'Estimated 18-24% conversion loss on first touch.',
+    title: 'No service CTA above the fold',
+    impact: 'Visitors leave without calling or booking — estimated 25-35% lead loss.',
     detail:
-      'Acme SaaS Co. uses “Learn More” above the fold. Buyers arriving from outbound campaigns do not see a clear next step tied to a measurable outcome.',
-    fix: 'Replace with a single high-clarity CTA: “Get Your 14-Day Pipeline Gap Report”. Add one-line promise directly under CTA.',
+      'Peak HVAC uses a rotating photo slider with no persistent "Get a Quote" or "Schedule Service" button visible before scrolling. Mobile visitors see photos, not actions.',
+    fix: 'Replace the slider with a single strong headline, a phone number, and a persistent "Get a Free Estimate" button above the fold on every device.',
   },
   {
-    title: 'Page speed is suppressing paid traffic ROI',
-    impact: 'Mobile LCP at 4.1s, increasing bounce and CPC waste.',
+    title: 'Page speed is killing mobile leads',
+    impact: 'Mobile LCP at 4.8s — most local service callers abandon after 3 seconds.',
     detail:
-      'Hero media and third-party scripts load before the primary value message. This delays initial render and weakens ad and outbound campaign performance.',
-    fix: 'Compress hero assets, defer non-critical scripts, and remove one redundant analytics tag. Target sub-2.5s LCP.',
+      'Unoptimized hero images and render-blocking third-party scripts load before the service promise. This is especially harmful for emergency-service searches where speed directly affects call volume.',
+    fix: 'Compress hero images, defer non-critical scripts, and lazy-load below-fold content. Target sub-2.5s LCP for mobile service pages.',
   },
   {
-    title: 'No trust proof near conversion points',
-    impact: 'High-intent visitors are dropping without social confidence.',
+    title: 'Trust proof is buried below the fold',
+    impact: 'High-intent visitors leave before seeing reviews or credentials.',
     detail:
-      'Case stats and client logos appear below the fold. Prospects do not see clear proof during decision moments on contact and pricing pathways.',
-    fix: 'Inject two proof blocks near CTA modules: quantified case metric and “used by” logo strip.',
+      'Reviews, license info, and guarantee language appear at the bottom of the page. Service buyers need proof immediately — ratings, years in business, insurance, and guarantees drive calls.',
+    fix: 'Move review score, license badge, and a short guarantee line near the top CTA. Add a "serving [area] since [year]" trust line in the hero.',
   },
   {
-    title: 'Lead capture path misses qualification data',
-    impact: 'Sales follow-up slows down by 1-2 days on average.',
+    title: 'No service-area or emergency routing on the form',
+    impact: 'After-hours leads go cold — staff sees them the next morning.',
     detail:
-      'Current form asks for email only, forcing manual qualification later. This delays SDR prioritization and reduces close velocity.',
-    fix: 'Capture role, monthly traffic, and current funnel stage in progressive fields after first submit.',
+      'The contact form asks for name and message only with no service-type dropdown, urgency flag, or address field. Emergency calls (no heat, burst pipe) get the same treatment as general inquiries.',
+    fix: 'Add service-type selection, urgency indicator, and ZIP/service-area check. Route emergency submissions to SMS alert and flag high-priority leads for immediate follow-up.',
   },
 ]
 
 export default function TryPreviewPage() {
   const [email, setEmail] = useState('')
-  const [company] = useState('Acme SaaS Co.')
+  const [company] = useState('Peak HVAC & Plumbing')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [unlocked, setUnlocked] = useState(false)
@@ -77,29 +77,37 @@ export default function TryPreviewPage() {
   }
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen">
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-10">
-        <div className="mb-8 rounded-2xl border border-cyan-500/20 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Diagnostic Preview</p>
-          <h1 className="mt-2 text-3xl font-semibold md:text-4xl">{company} Website Growth Snapshot</h1>
-          <p className="mt-3 max-w-3xl text-slate-300">
-            This is a sample of the Outbound Autonomy audit flow. Scroll the findings below. At the midpoint, unlock
-            the full growth blueprint to view implementation priorities and strategy CTA.
+        <div className="mb-8 rounded-2xl border border-signal/20 bg-gradient-to-r from-signal/10 to-signal/5 p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-signal">Website Audit Preview</p>
+          <h1 className="mt-2 text-3xl font-semibold md:text-4xl text-static">{company} — Website Audit Preview</h1>
+          <p className="mt-3 max-w-3xl text-muted">
+            This is what an Outbound Autonomy audit looks like for a local service business. Scroll the findings below.
+            At the midpoint, unlock the full implementation plan with pricing and a proposal path.
           </p>
-          <div className="mt-5 flex flex-wrap gap-3 text-sm text-slate-200">
-            <span className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-3 py-1">
-              <Clock3 className="h-4 w-4 text-cyan-300" />
+          <p className="mt-4">
+            <a
+              href="/#audit"
+              className="inline-flex items-center gap-2 rounded-full border border-signal/30 bg-signal/10 px-4 py-2 text-sm font-semibold text-signal transition hover:bg-signal/20"
+            >
+              Run an audit on your own site →
+            </a>
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm text-static">
+            <span className="inline-flex items-center gap-2 rounded-full border border-steel px-3 py-1">
+              <Clock3 className="h-4 w-4 text-signal" />
               ~{completionEstimate}s read
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-3 py-1">
-              <BarChart3 className="h-4 w-4 text-cyan-300" />
-              4 high-impact findings
+            <span className="inline-flex items-center gap-2 rounded-full border border-steel px-3 py-1">
+              <BarChart3 className="h-4 w-4 text-signal" />
+              4 conversion issues found
             </span>
           </div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[1.25fr,0.75fr]">
-          <div className="max-h-[72vh] space-y-4 overflow-y-auto rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+          <div className="max-h-[72vh] space-y-4 overflow-y-auto rounded-2xl border border-depth bg-depth/70 p-5">
             {findings.map((finding, index) => {
               const isGatedSection = index >= 2 && !unlocked
 
@@ -107,21 +115,21 @@ export default function TryPreviewPage() {
                 <article
                   key={finding.title}
                   className={`rounded-xl border p-5 transition ${
-                    isGatedSection ? 'border-slate-700/60 bg-slate-900/50 blur-[1px]' : 'border-slate-700 bg-slate-900'
+                    isGatedSection ? 'border-steel/60 bg-depth/50 blur-[1px]' : 'border-steel bg-depth'
                   }`}
                 >
                   <div className="flex items-center justify-between gap-3">
                     <h2 className="text-lg font-semibold">{finding.title}</h2>
-                    <span className="rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-1 text-xs text-amber-300">
+                    <span className="rounded-full border border-warm/40 bg-warm/10 px-2 py-1 text-xs text-warm">
                       Finding {index + 1}
                     </span>
                   </div>
-                  <p className="mt-3 flex items-center gap-2 text-sm text-rose-300">
+                  <p className="mt-3 flex items-center gap-2 text-sm text-signal">
                     <AlertCircle className="h-4 w-4" />
                     {finding.impact}
                   </p>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">{finding.detail}</p>
-                  <p className="mt-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-3 text-sm text-emerald-200">
+                  <p className="mt-3 text-sm leading-6 text-muted">{finding.detail}</p>
+                  <p className="mt-4 rounded-lg border border-signal/30 bg-signal/10 p-3 text-sm text-signal">
                     <span className="font-semibold">Recommended Fix:</span> {finding.fix}
                   </p>
                 </article>
@@ -131,15 +139,15 @@ export default function TryPreviewPage() {
 
           <aside className="space-y-4">
             {!unlocked ? (
-              <div className="rounded-2xl border border-cyan-500/30 bg-slate-900 p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">50% checkpoint</p>
-                <h3 className="mt-2 text-2xl font-semibold">Unlock Full Growth Blueprint →</h3>
-                <p className="mt-2 text-sm text-slate-300">
-                  Enter your email to reveal the complete report view with prioritized implementation roadmap.
+              <div className="rounded-2xl border border-signal/30 bg-depth p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-signal">50% checkpoint</p>
+                <h3 className="mt-2 text-2xl font-semibold">Unlock Full Audit + Implementation Plan →</h3>
+                <p className="mt-2 text-sm text-muted">
+                  Enter your email to reveal the full report with prioritized fixes, estimated pricing, and a proposal request path.
                 </p>
 
                 <form className="mt-4 space-y-3" onSubmit={onUnlock}>
-                  <label className="block text-sm text-slate-200">
+                  <label className="block text-sm text-static">
                     Work email
                     <input
                       required
@@ -147,42 +155,42 @@ export default function TryPreviewPage() {
                       value={email}
                       onChange={(event) => setEmail(event.target.value)}
                       placeholder="name@company.com"
-                      className="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm outline-none ring-cyan-300 transition focus:ring"
+                      className="mt-1 w-full rounded-lg border border-steel bg-void px-3 py-2 text-sm text-static outline-none ring-signal transition focus:ring"
                     />
                   </label>
-                  {error ? <p className="text-sm text-rose-300">{error}</p> : null}
+                  {error ? <p className="text-sm text-warm">{error}</p> : null}
                   <button
                     disabled={loading}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-signal px-4 py-2 text-sm font-semibold text-void transition hover:bg-signal/80 disabled:cursor-not-allowed disabled:opacity-60"
                   >
-                    {loading ? 'Unlocking...' : 'Unlock Full Growth Blueprint'}
+                    {loading ? 'Unlocking...' : 'Unlock Full Report'}
                     <ArrowRight className="h-4 w-4" />
                   </button>
                 </form>
               </div>
             ) : (
-              <div className="rounded-2xl border border-emerald-500/30 bg-slate-900 p-5">
-                <p className="inline-flex items-center gap-2 text-sm text-emerald-300">
-                  <CheckCircle2 className="h-4 w-4" /> Blueprint unlocked
+              <div className="rounded-2xl border border-signal/30 bg-depth p-5">
+                <p className="inline-flex items-center gap-2 text-sm text-signal">
+                  <CheckCircle2 className="h-4 w-4" /> Report unlocked
                 </p>
-                <h3 className="mt-2 text-2xl font-semibold">Sample Full Report</h3>
-                <ul className="mt-3 space-y-2 text-sm text-slate-200">
-                  <li className="rounded-lg border border-slate-700 bg-slate-950 p-3">
-                    <span className="font-semibold text-cyan-300">Week 1:</span> Ship CTA + trust block update
+                <h3 className="mt-2 text-2xl font-semibold">Your Implementation Plan</h3>
+                <ul className="mt-3 space-y-2 text-sm text-static">
+                  <li className="rounded-lg border border-steel bg-void p-3">
+                    <span className="font-semibold text-signal">Week 1:</span> Hero redesign + CTA + trust proof
                   </li>
-                  <li className="rounded-lg border border-slate-700 bg-slate-950 p-3">
-                    <span className="font-semibold text-cyan-300">Week 2:</span> Speed optimization sprint
+                  <li className="rounded-lg border border-steel bg-void p-3">
+                    <span className="font-semibold text-signal">Week 2:</span> Speed optimization + mobile fixes
                   </li>
-                  <li className="rounded-lg border border-slate-700 bg-slate-950 p-3">
-                    <span className="font-semibold text-cyan-300">Week 3:</span> Form qualification automation
+                  <li className="rounded-lg border border-steel bg-void p-3">
+                    <span className="font-semibold text-signal">Week 3:</span> Lead form + emergency routing + CRM handoff
                   </li>
                 </ul>
 
                 <Link
                   href="/contact"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
+                  className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-signal px-4 py-2 text-sm font-semibold text-void transition hover:bg-signal/80"
                 >
-                  Book Strategy Call
+                  Request Proposal
                   <Zap className="h-4 w-4" />
                 </Link>
               </div>
@@ -190,6 +198,6 @@ export default function TryPreviewPage() {
           </aside>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
