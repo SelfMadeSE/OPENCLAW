@@ -10,8 +10,8 @@ export async function POST(request: Request) {
     // Validate the request body
     const validatedData = waitlistSchema.parse(body)
     
-    // Create the waitlist entry in the database
-    const entryId = createWaitlistEntry(validatedData)
+    // Create the waitlist entry in the database (now async with sql.js)
+    const entryId = await createWaitlistEntry(validatedData)
     
     if (entryId === null) {
       // Email already exists
@@ -23,7 +23,7 @@ export async function POST(request: Request) {
       )
     }
     
-    if (!entryId) {
+    if (entryId === undefined || entryId === null) {
       return NextResponse.json(
         { error: 'Failed to create waitlist entry' },
         { status: 500 }

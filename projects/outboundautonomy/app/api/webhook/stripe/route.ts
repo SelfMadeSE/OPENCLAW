@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
         // Create or get customer
         let customer = await getCustomerByStripeId(session.customer)
         if (!customer) {
-          const customerId = createCustomer({
+          const customerId = await createCustomer({
             stripe_customer_id: session.customer,
             email: session.customer_details.email,
             name: session.customer_details.name,
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
         if (customer && session.mode === 'subscription') {
           // Create subscription record
           const subscription = await getStripe().subscriptions.retrieve(session.subscription)
-          createSubscription({
+          await createSubscription({
             stripe_subscription_id: subscription.id,
             customer_id: customer.id,
             plan_type: (subscription as any).metadata?.plan_type || 'automation_starter',
@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
         } else if (customer && session.mode === 'payment') {
           // Create payment record
           const paymentIntent = await getStripe().paymentIntents.retrieve(session.payment_intent)
-          createPayment({
+          await createPayment({
             stripe_payment_intent_id: paymentIntent.id,
             stripe_charge_id: (paymentIntent as any).latest_charge,
             customer_id: customer.id,
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
         const createdCustomer = await getCustomerByStripeId(createdSubscription.customer)
         
         if (createdCustomer) {
-          createSubscription({
+          await createSubscription({
             stripe_subscription_id: createdSubscription.id,
             customer_id: createdCustomer.id,
             plan_type: createdSubscription.metadata.plan_type || 'automation_starter',
@@ -93,7 +93,7 @@ export async function POST(request: NextRequest) {
       case 'customer.subscription.updated':
         const updatedSubscription = event.data.object as any
         
-        updateSubscription(updatedSubscription.id, {
+        await updateSubscription(updatedSubscription.id, {
           status: updatedSubscription.status,
           current_period_start: new Date(updatedSubscription.current_period_start * 1000),
           current_period_end: new Date(updatedSubscription.current_period_end * 1000),
@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
       case 'customer.subscription.deleted':
         const deletedSubscription = event.data.object as any
         
-        updateSubscription(deletedSubscription.id, {
+        await updateSubscription(deletedSubscription.id, {
           status: 'cancelled'
         })
         break
@@ -116,7 +116,7 @@ export async function POST(request: NextRequest) {
         if (invoiceCustomer && invoice.subscription) {
           // Update subscription period
           const subscription = await getStripe().subscriptions.retrieve(invoice.subscription)
-          updateSubscription(subscription.id, {
+          await updateSubscription(subscription.id, {
             status: subscription.status,
             current_period_start: new Date((subscription as any).current_period_start * 1000),
             current_period_end: new Date((subscription as any).current_period_end * 1000)
@@ -126,7 +126,7 @@ export async function POST(request: NextRequest) {
         // Create payment record for the invoice
         if (invoiceCustomer && invoice.charge) {
           const charge = await getStripe().charges.retrieve(invoice.charge)
-          createPayment({
+          await createPayment({
             stripe_charge_id: (charge as any).id,
             customer_id: invoiceCustomer.id,
             amount: (charge as any).amount,
@@ -143,7 +143,7 @@ export async function POST(request: NextRequest) {
         if (failedInvoice.subscription) {
           // Mark subscription as past_due
           const subscription = await getStripe().subscriptions.retrieve(failedInvoice.subscription)
-          updateSubscription(subscription.id, {
+          await updateSubscription(subscription.id, {
             status: 'past_due'
           })
         }
@@ -154,7 +154,7 @@ export async function POST(request: NextRequest) {
         const paymentCustomer = await getCustomerByStripeId(succeededPaymentIntent.customer)
         
         if (paymentCustomer) {
-          createPayment({
+          await createPayment({
             stripe_payment_intent_id: succeededPaymentIntent.id,
             stripe_charge_id: succeededPaymentIntent.latest_charge,
             customer_id: paymentCustomer.id,
@@ -171,7 +171,7 @@ export async function POST(request: NextRequest) {
         const failedPaymentCustomer = await getCustomerByStripeId(failedPaymentIntent.customer)
         
         if (failedPaymentCustomer) {
-          createPayment({
+          await createPayment({
             stripe_payment_intent_id: failedPaymentIntent.id,
             stripe_charge_id: failedPaymentIntent.latest_charge,
             customer_id: failedPaymentCustomer.id,
