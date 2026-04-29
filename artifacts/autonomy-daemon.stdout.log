@@ -1,0 +1,70 @@
+[2026-04-29T10:12:00.137663+00:00] autonomy daemon starting pid=72024 cycle_sleep=300s mission_timeout=900s max_cycles=inf
+[2026-04-29T10:12:00.137961+00:00] === cycle 1 start ===
+[2026-04-29T10:12:48.299548+00:00] mission pipeline-reconciliation-20260429-0412 :: Reconcile the full outreach pipeline by matching 31 outreach_sent leads against email-ledger evidence, identifying ghost
+[2026-04-29T10:12:48.299883+00:00]   slice 1 -> outreach (bridge-pipeline-audit.md)
+[2026-04-29T10:14:49.061308+00:00]   slice 2 -> engineering (forge-funnel-check.md)
+[2026-04-29T10:16:33.421057+00:00]   slice 3 -> auditor (sentinel-verify.md)
+[2026-04-29T10:18:47.597328+00:00] === cycle 1 done :: pipeline-reconciliation-20260429-0412 ===
+[2026-04-29T10:23:49.303856+00:00] === cycle 2 start ===
+[2026-04-29T10:24:41.724804+00:00] mission ledger-repair-and-send-20260429-0424 :: Repair the email ledger by re-sending via SMTP the 7 former unverified_claim leads (now reconciled_superseded) and the h
+[2026-04-29T10:24:41.725177+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T10:28:54.849732+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T10:31:33.618683+00:00] === cycle 2 done :: ledger-repair-and-send-20260429-0424 ===
+[2026-04-29T10:36:34.728020+00:00] === cycle 3 start ===
+[2026-04-29T10:37:29.151873+00:00] mission cdp-smtp-batch-send-20260429-0436 :: Send personalized audit-led outreach emails to the 5 highest-scored outreach_drafted leads using CDP-authenticated Gmail
+[2026-04-29T10:37:29.152425+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T10:39:51.914449+00:00]   slice 2 -> engineering (forge-funnel.md)
+[2026-04-29T10:42:10.873372+00:00]   slice 3 -> auditor (sentinel-verify.md)
+[2026-04-29T10:43:49.122098+00:00] === cycle 3 done :: cdp-smtp-batch-send-20260429-0436 ===
+[2026-04-29T10:48:50.951014+00:00] === cycle 4 start ===
+[2026-04-29T10:49:46.172988+00:00] mission blog-cta-audit-embed-20260429-0449 :: Embed audit-funnel CTAs into all 12 live blog posts and deploy the 12th post (/blog/automation-for-service-businesses) t
+[2026-04-29T10:49:46.173407+00:00]   slice 1 -> engineering (forge-blog-audit.md)
+[2026-04-29T10:52:13.024044+00:00]   slice 2 -> marketing (pulse-cta-copy.md)
+[2026-04-29T10:54:15.607697+00:00]   slice 3 -> auditor (sentinel-verify.md)
+[2026-04-29T10:56:13.050516+00:00] === cycle 4 done :: blog-cta-audit-embed-20260429-0449 ===
+[2026-04-29T11:01:14.828318+00:00] === cycle 5 start ===
+[2026-04-29T11:01:56.727613+00:00] mission drafted-inventory-flush-20260429-0501 :: Send SMTP outreach to all remaining outreach_drafted leads with verified emails, converting the full drafted inventory i
+[2026-04-29T11:01:56.728154+00:00]   slice 1 -> outreach (bridge-flush-results.md)
+[2026-04-29T11:04:50.666064+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T11:06:39.974537+00:00] === cycle 5 done :: drafted-inventory-flush-20260429-0501 ===
+[2026-04-29T11:11:41.646739+00:00] === cycle 6 start ===
+[2026-04-29T11:12:25.652375+00:00] mission waitlist-api-fix-20260429-0511 :: Fix the waitlist API endpoint on outboundautonomy.com so the email capture form on /try and the audit report CTA actuall
+[2026-04-29T11:12:25.652825+00:00]   slice 1 -> engineering (forge-fix-report.md)
+[2026-04-29T11:16:54.991768+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T11:18:55.021803+00:00] === cycle 6 done :: waitlist-api-fix-20260429-0511 ===
+[2026-04-29T11:23:56.891551+00:00] === cycle 7 start ===
+[2026-04-29T11:24:47.551567+00:00] mission pipeline-health-report-20260429-0524 :: Produce a single operator-facing pipeline health report reconciling the full send ledger (57 provider_accepted + 7 recon
+[2026-04-29T11:24:47.552012+00:00]   slice 1 -> outreach (bridge-pipeline-report.md)
+[2026-04-29T11:26:27.931748+00:00]   slice 2 -> engineering (forge-site-health.md)
+[2026-04-29T11:28:25.840938+00:00]   slice 3 -> auditor (sentinel-verify.md)
+[2026-04-29T11:30:25.512329+00:00] === cycle 7 done :: pipeline-health-report-20260429-0524 ===
+[2026-04-29T11:35:27.350364+00:00] === cycle 8 start ===
+[2026-04-29T11:36:14.694790+00:00] mission reply-detection-sweep-20260429-0535 :: Scan the Gmail inbox (owner@outboundautonomy.com) via authenticated browser CDP for any prospect replies to the 57 sent 
+[2026-04-29T11:36:14.695175+00:00]   slice 1 -> outreach (bridge-reply-scan.md)
+[2026-04-29T11:39:23.916533+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T11:41:42.785979+00:00] === cycle 8 done :: reply-detection-sweep-20260429-0535 ===
+[2026-04-29T11:46:44.434342+00:00] === cycle 9 start ===
+[2026-04-29T11:47:36.416075+00:00] mission shippable-case-study-20260429-0546 :: Publish a single polished internal case study on outboundautonomy.com/case-studies demonstrating the audit→fix→results w
+[2026-04-29T11:47:36.416481+00:00]   slice 1 -> creative (muse-case-study.md)
+[2026-04-29T11:48:34.009678+00:00]   slice 2 -> engineering (forge-deploy-results.md)
+[2026-04-29T11:52:35.911479+00:00]   slice 3 -> auditor (sentinel-verify.md)
+[2026-04-29T11:54:31.301324+00:00] === cycle 9 done :: shippable-case-study-20260429-0546 ===
+[2026-04-29T11:59:33.141674+00:00] === cycle 10 start ===
+[2026-04-29T12:00:16.570168+00:00] mission crm-python-repair-20260429-0559 :: Diagnose and fix the CRM Python fd error (OSError 9 Bad file descriptor) that has blocked all CRM script access for over
+[2026-04-29T12:00:16.570656+00:00]   slice 1 -> engineering (forge-crm-fix.md)
+[2026-04-29T12:02:12.452246+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T12:03:51.313761+00:00] === cycle 10 done :: crm-python-repair-20260429-0559 ===
+[2026-04-29T12:39:20.840348+00:00] === cycle 11 start ===
+[2026-04-29T12:41:11.137670+00:00] mission smtp-send-two-more-20260429-0639 :: Send 2 more SMTP outreach emails to the highest-scored remaining outreach_drafted leads with verified emails, pushing th
+[2026-04-29T12:41:11.138328+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T12:44:16.713711+00:00] === cycle 11 done :: smtp-send-two-more-20260429-0639 ===
+[2026-04-29T12:49:18.242776+00:00] === cycle 12 start ===
+[2026-04-29T12:49:55.815195+00:00] mission reply-scan-now-20260429-0649 :: Scan Gmail inbox for replies to the 68 sent outreach emails and surface any responders as RED hot leads requiring operat
+[2026-04-29T12:49:55.815653+00:00]   slice 1 -> outreach (bridge-reply-scan.md)
+[2026-04-29T12:52:48.505436+00:00] === cycle 12 done :: reply-scan-now-20260429-0649 ===
+[2026-04-29T12:57:50.131727+00:00] === cycle 13 start ===
+[2026-04-29T12:58:29.595859+00:00] mission new-prospect-research-20260429-0658 :: Research and score 5 new local service business prospects with weak websites across fresh verticals (locksmiths, movers,
+[2026-04-29T12:58:29.596353+00:00]   slice 1 -> outreach (bridge-research.md)
+[2026-04-29T13:05:09.608085+00:00]   slice 2 -> auditor (sentinel-verify.md)
+[2026-04-29T13:07:48.662795+00:00] === cycle 13 done :: new-prospect-research-20260429-0658 ===
+[2026-04-29T13:12:50.230541+00:00] === cycle 14 start ===

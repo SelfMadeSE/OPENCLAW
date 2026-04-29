@@ -1,0 +1,623 @@
+{
+  "generated_at": "2026-04-28T21:30:22.761995+00:00",
+  "sources": {
+    "jobs": "/Users/ryleebenson/.openclaw/cron/jobs.json",
+    "gateway_err": "/Users/ryleebenson/.openclaw/logs/gateway.err.log",
+    "crm": "/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite",
+    "workspaces": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces"
+  },
+  "cron": {
+    "total": 18,
+    "enabled": 16,
+    "by_status": {
+      "ok": 12,
+      "error": 6
+    },
+    "active": [
+      {
+        "id": "381d081b-7c33-438e-8831-79c6de82f50e",
+        "name": "Memory Dreaming Promotion",
+        "agent": "main",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "not-requested"
+      },
+      {
+        "id": "9f89293b-c84e-4d53-8f65-d92b3d790a1d",
+        "name": "Daily Outbound Autonomy Audit-Funnel Content",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 10 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2feb992a-b776-42c9-86b1-e443515ed000",
+        "name": "Weekly Outbound Autonomy Revenue Audit",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 14 * * 5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly OA Marketing Review",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly OA Outreach Review",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly OA Media Review",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly OA Audit Review",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "95e59f59-c103-4f0b-bc61-fb1986460d9b",
+        "name": "Morning Mission Snapshot",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 8 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "",
+        "delivery": "unknown"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "",
+        "delivery": "unknown"
+      },
+      {
+        "id": "dfa29b48-e80c-4eab-850d-f9120221e3ef",
+        "name": "Hourly Prospect Research",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "5 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "FallbackSummaryError: All models failed (2): deepseek/deepseek-v4-flash: LLM request failed: provider rejected the request schema or tool payload. (format) | deepseek/deepseek-v4-pro: LLM request failed: provider rejected the request schema or tool payload. (format)",
+        "delivery": "unknown"
+      },
+      {
+        "id": "210d6add-b9d4-45f3-8c90-b77191e95006",
+        "name": "Hourly Outreach Draft Queue",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "20 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "440c356d-4ac1-4ca3-92d3-84d814bffd31",
+        "name": "Hourly Agent Roundtable Audit",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      }
+    ],
+    "failed": [
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "cron: job execution timed out",
+        "delivery": "unknown"
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "",
+        "delivery": "unknown"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "",
+        "delivery": "unknown"
+      },
+      {
+        "id": "dfa29b48-e80c-4eab-850d-f9120221e3ef",
+        "name": "Hourly Prospect Research",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "5 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "FallbackSummaryError: All models failed (2): deepseek/deepseek-v4-flash: LLM request failed: provider rejected the request schema or tool payload. (format) | deepseek/deepseek-v4-pro: LLM request failed: provider rejected the request schema or tool payload. (format)",
+        "delivery": "unknown"
+      }
+    ]
+  },
+  "crm": {
+    "exists": true,
+    "stages": {
+      "archived": 9,
+      "lost": 2,
+      "negotiating": 1,
+      "outreach_drafted": 36,
+      "prospect": 1,
+      "scored": 2,
+      "won": 2
+    },
+    "recent_leads": [
+      {
+        "id": "65df7da0ae3a",
+        "name": "Test",
+        "type": "Plumbing",
+        "stage": "prospect",
+        "score": 0,
+        "updated_at": "2026-04-28T20:03:05.865798+00:00"
+      },
+      {
+        "id": "63593030b771",
+        "name": "Denver Appliance Repair",
+        "type": "appliance-repair",
+        "stage": "outreach_drafted",
+        "score": 59,
+        "updated_at": "2026-04-28T19:52:52.132086+00:00"
+      },
+      {
+        "id": "f3d30c5793d5",
+        "name": "Harmony Painting Denver",
+        "type": "painting",
+        "stage": "outreach_drafted",
+        "score": 65,
+        "updated_at": "2026-04-28T19:49:55.168169+00:00"
+      },
+      {
+        "id": "5ffbe6a27861",
+        "name": "--name",
+        "type": "Apex Roofing Denver",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-28T18:42:44.629929+00:00"
+      },
+      {
+        "id": "8494028ef6ac",
+        "name": "Bug Man Inc.",
+        "type": "pest-control",
+        "stage": "outreach_drafted",
+        "score": 73,
+        "updated_at": "2026-04-28T18:41:47.189442+00:00"
+      },
+      {
+        "id": "d0a627a3a460",
+        "name": "Apex Roofing Denver",
+        "type": "roofing",
+        "stage": "outreach_drafted",
+        "score": 80,
+        "updated_at": "2026-04-28T18:41:44.403550+00:00"
+      },
+      {
+        "id": "7e101bf1549c",
+        "name": "--name",
+        "type": "Colorado Chiropractic and Rehabilitation Center",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-28T17:58:11.508257+00:00"
+      },
+      {
+        "id": "1cade1b3b401",
+        "name": "B&E Services Inc.",
+        "type": "landscaping",
+        "stage": "outreach_drafted",
+        "score": 67,
+        "updated_at": "2026-04-28T17:57:41.236492+00:00"
+      },
+      {
+        "id": "2cd47795072b",
+        "name": "Oak & Canyon Landscape",
+        "type": "landscaping",
+        "stage": "outreach_drafted",
+        "score": 73,
+        "updated_at": "2026-04-28T17:57:41.213060+00:00"
+      },
+      {
+        "id": "6d9a2cc7409f",
+        "name": "Colorado Chiropractic and Rehabilitation Center",
+        "type": "chiropractic",
+        "stage": "outreach_drafted",
+        "score": 55,
+        "updated_at": "2026-04-28T17:57:38.299579+00:00"
+      }
+    ],
+    "recent_actions": [
+      {
+        "lead_id": "atlantic-dental-20260426-110754",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email found manager@myatlanticdental.com via website scrape. Score 88 (HOT).",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "payless-rooter-20260426-121158",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email admin@paylessrooterdenver.com restored to contact_info. Had gone missing from previous cycle save.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "the-weather-changers-20260426-110754",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email service@theweatherchangers.com restored to contact_info.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "138a66ae6ce5",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email rsparks9@hotmail.com found for Sparks Heating and Air. Hotmail MX validates.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "bc3a82428256",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email mtybeeinfo@gmail.com found and SMTP-verified (250 OK). Mighty Bee Electric 54yr family-owned electrical.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "a15dfce68176",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email info@mydenverplumber.net found in CRM notes, stored to contact_info.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "4fb2587b39a3",
+        "agent": "outreach",
+        "action_type": "email_discovered",
+        "description": "Email info@peaktopeakroofing.com stored to proper contact_info JSON. Peak to Peak Roofing score 77.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "7301b6604b28",
+        "agent": "outreach",
+        "action_type": "email_verified",
+        "description": "Email info@denvertreecompany.com confirmed in contact_info.",
+        "result": "verified",
+        "created_at": "2026-04-28T21:03:01.818160+00:00"
+      },
+      {
+        "lead_id": "test",
+        "agent": "test",
+        "action_type": "test",
+        "description": "test",
+        "result": "",
+        "created_at": "2026-04-28T21:02:26.380955+00:00"
+      },
+      {
+        "lead_id": "9e7d8c6e22b0",
+        "agent": "outreach",
+        "action_type": "draft_created",
+        "description": "Colorado Garage Door Service \u2014 Draft in 0220pm batch. Contact page 404, email dj@cologaragedoor.com verified via schema. 323-char homepage. 247 emergency no online booking.",
+        "result": "draft_created",
+        "created_at": "2026-04-28T20:42:36.507934+00:00"
+      }
+    ]
+  },
+  "artifacts": {
+    "recent": [
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-prospect-targeting-criteria-2026-04-28.md",
+        "mtime": "2026-04-28T21:29:27.967507+00:00",
+        "size": 5008
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-0320pm-CRM-actions.md",
+        "mtime": "2026-04-28T21:22:25.627471+00:00",
+        "size": 3634
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0320pm.md",
+        "mtime": "2026-04-28T21:22:11.084295+00:00",
+        "size": 18440
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/roundtable/latest.md",
+        "mtime": "2026-04-28T21:21:16.191601+00:00",
+        "size": 4337
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/creative-briefs/manual-audit-outreach-workflow-2026-04-28.md",
+        "mtime": "2026-04-28T21:16:51.922856+00:00",
+        "size": 4091
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/heartbeat-2026-04-28T2106Z.md",
+        "mtime": "2026-04-28T21:06:12.142274+00:00",
+        "size": 1435
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-sample-audit-report-deliverable-2026-04-28.md",
+        "mtime": "2026-04-28T21:05:15.259542+00:00",
+        "size": 15429
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/heartbeat-2026-04-28T2047Z.md",
+        "mtime": "2026-04-28T20:48:45.256252+00:00",
+        "size": 1633
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/site-health-2026-04-28T2030Z.md",
+        "mtime": "2026-04-28T20:32:27.059579+00:00",
+        "size": 6412
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0220pm.md",
+        "mtime": "2026-04-28T20:21:18.835258+00:00",
+        "size": 13931
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-1020am.md",
+        "mtime": "2026-04-28T20:06:49.483744+00:00",
+        "size": 21453
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0753am.md",
+        "mtime": "2026-04-28T20:06:41.736465+00:00",
+        "size": 15805
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0620am.md",
+        "mtime": "2026-04-28T20:06:23.827452+00:00",
+        "size": 14094
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-1220pm.md",
+        "mtime": "2026-04-28T20:06:00.657207+00:00",
+        "size": 9079
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0920am.md",
+        "mtime": "2026-04-28T20:05:32.408866+00:00",
+        "size": 18212
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0136pm.md",
+        "mtime": "2026-04-28T19:49:10.186218+00:00",
+        "size": 8120
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-audit-to-proposal-scope-of-work-2026-04-28.md",
+        "mtime": "2026-04-28T19:47:43.365730+00:00",
+        "size": 6623
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/engineering/pricing-page-deploy-2026-04-28.md",
+        "mtime": "2026-04-28T19:45:48.690728+00:00",
+        "size": 1705
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/outbound-autonomy/SHARED-STATE.md",
+        "mtime": "2026-04-28T19:26:28.328413+00:00",
+        "size": 3914
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/pricing-page-deployment-brief-2026-04-28.md",
+        "mtime": "2026-04-28T19:22:51.083797+00:00",
+        "size": 5825
+      }
+    ]
+  },
+  "logs": {
+    "window_lines": 500,
+    "counts": {
+      "n8n_404": 0,
+      "elephant_model": 0,
+      "memory_no_vectors": 0,
+      "bootstrap_truncated": 7,
+      "incomplete_turn": 0,
+      "telegram_socket": 0
+    },
+    "examples": {
+      "bootstrap_truncated": "2026-04-29T00:16:08.729+03:00 [agent/embedded] workspace bootstrap file HEARTBEAT.md is 19904 chars (limit 12000); truncating in injected context (sessionKey=agent:creative:main:heartbeat)"
+    }
+  }
+}

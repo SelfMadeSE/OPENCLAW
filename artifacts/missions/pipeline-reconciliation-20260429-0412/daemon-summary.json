@@ -1,0 +1,24 @@
+{
+  "mission_id": "pipeline-reconciliation-20260429-0412",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-pipeline-audit.md"
+    },
+    {
+      "slice": 2,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "forge-funnel-check.md"
+    },
+    {
+      "slice": 3,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T10:18:47.597030+00:00"
+}

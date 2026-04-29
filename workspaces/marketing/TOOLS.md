@@ -43,7 +43,9 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **Instance**: https://outboundautonomy.app.n8n.cloud
 - **Access**: Use `mcporter call n8n-mcp.<tool_name>` or the mcporter skill directly
 - **Available tools** (25 total): `search_workflows`, `execute_workflow`, `get_execution`, `get_workflow_details`, `create_workflow_from_code`, `validate_workflow`, `search_data_tables`, `add_data_table_rows`, and more
-- **Use for**: Triggering outreach sequences, Stripe payment workflows, Twilio SMS/voice, email automation, lead processing
+- **Use for**: Triggering outreach sequences, Stripe payment workflows, email automation, lead processing, n8n-internal telephony workflows (not OA-offered services)
+
+> ⚠️ **RECEPTIONIST/TELEPHONY KILLED 2026-04-26.** Twilio credentials exist for n8n-internal infrastructure only. OA does NOT offer, market, or sell Twilio/SMS/voice services to clients. OA is URL → audit → build/improve only.
 
 ## External Service Credentials
 

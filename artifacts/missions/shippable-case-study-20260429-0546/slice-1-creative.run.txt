@@ -1,0 +1,41 @@
+ngle polished internal case study on outboundautonomy.com/case-studies demonstrating the audit\\u2192fix\\u2192results workflow with real OA methodology, creating a conversion asset for prospects who visit after receiving outreach emails..\\nYour task: Write a single internal OA case study in the format from /Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/case-study-template-2026-04-28.md. Choose the highest-scored outreach_sent lead from the pipeline (Denver Legal Marketing, 90 \\u2014 marketing agency selling web design with a broken site, perfect irony pitch). The case study should follow the template structure: Problem \\u2192 Audit Findings (hypothetical design/conversion/technical scores based on their real site weaknesses from prospect notes: copyright stuck at 2020, zero portfolio, zero case studies, zero blog, no live chat) \\u2192 What We'd Fix (3-4 specific improvements with OA methodology) \\u2192 Projected Results (before/after score estimates, lead capture improvement) \\u2192 Takeaways. Label clearly as 'Illustrative Composite \\u2014 Not a Real Client' per the template. Write to artifacts/missions/shippable-case-study-20260429-0546/muse-case-study.md.\\nWrite your output to: artifacts/missions/shippable-case-study-20260429-0546/muse-case-study.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/shippable-case-study-20260429-0546/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md (/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/HEARTBEAT.md): 39970 raw -> 10915 injected (~73% removed; max/file).\n- HEARTBEAT.md (/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/HEARTBEAT.md): 45737 raw -> 10915 injected (~76% removed; max/file).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "No usable message channel available in this session. The artifact is written and the slate is clean per the mission instructions.\n\nSTATE: PROCEED — Case study written to `artifacts/missions/shippable-case-study-20260429-0546/muse-case-study.md` using Denver Legal Marketing (score 90, irony pitch), following the template, labelled as illustrative composite. Ready for slice 2/3.",
+      "finalAssistantRawText": "No usable message channel available in this session. The artifact is written and the slate is clean per the mission instructions.\n\nSTATE: PROCEED — Case study written to `artifacts/missions/shippable-case-study-20260429-0546/muse-case-study.md` using Denver Legal Marketing (score 90, irony pitch), following the template, labelled as illustrative composite. Ready for slice 2/3.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 4,
+        "tools": [
+          "read",
+          "exec",
+          "write",
+          "message"
+        ],
+        "failures": 1
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

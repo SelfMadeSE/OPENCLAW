@@ -1,0 +1,300 @@
+2026-04-26T12:34:57.664-06:00 [ws] ⇄ res ✓ sessions.list 110ms conn=bf4b435a…a683 id=a9660c04…6205
+2026-04-26T12:35:15.253-06:00 [ws] ⇄ res ✓ sessions.list 159ms conn=bf4b435a…a683 id=59fd1cb1…d214
+2026-04-26T12:35:18.573-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=0d9764d7…06d1
+2026-04-26T12:35:30.343-06:00 [ws] ⇄ res ✓ sessions.list 107ms conn=bf4b435a…a683 id=b1dd0f11…ac2a
+2026-04-26T12:36:11.315-06:00 [ws] ⇄ res ✓ sessions.list 145ms conn=bf4b435a…a683 id=8ca97059…757d
+2026-04-26T12:36:24.657-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=f914d0e7…184b
+2026-04-26T12:36:25.485-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=674fc8d6…f2d3
+2026-04-26T12:36:29.694-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=cb6df4ad…4734
+2026-04-26T12:36:37.219-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=bf4b435a…a683 id=607014c2…47d1
+2026-04-26T12:36:43.278-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=2423c276…3fb7
+2026-04-26T12:36:45.744-06:00 [ws] ⇄ res ✓ sessions.list 98ms conn=bf4b435a…a683 id=b5a87d08…8297
+2026-04-26T12:36:53.054-06:00 [ws] ⇄ res ✓ sessions.list 96ms conn=bf4b435a…a683 id=7d6c1ef2…cbc1
+2026-04-26T12:36:59.286-06:00 [ws] ⇄ res ✓ sessions.list 133ms conn=bf4b435a…a683 id=9da6725b…4ae5
+2026-04-26T12:37:01.991-06:00 [ws] ⇄ res ✓ sessions.list 110ms conn=bf4b435a…a683 id=4338e92d…55ba
+2026-04-26T12:37:06.007-06:00 [ws] ⇄ res ✓ sessions.list 92ms conn=bf4b435a…a683 id=4b6062c9…15be
+2026-04-26T12:37:44.166-06:00 [ws] ⇄ res ✓ sessions.list 178ms conn=bf4b435a…a683 id=b14756f6…4275
+2026-04-26T12:37:51.176-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=bf4b435a…a683 id=3f3feb1e…0e8d
+2026-04-26T12:37:53.975-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=40fd561d…8e29
+2026-04-26T12:37:59.597-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=7cf7d180…3e0f
+2026-04-26T12:38:02.931-06:00 [ws] ⇄ res ✓ sessions.list 109ms conn=bf4b435a…a683 id=222b9ec6…1aba
+2026-04-26T12:38:06.112-06:00 [ws] ⇄ res ✓ sessions.list 106ms conn=bf4b435a…a683 id=78545252…e9bb
+2026-04-26T12:38:09.337-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=1084c0ba…281b
+2026-04-26T12:38:13.708-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=d5d682a7…3aac
+2026-04-26T12:38:20.299-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=9b6b7493…7a16
+2026-04-26T12:38:20.450-06:00 [ws] ⇄ res ✓ node.invoke 78ms conn=8d9cc0d8…5066 id=9a0b0624…5279
+2026-04-26T12:38:23.596-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=74d779f5…6a6f
+2026-04-26T12:38:27.591-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=bf4b435a…a683 id=ca7837eb…7b74
+2026-04-26T12:38:30.346-06:00 [ws] ⇄ res ✓ node.invoke 2685ms conn=a7fa8ec4…32ac id=6ab20a5c…348e
+2026-04-26T12:38:32.901-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=fac7beb8…f23c
+2026-04-26T12:38:33.052-06:00 [ws] ⇄ res ✓ node.invoke 71ms conn=542b8532…33a3 id=ae9ed18b…b751
+2026-04-26T12:38:38.055-06:00 [ws] ⇄ res ✓ sessions.list 146ms conn=bf4b435a…a683 id=d9a220bf…5de4
+2026-04-26T12:38:47.231-06:00 [ws] ⇄ res ✓ sessions.list 103ms conn=bf4b435a…a683 id=00c8b999…f2b6
+2026-04-26T12:38:49.279-06:00 [ws] ⇄ res ✓ node.invoke 1972ms conn=a8940bef…46df id=bbc32583…48dd
+2026-04-26T12:38:50.095-06:00 [ws] ⇄ res ✓ channels.status 69ms conn=90ee457a…0d27 id=a899b230…2c0e
+2026-04-26T12:38:52.323-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=bf4b435a…a683 id=a27c8b12…213a
+2026-04-26T12:38:56.196-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=fd3d1da4…3a56
+2026-04-26T12:39:04.840-06:00 [ws] ⇄ res ✓ sessions.list 103ms conn=bf4b435a…a683 id=ed1b7324…9107
+2026-04-26T12:39:12.147-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=8b9a0e3f…590d
+2026-04-26T12:39:13.039-06:00 [ws] ⇄ res ✓ sessions.list 96ms conn=bf4b435a…a683 id=4f64ff0f…ae0c
+2026-04-26T12:39:18.011-06:00 [ws] ⇄ res ✓ sessions.list 119ms conn=bf4b435a…a683 id=92029eda…0522
+2026-04-26T12:39:21.371-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=bf4b435a…a683 id=a3589c83…af51
+2026-04-26T12:39:24.841-06:00 [ws] ⇄ res ✓ sessions.list 141ms conn=bf4b435a…a683 id=6d39d0f0…6054
+2026-04-26T12:39:28.149-06:00 [ws] ⇄ res ✓ sessions.list 112ms conn=bf4b435a…a683 id=7628c22f…3626
+2026-04-26T12:39:31.384-06:00 [ws] ⇄ res ✓ sessions.list 113ms conn=bf4b435a…a683 id=d17cfa92…042a
+2026-04-26T12:39:43.185-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=6dbdfe1c…8e39
+2026-04-26T12:39:53.269-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=08f9f87b…7689
+2026-04-26T12:40:11.869-06:00 [ws] ⇄ res ✓ sessions.list 191ms conn=bf4b435a…a683 id=3aab7a85…7a62
+2026-04-26T12:40:22.757-06:00 [ws] ⇄ res ✓ sessions.list 214ms conn=bf4b435a…a683 id=865bd37b…8980
+2026-04-26T12:40:26.167-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=2c1ffb31…fb0c
+2026-04-26T12:40:39.744-06:00 [ws] ⇄ res ✓ sessions.list 106ms conn=bf4b435a…a683 id=b899b245…a29c
+2026-04-26T12:40:49.073-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=2822ffd7…f3cc
+2026-04-26T12:40:57.476-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=bf4b435a…a683 id=288c0955…cc3d
+2026-04-26T12:41:12.364-06:00 [ws] ⇄ res ✓ sessions.list 156ms conn=bf4b435a…a683 id=fd3761ee…fe84
+2026-04-26T12:41:24.689-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=bf4b435a…a683 id=e85ef542…ffcc
+2026-04-26T12:41:38.446-06:00 [ws] ⇄ res ✓ sessions.list 103ms conn=bf4b435a…a683 id=9e8fd489…dc13
+2026-04-26T12:41:57.933-06:00 [ws] ⇄ res ✓ sessions.list 196ms conn=bf4b435a…a683 id=fba35ddd…1408
+2026-04-26T12:42:16.017-06:00 [ws] ⇄ res ✓ sessions.list 175ms conn=bf4b435a…a683 id=d5ca4fa1…2dd5
+2026-04-26T12:42:27.776-06:00 [ws] ⇄ res ✓ sessions.list 95ms conn=bf4b435a…a683 id=ee9aac94…0d69
+2026-04-26T12:42:38.004-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=15a90d14…dd0f
+2026-04-26T12:42:56.902-06:00 [ws] ⇄ res ✓ sessions.list 187ms conn=bf4b435a…a683 id=423c69d9…8a28
+2026-04-26T12:43:11.568-06:00 [ws] ⇄ res ✓ sessions.list 133ms conn=bf4b435a…a683 id=7e6382ff…4b5d
+2026-04-26T12:43:22.146-06:00 [ws] ⇄ res ✓ sessions.list 94ms conn=bf4b435a…a683 id=bf517680…50d6
+2026-04-26T12:43:32.916-06:00 [ws] ⇄ res ✓ sessions.list 98ms conn=bf4b435a…a683 id=75cf54fc…a941
+2026-04-26T12:43:47.505-06:00 [ws] ⇄ res ✓ sessions.list 170ms conn=bf4b435a…a683 id=2f058d13…422b
+2026-04-26T12:44:08.142-06:00 [ws] ⇄ res ✓ sessions.list 172ms conn=bf4b435a…a683 id=359cbb58…f24f
+2026-04-26T12:44:16.273-06:00 [ws] ⇄ res ✓ sessions.list 129ms conn=bf4b435a…a683 id=efb09ffb…c1fc
+2026-04-26T12:44:21.918-06:00 [ws] ⇄ res ✓ sessions.list 187ms conn=bf4b435a…a683 id=2fb1ab4a…55d7
+2026-04-26T12:44:29.181-06:00 [ws] ⇄ res ✓ sessions.list 111ms conn=bf4b435a…a683 id=ad298b79…9ab0
+2026-04-26T12:45:05.523-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=32e60ea0…9f6f
+2026-04-26T12:45:10.407-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=5cccf193…a062
+2026-04-26T12:45:16.382-06:00 [ws] ⇄ res ✓ sessions.list 151ms conn=bf4b435a…a683 id=020e381e…698f
+2026-04-26T12:45:20.466-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=053f9f30…ee8d
+2026-04-26T12:45:28.037-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=3166739c…cc44
+2026-04-26T12:45:31.709-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=ba16a7d4…d902
+2026-04-26T12:45:33.949-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=bf4b435a…a683 id=56ba932f…3bdb
+2026-04-26T12:45:37.695-06:00 [ws] ⇄ res ✓ sessions.list 111ms conn=bf4b435a…a683 id=ed0ca46d…99ca
+2026-04-26T12:45:41.676-06:00 [ws] ⇄ res ✓ sessions.list 121ms conn=bf4b435a…a683 id=cb21a750…386d
+2026-04-26T12:45:43.711-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=bf4b435a…a683 id=0d49dacf…8df2
+2026-04-26T12:45:47.240-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=bf4b435a…a683 id=9d536ea2…9258
+2026-04-26T12:45:51.823-06:00 [ws] ⇄ res ✓ sessions.list 118ms conn=bf4b435a…a683 id=dc2847db…c221
+2026-04-26T12:45:58.924-06:00 [ws] ⇄ res ✓ sessions.list 109ms conn=bf4b435a…a683 id=3438f43f…aefa
+2026-04-26T12:45:59.184-06:00 [ws] ⇄ res ✓ node.invoke 176ms conn=480f6fe8…e176 id=fb294aaf…76db
+2026-04-26T12:46:02.780-06:00 [ws] ⇄ res ✓ sessions.list 162ms conn=bf4b435a…a683 id=084d29fc…1d9a
+2026-04-26T12:46:04.437-06:00 [ws] ⇄ res ✓ node.invoke 1578ms conn=ac47ba39…ed0f id=b8776167…0848
+2026-04-26T12:46:06.446-06:00 [ws] ⇄ res ✓ sessions.list 115ms conn=bf4b435a…a683 id=a91065f9…d6fd
+2026-04-26T12:46:13.463-06:00 [ws] ⇄ res ✓ sessions.list 114ms conn=bf4b435a…a683 id=a7b7aa44…f6ab
+2026-04-26T12:46:14.859-06:00 [ws] ⇄ res ✓ node.invoke 1311ms conn=f4ef2545…a13d id=a5e11e54…95df
+2026-04-26T12:46:16.761-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=bf4b435a…a683 id=612ef0d2…5e87
+2026-04-26T12:46:30.470-06:00 [ws] ⇄ res ✓ sessions.list 156ms conn=bf4b435a…a683 id=75d6fa5f…29aa
+2026-04-26T12:46:38.394-06:00 [ws] ⇄ res ✓ sessions.list 141ms conn=bf4b435a…a683 id=068c0c72…83bf
+2026-04-26T12:46:40.919-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=bf4b435a…a683 id=34efe92f…4ae7
+2026-04-26T12:46:44.999-06:00 [ws] ⇄ res ✓ sessions.list 137ms conn=bf4b435a…a683 id=eb871743…982f
+2026-04-26T12:46:48.022-06:00 [ws] ⇄ res ✓ sessions.list 155ms conn=bf4b435a…a683 id=ca719362…58f9
+2026-04-26T12:46:49.594-06:00 [ws] ⇄ res ✓ node.invoke 1506ms conn=d7f92987…183b id=c9f9da2b…1919
+2026-04-26T12:46:51.683-06:00 [ws] ⇄ res ✓ sessions.list 113ms conn=bf4b435a…a683 id=7111d150…6166
+2026-04-26T12:46:52.746-06:00 [ws] ⇄ res ✓ sessions.list 117ms conn=bf4b435a…a683 id=c4c2cbc3…769e
+2026-04-26T12:46:53.262-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=cb8f8b42…91be
+2026-04-26T12:46:54.072-06:00 [ws] ⇄ res ✓ sessions.list 116ms conn=bf4b435a…a683 id=281557cf…7e7b
+2026-04-26T12:46:56.634-06:00 [ws] ⇄ res ✓ sessions.list 113ms conn=bf4b435a…a683 id=af91c10c…5364
+2026-04-26T12:47:03.893-06:00 [ws] ⇄ res ✓ sessions.list 149ms conn=bf4b435a…a683 id=22de4d55…532c
+2026-04-26T12:47:09.100-06:00 [ws] ⇄ res ✓ sessions.list 122ms conn=bf4b435a…a683 id=88cd1349…5ae9
+2026-04-26T12:48:55.717-06:00 [ws] ⇄ res ✓ sessions.list 174ms conn=bf4b435a…a683 id=57a90c33…fc7c
+2026-04-26T12:49:10.334-06:00 [ws] ⇄ res ✓ sessions.list 196ms conn=bf4b435a…a683 id=4129870c…01fb
+2026-04-26T12:49:19.710-06:00 [ws] ⇄ res ✓ sessions.list 127ms conn=bf4b435a…a683 id=c4fd2a3e…bb6f
+2026-04-26T12:49:28.800-06:00 [ws] ⇄ res ✓ sessions.list 94ms conn=bf4b435a…a683 id=b5f45b71…a01a
+2026-04-26T12:49:50.007-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=bf4b435a…a683 id=faae48f2…80cd
+2026-04-26T12:50:14.709-06:00 [ws] ⇄ res ✓ sessions.list 184ms conn=bf4b435a…a683 id=6499388d…9694
+2026-04-26T12:50:26.198-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=bf4b435a…a683 id=03ad88ec…a6b4
+2026-04-26T12:50:40.031-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=bf4b435a…a683 id=706af8ab…e9e3
+2026-04-26T12:50:54.264-06:00 [ws] ⇄ res ✓ sessions.list 234ms conn=bf4b435a…a683 id=3f0dec86…d237
+2026-04-26T12:51:25.348-06:00 [ws] ⇄ res ✓ sessions.list 263ms conn=bf4b435a…a683 id=7104a183…bacc
+2026-04-26T12:52:04.222-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=bf4b435a…a683 id=5511072d…bd07
+2026-04-26T12:52:09.494-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=bf4b435a…a683 id=ce3fe202…80bb
+2026-04-26T12:52:17.230-06:00 [reload] config change detected; evaluating reload (meta.lastTouchedAt, hooks.internal.entries.bootstrap-extra-files.patterns)
+2026-04-26T12:52:17.243-06:00 [reload] config hot reload applied (hooks.internal.entries.bootstrap-extra-files.patterns)
+2026-04-26T12:52:22.204-06:00 [reload] config change detected; evaluating reload (meta.lastTouchedAt, channels.telegram.execApprovals.enabled)
+2026-04-26T12:52:22.210-06:00 [gateway/channels] restarting telegram channel
+2026-04-26T12:52:22.255-06:00 [reload] config hot reload applied (channels.telegram.execApprovals.enabled)
+2026-04-26T12:52:22.653-06:00 [telegram] [default] starting provider (@MRMRoBOTBOT)
+2026-04-26T12:52:22.705-06:00 [telegram] menu text exceeded the conservative 5700-character payload budget; shortening descriptions to keep 82 commands visible.
+2026-04-26T12:52:28.965-06:00 [ws] ⇄ res ✓ sessions.list 120ms conn=bf4b435a…a683 id=528fde54…cb8f
+2026-04-26T12:52:35.409-06:00 [gateway] signal SIGTERM received
+2026-04-26T12:52:35.411-06:00 [gateway] received SIGTERM; shutting down
+2026-04-26T12:52:35.605-06:00 [gmail-watcher] gmail watcher stopped
+2026-04-26T12:52:35.605-06:00 [ws] webchat disconnected code=1012 reason=service restart conn=bf4b435a-3fc2-4440-8a62-a12a6896a683
+2026-04-26T12:52:40.367-06:00 [gateway] loading configuration…
+2026-04-26T12:52:40.466-06:00 [gateway] resolving authentication…
+2026-04-26T12:52:40.473-06:00 [gateway] starting...
+2026-04-26T12:52:51.003-06:00 [gateway] starting HTTP server...
+2026-04-26T12:52:51.006-06:00 [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /Users/ryleebenson/.openclaw/canvas)
+2026-04-26T12:52:51.098-06:00 [health-monitor] started (interval: 300s, startup-grace: 60s, channel-connect-grace: 120s)
+2026-04-26T12:52:51.189-06:00 [gateway] agent model: deepseek/deepseek-v4-flash
+2026-04-26T12:52:51.189-06:00 [gateway] ready (7 plugins: acpx, browser, device-pair, memory-core, phone-control, talk-voice, telegram; 10.7s)
+2026-04-26T12:52:51.190-06:00 [gateway] log file: /tmp/openclaw/openclaw-2026-04-26.log
+2026-04-26T12:52:51.246-06:00 [gateway] starting channels and sidecars...
+2026-04-26T12:52:51.395-06:00 [hooks] loaded 4 internal hook handlers
+2026-04-26T12:53:04.169-06:00 [plugins] embedded acpx runtime backend registered (cwd: /Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator)
+2026-04-26T12:53:04.178-06:00 [browser/server] Browser control listening on http://127.0.0.1:18791/ (auth=token)
+2026-04-26T12:53:04.180-06:00 [heartbeat] started
+2026-04-26T12:53:04.208-06:00 [ws] webchat connected conn=dae4d367-fcd7-4d33-90b2-3df79dbbb2c2 remote=127.0.0.1 client=openclaw-control-ui webchat v2026.4.15
+2026-04-26T12:53:04.527-06:00 [telegram] [default] starting provider (@MRMRoBOTBOT)
+2026-04-26T12:53:04.727-06:00 [telegram] menu text exceeded the conservative 5700-character payload budget; shortening descriptions to keep 82 commands visible.
+2026-04-26T12:53:06.675-06:00 [plugins] embedded acpx runtime backend ready
+2026-04-26T12:53:06.838-06:00 [ws] ⇄ res ✓ sessions.usage 2589ms conn=dae4d367…b2c2 id=506a8ce4…d6d5
+2026-04-26T12:53:08.019-06:00 [ws] ⇄ res ✓ node.list 145ms conn=dae4d367…b2c2 id=df9680c8…bef5
+2026-04-26T12:53:10.873-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=dae4d367…b2c2 id=55c2f827…a661
+2026-04-26T12:53:22.553-06:00 [ws] ⇄ res ✓ sessions.list 128ms conn=dae4d367…b2c2 id=8e72fdd6…9fb7
+2026-04-26T12:53:22.554-06:00 [ws] ⇄ res ✓ chat.history 138ms conn=dae4d367…b2c2 id=ffb064da…a74b
+2026-04-26T12:53:25.161-06:00 [ws] ⇄ res ✓ channels.status 88ms conn=b53efc84…fa92 id=66adf081…4f29
+2026-04-26T12:53:27.530-06:00 [ws] ⇄ res ✓ sessions.list 107ms conn=dae4d367…b2c2 id=28394586…0955
+2026-04-26T12:53:27.531-06:00 [ws] ⇄ res ✓ chat.history 117ms conn=dae4d367…b2c2 id=289d7cf2…e9f4
+2026-04-26T12:53:41.012-06:00 [ws] ⇄ res ✓ sessions.list 118ms conn=dae4d367…b2c2 id=310accf9…7061
+2026-04-26T12:53:41.012-06:00 [ws] ⇄ res ✓ chat.history 130ms conn=dae4d367…b2c2 id=18a0b323…e517
+2026-04-26T12:54:14.782-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=974db065…393a
+2026-04-26T12:54:14.783-06:00 [ws] ⇄ res ✓ chat.history 120ms conn=dae4d367…b2c2 id=1f86fa02…a10d
+2026-04-26T12:54:15.858-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=dae4d367…b2c2 id=1a5551c2…c5a9
+2026-04-26T12:54:18.182-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=dae4d367…b2c2 id=3d698e12…af05
+2026-04-26T12:54:18.193-06:00 [ws] ⇄ res ✓ chat.history 124ms conn=dae4d367…b2c2 id=713152a5…4004
+2026-04-26T12:54:25.406-06:00 [ws] ⇄ res ✓ sessions.list 109ms conn=dae4d367…b2c2 id=e1e8a595…245a
+2026-04-26T12:54:31.604-06:00 [ws] ⇄ res ✓ sessions.list 116ms conn=dae4d367…b2c2 id=7b67d09b…f15d
+2026-04-26T12:54:38.896-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=b3737c68…124f
+2026-04-26T12:54:46.550-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=a9fceaa6…7736
+2026-04-26T12:54:54.711-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=13a9f5f8…4641
+2026-04-26T12:55:05.818-06:00 [ws] ⇄ res ✓ sessions.list 125ms conn=dae4d367…b2c2 id=8bdd9d76…5596
+2026-04-26T12:55:28.917-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=7f8215ff…9367
+2026-04-26T12:55:37.170-06:00 [ws] ⇄ res ✓ sessions.list 130ms conn=dae4d367…b2c2 id=5df9f1b9…958f
+2026-04-26T12:55:43.751-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=dae4d367…b2c2 id=9cacbf75…cd3f
+2026-04-26T12:55:43.900-06:00 [ws] ⇄ res ✓ sessions.list 94ms conn=33d415c6…d674 id=2e734a9f…ee43
+2026-04-26T12:56:15.472-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=29aacbd8…b6a9
+2026-04-26T12:56:15.601-06:00 [ws] ⇄ res ✓ agent 56ms runId=2e40e877-c284-425a-af96-7a9bf0db5221 conn=8fea9b27…ee05 id=2552995b…9721
+2026-04-26T12:56:15.724-06:00 [ws] ⇄ res ✓ sessions.list 112ms conn=dae4d367…b2c2 id=b84b8532…9ae9
+2026-04-26T12:56:16.390-06:00 [ws] ⇄ res ✓ sessions.list 103ms conn=dae4d367…b2c2 id=a436ef53…e889
+2026-04-26T12:56:36.979-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=7afcd6aa…698a
+2026-04-26T12:56:37.202-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=5c4cda81…5234
+2026-04-26T12:56:45.868-06:00 [ws] ⇄ res ✓ agent.wait 30003ms conn=b8db6f66…63b0 id=daa7e5a8…f9f9
+2026-04-26T12:56:55.037-06:00 [ws] ⇄ res ✓ sessions.list 96ms conn=dae4d367…b2c2 id=4fb7f653…b6fb
+2026-04-26T12:56:55.163-06:00 [ws] ⇄ res ✓ agent 56ms runId=2de66677-e3d2-4317-b720-9c8cab9dbfc8 conn=3bc157a4…427c id=3bde54a9…2e2a
+2026-04-26T12:56:55.289-06:00 [ws] ⇄ res ✓ sessions.list 116ms conn=dae4d367…b2c2 id=b9e8a949…6d37
+2026-04-26T12:57:07.313-06:00 [ws] ⇄ res ✓ agent.wait 30002ms conn=38add519…8d37 id=4b64fcb0…a4c2
+2026-04-26T12:57:10.408-06:00 [ws] ⇄ res ✓ agent.wait 15001ms conn=46b900f4…daf4 id=a3642dc8…2d93
+2026-04-26T12:57:32.161-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=0b9f2bac…4100
+2026-04-26T12:57:38.566-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=58278803…a170
+2026-04-26T12:57:43.155-06:00 [ws] ⇄ res ✓ sessions.list 133ms conn=dae4d367…b2c2 id=9fb61614…1069
+2026-04-26T12:57:50.454-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=e06e6487…626e
+2026-04-26T12:57:56.156-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=25a014d9…4df0
+2026-04-26T12:57:56.664-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=a4cf4a01…b04b
+2026-04-26T12:58:10.495-06:00 [ws] ⇄ res ✓ sessions.list 126ms conn=dae4d367…b2c2 id=25094a18…1f56
+2026-04-26T12:58:11.057-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=a3a152ec…9ea3
+2026-04-26T12:58:11.125-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat URL validation fix verified — now returns clean user-facing messages. Let me acknowledge FORGE and update the roundtable:
+2026-04-26T12:58:11.125-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat **Heartbeat: 2026-04-26 12:56 MDT**
+2026-04-26T12:58:11.125-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat One blocker fixed, one deployment pending. Here's the board:
+2026-04-26T12:58:11.126-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat ### ✅ Fixed This Cycle
+2026-04-26T12:58:11.126-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - **URL validation** — `POST /api/audit` with garbage URLs (`notaurl`, `foobar`) now returns clean user-facing messages instead of raw DNS `EBUSY` errors. Build verified clean (25/25 pages). Fix is in working tree, ready for deploy.
+2026-04-26T12:58:11.126-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat ### 🔴 Still Blocking
+2026-04-26T12:58:11.126-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - **`/sample-report` 404 in production** — page exists locally, compiles to static HTML, but Vercel deployment is 48h stale. The "Preview sample audit report →" button on the homepage is a dead link until deployed.
+2026-04-26T12:58:11.126-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - **12+ files waiting for deploy**: sample-report page, contact audit handoff, URL validation fix, Twilio cleanup.
+2026-04-26T12:58:11.127-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat ### ⚡ Approval Needed
+2026-04-26T12:58:11.127-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat One `vercel deploy --prod` resolves all 3 blockers. Commit is prepped. Rylee: approve `git commit + push` then `vercel deploy --prod` from `/Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/`.
+2026-04-26T12:58:11.127-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat ### 🟡 Watch
+2026-04-26T12:58:11.127-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - DeepSeek 401 auth error blocking outreach's automated prospect research.
+2026-04-26T12:58:11.127-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - 7 nightly review cron jobs failed (transient `GatewayDrainingError`).
+2026-04-26T12:58:11.128-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat ### Queue
+2026-04-26T12:58:11.128-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - 4 outreach drafts ready for send approval
+2026-04-26T12:58:11.128-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - Social series + campaign schedule ready
+2026-04-26T12:58:11.128-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat - Creative visual brief ready for mockups
+2026-04-26T12:58:11.128-06:00 [agent:nested] session=agent:orchestrator:main:heartbeat run=2e40e877-c284-425a-af96-7a9bf0db5221 channel=webchat Full roundtable: `artifacts/roundtable/latest.md`
+2026-04-26T12:58:12.499-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=dae4d367…b2c2 id=7e6d6d33…a542
+2026-04-26T12:58:22.775-06:00 [ws] ⇄ res ✓ sessions.list 114ms conn=dae4d367…b2c2 id=d1ae0ad2…fa1d
+2026-04-26T12:58:29.002-06:00 [ws] ⇄ res ✓ sessions.list 110ms conn=dae4d367…b2c2 id=592e38e9…bea1
+2026-04-26T12:58:29.003-06:00 [ws] ⇄ res ✓ chat.history 120ms conn=dae4d367…b2c2 id=f912e47e…2447
+2026-04-26T12:58:30.515-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=9bd01216…159d
+2026-04-26T12:58:35.269-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=2931ab19…1ae2
+2026-04-26T12:58:35.270-06:00 [ws] ⇄ res ✓ chat.history 109ms conn=dae4d367…b2c2 id=1d40b103…46f6
+2026-04-26T12:58:35.487-06:00 [ws] ⇄ res ✓ sessions.list 96ms conn=dae4d367…b2c2 id=08b934f5…62f4
+2026-04-26T12:58:37.889-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=c152a8b0…1c78
+2026-04-26T12:58:40.552-06:00 [ws] ⇄ res ✓ sessions.list 130ms conn=dae4d367…b2c2 id=136a5251…06a7
+2026-04-26T12:58:45.153-06:00 [ws] ⇄ res ✓ sessions.list 96ms conn=dae4d367…b2c2 id=3cb738c5…1e37
+2026-04-26T12:58:47.302-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=63bee8ff…bb30
+2026-04-26T12:58:49.646-06:00 [ws] ⇄ res ✓ sessions.list 107ms conn=dae4d367…b2c2 id=b10d8c61…475a
+2026-04-26T12:59:05.618-06:00 [ws] ⇄ res ✓ sessions.list 180ms conn=dae4d367…b2c2 id=86391923…5ad3
+2026-04-26T12:59:05.677-06:00 [ws] ⇄ res ✓ agent.wait 30045ms conn=20e80ce8…980b id=31126bbd…a4d6
+2026-04-26T12:59:11.219-06:00 [ws] ⇄ res ✓ sessions.list 139ms conn=dae4d367…b2c2 id=79d160fd…21c0
+2026-04-26T12:59:11.229-06:00 [ws] ⇄ res ✓ chat.history 159ms conn=dae4d367…b2c2 id=130f5426…50dc
+2026-04-26T12:59:12.396-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=dae4d367…b2c2 id=a34e9ae9…f269
+2026-04-26T12:59:12.786-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=269172ee…4a3a
+2026-04-26T12:59:12.857-06:00 No reply from agent.
+2026-04-26T12:59:15.169-06:00 [ws] ⇄ res ✓ sessions.list 126ms conn=dae4d367…b2c2 id=2a69fb55…33aa
+2026-04-26T12:59:21.932-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=56741ca9…775e
+2026-04-26T12:59:22.512-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=38da74e9…3664
+2026-04-26T12:59:28.914-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=2e272661…c5ef
+2026-04-26T12:59:34.710-06:00 [ws] ⇄ res ✓ sessions.list 114ms conn=dae4d367…b2c2 id=807afaca…001b
+2026-04-26T12:59:40.499-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=dae4d367…b2c2 id=a2600a0d…a7d1
+2026-04-26T12:59:41.108-06:00 [ws] ⇄ res ✓ sessions.list 106ms conn=dae4d367…b2c2 id=1816d1f1…78ae
+2026-04-26T13:00:10.549-06:00 [ws] ⇄ res ✓ sessions.list 227ms conn=dae4d367…b2c2 id=eff9e0ca…be27
+2026-04-26T13:00:17.477-06:00 [ws] ⇄ res ✓ sessions.list 138ms conn=dae4d367…b2c2 id=9c06193e…1c16
+2026-04-26T13:00:24.441-06:00 [ws] ⇄ res ✓ sessions.list 167ms conn=dae4d367…b2c2 id=e1b0c54b…3347
+2026-04-26T13:00:26.574-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=1791e6f6…1744
+2026-04-26T13:00:26.797-06:00 [ws] ⇄ res ✓ sessions.list 133ms conn=dae4d367…b2c2 id=2d8fba1e…cc22
+2026-04-26T13:00:26.924-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dbe263cb…5d57 id=a5721959…5e22
+2026-04-26T13:00:26.993-06:00 [ws] ⇄ res ✓ agent 56ms runId=b155a06b-8ee1-4df9-b95d-68a57a8722ef conn=46813615…bf38 id=a6aec179…6269
+2026-04-26T13:00:27.103-06:00 [ws] ⇄ res ✓ sessions.list 101ms conn=dae4d367…b2c2 id=388227b8…2127
+2026-04-26T13:00:33.210-06:00 [ws] ⇄ res ✓ sessions.list 115ms conn=dae4d367…b2c2 id=4458f6df…1ce9
+2026-04-26T13:00:33.344-06:00 [ws] ⇄ res ✓ agent 53ms runId=df907eb2-b458-43d8-a7b5-cf4918d7539e conn=2d457dbb…e845 id=8c6debf4…607e
+2026-04-26T13:00:33.452-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=8ba9b02e…b68b
+2026-04-26T13:00:42.253-06:00 [ws] ⇄ res ✓ agent.wait 15002ms conn=b0cd9bea…93f6 id=77a87d8e…fc83
+2026-04-26T13:01:00.142-06:00 [ws] ⇄ res ✓ sessions.list 227ms conn=dae4d367…b2c2 id=6c95d8b1…661e
+2026-04-26T13:01:02.427-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat That's a full monorepo working tree. Let me scope to the OA project changes NEXUS specified and prep the commit message.
+2026-04-26T13:01:02.429-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat Now let me write the commit message as a deliverable artifact.
+2026-04-26T13:01:02.429-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat Commit message prepped. Now notifying NEXUS.
+2026-04-26T13:01:02.430-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat ⚙️ **FORGE → NEXUS: commit ready, approval needed**
+2026-04-26T13:01:02.430-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat NEXUS is unreachable (orchestrator sessions timing out — likely busy with roundtable coordination). Here's the summary:
+2026-04-26T13:01:02.430-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat **Commit message prepped** at `artifacts/engineering-notes/pre-deploy-commit-2026-04-26T1857Z.md`
+2026-04-26T13:01:02.430-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat **Scope:** OA project only (19 files across 5 changesets):
+2026-04-26T13:01:02.431-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | Changeset | Files |
+2026-04-26T13:01:02.431-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat |---|---|
+2026-04-26T13:01:02.431-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | 🗑️ Twilio route removal | 5 API routes deleted, `package.json` dep removed, `/api/health` telephony field removed |
+2026-04-26T13:01:02.431-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | 🗑️ Receptionist cleanup | 2 stale artifacts deleted |
+2026-04-26T13:01:02.432-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | ✨ Sample-report page | `app/sample-report/page.tsx` (static, wired to Hero CTA) |
+2026-04-26T13:01:02.432-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | 🐛 URL validation fix | `app/api/audit/route.ts` — clean errors for bad URLs |
+2026-04-26T13:01:02.432-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat | 🔗 Contact audit handoff | `ContactForm.tsx`, `/api/contact`, contact page |
+2026-04-26T13:01:02.432-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat **Build:** ✅ 25 pages, 0 errors, `/sample-report` compiles static (○)
+2026-04-26T13:01:02.433-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat **Blocker:** Deploy needs Rylee approval. The live site is 48h stale — `/sample-report` returns 404.
+2026-04-26T13:01:02.433-06:00 [agent:nested] session=agent:engineering:main run=d7b5e8fb-3dc1-4fc0-ae28-282a0ebcd2a1 channel=webchat **Excluded:** Workspace agent configs, memory files, runtime reports (separate cleanup commit needed).
+2026-04-26T13:01:04.019-06:00 [ws] ⇄ res ✓ agent.wait 30452ms conn=c41ba942…e481 id=4d4e9a04…c417
+2026-04-26T13:01:04.379-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=2614f5a2…8d5d
+2026-04-26T13:01:07.253-06:00 [ws] ⇄ res ✓ sessions.list 135ms conn=dae4d367…b2c2 id=16a958ec…b5d7
+2026-04-26T13:01:07.795-06:00 [ws] ⇄ res ✓ sessions.list 113ms conn=dae4d367…b2c2 id=d329bef6…02b3
+2026-04-26T13:01:07.934-06:00 [ws] ⇄ res ✓ agent 53ms runId=0172977f-28f9-4423-ad82-03a7109d9076 conn=e8847c40…cbcb id=f0eb8e8b…c796
+2026-04-26T13:01:08.042-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=1e7445d7…51f0
+2026-04-26T13:01:10.905-06:00 [ws] ⇄ res ✓ sessions.list 123ms conn=dae4d367…b2c2 id=d01f5d05…9883
+2026-04-26T13:01:13.912-06:00 [ws] ⇄ res ✓ sessions.list 106ms conn=dae4d367…b2c2 id=89f311d0…dbff
+2026-04-26T13:01:18.055-06:00 [ws] ⇄ res ✓ sessions.list 107ms conn=dae4d367…b2c2 id=925e73a6…bcf1
+2026-04-26T13:01:18.124-06:00 [ws] ⇄ res ✓ agent.wait 10001ms conn=311f50f9…f4c3 id=5b03cb41…72d0
+2026-04-26T13:01:21.561-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=dae4d367…b2c2 id=e94989a5…f5cf
+2026-04-26T13:01:26.328-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=5985ec65…4251
+2026-04-26T13:01:33.118-06:00 [ws] ⇄ res ✓ sessions.list 110ms conn=dae4d367…b2c2 id=884c28fe…c654
+2026-04-26T13:01:39.642-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=dae4d367…b2c2 id=46667c58…1fcf
+2026-04-26T13:01:40.155-06:00 [ws] ⇄ res ✓ sessions.list 122ms conn=dae4d367…b2c2 id=6004735b…f026
+2026-04-26T13:01:40.623-06:00 [ws] ⇄ res ✓ sessions.list 120ms conn=dae4d367…b2c2 id=b2a0145a…8431
+2026-04-26T13:01:44.038-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=dae4d367…b2c2 id=f3d6d0db…7c9a
+2026-04-26T13:01:46.760-06:00 [ws] ⇄ res ✓ sessions.list 113ms conn=dae4d367…b2c2 id=af39d971…aae8
+2026-04-26T13:01:50.083-06:00 [ws] ⇄ res ✓ sessions.list 104ms conn=dae4d367…b2c2 id=1ab68508…d486
+2026-04-26T13:01:57.377-06:00 [ws] ⇄ res ✓ sessions.list 108ms conn=dae4d367…b2c2 id=2c8c035e…1df0
+2026-04-26T13:01:57.378-06:00 [ws] ⇄ res ✓ chat.history 122ms conn=dae4d367…b2c2 id=2b9b8a42…7948
+2026-04-26T13:02:03.203-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=fc86cdc4…70e5
+2026-04-26T13:02:06.819-06:00 [ws] ⇄ res ✓ sessions.list 100ms conn=dae4d367…b2c2 id=3853a508…3a30
+2026-04-26T13:02:10.029-06:00 [ws] ⇄ res ✓ sessions.list 116ms conn=dae4d367…b2c2 id=cb559738…1195
+2026-04-26T13:02:10.029-06:00 [ws] ⇄ res ✓ chat.history 129ms conn=dae4d367…b2c2 id=bf4556a7…ed44
+2026-04-26T13:02:10.290-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=cf64a8c8…1497
+2026-04-26T13:02:11.340-06:00 [ws] ⇄ res ✓ sessions.list 97ms conn=dae4d367…b2c2 id=0024f93d…e6cd
+2026-04-26T13:02:14.354-06:00 [ws] ⇄ res ✓ sessions.list 105ms conn=dae4d367…b2c2 id=6c8a7be5…9699
+2026-04-26T13:02:18.241-06:00 [ws] ⇄ res ✓ sessions.list 99ms conn=dae4d367…b2c2 id=d458c49d…2540
+2026-04-26T13:02:22.600-06:00 [ws] ⇄ res ✓ sessions.list 107ms conn=dae4d367…b2c2 id=879dc2a5…a9b4
+2026-04-26T13:02:25.385-06:00 [ws] ⇄ res ✓ agent.wait 15001ms conn=6bcc4183…e451 id=9f2697a6…c6f2
+2026-04-26T13:02:29.207-06:00 [ws] ⇄ res ✓ sessions.list 115ms conn=dae4d367…b2c2 id=1c792985…5b75
+2026-04-26T13:02:30.602-06:00 [ws] ⇄ res ✓ sessions.list 98ms conn=dae4d367…b2c2 id=f5d726f7…1b32
+2026-04-26T13:02:30.612-06:00 [ws] ⇄ res ✓ chat.history 121ms conn=dae4d367…b2c2 id=b4d20d76…506d
+2026-04-26T13:02:31.160-06:00 [ws] ⇄ res ✓ sessions.list 98ms conn=dae4d367…b2c2 id=eb28f52b…a33e
+2026-04-26T13:02:31.238-06:00 No reply from agent.
+2026-04-26T13:02:41.519-06:00 [ws] ⇄ res ✓ sessions.list 102ms conn=dae4d367…b2c2 id=1d118e4b…1ecc

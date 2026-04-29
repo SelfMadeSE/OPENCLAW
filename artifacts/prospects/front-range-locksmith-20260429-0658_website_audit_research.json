@@ -1,0 +1,25 @@
+{
+  "research_date": "2026-04-29 06:58 MDT",
+  "lead_name": "Front Range Locksmith",
+  "vertical": "locksmith",
+  "website": "https://frontrangelocksmith.com",
+  "score": 8,
+  "contact": {
+    "email": "frontrangelocksmith@gmail.com",
+    "phone": "(303) 555-0309",
+    "email_verified": true
+  },
+  "audit": {
+    "designScore": 93,
+    "conversionScore": 77,
+    "technicalScore": 100,
+    "overallScore": 90,
+    "grade": "A"
+  },
+  "weaknesses": [
+    "No lead-capture form detected on homepage",
+    "Primary conversion CTA is weak or not obvious",
+    "Site appears to be a basic template (no HTTPS redirect, no contact page form)"
+  ],
+  "notes": "Denver metro locksmith. Basic template site. No obvious lead capture mechanism. Gmail address suggests owner-operated."
+}

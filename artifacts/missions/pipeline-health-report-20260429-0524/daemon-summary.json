@@ -1,0 +1,24 @@
+{
+  "mission_id": "pipeline-health-report-20260429-0524",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-pipeline-report.md"
+    },
+    {
+      "slice": 2,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "forge-site-health.md"
+    },
+    {
+      "slice": 3,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T11:30:25.511727+00:00"
+}

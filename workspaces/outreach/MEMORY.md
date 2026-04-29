@@ -1,81 +1,72 @@
-# Memory — outreach
+# BRIDGE Active Memory
 
-## Status (2026-04-21 17:09 UTC)
-- **Pipeline**: 5 verified HN prospects, 3 outreach drafts awaiting approval, 0 follow-ups due
-- **Heartbeat**: 5 leads in pipeline, 3 drafts pending approval, 0 follow-ups due
-- **Heartbeat**: 5 HN leads active, 3 drafts awaiting approval, 3 drafts needing personalization, 0 follow-ups due
-- **Last heartbeat**: 5 HN prospects in artifacts/prospects/, 6 outreach drafts ready (3 personalized HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due, email channel functional via browser
-- **CRITICAL INTEGRITY VIOLATION**: Marketing agent fabricated all 10 leads in marketing-leads-2026-04-20.md (confirmed by agent). File deleted. No real research conducted — all quotes/handles fabricated.
-- **REAL PROGRESS**: 5 verified prospects from HN Show today (real posts, real founders, real products)
-- **OUTREACH READY**: 3 personalized drafts created in `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` (awaiting approval)
-- **TEMPLATES READY**: 3 generic ICP drafts in `artifacts/outreach-drafts/2026-04-20-drafts.md` (need personalization with real prospect data)
-- **CONTACT INFO FOUND**: abhinavxd@libredesk email: abhinavrautcs@gmail.com (from GitHub commits)
-- **EMAIL CHANNEL**: ✅ WORKING via browser automation. Gmail compose+send tested successfully (owner@outboundautonomy.com). Script: `python3 ~/Desktop/OPENCLAW/scripts/gmail-send.py`
-- **HN ACCOUNT**: ✅ Logged in as `outboundauto` via browser
-- **SMTP**: ❌ Not configured — blocked on Google app password (needs 2FA enabled + account password from Rylee)
-- **CREDENTIALS**: Stored in `~/Desktop/OPENCLAW/credentials.md` (gitignored)
-- **NEXT ACTIONS**: 1) Rylee must provide Google password to enable 2FA → generate app password → configure himalaya SMTP. 2) Outreach can proceed NOW via browser-based email sending. 3) HN replies can be sent via browser.
-- **INTEGRITY NOTE**: All future prospect research must include verifiable sources (direct links to posts/profiles) or be rejected.
+Reset: 2026-04-29 (early)
+Last heartbeat: 2026-04-29 ~6:02 AM MT (28th cycle)
 
-## Outreach Activity Log
-- **2026-04-20**: Created 3 cold outreach email drafts targeting agency owners, SaaS founders, and ops directors. Templates are generic ICP-based — need personalization with real prospect data before sending.
-- **2026-04-20**: Created 3 personalized HN outreach drafts targeting Libredesk, Edunation, and Mailto.Bot founders. Awaiting human approval before sending.
+Canonical mission: read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md`.
 
-## Emails Sent
-- **2026-04-23 17:54 UTC**: Biotune (nk@biotune.co) — 3D visual language pitch, HIGH priority
-- **2026-04-23 17:54 UTC**: I for Design Studio (hello@ifordesign.co) — Freelance EOI, MEDIUM-HIGH priority
-- **2026-04-23 19:42 UTC**: Flowtelligence AI — Google Form application submitted (brand identity + UI dashboard, $85/hr, 3-4 week timeline, all phases, open to full-time), HIGH priority
+Outbound Autonomy is the business being sold.
 
-## Heartbeat Log
-- **2026-04-21 13:55 UTC**: Pipeline check complete. 5 HN prospects verified, 3 drafts awaiting approval, 0 follow-ups due.
-- **2026-04-21 10:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
-- **2026-04-21 08:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
-- **2026-04-21 09:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
-- **2026-04-21 06:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
-- **2026-04-21 05:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
-- **2026-04-21 04:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due. Email channel functional via browser.
-- **2026-04-21 00:53 UTC**: Pipeline check complete. 5 leads active, 6 drafts pending (3 approval, 3 personalization), 0 follow-ups due. Primary blocker remains email channel configuration.
-- **2026-04-21 11:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
-- **2026-04-21 12:54 UTC**: Pipeline check complete. 5 HN prospects verified, 6 drafts ready (3 HN drafts awaiting approval, 3 generic ICP drafts needing personalization), 0 follow-ups due.
+Outreach must lead with the website audit / URL analysis offer.
 
-## Promoted From Short-Term Memory (2026-04-21)
+Prospect fit:
+- Service businesses or agency partners with visible website problems.
+- Weak conversion paths, poor mobile UX, no clear CTA, slow/dated site, missing lead capture, weak trust/proof, or obvious local SEO gaps.
 
-<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:174:197 -->
-- - **Real prospects identified**: 5 founders from HN Show (April 20, 2026) - **Outreach drafts ready**: 3 personalized messages targeting Libredesk, Edunation, Mailto.Bot founders - **Contact info acquired**: abhinavrautcs@gmail.com (Libredesk founder) - **Blocker**: HN login or email channel not configured for sending outreach ## Critical Integrity Issue — Marketing Agent - **Event**: Marketing agent fabricated 10 "prospects" with generic handles, fake quotes - **Source**: `/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/prospects/marketing-leads-2026-04-20.md` - **Problem**: All leads fictional, no verifiable sources, perfectly ICP-aligned language (red flag) - **Action taken**: File deleted, agent confronted, admitted fabrication - **Memory flag**: MAJOR integrity violation — fabricated lead data is worse than no data ## Real Prospect Research (Verified) 1. **Libredesk** — abhinavxd (GitHub), abhinavrautcs@gmail.com, self-hosted Zendesk alt, empty landing page 2. **Edunation** — marjanatanasov (HN), school admin SaaS, 10+ schools, just rebuilt landing page 3. **Mailto.Bot** — jerryluk (HN), email API for AI agents, MCP-native, adjacent to OpenClaw 4. **SkillCatalog** — sformisano (HN), AI skill management, Git-native 5. **Surge Forecast** — tylergibbs1 (HN), energy data SaaS, needs visual communication ## Outreach Ready - Drafts in: `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` - Personalized hooks for each founder referencing their HN post - RED priority (human approval not required per Rylee: "you can do any of that by yourself") [score=0.962 recalls=10 avg=1.000 source=memory/2026-04-20.md:174-197]
-<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:191:202 -->
-- 5. **Surge Forecast** — tylergibbs1 (HN), energy data SaaS, needs visual communication ## Outreach Ready - Drafts in: `artifacts/outreach-drafts/2026-04-20-hn-outreach.md` - Personalized hooks for each founder referencing their HN post - RED priority (human approval not required per Rylee: "you can do any of that by yourself") ## Next Steps - Configure HN login or email channel to send outreach - Monitor HN threads for replies - Track response rates and ROI on HN founder outreach strategy - Audit all agent outputs for data integrity moving forward [score=0.930 recalls=7 avg=1.000 source=memory/2026-04-20.md:191-202]
-<!-- openclaw-memory-promotion:memory:memory/2026-04-20.md:167:179 -->
-- - Assistant: I need to perform my boot check as the Outreach agent. Let me follow the BOOT.md instructions: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect research 3. Check artifacts/ for pending outreach drafts [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:8-8] - User: Create an audience strategy document for OPENCLAW video content: "Building an AI Society on a Single Mac" Include: - 3 detailed viewer personas (demographics, motivations, objections) - Distribution channels with strategy per channel - Engagement plan (comments, community, [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:1-1] - User: You are running a boot check. Follow BOOT.md instructions exactly. BOOT.md: # Outreach Agent Boot You are the Outreach agent for OPENCLAW. On startup: 1. Read MEMORY.md for lead pipeline status and past outreach results 2. Read memory/ daily files for recent prospect resear [confidence=0.49 evidence=memory/.dreams/session-corpus/2026-04-18.txt:5-5] <!-- openclaw:dreaming:rem:end --> # Memory — 2026-04-20 ## Outreach Pipeline Status - **Real prospects identified**: 5 founders from HN Show (April 20, 2026) - **Outreach drafts ready**: 3 personalized messages targeting Libredesk, Edunation, Mailto.Bot founders - **Contact info acquired**: abhinavrautcs@gmail.com (Libredesk founder) - **Blocker**: HN login or email channel not configured for sending outreach ## Critical Integrity Issue — Marketing Agent [score=0.885 recalls=6 avg=1.000 source=memory/2026-04-20.md:167-179]
+Draft structure:
+- Specific observation from their site.
+- Free audit / demo report offer.
+- Mention score/problem areas and targeted fixes.
+- CTA to review the audit or request full proposal/implementation plan.
 
-- **2026-04-21 18:40 UTC**: NEXUS ordered hold on HN drafts (Libredesk, Edunation, Mailto.Bot). Blocked on FORGE shipping Lane 1 demo and SENTINEL compliance review. Drafts remain in YELLOW status.
-- **Heartbeat (2026-04-21 20:54 UTC)**: Acknowledged pivot + Lane 3 GTM rewrite assignment. 5 leads in pipeline, 3 drafts pending approval (on hold for Lane 1 demo + compliance gate), 0 follow-ups due.
-2026-04-21 15:30 MDT: 5 leads in pipeline, 3 drafts pending approval (on hold for Lane 1 demo), 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-21 21:45 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-21 20:54 UTC)**: Acknowledged pivot + Lane 3 GTM rewrite assignment. 5 leads in pipeline, 3 drafts pending approval (on hold for Lane 1 demo + compliance gate), 0 follow-ups due.
-2026-04-21 15:30 MDT: 5 leads in pipeline, 3 drafts pending approval (on hold for Lane 1 demo), 0 follow-ups due. Status: HEARTBEAT_OK.
-2026-04-21 16:06 MDT: 5 leads in pipeline, 3 drafts pending approval (on hold for Lane 1 demo/SENTINEL), 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-21 22:42 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-21 23:18 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-21 23:54 UTC)**: Acknowledging launch gate lift for scoped Lane 1 closed-pilot demo. Outreach drafts remain on hold. 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 00:30 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
--- - **Heartbeat (2026-04-22 01:06 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 01:42 UTC)**: 5 leads in pipeline. 3 drafts pending approval (Lane 1 demo/SENTINEL blocked). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **[2026-04-22 01:44 UTC] MANUAL OVERRIDE TRIGGERED BY RYLEE**: Outreach sent to Libredesk, Edunation, Mailto.Bot. Pipeline updated.
-- **Heartbeat (2026-04-22 04:06 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 05:18 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 05:54 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 08:20 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 09:30 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 10:42 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 11:18 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 11:54 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 12:30 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 13:06 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 13:42 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 14:18 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 14:54 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 16:06 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 16:42 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-22 17:18 UTC)**: 5 leads in pipeline. 0 drafts pending approval (emails sent). 0 follow-ups due. Status: HEARTBEAT_OK.
-- **Heartbeat (2026-04-23 16:42 UTC)**: 15 leads in pipeline (5 HN founders, 5 Dribbble, 5 HN jobs). 6 drafts pending send (3 Dribbble, 3 HN jobs). 3 emails sent 2026-04-22. 0 follow-ups due.
-- **Heartbeat (2026-04-23 19:42 UTC)**: 15 leads in pipeline. Flowtelligence application submitted via Google Form. 3 emails sent this cycle (Biotune, I for Design, Flowtelligence). 3 HN jobs drafts stale. 0 follow-ups due.
+Live sending is GREEN. SMTP working.
+
+---
+
+## 5:09 AM MT — 27th Cycle (Apr 29) — Updated
+
+### ✅ SMTP is WORKING
+- The 3:06 AM batch succeeded. 535 errors at 9:22 UTC, but by 10:28-11:04 UTC sends were succeeding again.
+- Ledger shows IDs 61-70 all `provider_accepted` in the 10:28-11:04 window.
+- App password was regenerated during a prior cycle and is confirmed working.
+
+### ✅ No-Email Blockers CLEARED
+- 8 former "no-email" leads received emails successfully (BHC Air, Fort Collins Heating, GE Heating, Fix-It Now HVAC, Pure Pest Co, Horsetooth Heating, Skyline Landscape, Denver Lawn & Landscape).
+- 2 moved to `outreach_drafted_email_missing` (Mountain View Mechanical, DenTech Heating).
+- All 12 no-email leads from 3:52 AM have been processed.
+
+### ✅ Denver Concierge Freeze CLEARED
+- Pipeline shows 0 outreach_drafted — the 1 blocked email-capable lead was resolved.
+
+### Pipeline Status
+- 66 total → 48 active (outreach_sent: 45, scored: 2, prospect: 1)
+- 14 archived, 2 lost, 1 prospect
+- 0 outreach_drafted — pipeline is fully drained.
+
+### Pending Rylee Decisions (2 scored leads)
+- **Affordable Pest** (score 7/10) — Audit: 97/A, nearly perfect site, low urgency
+- **Window Replacement Denver** (score 7/10) — Audit: 98/A, very clean site, low urgency
+- Both need Rylee to decide whether to pursue despite high audit scores.
+
+### Email Ledger
+- 57 provider_accepted total
+- 6 failed (3 old + 2 smoke tests at 9:22 + 1 Junk Genius 535)
+- 7 reconciled_superseded (legacy browser claims)
+
+### Next Possible Actions
+- **Find new prospects** with visible site problems (low design/conversion scores)
+- **Research** businesses with outdated websites, missing lead capture, weak CTAs
+- Await Rylee decision on the 2 scored near-perfect sites
+
+### 6:02 AM MT — 28th Cycle (Apr 29)
+
+#### ✅ New Prospects Found (2 added)
+- **Denver Tree Removal Service** (tree-service) — Site: https://denvertreeremovalservice.com — Copyright 2018, basic HTML, no mobile optimization. Contact discovered: michael@astumpman.com / 303-777-5757. Strong target for audit-led outreach.
+- **Martin Mowing** (landscaping) — Site: https://martinmowingllc.com — Copyright 2021, basic WordPress template, phone-only. Needs email discovery.
+
+#### Pipeline
+- 68 total — 45 outreach_sent, 2 scored (awaiting Rylee), 2 outreach_drafted_email_missing, 2 prospect (new), 1 prospect (existing)
+- 14 archived, 2 lost
+
+#### SMTP
+- Still WORKING. No new sends this cycle (focusing on prospect research).

@@ -1,0 +1,62 @@
+            "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 05:25 MDT] MISSION pipeline-health-report-20260429-0524 \\u2014 slice 1/3.\\nLead is NEXUS. Goal: Produce a single operator-facing pipeline health report reconciling the full send ledger (57 provider_accepted + 7 reconciled_superseded + 6 failed) against CRM lead stages, surfacing exact revenue metrics and next actions..\\nYour task: Build the full pipeline picture using only sqlite3 (CRM Python has fd error): (a) sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT stage, COUNT(*), AVG(score) FROM leads GROUP BY stage' \\u2014 stage distribution, (b) sqlite3 ... 'SELECT l.id,l.name,l.stage,l.score,e.status,e.provider_message_id FROM leads l LEFT JOIN email_attempts e ON l.id=e.lead_id WHERE l.stage IN (\"outreach_sent\",\"outreach_drafted\") ORDER BY l.score DESC' \\u2014 full sent+drafted join, (c) sqlite3 ... 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' \\u2014 ledger summary. From the join, classify every sent-stage lead: has provider_accepted = verified_send, has unverified_claim/reconciled_superseded only = suspect, no email_attempt row = ghost. Produce a pipeline health table with columns: lead_id, name, score, stage, email, send_status, evidence_class. Then write the top-5 next-send priority queue: highest-scored leads with verified emails that have NOT been sent (stage=drafted OR ghost). Write to artifacts/missions/pipeline-health-report-20260429-0524/bridge-pipeline-report.md.\\nWrite your output to: artifacts/missions/pipeline-health-report-20260429-0524/bridge-pipeline-report.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/pipeline-health-report-20260429-0524/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — 44/47 sent leads verified via provider_accepted. 2 ghosts (Mountain View Mechanical 83, DenTech 69 — no email). 1 suspect (Junk Genius — false positive). 0 email-capable unsent leads remain. Pipeline fully drained; needs new prospect sourcing.",
+      "finalAssistantRawText": "STATE: PROCEED — 44/47 sent leads verified via provider_accepted. 2 ghosts (Mountain View Mechanical 83, DenTech 69 — no email). 1 suspect (Junk Genius — false positive). 0 email-capable unsent leads remain. Pipeline fully drained; needs new prospect sourcing.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 8,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mission_id": "new-prospect-research-20260429-0658",
+  "goal": "Research and score 5 new local service business prospects with weak websites across fresh verticals (locksmiths, movers, auto glass, landscaping), load them into CRM as outreach_drafted, and prepare email-ready contact records.",
+  "success_criteria": [
+    "5 new leads created in CRM with stage=outreach_drafted, score>=65, and verified contact info including email",
+    "Prospect research JSON files written to artifacts/prospects/ for each new lead"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Research 5 real local service businesses across fresh verticals using web_fetch only (no X Search \u2014 API exhausted). Target: Denver/Boulder/Fort Collins area. Verticals: locksmith (1), movers (1), auto glass (1), landscaping (2). For each: find their website URL, assess weaknesses (no HTTPS, slow, no mobile, outdated design, no booking, broken contact form), locate contact email via site source/contact page/footer. Score each lead. Write prospect research JSON to artifacts/prospects/<name>-20260429-<time>_website_audit_research.json. Insert into CRM: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"INSERT INTO leads (id,name,type,source,stage,score,contact_info,notes) VALUES ('<id>','<name>','<type>','website-audit','outreach_drafted',<score>,'<contact_json>','<notes>')\". Write the full research table to artifacts/missions/new-prospect-research-20260429-0658/bridge-research.md.",
+      "expected_artifact": "bridge-research.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-research.md. Verify: (a) sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,name,stage,score FROM leads ORDER BY id DESC LIMIT 5' \u2014 confirm 5 new outreach_drafted leads exist, (b) verify each lead has a non-null contact_info with email field, (c) spot-check 2 prospect websites via curl -s -o /dev/null -w '%{http_code}' to confirm they're real and accessible, (d) confirm the scoring criteria are applied consistently. Write artifacts/missions/new-prospect-research-20260429-0658/sentinel-verify.md with: new lead count, score range, verticals covered, and verdict. Append SCORE_EVENT to _shared/scoring/history.jsonl for outreach.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "68 sends out, pipeline needs fresh inventory. The outreach_drafted pipeline has been drawn down by recent send missions. Researching 5 new prospects in fresh verticals (locksmiths, movers, auto glass, landscaping) diversifies the pipeline beyond HVAC/plumbing/dental and creates immediately sendable leads. 2-slice mission uses web_fetch for research (GREEN per BOOT.md) and sqlite3 for CRM writes (Python CRM broken). This directly feeds the next send cycle with new targets."
+}

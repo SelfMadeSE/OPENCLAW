@@ -1,0 +1,28 @@
+{
+  "mission_id": "shippable-case-study-20260429-0546",
+  "goal": "Publish a single polished internal case study on outboundautonomy.com/case-studies demonstrating the audit\u2192fix\u2192results workflow with real OA methodology, creating a conversion asset for prospects who visit after receiving outreach emails.",
+  "success_criteria": [
+    "outboundautonomy.com/case-studies returns 200 with a complete case study showing audit scores, fix methodology, and projected results",
+    "Case study includes a CTA to /try or /sample-report to capture prospect traffic"
+  ],
+  "slices": [
+    {
+      "agent": "creative",
+      "task": "Write a single internal OA case study in the format from /Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/case-study-template-2026-04-28.md. Choose the highest-scored outreach_sent lead from the pipeline (Denver Legal Marketing, 90 \u2014 marketing agency selling web design with a broken site, perfect irony pitch). The case study should follow the template structure: Problem \u2192 Audit Findings (hypothetical design/conversion/technical scores based on their real site weaknesses from prospect notes: copyright stuck at 2020, zero portfolio, zero case studies, zero blog, no live chat) \u2192 What We'd Fix (3-4 specific improvements with OA methodology) \u2192 Projected Results (before/after score estimates, lead capture improvement) \u2192 Takeaways. Label clearly as 'Illustrative Composite \u2014 Not a Real Client' per the template. Write to artifacts/missions/shippable-case-study-20260429-0546/muse-case-study.md.",
+      "expected_artifact": "muse-case-study.md"
+    },
+    {
+      "agent": "engineering",
+      "task": "Read muse-case-study.md from artifacts/missions/shippable-case-study-20260429-0546/. Deploy it to the live /case-studies page on outboundautonomy.com: (1) Read the current page at /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/app/case-studies/page.tsx, (2) Replace the existing illustrative composite content with the new case study from muse-case-study.md, (3) Commit and push to git, (4) Trigger vercel --prod deploy from /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/. After deploy, curl https://outboundautonomy.com/case-studies and confirm 200 with new content visible. Write deployment results to artifacts/missions/shippable-case-study-20260429-0546/forge-deploy-results.md with: git commit hash, deploy timestamp, HTTP status, and content verification.",
+      "expected_artifact": "forge-deploy-results.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read muse-case-study.md and forge-deploy-results.md. Verify: (a) the case study follows the template structure from creative/artifacts/site-copy/case-study-template-2026-04-28.md, (b) the 'Illustrative Composite' disclaimer is present and prominent, (c) curl https://outboundautonomy.com/case-studies and confirm 200 with the new case study content visible in page source, (d) verify the page contains an audit-funnel CTA linking to /try or /sample-report. Write artifacts/missions/shippable-case-study-20260429-0546/sentinel-verify.md with per-file verdict and content checklist. Append SCORE_EVENT to _shared/scoring/history.jsonl for creative and engineering.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "57 outreach emails sent \u2014 prospects WILL click through to the site. The /case-studies page is currently a generic composite that doesn't showcase OA's specific methodology. Replacing it with a concrete, well-structured internal case study (clearly labeled as illustrative) gives prospects a conversion asset that demonstrates the audit\u2192fix\u2192results workflow they'd receive. This is the single highest-leverage shippable artifact: it closes the loop between 'we sent you an email' and 'here's proof we can deliver.' Creative\u2192Engineering\u2192Auditor is a clean 3-agent pipeline producing something that actually goes live. YELLOW because of Vercel production deploy."
+}

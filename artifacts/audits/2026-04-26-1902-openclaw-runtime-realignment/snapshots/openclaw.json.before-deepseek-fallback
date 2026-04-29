@@ -1,0 +1,725 @@
+{
+  "gateway": {
+    "auth": {
+      "token": "01eaa9b1a782d647798b295d6d654c1a6408ae4b02188bf0",
+      "allowTailscale": true,
+      "mode": "token"
+    },
+    "mode": "local",
+    "remote": {
+      "sshTarget": "ryleebenson@openclaw.local",
+      "url": "ws://openclaw.local:18789"
+    },
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "port": 18789,
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    },
+    "controlUi": {
+      "allowExternalEmbedUrls": true,
+      "allowInsecureAuth": true
+    }
+  },
+  "meta": {
+    "lastTouchedAt": "2026-04-26T18:52:21.633Z",
+    "lastTouchedVersion": "2026.4.15"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/Users/ryleebenson/.openclaw/workspace",
+      "thinkingDefault": "medium",
+      "timeoutSeconds": 600,
+      "maxConcurrent": 2,
+      "model": {
+        "primary": "deepseek/deepseek-v4-flash",
+        "fallbacks": [
+          "deepseek/deepseek-v4-pro"
+        ]
+      },
+      "subagents": {
+        "maxSpawnDepth": 2,
+        "maxChildrenPerAgent": 7,
+        "maxConcurrent": 7,
+        "allowAgents": [
+          "orchestrator",
+          "engineering",
+          "marketing",
+          "outreach",
+          "creative",
+          "media",
+          "auditor"
+        ],
+        "model": "deepseek/deepseek-v4-flash",
+        "thinking": "medium",
+        "runTimeoutSeconds": 1800
+      },
+      "heartbeat": {
+        "every": "1h",
+        "lightContext": true,
+        "isolatedSession": true,
+        "timeoutSeconds": 900
+      },
+      "contextTokens": 1000000,
+      "userTimezone": "America/Denver",
+      "models": {
+        "openrouter/openrouter/free": {},
+        "openrouter/nvidia/nemotron-nano-12b-v2-vl:free": {},
+        "openrouter/nvidia/nemotron-nano-9b-v2:free": {},
+        "openrouter/nvidia/nemotron-3-super-120b-a12b:free": {},
+        "openrouter/qwen/qwen3-next-80b-a3b-instruct:free": {},
+        "deepseek/deepseek-v4-pro": {
+          "alias": "DeepSeek V4 Pro"
+        },
+        "deepseek/deepseek-v4-flash": {
+          "alias": "DeepSeek V4 Flash"
+        }
+      },
+      "memorySearch": {
+        "enabled": false
+      }
+    },
+    "list": [
+      {
+        "id": "orchestrator",
+        "name": "Orchestrator",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator",
+        "model": {
+          "primary": "deepseek/deepseek-v4-pro",
+          "fallbacks": [
+            "deepseek/deepseek-v4-flash"
+          ]
+        },
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "30m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "message",
+            "browser",
+            "canvas",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        }
+      },
+      {
+        "id": "engineering",
+        "name": "Engineering",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "32m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-pro",
+          "fallbacks": [
+            "deepseek/deepseek-v4-flash"
+          ]
+        }
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "34m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-flash",
+          "fallbacks": [
+            "deepseek/deepseek-v4-pro"
+          ]
+        }
+      },
+      {
+        "id": "outreach",
+        "name": "Outreach",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "36m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-flash",
+          "fallbacks": [
+            "deepseek/deepseek-v4-pro"
+          ]
+        }
+      },
+      {
+        "id": "creative",
+        "name": "Creative",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "38m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-flash",
+          "fallbacks": [
+            "deepseek/deepseek-v4-pro"
+          ]
+        }
+      },
+      {
+        "id": "media",
+        "name": "Media",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/media",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "40m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-flash",
+          "fallbacks": [
+            "deepseek/deepseek-v4-pro"
+          ]
+        }
+      },
+      {
+        "id": "auditor",
+        "name": "Auditor",
+        "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor",
+        "thinkingDefault": "medium",
+        "reasoningDefault": "stream",
+        "heartbeat": {
+          "every": "42m"
+        },
+        "subagents": {
+          "allowAgents": [
+            "orchestrator",
+            "engineering",
+            "marketing",
+            "outreach",
+            "creative",
+            "media",
+            "auditor"
+          ],
+          "model": "deepseek/deepseek-v4-flash",
+          "thinking": "medium"
+        },
+        "tools": {
+          "alsoAllow": [
+            "browser",
+            "canvas",
+            "message",
+            "gateway",
+            "nodes",
+            "agents_list",
+            "tts"
+          ]
+        },
+        "model": {
+          "primary": "deepseek/deepseek-v4-flash",
+          "fallbacks": [
+            "deepseek/deepseek-v4-pro"
+          ]
+        }
+      }
+    ]
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "full",
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "orchestrator",
+        "marketing",
+        "engineering",
+        "outreach",
+        "creative",
+        "media",
+        "auditor"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "lmstudio": {
+        "enabled": true
+      },
+      "memory-core": {
+        "config": {
+          "dreaming": {
+            "enabled": true,
+            "timezone": "America/Denver",
+            "verboseLogging": true,
+            "storage": {
+              "mode": "both",
+              "separateReports": true
+            }
+          }
+        }
+      },
+      "zai": {
+        "enabled": true
+      },
+      "openai": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      },
+      "github-copilot": {
+        "enabled": false
+      },
+      "deepseek": {
+        "enabled": true
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/anthropic",
+        "api": "anthropic-messages",
+        "auth": "api-key",
+        "models": [
+          {
+            "id": "deepseek-v4-pro",
+            "name": "DeepSeek V4 Pro",
+            "api": "anthropic-messages",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 1000000,
+            "maxTokens": 384000,
+            "cost": {
+              "input": 0.435,
+              "output": 0.87,
+              "cacheRead": 0.003625,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true,
+              "requiresThinkingAsText": true
+            }
+          },
+          {
+            "id": "deepseek-v4-flash",
+            "name": "DeepSeek V4 Flash",
+            "api": "anthropic-messages",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 1000000,
+            "maxTokens": 384000,
+            "cost": {
+              "input": 0.14,
+              "output": 0.28,
+              "cacheRead": 0.0028,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsUsageInStreaming": true,
+              "requiresThinkingAsText": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "lmstudio:default": {
+        "provider": "lmstudio",
+        "mode": "api_key"
+      }
+    }
+  },
+  "skills": {
+    "allowBundled": [
+      "1password",
+      "apple-notes",
+      "apple-reminders",
+      "bear-notes",
+      "blogwatcher",
+      "blucli",
+      "bluebubbles",
+      "camsnap",
+      "clawhub",
+      "coding-agent",
+      "discord",
+      "eightctl",
+      "gemini",
+      "gifgrep",
+      "gog",
+      "goplaces",
+      "healthcheck",
+      "himalaya",
+      "imsg",
+      "mcporter",
+      "model-usage",
+      "nano-pdf",
+      "node-connect",
+      "notion",
+      "obsidian",
+      "openai-whisper",
+      "openai-whisper-api",
+      "openhue",
+      "oracle",
+      "ordercli",
+      "peekaboo",
+      "sag",
+      "session-logs",
+      "sherpa-onnx-tts",
+      "skill-creator",
+      "slack",
+      "songsee",
+      "sonoscli",
+      "spotify-player",
+      "summarize",
+      "taskflow",
+      "taskflow-inbox-triage",
+      "things-mac",
+      "tmux",
+      "trello",
+      "video-frames",
+      "voice-call",
+      "wacli",
+      "weather",
+      "xurl",
+      "canvas"
+    ],
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-18T23:26:06.891Z",
+    "lastRunVersion": "2026.4.15",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "hooks": {
+    "enabled": true,
+    "token": "openclaw-hook-7f3a9b2c4d",
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true,
+          "patterns": [
+            "MISSION.md",
+            "SCORECARD.md",
+            "MEMORY.md",
+            "POLICY.md",
+            "DREAMS.md",
+            "HEARTBEAT.md",
+            "INBOX.md"
+          ]
+        },
+        "boot-md": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "env": {
+    "shellEnv": {
+      "enabled": true
+    },
+    "vars": {
+      "STRIPE_PK_TEST": "secret://stripe_pk_test",
+      "STRIPE_SK_TEST": "secret://stripe_sk_test",
+      "STRIPE_PK_LIVE": "secret://stripe_pk_live",
+      "STRIPE_SK_LIVE": "secret://stripe_sk_live",
+      "TWILIO_ACCOUNT_SID": "secret://twilio_account_sid",
+      "TWILIO_AUTH_TOKEN": "secret://twilio_auth_token",
+      "TWILIO_PHONE_NUMBER": "secret://twilio_phone_number",
+      "GMAIL_ADDRESS": "secret://gmail_address",
+      "GMAIL_PASSWORD": "secret://gmail_password",
+      "N8N_MCP_TOKEN": "secret://n8n_mcp_token",
+      "N8N_MCP_URL": "https://outboundautonomy.app.n8n.cloud/mcp-server/sse",
+      "GOOGLE_WORKSPACE_PROJECT_ID": "cool-clarity-494115-n2",
+      "GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE": "/Users/ryleebenson/.config/gcloud/application_default_credentials.json"
+    }
+  },
+  "diagnostics": {
+    "cacheTrace": {
+      "enabled": true,
+      "includeMessages": true,
+      "includePrompt": false,
+      "includeSystem": false
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8645706735:AAEMiztA0_taAKn9z3cgXO2hv8p-pgxd7Fg",
+      "dmPolicy": "allowlist",
+      "groupPolicy": "allowlist",
+      "allowFrom": [
+        8331613806
+      ],
+      "groupAllowFrom": [
+        8331613806
+      ],
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      },
+      "errorPolicy": "once",
+      "execApprovals": {
+        "enabled": true,
+        "target": "dm",
+        "approvers": [
+          8331613806
+        ]
+      },
+      "defaultTo": "8331613806"
+    }
+  },
+  "secrets": {
+    "providers": {
+      "zai_key": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/zai_api_key",
+        "mode": "singleValue"
+      },
+      "openrouter_key": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/openrouter_api_key",
+        "mode": "singleValue"
+      },
+      "stripe_pk_test": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/stripe_pk_test",
+        "mode": "singleValue"
+      },
+      "stripe_sk_test": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/stripe_sk_test",
+        "mode": "singleValue"
+      },
+      "stripe_pk_live": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/stripe_pk_live",
+        "mode": "singleValue"
+      },
+      "stripe_sk_live": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/stripe_sk_live",
+        "mode": "singleValue"
+      },
+      "twilio_account_sid": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/twilio_account_sid",
+        "mode": "singleValue"
+      },
+      "twilio_auth_token": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/twilio_auth_token",
+        "mode": "singleValue"
+      },
+      "twilio_phone_number": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/twilio_phone_number",
+        "mode": "singleValue"
+      },
+      "gmail_address": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/gmail_address",
+        "mode": "singleValue"
+      },
+      "gmail_password": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/gmail_password",
+        "mode": "singleValue"
+      },
+      "n8n_mcp_token": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/n8n_mcp_token",
+        "mode": "singleValue"
+      },
+      "deepseek_key": {
+        "source": "file",
+        "path": "/Users/ryleebenson/.openclaw/secrets/deepseek_api_key",
+        "mode": "singleValue"
+      }
+    }
+  },
+  "web": {
+    "enabled": true
+  },
+  "canvasHost": {
+    "enabled": true
+  },
+  "mcp": {
+    "servers": {}
+  }
+}

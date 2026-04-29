@@ -1,0 +1,28 @@
+{
+  "mission_id": "enrich-and-flush-drafted-20260429-0400",
+  "goal": "Enrich the top 5 outreach_drafted leads with website audit scores from the live audit API, then send personalized SMTP outreach with real audit data as the hook.",
+  "success_criteria": [
+    "5 leads enriched with live audit API scores (design/conversion/technical) written to prospect JSON files",
+    "5 provider_accepted SMTP sends with audit scores in email body, logged to email-ledger with message IDs"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Query CRM for top 5 outreach_drafted leads with score >= 65 and verified email. For each lead, curl POST https://outboundautonomy.com/api/audit -d '{\"url\":\"<their website>\"}' and capture the design/conversion/technical scores. Read existing prospect research from artifacts/prospects/*.json. Write enriched prospect JSON to artifacts/missions/enrich-and-flush-drafted-20260429-0400/enriched-<lead_id>.json. Then for each lead, craft a personalized email: open with their specific site's audit score gap (e.g. 'Your site scored 38/100 on conversion \u2014 here's what's leaking'), link to outboundautonomy.com/sample-report, and close with a clear CTA. Send via GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Your website audit score \u2014 free report' --body '<body>'. Log each send: python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py email-ledger log <lead_id> <email> gmail_smtp owner@outboundautonomy.com --status sent_verified --provider-message-id <msg_id>. Update CRM stage to outreach_sent. Write send results to artifacts/missions/enrich-and-flush-drafted-20260429-0400/bridge-results.md.",
+      "expected_artifact": "bridge-results.md"
+    },
+    {
+      "agent": "engineering",
+      "task": "Test the live audit API thoroughly: POST https://outboundautonomy.com/api/audit with three URLs (a fast site like example.com, a slow real SMB site like a local roofer, and your own outboundautonomy.com). Record: response code, JSON validity, presence of design/conversion/technical/competitor scores, response time ms, and any errors. Verify /try page loads and its form submits correctly. Check /sample-report renders a complete audit report. Write full results to artifacts/missions/enrich-and-flush-drafted-20260429-0400/forge-api-health.md. If any endpoint is broken, append a row to artifacts/engineering/repair-tickets.jsonl with the specific failure.",
+      "expected_artifact": "forge-api-health.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-results.md and forge-api-health.md from artifacts/missions/enrich-and-flush-drafted-20260429-0400/. Cross-check: (a) every claimed SMTP send has a real provider_message_id in the ledger (sqlite3 'SELECT id,lead_id,status,provider_message_id FROM email_attempts WHERE id > 14 ORDER BY id'), (b) every audit API score claim in bridge-results.md matches the raw API response in the enriched JSON files, (c) forge-api-health.md HTTP codes are independently verified with curl. Write verdict per file (approved|blocked|needs-evidence) to artifacts/missions/enrich-and-flush-drafted-20260429-0400/sentinel-verify.md. Append SCORE_EVENT to _shared/scoring/history.jsonl for each agent audited.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "13 drafted leads at avg score 70 are pre-researched revenue inventory. Prior missions proved SMTP works (47 provider_accepted). This mission adds the audit API enrichment step \u2014 putting their actual site scores directly in the email \u2014 which transforms generic outreach into a personalized 'we already scanned your site' hook. This is the highest-converting cold email pattern for the audit funnel. RUNTIME_FREEZE note in recent actions may block sends \u2014 if so, enrichment alone still advances pipeline value."
+}

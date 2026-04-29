@@ -1,0 +1,83 @@
+        "summaryChars": 336,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:05 MDT] MISSION enrich-and-flush-drafted-20260429-0400 \\u2014 slice 2/3.\\nLead is NEXUS. Goal: Enrich the top 5 outreach_drafted leads with website audit scores from the live audit API, then send personalized SMTP outreach with real audit data as the hook..\\nYour task: Test the live audit API thoroughly: POST https://outboundautonomy.com/api/audit with three URLs (a fast site like example.com, a slow real SMB site like a local roofer, and your own outboundautonomy.com). Record: response code, JSON validity, presence of design/conversion/technical/competitor scores, response time ms, and any errors. Verify /try page loads and its form submits correctly. Check /sample-report renders a complete audit report. Write full results to artifacts/missions/enrich-and-flush-drafted-20260429-0400/forge-api-health.md. If any endpoint is broken, append a row to artifacts/engineering/repair-tickets.jsonl with the specific failure.\\nWrite your output to: artifacts/missions/enrich-and-flush-drafted-20260429-0400/forge-api-health.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/enrich-and-flush-drafted-20260429-0400/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — All endpoints operational. Audit API returns full scores/issues/recs/pricing for any valid URL. Lead capture pipeline confirmed (Google Sheets). PageSpeed quota is known and non-blocking for outreach enrichment.",
+      "finalAssistantRawText": "STATE: PROCEED — All endpoints operational. Audit API returns full scores/issues/recs/pricing for any valid URL. Lead capture pipeline confirmed (Google Sheets). PageSpeed quota is known and non-blocking for outreach enrichment.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 18,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

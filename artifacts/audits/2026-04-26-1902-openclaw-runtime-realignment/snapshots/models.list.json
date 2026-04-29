@@ -1,0 +1,94 @@
+[31m[bedrock-discovery][39m [33mFailed to discover Bedrock models[39m
+{
+  "count": 7,
+  "models": [
+    {
+      "key": "deepseek/deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "input": "text",
+      "contextWindow": 1000000,
+      "local": false,
+      "available": true,
+      "tags": [
+        "default",
+        "configured",
+        "alias:DeepSeek V4 Flash"
+      ],
+      "missing": false
+    },
+    {
+      "key": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "input": "text",
+      "contextWindow": 1000000,
+      "local": false,
+      "available": true,
+      "tags": [
+        "fallback#1",
+        "configured",
+        "alias:DeepSeek V4 Pro"
+      ],
+      "missing": false
+    },
+    {
+      "key": "openrouter/free",
+      "name": "Free Models Router",
+      "input": "text+image",
+      "contextWindow": 200000,
+      "local": false,
+      "available": true,
+      "tags": [
+        "configured"
+      ],
+      "missing": false
+    },
+    {
+      "key": "openrouter/nvidia/nemotron-nano-12b-v2-vl:free",
+      "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+      "input": "text+image",
+      "contextWindow": 128000,
+      "local": false,
+      "available": true,
+      "tags": [
+        "configured"
+      ],
+      "missing": false
+    },
+    {
+      "key": "openrouter/nvidia/nemotron-nano-9b-v2:free",
+      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "input": "text",
+      "contextWindow": 128000,
+      "local": false,
+      "available": true,
+      "tags": [
+        "configured"
+      ],
+      "missing": false
+    },
+    {
+      "key": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "input": "text",
+      "contextWindow": 262144,
+      "local": false,
+      "available": true,
+      "tags": [
+        "configured"
+      ],
+      "missing": false
+    },
+    {
+      "key": "openrouter/qwen/qwen3-next-80b-a3b-instruct:free",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
+      "input": "text",
+      "contextWindow": 262144,
+      "local": false,
+      "available": true,
+      "tags": [
+        "configured"
+      ],
+      "missing": false
+    }
+  ]
+}

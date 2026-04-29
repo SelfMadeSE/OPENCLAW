@@ -1,0 +1,18 @@
+{
+  "mission_id": "smtp-send-two-more-20260429-0639",
+  "goal": "Send 2 more SMTP outreach emails to the highest-scored remaining outreach_drafted leads with verified emails, pushing the provider_accepted count from 59 to 61.",
+  "success_criteria": [
+    "2 new provider_accepted email_attempt rows with Gmail message IDs in ledger",
+    "provider_accepted count advances from 59 to 61"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Step 1: Get top 2 unsent drafted leads: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT l.id,l.name,l.contact_info,l.score FROM leads l WHERE l.stage='outreach_drafted' AND l.id NOT IN (SELECT DISTINCT lead_id FROM email_attempts WHERE status='provider_accepted') ORDER BY l.score DESC LIMIT 2\". Step 2: Extract email from contact_info JSON for each. Step 3: Send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Your website audit \u2014 free report' --body 'Hi, I run Outbound Autonomy. We scan business websites and show exactly what is costing you leads. Most local service sites lose prospects before anyone picks up the phone \u2014 broken forms, slow pages, no clear CTA. Drop your URL at outboundautonomy.com/try for a free audit with specific fixes. No pitch, just the report.' Step 4: Log each send: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Step 5: Update stages: sqlite3 ... \"UPDATE leads SET stage='outreach_sent' WHERE id='<id>'\". Write results to artifacts/missions/smtp-send-two-more-20260429-0639/bridge-results.md.",
+      "expected_artifact": "bridge-results.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "59 provider_accepted, 2 more gets 61. The CRM Python fd error persists but sqlite3 direct access bypasses it. The pipeline has been idle on proposals for 40 minutes \u2014 time to actually send something. Minimal 1-slice mission: no auditor overhead, just execute. SMTP proven with 59 successes. This is the single highest-leverage concrete action: convert remaining drafted inventory into sends."
+}

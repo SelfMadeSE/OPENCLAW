@@ -1,8 +1,23 @@
-## Heartbeat Status — 2026-04-23 4:28 PM MDT
+# PULSE Active Memory
 
-- **Drafts pending:** 5 (`2026-04-20_openclaw-thread.md`, `2026-04-21_spector-insight.md`, `2026-04-21_oa-pilot-messaging.md` 🚨 CRITICAL BLOCKER, `2026-04-22_openclaw-local-first.md`, `2026-04-23_openclaw-thread.md`)
-- **Content published this week:** None
-- **Next deadline:** 24h resolution window for oa-pilot-messaging.md blocker (expires 2026-04-24 21:48 UTC)
-- **Brand pulse:** OpenClaw local-first AI, OA pilot pivot positioning, Silicon Genesis narrative
-- **Sprint status:** Money-or-memories sprint HALTED due to critical blocker; PULSE/MUSE standing by; NEXUS hold-state active.
-- **Gate status:** ALL_OPERATIONS_HALTED due to compliance dependencies blocking money-or-memories revenue lane.
+Reset: 2026-04-24
+
+Canonical mission: read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md`.
+
+Outbound Autonomy is the business being marketed.
+
+Correct positioning:
+
+- Primary hook: "Enter your URL. Get a website audit with targeted fixes."
+- Secondary promise: "We show what's hurting conversions, what to change first, and what implementation would cost."
+- Conversion path: free/instant audit preview -> save/full report/account or email capture -> full proposal and implementation plan.
+- Fulfillment language: redesign, conversion fixes, automation, CRM, and AI systems only after the audit surfaces the need.
+
+Deprecated for current mission: OpenClaw product marketing, SPECTOR, beats, music, and generic freelance content.
+
+Marketing priorities:
+
+- Homepage positioning, one-sentence offer, and CTA stack.
+- Audit report copy and score explanations.
+- Social/email content around website audits for service businesses.
+- Competitor/differentiation messaging for weak local business websites.

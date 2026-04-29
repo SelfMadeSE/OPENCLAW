@@ -1,0 +1,17 @@
+ID                                   Name                     Schedule                         Next       Last       Status    Target    Agent ID   Model               
+dfa29b48-e80c-4eab-850d-f9120221e3ef Hourly Prospect Research cron 5 * * * * @ America/Denv... <1m ago    59m ago    ok        isolated  outreach   -
+210d6add-b9d4-45f3-8c90-b77191e95006 Hourly Outreach Draft... cron 20 * * * * @ America/Den... in 15m     44m ago    ok        isolated  outreach   -
+2bf2b12a-0a8b-4243-b59e-bbf941b3a75d Site Health Check        cron */30 * * * * @ America/D... in 25m     3m ago     ok        isolated  enginee... -
+32d19920-635e-4ebe-88fc-7683794b454b Runtime Evidence Reco... cron */30 * * * * @ America/D... in 25m     5m ago     ok        isolated  auditor    -
+440c356d-4ac1-4ca3-92d3-84d814bffd31 Hourly Agent Roundtab... cron 45 * * * * @ America/Den... in 40m     20m ago    ok        isolated  orchest... -
+89c41ab6-4e8b-4d46-a15b-602c3fb5c05e Nightly OA Ops Review    cron 0 1 * * * @ America/Denv... in 12h     3h ago     error     isolated  orchest... -
+f132dcaf-c513-4aa1-8a80-46c41cab199c Nightly OA Engineerin... cron 15 1 * * * @ America/Den... in 12h     3h ago     error     isolated  enginee... -
+ba63bff8-9466-4911-b61c-920bb84fcf04 Nightly OA Creative R... cron 30 1 * * * @ America/Den... in 12h     3h ago     error     isolated  creative   -
+76b08b88-8345-42a3-ac04-46b571a36234 Nightly OA Marketing ... cron 45 1 * * * @ America/Den... in 13h     3h ago     error     isolated  marketing  -
+1b1a95dd-bd9e-492a-a529-ec7bea86cbf4 Nightly OA Outreach R... cron 0 2 * * * @ America/Denv... in 13h     3h ago     error     isolated  outreach   -
+d6890a24-cd54-4916-acc5-7347dd2b631c Nightly OA Media Review  cron 15 2 * * * @ America/Den... in 13h     3h ago     error     isolated  media      -
+54e26ca0-3af8-4856-aba4-dba8bc8bc7e4 Nightly OA Audit Review  cron 30 2 * * * @ America/Den... in 13h     3h ago     error     isolated  auditor    -
+381d081b-7c33-438e-8831-79c6de82f50e Memory Dreaming Promo... cron 0 3 * * * @ America/Denv... in 14h     3h ago     ok        main      -          -
+95e59f59-c103-4f0b-bc61-fb1986460d9b Morning Mission Snapshot cron 0 8 * * 1-5 @ America/De... in 19h     2d ago     ok        isolated  orchest... -
+9f89293b-c84e-4d53-8f65-d92b3d790a1d Daily Outbound Autono... cron 0 10 * * 1-5 @ America/D... in 21h     2d ago     ok        isolated  marketing  -
+2feb992a-b776-42c9-86b1-e443515ed000 Weekly Outbound Auton... cron 0 14 * * 5 @ America/Den... in 5d      2d ago     ok        isolated  auditor    -

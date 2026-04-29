@@ -1,0 +1,662 @@
+{
+  "generated_at": "2026-04-29T09:39:22.615408+00:00",
+  "sources": {
+    "jobs": "/Users/ryleebenson/.openclaw/cron/jobs.json",
+    "gateway_err": "/Users/ryleebenson/.openclaw/logs/gateway.err.log",
+    "crm": "/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite",
+    "workspaces": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces"
+  },
+  "cron": {
+    "total": 18,
+    "enabled": 13,
+    "by_status": {
+      "ok": 18
+    },
+    "active": [
+      {
+        "id": "381d081b-7c33-438e-8831-79c6de82f50e",
+        "name": "Memory Dreaming Promotion",
+        "agent": "main",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "not-requested"
+      },
+      {
+        "id": "2feb992a-b776-42c9-86b1-e443515ed000",
+        "name": "Weekly Outbound Autonomy Revenue Audit",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 14 * * 5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly OA Marketing Review",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly OA Outreach Review",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly OA Media Review",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly OA Audit Review",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "95e59f59-c103-4f0b-bc61-fb1986460d9b",
+        "name": "Morning Mission Snapshot",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 8 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "440c356d-4ac1-4ca3-92d3-84d814bffd31",
+        "name": "Hourly Agent Roundtable Audit",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      }
+    ],
+    "failed": []
+  },
+  "crm": {
+    "exists": true,
+    "stages": {
+      "archived": 11,
+      "lost": 2,
+      "negotiating": 1,
+      "outreach_drafted": 13,
+      "outreach_sent": 31,
+      "prospect": 1,
+      "won": 2
+    },
+    "recent_leads": [
+      {
+        "id": "6d9a2cc7409f",
+        "name": "Colorado Chiropractic and Rehabilitation Center",
+        "type": "chiropractic",
+        "stage": "outreach_sent",
+        "score": 55,
+        "updated_at": "2026-04-29T09:10:30.561916+00:00"
+      },
+      {
+        "id": "2c7aca0f9ca5",
+        "name": "Val Sopi",
+        "type": "founder",
+        "stage": "outreach_sent",
+        "score": 57,
+        "updated_at": "2026-04-29T09:10:30.517401+00:00"
+      },
+      {
+        "id": "f3d30c5793d5",
+        "name": "Harmony Painting Denver",
+        "type": "painting",
+        "stage": "outreach_sent",
+        "score": 65,
+        "updated_at": "2026-04-29T09:10:30.472972+00:00"
+      },
+      {
+        "id": "1cade1b3b401",
+        "name": "B&E Services Inc.",
+        "type": "landscaping",
+        "stage": "outreach_sent",
+        "score": 67,
+        "updated_at": "2026-04-29T09:10:30.427894+00:00"
+      },
+      {
+        "id": "b16805e59b40",
+        "name": "Cherry Medical Aesthetics",
+        "type": "med-spa",
+        "stage": "outreach_sent",
+        "score": 69,
+        "updated_at": "2026-04-29T09:10:30.381492+00:00"
+      },
+      {
+        "id": "2cd47795072b",
+        "name": "Oak & Canyon Landscape",
+        "type": "landscaping",
+        "stage": "outreach_sent",
+        "score": 73,
+        "updated_at": "2026-04-29T09:10:30.336579+00:00"
+      },
+      {
+        "id": "c669ec2695f2",
+        "name": "Believe That Carpet & Upholstery Cleaning",
+        "type": "carpet-cleaning",
+        "stage": "outreach_sent",
+        "score": 73,
+        "updated_at": "2026-04-29T09:10:30.289554+00:00"
+      },
+      {
+        "id": "2cf96e3c3bd1",
+        "name": "Avalanche Home Systems",
+        "type": "hvac",
+        "stage": "outreach_sent",
+        "score": 76,
+        "updated_at": "2026-04-29T09:10:30.245293+00:00"
+      },
+      {
+        "id": "ee49ba3606c3",
+        "name": "Denver Roofing Co.",
+        "type": "roofing",
+        "stage": "outreach_sent",
+        "score": 71,
+        "updated_at": "2026-04-29T08:25:00Z"
+      },
+      {
+        "id": "138a66ae6ce5",
+        "name": "Sparks Heating and Air",
+        "type": "hvac",
+        "stage": "outreach_sent",
+        "score": 75,
+        "updated_at": "2026-04-29T08:25:00Z"
+      }
+    ],
+    "recent_actions": [
+      {
+        "lead_id": "6d9a2cc7409f",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.639286+00:00"
+      },
+      {
+        "lead_id": "2c7aca0f9ca5",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.596134+00:00"
+      },
+      {
+        "lead_id": "f3d30c5793d5",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.554190+00:00"
+      },
+      {
+        "lead_id": "1cade1b3b401",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.512374+00:00"
+      },
+      {
+        "lead_id": "b16805e59b40",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.470919+00:00"
+      },
+      {
+        "lead_id": "2cd47795072b",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.429397+00:00"
+      },
+      {
+        "lead_id": "c669ec2695f2",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.388073+00:00"
+      },
+      {
+        "lead_id": "2cf96e3c3bd1",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: Sent audit-led email via SMTP",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:23.346734+00:00"
+      },
+      {
+        "lead_id": "--lead",
+        "agent": "6d9a2cc7409f",
+        "action_type": "--action",
+        "description": "stage_change",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:13.254911+00:00"
+      },
+      {
+        "lead_id": "--lead",
+        "agent": "2c7aca0f9ca5",
+        "action_type": "--action",
+        "description": "stage_change",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T09:10:13.212603+00:00"
+      }
+    ],
+    "email_attempts": {
+      "by_status": {
+        "failed": 5,
+        "provider_accepted": 47,
+        "unverified_claim": 7
+      },
+      "recent": [
+        {
+          "id": 59,
+          "lead_id": "smoke3",
+          "recipient": "test2@example.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "failed",
+          "provider_message_id": "<177745453442.69175.5008281716082449067@outboundautonomy.com>",
+          "error": "(535, b'5.7.8 Username and Password not accepted. For more information, go to\\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-447b3d481b2sm4700515f8f.4 - gsmtp')",
+          "created_at": "2026-04-29T09:22:14.427820+00:00",
+          "updated_at": "2026-04-29T09:22:17.384082+00:00"
+        },
+        {
+          "id": 58,
+          "lead_id": "smoke",
+          "recipient": "test@example.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "failed",
+          "provider_message_id": "<177745451501.69167.4829942066849923833@outboundautonomy.com>",
+          "error": "(535, b'5.7.8 Username and Password not accepted. For more information, go to\\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-447b4216604sm5274982f8f.10 - gsmtp')",
+          "created_at": "2026-04-29T09:21:55.017793+00:00",
+          "updated_at": "2026-04-29T09:21:57.529637+00:00"
+        },
+        {
+          "id": 57,
+          "lead_id": "6d9a2cc7409f",
+          "recipient": "coloradochiropracticcenter@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745380369.68715.3641451168028236628@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:10:03.695129+00:00",
+          "updated_at": "2026-04-29T09:10:06.123939+00:00"
+        },
+        {
+          "id": 56,
+          "lead_id": "2c7aca0f9ca5",
+          "recipient": "hello@handmadespaceships.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745380208.68715.15506032409809924350@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:10:02.086261+00:00",
+          "updated_at": "2026-04-29T09:10:03.694070+00:00"
+        },
+        {
+          "id": 55,
+          "lead_id": "f3d30c5793d5",
+          "recipient": "info@harmonypaintingdenver.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379995.68715.557034737499076110@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:59.955662+00:00",
+          "updated_at": "2026-04-29T09:10:02.085691+00:00"
+        },
+        {
+          "id": 54,
+          "lead_id": "1cade1b3b401",
+          "recipient": "beservices@live.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379808.68715.6572631155994464605@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:58.086074+00:00",
+          "updated_at": "2026-04-29T09:09:59.954823+00:00"
+        },
+        {
+          "id": 53,
+          "lead_id": "b16805e59b40",
+          "recipient": "reception@cherrymedispa.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379638.68715.5318481202893701009@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:56.382958+00:00",
+          "updated_at": "2026-04-29T09:09:58.085249+00:00"
+        },
+        {
+          "id": 52,
+          "lead_id": "2cd47795072b",
+          "recipient": "info@oakandcanyon.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379458.68715.8604036920580955587@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:54.579973+00:00",
+          "updated_at": "2026-04-29T09:09:56.382087+00:00"
+        },
+        {
+          "id": 51,
+          "lead_id": "c669ec2695f2",
+          "recipient": "believethatcarpets@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379238.68715.9477320209538953217@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:52.380373+00:00",
+          "updated_at": "2026-04-29T09:09:54.579293+00:00"
+        },
+        {
+          "id": 50,
+          "lead_id": "2cf96e3c3bd1",
+          "recipient": "avalanchehomesystems@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745379028.68715.6427970052672946287@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:09:50.282062+00:00",
+          "updated_at": "2026-04-29T09:09:52.379929+00:00"
+        },
+        {
+          "id": 49,
+          "lead_id": "unknown",
+          "recipient": "office@goodpeopletreeservice.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745342086.68407.15983240765241513199@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:03:40.869307+00:00",
+          "updated_at": "2026-04-29T09:03:43.340041+00:00"
+        },
+        {
+          "id": 48,
+          "lead_id": "unknown",
+          "recipient": "contact@broncoprokleen.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177745341860.68407.994463362866223860@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T09:03:38.600805+00:00",
+          "updated_at": "2026-04-29T09:03:40.868895+00:00"
+        }
+      ],
+      "truth_blockers": [
+        {
+          "lead_id": "315f28b0e620",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "42edd05bfa3c",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "d192cf575884",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "recent": [
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/missions/mission-runtime-autonomy-repair-proof/bridge-output.md",
+        "mtime": "2026-04-29T09:36:03.891062+00:00",
+        "size": 2501
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/missions/mission-runtime-autonomy-repair-proof/forge-output.md",
+        "mtime": "2026-04-29T09:35:14.280737+00:00",
+        "size": 813
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/engineering/repair-tickets.jsonl",
+        "mtime": "2026-04-29T09:35:14.280733+00:00",
+        "size": 319
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/missions/mission-runtime-autonomy-repair-proof/nexus-plan.md",
+        "mtime": "2026-04-29T09:33:51.958342+00:00",
+        "size": 954
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/heartbeat-audit-20260429-0931.md",
+        "mtime": "2026-04-29T09:32:07.730240+00:00",
+        "size": 1166
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-blog-post-redesign-vs-incremental-fix-2026-04-29.md",
+        "mtime": "2026-04-29T09:23:31.244357+00:00",
+        "size": 7299
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/creative-briefs/paid-ad-creative-audit-wedge-2026-04-29.md",
+        "mtime": "2026-04-29T09:19:09.694174+00:00",
+        "size": 7684
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/roundtable/latest.md",
+        "mtime": "2026-04-29T09:13:21.605679+00:00",
+        "size": 8595
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/2026-04-29-hourly-prospect-research-cycle-3am.md",
+        "mtime": "2026-04-29T09:13:08.065874+00:00",
+        "size": 6728
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/deker-lawn-services-20260429-121205_website_audit_research_2026-04-29_121234.json",
+        "mtime": "2026-04-29T09:12:34.699703+00:00",
+        "size": 1006
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/solares-lawn--landscaping-20260429-121127_website_audit_research_2026-04-29_121229.json",
+        "mtime": "2026-04-29T09:12:29.202462+00:00",
+        "size": 947
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/keep-it-green-tree-care-20260429-121118_website_audit_research_2026-04-29_121224.json",
+        "mtime": "2026-04-29T09:12:24.026509+00:00",
+        "size": 964
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/the-earnest-chop-20260429-121112_website_audit_research_2026-04-29_121217.json",
+        "mtime": "2026-04-29T09:12:17.515242+00:00",
+        "size": 984
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/urban-forestry-tree-service-20260429-121028_website_audit_research_2026-04-29_121211.json",
+        "mtime": "2026-04-29T09:12:11.671201+00:00",
+        "size": 1014
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/media/artifacts/distribution-plans/heartbeat-status-2026-04-29-4.md",
+        "mtime": "2026-04-29T09:11:58.566771+00:00",
+        "size": 756
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/site-health-2026-04-29-0304.md",
+        "mtime": "2026-04-29T09:06:36.220018+00:00",
+        "size": 2143
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/2026-04-29-boot-check-0856am.md",
+        "mtime": "2026-04-29T08:57:12.834043+00:00",
+        "size": 4634
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-blog-post-website-cost-2026-04-29.md",
+        "mtime": "2026-04-29T08:55:17.896168+00:00",
+        "size": 7389
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/2026-04-29-heartbeat-0251am.md",
+        "mtime": "2026-04-29T08:52:22.553379+00:00",
+        "size": 1305
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-blog-post-local-seo-starter-kit-trades-2026-04-29.md",
+        "mtime": "2026-04-29T08:49:59.713078+00:00",
+        "size": 13848
+      }
+    ]
+  },
+  "logs": {
+    "window_lines": 500,
+    "counts": {
+      "n8n_404": 0,
+      "elephant_model": 0,
+      "memory_no_vectors": 0,
+      "bootstrap_truncated": 4,
+      "incomplete_turn": 0,
+      "telegram_socket": 0
+    },
+    "examples": {
+      "bootstrap_truncated": "2026-04-29T12:18:08.896+03:00 [agent/embedded] workspace bootstrap file HEARTBEAT.md is 39970 chars (limit 12000); truncating in injected context (sessionKey=agent:creative:main:heartbeat)"
+    }
+  }
+}

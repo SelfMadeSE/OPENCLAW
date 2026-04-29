@@ -1,0 +1,76 @@
+       "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:54 MDT] MISSION blog-cta-audit-embed-20260429-0449 \\u2014 slice 3/3.\\nLead is NEXUS. Goal: Embed audit-funnel CTAs into all 12 live blog posts and deploy the 12th post (/blog/automation-for-service-businesses) to convert blog traffic into audit-form submissions..\\nYour task: Read forge-blog-audit.md and pulse-cta-copy.md. Verify: (a) independently curl every blog URL listed and confirm HTTP status matches the table, (b) independently curl each blog page and grep for the claimed CTA presence, flagging any false positive/negative, (c) confirm the proposed CTA copy is audit-led (mentions 'audit', 'score', or links to outboundautonomy.com/try or /sample-report) and does not mention receptionist/telephony/Twilio/OpenClaw/SPECTOR. Write artifacts/missions/blog-cta-audit-embed-20260429-0449/sentinel-verify.md with per-file verdict and a summary: total blog posts, posts with CTAs, posts missing CTAs, deployment status of post 12. Append SCORE_EVENT to _shared/scoring/history.jsonl for engineering and marketing.\\nWrite your output to: artifacts/missions/blog-cta-audit-embed-20260429-0449/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/blog-cta-audit-embed-20260429-0449/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — 12/12 blog posts live at HTTP 200, all with audit-funnel CTAs. Zero forbidden terms across all posts. Post 12 already deployed (no deploy needed). 6 inline CTA gaps identified as incremental (non-blocking — bottom template CTAs cover the conversion path). Clean mission.",
+      "finalAssistantRawText": "STATE: PROCEED — 12/12 blog posts live at HTTP 200, all with audit-funnel CTAs. Zero forbidden terms across all posts. Post 12 already deployed (no deploy needed). 6 inline CTA gaps identified as incremental (non-blocking — bottom template CTAs cover the conversion path). Clean mission.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 10,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

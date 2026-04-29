@@ -1,0 +1,70 @@
+           "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:40 MDT] MISSION cdp-smtp-batch-send-20260429-0436 \\u2014 slice 2/3.\\nLead is NEXUS. Goal: Send personalized audit-led outreach emails to the 5 highest-scored outreach_drafted leads using CDP-authenticated Gmail (browser at 127.0.0.1:18800 is back online) with real-time audit API enrichment, producing provider_accepted ledger evidence..\\nYour task: Verify the full audit-to-prospect funnel health: (1) curl outboundautonomy.com/ (/), /try, /sample-report, /pricing \\u2014 confirm all 200, (2) POST https://outboundautonomy.com/api/audit with {\"url\":\"https://example.com\"} and confirm valid JSON with design/conversion/technical/competitor score fields, (3) POST again with {\"url\":\"https://denverroofingco.com\"} (real prospect) and capture all scores + response time, (4) curl /sitemap.xml and count blog posts (should be 11-12). Write full results to artifacts/missions/cdp-smtp-batch-send-20260429-0436/forge-funnel.md. File repair ticket if API returns non-200 or malformed JSON.\\nWrite your output to: artifacts/missions/cdp-smtp-batch-send-20260429-0436/forge-funnel.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/cdp-smtp-batch-send-20260429-0436/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md: 1335 raw -> 867 injected (~35% removed).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "STATE: PROCEED — All 5 pages 200, both audit API calls return valid JSON with full design/conversion/technical/competitor scores, sitemap confirms 11 blog posts. Funnel clean, zero repair tickets.",
+      "finalAssistantRawText": "STATE: PROCEED — All 5 pages 200, both audit API calls return valid JSON with full design/conversion/technical/competitor scores, sitemap confirms 11 blog posts. Funnel clean, zero repair tickets.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 13,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

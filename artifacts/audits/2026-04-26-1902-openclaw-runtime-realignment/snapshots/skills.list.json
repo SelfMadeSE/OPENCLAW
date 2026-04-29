@@ -1,0 +1,1375 @@
+{
+  "workspaceDir": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator",
+  "managedSkillsDir": "/Users/ryleebenson/.openclaw/skills",
+  "skills": [
+    {
+      "name": "1password",
+      "description": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+      "emoji": "🔐",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://developer.1password.com/docs/cli/get-started/",
+      "missing": {
+        "bins": [
+          "op"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "agent-dream",
+      "description": "Nightly memory consolidation and self-reflection for OpenClaw agents. Your agent dreams — reviewing sessions, organizing memories, pruning stale info, and reflecting on its own behavior. Works with any OpenClaw agent. Features: 5-phase dream cycle, safe 2-pass deletion, automatic backup, change gates (>50% blocked), gate check (24h + 5 sessions), growth notifications, old memory resurface, zero-config setup. Inspired by Claude Code Dream but open-source with real self-awareness. Use when: dream, memory, consolidation, self-reflection, agent identity, persistent memory, long-term memory, memory organization, nightly cleanup, memory management.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "apple-notes",
+      "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.",
+      "emoji": "📝",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/antoniorodr/memo",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "apple-reminders",
+      "description": "Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.",
+      "emoji": "⏰",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/steipete/remindctl",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "article-writing",
+      "description": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "autonomous-research",
+      "description": "Conduct comprehensive research independently. Find information, analyze sources, synthesize findings, and create detailed reports without human guidance.",
+      "emoji": "🔍",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "BRAVE_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "bear-notes",
+      "description": "Create, search, and manage Bear notes via grizzly CLI.",
+      "emoji": "🐻",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://bear.app",
+      "missing": {
+        "bins": [
+          "grizzly"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "blogwatcher",
+      "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+      "emoji": "📰",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/Hyaxia/blogwatcher",
+      "missing": {
+        "bins": [
+          "blogwatcher"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "blucli",
+      "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+      "emoji": "🫐",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://blucli.sh",
+      "missing": {
+        "bins": [
+          "blu"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "bluebubbles",
+      "description": "Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel=\"bluebubbles\".",
+      "emoji": "🫧",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.bluebubbles"
+        ],
+        "os": []
+      }
+    },
+    {
+      "name": "business-writing",
+      "description": "You are a professional business analyst, skilled in writing various industry research reports, business insights, consulting analyses, company research reports, competitive analysis, user research, market analysis, and more.## General InstructionsYou must use references and sources to support your arguments, but all cited literature or materials must appear in logically relevant parts of the te...",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "camsnap",
+      "description": "Capture frames or clips from RTSP/ONVIF cameras.",
+      "emoji": "📸",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://camsnap.ai",
+      "missing": {
+        "bins": [
+          "camsnap"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "clawhub",
+      "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "coding-agent",
+      "description": "Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:\"acp\"), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.",
+      "emoji": "🧩",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "content-research",
+      "description": "Research trending topics and generate platform-specific content. Triggers on \"research [topic]\", \"what's new in [topic]\", \"content for [platform]\", \"create posts about [topic]\". Supports Reddit, X/Twitter, Discord, LinkedIn with multiple content angles per platform.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "discord",
+      "description": "Discord ops via the message tool (channel=discord).",
+      "emoji": "🎮",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.discord.token"
+        ],
+        "os": []
+      }
+    },
+    {
+      "name": "eightctl",
+      "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+      "emoji": "🛌",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://eightctl.sh",
+      "missing": {
+        "bins": [
+          "eightctl"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "gemini",
+      "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+      "emoji": "✨",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://ai.google.dev/",
+      "missing": {
+        "bins": [
+          "gemini"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "gh-issues",
+      "description": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": true,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "primaryEnv": "GH_TOKEN",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "gifgrep",
+      "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+      "emoji": "🧲",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://gifgrep.com",
+      "missing": {
+        "bins": [
+          "gifgrep"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "github",
+      "description": "GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.",
+      "emoji": "🐙",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": true,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "gog",
+      "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+      "emoji": "🎮",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://gogcli.sh",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "google-workspace",
+      "description": "Manage Google Workspace via the `gws` CLI — Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, Tasks, Meet, Slides, Forms, Contacts, and every other Workspace API. Use when: (1) listing, uploading, downloading, or sharing files on Google Drive, (2) reading, sending, labeling, or filtering Gmail messages, (3) creating, updating, or querying Google Calendar events, (4) reading or writing Google Sheets data, (5) creating or editing Google Docs, (6) sending Google Chat messages, (7) managing Google Tasks, (8) any other Google Workspace operation. Wraps the official `gws` CLI which dynamically discovers all Workspace APIs. Outputs structured JSON suitable for agent pipelines.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "goplaces",
+      "description": "Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts.",
+      "emoji": "📍",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "primaryEnv": "GOOGLE_PLACES_API_KEY",
+      "homepage": "https://github.com/steipete/goplaces",
+      "missing": {
+        "bins": [
+          "goplaces"
+        ],
+        "anyBins": [],
+        "env": [
+          "GOOGLE_PLACES_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "healthcheck",
+      "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "heartbeat-pro",
+      "description": "Supercharge your agent heartbeats. Auto-check services, discover other agents via OADP, batch platform monitoring, track uptime, and coordinate with agent networks. Works with any OpenClaw agent.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "himalaya",
+      "description": "CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).",
+      "emoji": "📧",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/pimalaya/himalaya",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "human-writing",
+      "description": "Write content that reads as naturally human — no AI tells, no corporate fluff. Use when drafting, editing, or reviewing any content meant for publication or external audiences: blog posts, articles, newsletters, marketing copy, social media threads, client-facing documents, website copy, emails to lists. NOT for: casual chat, code, internal notes, or quick replies.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "imsg",
+      "description": "iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.",
+      "emoji": "📨",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://imsg.to",
+      "missing": {
+        "bins": [
+          "imsg"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "Market Research Agent",
+      "description": "Conduct structured market research on any industry, competitor, or opportunity. Analyze market size, trends, competitors, and customer segments with a proven framework.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "mcporter",
+      "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+      "emoji": "📦",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "http://mcporter.dev",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "memory-tiering",
+      "description": "Automated multi-tiered memory management (HOT, WARM, COLD). Use this skill to organize, prune, and archive context during memory operations or compactions.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "microsoft-foundry",
+      "description": "Deploy, evaluate, and manage Foundry agents end-to-end: Docker build, ACR push, hosted/prompt agent create, container start, batch eval, prompt optimization, prompt optimizer workflows, agent.yaml, dataset curation from traces. USE FOR: deploy agent to Foundry, hosted agent, create agent, invoke agent, evaluate agent, run batch eval, optimize prompt, improve prompt, prompt optimization, prompt optimizer, improve agent instructions, optimize agent instructions, optimize system prompt, deploy model, Foundry project, RBAC, role assignment, permissions, quota, capacity, region, troubleshoot agent, deployment failure, create dataset from traces, dataset versioning, eval trending, create AI Services, Cognitive Services, create Foundry resource, provision resource, knowledge index, agent monitoring, customize deployment, onboard, availability. DO NOT USE FOR: Azure Functions, App Service, general Azure deploy (use azure-deploy), general Azure prep (use azure-prepare).",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "agents-skills-personal",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "model-usage",
+      "description": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+      "emoji": "📊",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [
+          "codexbar"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "multi-search-engine",
+      "description": "Multi search engine integration with 16 engines (7 CN + 9 Global). Supports advanced search operators, time filters, site search, privacy engines, and WolframAlpha knowledge queries. No API keys required.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "nano-pdf",
+      "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+      "emoji": "📄",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://pypi.org/project/nano-pdf/",
+      "missing": {
+        "bins": [
+          "nano-pdf"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "neural-memory",
+      "description": "Associative memory with spreading activation for persistent, intelligent recall.Use PROACTIVELY when:(1) You need to remember facts, decisions, errors, or context across sessions(2) User asks \"do you remember...\" or references past conversations(3) Starting a new task — inject relevant context from memory(4) After making decisions or encountering errors — store for future reference(5) User asks \"why did X happen?\" — trace causal chains through memoryZero LLM dependency. Neural graph with Hebbian learning, memory decay, contradiction detection, and temporal reasoning.",
+      "emoji": "brain",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "primaryEnv": "NEURALMEMORY_BRAIN",
+      "homepage": "https://github.com/nhadaututtheky/neural-memory",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "node-connect",
+      "description": "Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "notion",
+      "description": "Notion API for creating and managing pages, databases, and blocks.",
+      "emoji": "📝",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "primaryEnv": "NOTION_API_KEY",
+      "homepage": "https://developers.notion.com",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "NOTION_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "obsidian",
+      "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+      "emoji": "💎",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://help.obsidian.md",
+      "missing": {
+        "bins": [
+          "obsidian-cli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "openai-whisper",
+      "description": "Local speech-to-text with the Whisper CLI (no API key).",
+      "emoji": "🎤",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://openai.com/research/whisper",
+      "missing": {
+        "bins": [
+          "whisper"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "openai-whisper-api",
+      "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+      "emoji": "🌐",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "primaryEnv": "OPENAI_API_KEY",
+      "homepage": "https://platform.openai.com/docs/guides/speech-to-text",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "OPENAI_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "openclaw-auto-dream",
+      "description": "Cognitive memory architecture for OpenClaw agents — periodic dream cycles that consolidate daily logs into structured long-term memory with importance scoring, insights, and push notifications. Use when: user asks for 'auto memory', 'dream', 'auto-dream', 'memory consolidation', 'memory dashboard'. Powered by MyClaw.ai (https://myclaw.ai).",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "openhue",
+      "description": "Control Philips Hue lights and scenes via the OpenHue CLI.",
+      "emoji": "💡",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://www.openhue.io/cli",
+      "missing": {
+        "bins": [
+          "openhue"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "oracle",
+      "description": "Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
+      "emoji": "🧿",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://askoracle.dev",
+      "missing": {
+        "bins": [
+          "oracle"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "ordercli",
+      "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+      "emoji": "🛵",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://ordercli.sh",
+      "missing": {
+        "bins": [
+          "ordercli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "peekaboo",
+      "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+      "emoji": "👀",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://peekaboo.boo",
+      "missing": {
+        "bins": [
+          "peekaboo"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "pollyreach",
+      "description": "PollyReach gives every AI agent a phone number and the ability to get things done over the phone — finding contacts, making calls, and completing tasks. Just tell Polly what you need.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "sag",
+      "description": "ElevenLabs text-to-speech with mac-style say UX.",
+      "emoji": "🔊",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "primaryEnv": "ELEVENLABS_API_KEY",
+      "homepage": "https://sag.sh",
+      "missing": {
+        "bins": [
+          "sag"
+        ],
+        "anyBins": [],
+        "env": [
+          "ELEVENLABS_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "Sales Pipeline Tracker",
+      "description": "Track deals through every stage from lead to close. Manage pipeline stages, update deal status, forecast revenue, and identify bottlenecks in your sales process.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "sales-mastery",
+      "description": "World-class autonomous sales and revenue skill system. Use ANY time the user asks to sell, pitch, prospect, close, negotiate, launch, monetize, build funnels, write outreach, craft proposals, develop pricing, design offers, write sales copy, create email sequences, plan campaigns, position products, handle objections, create playbooks, build pipeline, forecast revenue, develop GTM strategy, optimize conversions, write ad copy, create sales decks, score leads, nurture prospects, upsell, cross-sell, retain customers, write case studies, price products, structure enterprise deals, create battle cards, script discovery calls, build affiliate programs, plan product launches, create webinar funnels, design pricing pages, A/B test offers, analyze unit economics, calculate LTV/CAC, or ANY other sales, revenue, monetization, go-to-market, or commercial growth task. If it involves selling, revenue, deals, pipeline, or commercial strategy — USE THIS SKILL. Trigger aggressively.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "Self-Improving + Proactive Agent",
+      "description": "Self-reflection + Self-criticism + Self-learning + Self-organizing memory. Agent evaluates its own work, catches mistakes, and improves permanently. Use when (1) a command, tool, API, or operation fails; (2) the user corrects you or rejects your work; (3) you realize your knowledge is outdated or incorrect; (4) you discover a better approach; (5) the user explicitly installs or references the skill for the current task.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "homepage": "https://clawic.com/skills/self-improving",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "seo-competitor-analysis",
+      "description": "Perform deep SEO competitor analysis, including keyword research, backlink checking, and content strategy mapping. Use when the user wants to analyze a website's competitors or improve their own SEO ranking by studying the competition.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "session-logs",
+      "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
+      "emoji": "📜",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "description": "Local text-to-speech via sherpa-onnx (offline, no cloud)",
+      "emoji": "🔉",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "SHERPA_ONNX_RUNTIME_DIR",
+          "SHERPA_ONNX_MODEL_DIR"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "skill-creator",
+      "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "slack",
+      "description": "Use when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+      "emoji": "💬",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.slack"
+        ],
+        "os": []
+      }
+    },
+    {
+      "name": "Social Media Scheduler",
+      "description": "Plan, draft, and organize social media content across platforms. Create content calendars, write platform-optimized posts, and maintain consistent posting schedules.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "SocialPack Multi-Platform Social Media Generator",
+      "description": "Generate platform-specific social posts from a single brief. Twitter threads, LinkedIn, Instagram, Reddit. One input, every platform.",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "songsee",
+      "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+      "emoji": "🌊",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/steipete/songsee",
+      "missing": {
+        "bins": [
+          "songsee"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "sonoscli",
+      "description": "Control Sonos speakers (discover/status/play/volume/group).",
+      "emoji": "🔊",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://sonoscli.sh",
+      "missing": {
+        "bins": [
+          "sonos"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "spotify-player",
+      "description": "Terminal Spotify playback/search via spogo (preferred) or spotify_player.",
+      "emoji": "🎵",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://www.spotify.com",
+      "missing": {
+        "bins": [],
+        "anyBins": [
+          "spogo",
+          "spotify_player"
+        ],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "summarize",
+      "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+      "emoji": "🧾",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://summarize.sh",
+      "missing": {
+        "bins": [
+          "summarize"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "taskflow",
+      "description": "Use when work should span one or more detached tasks but still behave like one job with a single owner context. TaskFlow is the durable flow substrate under authoring layers like Lobster, ACPX, plugins, or plain code. Keep conditional logic in the caller; use TaskFlow for flow identity, child-task linkage, waiting state, revision-checked mutations, and user-facing emergence.",
+      "emoji": "🪝",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "taskflow-inbox-triage",
+      "description": "Example TaskFlow authoring pattern for inbox triage. Use when messages need different treatment based on intent, with some routes notifying immediately, some waiting on outside answers, and others rolling into a later summary.",
+      "emoji": "📥",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "things-mac",
+      "description": "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.",
+      "emoji": "✅",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://github.com/ossianhempel/things3-cli",
+      "missing": {
+        "bins": [
+          "things"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "tmux",
+      "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
+      "emoji": "🧵",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "trello",
+      "description": "Manage Trello boards, lists, and cards via the Trello REST API.",
+      "emoji": "📋",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://developer.atlassian.com/cloud/trello/rest/",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "TRELLO_API_KEY",
+          "TRELLO_TOKEN"
+        ],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "video-frames",
+      "description": "Extract frames or short clips from videos using ffmpeg.",
+      "emoji": "🎬",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://ffmpeg.org",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "voice-call",
+      "description": "Start voice calls via the OpenClaw voice-call plugin.",
+      "emoji": "📞",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "plugins.entries.voice-call.enabled"
+        ],
+        "os": []
+      }
+    },
+    {
+      "name": "wacli",
+      "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+      "emoji": "📱",
+      "eligible": false,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://wacli.sh",
+      "missing": {
+        "bins": [
+          "wacli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "weather",
+      "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+      "emoji": "☔",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "homepage": "https://wttr.in/:help",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "website-seo",
+      "description": "Complete on-page SEO system for any website — page optimization, schema markup, technical SEO checklist, internal linking strategy, Core Web Vitals guidance, and AI-driven content gap analysis. Works for any CMS (WordPress, Webflow, Squarespace, custom).",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "x-search",
+      "description": "Search X (Twitter) posts using the xAI API. Use when the user wants to find tweets, search X/Twitter, look up what people are saying on X, or find social media posts about a topic.",
+      "emoji": "𝕏",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-workspace",
+      "bundled": false,
+      "primaryEnv": "XAI_API_KEY",
+      "homepage": "https://docs.x.ai/developers/tools/x-search",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    },
+    {
+      "name": "xurl",
+      "description": "A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.",
+      "emoji": "🐦",
+      "eligible": true,
+      "disabled": false,
+      "blockedByAllowlist": false,
+      "source": "openclaw-bundled",
+      "bundled": true,
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      }
+    }
+  ]
+}

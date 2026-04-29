@@ -1,0 +1,18 @@
+{
+  "mission_id": "drafted-inventory-flush-20260429-0501",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-flush-results.md"
+    },
+    {
+      "slice": 2,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T11:06:39.974161+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "mission_id": "reply-detection-sweep-20260429-0535",
+  "goal": "Scan the Gmail inbox (owner@outboundautonomy.com) via authenticated browser CDP for any prospect replies to the 57 sent outreach emails, surface responders as RED hot leads requiring operator attention.",
+  "success_criteria": [
+    "Gmail inbox scanned for replies from any of the 57 sent-to email addresses",
+    "Any detected replies documented with lead_id, reply text excerpt, and timestamp \u2014 flagged for operator as RED (reply to lead)"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Step 1: Get all sent-to email addresses: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT DISTINCT e.recipient, l.id, l.name, l.score FROM email_attempts e JOIN leads l ON e.lead_id=l.id WHERE e.status=\"provider_accepted\" ORDER BY l.score DESC'. Step 2: Open Gmail at https://mail.google.com via browser CDP at 127.0.0.1:18800 (profile='user' for authenticated session). Step 3: Search inbox for replies \u2014 use Gmail search operator 'from:(<sent-to-email>)' for the top 20 highest-scored leads, or search for 'newer_than:7d' in inbox and scan for any reply threads. Step 4: For any reply found: capture the sender email, subject line, reply body excerpt (first 200 chars), and timestamp. Step 5: Write results to artifacts/missions/reply-detection-sweep-20260429-0535/bridge-reply-scan.md with: a table of all 57 sent-to addresses, whether a reply was found, and for replies: the excerpt, timestamp, and lead_id. Flag reply leads as 'RED \u2014 operator must respond'. If no replies found, report that clearly \u2014 it means the 57 sends are still in the prospect's inbox waiting for a response, which is actionable (follow-up timing). If CDP is unavailable, log that as a BLOCKER and use web_fetch of Gmail as fallback.",
+      "expected_artifact": "bridge-reply-scan.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-reply-scan.md. Verify: (a) the list of 57 sent-to addresses matches sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT COUNT(DISTINCT recipient) FROM email_attempts WHERE status=\"provider_accepted\"' \u2014 confirm count, (b) if replies were found, spot-check that the lead_id maps to a real CRM lead with outreach_sent stage, (c) if no replies found, independently confirm by checking the Gmail inbox via web_fetch or browser snapshot. Write artifacts/missions/reply-detection-sweep-20260429-0535/sentinel-verify.md with: total sent count verified, replies found (count), any mismatches, and verdict. If replies found, append RED_ALERT to _shared/scoring/history.jsonl with lead_ids. Append SCORE_EVENT for outreach.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "57 emails sent over the last ~2 hours. The highest-value next action is checking if anyone replied \u2014 a reply is the single strongest revenue signal. Any responder is a RED hot lead that needs operator attention (the one RED action BOOT.md reserves for Rylee: replying to leads). If no replies yet, the 57 sends are still in the decision window and a follow-up timeline becomes the next action. This mission directly converts send volume into actionable intelligence. YELLOW because CDP browser automation is required, but CDP was reported back online by FORGE."
+}

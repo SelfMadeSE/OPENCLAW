@@ -1,0 +1,101 @@
+{
+  "lead_id": "f379ad620e03",
+  "name": "Junk Genius",
+  "score": 72,
+  "email": "denver@junkgenius.com",
+  "url": "https://denverjunkremoval.com",
+  "audit": {
+    "design_score": 100,
+    "conversion_score": 87,
+    "technical_score": 97,
+    "overall_score": 95,
+    "grade": "A",
+    "issues": [
+      {
+        "severity": "high",
+        "title": "No lead-capture form detected",
+        "evidence": "The page HTML did not include a form element."
+      },
+      {
+        "severity": "medium",
+        "title": "Trust proof is not prominent",
+        "evidence": "The scan did not detect common review, testimonial, rating, guarantee, licensed, or insured language."
+      },
+      {
+        "severity": "low",
+        "title": "Full Lighthouse data was not available in this preview",
+        "evidence": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for co"
+      }
+    ],
+    "top_issue": {
+      "severity": "high",
+      "title": "No lead-capture form detected",
+      "evidence": "The page HTML did not include a form element.",
+      "recommendation": "Add a short quote/request form with service type, contact info, and urgency."
+    },
+    "crawl_summary": {
+      "pagesScanned": 5,
+      "pages": [
+        {
+          "url": "https://denverjunkremoval.com/",
+          "status": 200,
+          "responseMs": 83,
+          "title": "Full-Service Junk Removal in Denver, CO | Junk Genius",
+          "h1Count": 1,
+          "formCount": 0,
+          "linkCount": 115,
+          "imageCount": 20
+        },
+        {
+          "url": "https://denverjunkremoval.com/services/",
+          "status": 200,
+          "responseMs": 54,
+          "title": "Our Junk Removal Services | Junk Genius",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 97,
+          "imageCount": 22
+        },
+        {
+          "url": "https://denverjunkremoval.com/how-it-works/",
+          "status": 200,
+          "responseMs": 48,
+          "title": "How It Works - Our Junk Removal Process | Junk Genius",
+          "h1Count": 1,
+          "formCount": 0,
+          "linkCount": 104,
+          "imageCount": 16
+        },
+        {
+          "url": "https://denverjunkremoval.com/services/apartment-cleanouts/",
+          "status": 200,
+          "responseMs": 57,
+          "title": "Professional Apartment Cleanout Services | Junk Genius",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 101,
+          "imageCount": 22
+        },
+        {
+          "url": "https://denverjunkremoval.com/services/assisted-living-cleanouts/",
+          "status": 200,
+          "responseMs": 63,
+          "title": "Expert Assisted Living Cleanout Services | Junk Genius",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 100,
+          "imageCount": 22
+        }
+      ],
+      "notes": [
+        "Crawler stayed on denverjunkremoval.com and capped the preview crawl at 5 pages.",
+        "The paid implementation review can expand this into a deeper crawl with screenshots, form testing, and account-flow validation."
+      ]
+    },
+    "evidence_notes": [
+      "5 pages scanned, 0 forms on homepage but forms on /services/",
+      "High-design but no lead form on main page"
+    ]
+  },
+  "previous_draft_key_finding": "Template-driven site, weak value prop positioning, eco-friendly messaging buried"
+}

@@ -1,0 +1,59 @@
+,
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:24 MDT] MISSION ledger-repair-and-send-20260429-0424 \\u2014 slice 1/2.\\nLead is NEXUS. Goal: Repair the email ledger by re-sending via SMTP the 7 former unverified_claim leads (now reconciled_superseded) and the highest-scored unsent drafted lead, producing clean provider_accepted evidence..\\nYour task: Step 1: Run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,recipient,status FROM email_attempts WHERE status=\"reconciled_superseded\" ORDER BY id' to get the 7 former unverified_claim leads. Step 2: Run python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads --stage outreach_drafted --min-score 70 to get the highest-scored unsent lead. Step 3: For each of the 8 leads, read their prospect research from artifacts/prospects/*.json and write a personalized audit-led email referencing specific site weaknesses. Step 4: Send each via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Your website audit \\u2014 free report' --body '<body>'. Step 5: Log each send: python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py email-ledger log <lead_id> <email> gmail_smtp owner@outboundautonomy.com --status sent_verified --provider-message-id <msg_id>. Step 6: Update CRM stages for any outreach_drafted leads to outreach_sent. Write results table with old_ledger_id, new_ledger_id, message_id, and status to artifacts/missions/ledger-repair-and-send-20260429-0424/bridge-results.md.\\nWrite your output to: artifacts/missions/ledger-repair-and-send-20260429-0424/bridge-results.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/ledger-repair-and-send-20260429-0424/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — 7 former unverified_claim entries already had fresh provider_accepted SMTP proof (IDs 15-22). New send: Sphere Electric → provider_accepted (ID 61). No score >= 70 drafted lead with email exists to send. Remaining 11 drafted leads lack email contact.",
+      "finalAssistantRawText": "STATE: PROCEED — 7 former unverified_claim entries already had fresh provider_accepted SMTP proof (IDs 15-22). New send: Sphere Electric → provider_accepted (ID 61). No score >= 70 drafted lead with email exists to send. Remaining 11 drafted leads lack email contact.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 12,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

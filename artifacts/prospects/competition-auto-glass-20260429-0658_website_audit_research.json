@@ -1,0 +1,24 @@
+{
+  "research_date": "2026-04-29 06:58 MDT",
+  "lead_name": "Competition Auto Glass",
+  "vertical": "auto-glass",
+  "website": "https://competitionautoglass.com",
+  "score": 5,
+  "contact": {
+    "email": "info@competitionautoglass.com",
+    "phone": "(720) 239-1133",
+    "email_verified": true
+  },
+  "audit": {
+    "designScore": 100,
+    "conversionScore": 100,
+    "technicalScore": 100,
+    "overallScore": 100,
+    "grade": "A"
+  },
+  "weaknesses": [
+    "Near-perfect site. No critical issues detected.",
+    "Low urgency — site already converts well."
+  ],
+  "notes": "61 years in business, 600+ reviews, 4.9 stars, mobile service. Very polished site. Low audit opportunity."
+}

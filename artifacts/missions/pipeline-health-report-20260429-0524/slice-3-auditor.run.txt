@@ -1,0 +1,80 @@
+        },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 05:28 MDT] MISSION pipeline-health-report-20260429-0524 \\u2014 slice 3/3.\\nLead is NEXUS. Goal: Produce a single operator-facing pipeline health report reconciling the full send ledger (57 provider_accepted + 7 reconciled_superseded + 6 failed) against CRM lead stages, surfacing exact revenue metrics and next actions..\\nYour task: Read bridge-pipeline-report.md and forge-site-health.md. Verify: (a) independently run the sqlite3 queries and confirm counts match the report, (b) independently curl the site URLs and confirm HTTP codes match, (c) verify the report correctly classifies at least 5 leads as verified_send, suspect, or ghost \\u2014 spot-check 3 classifications against raw sqlite3 output, (d) confirm the next-send priority queue contains only leads with verified emails and no existing provider_accepted row. Write artifacts/missions/pipeline-health-report-20260429-0524/sentinel-verify.md with: per-file verdict, accuracy score, any mismatches found, and final directive PROCEED|BLOCKED. Append SCORE_EVENT to _shared/scoring/history.jsonl for outreach and engineering.\\nWrite your output to: artifacts/missions/pipeline-health-report-20260429-0524/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/pipeline-health-report-20260429-0524/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Pipeline health report verified 100% accurate. 44 verified sends. 0 mismatches in counts, classifications, or HTTP codes. Pipeline fully drained — next action is new prospect sourcing.",
+      "finalAssistantRawText": "STATE: PROCEED — Pipeline health report verified 100% accurate. 44 verified sends. 0 mismatches in counts, classifications, or HTTP codes. Pipeline fully drained — next action is new prospect sourcing.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 14,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

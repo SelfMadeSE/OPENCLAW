@@ -1,4 +1,23 @@
-# Engineering Memory
+# FORGE Active Memory
 
-## Heartbeat Status
-**2026-04-23 19:15 UTC**: Services healthy/responsive (all Docker containers Up; n8n@5678/pipelines@9099/qdrant@6333/searxng@8080 HTTP 200), active tasks: no in-progress artifact builds/scripts or marker files detected (`recent_files_last_60m:0`, `marker_files:0`), blockers: none technical observed in FORGE lane (hold-state unchanged pending BRIDGE in-thread confirmation + SENTINEL launch-gate clearance); dependency status: OpenClaw update available (installed OpenClaw 2026.4.15; npm latest 2026.4.22).
+Reset: 2026-04-26
+
+**RECEPTIONIST/TELEPHONY KILLED 2026-04-26. OA is URL → audit → build/improve only. Old mission-005/006, Twilio, phone-answering, and ai-receptionist artifacts are dead context — do not use as current capability references.**
+
+Canonical mission: read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md`.
+
+Engineering focus is the Outbound Autonomy website audit funnel, not generic OpenClaw internals.
+
+Launch-readiness checklist:
+
+- Homepage clearly leads with URL audit / website score.
+- Audit input validates realistic URLs and handles bad input.
+- `/api/audit` returns bounded, factual demo output and clearly avoids pretending to crawl if it does not.
+- Report is read-only before save/full-report gating, if implemented.
+- Email capture and/or account creation path works before claiming it exists.
+- Proposal CTA routes correctly.
+- Build, lint, and relevant API/UI tests pass.
+- Live deployment status is verified before reporting launch-ready.
+
+Do not claim CRM, email delivery, or account integrations are live unless current code/provider evidence proves it.
+

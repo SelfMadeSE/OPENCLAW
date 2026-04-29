@@ -1,0 +1,25 @@
+{
+  "research_date": "2026-04-29 06:58 MDT",
+  "lead_name": "Colorado Green Landscaping",
+  "vertical": "landscaping",
+  "website": "https://www.coloradogreenlandscaping.com",
+  "score": 7,
+  "contact": {
+    "email": "george@coloradogreenlandscaping.com",
+    "phone": "(303) 555-xxxx",
+    "email_verified": true
+  },
+  "audit": {
+    "designScore": 93,
+    "conversionScore": 92,
+    "technicalScore": 90,
+    "overallScore": 92,
+    "grade": "A"
+  },
+  "weaknesses": [
+    "Meta description is missing (hurts SEO)",
+    "Wix-built site with minimal content depth",
+    "No service-area landing pages for different cities"
+  ],
+  "notes": "Owned and operated by George Trujillo, Colorado native, 20+ years experience. Offers landscaping design, installation, maintenance, snow plowing, luxury pergolas. Solid prospect but site is mid-tier."
+}

@@ -1,0 +1,23 @@
+{
+  "mission_id": "crm-python-repair-20260429-0559",
+  "goal": "Diagnose and fix the CRM Python fd error (OSError 9 Bad file descriptor) that has blocked all CRM script access for over an hour, restoring the primary pipeline management tool.",
+  "success_criteria": [
+    "python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads returns valid JSON output without OSError",
+    "python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py email-ledger returns valid JSON output without OSError"
+  ],
+  "slices": [
+    {
+      "agent": "engineering",
+      "task": "Diagnose the CRM Python OSError 9 (Bad file descriptor). Run: python3 -c 'import sys; print(sys.stdout.fileno()); print(sys.stderr.fileno())' to check if std streams are valid. Then try: python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads 2>&1; echo '---EXIT---'; echo $?. If the script crashes with OSError 9, check: (a) is the script being run in a context where stdin/stdout/stderr are closed? (b) does the script open the sqlite DB at /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite? (c) does python3 -c 'import sqlite3; conn=sqlite3.connect(\"/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite\"); print(list(conn.execute(\"SELECT COUNT(*) FROM leads\")))' work independently? If the script is permanently broken, write a thin Python wrapper at /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm_repair.py that duplicates the 'leads' and 'email-ledger' subcommands using direct sqlite3 with proper error handling, and test it. Write full diagnostic results and fix to artifacts/missions/crm-python-repair-20260429-0559/forge-crm-fix.md.",
+      "expected_artifact": "forge-crm-fix.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read forge-crm-fix.md. Verify independently: (a) run the fix command documented in the report and confirm it returns valid output, (b) run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT COUNT(*) FROM leads' and compare with the fixed script output, (c) run sqlite3 ... 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' and compare with fixed script output. Write artifacts/missions/crm-python-repair-20260429-0559/sentinel-verify.md with: before state (OSError 9), fix applied, after state (working/not-working), evidence of correct output, and verdict. Append SCORE_EVENT to _shared/scoring/history.jsonl for engineering.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "The CRM Python fd error has been present in every snapshot for over an hour \u2014 the operator cannot see pipeline state. 10 missions proposed, all blocked from CRM visibility. This is the infrastructure blocker: no CRM scripts = no stage updates = no email-ledger logging = broken pipeline automation. Fixing it unblocks every subsequent mission. GREEN risk \u2014 diagnostic-only on existing scripts, no external calls, no writes beyond artifacts and a potential wrapper script in the scripts/ directory."
+}

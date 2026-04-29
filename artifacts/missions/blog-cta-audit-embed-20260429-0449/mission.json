@@ -1,0 +1,28 @@
+{
+  "mission_id": "blog-cta-audit-embed-20260429-0449",
+  "goal": "Embed audit-funnel CTAs into all 12 live blog posts and deploy the 12th post (/blog/automation-for-service-businesses) to convert blog traffic into audit-form submissions.",
+  "success_criteria": [
+    "All 12 blog posts verified to contain an audit-funnel CTA linking to /try or /sample-report",
+    "/blog/automation-for-service-businesses returns 200 and appears in sitemap.xml"
+  ],
+  "slices": [
+    {
+      "agent": "engineering",
+      "task": "Step 1: curl https://outboundautonomy.com/sitemap.xml and extract all 11-12 blog URLs. Step 2: For each blog URL, curl the page and grep for 'audit' or '/try' or '/sample-report' \u2014 verify an audit-funnel CTA exists. Step 3: If /blog/automation-for-service-businesses still returns 404, check the git repo at /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/ for the page file, ensure it's in app/blog/ directory matching the route pattern of existing posts, commit + push if untracked, and trigger vercel --prod deploy. Step 4: After deploy, re-verify HTTP 200. Step 5: Write a results table with blog URL, CTA present (yes/no), CTA link target, and HTTP status to artifacts/missions/blog-cta-audit-embed-20260429-0449/forge-blog-audit.md. For any blog missing an audit CTA, note the exact file path and line where it should be inserted.",
+      "expected_artifact": "forge-blog-audit.md"
+    },
+    {
+      "agent": "marketing",
+      "task": "Read all 12 blog posts from /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/app/blog/ (or wherever the source is) or curl their live versions. For each post where an audit CTA is missing, write the exact CTA copy to insert \u2014 format: a 2-3 sentence inline CTA paragraph that naturally follows the article's topic and leads to 'Get a free website audit at outboundautonomy.com/try' or 'See what your site scores: outboundautonomy.com/sample-report'. Write all CTA copy to artifacts/missions/blog-cta-audit-embed-20260429-0449/pulse-cta-copy.md with: blog slug, current CTA status (present/missing), proposed CTA text, and recommended insertion point (e.g. 'after paragraph 4' or 'before conclusion').",
+      "expected_artifact": "pulse-cta-copy.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read forge-blog-audit.md and pulse-cta-copy.md. Verify: (a) independently curl every blog URL listed and confirm HTTP status matches the table, (b) independently curl each blog page and grep for the claimed CTA presence, flagging any false positive/negative, (c) confirm the proposed CTA copy is audit-led (mentions 'audit', 'score', or links to outboundautonomy.com/try or /sample-report) and does not mention receptionist/telephony/Twilio/OpenClaw/SPECTOR. Write artifacts/missions/blog-cta-audit-embed-20260429-0449/sentinel-verify.md with per-file verdict and a summary: total blog posts, posts with CTAs, posts missing CTAs, deployment status of post 12. Append SCORE_EVENT to _shared/scoring/history.jsonl for engineering and marketing.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "12 blog posts are live organic traffic assets but without audit-funnel CTAs they generate zero revenue. Adding a CTA to each post converts free blog traffic into /try and /sample-report form fills \u2014 directly feeding the audit funnel. The 12th post deployment failure is a loose end from the previous hour. Marketing writing CTA copy + engineering verifying deployment + auditor checking both is a clean 3-agent pipeline that produces immediately deployable revenue infrastructure. No hard-wall items \u2014 blog content edits are GREEN per BOOT.md."
+}

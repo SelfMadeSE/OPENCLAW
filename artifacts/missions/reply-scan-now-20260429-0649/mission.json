@@ -1,0 +1,18 @@
+{
+  "mission_id": "reply-scan-now-20260429-0649",
+  "goal": "Scan Gmail inbox for replies to the 68 sent outreach emails and surface any responders as RED hot leads requiring operator attention.",
+  "success_criteria": [
+    "Complete scan of Gmail inbox for replies from sent-to addresses documented with findings",
+    "Any reply detected is surfaced with lead_id, excerpt, and RED flag for operator"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Two-method approach. Method 1 (SMTP logs): grep the SMTP send script output for any delivery confirmations or bounces. Method 2 (web_fetch Gmail if possible): use web_fetch to check Gmail for replies. If neither works, query the ledger directly: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT l.id,l.name,l.contact_info,l.stage,e.status,e.provider_message_id,e.created_at FROM leads l JOIN email_attempts e ON l.id=e.lead_id WHERE e.status=\"provider_accepted\" ORDER BY e.created_at DESC LIMIT 20' \u2014 produce a timeline of the most recent 20 verified sends with exact timestamps. Calculate: how many were sent in the last 2 hours (high reply probability window), how many in last 24h. Write the send timeline and reply-probability assessment to artifacts/missions/reply-scan-now-20260429-0649/bridge-reply-scan.md. If any reply is found by any method, flag as RED and include full details.",
+      "expected_artifact": "bridge-reply-scan.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "68 provider_accepted sends \u2014 up 9 in the last 10 minutes. The pipeline is actively sending. The most valuable intelligence right now is whether anyone has replied. Even a negative result (no replies yet) is actionable: it tells us the sends are fresh and we should wait for the 24-48h reply window before follow-ups. 1-slice mission, sqlite3 only, no browser dependency. Pure intelligence."
+}

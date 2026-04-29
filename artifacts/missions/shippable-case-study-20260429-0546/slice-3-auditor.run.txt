@@ -1,0 +1,64 @@
+s": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 05:52 MDT] MISSION shippable-case-study-20260429-0546 \\u2014 slice 3/3.\\nLead is NEXUS. Goal: Publish a single polished internal case study on outboundautonomy.com/case-studies demonstrating the audit\\u2192fix\\u2192results workflow with real OA methodology, creating a conversion asset for prospects who visit after receiving outreach emails..\\nYour task: Read muse-case-study.md and forge-deploy-results.md. Verify: (a) the case study follows the template structure from creative/artifacts/site-copy/case-study-template-2026-04-28.md, (b) the 'Illustrative Composite' disclaimer is present and prominent, (c) curl https://outboundautonomy.com/case-studies and confirm 200 with the new case study content visible in page source, (d) verify the page contains an audit-funnel CTA linking to /try or /sample-report. Write artifacts/missions/shippable-case-study-20260429-0546/sentinel-verify.md with per-file verdict and content checklist. Append SCORE_EVENT to _shared/scoring/history.jsonl for creative and engineering.\\nWrite your output to: artifacts/missions/shippable-case-study-20260429-0546/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/shippable-case-study-20260429-0546/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md: 1719 raw -> 868 injected (~50% removed).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Case study live at outboundautonomy.com/case-studies. All checks pass: template structure, illustrative composite disclaimer prominent, HTTP 200 with full content, audit-funnel CTA to /try functional, zero forbidden terms. Conversion asset successfully deployed.",
+      "finalAssistantRawText": "STATE: PROCEED — Case study live at outboundautonomy.com/case-studies. All checks pass: template structure, illustrative composite disclaimer prominent, HTTP 200 with full content, audit-funnel CTA to /try functional, zero forbidden terms. Conversion asset successfully deployed.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 12,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

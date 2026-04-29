@@ -1,0 +1,23 @@
+{
+  "mission_id": "waitlist-api-fix-20260429-0511",
+  "goal": "Fix the waitlist API endpoint on outboundautonomy.com so the email capture form on /try and the audit report CTA actually store submissions, closing the highest-severity open ticket.",
+  "success_criteria": [
+    "POST to /api/waitlist returns 200 with valid JSON confirmation",
+    "Waitlist submissions are persisted (sqlite or file) and verifiable with a follow-up read"
+  ],
+  "slices": [
+    {
+      "agent": "engineering",
+      "task": "Step 1: Test the current waitlist API \u2014 curl -X POST https://outboundautonomy.com/api/waitlist -H 'Content-Type: application/json' -d '{\"email\":\"test-0511@outboundautonomy.com\",\"source\":\"mission-test\"}' and capture full response (code, body, headers). Step 2: Read /Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/waitlist-api-root-cause.md for the diagnostic and Path B fallback. Step 3: Check the repo at /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/ for the waitlist API route \u2014 app/api/waitlist/route.ts or similar. Trace the submission flow: does it write to a file? a DB? Vercel KV? Step 4: If the endpoint returns non-200, implement a fix: the simplest reliable solution is a file-based JSON store at /tmp/waitlist.jsonl (works on Vercel serverless with caveats) or a sqlite write to a data directory. Step 5: After fix, re-test with the curl command above and confirm 200 + persistence. Step 6: Deploy via vercel --prod if changes made. Write the full diagnostic, fix applied, and before/after test results to artifacts/missions/waitlist-api-fix-20260429-0511/forge-fix-report.md. If unable to fix (e.g. Vercel log access required), document the exact blocker and next step for operator.",
+      "expected_artifact": "forge-fix-report.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read forge-fix-report.md. Verify independently: (a) curl -X POST https://outboundautonomy.com/api/waitlist -H 'Content-Type: application/json' -d '{\"email\":\"audit-test-0511@outboundautonomy.com\",\"source\":\"sentinel-verify\"}' and confirm response code matches the report claim, (b) if the fix includes persistence, attempt to verify the stored record (curl the read endpoint or check the file), (c) check that the /try page form action still points to the correct endpoint. Write artifacts/missions/waitlist-api-fix-20260429-0511/sentinel-verify.md with: before status, after status, curl evidence, verdict (approved|blocked|needs-evidence). Append SCORE_EVENT to _shared/scoring/history.jsonl for engineering.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "ORANGE",
+  "reasoning": "The waitlist API is the #1 open ticket (HIGH severity, ORANGE class). It's the revenue capture point \u2014 every /try form submit and audit report CTA that doesn't persist is a lost lead. 57 provider_accepted emails sent but if prospects click through and the form breaks, the funnel leaks. This has been open since 12:35 (6+ hours). Fixing it directly converts existing outreach traffic into captured leads. ORANGE due to potential deploy to production, but the fix is a code patch to an existing endpoint, not a new account or spend."
+}

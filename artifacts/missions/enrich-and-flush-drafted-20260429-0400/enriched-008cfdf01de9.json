@@ -1,0 +1,95 @@
+{
+  "lead_id": "008cfdf01de9",
+  "name": "Bronco Pro Kleen",
+  "score": 60,
+  "email": "contact@broncoprokleen.com",
+  "url": "https://broncoprokleen.com",
+  "audit": {
+    "design_score": 87,
+    "conversion_score": 100,
+    "technical_score": 100,
+    "overall_score": 96,
+    "grade": "A",
+    "issues": [
+      {
+        "severity": "low",
+        "title": "Some images may be missing alt text",
+        "evidence": "6 image tags appeared to lack alt attributes."
+      },
+      {
+        "severity": "low",
+        "title": "Full Lighthouse data was not available in this preview",
+        "evidence": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for co"
+      }
+    ],
+    "top_issue": {
+      "severity": "low",
+      "title": "Some images may be missing alt text",
+      "evidence": "6 image tags appeared to lack alt attributes.",
+      "recommendation": "Add descriptive alt text for accessibility and local SEO context."
+    },
+    "crawl_summary": {
+      "pagesScanned": 5,
+      "pages": [
+        {
+          "url": "https://broncoprokleen.com/",
+          "status": 200,
+          "responseMs": 452,
+          "title": "Bronco Pro Kleen Carpet Cleaning Denver CO | Call 303-732-8577",
+          "h1Count": 0,
+          "formCount": 1,
+          "linkCount": 54,
+          "imageCount": 39
+        },
+        {
+          "url": "https://broncoprokleen.com/our-equipment/",
+          "status": 200,
+          "responseMs": 393,
+          "title": "Bronco Pro Kleen Carpet Cleaning Denver CO | Call 303-732-8577",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 42,
+          "imageCount": 19
+        },
+        {
+          "url": "https://broncoprokleen.com/why-choose-us/",
+          "status": 200,
+          "responseMs": 309,
+          "title": "Bronco Pro Kleen Carpet Cleaning Denver CO | Call 303-732-8577",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 42,
+          "imageCount": 19
+        },
+        {
+          "url": "https://broncoprokleen.com/our-work/",
+          "status": 200,
+          "responseMs": 340,
+          "title": "Bronco Pro Kleen Carpet Cleaning Denver CO | Call 303-732-8577",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 47,
+          "imageCount": 24
+        },
+        {
+          "url": "https://broncoprokleen.com/services/",
+          "status": 200,
+          "responseMs": 319,
+          "title": "Bronco Pro Kleen Carpet Cleaning Denver CO | Call 303-732-8577",
+          "h1Count": 1,
+          "formCount": 1,
+          "linkCount": 42,
+          "imageCount": 19
+        }
+      ],
+      "notes": [
+        "Crawler stayed on broncoprokleen.com and capped the preview crawl at 5 pages.",
+        "The paid implementation review can expand this into a deeper crawl with screenshots, form testing, and account-flow validation."
+      ]
+    },
+    "evidence_notes": [
+      "Good scores, some alt-text issues found"
+    ]
+  },
+  "previous_draft_key_finding": "Generic template, no before/after gallery, no booking"
+}

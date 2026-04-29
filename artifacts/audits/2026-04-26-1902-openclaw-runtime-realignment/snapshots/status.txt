@@ -1,0 +1,84 @@
+OpenClaw status
+
+Overview
+┌──────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Item                 │ Value                                                                                         │
+├──────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┤
+│ OS                   │ macos 26.5 (arm64) · node 25.2.1                                                              │
+│ Dashboard            │ http://127.0.0.1:18789/                                                                       │
+│ Tailscale            │ off                                                                                           │
+│ Channel              │ stable (default)                                                                              │
+│ Update               │ available · pnpm · npm update 2026.4.24                                                       │
+│ Gateway              │ local · ws://127.0.0.1:18789 (local loopback) · reachable 56ms · auth token · Rylees-MacBook- │
+│                      │ Air.local (192.168.1.182) app 2026.4.15 macos 26.5                                            │
+│ Gateway self         │ Rylees-MacBook-Air.local (192.168.1.182) app 2026.4.15 macos 26.5                             │
+│ Gateway service      │ LaunchAgent installed · loaded · running (pid 19151, state active)                            │
+│ Node service         │ LaunchAgent not installed                                                                     │
+│ Agents               │ 7 · no bootstrap files · sessions 381 · default orchestrator active just now                  │
+│ Memory               │ enabled (plugin memory-core) · unavailable                                                    │
+│ Plugin compatibility │ none                                                                                          │
+│ Probes               │ skipped (use --deep)                                                                          │
+│ Events               │ none                                                                                          │
+│ Tasks                │ 6 active · 0 queued · 6 running · 209 issues · audit 32 errors · 234 warn · 958 tracked       │
+│ Heartbeat            │ 30m (orchestrator), 42m (auditor), 38m (creative), 32m (engineering), 34m (marketing), 40m    │
+│                      │ (media), 36m (outreach)                                                                       │
+│ Sessions             │ 381 active · default deepseek-v4-flash (1000k ctx) · 7 stores                                 │
+└──────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Task maintenance: openclaw tasks maintenance --apply
+
+Security audit
+Summary: 0 critical · 8 warn · 3 info
+  WARN Reverse proxy headers are not trusted
+    gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client c…
+    Fix: Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only.
+  WARN Control UI insecure auth toggle enabled
+    gateway.controlUi.allowInsecureAuth=true does not bypass secure context or device identity checks; only dangerouslyDisableDeviceAuth disables Control UI device…
+    Fix: Disable it or switch to HTTPS (Tailscale Serve) or localhost.
+  WARN Insecure or dangerous config flags enabled
+    Detected 1 enabled flag(s): gateway.controlUi.allowInsecureAuth=true.
+    Fix: Disable these flags when not actively debugging, or keep deployment scoped to trusted/local-only networks.
+  WARN Exec security=full is configured
+    Full exec trust is enabled for: main, orchestrator, engineering, marketing, outreach, creative, media, auditor.
+    Fix: Prefer tools.exec.security="allowlist" with ask prompts, and reserve "full" for tightly scoped break-glass agents only.
+  WARN Interpreter allowlist entries are missing strictInlineEval hardening
+    Interpreter/runtime allowlist entries were found without strictInlineEval enabled: - agents.auditor.allowlist: find - agents.creative.allowlist: python3 - agen…
+    Fix: Set tools.exec.strictInlineEval=true (or per-agent tools.exec.strictInlineEval=true) when allowlisting interpreters like python, node, ruby, perl, php, lua, or osascript.
+  WARN hooks.defaultSessionKey is not configured
+    Hook agent runs without explicit sessionKey use generated per-request keys. Set hooks.defaultSessionKey to keep hook ingress scoped to a known session.
+    Fix: Set hooks.defaultSessionKey (for example, "hook:ingress").
+… +2 more
+Full report: openclaw security audit
+Deep probe: openclaw security audit --deep
+
+Channels
+┌──────────┬─────────┬────────┬────────────────────────────────────────────────────────────────────────────────────────┐
+│ Channel  │ Enabled │ State  │ Detail                                                                                 │
+├──────────┼─────────┼────────┼────────────────────────────────────────────────────────────────────────────────────────┤
+│ Telegram │ ON      │ OK     │ token config (8645…d7Fg · len 46) · accounts 1/1                                       │
+└──────────┴─────────┴────────┴────────────────────────────────────────────────────────────────────────────────────────┘
+
+Sessions
+┌─────────────────────────────────────────────┬────────┬──────────┬───────────────────┬────────────────────────────────┐
+│ Key                                         │ Kind   │ Age      │ Model             │ Tokens                         │
+├─────────────────────────────────────────────┼────────┼──────────┼───────────────────┼────────────────────────────────┤
+│ agent:engineering:main                      │ direct │ just now │ deepseek-v4-pro   │ 29k/1000k (3%) · 🗄️ 74% cached │
+│ agent:orchestrator:main                     │ direct │ just now │ deepseek-v4-pro   │ 43k/1000k (4%) · 🗄️ 73% cached │
+│ agent:auditor:main                          │ direct │ 1m ago   │ deepseek-v4-flash │ unknown/1000k (?%)             │
+│ agent:engineering:cron:2bf2b12a…            │ direct │ 2m ago   │ deepseek-v4-flash │ 60k/1000k (6%) · 🗄️ 91% cached │
+│ agent:engineering:cron:2bf2b12a…            │ direct │ 2m ago   │ deepseek-v4-flash │ 60k/1000k (6%) · 🗄️ 91% cached │
+│ agent:auditor:cron:32d19920-635…            │ direct │ 3m ago   │ deepseek-v4-flash │ 17k/1000k (2%) · 🗄️ 90% cached │
+│ agent:auditor:cron:32d19920-635…            │ direct │ 3m ago   │ deepseek-v4-flash │ 17k/1000k (2%) · 🗄️ 90% cached │
+│ agent:orchestrator:main:heartbe…            │ direct │ 5m ago   │ deepseek-v4-pro   │ 38k/1000k (4%) · 🗄️ 72% cached │
+│ agent:creative:main:heartbeat               │ direct │ 16m ago  │ deepseek-v4-flash │ unknown/1000k (?%)             │
+│ agent:engineering:main:heartbeat            │ direct │ 16m ago  │ deepseek-v4-pro   │ 13k/1000k (1%) · 🗄️ 10% cached │
+└─────────────────────────────────────────────┴────────┴──────────┴───────────────────┴────────────────────────────────┘
+
+FAQ: https://docs.openclaw.ai/faq
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+
+Update available (npm 2026.4.24). Run: openclaw update
+Next steps:
+  Need to share?      openclaw status --all
+  Need to debug live? openclaw logs --follow
+  Need to test channels? openclaw status --deep

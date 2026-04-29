@@ -1,0 +1,467 @@
+{
+  "template_info": {
+    "total_emails": 4,
+    "created_at": "2026-04-24T12:30:40.586048",
+    "script_version": "1.0.0",
+    "templates_dir": "templates/outreach/"
+  },
+  "emails": [
+    {
+      "business": {
+        "name": "Grande Prairie Pizza Palace",
+        "website": "https://gppizza.example.com",
+        "category": "restaurant",
+        "address": "9830 99 Ave, Grande Prairie, AB T8V 0R4",
+        "phone": "(780) 532-1234",
+        "description": "Local pizza restaurant with outdated website"
+      },
+      "audit": {
+        "sourceUrl": "https://gppizza.example.com",
+        "finalUrl": "https://gppizza.example.com",
+        "fetchedAt": "2026-04-24T12:30:00.000Z",
+        "responseMs": 1450,
+        "overallScore": 45,
+        "grade": "F",
+        "designScore": 52,
+        "conversionScore": 38,
+        "technicalScore": 48,
+        "scorecard": [
+          {
+            "label": "Design/UI",
+            "score": 52,
+            "evidence": "3 H1 headings detected"
+          },
+          {
+            "label": "Conversion",
+            "score": 38,
+            "evidence": "No lead form detected"
+          },
+          {
+            "label": "Technical",
+            "score": 48,
+            "evidence": "200 response in 1450ms over HTTPS"
+          }
+        ],
+        "observedSignals": [
+          "Page title found: \"Grande Prairie Pizza Palace - Best Pizza in Grande Prairie\"",
+          "Meta description is present",
+          "3 H1 headings found",
+          "Phone number detected",
+          "Email/contact link detected"
+        ],
+        "issues": [
+          {
+            "severity": "high",
+            "title": "Primary conversion CTA is weak or not obvious",
+            "evidence": "The scan did not find clear high-intent CTA language like \"get a quote\", \"book now\", or \"request service\".",
+            "recommendation": "Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions."
+          },
+          {
+            "severity": "high",
+            "title": "No lead-capture form detected",
+            "evidence": "The page HTML did not include a form element.",
+            "recommendation": "Add a short quote/request form with service type, contact info, and urgency."
+          },
+          {
+            "severity": "medium",
+            "title": "Trust proof is not prominent",
+            "evidence": "The scan did not detect common review, testimonial, rating, guarantee, licensed, or insured language.",
+            "recommendation": "Add reviews, proof badges, before/after examples, and service guarantees near the CTA."
+          },
+          {
+            "severity": "medium",
+            "title": "Initial response appears slow",
+            "evidence": "Server response took 1450ms from the audit runner.",
+            "recommendation": "Compress assets, reduce render-blocking scripts, and audit hosting/cache configuration."
+          }
+        ],
+        "recommendations": [
+          {
+            "id": 1,
+            "title": "Conversion-first homepage pass",
+            "description": "Clarify the hero, add a dominant service CTA, strengthen proof, and remove friction from the first action.",
+            "pricing": "$1,500-$3,500",
+            "priority": "first"
+          },
+          {
+            "id": 2,
+            "title": "Lead capture + follow-up system",
+            "description": "Add a quote/request flow, route leads by urgency, and trigger owner/customer follow-up so inquiries do not go cold.",
+            "pricing": "$2,500-$6,500",
+            "priority": "second"
+          },
+          {
+            "id": 3,
+            "title": "Full implementation plan",
+            "description": "Turn the audit into a prioritized build plan covering page structure, local SEO, automation, CRM handoff, and measurement.",
+            "pricing": "$7,500-$15,000+",
+            "priority": "third"
+          }
+        ],
+        "implementationEstimate": {
+          "range": "$7,500-$15,000+",
+          "basis": "Based on 4 detected issues, current score 45/100, and whether conversion plus automation work is required."
+        }
+      },
+      "email": {
+        "to": "info@gppizza.example.com",
+        "subject": "Grande Prairie Pizza Palace Website Audit - 4 Issues Found",
+        "body": "Subject: Grande Prairie Pizza Palace Website Audit - 4 Issues Found\n\nHi there,\n\nI found 4 critical issues on Grande Prairie Pizza Palace's website that are likely costing you customers:\n\n🚨 Primary conversion CTA is weak or not obvious:\n   Impact: Lost customers and revenue\n   Fix: Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions.\n\n🚨 No lead-capture form detected:\n   Impact: Reduced website effectiveness\n   Fix: Add a short quote/request form with service type, contact info, and urgency.\n\n⚠️ Trust proof is not prominent:\n   Impact: Reduced website effectiveness\n   Fix: Add reviews, proof badges, before/after examples, and service guarantees near the CTA.\n\n\nBased on similar local businesses we've helped, these fixes typically cost $7,500-$15,000+ and can increase conversion by 25-45%.\n\nThe good news? These are fixable, and I've helped several restaurant businesses in Grande Prairie turn their websites into customer-generating machines.\n\nWould you like me to send you the complete audit report with detailed implementation steps?\n\nBest regards,\nRylee Benson\nOutbound Autonomy\n(587) XXX-XXXX\nowner@outboundautonomy.com\n\n---\nThis is a one-time outreach based on your website's audit results. If you prefer not to receive such communications, please reply with \"UNSUBSCRIBE\".\n",
+        "from_name": "Rylee Benson",
+        "from_email": "owner@outboundautonomy.com",
+        "reply_to": "owner@outboundautonomy.com"
+      },
+      "metadata": {
+        "created_at": "2026-04-24T12:30:40.585929",
+        "audit_score": 45,
+        "issue_count": 4,
+        "high_priority_issues": 2,
+        "pricing_estimate": "$7,500-$15,000+",
+        "category": "restaurant",
+        "estimated_conversion_potential": "High (40-60% improvement possible)"
+      }
+    },
+    {
+      "business": {
+        "name": "Northern Lights Diner",
+        "website": "https://northernlightsdiner.example.com",
+        "category": "restaurant",
+        "address": "10210 98 Ave, Grande Prairie, AB T8V 2V7",
+        "phone": "(780) 814-5678",
+        "description": "Classic diner with basic HTML site"
+      },
+      "audit": {
+        "sourceUrl": "https://northernlightsdiner.example.com",
+        "finalUrl": "https://northernlightsdiner.example.com",
+        "fetchedAt": "2026-04-24T12:30:00.000Z",
+        "responseMs": 890,
+        "overallScore": 62,
+        "grade": "D",
+        "designScore": 68,
+        "conversionScore": 58,
+        "technicalScore": 65,
+        "scorecard": [
+          {
+            "label": "Design/UI",
+            "score": 68,
+            "evidence": "1 H1 heading detected"
+          },
+          {
+            "label": "Conversion",
+            "score": 58,
+            "evidence": "1 form element(s) detected"
+          },
+          {
+            "label": "Technical",
+            "score": 65,
+            "evidence": "200 response in 890ms over HTTPS"
+          }
+        ],
+        "observedSignals": [
+          "Page title found: \"Northern Lights Diner | Grand Prairie's Favorite Diner\"",
+          "Meta description is present",
+          "1 H1 heading found",
+          "Phone number detected",
+          "Email/contact link detected",
+          "Booking/estimate language detected"
+        ],
+        "issues": [
+          {
+            "severity": "high",
+            "title": "Primary conversion CTA is weak or not obvious",
+            "evidence": "The scan did not find clear high-intent CTA language like \"get a quote\", \"book now\", or \"request service\".",
+            "recommendation": "Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions."
+          },
+          {
+            "severity": "medium",
+            "title": "Trust proof is not prominent",
+            "evidence": "The scan did not detect common review, testimonial, rating, guarantee, licensed, or insured language.",
+            "recommendation": "Add reviews, proof badges, before/after examples, and service guarantees near the CTA."
+          }
+        ],
+        "recommendations": [
+          {
+            "id": 1,
+            "title": "Conversion-first homepage pass",
+            "description": "Clarify the hero, add a dominant service CTA, strengthen proof, and remove friction from the first action.",
+            "pricing": "$1,500-$3,500",
+            "priority": "first"
+          },
+          {
+            "id": 2,
+            "title": "Lead capture + follow-up system",
+            "description": "Add a quote/request flow, route leads by urgency, and trigger owner/customer follow-up so inquiries do not go cold.",
+            "pricing": "$2,500-$6,500",
+            "priority": "second"
+          },
+          {
+            "id": 3,
+            "title": "Full implementation plan",
+            "description": "Turn the audit into a prioritized build plan covering page structure, local SEO, automation, CRM handoff, and measurement.",
+            "pricing": "$4,500-$9,500",
+            "priority": "third"
+          }
+        ],
+        "implementationEstimate": {
+          "range": "$4,500-$9,500",
+          "basis": "Based on 2 detected issues, current score 62/100, and whether conversion plus automation work is required."
+        }
+      },
+      "email": {
+        "to": "info@northernlightsdiner.example.com",
+        "subject": "Northern Lights Diner Website Audit - 2 Issues Found",
+        "body": "Subject: Northern Lights Diner Website Audit - 2 Issues Found\n\nHi there,\n\nI found 2 critical issues on Northern Lights Diner's website that are likely costing you customers:\n\n🚨 Primary conversion CTA is weak or not obvious:\n   Impact: Lost customers and revenue\n   Fix: Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions.\n\n⚠️ Trust proof is not prominent:\n   Impact: Reduced website effectiveness\n   Fix: Add reviews, proof badges, before/after examples, and service guarantees near the CTA.\n\n\nBased on similar local businesses we've helped, these fixes typically cost $4,500-$9,500 and can increase conversion by 25-45%.\n\nThe good news? These are fixable, and I've helped several restaurant businesses in Grande Prairie turn their websites into customer-generating machines.\n\nWould you like me to send you the complete audit report with detailed implementation steps?\n\nBest regards,\nRylee Benson\nOutbound Autonomy\n(587) XXX-XXXX\nowner@outboundautonomy.com\n\n---\nThis is a one-time outreach based on your website's audit results. If you prefer not to receive such communications, please reply with \"UNSUBSCRIBE\".\n",
+        "from_name": "Rylee Benson",
+        "from_email": "owner@outboundautonomy.com",
+        "reply_to": "owner@outboundautonomy.com"
+      },
+      "metadata": {
+        "created_at": "2026-04-24T12:30:40.585988",
+        "audit_score": 62,
+        "issue_count": 2,
+        "high_priority_issues": 1,
+        "pricing_estimate": "$4,500-$9,500",
+        "category": "restaurant",
+        "estimated_conversion_potential": "Medium-High (25-40% improvement possible)"
+      }
+    },
+    {
+      "business": {
+        "name": "Peace Country Plumbing",
+        "website": "https://peacecountryplumbing.example.com",
+        "category": "contractor",
+        "address": "11315 100 Ave, Grande Prairie, AB T8V 0T1",
+        "phone": "(780) 832-3456",
+        "description": "Plumbing contractor with basic website"
+      },
+      "audit": {
+        "sourceUrl": "https://peacecountryplumbing.example.com",
+        "finalUrl": "https://peacecountryplumbing.example.com",
+        "fetchedAt": "2026-04-24T12:30:00.000Z",
+        "responseMs": 2100,
+        "overallScore": 38,
+        "grade": "F",
+        "designScore": 42,
+        "conversionScore": 32,
+        "technicalScore": 40,
+        "scorecard": [
+          {
+            "label": "Design/UI",
+            "score": 42,
+            "evidence": "No H1 headings detected"
+          },
+          {
+            "label": "Conversion",
+            "score": 32,
+            "evidence": "No lead form detected"
+          },
+          {
+            "label": "Technical",
+            "score": 40,
+            "evidence": "200 response in 2100ms over HTTPS"
+          }
+        ],
+        "observedSignals": [
+          "Phone number detected",
+          "Email/contact link detected"
+        ],
+        "issues": [
+          {
+            "severity": "high",
+            "title": "Primary conversion CTA is weak or not obvious",
+            "evidence": "The scan did not find clear high-intent CTA language like \"get a quote\", \"book now\", or \"request service\".",
+            "recommendation": "Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions."
+          },
+          {
+            "severity": "high",
+            "title": "No lead-capture form detected",
+            "evidence": "The page HTML did not include a form element.",
+            "recommendation": "Add a short quote/request form with service type, contact info, and urgency."
+          },
+          {
+            "severity": "medium",
+            "title": "Trust proof is not prominent",
+            "evidence": "The scan did not detect common review, testimonial, rating, guarantee, licensed, or insured language.",
+            "recommendation": "Add reviews, proof badges, before/after examples, and service guarantees near the CTA."
+          },
+          {
+            "severity": "medium",
+            "title": "Initial response appears slow",
+            "evidence": "Server response took 2100ms from the audit runner.",
+            "recommendation": "Compress assets, reduce render-blocking scripts, and audit hosting/cache configuration."
+          },
+          {
+            "severity": "low",
+            "title": "Some images may be missing alt text",
+            "evidence": "3 image tags appeared to lack alt attributes.",
+            "recommendation": "Add descriptive alt text for accessibility and local SEO context."
+          }
+        ],
+        "recommendations": [
+          {
+            "id": 1,
+            "title": "Conversion-first homepage pass",
+            "description": "Clarify the hero, add a dominant service CTA, strengthen proof, and remove friction from the first action.",
+            "pricing": "$1,500-$3,500",
+            "priority": "first"
+          },
+          {
+            "id": 2,
+            "title": "Lead capture + follow-up system",
+            "description": "Add a quote/request flow, route leads by urgency, and trigger owner/customer follow-up so inquiries do not go cold.",
+            "pricing": "$2,500-$6,500",
+            "priority": "second"
+          },
+          {
+            "id": 3,
+            "title": "Full implementation plan",
+            "description": "Turn the audit into a prioritized build plan covering page structure, local SEO, automation, CRM handoff, and measurement.",
+            "pricing": "$7,500-$15,000+",
+            "priority": "third"
+          }
+        ],
+        "implementationEstimate": {
+          "range": "$7,500-$15,000+",
+          "basis": "Based on 5 detected issues, current score 38/100, and whether conversion plus automation work is required."
+        }
+      },
+      "email": {
+        "to": "info@peacecountryplumbing.example.com",
+        "subject": "Peace Country Plumbing Website Audit - 5 Issues Found",
+        "body": "Subject: Peace Country Plumbing Website Audit - 5 Issues Found\n\nHi there,\n\nI found 5 critical issues on Peace Country Plumbing's website that are likely costing you customers:\n\n🚨 Primary conversion CTA is weak or not obvious:\n   Impact: Lost customers and revenue\n   Fix: Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions.\n\n🚨 No lead-capture form detected:\n   Impact: Reduced website effectiveness\n   Fix: Add a short quote/request form with service type, contact info, and urgency.\n\n⚠️ Trust proof is not prominent:\n   Impact: Reduced website effectiveness\n   Fix: Add reviews, proof badges, before/after examples, and service guarantees near the CTA.\n\n\nBased on similar local businesses we've helped, these fixes typically cost $7,500-$15,000+ and can increase conversion by 25-45%.\n\nThe good news? These are fixable, and I've helped several contractor businesses in Grande Prairie turn their websites into customer-generating machines.\n\nWould you like me to send you the complete audit report with detailed implementation steps?\n\nBest regards,\nRylee Benson\nOutbound Autonomy\n(587) XXX-XXXX\nowner@outboundautonomy.com\n\n---\nThis is a one-time outreach based on your website's audit results. If you prefer not to receive such communications, please reply with \"UNSUBSCRIBE\".\n",
+        "from_name": "Rylee Benson",
+        "from_email": "owner@outboundautonomy.com",
+        "reply_to": "owner@outboundautonomy.com"
+      },
+      "metadata": {
+        "created_at": "2026-04-24T12:30:40.586020",
+        "audit_score": 38,
+        "issue_count": 5,
+        "high_priority_issues": 2,
+        "pricing_estimate": "$7,500-$15,000+",
+        "category": "contractor",
+        "estimated_conversion_potential": "High (40-60% improvement possible)"
+      }
+    },
+    {
+      "business": {
+        "name": "Prairie Sports & Outdoors",
+        "website": "https://prairiesports.example.com",
+        "category": "retail",
+        "address": "10320 99 Ave, Grande Prairie, AB T8V 0X1",
+        "phone": "(780) 532-5678",
+        "description": "Sporting goods store with e-commerce needs"
+      },
+      "audit": {
+        "sourceUrl": "https://prairiesports.example.com",
+        "finalUrl": "https://prairiesports.example.com",
+        "fetchedAt": "2026-04-24T12:30:00.000Z",
+        "responseMs": 1200,
+        "overallScore": 72,
+        "grade": "C",
+        "designScore": 75,
+        "conversionScore": 68,
+        "technicalScore": 74,
+        "scorecard": [
+          {
+            "label": "Design/UI",
+            "score": 75,
+            "evidence": "2 H1 headings detected"
+          },
+          {
+            "label": "Conversion",
+            "score": 68,
+            "evidence": "2 form element(s) detected"
+          },
+          {
+            "label": "Technical",
+            "score": 74,
+            "evidence": "200 response in 1200ms over HTTPS"
+          }
+        ],
+        "observedSignals": [
+          "Page title found: \"Prairie Sports & Outdoors - Your Local Outdoor Gear Store\"",
+          "Meta description is present",
+          "2 H1 headings found",
+          "Phone number detected",
+          "Email/contact link detected",
+          "Booking/estimate language detected",
+          "Proof language detected"
+        ],
+        "issues": [
+          {
+            "severity": "high",
+            "title": "Primary conversion CTA is weak or not obvious",
+            "evidence": "The scan did not find clear high-intent CTA language like \"get a quote\", \"book now\", or \"request service\".",
+            "recommendation": "Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions."
+          },
+          {
+            "severity": "low",
+            "title": "Some images may be missing alt text",
+            "evidence": "1 image tag appeared to lack alt attributes.",
+            "recommendation": "Add descriptive alt text for accessibility and local SEO context."
+          }
+        ],
+        "recommendations": [
+          {
+            "id": 1,
+            "title": "Conversion-first homepage pass",
+            "description": "Clarify the hero, add a dominant service CTA, strengthen proof, and remove friction from the first action.",
+            "pricing": "$1,500-$3,500",
+            "priority": "first"
+          },
+          {
+            "id": 2,
+            "title": "Lead capture + follow-up system",
+            "description": "Add a quote/request flow, route leads by urgency, and trigger owner/customer follow-up so inquiries do not go cold.",
+            "pricing": "$2,500-$6,500",
+            "priority": "second"
+          },
+          {
+            "id": 3,
+            "title": "Full implementation plan",
+            "description": "Turn the audit into a prioritized build plan covering page structure, local SEO, automation, CRM handoff, and measurement.",
+            "pricing": "$1,500-$4,500",
+            "priority": "third"
+          }
+        ],
+        "implementationEstimate": {
+          "range": "$1,500-$4,500",
+          "basis": "Based on 2 detected issues, current score 72/100, and whether conversion plus automation work is required."
+        }
+      },
+      "email": {
+        "to": "info@prairiesports.example.com",
+        "subject": "Prairie Sports & Outdoors Website Audit - 2 Issues Found",
+        "body": "Subject: Prairie Sports & Outdoors Website Audit - 2 Issues Found\n\nHi there,\n\nI found 2 critical issues on Prairie Sports & Outdoors's website that are likely costing you customers:\n\n🚨 Primary conversion CTA is weak or not obvious:\n   Impact: Lost customers and revenue\n   Fix: Add one dominant above-the-fold CTA and repeat it in sticky/mobile positions.\n\nℹ️ Some images may be missing alt text:\n   Impact: Reduced website effectiveness\n   Fix: Add descriptive alt text for accessibility and local SEO context.\n\n\nBased on similar local businesses we've helped, these fixes typically cost $1,500-$4,500 and can increase conversion by 25-45%.\n\nThe good news? These are fixable, and I've helped several retail businesses in Grande Prairie turn their websites into customer-generating machines.\n\nWould you like me to send you the complete audit report with detailed implementation steps?\n\nBest regards,\nRylee Benson\nOutbound Autonomy\n(587) XXX-XXXX\nowner@outboundautonomy.com\n\n---\nThis is a one-time outreach based on your website's audit results. If you prefer not to receive such communications, please reply with \"UNSUBSCRIBE\".\n",
+        "from_name": "Rylee Benson",
+        "from_email": "owner@outboundautonomy.com",
+        "reply_to": "owner@outboundautonomy.com"
+      },
+      "metadata": {
+        "created_at": "2026-04-24T12:30:40.586045",
+        "audit_score": 72,
+        "issue_count": 2,
+        "high_priority_issues": 1,
+        "pricing_estimate": "$1,500-$4,500",
+        "category": "retail",
+        "estimated_conversion_potential": "Medium (15-25% improvement possible)"
+      }
+    }
+  ],
+  "summary": {
+    "by_category": {
+      "restaurant": 2,
+      "contractor": 1,
+      "retail": 1
+    },
+    "by_score_range": {
+      "A (90-100)": 0,
+      "B (80-89)": 0,
+      "C (70-79)": 1,
+      "D (60-69)": 1,
+      "F (0-59)": 2
+    },
+    "average_pricing_estimate": "$3,000-$6,000 (average)"
+  }
+}

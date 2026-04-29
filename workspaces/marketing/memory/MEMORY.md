@@ -1,2 +1,2 @@
-- Status: drafts pending: 3 (1 blocked — oa-pilot-messaging pending Auditor review); content published this week: none; next deadline: none
+- Status: drafts pending: 5 (1 CRITICAL BLOCKER — oa-pilot-messaging with 4 compliance dependencies); content published this week: none; next deadline: 2026-04-24 21:48 UTC (circular dependency resolution — ~8.5 hours remaining)
 - Note: HEARTBEAT review completed 2026-04-21 — 3 drafts in pipeline: openclaw-thread (ready), spector-insight (ready), oa-pilot-messaging (blocked on Auditor). Brand themes: AI memory persistence, operational automation, dev debugging context.

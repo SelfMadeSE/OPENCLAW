@@ -1,0 +1,771 @@
+{
+  "summary": {
+    "total": 75,
+    "eligible": 39,
+    "disabled": 0,
+    "blocked": 2,
+    "missingRequirements": 34
+  },
+  "eligible": [
+    "agent-dream",
+    "apple-notes",
+    "apple-reminders",
+    "article-writing",
+    "business-writing",
+    "clawhub",
+    "coding-agent",
+    "content-research",
+    "gog",
+    "google-workspace",
+    "healthcheck",
+    "heartbeat-pro",
+    "himalaya",
+    "human-writing",
+    "Market Research Agent",
+    "mcporter",
+    "memory-tiering",
+    "microsoft-foundry",
+    "multi-search-engine",
+    "neural-memory",
+    "node-connect",
+    "openclaw-auto-dream",
+    "pollyreach",
+    "Sales Pipeline Tracker",
+    "sales-mastery",
+    "Self-Improving + Proactive Agent",
+    "seo-competitor-analysis",
+    "session-logs",
+    "skill-creator",
+    "Social Media Scheduler",
+    "SocialPack Multi-Platform Social Media Generator",
+    "taskflow",
+    "taskflow-inbox-triage",
+    "tmux",
+    "video-frames",
+    "weather",
+    "website-seo",
+    "x-search",
+    "xurl"
+  ],
+  "disabled": [],
+  "blocked": [
+    "gh-issues",
+    "github"
+  ],
+  "missingRequirements": [
+    {
+      "name": "1password",
+      "missing": {
+        "bins": [
+          "op"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install 1Password CLI (brew)",
+          "bins": [
+            "op"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "autonomous-research",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "BRAVE_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "npm",
+          "kind": "node",
+          "label": "Install axios (npm)",
+          "bins": [
+            "axios"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bear-notes",
+      "missing": {
+        "bins": [
+          "grizzly"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install grizzly (go)",
+          "bins": [
+            "grizzly"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blogwatcher",
+      "missing": {
+        "bins": [
+          "blogwatcher"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install blogwatcher (go)",
+          "bins": [
+            "blogwatcher"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blucli",
+      "missing": {
+        "bins": [
+          "blu"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install blucli (go)",
+          "bins": [
+            "blu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bluebubbles",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.bluebubbles"
+        ],
+        "os": []
+      },
+      "install": []
+    },
+    {
+      "name": "camsnap",
+      "missing": {
+        "bins": [
+          "camsnap"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install camsnap (brew)",
+          "bins": [
+            "camsnap"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "discord",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.discord.token"
+        ],
+        "os": []
+      },
+      "install": []
+    },
+    {
+      "name": "eightctl",
+      "missing": {
+        "bins": [
+          "eightctl"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install eightctl (go)",
+          "bins": [
+            "eightctl"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gemini",
+      "missing": {
+        "bins": [
+          "gemini"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install Gemini CLI (brew)",
+          "bins": [
+            "gemini"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gifgrep",
+      "missing": {
+        "bins": [
+          "gifgrep"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install gifgrep (brew)",
+          "bins": [
+            "gifgrep"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "goplaces",
+      "missing": {
+        "bins": [
+          "goplaces"
+        ],
+        "anyBins": [],
+        "env": [
+          "GOOGLE_PLACES_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install goplaces (brew)",
+          "bins": [
+            "goplaces"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "imsg",
+      "missing": {
+        "bins": [
+          "imsg"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install imsg (brew)",
+          "bins": [
+            "imsg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "model-usage",
+      "missing": {
+        "bins": [
+          "codexbar"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew-cask",
+          "kind": "brew",
+          "label": "Install CodexBar (brew cask)",
+          "bins": [
+            "codexbar"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nano-pdf",
+      "missing": {
+        "bins": [
+          "nano-pdf"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "uv",
+          "kind": "uv",
+          "label": "Install nano-pdf (uv)",
+          "bins": [
+            "nano-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "notion",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "NOTION_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": []
+    },
+    {
+      "name": "obsidian",
+      "missing": {
+        "bins": [
+          "obsidian-cli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install obsidian-cli (brew)",
+          "bins": [
+            "obsidian-cli"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openai-whisper",
+      "missing": {
+        "bins": [
+          "whisper"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install OpenAI Whisper (brew)",
+          "bins": [
+            "whisper"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openai-whisper-api",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "OPENAI_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install curl (brew)",
+          "bins": [
+            "curl"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openhue",
+      "missing": {
+        "bins": [
+          "openhue"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install OpenHue CLI (brew)",
+          "bins": [
+            "openhue"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "oracle",
+      "missing": {
+        "bins": [
+          "oracle"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "node",
+          "kind": "node",
+          "label": "Install @steipete/oracle (npm)",
+          "bins": [
+            "oracle"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ordercli",
+      "missing": {
+        "bins": [
+          "ordercli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install ordercli (brew)",
+          "bins": [
+            "ordercli"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "peekaboo",
+      "missing": {
+        "bins": [
+          "peekaboo"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install Peekaboo (brew)",
+          "bins": [
+            "peekaboo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sag",
+      "missing": {
+        "bins": [
+          "sag"
+        ],
+        "anyBins": [],
+        "env": [
+          "ELEVENLABS_API_KEY"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install sag (brew)",
+          "bins": [
+            "sag"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sherpa-onnx-tts",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "SHERPA_ONNX_RUNTIME_DIR",
+          "SHERPA_ONNX_MODEL_DIR"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "download-runtime-macos",
+          "kind": "download",
+          "label": "Download sherpa-onnx runtime (macOS)",
+          "bins": []
+        },
+        {
+          "id": "download-model-lessac",
+          "kind": "download",
+          "label": "Download Piper en_US lessac (high)",
+          "bins": []
+        }
+      ]
+    },
+    {
+      "name": "slack",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "channels.slack"
+        ],
+        "os": []
+      },
+      "install": []
+    },
+    {
+      "name": "songsee",
+      "missing": {
+        "bins": [
+          "songsee"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install songsee (brew)",
+          "bins": [
+            "songsee"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sonoscli",
+      "missing": {
+        "bins": [
+          "sonos"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install sonoscli (go)",
+          "bins": [
+            "sonos"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spotify-player",
+      "missing": {
+        "bins": [],
+        "anyBins": [
+          "spogo",
+          "spotify_player"
+        ],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install spogo (brew)",
+          "bins": [
+            "spogo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "summarize",
+      "missing": {
+        "bins": [
+          "summarize"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install summarize (brew)",
+          "bins": [
+            "summarize"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "things-mac",
+      "missing": {
+        "bins": [
+          "things"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "go",
+          "kind": "go",
+          "label": "Install things3-cli (go)",
+          "bins": [
+            "things"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "trello",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [
+          "TRELLO_API_KEY",
+          "TRELLO_TOKEN"
+        ],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install jq (brew)",
+          "bins": [
+            "jq"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "voice-call",
+      "missing": {
+        "bins": [],
+        "anyBins": [],
+        "env": [],
+        "config": [
+          "plugins.entries.voice-call.enabled"
+        ],
+        "os": []
+      },
+      "install": []
+    },
+    {
+      "name": "wacli",
+      "missing": {
+        "bins": [
+          "wacli"
+        ],
+        "anyBins": [],
+        "env": [],
+        "config": [],
+        "os": []
+      },
+      "install": [
+        {
+          "id": "brew",
+          "kind": "brew",
+          "label": "Install wacli (brew)",
+          "bins": [
+            "wacli"
+          ]
+        }
+      ]
+    }
+  ]
+}

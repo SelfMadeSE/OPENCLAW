@@ -1,0 +1,632 @@
+{
+  "generated_at": "2026-04-26T18:07:49.744582+00:00",
+  "sources": {
+    "jobs": "/Users/ryleebenson/.openclaw/cron/jobs.json",
+    "gateway_err": "/Users/ryleebenson/.openclaw/logs/gateway.err.log",
+    "crm": "/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite",
+    "workspaces": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces"
+  },
+  "cron": {
+    "total": 18,
+    "enabled": 16,
+    "by_status": {
+      "ok": 11,
+      "error": 7
+    },
+    "active": [
+      {
+        "id": "381d081b-7c33-438e-8831-79c6de82f50e",
+        "name": "Memory Dreaming Promotion",
+        "agent": "main",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "not-requested"
+      },
+      {
+        "id": "9f89293b-c84e-4d53-8f65-d92b3d790a1d",
+        "name": "Daily Outbound Autonomy Audit-Funnel Content",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 10 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2feb992a-b776-42c9-86b1-e443515ed000",
+        "name": "Weekly Outbound Autonomy Revenue Audit",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 14 * * 5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly OA Marketing Review",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly OA Outreach Review",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly OA Media Review",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly OA Audit Review",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "95e59f59-c103-4f0b-bc61-fb1986460d9b",
+        "name": "Morning Mission Snapshot",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 8 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "dfa29b48-e80c-4eab-850d-f9120221e3ef",
+        "name": "Hourly Prospect Research",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "5 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "210d6add-b9d4-45f3-8c90-b77191e95006",
+        "name": "Hourly Outreach Draft Queue",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "20 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "440c356d-4ac1-4ca3-92d3-84d814bffd31",
+        "name": "Hourly Agent Roundtable Audit",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      }
+    ],
+    "failed": [
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly OA Marketing Review",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly OA Outreach Review",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly OA Media Review",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly OA Audit Review",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "error",
+        "last_error": "GatewayDrainingError: Gateway is draining for restart; new tasks are not accepted",
+        "delivery": "unknown"
+      }
+    ]
+  },
+  "crm": {
+    "exists": true,
+    "stages": {
+      "archived": 5,
+      "outreach_drafted": 4,
+      "researched": 1,
+      "scored": 4
+    },
+    "recent_leads": [
+      {
+        "id": "d192cf575884",
+        "name": "SurgeForecast",
+        "type": "web-design",
+        "stage": "scored",
+        "score": 0,
+        "updated_at": "2026-04-26T18:04:39.167854+00:00"
+      },
+      {
+        "id": "315f28b0e620",
+        "name": "SkillCatalog",
+        "type": "web-design",
+        "stage": "scored",
+        "score": 0,
+        "updated_at": "2026-04-26T18:04:39.145151+00:00"
+      },
+      {
+        "id": "42edd05bfa3c",
+        "name": "Joe's Pizza Shop",
+        "type": "web-design",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-26T18:04:39.140100+00:00"
+      },
+      {
+        "id": "2c7aca0f9ca5",
+        "name": "Val Sopi",
+        "type": "founder",
+        "stage": "outreach_drafted",
+        "score": 57,
+        "updated_at": "2026-04-26T18:04:22.763845+00:00"
+      },
+      {
+        "id": "c01e9dc7a1de",
+        "name": "ProtoWall",
+        "type": "company",
+        "stage": "scored",
+        "score": 56,
+        "updated_at": "2026-04-26T17:19:36.740100+00:00"
+      },
+      {
+        "id": "76075c574957",
+        "name": "--name",
+        "type": "Mountain View HVAC",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-26T17:19:24.739656+00:00"
+      },
+      {
+        "id": "89f5b4ff40e5",
+        "name": "Libredesk",
+        "type": "web-design",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-26T17:19:24.735390+00:00"
+      },
+      {
+        "id": "b407ec1a5f8c",
+        "name": "--name",
+        "type": "Ben Dansby",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-26T17:19:24.735014+00:00"
+      },
+      {
+        "id": "2ae4e291902c",
+        "name": "BeatsByRylee Promo",
+        "type": "beat-promotion",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-26T17:19:24.734745+00:00"
+      },
+      {
+        "id": "6ab99d5ca78e",
+        "name": "--name",
+        "type": "Libredesk",
+        "stage": "archived",
+        "score": 0,
+        "updated_at": "2026-04-26T17:19:24.733771+00:00"
+      }
+    ],
+    "recent_actions": [
+      {
+        "lead_id": "42edd05bfa3c",
+        "agent": "outreach",
+        "action_type": "archive",
+        "description": "Archiving Joe's Pizza Shop \u2014 placeholder lead, no real contact info or research. Created Apr 18, never researched. Not actionable.",
+        "result": "",
+        "created_at": "2026-04-26T18:04:34.701654+00:00"
+      },
+      {
+        "lead_id": "2c7aca0f9ca5",
+        "agent": "outreach",
+        "action_type": "outreach_drafted",
+        "description": "Audit-led outreach draft completed for Val Sopi (Blogmaker / Handmade Spaceships). Audit observation: handmadespaceships.com has zero visual portfolio, lists sunsetted products, no lead capture CTA. Full 4-email sequence saved to artifacts/outreach-drafts/2026-06-26-val-sopi-handmade-spaceships-audit-draft.md",
+        "result": "",
+        "created_at": "2026-04-26T18:04:31.138638+00:00"
+      },
+      {
+        "lead_id": "89f5b4ff40e5",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 archived: Libredesk - not ICP. Open source helpdesk, not local service business.",
+        "result": "",
+        "created_at": "2026-04-26T17:19:24.740328+00:00"
+      },
+      {
+        "lead_id": "76075c574957",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "prospect \u2192 archived: Dirty name field (--name / Mountain View HVAC). Clean duplicate of Mountain View Mechanical (fdc4a754e86d).",
+        "result": "",
+        "created_at": "2026-04-26T17:19:24.739810+00:00"
+      },
+      {
+        "lead_id": "b407ec1a5f8c",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "researched \u2192 archived: Dirty placeholder name (--name / Ben Dansby). Contact info preserved but not ICP.",
+        "result": "",
+        "created_at": "2026-04-26T17:19:24.735524+00:00"
+      },
+      {
+        "lead_id": "2ae4e291902c",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "prospect \u2192 archived: Out of scope: beat-promotion is not Outbound Autonomy ICP per mission lock",
+        "result": "",
+        "created_at": "2026-04-26T17:19:24.734948+00:00"
+      },
+      {
+        "lead_id": "6ab99d5ca78e",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "prospect \u2192 archived: Dirty placeholder data (name=--name, type=Libredesk). No real prospect.",
+        "result": "",
+        "created_at": "2026-04-26T17:19:24.733942+00:00"
+      },
+      {
+        "lead_id": "fdc4a754e86d",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "scored \u2192 outreach_drafted: Audit-led outreach draft completed and saved to workspaces/outreach/artifacts/outreach-drafts/2026-04-26-mountain-view-mechanical-audit-draft.md",
+        "result": "",
+        "created_at": "2026-04-26T16:08:47.306464+00:00"
+      },
+      {
+        "lead_id": "fdc4a754e86d",
+        "agent": "outreach",
+        "action_type": "audit_research",
+        "description": "Verified current run issue: Google listing ranks, but https://www.mvmheatingandcooling.com/ shows a public unavailable page. Drafted audit-led outreach and saved artifact at workspaces/outreach/artifacts/outreach-drafts/2026-04-26-mountain-view-mechanical-audit-draft.md",
+        "result": "verified",
+        "created_at": "2026-04-26T16:08:41.063125+00:00"
+      },
+      {
+        "lead_id": "rosen--schneider-20260424-121214",
+        "agent": "--action-type",
+        "action_type": "outreach_draft",
+        "description": "--description",
+        "result": "",
+        "created_at": "2026-04-24T18:38:00.156874+00:00"
+      }
+    ]
+  },
+  "artifacts": {
+    "recent": [
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/receptionist-kill-cleanup-2026-04-26.md",
+        "mtime": "2026-04-26T18:07:48.500553+00:00",
+        "size": 10374
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/receptionist-kill-cross-agent-sweep-2026-04-26.md",
+        "mtime": "2026-04-26T18:07:31.085239+00:00",
+        "size": 24052
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/receptionist-kill-cleanup-2026-04-26.md",
+        "mtime": "2026-04-26T18:06:59.440058+00:00",
+        "size": 11358
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/linkedin-audit-funnel-content-strategy-2026-04-26.md",
+        "mtime": "2026-04-26T18:06:53.904842+00:00",
+        "size": 20001
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/oa-roundtable-r1-2026-04-23.md",
+        "mtime": "2026-04-26T18:06:48.977699+00:00",
+        "size": 10567
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/oa-roundtable-r3-2026-04-23.md",
+        "mtime": "2026-04-26T18:06:48.977698+00:00",
+        "size": 11397
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/oa-roundtable-r2-2026-04-23.md",
+        "mtime": "2026-04-26T18:06:48.977695+00:00",
+        "size": 18665
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/audit-to-proposal-bridge-2026-04-26.md",
+        "mtime": "2026-04-26T18:06:48.601906+00:00",
+        "size": 10823
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/receptionist-kill-cleanup-2026-04-26.md",
+        "mtime": "2026-04-26T18:06:41.221022+00:00",
+        "size": 3763
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-verification-2026-04-22.md",
+        "mtime": "2026-04-26T18:06:33.751137+00:00",
+        "size": 681
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-state-reconciliation-2026-04-23.md",
+        "mtime": "2026-04-26T18:06:33.751050+00:00",
+        "size": 2823
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/mission-006-deployment-status.md",
+        "mtime": "2026-04-26T18:06:24.592619+00:00",
+        "size": 3542
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/mission-006/lead-list-colorado-front-range-dental.md",
+        "mtime": "2026-04-26T18:06:24.552954+00:00",
+        "size": 2477
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/audit-reports/legal-risk.md",
+        "mtime": "2026-04-26T18:06:24.552896+00:00",
+        "size": 9764
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/mission-006-outreach-sent.md",
+        "mtime": "2026-04-26T18:06:24.552884+00:00",
+        "size": 2326
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/mission-006/cold-email-template.md",
+        "mtime": "2026-04-26T18:06:24.552793+00:00",
+        "size": 961
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/outbound-autonomy/messaging-framework-v2-audit-led-2026-04-26.md",
+        "mtime": "2026-04-26T18:06:14.399903+00:00",
+        "size": 7503
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/outbound-autonomy/messaging-framework.md",
+        "mtime": "2026-04-26T18:06:14.386456+00:00",
+        "size": 4763
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/dns-config.md",
+        "mtime": "2026-04-26T18:06:08.870592+00:00",
+        "size": 3870
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/gtm-outboundautonomy/03-influencer-seeding-plan.md",
+        "mtime": "2026-04-26T18:06:07.044453+00:00",
+        "size": 9806
+      }
+    ]
+  },
+  "logs": {
+    "window_lines": 500,
+    "counts": {
+      "n8n_404": 0,
+      "elephant_model": 0,
+      "memory_no_vectors": 0,
+      "bootstrap_truncated": 0,
+      "incomplete_turn": 0,
+      "telegram_socket": 0
+    },
+    "examples": {}
+  }
+}

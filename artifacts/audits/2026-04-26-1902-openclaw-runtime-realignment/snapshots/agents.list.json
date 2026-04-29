@@ -1,0 +1,72 @@
+[
+  {
+    "id": "orchestrator",
+    "name": "Orchestrator",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/orchestrator/agent",
+    "model": "deepseek/deepseek-v4-pro",
+    "bindings": 0,
+    "isDefault": true,
+    "routes": [
+      "default (no explicit rules)"
+    ],
+    "providers": [
+      "Telegram default: configured"
+    ]
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/engineering/agent",
+    "model": "deepseek/deepseek-v4-pro",
+    "bindings": 0,
+    "isDefault": false
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/marketing/agent",
+    "model": "deepseek/deepseek-v4-flash",
+    "bindings": 0,
+    "isDefault": false
+  },
+  {
+    "id": "outreach",
+    "name": "Outreach",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/outreach/agent",
+    "model": "deepseek/deepseek-v4-flash",
+    "bindings": 0,
+    "isDefault": false
+  },
+  {
+    "id": "creative",
+    "name": "Creative",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/creative/agent",
+    "model": "deepseek/deepseek-v4-flash",
+    "bindings": 0,
+    "isDefault": false
+  },
+  {
+    "id": "media",
+    "name": "Media",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/media",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/media/agent",
+    "model": "deepseek/deepseek-v4-flash",
+    "bindings": 0,
+    "isDefault": false
+  },
+  {
+    "id": "auditor",
+    "name": "Auditor",
+    "workspace": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor",
+    "agentDir": "/Users/ryleebenson/.openclaw/agents/auditor/agent",
+    "model": "deepseek/deepseek-v4-flash",
+    "bindings": 0,
+    "isDefault": false
+  }
+]
+[31m[bedrock-discovery][39m [33mFailed to discover Bedrock models[39m

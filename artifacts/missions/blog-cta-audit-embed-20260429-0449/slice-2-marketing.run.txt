@@ -1,0 +1,70 @@
+          "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:52 MDT] MISSION blog-cta-audit-embed-20260429-0449 \\u2014 slice 2/3.\\nLead is NEXUS. Goal: Embed audit-funnel CTAs into all 12 live blog posts and deploy the 12th post (/blog/automation-for-service-businesses) to convert blog traffic into audit-form submissions..\\nYour task: Read all 12 blog posts from /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/app/blog/ (or wherever the source is) or curl their live versions. For each post where an audit CTA is missing, write the exact CTA copy to insert \\u2014 format: a 2-3 sentence inline CTA paragraph that naturally follows the article's topic and leads to 'Get a free website audit at outboundautonomy.com/try' or 'See what your site scores: outboundautonomy.com/sample-report'. Write all CTA copy to artifacts/missions/blog-cta-audit-embed-20260429-0449/pulse-cta-copy.md with: blog slug, current CTA status (present/missing), proposed CTA text, and recommended insertion point (e.g. 'after paragraph 4' or 'before conclusion').\\nWrite your output to: artifacts/missions/blog-cta-audit-embed-20260429-0449/pulse-cta-copy.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/blog-cta-audit-embed-20260429-0449/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md: 4536 raw -> 3825 injected (~16% removed).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "STATE: PROCEED — 6 inline CTAs identified and drafted for insertion into blog post TSX components. 6 posts already have inline CTAs and need no changes. All 12 have bottom CTAs via the page template.",
+      "finalAssistantRawText": "STATE: PROCEED — 6 inline CTAs identified and drafted for insertion into blog post TSX components. 6 posts already have inline CTAs and need no changes. All 12 have bottom CTAs via the page template.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 19,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

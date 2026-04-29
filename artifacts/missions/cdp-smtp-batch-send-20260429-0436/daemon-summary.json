@@ -1,0 +1,24 @@
+{
+  "mission_id": "cdp-smtp-batch-send-20260429-0436",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-results.md"
+    },
+    {
+      "slice": 2,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "forge-funnel.md"
+    },
+    {
+      "slice": 3,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T10:43:49.121796+00:00"
+}

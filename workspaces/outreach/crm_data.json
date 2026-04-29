@@ -1,810 +1,1489 @@
 {
   "prospects": {
-    "scaleflow-automation-20260423-140730": {
-      "businessName": "ScaleFlow Automation",
-      "niche": "Marketing Automation & Outbound",
-      "website": "https://scaleflow.io",
-      "source": "LinkedIn Sales Navigator (search: marketing automation services)",
-      "description": "B2B marketing automation platform that helps companies scale their outbound sales efforts. They specialize in AI-powered email sequences, lead scoring, and automated prospecting tools for mid-market SaaS companies.",
-      "painPoints": [
-        "Currently using manual outreach processes that dont scale beyond 3 team members",
-        "Need integration between their existing CRM (HubSpot) and custom automation tools",
-        "Want to build an autonomous outbound system that can handle 1000+ prospects per month",
-        "Lacking expertise in AI-powered personalization at scale",
-        "Need help with deliverability optimization and spam compliance"
-      ],
+    "denver-concrete-pros-20260429-104853": {
+      "businessName": "Denver Concrete Pros",
+      "niche": "Concrete Contractors / Flatwork",
+      "website": "https://www.denverconcretepros.com",
+      "source": "web_research",
+      "description": "Denver/Boulder concrete flatwork contractor (driveways, patios, sidewalks, foundations). Website has SEVERE content duplication - entire homepage sections repeated back-to-back verbatim. No online booking or instant quote tool. Phone-only contact (720-677-8930). No email visible anywhere. No contact form. No portfolio/gallery of past concrete projects despite claiming to be Rated #1. No pricing info. No blog or SEO content. Thin service descriptions. Content appears AI-generated. No testimonials embedded despite claiming 5-star service.",
+      "serviceArea": "Denver Metro, Boulder, CO",
+      "phone": "720-677-8930",
+      "email": "unverified",
+      "opportunityScore": 84,
+      "funnelStage": "prospecting",
+      "prospect_id": "denver-concrete-pros-20260429-104853",
+      "created_at": "2026-04-29T10:48:53.056027",
+      "updated_at": "2026-04-29T10:50:36.034670",
+      "status": "new",
       "contact": {
-        "email": "founder@scaleflow.io",
-        "linkedin": "https://linkedin.com/in/sarah-chen-scaleflow",
-        "method": "Direct email outreach with personalization",
         "verification_status": {
-          "website": {
+          "phone": {
             "verified": true,
-            "verified_at": "2026-04-23T14:08:25.724314"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "linkedin": {
+            "verified_at": "2026-04-29T10:50:36.034667"
+          }
+        }
+      }
+    },
+    "denver-appliance-repair-pros-20260429-104853": {
+      "businessName": "Denver Appliance Repair Pros",
+      "niche": "Appliance Repair Services",
+      "website": "https://denverappliancerepairpros.com",
+      "source": "web_research",
+      "description": "Denver-area appliance repair service. Website uses referral/aggregator model (techs we connect you with). No email visible on site. Phone-only contact (970-486-8715, area code suggests not Denver-local). No online scheduling despite claiming same-day service. No pricing info. Thin content with no portfolio, reviews, or before/after. No about page with company details. Generic stock-feel copy.",
+      "serviceArea": "Denver, CO",
+      "phone": "(970) 486-8715",
+      "email": "unverified",
+      "opportunityScore": 68,
+      "funnelStage": "prospecting",
+      "prospect_id": "denver-appliance-repair-pros-20260429-104853",
+      "created_at": "2026-04-29T10:48:53.062228",
+      "updated_at": "2026-04-29T10:50:36.034083",
+      "status": "new",
+      "contact": {
+        "verification_status": {
+          "phone": {
             "verified": true,
-            "verified_at": "2026-04-23T14:08:30.514240"
+            "verified_at": "2026-04-29T10:50:36.034074"
+          }
+        }
+      }
+    },
+    "denver-paint-co-20260429-104923": {
+      "businessName": "Denver Paint Co",
+      "niche": "Painting Services / Home Exteriors",
+      "website": "https://www.denverpaintco.com",
+      "source": "web_research",
+      "description": "Denver painting company offering interior, exterior, residential, and commercial painting. Website uses thin AI-generated content with generic descriptions. No portfolio/gallery showing past work. No online booking or instant quote tool. Phone-only contact (720-807-7543). Contact form exists but no email disclosed. No pricing info. No testimonials displayed. No service area pages. SEO content is generic and unhelpful.",
+      "serviceArea": "Denver Metro, CO",
+      "phone": "720-807-7543",
+      "email": "unverified",
+      "opportunityScore": 72,
+      "funnelStage": "prospecting",
+      "prospect_id": "denver-paint-co-20260429-104923",
+      "created_at": "2026-04-29T10:49:23.176030",
+      "updated_at": "2026-04-29T10:50:24.163459",
+      "status": "new",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T10:50:24.163449"
+          }
+        }
+      }
+    },
+    "danny-joes-lock-and-key-20260429-104923": {
+      "businessName": "Danny Joe's Lock and Key",
+      "niche": "Locksmith Services",
+      "website": "https://dannyjoeslockandkey.com",
+      "source": "web_research",
+      "description": "Denver-area locksmith (residential, commercial, automotive, emergency). GoDaddy Website Builder site with heavy duplicated content throughout. Contact page returns 404 error. Phone-only contact (720-708-9534). No email visible. No online scheduling. No quote form. Content appears AI-generated with repetitive section headers. Corporate template feel. No service-specific landing pages. Gallery exists but not connected to services. No service area pages.",
+      "serviceArea": "Denver Metro, CO",
+      "phone": "720-708-9534",
+      "email": "unverified",
+      "opportunityScore": 76,
+      "funnelStage": "prospecting",
+      "prospect_id": "danny-joes-lock-and-key-20260429-104923",
+      "created_at": "2026-04-29T10:49:23.176419",
+      "updated_at": "2026-04-29T10:50:36.034423",
+      "status": "new",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T10:50:36.034420"
           }
         }
       },
-      "outreachAngle": "They explicitly need Outbound Autonomy expertise - perfect match for building scalable outbound systems. Can offer both the automation development and strategic consulting.",
-      "priority": "HIGH",
-      "revenuePotential": "Initial setup: $15K-25K, ongoing retainer: $3K-5K/month for maintenance and optimization",
-      "prospect_id": "scaleflow-automation-20260423-140730",
-      "created_at": "2026-04-23T14:07:30.527545",
-      "updated_at": "2026-04-23T20:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T20:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
-        "contactMethod": "email",
-        "notes": "Personalized outreach email drafted highlighting Outbound Autonomy expertise for scaling their outbound sales efforts"
-      }
-    },
-    "nexus-creative-studio-20260423-140737": {
-      "businessName": "Nexus Creative Studio",
-      "niche": "Creative Branding & Web Design",
-      "website": "https://nexuscreative.studio",
-      "source": "Dribbble (design portfolio showcase)",
-      "description": "Premium creative agency specializing in brand identity, web design, and digital experiences for high-growth startups and established brands. They work with venture-backed companies and have a portfolio featuring AI/tech clients.",
-      "painPoints": [
-        "Growing rapidly (3 new clients in past month) and need to scale their design team",
-        "Need help with complex web animations and interactive UI components",
-        "Want to establish their own brand identity to match client work quality",
-        "Looking for automation tools to streamline their design-to-development workflow",
-        "Need expert help with Figma-to-code conversion for client projects"
-      ],
-      "contact": {
-        "email": "hello@nexuscreative.studio",
-        "instagram": "@nexuscreative",
-        "method": "Portfolio review and collaboration proposal",
-        "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:32.951310"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "instagram": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:37.480904"
-          }
+      "email_history": [
+        {
+          "action": "draft_created",
+          "timestamp": "2026-04-29T11:21:55Z",
+          "type": "outreach_draft",
+          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
+          "status": "blocked_send",
+          "block_reason": "email_attempts_ledger_not_ready",
+          "subject": "Audit-led outreach draft — Danny Joe's Lock and Key"
         }
-      },
-      "outreachAngle": "Theyre actively looking to scale and need both creative expertise and web automation help. Can offer high-value creative services plus workflow automation.",
-      "priority": "HIGH",
-      "revenuePotential": "Brand identity project: $8K-12K, web development projects: $15K-30K, automation setup: $5K-8K",
-      "prospect_id": "nexus-creative-studio-20260423-140737",
-      "created_at": "2026-04-23T14:07:37.458006",
-      "updated_at": "2026-04-23T20:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T20:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
-        "contactMethod": "email",
-        "notes": "Partnership proposal drafted offering technical development and automation services to complement their creative expertise"
-      }
-    },
-    "autosync-solutions-20260423-140743": {
-      "businessName": "AutoSync Solutions",
-      "niche": "Business Process Automation",
-      "website": "https://autosyncsolutions.com",
-      "source": "Clutch.co (automation services directory)",
-      "description": "Business process automation company that helps enterprises streamline their operations through custom workflow automation, API integrations, and robotic process automation (RPA). They serve manufacturing, logistics, and healthcare sectors.",
-      "painPoints": [
-        "Clients demanding more sophisticated automation beyond their current Zapier-based workflows",
-        "Need to build custom API integrations for legacy systems",
-        "Looking to expand into AI-powered process optimization",
-        "Need help with complex workflow automation that requires custom development",
-        "Want to create automated reporting and dashboard systems for enterprise clients"
       ],
+      "last_contacted": "2026-04-29T11:21:55Z",
+      "stage": "drafted"
+    },
+    "front-range-appliance-20260429-104923": {
+      "businessName": "Front Range Appliance",
+      "niche": "Used Appliances / Appliance Repair",
+      "website": "https://frontrangeappliance.com",
+      "source": "web_research",
+      "description": "Thornton-based used appliance and repair business. Website is extremely thin with repetitive content (same paragraphs repeated 5+ times). No contact form on homepage. No email visible. No online booking. No pricing. Content mentions only Thornton appliance repair despite claiming service from Littleton to Fort Collins. 90-day warranty claim used repeatedly as filler. No portfolio. No before/after photos. No blog or SEO content. Poor site architecture with no navigation depth. Phone number not visible on homepage.",
+      "serviceArea": "Denver Metro, Thornton, Littleton, Fort Collins, Greeley, Aurora, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 82,
+      "funnelStage": "prospecting",
+      "prospect_id": "front-range-appliance-20260429-104923",
+      "created_at": "2026-04-29T10:49:23.176696",
+      "updated_at": "2026-04-29T10:50:36.034883",
+      "status": "new",
       "contact": {
-        "email": "solutions@autosyncsolutions.com",
-        "phone": "+1-555-0123",
-        "method": "Technical consultation and capabilities presentation",
         "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:39.538942"
-          },
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:41.483309"
-          },
           "phone": {
             "verified": false,
             "verified_at": null
           }
         }
-      },
-      "outreachAngle": "They need advanced automation expertise that goes beyond standard tools. Perfect for custom web automation and API integration services.",
-      "priority": "MEDIUM-HIGH",
-      "revenuePotential": "Custom API integration: $10K-20K, RPA development: $25K-40K, ongoing support: $2K-4K/month",
-      "prospect_id": "autosync-solutions-20260423-140743",
-      "created_at": "2026-04-23T14:07:43.933923",
-      "updated_at": "2026-04-23T21:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T21:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-new-prospects-drafts.md",
-        "contactMethod": "email",
-        "notes": "Advanced automation partnership email drafted focusing on custom API integration and RPA development beyond standard tools"
       }
     },
-    "pixelforge-digital-20260423-140750": {
-      "businessName": "PixelForge Digital",
-      "niche": "Web Development & Creative Automation",
-      "website": "https://pixelforge.digital",
-      "source": "Behance (featured creative agency)",
-      "description": "Full-service digital agency that combines creative design with technical development expertise. They specialize in creating visually stunning websites with advanced functionality, e-commerce platforms, and automated marketing systems.",
-      "painPoints": [
-        "Need to build more complex web applications beyond their current WordPress expertise",
-        "Clients requesting advanced automation features in their websites (lead scoring, personalized content)",
-        "Looking to implement headless CMS solutions for better performance",
-        "Need help with integrating marketing automation platforms (HubSpot, Marketo)",
-        "Want to create custom web applications with real-time data processing"
-      ],
-      "contact": {
-        "email": "info@pixelforge.digital",
-        "linkedin": "https://linkedin.com/company/pixelforge-digital",
-        "method": "Technical partnership proposal",
-        "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:46.351855"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "linkedin": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:51.319748"
-          }
-        }
-      },
-      "outreachAngle": "They need both creative vision and technical expertise to deliver complex web projects. Can provide the web development and automation integration theyre missing.",
-      "priority": "HIGH",
-      "revenuePotential": "Custom web application: $20K-50K, automation integration: $8K-15K, ongoing development support: $3K-6K/month",
-      "prospect_id": "pixelforge-digital-20260423-140750",
-      "created_at": "2026-04-23T14:07:50.546284",
-      "updated_at": "2026-04-23T20:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T20:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-crm-drafts.md",
-        "contactMethod": "email",
-        "notes": "Technical partnership proposal drafted offering advanced web development and automation integration services"
-      }
+    "denver-roof-pros-20260429-102231": {
+      "businessName": "Denver Roof Pros",
+      "niche": "Roofing / Home Exteriors",
+      "website": "https://denverroofpros.com",
+      "source": "website_research",
+      "description": "Denver roofing, painting, and deck company. Website is extremely heavy (750KB+ content), slow load potential. Multiple brand entities (Roof Pros, Paint Pros, Deck Pros) on one domain. Video autoplay, complex layout. Opportunities: performance optimization, simplify navigation, separate brand pages, improve mobile experience.",
+      "funnelStage": "prospecting",
+      "status": "new",
+      "prospect_id": "denver-roof-pros-20260429-102231",
+      "created_at": "2026-04-29T10:22:31.694472",
+      "updated_at": "2026-04-29T10:22:31.694473"
     },
-    "flowstate-analytics-20260423-140757": {
-      "businessName": "FlowState Analytics",
-      "niche": "Data Visualization & Web Analytics",
-      "website": "https://flowstateanalytics.com",
-      "source": "Product Hunt (analytics tool launch)",
-      "description": "Analytics and data visualization startup that helps businesses understand customer behavior through interactive dashboards and real-time reporting. They focus on making complex data accessible and actionable for non-technical stakeholders.",
-      "painPoints": [
-        "Need to build a more sophisticated web-based dashboard for their analytics platform",
-        "Looking to create interactive data visualizations that clients can embed in their own sites",
-        "Want to automate report generation and data delivery systems",
-        "Need help with API integrations to pull data from various sources",
-        "Looking to create a white-label version of their platform for agency partners"
-      ],
+    "mile-high-auto-glass-20260429-102807": {
+      "businessName": "Mile High Auto Glass",
+      "niche": "Auto Glass Repair / Windshield Replacement",
+      "website": "https://www.milehighautoglass.com",
+      "source": "web_research",
+      "description": "Denver-based mobile auto glass repair and windshield replacement serving Front Range. Well-designed website with good content depth but CRITICAL conversion gaps: no email address visible on site (phone/text only at 303-241-8079), no online booking despite 'Schedule at Your Convenience' claim, no instant quote tool, no blog/SEO content, no before/after photos, no pricing info. All lead generation bottlenecks through phone call or text message only — no email capture for follow-up.",
+      "serviceArea": "Denver Metro, Aurora, Lakewood, Boulder, Colorado Springs, Front Range, CO",
+      "phone": "(303) 241-8079",
+      "email": "unverified",
+      "opportunityScore": 75,
+      "funnelStage": "prospecting",
       "contact": {
-        "email": "partnerships@flowstateanalytics.com",
-        "twitter": "@flowstatehq",
-        "method": "Integration partnership discussion",
+        "phone_verified": true,
+        "email_verified": false,
         "verification_status": {
-          "website": {
+          "phone": {
             "verified": true,
-            "verified_at": "2026-04-23T14:08:53.962138"
+            "verified_at": "2026-04-29T01:23:00Z"
           },
           "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:56.034026"
-          },
-          "twitter": {
-            "verified": true,
-            "verified_at": "2026-04-23T14:08:58.110763"
-          }
-        }
-      },
-      "outreachAngle": "They need advanced web development and data visualization expertise. Can help build their dashboard platform and create automation systems for data processing.",
-      "priority": "MEDIUM-HIGH",
-      "revenuePotential": "Dashboard development: $15K-30K, API integration: $8K-12K, automation systems: $10K-18K, equity partnership potential",
-      "prospect_id": "flowstate-analytics-20260423-140757",
-      "created_at": "2026-04-23T14:07:57.291437",
-      "updated_at": "2026-04-23T21:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T21:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-new-prospects-drafts.md",
-        "contactMethod": "email",
-        "notes": "Technical partnership proposal drafted offering advanced dashboard development and data automation with equity potential"
-      }
-    },
-    "aurora-e-commerce-solutions-20260423-150558": {
-      "businessName": "Aurora E-commerce Solutions",
-      "niche": "E-commerce Automation & Growth",
-      "website": "https://auroraecommerce.com",
-      "source": "TechCrunch (e-commerce automation funding news)",
-      "description": "Fast-growing e-commerce platform that helps D2C brands automate their inventory management, customer service, and marketing campaigns. Recently raised Series A to expand their automation capabilities.",
-      "painPoints": [
-        "Need to build custom outbound sequences for prospecting new D2C brands",
-        "Looking to automate their customer onboarding process",
-        "Need integration between multiple e-commerce platforms and marketing tools",
-        "Want to create personalized marketing automation at scale",
-        "Need help with API development for third-party integrations"
-      ],
-      "contact": {
-        "email": " partnerships@auroraecommerce.com",
-        "linkedin": "https://linkedin.com/in/maria-rodriguez-aurora",
-        "method": "Partnership proposal for automation services",
-        "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T15:06:24.562317"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "linkedin": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "prospect_id": "aurora-e-commerce-solutions-20260423-150558",
-      "created_at": "2026-04-23T15:05:58.531767",
-      "updated_at": "2026-04-23T21:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T21:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-new-prospects-drafts.md",
-        "contactMethod": "email",
-        "notes": "Growth automation partnership email drafted for Series A funded company focusing on custom sequences and API development"
-      }
-    },
-    "nexusflow-ai-20260423-150605": {
-      "businessName": "NexusFlow AI",
-      "niche": "AI-Powered Sales Automation",
-      "website": "https://nexusflow.ai",
-      "source": "Product Hunt (AI sales tools category)",
-      "description": "AI startup developing intelligent sales automation tools that help B2B companies automate their lead qualification, follow-up sequences, and sales forecasting. Their platform uses machine learning to predict deal outcomes.",
-      "painPoints": [
-        "Need to build a sophisticated web dashboard for their AI analytics",
-        "Looking to create custom integrations with popular CRM platforms",
-        "Want to automate their own outbound sales process to demo their platform",
-        "Need help with creative web design to showcase their AI capabilities",
-        "Looking to develop API endpoints for their automation tools"
-      ],
-      "contact": {
-        "email": "founder@nexusflow.ai",
-        "twitter": "@nexusflowai",
-        "method": "Technical partnership and development services",
-        "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T15:06:43.516986"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "twitter": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "nexusflow-ai-20260423-150605",
-      "created_at": "2026-04-23T15:06:05.033502",
-      "updated_at": "2026-04-23T22:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T22:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Technical partnership proposal drafted for AI startup focusing on dashboard development, API integrations, and automation systems with estimated value of $20K-50K"
-      }
-    },
-    "creativesync-agency-20260423-150610": {
-      "businessName": "CreativeSync Agency",
-      "niche": "Creative Marketing & Web Development",
-      "website": "https://creativesync.agency",
-      "source": "Dribbble (featured design agency portfolio)",
-      "description": "Full-service creative agency specializing in brand identity, web design, and digital marketing for technology companies. They have a strong portfolio but need technical expertise to handle complex web projects.",
-      "painPoints": [
-        "Need to build advanced web applications with complex functionality",
-        "Looking to automate their client onboarding and project management workflows",
-        "Want to create interactive websites with real-time data integration",
-        "Need help with API integrations for marketing automation platforms",
-        "Looking to develop custom tools for their design team"
-      ],
-      "contact": {
-        "email": "hello@creativesync.agency",
-        "instagram": "@creativesync_agency",
-        "method": "Technical partnership proposal",
-        "verification_status": {
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-23T15:07:12.166129"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "instagram": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "creativesync-agency-20260423-150610",
-      "created_at": "2026-04-23T15:06:10.816990",
-      "updated_at": "2026-04-23T15:07:23.267042",
+      "prospect_id": "mile-high-auto-glass-20260429-102807",
+      "created_at": "2026-04-29T10:28:07.740382",
+      "updated_at": "2026-04-29T10:28:07.740383",
       "status": "new"
     },
-    "fintech-automation-labs-20260423-150615": {
-      "businessName": "FinTech Automation Labs",
-      "niche": "Financial Technology & Process Automation",
-      "website": "https://fintechautomation.io",
-      "source": "AngelList (fintech automation startups)",
-      "description": "Financial technology company that develops automation solutions for banks, credit unions, and financial institutions. They focus on streamlining compliance, customer onboarding, and loan processing workflows.",
-      "painPoints": [
-        "Need to build secure, compliant web applications for financial services",
-        "Looking to automate their outbound sales process to reach financial institutions",
-        "Want to create interactive dashboards for compliance monitoring",
-        "Need help with API integrations for banking systems and credit bureaus",
-        "Looking to develop automated reporting systems for regulatory requirements"
-      ],
+    "denver-express-movers-20260429-102807": {
+      "businessName": "Denver Express Movers",
+      "niche": "Moving Services",
+      "website": "https://www.denverexpressmovers.com",
+      "source": "web_research",
+      "description": "Denver full-service moving company (residential, commercial, labor-only, packing, junk removal). Template-driven site with thin content. Uses Gmail (Denverexpressmovers1@gmail.com) undermining credibility. Contact page shows phone/email but no quote form. No online booking, no live chat, no instant quote calculator. No pricing/rate info. 400+ reviews claimed but no embedded testimonials or schema.",
+      "serviceArea": "Denver Metro, Aurora, Glendale, CO",
+      "phone": "720-403-2633",
+      "email": "Denverexpressmovers1@gmail.com",
+      "opportunityScore": 78,
+      "funnelStage": "prospecting",
       "contact": {
-        "email": "sales@fintechautomation.io",
-        "linkedin": "https://linkedin.com/company/fintech-automation-labs",
-        "method": "Enterprise development partnership discussion",
+        "phone_verified": true,
+        "email_verified": true,
         "verification_status": {
-          "website": {
+          "phone": {
             "verified": true,
-            "verified_at": "2026-04-23T15:07:39.444066"
+            "verified_at": "2026-04-29T01:23:00Z"
           },
           "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "linkedin": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "fintech-automation-labs-20260423-150615",
-      "created_at": "2026-04-23T15:06:15.897743",
-      "updated_at": "2026-04-23T15:07:49.781450",
-      "status": "new"
-    },
-    "healthtech-dynamics-20260423-150620": {
-      "businessName": "HealthTech Dynamics",
-      "niche": "Healthcare Technology & Automation",
-      "website": "https://healthtechdynamics.com",
-      "source": "MedCity News (healthcare automation coverage)",
-      "description": "Healthcare technology company that provides automation solutions for hospitals, clinics, and medical practices. They specialize in patient scheduling, electronic health records integration, and telemedicine platforms.",
-      "painPoints": [
-        "Need to build HIPAA-compliant web applications for patient management",
-        "Looking to automate their outbound marketing to healthcare providers",
-        "Want to create interactive dashboards for healthcare analytics",
-        "Need help with API integrations for electronic health record systems",
-        "Looking to develop automated appointment scheduling and reminder systems"
-      ],
-      "contact": {
-        "email": "partnerships@healthtechdynamics.com",
-        "phone": "+1-555-0129",
-        "method": "Healthcare technology development consultation",
-        "verification_status": {
-          "website": {
             "verified": true,
-            "verified_at": "2026-04-23T15:08:11.905464"
-          },
-          "email": {
+            "verified_at": "2026-04-29T01:23:00Z"
+          }
+        }
+      },
+      "prospect_id": "denver-express-movers-20260429-102807",
+      "created_at": "2026-04-29T10:28:07.740576",
+      "updated_at": "2026-04-29T10:28:07.740577",
+      "status": "new",
+      "email_history": [
+        {
+          "action": "draft_created",
+          "timestamp": "2026-04-29T11:21:55Z",
+          "type": "outreach_draft",
+          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
+          "status": "blocked_send",
+          "block_reason": "email_attempts_ledger_not_ready",
+          "subject": "Audit-led outreach draft — Denver Express Movers"
+        }
+      ],
+      "last_contacted": "2026-04-29T11:21:55Z",
+      "stage": "drafted"
+    },
+    "denver-landscaping-pros-20260429-102807": {
+      "businessName": "Denver Landscaping Pros",
+      "niche": "Landscaping / Lawn Care",
+      "website": "https://www.denverlandscapingpros.com",
+      "source": "web_research",
+      "description": "Denver landscaping company offering residential and commercial services. WEBSITE IS EXTREMELY THIN — barely 900 chars extractable text total. No visible phone, email, or contact form on homepage. No about, contact, portfolio, or service detail pages. NO PORTFOLIO/GALLERY — critical gap for landscaping. No online booking, no instant quote. Apostrophe error in business name ('Pro\\'s'). Extremely high opportunity.",
+      "serviceArea": "Denver Metro, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 85,
+      "funnelStage": "prospecting",
+      "contact": {
+        "phone_verified": false,
+        "email_verified": false,
+        "verification_status": {
+          "phone": {
             "verified": false,
             "verified_at": null
           },
-          "phone": {
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "prospect_id": "healthtech-dynamics-20260423-150620",
-      "created_at": "2026-04-23T15:06:20.935680",
-      "updated_at": "2026-04-23T15:08:48.004254",
+      "prospect_id": "denver-landscaping-pros-20260429-102807",
+      "created_at": "2026-04-29T10:28:07.740974",
+      "updated_at": "2026-04-29T10:28:07.740974",
       "status": "new"
     },
-    "nexus-commerce-solutions-20260423-160542": {
-      "businessName": "Nexus Commerce Solutions",
-      "niche": "E-commerce Automation",
-      "website": "https://nexus-commerce.com",
-      "source": "industry_research",
-      "description": "Mid-sized e-commerce platform specializing in B2B wholesale distribution. Currently using manual processes for outbound sales and could benefit from automated outreach systems and creative web optimization.",
-      "industry": "E-commerce",
-      "size": "mid_market",
+    "peakview-dentistry-20260429-102807": {
+      "businessName": "PeakView Dentistry",
+      "niche": "Dentist / Dental Services",
+      "website": "https://www.peakviewdentistry.com",
+      "source": "web_research",
+      "description": "Boulder, CO cosmetic and implant dentistry (Dr. Adam Kwiatkowski). Beautiful Elementor/WordPress site with extensive service pages. CRITICAL: /contact/ URL returns 404 error. No online appointment scheduling. Phone-only booking (303-417-1644). 4.9-star rated practice losing high-intent dental patients through broken contact path and no self-service booking.",
+      "serviceArea": "Boulder, CO",
+      "phone": "(303) 417-1644",
+      "email": "unverified",
+      "opportunityScore": 82,
+      "funnelStage": "prospecting",
       "contact": {
-        "email": "contact@nexus-commerce.com",
-        "phone": "+1-555-0123",
-        "linkedin": "https://linkedin.com/company/nexus-commerce",
+        "phone_verified": true,
+        "email_verified": false,
         "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
           "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T01:23:00Z"
+          },
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "pain_points": [
-        "Manual outbound sales processes",
-        "Inefficient customer onboarding",
-        "Need for automated marketing workflows"
-      ],
-      "estimated_value": "high",
-      "priority": "high",
-      "prospect_id": "nexus-commerce-solutions-20260423-160542",
-      "created_at": "2026-04-23T16:05:42.638497",
-      "updated_at": "2026-04-23T16:07:23.362093",
+      "prospect_id": "peakview-dentistry-20260429-102807",
+      "created_at": "2026-04-29T10:28:07.741076",
+      "updated_at": "2026-04-29T10:28:07.741077",
       "status": "new"
     },
-    "cloudscale-technologies-20260423-160625": {
-      "businessName": "CloudScale Technologies",
-      "niche": "B2B SaaS Platform",
-      "website": "https://cloudscale-tech.com",
-      "source": "industry_research",
-      "description": "Growing B2B SaaS company providing project management tools. Needs high-value creative web redesign and automation of customer acquisition workflows to scale their outbound sales efforts.",
-      "industry": "Software/SaaS",
-      "size": "growth_stage",
+    "front-range-locksmith-20260429-102807": {
+      "businessName": "Front Range Locksmith",
+      "niche": "Locksmith Services",
+      "website": "https://www.frontrangelocksmith.com",
+      "source": "web_research",
+      "description": "Denver-metro locksmith (residential, commercial, car lockout, rekey). 17-min avg arrival, 24/7. Dated HTML/PHP site (contact.php, about.php). Blog last updated April 2017 (9+ years stale). No email visible anywhere. Phone-only contact (720-439-4081). No online scheduling despite 24/7 claim. No live chat. No instant quote. No service area landing pages.",
+      "serviceArea": "Denver Metro, Littleton, Lakewood, CO",
+      "phone": "720-439-4081",
+      "email": "unverified",
+      "opportunityScore": 80,
+      "funnelStage": "prospecting",
       "contact": {
-        "email": "hello@cloudscale-tech.com",
-        "phone": "+1-555-0456",
-        "linkedin": "https://linkedin.com/company/cloudscale-technologies",
+        "phone_verified": true,
+        "email_verified": false,
         "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
           "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T01:23:00Z"
+          },
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "pain_points": [
-        "Outdated website design",
-        "Manual lead generation processes",
-        "Need for scalable outbound systems"
-      ],
-      "estimated_value": "high",
-      "priority": "high",
-      "prospect_id": "cloudscale-technologies-20260423-160625",
-      "created_at": "2026-04-23T16:06:25.978011",
-      "updated_at": "2026-04-23T22:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T22:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Growth-focused partnership proposal drafted for B2B SaaS company emphasizing web redesign and automated customer acquisition with high estimated value"
-      }
+      "prospect_id": "front-range-locksmith-20260429-102807",
+      "created_at": "2026-04-29T10:28:07.741168",
+      "updated_at": "2026-04-29T10:28:07.741168",
+      "status": "new"
     },
-    "pixelperfect-digital-agency-20260423-160632": {
-      "businessName": "PixelPerfect Digital Agency",
-      "niche": "Digital Marketing Agency",
-      "website": "https://pixelperfect.agency",
-      "source": "industry_research",
-      "description": "Full-service digital marketing agency struggling with internal process automation. Needs outbound autonomy systems for prospecting and high-value creative workflow optimization to improve service delivery.",
-      "industry": "Marketing/Advertising",
-      "size": "small_business",
+    "denver-carpet-cleaning-20260429-110441": {
+      "businessName": "Denver Carpet Cleaning",
+      "website": "https://denvercarpetcleaning.com",
+      "niche": "Carpet Cleaning / Home Services",
+      "source": "Denver local business search via web_fetch",
+      "description": "Professional carpet cleaning company serving the Denver metro area for over a decade. Uses biodegradable non-toxic cleaning products. Offers residential and commercial carpet, upholstery, and power washing services.",
       "contact": {
-        "email": "info@pixelperfect.agency",
-        "phone": "+1-555-0789",
-        "linkedin": "https://linkedin.com/company/pixelperfect-digital",
+        "phone": "(303) 905-9668",
+        "email": "info@denvercarpetcleaning.com",
+        "address": "1312 17th Street #701, Denver, CO 80202",
         "verification_status": {
-          "email": {
+          "phone": {
             "verified": false,
             "verified_at": null
           },
-          "phone": {
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "pain_points": [
-        "Time-consuming manual prospecting",
-        "Inefficient creative workflows",
-        "Need for automated client onboarding"
-      ],
+      "website_findings": {
+        "platform": "WordPress",
+        "has_phone_on_site": true,
+        "has_email_on_site": true,
+        "has_online_booking": false,
+        "has_live_chat": false,
+        "has_instant_quote": false,
+        "has_blog": false,
+        "has_service_pages": false,
+        "thin_content": true,
+        "conversion_gaps": [
+          "No online booking/scheduling",
+          "No live chat",
+          "No instant quote tool",
+          "No blog or content marketing",
+          "Single generic contact page",
+          "No service page SEO optimization",
+          "Thin homepage content"
+        ]
+      },
+      "opportunity_score": 78,
       "estimated_value": "medium",
+      "prospect_id": "denver-carpet-cleaning-20260429-110441",
+      "created_at": "2026-04-29T11:04:41.569703",
+      "updated_at": "2026-04-29T11:04:41.569705",
+      "status": "new"
+    },
+    "junk-genius-denver-junk-removal-20260429-110502": {
+      "businessName": "Junk Genius (Denver Junk Removal)",
+      "website": "https://denverjunkremoval.com",
+      "niche": "Junk Removal / Home Services",
+      "source": "Denver local business search via web_fetch",
+      "description": "Full-service junk removal company serving Denver, CO and surrounding areas. Locally-owned small business offering residential and commercial junk removal, clean outs, hot tub removal, yard waste debris removal. Volume-based pricing. Eco-friendly with recycling and donation focus.",
+      "contact": {
+        "phone": "(303) 388-7780",
+        "email": "denver@junkgenius.com",
+        "address": "Englewood, CO",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_findings": {
+        "platform": "Likely WordPress or custom CMS",
+        "has_phone_on_site": true,
+        "has_email_on_site": true,
+        "has_online_booking": true,
+        "has_live_chat": false,
+        "has_instant_quote": true,
+        "has_blog": true,
+        "has_service_pages": true,
+        "thin_content": false,
+        "conversion_gaps": [
+          "No live chat for quick questions",
+          "Email on contact page only (not homepage)",
+          "Booking flow could be optimized",
+          "No SMS/text option",
+          "No customer portal/reviews integration"
+        ]
+      },
+      "opportunity_score": 65,
+      "estimated_value": "medium-low",
+      "prospect_id": "junk-genius-denver-junk-removal-20260429-110502",
+      "created_at": "2026-04-29T11:05:02.002748",
+      "updated_at": "2026-04-29T11:05:02.002750",
+      "status": "new"
+    },
+    "colorado-pro-wash-denver-pressure-washing-20260429-110526": {
+      "businessName": "Colorado Pro Wash (Denver Pressure Washing)",
+      "website": "https://www.coloradoprowash.com",
+      "niche": "Pressure Washing / Exterior Cleaning",
+      "source": "Denver local business search via web_fetch",
+      "description": "Premier Denver pressure washing service company serving residential, commercial, and industrial clients for 15+ years. A+ BBB rated. Services include house washing, driveway cleaning, fleet washing, parking garage cleaning, graffiti removal. 24/7 availability.",
+      "contact": {
+        "phone": "(303) 518-3291",
+        "email": "info@coloradoprowash.com",
+        "address": "1312 17th Street #701, Denver, CO 80202",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_findings": {
+        "platform": "Likely WordPress",
+        "has_phone_on_site": true,
+        "has_email_on_site": true,
+        "has_online_booking": false,
+        "has_live_chat": false,
+        "has_instant_quote": false,
+        "has_blog": false,
+        "has_service_pages": "basic content on homepage only",
+        "thin_content": true,
+        "conversion_gaps": [
+          "No online booking/scheduling",
+          "No live chat",
+          "No instant quote tool",
+          "No separate service pages for SEO",
+          "No blog or content",
+          "Same shared address with Denver Carpet Cleaning - possible shared template",
+          "Thin content across entire site"
+        ]
+      },
+      "opportunity_score": 82,
+      "estimated_value": "medium-high",
+      "prospect_id": "colorado-pro-wash-denver-pressure-washing-20260429-110526",
+      "created_at": "2026-04-29T11:05:26.540286",
+      "updated_at": "2026-04-29T11:05:26.540288",
+      "status": "new"
+    },
+    "diamond-hand-garage-doors-20260429-110553": {
+      "businessName": "Diamond Hand Garage Doors",
+      "website": "https://www.coloradogaragedoorrepair.com",
+      "niche": "Garage Door Services",
+      "source": "Denver-area business search via web_fetch",
+      "description": "Garage door service company serving Fort Collins, Loveland, Windsor, Greeley and Northern Colorado. Offers repair, installation, and maintenance of garage doors and openers. Locally owned. Same-day service. 5-star rated. Claims faith-driven values.",
+      "contact": {
+        "phone": "(970) 408-9827",
+        "email": "not found on site",
+        "address": "Fort Collins, CO",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_findings": {
+        "platform": "Likely custom or premium WordPress",
+        "has_phone_on_site": true,
+        "has_email_on_site": false,
+        "has_online_booking": false,
+        "has_live_chat": false,
+        "has_instant_quote": false,
+        "has_blog": false,
+        "has_service_pages": true,
+        "thin_content": false,
+        "conversion_gaps": [
+          "No email address on site at all",
+          "No online booking/scheduling",
+          "No live chat",
+          "No instant quote tool",
+          "No blog or content marketing",
+          "Site explicitly admits recent email system issues causing lost inquiries",
+          "Only contact form + phone available"
+        ]
+      },
+      "opportunity_score": 85,
+      "estimated_value": "medium-high",
+      "prospect_id": "diamond-hand-garage-doors-20260429-110553",
+      "created_at": "2026-04-29T11:05:53.591534",
+      "updated_at": "2026-04-29T11:05:53.591535",
+      "status": "new"
+    },
+    "denver-dog-walkers-20260429-110616": {
+      "businessName": "Denver Dog Walkers",
+      "website": "https://www.denverdogwalkers.com",
+      "niche": "Pet Services / Dog Walking",
+      "source": "Denver local business search via web_fetch",
+      "description": "Dog walking and pet sitting service serving central Denver neighborhoods including Capitol Hill, Cherry Creek, Five Points, Highlands, LoDo, Washington Park. Owner Jeff Rayburn with 25 years professional pet care experience. Requires ongoing weekly service (no short-term walks).",
+      "contact": {
+        "phone": "not found on site",
+        "email": "not found on site",
+        "address": "Denver, CO",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_findings": {
+        "platform": "Likely older custom site",
+        "has_phone_on_site": false,
+        "has_email_on_site": false,
+        "has_online_booking": true,
+        "has_live_chat": false,
+        "has_instant_quote": false,
+        "has_blog": false,
+        "has_service_pages": false,
+        "thin_content": true,
+        "conversion_gaps": [
+          "No phone number on site at all",
+          "No email on site at all",
+          "No live chat",
+          "No instant quote",
+          "No blog",
+          "No service-specific pages",
+          "Very thin content overall",
+          "Only contact method is the sign-up form",
+          "No social media links found"
+        ]
+      },
+      "opportunity_score": 80,
+      "estimated_value": "medium",
+      "prospect_id": "denver-dog-walkers-20260429-110616",
+      "created_at": "2026-04-29T11:06:16.967344",
+      "updated_at": "2026-04-29T11:06:16.967345",
+      "status": "new"
+    },
+    "crystal-clear-pools--spas-inc-20260429-112251": {
+      "businessName": "Crystal Clear Pools & Spas Inc.",
+      "niche": "Pool Service / Construction / Maintenance",
+      "website": "https://crystalclearpoolscolorado.com",
+      "source": "web_research_browser",
+      "description": "Denver pool company founded 1974 (50+ years). SEVERE CONTENT DUPLICATION: entire service sections repeated back-to-back 4-5 times. No online booking, no pricing info, no portfolio gallery, thin AI-feel content, no blog.",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 88,
+      "funnelStage": "prospecting",
+      "status": "new",
+      "serviceArea": "Denver Metro, CO",
+      "prospect_id": "crystal-clear-pools--spas-inc-20260429-112251",
+      "created_at": "2026-04-29T11:22:51.133137",
+      "updated_at": "2026-04-29T11:24:27.602163",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "clear-water-pools-denver-pool-service-20260429-112258": {
+      "businessName": "Clear Water Pools (Denver Pool Service)",
+      "niche": "Pool Service / Cleaning / Maintenance",
+      "website": "https://www.poolandspaservice.biz",
+      "source": "web_research_browser",
+      "description": "Family owned Denver pool/spa service at poolandspaservice DOT biz. EXTREMELY THIN CONTENT: barely 1000 chars total across entire homepage. Uses .biz TLD undermining credibility. No online booking, no instant quote tool, no email on homepage, no portfolio/gallery, no blog, no service-specific landing pages. 20 years experience but zero web presence investment. Phone is primary (likely only) contact method. No testimonials visible despite claiming quality service.",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 83,
+      "funnelStage": "prospecting",
+      "status": "new",
+      "serviceArea": "Denver Metro, CO",
+      "prospect_id": "clear-water-pools-denver-pool-service-20260429-112258",
+      "created_at": "2026-04-29T11:22:58.476895",
+      "updated_at": "2026-04-29T11:24:27.656035",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "blue-tech-pools-20260429-112311": {
+      "businessName": "Blue Tech Pools",
+      "niche": "Pool Service / Maintenance",
+      "website": "https://www.bluetechpools.com",
+      "source": "web_research_browser",
+      "description": "Denver Metro pool service owned by Nathan (20+ years experience). EXTREMELY THIN WEBSITE: barely 600 chars extractable text total. Single-page style with minimal content. No phone number visible on site. No email visible. No online booking. No service pages. No portfolio/gallery. No pricing info. No blog. Single-person operation with extremely limited web presence. High opportunity for a full website build.",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 86,
+      "funnelStage": "prospecting",
+      "status": "new",
+      "serviceArea": "Denver Metro, CO",
+      "prospect_id": "blue-tech-pools-20260429-112311",
+      "created_at": "2026-04-29T11:23:11.988007",
+      "updated_at": "2026-04-29T11:24:27.704955",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "dominion-chiropractic-dr-wayne-buessing-20260429-112359": {
+      "businessName": "Dominion Chiropractic (Dr. Wayne Buessing)",
+      "niche": "Chiropractic / Healthcare",
+      "website": "https://www.mycoloradospringschiro.com",
+      "source": "web_research_browser",
+      "description": "Colorado Springs chiropractor at Dominion Way. DATED TEMPLATE WEBSITE: standard chiropractic template with no custom design elements. No online booking or appointment scheduling despite having appointment page link. Phone-only booking (719-599-4343). No live chat. No pricing info. Thin service descriptions. No video content. No blog. Email link exists but goes to generic contact form, not direct email. Office hours show half-day closures and Thursday closed entirely, creating patient confusion. No service-specific landing pages for different conditions.",
+      "phone": "(719) 599-4343",
+      "email": "unverified",
+      "opportunityScore": 74,
+      "funnelStage": "prospecting",
+      "status": "new",
+      "serviceArea": "Colorado Springs, CO",
+      "prospect_id": "dominion-chiropractic-dr-wayne-buessing-20260429-112359",
+      "created_at": "2026-04-29T11:23:59.139884",
+      "updated_at": "2026-04-29T11:24:33.559864",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T11:24:33.523817"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "colorado-springs-chiropractic-dr-david-doyle-20260429-112408": {
+      "businessName": "Colorado Springs Chiropractic (Dr. David Doyle)",
+      "niche": "Chiropractic / Healthcare",
+      "website": "https://www.cspringschiro.com",
+      "source": "web_research_browser",
+      "description": "Colorado Springs chiropractor (Dr. David Doyle, DC, CSCS) at 1259 Lake Plaza Dr. Has email (frontdesk@cspringschiro.com) and phone (719-358-5170). WEBSITE GAPS: No online appointment scheduling despite being primary healthcare provider. Dated site design with basic HTML feel. No blog or SEO content. No pricing or insurance info. No patient portal integration. No before/after or outcome data. No service-specific landing pages. No video content. No online intake forms. Content is wall-of-text heavy with no visual hierarchy. No mobile-optimized contact flow.",
+      "phone": "(719) 358-5170",
+      "email": "frontdesk@cspringschiro.com",
+      "opportunityScore": 72,
+      "funnelStage": "prospecting",
+      "status": "new",
+      "serviceArea": "Colorado Springs, CO",
+      "prospect_id": "colorado-springs-chiropractic-dr-david-doyle-20260429-112408",
+      "created_at": "2026-04-29T11:24:08.885521",
+      "updated_at": "2026-04-29T11:24:33.608330",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T11:24:33.584621"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-29T11:24:33.608324"
+          }
+        }
+      },
+      "email_history": [
+        {
+          "action": "draft_created",
+          "timestamp": "2026-04-29T11:21:55Z",
+          "type": "outreach_draft",
+          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
+          "status": "blocked_send",
+          "block_reason": "email_attempts_ledger_not_ready",
+          "subject": "Audit-led outreach draft — Colorado Springs Chiropractic (Dr. David Doyle)"
+        }
+      ],
+      "last_contacted": "2026-04-29T11:21:55Z",
+      "stage": "drafted"
+    },
+    "urban-forestry-tree-service-20260429-121028": {
+      "businessName": "Urban Forestry Tree Service",
+      "niche": "Tree Service / Arborist",
+      "website": "https://urbanforestrytreeservice.weebly.com",
+      "source": "Google Search (site:weebly.com for Denver tree services)",
+      "description": "Free Weebly subdomain site for Denver-area tree service. Critical issues: (1) Free Weebly subdomain (looks unprofessional), (2) No online booking/quote request, (3) Generic template with placeholder images labeled \"Picture\", (4) No reviews or testimonials visible, (5) Links to urbanforestrytreeservice.com (redirect unknown), (6) No service pages with pricing, (7) Weebly footer branding visible. Contact: 720-650-2039, Address: 5121 Meade St, Denver CO 80221.",
+      "contact": {
+        "phone": "720-650-2039",
+        "email": "unverified",
+        "address": "5121 Meade St, Denver CO 80221",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "funnelStage": "research",
+      "priority": "high",
+      "prospect_id": "urban-forestry-tree-service-20260429-121028",
+      "created_at": "2026-04-29T12:10:28.367289",
+      "updated_at": "2026-04-29T12:12:40.523186",
+      "status": "new"
+    },
+    "the-earnest-chop-20260429-121112": {
+      "businessName": "The Earnest Chop",
+      "niche": "Tree Service / Stump Grinding / Weed Management",
+      "website": "https://eagleranker.wixsite.com/the-earnest-chop",
+      "source": "Google Search (site:wixsite.com for Denver tree services)",
+      "description": "Wix subdomain site for Denver/Aurora tree service. Critical issues: (1) Free Wix subdomain, (2) Heavy reliance on external links (Google Maps, tecservices.com pages), (3) No online booking, (4) Generic template content repeated across sections, (5) Wix banner branding visible, (6) No portfolio or before/after photos, (7) No reviews on site, (8) All service links redirect through Google Share URL shorteners. Contact: 303-909-6519, Email: TheEarnestChopLLC@gmail.com, Address: Aurora, CO.",
+      "contact": {
+        "phone": "303-909-6519",
+        "email": "TheEarnestChopLLC@gmail.com",
+        "address": "Aurora, CO",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "funnelStage": "research",
+      "priority": "high",
+      "prospect_id": "the-earnest-chop-20260429-121112",
+      "created_at": "2026-04-29T12:11:12.122931",
+      "updated_at": "2026-04-29T12:12:40.572501",
+      "status": "new"
+    },
+    "keep-it-green-tree-care-20260429-121118": {
+      "businessName": "Keep It Green Tree Care",
+      "niche": "Tree Care / Arborist Services",
+      "website": "https://keepitgreentreecare.weebly.com",
+      "source": "Google Search (site:weebly.com for Denver tree services)",
+      "description": "Free Weebly subdomain site for Arvada/Denver tree care company. Critical issues: (1) Free Weebly subdomain, (2) Extremely dated template design with table-based layout, (3) Placeholder images labeled \"Picture\", (4) No online booking or quote system beyond basic form, (5) Site looks abandoned - ISA certification and BBB links but design is 10+ years outdated, (6) Weebly footer branding visible, (7) Very slow/dated user experience. Business is ISA-certified and BBB-accredited but website does not reflect professionalism. Contact: 303-945-9220, Email: andrew3980@hotmail.com",
+      "contact": {
+        "phone": "303-945-9220",
+        "email": "andrew3980@hotmail.com",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "funnelStage": "research",
+      "priority": "high",
+      "prospect_id": "keep-it-green-tree-care-20260429-121118",
+      "created_at": "2026-04-29T12:11:18.788155",
+      "updated_at": "2026-04-29T12:12:40.620416",
+      "status": "new"
+    },
+    "solares-lawn--landscaping-20260429-121127": {
+      "businessName": "Solares Lawn & Landscaping",
+      "niche": "Landscaping / Lawn Care",
+      "website": "https://solareslandscaping.wixsite.com/landscapingdenver",
+      "source": "Google Search (site:wixsite.com for Denver landscaping)",
+      "description": "Wix subdomain site for Denver landscaping company. Critical issues: (1) Free Wix subdomain, (2) Generic template copy with no specific value proposition, (3) Site copyright is 2015 - clearly not updated in 10+ years, (4) No blog or SEO content strategy, (5) Wix banner branding visible, (6) Photos in gallery show some work but no service descriptions or pricing, (7) No online booking/scheduling integration, (8) No schema markup detected. Contact: 720-569-1369 and 720-621-8361.",
+      "contact": {
+        "phone": "720-569-1369 / 720-621-8361",
+        "email": "unverified",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "funnelStage": "research",
       "priority": "medium",
-      "prospect_id": "pixelperfect-digital-agency-20260423-160632",
-      "created_at": "2026-04-23T16:06:32.870017",
-      "updated_at": "2026-04-23T16:07:32.852753",
+      "prospect_id": "solares-lawn--landscaping-20260429-121127",
+      "created_at": "2026-04-29T12:11:27.313803",
+      "updated_at": "2026-04-29T12:12:40.644444",
       "status": "new"
     },
-    "finflow-innovations-20260423-160639": {
-      "businessName": "FinFlow Innovations",
-      "niche": "Fintech Startup",
-      "website": "https://finflow-innovations.com",
-      "source": "industry_research",
-      "description": "Early-stage fintech startup developing payment processing solutions. Requires high-value creative web design and automation systems for outbound sales to investors and potential enterprise clients.",
-      "industry": "Financial Technology",
-      "size": "startup",
+    "deker-lawn-services-20260429-121205": {
+      "businessName": "Deker Lawn Services",
+      "niche": "Lawn Care / Landscaping",
+      "website": "https://dekerlawnservices.weebly.com",
+      "source": "Google Search (site:weebly.com for Denver lawn/landscaping)",
+      "description": "Free Weebly subdomain site for Denver-area lawn service (licensed, bonded, insured since 2007). Critical issues: (1) Free Weebly subdomain, (2) Extremely outdated design with photo gallery showing WhatsApp images from 2018-2019 - appears abandoned, (3) No online booking, (4) No service pages with descriptions or pricing, (5) No contact form, (6) Very basic/barebones layout with gallery dump, (7) Weebly footer branding visible. Has real work photos showing capability but website does not inspire trust. Contact: 303-257-0540 or 720-298-9091, Email: edlawnservice@gmail.com (also Edlawnservices@gmail.com).",
       "contact": {
-        "email": "partnerships@finflow-innovations.com",
-        "phone": "+1-555-1011",
-        "linkedin": "https://linkedin.com/company/finflow-innovations",
+        "phone": "303-257-0540 / 720-298-9091",
+        "email": "edlawnservice@gmail.com",
         "verification_status": {
-          "email": {
+          "phone": {
             "verified": false,
             "verified_at": null
           },
-          "phone": {
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "pain_points": [
-        "Basic website needs professional redesign",
-        "Manual outreach to investors",
-        "Need for automated lead qualification"
-      ],
-      "estimated_value": "very_high",
+      "funnelStage": "research",
       "priority": "high",
-      "prospect_id": "finflow-innovations-20260423-160639",
-      "created_at": "2026-04-23T16:06:39.813997",
-      "updated_at": "2026-04-23T22:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T22:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Strategic partnership proposal drafted for fintech startup focusing on professional web presence and automated investor outreach with very high estimated value"
-      }
+      "prospect_id": "deker-lawn-services-20260429-121205",
+      "created_at": "2026-04-29T12:12:05.832407",
+      "updated_at": "2026-04-29T12:12:40.692304",
+      "status": "new"
     },
-    "healthconnect-systems-20260423-160645": {
-      "businessName": "HealthConnect Systems",
-      "niche": "Healthcare Technology",
-      "website": "https://healthconnect-sys.com",
-      "source": "industry_research",
-      "description": "Healthcare technology company providing patient management systems. Needs web automation for compliance reporting and outbound autonomy systems for reaching hospital decision-makers and healthcare providers.",
-      "industry": "Healthcare Technology",
-      "size": "mid_market",
+    "affordable-pest-services-20260429-131043": {
+      "businessName": "Affordable Pest Services",
+      "niche": "Pest Control / Home Services",
+      "website": "https://affordablepestserviceshrco.com/",
+      "source": "Google Search - Denver pest control",
+      "description": "Pest control company serving Denver Metro / Highlands Ranch area. Website built on GoDaddy platform — template-based design with weak CTA placement, no online booking, thin service-specific content, no SSL concerns flagged, and poor lead-capture flow. Strong reviews on Google but website fails to convert.",
       "contact": {
-        "email": "sales@healthconnect-sys.com",
-        "phone": "+1-555-1213",
-        "linkedin": "https://linkedin.com/company/healthconnect-systems",
+        "phone": "(303) 435-9766",
+        "email": "unknown",
+        "address": "Highlands Ranch, CO 80129",
         "verification_status": {
-          "email": {
+          "phone": {
             "verified": false,
             "verified_at": null
           },
-          "phone": {
+          "email": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "pain_points": [
-        "Manual compliance reporting processes",
-        "Inefficient outreach to healthcare providers",
-        "Need for automated data collection"
+      "websiteGaps": [
+        "GoDaddy template site with limited customization",
+        "No online scheduling / booking",
+        "Weak call-to-action visibility above fold",
+        "Thin service-specific landing pages",
+        "No blog or content marketing",
+        "Slow page load (GoDaddy hosting)"
       ],
-      "estimated_value": "high",
-      "priority": "high",
-      "prospect_id": "healthconnect-systems-20260423-160645",
-      "created_at": "2026-04-23T16:06:45.416054",
-      "updated_at": "2026-04-23T16:07:42.905048",
+      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
+      "prospect_id": "affordable-pest-services-20260429-131043",
+      "created_at": "2026-04-29T13:10:43.101078",
+      "updated_at": "2026-04-29T13:10:43.101080",
       "status": "new"
     },
-    "velocity-growth-partners-20260423-170534": {
-      "businessName": "Velocity Growth Partners",
-      "niche": "B2B SaaS & Growth Consulting",
-      "website": "https://velocitygrowth.com",
-      "source": "LinkedIn Research - SaaS Companies",
-      "description": "High-growth B2B SaaS consulting firm helping tech startups scale. Currently managing 15+ SaaS clients and needs outbound automation to streamline prospect acquisition and client onboarding.",
+    "pure-pest-company-20260429-131049": {
+      "businessName": "Pure Pest Company",
+      "niche": "Pest Control / Home Services",
+      "website": "https://purepestco.com/",
+      "source": "Google Search - Denver pest control",
+      "description": "Eco-friendly pest control serving Denver metro area. Extremely basic website with minimal content — no contact form, no online booking, no images of services, and almost no CTA presence. Site by St. George Design. The homepage reads more like a brochure than a lead-generation tool.",
       "contact": {
-        "email": "hello@velocitygrowth.com",
-        "phone": "+1 (415) 555-0123",
-        "linkedin": "https://linkedin.com/company/velocitygrowth-partners",
+        "phone": "(720) 325-4500",
+        "email": "unknown",
+        "address": "Denver, CO",
         "verification_status": {
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:05:58.937313"
-          },
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:01.196326"
-          },
-          "linkedin": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:03.746378"
-          }
-        }
-      },
-      "estimatedValue": "High ($10K-50K monthly retainer)",
-      "priority": "High - Active growth phase",
-      "prospect_id": "velocity-growth-partners-20260423-170534",
-      "created_at": "2026-04-23T17:05:34.418776",
-      "updated_at": "2026-04-23T23:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T23:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Partnership proposal for B2B SaaS consulting firm focusing on automated prospect acquisition, streamlined client onboarding, and internal process automation. Monthly retainer model with strong potential for recurring revenue."
-      }
-    },
-    "pixelcraft-creative-agency-20260423-170539": {
-      "businessName": "PixelCraft Creative Agency",
-      "niche": "Creative Design & Digital Marketing",
-      "website": "https://pixelcraftcreative.com",
-      "source": "Industry Directory - Creative Agencies",
-      "description": "Full-service creative agency specializing in brand design, web development, and digital marketing. Currently expanding service offerings and needs automation solutions for project management and client workflows.",
-      "contact": {
-        "email": "info@pixelcraftcreative.com",
-        "phone": "+1 (212) 555-0189",
-        "linkedin": "https://linkedin.com/company/pixelcraft-creative",
-        "verification_status": {
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:06.498592"
-          },
           "phone": {
             "verified": false,
             "verified_at": null
           },
-          "linkedin": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:12.253783"
+          "email": {
+            "verified": false,
+            "verified_at": null
           }
         }
       },
-      "estimatedValue": "Medium-High ($5K-25K project-based)",
-      "priority": "Medium - Service expansion phase",
-      "prospect_id": "pixelcraft-creative-agency-20260423-170539",
-      "created_at": "2026-04-23T17:05:39.583052",
-      "updated_at": "2026-04-23T17:06:12.253789",
-      "status": "new"
+      "websiteGaps": [
+        "No contact form on site",
+        "No online scheduling or booking integration",
+        "Extremely thin content — few pages",
+        "No visible lead capture mechanism",
+        "No blog or educational content",
+        "No SSL mention / trust signals weak",
+        "No customer reviews displayed on site"
+      ],
+      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
+      "prospect_id": "pure-pest-company-20260429-131049",
+      "created_at": "2026-04-29T13:10:49.451035",
+      "updated_at": "2026-04-29T13:10:49.451037",
+      "status": "new",
+      "funnelStage": "outreach_sent",
+      "outreach_email_sent": "2026-04-29T11:00:00Z"
     },
-    "scalecommerce-solutions-20260423-170545": {
-      "businessName": "ScaleCommerce Solutions",
-      "niche": "E-commerce & Digital Retail",
-      "website": "https://scalecommerce.com",
-      "source": "E-commerce Industry Report",
-      "description": "E-commerce platform provider helping D2C brands scale their online sales. Needs outbound marketing automation and customer journey optimization services to improve conversion rates and customer retention.",
+    "ap-pest-control-20260429-131056": {
+      "businessName": "A.P. Pest Control",
+      "niche": "Pest Control / Home Services",
+      "website": "https://appestcontrol.net/",
+      "source": "Google Search - Denver pest control",
+      "description": "Family-owned Denver pest control since 2014. Uses a Yahoo email address (ap_pestcontrol@yahoo.com) which undermines trust. Elementor-built WordPress site but cluttered design with heavy images, slow load time, and poor mobile experience. Multiple location pages but no city-specific content differentiation.",
       "contact": {
-        "email": "partnerships@scalecommerce.com",
-        "phone": "+1 (617) 555-0245",
-        "linkedin": "https://linkedin.com/company/scalecommerce-solutions",
+        "phone": "(720) 327-1750",
+        "email": "ap_pestcontrol@yahoo.com",
+        "address": "2514 Champa St, Denver CO 80205",
         "verification_status": {
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:14.670729"
-          },
           "phone": {
             "verified": true,
-            "verified_at": "2026-04-23T17:06:17.126604"
+            "verified_at": null
           },
-          "linkedin": {
+          "email": {
             "verified": true,
-            "verified_at": "2026-04-23T17:06:19.464916"
+            "verified_at": null
           }
         }
       },
-      "estimatedValue": "High ($15K-75K monthly)",
-      "priority": "High - Rapid scaling client base",
-      "prospect_id": "scalecommerce-solutions-20260423-170545",
-      "created_at": "2026-04-23T17:05:45.022337",
-      "updated_at": "2026-04-23T23:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T23:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Strategic partnership proposal for e-commerce platform provider focusing on advanced marketing automation, customer journey optimization, and scalable partner acquisition systems. High monthly value with strong growth potential in e-commerce sector."
-      }
+      "websiteGaps": [
+        "Yahoo email address hurts credibility",
+        "Elementor site with heavy image assets — slow load",
+        "Cluttered layout with poor visual hierarchy",
+        "Multiple thin location pages with duplicate content risk",
+        "No online booking integration",
+        "Poor mobile responsiveness",
+        "Header contact info hard to find"
+      ],
+      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
+      "prospect_id": "ap-pest-control-20260429-131056",
+      "created_at": "2026-04-29T13:10:56.034466",
+      "updated_at": "2026-04-29T13:10:56.034468",
+      "status": "new"
     },
-    "innovatetech-labs-20260423-170550": {
-      "businessName": "InnovateTech Labs",
-      "niche": "AI & Machine Learning Startups",
-      "website": "https://innovatetechlabs.ai",
-      "source": "TechCrunch - AI Startup Funding",
-      "description": "AI startup developing machine learning solutions for enterprise automation. Recently secured Series A funding and needs creative web services and outbound automation for enterprise sales development.",
+    "sphere-electric-llc-20260429-131116": {
+      "businessName": "Sphere Electric LLC",
+      "niche": "Electrical Contractors / Home Services",
+      "website": "https://www.sphereelectric.net/",
+      "source": "Google Search - Denver electrician free estimate",
+      "description": "Newer Denver electrical contractor. Wix-built site using Gmail for business. Thin service content, no booking, weak SEO.",
       "contact": {
-        "email": "bd@innovatetechlabs.ai",
-        "phone": "+1 (650) 555-0312",
-        "linkedin": "https://linkedin.com/company/innovatetech-labs",
+        "phone": "(720) 705-8991",
+        "email": "sphere.electric@gmail.com",
+        "address": "1550 N Raleigh St #229, Denver, CO 80204",
         "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": null
+          },
           "email": {
             "verified": true,
-            "verified_at": "2026-04-23T17:06:23.214965"
+            "verified_at": null
+          }
+        }
+      },
+      "websiteGaps": [
+        "Wix platform limits SEO/performance",
+        "Uses Gmail instead of domain email",
+        "Thin service page content",
+        "No online scheduling",
+        "No blog"
+      ],
+      "emailPurpose": "Website audit funnel",
+      "prospect_id": "sphere-electric-llc-20260429-131116",
+      "created_at": "2026-04-29T13:11:16.066017",
+      "updated_at": "2026-04-29T13:11:16.066018",
+      "status": "new"
+    },
+    "window-replacement-denver-20260429-131122": {
+      "businessName": "Window Replacement Denver",
+      "niche": "Window Replacement / Home Improvement",
+      "website": "https://windowreplacementdenver.com/",
+      "source": "Google Search - Denver window replacement company",
+      "description": "Denver window/door replacement company serving Pella products. Content-heavy site with poor UX patterns. Phone number formatting broken (tel:720207012202 instead of 720-701-2202). No service area pages with unique content. Lead capture form exists but no booking integration. No blog differentiation despite long content.",
+      "contact": {
+        "phone": "(720) 701-2202",
+        "email": "unknown",
+        "address": "1480 N Humboldt St, Denver, CO 80218",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": null
           },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "websiteGaps": [
+        "Broken phone link in header (tel:720207012202)",
+        "Content-heavy but poor visual hierarchy",
+        "No online scheduling / booking integration",
+        "Thin city-specific pages",
+        "No customer review display on homepage",
+        "Weak conversion optimization",
+        "Poor mobile UX"
+      ],
+      "emailPurpose": "Website audit funnel",
+      "prospect_id": "window-replacement-denver-20260429-131122",
+      "created_at": "2026-04-29T13:11:22.634007",
+      "updated_at": "2026-04-29T13:11:22.634009",
+      "status": "new"
+    },
+    "colby-plumbing-company-20260429": {
+      "businessName": "Colby Plumbing Company",
+      "niche": "Plumbing / Home Services",
+      "website": "https://colbyplumbingcompany.weebly.com",
+      "source": "web_research",
+      "description": "Denver plumbing company on a free Weebly subdomain. Blog-only site with extremely thin, poorly-written content with frequent grammar errors. No email visible. No online booking. No portfolio. Free subdomain undermines credibility for a business where trust is critical.",
+      "serviceArea": "Denver Metro, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 84,
+      "funnelStage": "prospecting",
+      "status": "new"
+    },
+    "aplus-electric-denver-20260429": {
+      "businessName": "A+ Electric Services",
+      "niche": "Electrical Contractors",
+      "website": "https://aplus-electric.weebly.com",
+      "source": "web_research",
+      "description": "Denver electrician on a free Weebly subdomain. Extremely thin, generic content. No phone or email visible on homepage. Free Weebly subdomain destroys trust for an electrical contractor where licensing credibility is critical. No online scheduling. No portfolio.",
+      "serviceArea": "Denver Metro, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 82,
+      "funnelStage": "prospecting",
+      "status": "new"
+    },
+    "rocky-mountain-seamless-gutters-20260429": {
+      "businessName": "Rocky Mountain Seamless Gutters",
+      "niche": "Gutters / Exterior Home Services",
+      "website": "https://rockymountainseamless.com",
+      "source": "web_research",
+      "description": "Denver seamless gutter company with a \"Coming Soon\" page on SquareSpace. Domain is registered but site was never launched. Zero online lead capture, zero local SEO presence. Massive opportunity for a full website build and launch.",
+      "serviceArea": "Denver Metro / Front Range, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 88,
+      "funnelStage": "prospecting",
+      "status": "new"
+    },
+    "restore-honor-restoration-plumbing-20260429": {
+      "businessName": "Restore Honor Restoration and Plumbing",
+      "niche": "Plumbing / Restoration",
+      "website": "https://restorehonorrestorationandplumbing.weebly.com",
+      "source": "web_research",
+      "description": "Denver/Aurora plumbing and restoration company on a free Weebly subdomain. Extremely thin AI-written content with heavy external link reliance. No email visible. Free subdomain undermines trust for an emergency services company. No online booking. No restoration portfolio.",
+      "serviceArea": "Denver Metro, Aurora, CO",
+      "phone": "unverified",
+      "email": "unverified",
+      "opportunityScore": 80,
+      "funnelStage": "prospecting",
+      "status": "new"
+    },
+    "the-pool-man-inc-20260429-140646": {
+      "businessName": "The Pool Man Inc",
+      "niche": "Pool Service / Maintenance / Supplies / Denver",
+      "website": "https://poolmanusa.co",
+      "phone": "(303) 781-4409",
+      "contactName": "The Pool Man Inc",
+      "location": "Denver, CO",
+      "source": "Google Search - Denver pool service company",
+      "description": "Denver pool service since 1976 offering cover installation, renovation, leak detection, supplies, and maintenance. Website runs on basic platform with no lead capture form, no SSL on main domain, no blog/content marketing, heavy wall-of-text layout with no conversion optimization. Phone number visible but no booking widget or contact form.",
+      "websiteIssues": "No SSL redirect from HTTP; no contact form on site (only phone number); bloated homepage text with no scannable layout; no social proof integration or review widgets; no blog or educational content; no online scheduling or estimate request tool; poor mobile responsiveness",
+      "leadCaptureGaps": [
+        "No contact form",
+        "No scheduling widget",
+        "No estimate request tool",
+        "No email capture",
+        "No live chat"
+      ],
+      "conversionGaps": [
+        "No clear CTA above fold",
+        "No click-to-call tracking",
+        "No testimonials prominently displayed",
+        "No before/after portfolio visible on homepage"
+      ],
+      "technicalGaps": [
+        "HTTP not redirecting to HTTPS",
+        "No CMS framework visible",
+        "Basic static HTML likely unoptimized for speed",
+        "No schema markup expected"
+      ],
+      "auditPriority": "high",
+      "funnelStage": "research",
+      "status": "new",
+      "prospect_id": "the-pool-man-inc-20260429-140646",
+      "created_at": "2026-04-29T14:06:46.540096",
+      "updated_at": "2026-04-29T14:08:06.779792",
+      "contact": {
+        "verification_status": {
           "phone": {
             "verified": false,
             "verified_at": null
           },
-          "linkedin": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:27.806226"
+          "email": {
+            "verified": false,
+            "verified_at": null
           }
         }
-      },
-      "estimatedValue": "Very High ($25K-100K+ engagements)",
-      "priority": "Very High - Funded and scaling",
-      "prospect_id": "innovatetech-labs-20260423-170550",
-      "created_at": "2026-04-23T17:05:50.262272",
-      "updated_at": "2026-04-23T23:20:00.000Z",
-      "status": "drafted",
-      "lastAction": {
-        "type": "outreach_draft",
-        "timestamp": "2026-04-23T23:20:00.000Z",
-        "draftLocation": "artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
-        "contactMethod": "email",
-        "notes": "Strategic partnership proposal for Series A-funded AI startup focusing on enterprise web development, automated sales development, and API integration architecture. High-value engagement with significant growth potential."
       }
     },
-    "digitalflow-marketing-group-20260423-170554": {
-      "businessName": "DigitalFlow Marketing Group",
-      "niche": "Performance Marketing & Analytics",
-      "website": "https://digitalflowmarketing.com",
-      "source": "Marketing Technology Conference",
-      "description": "Performance marketing agency specializing in data-driven customer acquisition. Currently expanding service offerings and needs automation solutions for campaign management and client reporting workflows.",
+    "denver-home-repairs-llc-20260429-140654": {
+      "businessName": "Denver Home Repairs LLC",
+      "niche": "Handyman / Home Services / Denver",
+      "website": "https://denverhomerepairsllc.com",
+      "phone": "(256) 601-0983",
+      "contactName": "Denver Home Repairs LLC",
+      "location": "Denver, CO",
+      "source": "Google Search - Denver handyman service",
+      "description": "Denver handyman service claiming to serve greater Denver area but using Alabama area code (256). WordPress site with Elementor. Decent structure but major trust signals missing. Alabama phone number for a Denver business is a red flag for local customers. Testimonials section present but no third-party review integration.",
+      "websiteIssues": "Alabama (256) area code for Denver business creates trust gap; WordPress/Elementor site feels template-driven; no service area page with location-specific content; Google Maps embed missing; no click-to-call tracking; generic stock imagery",
+      "leadCaptureGaps": [
+        "Free estimate form present but buried",
+        "No SMS/chat option",
+        "No newsletter or email capture",
+        "No booking calendar"
+      ],
+      "conversionGaps": [
+        "CTA uses generic Get A Free Estimate with no urgency",
+        "No service pricing transparency",
+        "No Google Reviews badge or rating stars",
+        "No guarantee shown prominently enough"
+      ],
+      "technicalGaps": [
+        "Possible slow load from Elementor bloat",
+        "No obvious SEO meta optimization",
+        "Unoptimized images on homepage",
+        "No local business schema expected"
+      ],
+      "auditPriority": "high",
+      "funnelStage": "research",
+      "status": "new",
+      "prospect_id": "denver-home-repairs-llc-20260429-140654",
+      "created_at": "2026-04-29T14:06:54.035375",
+      "updated_at": "2026-04-29T14:08:06.828047",
       "contact": {
-        "email": "growth@digitalflowmarketing.com",
-        "phone": "+1 (312) 555-0428",
-        "linkedin": "https://linkedin.com/company/digitalflow-marketing-group",
         "verification_status": {
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:30.841740"
-          },
           "phone": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:32.900159"
+            "verified": false,
+            "verified_at": null
           },
-          "linkedin": {
-            "verified": true,
-            "verified_at": "2026-04-23T17:06:35.185313"
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "the-handymen-denver-20260429-140702": {
+      "businessName": "The Handymen (Denver)",
+      "niche": "Handyman / Home Services / Denver",
+      "website": "http://thehandymenonline.com",
+      "phone": "(303) 232-3347",
+      "contactName": "Paul Faustini",
+      "location": "2164 South Yates Street, Denver, CO 80219",
+      "source": "Google Search - Denver handyman service",
+      "description": "Family-run Denver handyman business since 1984 (42 years). Website is a bare-bones single-page HTML site with no CMS. No mobile responsiveness, no SSL, no contact form, no booking. Links to a blogspot page and Facebook. Minimal design — literally just text on white background. Runs on http only. Huge opportunity for a full website overhaul and digital presence transformation.",
+      "websiteIssues": "HTTP no SSL; single-page HTML site (not responsive); no contact form or lead capture; no CTA structure; links to external blogspot blog; no local SEO optimization; no Google Business integration on site; no testimonials or portfolio on site",
+      "leadCaptureGaps": [
+        "No contact form",
+        "No phone tracking",
+        "No email capture",
+        "No booking/scheduling",
+        "No chat",
+        "No estimate request"
+      ],
+      "conversionGaps": [
+        "No call-to-action buttons",
+        "No service menu with pricing",
+        "No trust signals (BBB, Google Reviews)",
+        "No portfolio or gallery"
+      ],
+      "technicalGaps": [
+        "No SSL certificate",
+        "No responsive/mobile design",
+        "Bare HTML with no schema markup",
+        "No analytics tracking visible",
+        "No CDN or performance optimization"
+      ],
+      "auditPriority": "critical",
+      "funnelStage": "research",
+      "status": "new",
+      "prospect_id": "the-handymen-denver-20260429-140702",
+      "created_at": "2026-04-29T14:07:02.024797",
+      "updated_at": "2026-04-29T14:08:06.876225",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "welcome-home-handyman-of-denver-20260429-140709": {
+      "businessName": "Welcome Home Handyman of Denver",
+      "niche": "Handyman / Home Services / Denver",
+      "website": "https://welcomehomehandymanofdenver.com",
+      "phone": "(720) 312-0607",
+      "contactName": "Charlie",
+      "location": "Denver Metro, CO",
+      "source": "Google Search - Denver handyman service",
+      "description": "Solo handyman operator with a cleaner single-page site than competitors. Has service pages and a schedule form but the contact form is basic HTML/PHP with no CRM integration. Good Google reviews but not embedded on site. No blog, no case studies, no portfolio. Excellent prospect for audit — site is decent but missing conversion optimization and technical polish.",
+      "websiteIssues": "Homepage is single-page scroll with no breadcrumbs; contact form is basic PHP with no CRM/webhook integration; no SSL issues (good), but no blog or content marketing; no service pricing listed; no Google Reviews embed/widget; no portfolio/gallery of work; no analytics visible",
+      "leadCaptureGaps": [
+        "Schedule form present but basic",
+        "No email capture/newsletter",
+        "No live chat",
+        "No automated estimate follow-up"
+      ],
+      "conversionGaps": [
+        "No pricing transparency",
+        "No trust badges (insurance, license)",
+        "Service links are just anchor jumps, no dedicated pages",
+        "No before/after photos"
+      ],
+      "technicalGaps": [
+        "No obvious schema markup",
+        "No lazy loading on images",
+        "No caching/CDN visible",
+        "Single HTML form with no validation feedback"
+      ],
+      "auditPriority": "medium",
+      "funnelStage": "research",
+      "status": "new",
+      "prospect_id": "welcome-home-handyman-of-denver-20260429-140709",
+      "created_at": "2026-04-29T14:07:09.141118",
+      "updated_at": "2026-04-29T14:08:06.925234",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "ernies-gutter-20260429-140723": {
+      "businessName": "Ernie's Gutter",
+      "niche": "Gutters / Exterior Home Services / Denver",
+      "website": "https://erniesgutter.com",
+      "phone": "(720) 346-7663",
+      "contactName": "Ernie's Gutter",
+      "location": "Denver, CO",
+      "source": "Google Search - Denver gutter service ad listing",
+      "description": "Denver gutter company established in 1978 with 45+ years of experience. Site has good SEO structure and content with dedicated service pages. However misses on conversion: no online booking, no automated estimate request, no review widget integration, heavy text blocks without scannable hierarchy. No click-to-call tracking.",
+      "websiteIssues": "No online booking or appointment scheduling; no automated estimate request flow; heavy text without scannable design; no Google Reviews widget or trust badges; no blog or educational content",
+      "leadCaptureGaps": [
+        "Contact page but no automated estimate",
+        "No SMS or text option",
+        "No live chat",
+        "No newsletter capture"
+      ],
+      "conversionGaps": [
+        "CTA is basic Request Online link",
+        "No pricing page",
+        "No click-to-call tracking",
+        "No before-after case studies"
+      ],
+      "technicalGaps": [
+        "WordPress with possible plugin bloat",
+        "Image optimization unknown",
+        "No visible speed optimization",
+        "Basic schema but no rich results"
+      ],
+      "auditPriority": "high",
+      "funnelStage": "research",
+      "status": "new",
+      "prospect_id": "ernies-gutter-20260429-140723",
+      "created_at": "2026-04-29T14:07:23.586588",
+      "updated_at": "2026-04-29T14:08:06.973808",
+      "contact": {
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      }
+    },
+    "ddl-cleaning-services-20260429-160930": {
+      "businessName": "DDL Cleaning Services",
+      "niche": "Cleaning Services / Residential & Commercial",
+      "website": "https://luzelena994.wixsite.com/website",
+      "source": "Google Search (site:wixsite.com for Denver cleaning services)",
+      "description": "Denver cleaning service using Wix free subdomain. Wix branding banner visible. Generic template content. Service booking buttons all say Call us - no true online booking system. Copyright 2021 suggests site has not been meaningfully updated. Missing custom domain, SEO optimization, proper online booking, service-specific landing pages.",
+      "location": "Denver, CO (serves Denver Metro Area)",
+      "contact": {
+        "phone": "(720)-347-8906",
+        "email": "luzelena@ddlcleaningservices.com",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
           }
         }
       },
-      "estimatedValue": "High ($8K-40K monthly retainers)",
-      "priority": "High - Service expansion phase",
-      "prospect_id": "digitalflow-marketing-group-20260423-170554",
-      "created_at": "2026-04-23T17:05:54.577102",
-      "updated_at": "2026-04-23T17:06:35.185318",
-      "status": "new"
+      "issues_score": 75,
+      "identified_gaps": [
+        "Free Wix subdomain with Wix branding banner",
+        "Generic template placeholder content",
+        "No custom domain",
+        "Call us buttons instead of real online booking",
+        "Copyright 2021 - outdated footer",
+        "No SEO optimization visible",
+        "No portfolio/gallery of actual work",
+        "Minimal service differentiation"
+      ],
+      "status": "new",
+      "prospect_id": "ddl-cleaning-services-20260429-160930",
+      "created_at": "2026-04-29T16:09:30.285806",
+      "updated_at": "2026-04-29T16:09:30.285808"
+    },
+    "mobile-mechanic-of-denver-20260429-160938": {
+      "businessName": "Mobile Mechanic of Denver",
+      "niche": "Auto Repair / Mobile Mechanic",
+      "website": "https://mobilemechaincdenv.wixsite.com/mobile-mechanic-of-d",
+      "source": "Google Search (site:wixsite.com for Denver auto repair)",
+      "description": "Mobile mechanic in Lakewood/Denver using Wix free subdomain. Wix branding banner visible on site. Sections contain generic Wix template placeholder text like This is your Price Quote section paragraph. Encourage your site visitors to provide their information. Site appears to be a basic out-of-box Wix template with minimal customization. No customer reviews or testimonials visible. No work portfolio showing completed jobs. Has an ecommerce cart feature that seems irrelevant for a mobile mechanic. Missing custom domain, SEO optimization, before/after photos, customer trust signals.",
+      "location": "Lakewood / Denver, CO",
+      "contact": {
+        "phone": "720-681-7474",
+        "email": "mobilemechaincdenverco@gmail.com",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "issues_score": 80,
+      "identified_gaps": [
+        "Free Wix subdomain with Wix branding banner",
+        "Generic placeholder template text visible (This is your Price Quote section)",
+        "No custom domain",
+        "Ecommerce cart feature irrelevant for mechanic service",
+        "No customer reviews or trust signals",
+        "No work portfolio or before/after photos",
+        "Minimal SEO optimization",
+        "Generic template layout throughout"
+      ],
+      "status": "new",
+      "prospect_id": "mobile-mechanic-of-denver-20260429-160938",
+      "created_at": "2026-04-29T16:09:38.367832",
+      "updated_at": "2026-04-29T16:09:38.367834"
+    },
+    "garcias-auto-repair-llc-20260429-160946": {
+      "businessName": "Garcias Auto Repair LLC",
+      "niche": "Auto Repair / Auto Shop",
+      "website": "https://garciasautorepair558.wixsite.com/garciasautorepairllc",
+      "source": "Google Search (site:wixsite.com for Denver auto repair)",
+      "description": "Denver auto repair shop using Wix free subdomain. Wix branding banner visible on site. Image gallery contains placeholder text still showing (I am a title, I am a description). Copyright 2013 in footer - site appears extremely outdated (13+ years without meaningful update). Slide show gallery only has 2 slides. Minimal services page content. No online booking, reviews, or social proof on site. Missing: custom domain, modern design, booking system, testimonials, service descriptions, SEO.",
+      "location": "3011 W. 49th Ave, Denver, CO 80221",
+      "contact": {
+        "phone": "(720)-447-9323",
+        "email": "garciasautorepair558@gmail.com",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "issues_score": 85,
+      "identified_gaps": [
+        "Free Wix subdomain with Wix branding banner",
+        "Placeholder text I am a title still visible in gallery",
+        "Copyright 2013 - site is 13+ years outdated",
+        "Only 2 slides in gallery",
+        "No online booking system",
+        "No customer reviews or testimonials",
+        "No SEO optimization",
+        "Very basic content with minimal service descriptions",
+        "No custom domain"
+      ],
+      "status": "new",
+      "prospect_id": "garcias-auto-repair-llc-20260429-160946",
+      "created_at": "2026-04-29T16:09:46.426490",
+      "updated_at": "2026-04-29T16:09:46.426492"
+    },
+    "jjc-auto-collision-center-20260429-160953": {
+      "businessName": "JJC Auto Collision Center",
+      "niche": "Auto Body / Collision Repair",
+      "website": "https://jjccautorepair.wixsite.com/mysite",
+      "source": "Google Search (site:wixsite.com for Denver auto repair)",
+      "description": "Denver auto collision center using Wix free subdomain with Wix branding banner visible. Extremely minimal site with only 6 pages (HOME, PROJECTS, SERVICES, SOCIAL MEDIA, ABOUT US, CONTACT) but all are sparse. Homepage has only a 2-slide image gallery and a link to contact page. No service descriptions, no pricing, no business history. The site functions as a digital business card/brochure at best. Missing: service details, portfolio of collision work, online estimates, SEO, customer reviews, trust signals, custom domain.",
+      "location": "Denver, CO",
+      "contact": {
+        "phone": "303-623-0172",
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "issues_score": 82,
+      "identified_gaps": [
+        "Free Wix subdomain with Wix branding banner",
+        "Extremely minimal content - functions as digital business card",
+        "No service descriptions or pricing",
+        "No portfolio of collision repair work",
+        "No online estimate or booking capability",
+        "No customer reviews or testimonials",
+        "Very basic template layout",
+        "No SEO optimization",
+        "No custom domain"
+      ],
+      "status": "new",
+      "prospect_id": "jjc-auto-collision-center-20260429-160953",
+      "created_at": "2026-04-29T16:09:53.672000",
+      "updated_at": "2026-04-29T16:09:53.672002"
+    },
+    "bluespring-cleaning-20260429-161002": {
+      "businessName": "BlueSpring Cleaning",
+      "niche": "Cleaning Services / House Cleaning",
+      "website": "https://bluespringcleaning.weebly.com",
+      "source": "Google Search (site:weebly.com for Denver cleaning services)",
+      "description": "Denver cleaning company using Weebly free subdomain (bluespringcleaning.weebly.com) despite owning bluespringcleaning.com domain which does not appear to be actively used as the primary site. Weebly footer branding visible. Single-page site with all content on one long page. No blog or SEO content strategy - site is essentially one SEO-optimized article repeated. No portfolio or before/after photos despite being a visual service. Heavy link spam at bottom with 20+ external profile links to about.me, angel.co, gravatar, etc. - looks like aggressive backlink building. No online booking system (just a phone number). Missing: custom domain usage, proper site structure, portfolio, booking system, clean design.",
+      "location": "2255 W EXPOSITION AVE, Denver, CO 80223",
+      "contact": {
+        "phone": "(303) 309-4226",
+        "email": "info@bluespringcleaning.com",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "issues_score": 70,
+      "identified_gaps": [
+        "Free Weebly subdomain despite owning custom domain",
+        "Weebly footer branding visible",
+        "Single long page with all content - no site structure",
+        "No blog or real SEO content strategy",
+        "No portfolio/before-after photos",
+        "Heavy link spam (20+ external profile links) at bottom",
+        "No online booking system - phone call only",
+        "Generic template content"
+      ],
+      "status": "new",
+      "prospect_id": "bluespring-cleaning-20260429-161002",
+      "created_at": "2026-04-29T16:10:02.091414",
+      "updated_at": "2026-04-29T16:10:02.091416"
     }
   },
-  "last_updated": "2026-04-23T17:06:35.185319",
+  "last_updated": "2026-04-29T16:10:02.091417",
   "version": "1.0"
 }

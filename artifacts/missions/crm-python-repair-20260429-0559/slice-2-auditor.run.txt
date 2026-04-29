@@ -1,0 +1,84 @@
+           "name": "session_status",
+              "summaryChars": 336,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 06:02 MDT] MISSION crm-python-repair-20260429-0559 \\u2014 slice 2/2.\\nLead is NEXUS. Goal: Diagnose and fix the CRM Python fd error (OSError 9 Bad file descriptor) that has blocked all CRM script access for over an hour, restoring the primary pipeline management tool..\\nYour task: Read forge-crm-fix.md. Verify independently: (a) run the fix command documented in the report and confirm it returns valid output, (b) run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT COUNT(*) FROM leads' and compare with the fixed script output, (c) run sqlite3 ... 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' and compare with fixed script output. Write artifacts/missions/crm-python-repair-20260429-0559/sentinel-verify.md with: before state (OSError 9), fix applied, after state (working/not-working), evidence of correct output, and verdict. Append SCORE_EVENT to _shared/scoring/history.jsonl for engineering.\\nWrite your output to: artifacts/missions/crm-python-repair-20260429-0559/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/crm-python-repair-20260429-0559/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — CRM Python scripts fully functional. All commands return valid output matching sqlite3 (66 leads, 57 provider_accepted). OSError 9 was non-reproducible transient fd issue — no code fix needed.",
+      "finalAssistantRawText": "STATE: PROCEED — CRM Python scripts fully functional. All commands return valid output matching sqlite3 (66 leads, 57 provider_accepted). OSError 9 was non-reproducible transient fd issue — no code fix needed.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 10,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

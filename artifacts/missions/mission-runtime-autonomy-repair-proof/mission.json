@@ -1,0 +1,46 @@
+{
+  "mission_id": "mission-runtime-autonomy-repair-proof",
+  "version": "1.0.0",
+  "created_at": "2026-04-29T12:36:00+03:00",
+  "owner": "operator",
+  "lead_agent": "orchestrator",
+  "goal": "Prove the agents can operate as a revenue team without useless questions, while RUNTIME_FREEZE.json is active.",
+  "risk_envelope": "GREEN/YELLOW only. ORANGE/RED actions require an APPROVAL <id> block in the channel before execution.",
+  "required_outcomes": [
+    "NEXUS spawns FORGE, BRIDGE, SENTINEL via sessions_spawn (no silent fallback to direct execution)",
+    "FORGE tests one site/API capability and writes evidence",
+    "BRIDGE reconciles one outreach ledger slice and writes evidence",
+    "SENTINEL audits both children's evidence and emits a verdict",
+    "At least one skill is invoked (any bundled skill counts)",
+    "At least one memory_read",
+    "At least one memory_write",
+    "At least one score_event appended to _shared/scoring/history.jsonl",
+    "NEXUS returns operator-summary.md with no vague question, only PROCEED | APPROVAL_REQUEST | BLOCKER"
+  ],
+  "artifact_folder": "artifacts/missions/mission-runtime-autonomy-repair-proof/",
+  "deliverables": [
+    "mission.json",
+    "nexus-plan.md",
+    "forge-output.md",
+    "bridge-output.md",
+    "sentinel-audit.md",
+    "skill-use-evidence.md",
+    "memory-evidence.md",
+    "score-events.jsonl",
+    "operator-summary.md",
+    "postmortem.md"
+  ],
+  "boot_files_required": [
+    "MISSION.md", "POLICY.md", "MEMORY.md", "SCORECARD.md", "DREAMS.md", "HEARTBEAT.md", "INBOX.md"
+  ],
+  "pass_criteria": {
+    "subagents_run_or_blocker_documented": true,
+    "no_vague_what_do_you_need": true,
+    "no_fake_sends": true,
+    "no_duplicate_sends": true,
+    "no_unsupported_claims": true,
+    "no_external_side_effect_without_approval": true,
+    "all_artifacts_exist": true,
+    "operator_receives_exact_next_action": true
+  }
+}

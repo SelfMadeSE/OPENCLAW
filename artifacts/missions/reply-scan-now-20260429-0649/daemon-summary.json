@@ -1,0 +1,12 @@
+{
+  "mission_id": "reply-scan-now-20260429-0649",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-reply-scan.md"
+    }
+  ],
+  "completed_at": "2026-04-29T12:52:48.505127+00:00"
+}

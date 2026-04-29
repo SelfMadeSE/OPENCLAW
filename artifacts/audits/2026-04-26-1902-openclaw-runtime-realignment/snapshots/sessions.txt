@@ -1,0 +1,96 @@
+Session store: /Users/ryleebenson/.openclaw/agents/orchestrator/sessions/sessions.json
+Sessions listed: 93
+Kind   Key                        Age       Model          Tokens (ctx %)       Flags
+direct agent:orchestrator:main    1m ago    deepseek-v4-pro 43k/1000k (4%)       id:1036075a-9d23-4b5b-a9f3-7b35cd8bf457
+direct agent:orchestrat...rtbeat  8m ago    deepseek-v4-pro 38k/1000k (4%)       system id:59943d11-e610-4459-814a-f07e62bd2687
+direct agent:orchestrat...bffd31  22m ago   deepseek-v4-flash 39k/1000k (4%)       system id:08075a39-e456-4c80-882d-53a1b72574ae
+direct agent:orchestrat...2574ae  22m ago   deepseek-v4-flash 39k/1000k (4%)       system id:08075a39-e456-4c80-882d-53a1b72574ae
+direct agent:orchestrat...613806  32m ago   glm-4.5        66k/128k (51%)       system id:0819e94e-7348-4cb6-961e-3d6c22772901
+group  agent:orchestrat...benson  49m ago   deepseek-v4-pro unknown/1000k (?%)   id:f2e6bc89-40c9-420b-a552-9bc974ede6ef
+group  agent:orchestrat...@rylee  1h ago    deepseek-v4-pro unknown/1000k (?%)   id:150d44fe-fa0a-4c1f-ba29-d04c2e609b0b
+direct agent:orchestrat...01d437  1h ago    deepseek-v4-flash 39k/1000k (4%)       system id:dd605a52-092b-43f6-bbde-c709e701d437
+direct agent:orchestrat...170b2f  2h ago    deepseek-v4-flash 40k/128k (32%)       system id:86cd4f89-65d0-469a-b661-dca991170b2f
+direct agent:orchestrat...b5c05e  3h ago    gpt-5.4        50k/128k (39%)       system id:a4a18737-2916-455f-b558-86ac9d407f8d
+direct agent:orchestrat...407f8d  3h ago    gpt-5.4        50k/128k (39%)       system id:a4a18737-2916-455f-b558-86ac9d407f8d
+direct agent:orchestrat...ea9f15  3h ago    gpt-5.4        40k/128k (32%)       system id:38b23548-c0d0-40c4-aee0-602c43ea9f15
+direct agent:orchestrat...989011  2d ago    gpt-5.4        77k/128k (60%)       think:low system id:3a68ab9b-e271-4658-b9c5-7062995d18c2
+direct agent:orchestrat...460d9b  2d ago    gpt-5.4        24k/128k (19%)       system id:643d30b7-d9fb-49bc-a12d-e988efc67ea5
+direct agent:orchestrat...446263  2d ago    gpt-5.4        20k/128k (16%)       id:a90f737a-7472-4b64-86be-c51b64b4f468
+direct agent:orchestrat...446263  2d ago    gpt-5.4        20k/128k (16%)       id:8c3608c9-8e77-41be-bb84-1e538cdd0945
+direct agent:orchestrat...415193  2d ago    gpt-5.4        20k/128k (16%)       id:73a00eee-27c6-47b6-95a9-78131c6d9e71
+direct agent:orchestrat...415193  2d ago    gpt-5.4        21k/128k (16%)       id:aa4de3f5-8ca5-48cc-b7dd-41a16fbb4329
+direct agent:orchestrat...369951  2d ago    gpt-5.4        20k/128k (16%)       id:1559c8d6-aa8c-4719-9e75-e484abe49fa9
+direct agent:orchestrat...369951  2d ago    gpt-5.4        20k/128k (16%)       id:2a26681a-9e99-416f-8ac7-8f209c2a8c18
+direct agent:orchestrat...330584  2d ago    gpt-5.4        20k/128k (16%)       id:5f51ffd4-ba2c-4aa6-85e0-e50f51b50bfb
+direct agent:orchestrat...330584  2d ago    gpt-5.4        20k/128k (16%)       id:91ffb404-0cfb-4442-85b8-6e63f631fc77
+direct agent:orchestrat...288230  2d ago    gpt-5.4        20k/128k (16%)       id:21d75852-b56b-4a78-9b22-4279a63729f0
+direct agent:orchestrat...288230  2d ago    gpt-5.4        21k/128k (16%)       id:7cc7c4ff-5fab-46ac-9fa0-b4e20a6d5d57
+direct agent:orchestrat...246331  2d ago    gpt-5.4        20k/128k (15%)       id:5148111c-f96f-415c-b1cb-34ff79894b96
+direct agent:orchestrat...246331  2d ago    gpt-5.4        20k/128k (16%)       id:d487432d-e0af-4829-8c28-f1fe1c537a17
+direct agent:orchestrat...200192  2d ago    gpt-5.4        20k/128k (16%)       id:81214242-fd58-4a8f-95b8-ae94decdeba9
+direct agent:orchestrat...200192  2d ago    gpt-5.4        20k/128k (16%)       id:6a6f7553-efc1-4780-b778-69d1e78066ca
+direct agent:orchestrat...rtbeat  3d ago    glm-4.5        13k/128k (10%)       system id:e20b8a8e-11a0-45b3-a50a-f91b7b41ae29
+direct agent:orchestrat...17a6b3  3d ago    glm-4.5        34k/128k (26%)       think:low id:0a92f264-53f1-453c-84ed-8b93d207e934
+direct agent:orchestrat...9511a0  4d ago    gpt-5.4        14k/128k (11%)       think:low system id:682663b2-75e3-4cea-a796-223ad8092a0b
+direct agent:orchestrat...2e5d64  4d ago    gpt-5.4        unknown/1000k (?%)   think:low id:2c962adc-c653-44d4-9d6a-18bd8e90270d
+direct agent:orchestrat...1a046d  4d ago    gpt-5.4        unknown/1000k (?%)   think:low id:c74e9d93-588f-4527-b066-5db55d706c3e
+direct agent:orchestrat...7d58aa  4d ago    gpt-5.4        unknown/1000k (?%)   think:low id:f4ca4972-efc2-46b6-ac24-d3654eb1811d
+direct agent:orchestrat...841959  4d ago    gpt-5.4        15k/128k (12%)       id:f1d5bf21-fe40-4f4b-81a5-2df709da86b4
+direct agent:orchestrat...841959  4d ago    gpt-5.4        15k/128k (12%)       id:cdf067e7-2e8d-4160-8704-6117fb584e32
+direct agent:orchestrat...765281  4d ago    gpt-5.4        16k/128k (12%)       id:bfb234da-a75f-409d-9144-5a20a23b818a
+direct agent:orchestrat...765281  4d ago    gpt-5.4        15k/128k (12%)       id:5fafa7e0-e5c4-45f3-85e7-2680a23a6ab2
+direct agent:orchestrat...765281  4d ago    gpt-5.4        15k/128k (12%)       id:a378ed32-b967-42c6-8c26-b0f1af28fbb2
+direct agent:orchestrat...641260  4d ago    gpt-5.4        18k/128k (14%)       id:745c17b4-aee1-4d4d-ad7a-ae6e3b2f7c66
+direct agent:orchestrat...641260  4d ago    gpt-5.4        18k/128k (14%)       id:cfee33c5-7eba-4ce6-9149-7c037b0553bc
+direct agent:orchestrat...641260  4d ago    gpt-5.4        15k/128k (12%)       id:b1aaed65-856a-4e2b-9926-d31e4bccf180
+direct agent:orchestrat...583992  4d ago    gpt-5.4        15k/128k (12%)       id:7af2c331-cede-4f90-a33b-156ad1f7f1b0
+direct agent:orchestrat...583992  4d ago    gpt-5.4        16k/128k (12%)       id:cbc2184a-baad-4b68-956b-ac9e42856cb8
+direct agent:orchestrat...521238  4d ago    gpt-5.4        18k/128k (14%)       id:bf59c6d0-28fb-448d-9d05-a743568b84de
+direct agent:orchestrat...521238  4d ago    gpt-5.4        18k/128k (14%)       id:ec52aed1-f421-461c-b455-516cd1db31f1
+direct agent:orchestrat...489187  4d ago    gpt-5.4        15k/128k (12%)       id:d533170f-1f63-4746-8b18-0f421d080d01
+direct agent:orchestrat...489187  4d ago    gpt-5.4        15k/128k (12%)       id:3d6d79c7-4c87-4ec3-aaea-9d55508f1770
+direct agent:orchestrat...400158  4d ago    gpt-5.4        16k/128k (12%)       id:29794ea5-67a6-41a0-9704-0c0751077f58
+direct agent:orchestrat...400158  4d ago    gpt-5.4        18k/128k (14%)       id:71558bdd-59a1-435c-bc61-634e4bedf0ed
+direct agent:orchestrat...400158  4d ago    gpt-5.4        15k/128k (12%)       id:2bc0cb19-491f-4f0b-aa47-577d17a106c0
+direct agent:orchestrat...2a052b  5d ago    gpt-5.4        24k/96k (25%)        system id:87fc8fe7-7c31-4096-8b18-2b8a78832f28
+direct agent:orchestrat...41bbd3  5d ago    gpt-5.4-mini   24k/64k (38%)        system id:116b7015-ada4-457c-9377-2d685c30d4f9
+direct agent:orchestrat...186858  5d ago    gpt-5.4-mini   18k/64k (28%)        id:1c1ebb39-a626-4799-a238-c06f469d4238
+direct agent:orchestrat...186858  5d ago    gpt-5.4-mini   17k/64k (26%)        id:27d95c70-1b87-45d1-ac52-8e9ae45e2b29
+direct agent:orchestrat...186858  5d ago    gpt-5.4-mini   17k/64k (26%)        id:d4c424bd-4445-4d7e-afcf-e7b46b64496d
+direct agent:orchestrat...159935  5d ago    gpt-5.4-mini   17k/64k (27%)        id:6ae431a0-0250-452b-adda-b2ca0f754543
+direct agent:orchestrat...159935  5d ago    gpt-5.4-mini   17k/64k (27%)        id:0936e2ef-b188-4141-bd9a-db6be902dce8
+direct agent:orchestrat...159935  5d ago    gpt-5.4-mini   17k/64k (27%)        id:6cb11b25-e6bd-4c35-86f5-e30c7c1e436c
+direct agent:orchestrat...112815  5d ago    gpt-5.4-mini   20k/64k (31%)        id:914d9739-870e-440f-bedd-964213a135a0
+direct agent:orchestrat...112815  5d ago    gpt-5.4-mini   18k/64k (27%)        id:753698ab-a917-42ea-9e09-dd9a6f9a07a1
+direct agent:orchestrat...112815  5d ago    gpt-5.4-mini   17k/64k (27%)        id:00d31878-f8ab-461f-aa5e-42fa1e1c9473
+direct agent:orchestrat...088668  5d ago    gpt-5.4-mini   18k/64k (28%)        id:bd55aa38-eb53-4de3-ac8d-e85522e87558
+direct agent:orchestrat...088668  5d ago    gpt-5.4-mini   17k/64k (26%)        id:815f987e-fd7a-41c3-84d4-77e1117c7985
+direct agent:orchestrat...088668  5d ago    gpt-5.4-mini   17k/64k (27%)        id:180a7c6a-ff3d-4a28-aab6-698e3a9e220c
+direct agent:orchestrat...062161  5d ago    gpt-5.4-mini   17k/64k (26%)        id:93ff0069-440b-45a3-b629-0019ab9a5714
+direct agent:orchestrat...062161  5d ago    gpt-5.4-mini   17k/64k (26%)        id:01b01356-424f-4f22-ad48-66fecb04d5af
+direct agent:orchestrat...062161  5d ago    gpt-5.4-mini   17k/64k (27%)        id:3b7469eb-7167-4a69-9811-591f4e34b4a2
+direct agent:orchestrat...038847  5d ago    gpt-5.4-mini   19k/64k (30%)        id:203f8129-1080-4048-afcb-0e6a06e7ca4f
+direct agent:orchestrat...038847  5d ago    gpt-5.4-mini   17k/64k (27%)        id:3503eb79-1f83-4200-81f8-5d67cd001fc6
+direct agent:orchestrat...000132  5d ago    gpt-5.4-mini   17k/64k (27%)        id:9814b30e-4c5a-4705-a356-59b722240ffd
+direct agent:orchestrat...000132  5d ago    gpt-5.4-mini   17k/64k (26%)        id:e8d0c72f-94af-4f39-b8a8-b8dd08a9681e
+direct agent:orchestrat...000132  5d ago    gpt-5.4-mini   16k/64k (25%)        id:16a08460-43fc-4a1b-9887-3404c6b7916b
+direct agent:orchestrat...982873  6d ago    glm-5.1        17k/64k (27%)        id:199bde7d-5078-43c9-be1c-02ca96534001
+direct agent:orchestrat...982873  6d ago    glm-5.1        17k/64k (26%)        id:259e6526-e7e5-4a11-810a-12f1eb58c1a1
+direct agent:orchestrat...928805  6d ago    glm-5.1        17k/64k (26%)        id:e4b04e31-9c85-4dde-9849-3c25838d4b20
+direct agent:orchestrat...928805  6d ago    glm-5.1        17k/64k (27%)        id:49570b14-987b-42df-b224-02292c4a3831
+direct agent:orchestrat...854668  6d ago    glm-5.1        17k/64k (26%)        id:b3cbf5a9-482f-44e4-a8d7-981450708a51
+direct agent:orchestrat...854668  6d ago    glm-5.1        17k/64k (27%)        id:11329c3d-de11-4d62-b03c-c7ba024405aa
+direct agent:orchestrat...779790  6d ago    glm-5.1        17k/64k (26%)        id:18309727-55f2-4299-acf2-f0c59ecccbdd
+direct agent:orchestrat...779790  6d ago    glm-5.1        17k/64k (27%)        id:5fb6b8b7-b71f-4bb9-9866-6287287dbbf0
+direct agent:orchestrat...722517  6d ago    glm-5.1        17k/64k (26%)        id:4015fe8e-d34d-40ce-a47b-d21cf20f1b67
+direct agent:orchestrat...722517  6d ago    glm-5.1        17k/64k (27%)        id:2d28c502-4265-4eba-b104-15e0fd5e1569
+direct agent:orchestrat...668129  6d ago    glm-5.1        17k/64k (26%)        id:e3a57059-ad9d-4dc6-9824-7b784533ec3f
+direct agent:orchestrat...668129  6d ago    glm-5.1        17k/64k (27%)        id:e64d2c25-9347-4169-99b2-a6f8be7b2a27
+direct agent:orchestrat...600115  6d ago    glm-5.1        17k/64k (26%)        id:d22f4f83-a5b4-442d-a15a-3fcee394ac7a
+direct agent:orchestrat...600115  6d ago    glm-5.1        17k/64k (27%)        id:72277270-a07d-411f-ad43-994a06604222
+direct agent:orchestrat...889db6  7d ago    glm-5.1        33k/64k (51%)        id:3ede3baf-9d5b-4e93-84bf-13a56ee61f01
+direct agent:orchestrat...b3610c  7d ago    qwen3.5-9b     13k/33k (40%)        system id:79a81268-4b05-4dc6-9978-d36b563e8bc5
+direct agent:orchestrat...306a16  7d ago    qwen3.5-9b     unknown/33k (?%)     system id:9a312e02-8bc0-4164-8c9e-7a3c58038555
+direct agent:orchestrat...92fb7b  7d ago    qwen3.5-9b     8.0k/33k (24%)       system id:48476afd-99a2-4be8-8017-5a062b3c69f9
+direct agent:orchestrat...129450  8d ago    qwen3.5-9b     unknown/33k (?%)     id:d13e1e4a-7fee-4566-aad5-cff454eabb97
+direct agent:orchestrat...f0f1cd  8d ago    qwen3.5-9b     6.3k/33k (19%)       id:958655aa-8b69-469c-a409-d596bfeea329

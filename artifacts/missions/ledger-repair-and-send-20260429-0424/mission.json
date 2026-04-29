@@ -1,0 +1,23 @@
+{
+  "mission_id": "ledger-repair-and-send-20260429-0424",
+  "goal": "Repair the email ledger by re-sending via SMTP the 7 former unverified_claim leads (now reconciled_superseded) and the highest-scored unsent drafted lead, producing clean provider_accepted evidence.",
+  "success_criteria": [
+    "8 new provider_accepted email_attempt rows with Gmail message IDs replacing the 7 reconciled_superseded entries",
+    "Pipeline advances: at least 1 outreach_drafted lead moved to outreach_sent with verified evidence"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Step 1: Run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,recipient,status FROM email_attempts WHERE status=\"reconciled_superseded\" ORDER BY id' to get the 7 former unverified_claim leads. Step 2: Run python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads --stage outreach_drafted --min-score 70 to get the highest-scored unsent lead. Step 3: For each of the 8 leads, read their prospect research from artifacts/prospects/*.json and write a personalized audit-led email referencing specific site weaknesses. Step 4: Send each via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Your website audit \u2014 free report' --body '<body>'. Step 5: Log each send: python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py email-ledger log <lead_id> <email> gmail_smtp owner@outboundautonomy.com --status sent_verified --provider-message-id <msg_id>. Step 6: Update CRM stages for any outreach_drafted leads to outreach_sent. Write results table with old_ledger_id, new_ledger_id, message_id, and status to artifacts/missions/ledger-repair-and-send-20260429-0424/bridge-results.md.",
+      "expected_artifact": "bridge-results.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-results.md. Independently verify: (a) sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,status,provider_message_id FROM email_attempts WHERE id > 14 ORDER BY id DESC LIMIT 20' \u2014 confirm at least 8 new provider_accepted rows with non-null provider_message_id, (b) confirm the 7 old reconciled_superseded rows still exist (superseded, not deleted) and the new rows reference different ids, (c) spot-check 2 of the new message_ids are valid Gmail format (<hex>@mail.gmail.com). Write artifacts/missions/ledger-repair-and-send-20260429-0424/sentinel-verify.md with: verdict per claim (approved|needs-evidence), old-vs-new row mapping table, and total verified-send count. Append SCORE_EVENT to _shared/scoring/history.jsonl for outreach.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "The 7 unverified_claim rows were just reconciled to reconciled_superseded \u2014 this is the natural next step to replace them with verified SMTP sends. The CRM Python process had a fd error (OSError 9) so sqlite3 direct queries bypass that. This mission converts liability (7 unverified claims) into asset (8 verified sends) and draws down the 13-strong drafted inventory. No hard-wall items. SMTP pipeline previously proven with 47 provider_accepted rows."
+}

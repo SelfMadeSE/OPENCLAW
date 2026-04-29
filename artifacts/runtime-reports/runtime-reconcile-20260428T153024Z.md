@@ -1,0 +1,51 @@
+# OpenClaw Runtime Reconciliation
+
+Generated: 2026-04-28T15:30:24.794277+00:00
+
+## Cron
+
+- Jobs: 16 enabled / 18 total
+- Last-run statuses: `{"error": 5, "ok": 13}`
+- Failed or blocked jobs:
+  - Daily Outbound Autonomy Audit-Funnel Content (marketing): error cron: job execution timed out
+  - Nightly OA Ops Review (orchestrator): error cron: job execution timed out
+  - Nightly OA Engineering Review (engineering): error cron: job execution timed out
+  - Nightly OA Creative Review (creative): error cron: job execution timed out
+  - Hourly Prospect Research (outreach): error FallbackSummaryError: All models failed (2): deepseek/deepseek-v4-flash: LLM request failed: provider rejected the request schema or tool payload. (format) | deepseek/deepseek-v4-pro: LLM request failed: provider rejected the request schema or tool payload. (format)
+
+## CRM
+
+- Lead stages: `{"archived": 6, "lost": 2, "negotiating": 1, "outreach_drafted": 15, "scored": 2, "won": 2}`
+- Recent actions: 10 loaded
+  - 2026-04-28T14:21:42.754210+00:00 outreach stage_advance lead=bce500970cbb: Advanced from scored to outreach_drafted (draft existed in 0620 batch, missed advance). Email: royalservicesplumbing@gmail.com.
+  - 2026-04-28T14:20:41.477468+00:00 outreach outreach_draft lead=2cf96e3c3bd1: 2026-04-28 8:20 AM cycle: Drafted audit-led outreach. Single-page site with ~1100 chars content. No service pages, no booking, no team photos. Draft in artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0820am.md. Email NOT found on site.
+  - 2026-04-28T14:20:41.477036+00:00 outreach outreach_draft lead=138a66ae6ce5: 2026-04-28 8:20 AM cycle: Drafted audit-led outreach. Hybrid service/e-commerce site. Confusing UX. Draft in artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0820am.md. Email NOT found.
+  - 2026-04-28T14:20:41.476296+00:00 outreach outreach_draft lead=6792b00dccf4: 2026-04-28 8:20 AM cycle: Drafted audit-led outreach. 30+ years experience, ~3KB site content, no team/pages. Draft in artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0820am.md. Phone (720) 874-9559 available.
+  - 2026-04-28T14:20:41.475729+00:00 outreach outreach_draft lead=dfb5d640157a: 2026-04-28 8:20 AM cycle: Drafted audit-led outreach. 20+ years family-run, no team photos/gallery, thin content, coupons text-only. Draft in artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0820am.md. Phone (303) 252-3185 available.
+
+## Runtime Log Signals
+
+- Recent gateway lines scanned: 500
+- n8n_404: 0
+- elephant_model: 0
+- memory_no_vectors: 0
+- bootstrap_truncated: 0
+- incomplete_turn: 0
+- telegram_socket: 0
+
+## Recent Artifacts
+
+- 2026-04-28T15:22:42.072086+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0920am.md (18100 bytes)
+- 2026-04-28T15:21:58.507351+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/2026-04-28-heartbeat-0920am.md (5879 bytes)
+- 2026-04-28T15:20:48.621764+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/roundtable/latest.md (7035 bytes)
+- 2026-04-28T15:15:35.749820+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-hero-patch-deployable-2026-04-28.md (4530 bytes)
+- 2026-04-28T14:58:15.016753+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/seo-landing-pages-vertical-pack-2026-04-28.md (10553 bytes)
+- 2026-04-28T14:41:25.644963+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-hero-fallback-copy-2026-04-28.md (4185 bytes)
+- 2026-04-28T14:38:41.847522+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/2026-04-28-heartbeat-0837am.md (5396 bytes)
+- 2026-04-28T14:23:14.067214+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/post-audit-email-nurture-2026-04-28.md (6481 bytes)
+- 2026-04-28T14:21:38.408558+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0820am.md (17798 bytes)
+- 2026-04-28T14:18:58.139639+00:00 /Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/2026-04-28-heartbeat-0815am.md (6406 bytes)
+
+## Reporting Rule
+
+Agents must report only verified facts backed by CRM rows, artifacts, transcripts, logs, or external confirmation. Anything else is `unverified` or `blocked`.

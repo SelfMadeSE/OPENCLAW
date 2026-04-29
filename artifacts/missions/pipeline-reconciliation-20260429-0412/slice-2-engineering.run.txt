@@ -1,0 +1,78 @@
+   {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:15 MDT] MISSION pipeline-reconciliation-20260429-0412 \\u2014 slice 2/3.\\nLead is NEXUS. Goal: Reconcile the full outreach pipeline by matching 31 outreach_sent leads against email-ledger evidence, identifying ghost claims, and producing a clean verified-send ledger for operator review..\\nYour task: Check the OA audit funnel conversion path end-to-end: (1) curl outboundautonomy.com/ and confirm 200, (2) curl /try and confirm 200 with form visible, (3) POST https://outboundautonomy.com/api/audit with {\"url\":\"https://denverroofingco.com\"} (a real SMB prospect site) and capture the full JSON response \\u2014 record all score fields and response time, (4) curl /sample-report and confirm 200, (5) curl /pricing and confirm 200. Write full results with response codes, timing, and JSON structure to artifacts/missions/pipeline-reconciliation-20260429-0412/forge-funnel-check.md. If any step returns non-200 or malformed JSON, file a ticket at artifacts/engineering/repair-tickets.jsonl.\\nWrite your output to: artifacts/missions/pipeline-reconciliation-20260429-0412/forge-funnel-check.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/pipeline-reconciliation-20260429-0412/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — All 5 funnel stages verified 200. Audit API returns complete JSON with all score fields for denverroofingco.com (97 overall, A grade, 3 recs with pricing). Funnel path clean from homepage → try → audit → sample-report → pricing. Zero repair tickets.",
+      "finalAssistantRawText": "STATE: PROCEED — All 5 funnel stages verified 200. Audit API returns complete JSON with all score fields for denverroofingco.com (97 overall, A grade, 3 recs with pricing). Funnel path clean from homepage → try → audit → sample-report → pricing. Zero repair tickets.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 4,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

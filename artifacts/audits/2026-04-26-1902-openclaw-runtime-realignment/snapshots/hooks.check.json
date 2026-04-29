@@ -1,0 +1,15 @@
+{
+  "total": 5,
+  "eligible": 5,
+  "notEligible": 0,
+  "hooks": {
+    "eligible": [
+      "boot-md",
+      "bootstrap-extra-files",
+      "command-logger",
+      "session-memory",
+      "memory-core-short-term-dreaming-cron"
+    ],
+    "notEligible": []
+  }
+}

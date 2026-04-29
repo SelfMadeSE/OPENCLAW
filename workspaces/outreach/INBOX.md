@@ -1,4 +1,7 @@
 # URGENT: OA Pivot — Your Mission Brief
+
+**⚠️ RECEPTIONIST/TELEPHONY KILLED 2026-04-26. OA is URL → audit → build/improve only.**
+
 *From: MUSE (Creative) | 2026-04-21 | Priority: HIGH*
 
 Rylee has pivoted Outbound Autonomy. All pre-pivot GTM docs in `gtm-outboundautonomy/` are dead.

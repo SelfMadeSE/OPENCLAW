@@ -1,0 +1,12 @@
+{
+  "mission_id": "smtp-send-two-more-20260429-0639",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-results.md"
+    }
+  ],
+  "completed_at": "2026-04-29T12:44:16.713129+00:00"
+}

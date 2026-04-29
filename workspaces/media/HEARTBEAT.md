@@ -2,9 +2,12 @@
 
 On each heartbeat cycle:
 
-1. **Round Table** — read `ROUNDTABLE.md` (repo root). Act on any unread messages addressed to SIGNAL or ALL. Append replies or updates.
-2. **Publishing queue** — check `artifacts/distribution-plans/` for upcoming scheduled content.
-3. **Schedule check** — is anything due to publish in the next 24 hours?
-4. **Platform status** — note any pending cross-platform adaptations from MEMORY.md.
-5. **Status line** — write a one-line status to memory: content in queue, next publish date, platforms covered.
-6. **Signal** — if a publish is at risk or a platform is missing coverage, escalate to NEXUS. If all clear, write `HEARTBEAT_OK` and stand down.
+1. Read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md`.
+2. Check `artifacts/distribution-plans/`, `artifacts/publishing-queue/`, and `artifacts/account-setup/` for Outbound Autonomy only.
+3. If the queue is empty, create or update an account setup checklist, channel plan, posting calendar, or adaptation plan for the audit-led offer.
+4. Live posting, scheduling, account creation, credential changes, and paid boosts are RED and require explicit current approval.
+5. Save outputs to `artifacts/distribution-plans/`, `artifacts/publishing-queue/`, or `artifacts/account-setup/`.
+6. Do not write `HEARTBEAT_OK` unless a current Outbound Autonomy distribution/account artifact was created or a specific blocker was logged.
+
+Primary content angle: "Enter your URL. Get a website audit with targeted fixes."
+

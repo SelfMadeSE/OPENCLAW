@@ -1,0 +1,28 @@
+{
+  "mission_id": "pipeline-health-report-20260429-0524",
+  "goal": "Produce a single operator-facing pipeline health report reconciling the full send ledger (57 provider_accepted + 7 reconciled_superseded + 6 failed) against CRM lead stages, surfacing exact revenue metrics and next actions.",
+  "success_criteria": [
+    "Complete pipeline health report with: sent count, drafted remaining, failed count, ghost leads, total reachable prospects, and estimated reply window",
+    "Next-action priority queue with exact lead_ids, emails, and recommended send timing"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Build the full pipeline picture using only sqlite3 (CRM Python has fd error): (a) sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT stage, COUNT(*), AVG(score) FROM leads GROUP BY stage' \u2014 stage distribution, (b) sqlite3 ... 'SELECT l.id,l.name,l.stage,l.score,e.status,e.provider_message_id FROM leads l LEFT JOIN email_attempts e ON l.id=e.lead_id WHERE l.stage IN (\"outreach_sent\",\"outreach_drafted\") ORDER BY l.score DESC' \u2014 full sent+drafted join, (c) sqlite3 ... 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' \u2014 ledger summary. From the join, classify every sent-stage lead: has provider_accepted = verified_send, has unverified_claim/reconciled_superseded only = suspect, no email_attempt row = ghost. Produce a pipeline health table with columns: lead_id, name, score, stage, email, send_status, evidence_class. Then write the top-5 next-send priority queue: highest-scored leads with verified emails that have NOT been sent (stage=drafted OR ghost). Write to artifacts/missions/pipeline-health-report-20260429-0524/bridge-pipeline-report.md.",
+      "expected_artifact": "bridge-pipeline-report.md"
+    },
+    {
+      "agent": "engineering",
+      "task": "Check the current production state of outboundautonomy.com: (1) curl /, /try, /sample-report, /pricing, /about, /services, /faq, /case-studies, /contact, /blog \u2014 all must return 200, (2) POST https://outboundautonomy.com/api/audit with {\"url\":\"https://example.com\"} and confirm scores returned, (3) POST https://outboundautonomy.com/api/waitlist with {\"email\":\"health-check-0524@test.com\",\"source\":\"pipeline-report\"} and capture response, (4) curl /sitemap.xml and count total URLs. Write site health table + API response evidence to artifacts/missions/pipeline-health-report-20260429-0524/forge-site-health.md. File repair ticket if any critical endpoint is broken.",
+      "expected_artifact": "forge-site-health.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-pipeline-report.md and forge-site-health.md. Verify: (a) independently run the sqlite3 queries and confirm counts match the report, (b) independently curl the site URLs and confirm HTTP codes match, (c) verify the report correctly classifies at least 5 leads as verified_send, suspect, or ghost \u2014 spot-check 3 classifications against raw sqlite3 output, (d) confirm the next-send priority queue contains only leads with verified emails and no existing provider_accepted row. Write artifacts/missions/pipeline-health-report-20260429-0524/sentinel-verify.md with: per-file verdict, accuracy score, any mismatches found, and final directive PROCEED|BLOCKED. Append SCORE_EVENT to _shared/scoring/history.jsonl for outreach and engineering.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "After 7 missions in the last 90 minutes, the pipeline needs a single-source-of-truth health report. 57 provider_accepted sends are in the ledger but the operator can't see CRM (Python fd error). This mission produces the exact report the operator needs: how many verified sends, how many ghosts, what's left to send, what's the reply window. It's read-only across all slices \u2014 no sends, no deploys, no writes beyond artifacts. Pure intelligence that enables the next revenue move."
+}

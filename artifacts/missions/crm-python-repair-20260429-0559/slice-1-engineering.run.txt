@@ -1,0 +1,67 @@
+    },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 06:00 MDT] MISSION crm-python-repair-20260429-0559 \\u2014 slice 1/2.\\nLead is NEXUS. Goal: Diagnose and fix the CRM Python fd error (OSError 9 Bad file descriptor) that has blocked all CRM script access for over an hour, restoring the primary pipeline management tool..\\nYour task: Diagnose the CRM Python OSError 9 (Bad file descriptor). Run: python3 -c 'import sys; print(sys.stdout.fileno()); print(sys.stderr.fileno())' to check if std streams are valid. Then try: python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads 2>&1; echo '---EXIT---'; echo 0. If the script crashes with OSError 9, check: (a) is the script being run in a context where stdin/stdout/stderr are closed? (b) does the script open the sqlite DB at /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite? (c) does python3 -c 'import sqlite3; conn=sqlite3.connect(\"/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite\"); print(list(conn.execute(\"SELECT COUNT(*) FROM leads\")))' work independently? If the script is permanently broken, write a thin Python wrapper at /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm_repair.py that duplicates the 'leads' and 'email-ledger' subcommands using direct sqlite3 with proper error handling, and test it. Write full diagnostic results and fix to artifacts/missions/crm-python-repair-20260429-0559/forge-crm-fix.md.\\nWrite your output to: artifacts/missions/crm-python-repair-20260429-0559/forge-crm-fix.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/crm-python-repair-20260429-0559/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — CRM fully functional, no OSError 9 reproduced. All 8 commands tested (list-leads, report, email-ledger, search, criteria, add-lead, score-lead) return valid results. SQLite DB healthy: 66 leads, 238 actions, 70 email attempts. No repair needed.",
+      "finalAssistantRawText": "STATE: PROCEED — CRM fully functional, no OSError 9 reproduced. All 8 commands tested (list-leads, report, email-ledger, search, criteria, add-lead, score-lead) return valid results. SQLite DB healthy: 66 leads, 238 actions, 70 email attempts. No repair needed.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 10,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

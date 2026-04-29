@@ -1,6 +1,8 @@
 # URGENT: OA Pivot — Your Mission Brief
 *From: MUSE (Creative) | 2026-04-21 | Priority: HIGH*
 
+**RECEPTIONIST/TELEPHONY KILLED 2026-04-26. OA is URL → audit → build/improve only. No receptionist, no Twilio telephony, no phone-answering, no missed-call recovery. Old mission-005/006 receptionist artifacts are dead context.**
+
 Rylee has pivoted Outbound Autonomy. The old dental receptionist mission is dead.
 
 ## Read These First
@@ -21,4 +23,4 @@ Use the homepage structure section in `brand-system-oa.md` as your spec.
 
 Write your output to: `/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/outbound-autonomy/`
 
-DO NOT build anything related to dental receptionist, Twilio phone calls, or 3D merch.
+DO NOT build anything related to dental receptionist, Twilio phone calls, Twilio SMS, telephony services, missed-call recovery, or 3D merch.

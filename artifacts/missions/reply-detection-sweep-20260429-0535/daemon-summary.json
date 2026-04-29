@@ -1,0 +1,18 @@
+{
+  "mission_id": "reply-detection-sweep-20260429-0535",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-reply-scan.md"
+    },
+    {
+      "slice": 2,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T11:41:42.785544+00:00"
+}

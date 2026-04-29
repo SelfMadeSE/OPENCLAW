@@ -43,14 +43,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **Instance**: https://outboundautonomy.app.n8n.cloud
 - **Access**: Use `mcporter call n8n-mcp.<tool_name>` or the mcporter skill directly
 - **Available tools** (25 total): `search_workflows`, `execute_workflow`, `get_execution`, `get_workflow_details`, `create_workflow_from_code`, `validate_workflow`, `search_data_tables`, `add_data_table_rows`, and more
-- **Use for**: Triggering outreach sequences, Stripe payment workflows, Twilio SMS/voice, email automation, lead processing
+- **Use for**: Triggering outreach sequences, Stripe payment workflows, email automation, lead processing
+- **~~Twilio SMS/voice~~**: **RECEPTIONIST/TELEPHONY KILLED 2026-04-26.** Twilio infra tokens exist for potential email/SMS automation only. No telephony, no receptionist, no call routing. OA is URL → audit → build/improve only.
 
 ## External Service Credentials
 
 All credentials are injected as environment variables by the gateway:
 - `STRIPE_PK_TEST` / `STRIPE_SK_TEST` — Stripe test keys
 - `STRIPE_PK_LIVE` / `STRIPE_SK_LIVE` — Stripe live keys ⚠️ production
-- `TWILIO_ACCOUNT_SID` / `TWILIO_AUTH_TOKEN` / `TWILIO_PHONE_NUMBER` (+15709894873)
+- `~~TWILIO_ACCOUNT_SID~~` / `~~TWILIO_AUTH_TOKEN~~` / `~~TWILIO_PHONE_NUMBER~~` (+15709894873) — **RECEPTIONIST/TELEPHONY KILLED 2026-04-26.** OA is URL → audit → build/improve only. Twilio env vars exist from old infrastructure; do NOT use for telephony/receptionist services.
 - `GITHUB_PAT` — GitHub personal access token
 - `GMAIL_ADDRESS` / `GMAIL_PASSWORD` — owner@outboundautonomy.com
 

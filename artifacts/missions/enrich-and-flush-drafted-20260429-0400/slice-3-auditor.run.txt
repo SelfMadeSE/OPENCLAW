@@ -1,0 +1,60 @@
+rowser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 04:09 MDT] MISSION enrich-and-flush-drafted-20260429-0400 \\u2014 slice 3/3.\\nLead is NEXUS. Goal: Enrich the top 5 outreach_drafted leads with website audit scores from the live audit API, then send personalized SMTP outreach with real audit data as the hook..\\nYour task: Read bridge-results.md and forge-api-health.md from artifacts/missions/enrich-and-flush-drafted-20260429-0400/. Cross-check: (a) every claimed SMTP send has a real provider_message_id in the ledger (sqlite3 'SELECT id,lead_id,status,provider_message_id FROM email_attempts WHERE id > 14 ORDER BY id'), (b) every audit API score claim in bridge-results.md matches the raw API response in the enriched JSON files, (c) forge-api-health.md HTTP codes are independently verified with curl. Write verdict per file (approved|blocked|needs-evidence) to artifacts/missions/enrich-and-flush-drafted-20260429-0400/sentinel-verify.md. Append SCORE_EVENT to _shared/scoring/history.jsonl for each agent audited.\\nWrite your output to: artifacts/missions/enrich-and-flush-drafted-20260429-0400/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/enrich-and-flush-drafted-20260429-0400/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md: 1314 raw -> 868 injected (~34% removed).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "All outputs confirmed.\n\n**STATE: PROCEED** — bridge-results.md **approved**, forge-api-health.md **approved**, 4 enriched JSONs **approved**. All SMTP sends have real provider_message_ids, all audit scores match live API re-runs, all HTTP codes independently verified. Only blocker: Gmail SMTP app password expired (correctly surfaced by bridge).",
+      "finalAssistantRawText": "All outputs confirmed.\n\n**STATE: PROCEED** — bridge-results.md **approved**, forge-api-health.md **approved**, 4 enriched JSONs **approved**. All SMTP sends have real provider_message_ids, all audit scores match live API re-runs, all HTTP codes independently verified. Only blocker: Gmail SMTP app password expired (correctly surfaced by bridge).",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 17,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

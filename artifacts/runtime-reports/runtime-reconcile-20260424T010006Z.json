@@ -1,0 +1,506 @@
+{
+  "generated_at": "2026-04-24T01:00:06.821013+00:00",
+  "sources": {
+    "jobs": "/Users/ryleebenson/.openclaw/cron/jobs.json",
+    "gateway_err": "/Users/ryleebenson/.openclaw/logs/gateway.err.log",
+    "crm": "/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite",
+    "workspaces": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces"
+  },
+  "cron": {
+    "total": 18,
+    "enabled": 16,
+    "by_status": {
+      "ok": 16,
+      "pending": 1,
+      "never": 1
+    },
+    "active": [
+      {
+        "id": "381d081b-7c33-438e-8831-79c6de82f50e",
+        "name": "Memory Dreaming Promotion",
+        "agent": "main",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "not-requested"
+      },
+      {
+        "id": "9f89293b-c84e-4d53-8f65-d92b3d790a1d",
+        "name": "Daily Content Creation",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 10 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2feb992a-b776-42c9-86b1-e443515ed000",
+        "name": "Weekly Revenue Audit",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 14 * * 5",
+          "tz": "America/Denver"
+        },
+        "last_status": "pending",
+        "last_error": "",
+        "delivery": "unknown"
+      },
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly Dream Reflection",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly Dream Reflection",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly Dream Reflection",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly Dream Reflection",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly Dream Reflection",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly Dream Reflection",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly Dream Reflection",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "95e59f59-c103-4f0b-bc61-fb1986460d9b",
+        "name": "Morning Mission Snapshot",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 8 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "never",
+        "last_error": "",
+        "delivery": ""
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "dfa29b48-e80c-4eab-850d-f9120221e3ef",
+        "name": "Hourly Prospect Research",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "5 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "210d6add-b9d4-45f3-8c90-b77191e95006",
+        "name": "Hourly Outreach Draft Queue",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "20 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "440c356d-4ac1-4ca3-92d3-84d814bffd31",
+        "name": "Hourly Agent Roundtable Audit",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      }
+    ],
+    "failed": []
+  },
+  "crm": {
+    "exists": true,
+    "stages": {
+      "outreach_drafted": 3,
+      "prospect": 3,
+      "researched": 5,
+      "scored": 1
+    },
+    "recent_leads": [
+      {
+        "id": "2c7aca0f9ca5",
+        "name": "Val Sopi",
+        "type": "founder",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-24T00:09:09.111492+00:00"
+      },
+      {
+        "id": "c01e9dc7a1de",
+        "name": "ProtoWall",
+        "type": "company",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-24T00:09:06.243215+00:00"
+      },
+      {
+        "id": "b407ec1a5f8c",
+        "name": "--name",
+        "type": "Ben Dansby",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-24T00:09:02.339216+00:00"
+      },
+      {
+        "id": "d192cf575884",
+        "name": "SurgeForecast",
+        "type": "web-design",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-23T19:53:33.757641+00:00"
+      },
+      {
+        "id": "315f28b0e620",
+        "name": "SkillCatalog",
+        "type": "web-design",
+        "stage": "researched",
+        "score": 0,
+        "updated_at": "2026-04-23T19:53:33.733074+00:00"
+      },
+      {
+        "id": "1daad68ebd8c",
+        "name": "MailtoBot",
+        "type": "web-design",
+        "stage": "outreach_drafted",
+        "score": 0,
+        "updated_at": "2026-04-23T19:53:25.265269+00:00"
+      },
+      {
+        "id": "0820dfc425e1",
+        "name": "Edunation",
+        "type": "web-design",
+        "stage": "outreach_drafted",
+        "score": 0,
+        "updated_at": "2026-04-23T19:53:25.242456+00:00"
+      },
+      {
+        "id": "89f5b4ff40e5",
+        "name": "Libredesk",
+        "type": "web-design",
+        "stage": "outreach_drafted",
+        "score": 0,
+        "updated_at": "2026-04-23T19:53:25.218577+00:00"
+      },
+      {
+        "id": "6ab99d5ca78e",
+        "name": "--name",
+        "type": "Libredesk",
+        "stage": "prospect",
+        "score": 0,
+        "updated_at": "2026-04-20T22:57:39.679717+00:00"
+      },
+      {
+        "id": "1ba89e50a7a5",
+        "name": "TechStartup Inc",
+        "type": "web-app",
+        "stage": "scored",
+        "score": 73,
+        "updated_at": "2026-04-18T22:46:33.899789+00:00"
+      }
+    ],
+    "recent_actions": [
+      {
+        "lead_id": "2c7aca0f9ca5",
+        "agent": "outreach",
+        "action_type": "Sent personalized outreach email about outboundautonomy.com focusing on distribution solutions for B2B SaaS companies",
+        "description": "--result",
+        "result": "",
+        "created_at": "2026-04-24T00:08:59.812898+00:00"
+      },
+      {
+        "lead_id": "c01e9dc7a1de",
+        "agent": "outreach",
+        "action_type": "Sent personalized outreach email about outboundautonomy.com focusing on enterprise sales and trust positioning for B2B security products",
+        "description": "--result",
+        "result": "",
+        "created_at": "2026-04-24T00:08:56.472793+00:00"
+      },
+      {
+        "lead_id": "b407ec1a5f8c",
+        "agent": "outreach",
+        "action_type": "Sent personalized outreach email about outboundautonomy.com focusing on customer acquisition for technical founders",
+        "description": "--result",
+        "result": "",
+        "created_at": "2026-04-24T00:08:53.143075+00:00"
+      },
+      {
+        "lead_id": "1daad68ebd8c",
+        "agent": "outreach",
+        "action_type": "draft",
+        "description": "Full 4-step outreach sequence drafted. Saved to artifacts/outreach-hn-2026-04-20/sequence-mailtobot.md",
+        "result": "YELLOW",
+        "created_at": "2026-04-23T19:53:51.454683+00:00"
+      },
+      {
+        "lead_id": "0820dfc425e1",
+        "agent": "outreach",
+        "action_type": "draft",
+        "description": "Full 4-step outreach sequence drafted. Saved to artifacts/outreach-hn-2026-04-20/sequence-edunation.md",
+        "result": "YELLOW",
+        "created_at": "2026-04-23T19:53:51.432476+00:00"
+      },
+      {
+        "lead_id": "89f5b4ff40e5",
+        "agent": "outreach",
+        "action_type": "draft",
+        "description": "Full 4-step outreach sequence drafted. Saved to artifacts/outreach-hn-2026-04-20/sequence-libredesk.md",
+        "result": "YELLOW",
+        "created_at": "2026-04-23T19:53:51.408112+00:00"
+      }
+    ]
+  },
+  "artifacts": {
+    "recent": [
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/roundtable/latest.md",
+        "mtime": "2026-04-24T00:47:03.785017+00:00",
+        "size": 7485
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/site-health-check-2026-04-24-0030-UTC.md",
+        "mtime": "2026-04-24T00:32:05.824889+00:00",
+        "size": 2952
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/heartbeat-status-2026-04-24-0025.md",
+        "mtime": "2026-04-24T00:30:41.234120+00:00",
+        "size": 1436
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-24-hourly-outreach-queue.md",
+        "mtime": "2026-04-24T00:21:37.796850+00:00",
+        "size": 10698
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/site-outreach-campaign-2026-04-23.md",
+        "mtime": "2026-04-24T00:09:29.038271+00:00",
+        "size": 7085
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/medtech-automation-solutions-20260423-180629_research_2026-04-23_180748.json",
+        "mtime": "2026-04-24T00:07:48.224968+00:00",
+        "size": 1283
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/fintech-dynamics-20260423-180622_research_2026-04-23_180730.json",
+        "mtime": "2026-04-24T00:07:30.818016+00:00",
+        "size": 1212
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/scalecommerce-pro-20260423-180615_research_2026-04-23_180715.json",
+        "mtime": "2026-04-24T00:07:15.952177+00:00",
+        "size": 1208
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/creativeflow-digital-studio-20260423-180609_research_2026-04-23_180653.json",
+        "mtime": "2026-04-24T00:06:53.434037+00:00",
+        "size": 1291
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/autonomousgrowth-systems-20260423-180602_research_2026-04-23_180635.json",
+        "mtime": "2026-04-24T00:06:35.636389+00:00",
+        "size": 1075
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/site-health-check-2026-04-24-0000-UTC.md",
+        "mtime": "2026-04-24T00:01:56.753790+00:00",
+        "size": 2824
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/health-check-2026-04-23T2330Z.md",
+        "mtime": "2026-04-23T23:33:20.093970+00:00",
+        "size": 3118
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/brand-compliance-fix-plan-2026-04-23.md",
+        "mtime": "2026-04-23T23:22:25.251150+00:00",
+        "size": 9869
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/2026-04-23-hourly-outreach-queue.md",
+        "mtime": "2026-04-23T23:21:36.908173+00:00",
+        "size": 19214
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/brand-header-footer-emergency-plan.md",
+        "mtime": "2026-04-23T23:18:29.339558+00:00",
+        "size": 5082
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/digitalflow-marketing-group-20260423-170554_research_2026-04-23_170705.json",
+        "mtime": "2026-04-23T23:07:05.357893+00:00",
+        "size": 1046
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/innovatetech-labs-20260423-170550_research_2026-04-23_170700.json",
+        "mtime": "2026-04-23T23:07:00.379961+00:00",
+        "size": 1010
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/scalecommerce-solutions-20260423-170545_research_2026-04-23_170655.json",
+        "mtime": "2026-04-23T23:06:55.372269+00:00",
+        "size": 1042
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/pixelcraft-creative-agency-20260423-170539_research_2026-04-23_170647.json",
+        "mtime": "2026-04-23T23:06:47.887501+00:00",
+        "size": 1039
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/velocity-growth-partners-20260423-170534_research_2026-04-23_170642.json",
+        "mtime": "2026-04-23T23:06:42.489020+00:00",
+        "size": 1043
+      }
+    ]
+  },
+  "logs": {
+    "window_lines": 500,
+    "counts": {
+      "n8n_404": 0,
+      "elephant_model": 22,
+      "memory_no_vectors": 0,
+      "bootstrap_truncated": 26,
+      "incomplete_turn": 0,
+      "telegram_socket": 1
+    },
+    "examples": {
+      "elephant_model": "2026-04-23T18:44:57.307-06:00 [model-fallback] Model \"openrouter/openrouter/elephant-alpha\" not found. Fell back to \"zai/glm-4.5\".",
+      "bootstrap_truncated": "2026-04-23T18:47:40.408-06:00 [agent/embedded] workspace bootstrap file MEMORY.md is 20863 chars (limit 12000); truncating in injected context (sessionKey=agent:orchestrator:main)",
+      "telegram_socket": "2026-04-23T18:00:59.209-06:00 [telegram] fetch fallback: enabling sticky IPv4-only dispatcher (codes=UND_ERR_SOCKET)"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "mission_id": "crm-python-repair-20260429-0559",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "forge-crm-fix.md"
+    },
+    {
+      "slice": 2,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T12:03:51.313122+00:00"
+}

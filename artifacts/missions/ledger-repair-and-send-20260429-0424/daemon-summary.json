@@ -1,0 +1,18 @@
+{
+  "mission_id": "ledger-repair-and-send-20260429-0424",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-results.md"
+    },
+    {
+      "slice": 2,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T10:31:33.618244+00:00"
+}

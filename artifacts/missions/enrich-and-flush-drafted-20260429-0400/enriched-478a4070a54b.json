@@ -1,0 +1,90 @@
+{
+  "lead_id": "478a4070a54b",
+  "name": "Good People Tree Service",
+  "score": 68,
+  "email": "office@goodpeopletreeservice.com",
+  "url": "https://goodpeopletreeservice.com",
+  "audit": {
+    "design_score": 93,
+    "conversion_score": 100,
+    "technical_score": 100,
+    "overall_score": 98,
+    "grade": "A",
+    "issues": [
+      {
+        "severity": "low",
+        "title": "Full Lighthouse data was not available in this preview",
+        "evidence": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for co"
+      }
+    ],
+    "top_issue": {
+      "severity": "low",
+      "title": "Full Lighthouse data was not available in this preview",
+      "evidence": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+      "recommendation": "Run the full implementation review with a dedicated browser worker for repeatable Lighthouse, screenshot, and interaction testing."
+    },
+    "crawl_summary": {
+      "pagesScanned": 5,
+      "pages": [
+        {
+          "url": "https://goodpeopletreeservice.com/",
+          "status": 200,
+          "responseMs": 140,
+          "title": "Tree Service | Tree Pruning &amp; Removal in Colorado\u2019s Front Range",
+          "h1Count": 2,
+          "formCount": 2,
+          "linkCount": 110,
+          "imageCount": 15
+        },
+        {
+          "url": "https://goodpeopletreeservice.com/our-services/",
+          "status": 200,
+          "responseMs": 146,
+          "title": "Tree Care Services in Colorado | Full Service Tree Company",
+          "h1Count": 1,
+          "formCount": 3,
+          "linkCount": 94,
+          "imageCount": 6
+        },
+        {
+          "url": "https://goodpeopletreeservice.com/services/tree-pruning/",
+          "status": 200,
+          "responseMs": 102,
+          "title": "Tree Pruning Services | Good People Tree Service",
+          "h1Count": 1,
+          "formCount": 2,
+          "linkCount": 105,
+          "imageCount": 8
+        },
+        {
+          "url": "https://goodpeopletreeservice.com/services/tree-removal-services/",
+          "status": 200,
+          "responseMs": 1073,
+          "title": "Professional and Safe Tree Removal Services in Boulder &amp; Denver",
+          "h1Count": 1,
+          "formCount": 2,
+          "linkCount": 106,
+          "imageCount": 8
+        },
+        {
+          "url": "https://goodpeopletreeservice.com/services/fire-mitigation-services/",
+          "status": 200,
+          "responseMs": 1176,
+          "title": "Fire Mitigation Services in Boulder &amp; Denver | Reduce Wildfire Risk",
+          "h1Count": 1,
+          "formCount": 2,
+          "linkCount": 105,
+          "imageCount": 7
+        }
+      ],
+      "notes": [
+        "Crawler stayed on goodpeopletreeservice.com and capped the preview crawl at 5 pages.",
+        "The paid implementation review can expand this into a deeper crawl with screenshots, form testing, and account-flow validation."
+      ]
+    },
+    "evidence_notes": [
+      "High scores across the board \u2014 clean single-page site"
+    ]
+  },
+  "previous_draft_key_finding": "No service pages, no portfolio/gallery, no booking"
+}

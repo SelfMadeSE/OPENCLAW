@@ -1,0 +1,23 @@
+{
+  "mission_id": "drafted-inventory-flush-20260429-0501",
+  "goal": "Send SMTP outreach to all remaining outreach_drafted leads with verified emails, converting the full drafted inventory into provider_accepted sends and zeroing out the drafted pipeline.",
+  "success_criteria": [
+    "All outreach_drafted leads with verified emails moved to outreach_sent with provider_accepted ledger rows",
+    "outreach_drafted count dropped to 0 or to leads-only-without-verified-emails"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Step 1: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,name,contact_info,score,notes FROM leads WHERE stage=\"outreach_drafted\" ORDER BY score DESC' \u2014 get all drafted leads. Step 2: For each lead with a verified email in contact_info JSON, read their prospect research from artifacts/prospects/*_website_audit_research_*.json. Step 3: Craft personalized audit-led email: open with a specific site weakness found, mention their prospect score, link to outboundautonomy.com/sample-report, close with CTA. Step 4: Send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Quick website audit for <company>' --body '<body>'. Step 5: Log each to ledger: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Step 6: Update stage: sqlite3 ... \"UPDATE leads SET stage='outreach_sent' WHERE id='<lead_id>'\". Step 7: For any lead WITHOUT verified email, mark stage='outreach_drafted_email_missing' and note in report. Write full results to artifacts/missions/drafted-inventory-flush-20260429-0501/bridge-flush-results.md with table: lead_id, name, score, email, SMTP message_id, status.",
+      "expected_artifact": "bridge-flush-results.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-flush-results.md. Verify: (a) sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,status,provider_message_id FROM email_attempts ORDER BY id DESC LIMIT 30' \u2014 confirm new provider_accepted rows with non-null message_ids for every lead claimed as sent, (b) sqlite3 ... 'SELECT COUNT(*) FROM leads WHERE stage=\"outreach_drafted\"' \u2014 confirm count dropped, (c) sqlite3 ... 'SELECT id,name,stage FROM leads WHERE stage=\"outreach_drafted_email_missing\"' \u2014 verify any email-missing leads were correctly flagged. Write artifacts/missions/drafted-inventory-flush-20260429-0501/sentinel-verify.md with: old drafted count, new drafted count, sent count, email-missing count, per-lead evidence table, and final verdict (approved|needs-evidence). Append SCORE_EVENT to _shared/scoring/history.jsonl for outreach.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "Ledger shows 56 provider_accepted (up from 49 12 minutes ago \u2014 7 new sends landed). Outreach_drafted still at 13 in snapshot but actual count likely lower after recent missions. This mission closes the loop: flush every remaining drafted lead with verified email into the SMTP pipeline, producing clean provider_accepted evidence and leaving zero revenue inventory in 'drafted' limbo. SMTP is proven (56 successes). No hard-wall items. CRM Python scripts have fd error so sqlite3 directly for all reads/writes."
+}

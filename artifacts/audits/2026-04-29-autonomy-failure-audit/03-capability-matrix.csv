@@ -1,0 +1,39 @@
+agent_id,capability,source,configured_visible,runtime_visible,eligible,missing_requirements,tested,test_method,test_result,risk_class,approval_required,can_execute_now,notes
+orchestrator,subagent_spawn,openclaw.agentToAgent,true,true,true,,yes,02-T6 sessions_spawn,PASS,GREEN,no,Verified 2026-04-29 12:27 (auditor delegate)
+orchestrator,exec_shell,openclaw.tools.exec,true,true,true,,yes,02-T8 chained exec,PASS,YELLOW,no,Preflight extractor patched
+orchestrator,file_read_write,openclaw.tools,true,true,true,,yes,workspace artifacts,PASS,GREEN,yes,
+orchestrator,memory_read,openclaw.hooks.session-memory,true,true,true,,yes,boot artifacts present,PASS,GREEN,yes,
+orchestrator,memory_write,openclaw.hooks.session-memory,true,true,true,,yes,workspace MEMORY.md write,PASS,GREEN,yes,
+orchestrator,score_write,_shared/scoring/history.jsonl,true,true,true,,yes,write append,PASS,GREEN,yes,
+orchestrator,telegram_dm,channels.telegram,true,true,true,,yes,operator allowlist,PASS,GREEN,yes,Allowlist 8331613806 only
+orchestrator,sub_agent_failure_fallback,_shared/missions/SUBAGENT_FAILURE_POLICY.md,true,partial,partial,framework wired in proof mission,no,proof-mission,PENDING,GREEN,no,Tested in artifact 12
+engineering,exec_shell,openclaw.tools.exec,true,true,true,,yes,02-T8,PASS,YELLOW,no,
+engineering,file_write_repo,openclaw.tools,true,true,true,,yes,artifacts/engineering writes,PASS,YELLOW,yes,Local repo only
+engineering,vercel_deploy,scripts+vercel-cli,true,unknown,unknown,vercel auth + project link,no,deferred,UNTESTED,ORANGE,YES (per-deploy approval),See artifact engineering/waitlist-api-root-cause.md
+engineering,api_post_external,openclaw.tools.web_fetch,true,true,true,,no,covered by capability,UNTESTED,YELLOW,YES (per host),Read-only fetch GREEN; POST YELLOW; auth POST ORANGE
+engineering,production_deploy,vercel/git push,true,unknown,unknown,operator confirmation per push,no,frozen,FROZEN,RED,YES (per push),Blocked by RUNTIME_FREEZE.json
+marketing,research,openclaw.tools.web_fetch+exec,true,true,true,,yes,prior runs,PASS,GREEN,yes,
+marketing,draft_email,scripts/*draft*,true,true,true,,yes,32 prior drafts,PASS,GREEN,yes,Draft only — no send
+marketing,publish_blog,scripts unknown,partial,unknown,unknown,publishing target undefined,no,deferred,UNCONFIGURED,ORANGE,YES (per post),Define target before re-enabling
+marketing,ads_spend,not configured,false,false,false,no ads provider,no,frozen,FROZEN,RED,YES (live spend),
+outreach,smtp_draft,scripts/batch-smtp-send.py,true,true,true,,yes,ledger drafted entries,PASS,GREEN,yes,
+outreach,smtp_send_to_owner,scripts/gmail-smtp-send.py,true,true,true,,yes,test-to-owner channel,PASS,YELLOW,no,Owner-only loopback test
+outreach,smtp_send_external,scripts/batch-smtp-send.py,true,true,true,,yes,2 provider_accepted historical,PARTIAL,ORANGE,YES (per batch),FROZEN until proof mission + APPROVAL_POLICY ratified
+outreach,smtp_batch_send,scripts/batch-smtp-send.py,true,true,true,,no,frozen,FROZEN,ORANGE,YES (per batch + cap),Daily cap pending; freeze blocks
+outreach,browser_form_submit_external,browser-cdp:18800,true,false,false,browser bridge offline,no,blocked,BLOCKED_BY_INFRASTRUCTURE,ORANGE,YES (per form),18800 ECONNREFUSED
+outreach,crm_read,scripts/crm.py,true,true,true,,yes,reconciliation,PASS,GREEN,yes,
+outreach,crm_write,scripts/crm.py,true,true,true,,yes,reconciliation,PASS,GREEN,yes,
+outreach,dedupe_check,scripts/email_ledger.py,true,true,true,,yes,DuplicateEmailAttemptError live,PASS,GREEN,yes,Verified blocking on test send
+creative,draft_assets,exec+file,true,true,true,,yes,prior MUSE drafts,PASS,GREEN,yes,
+creative,publish_creative_review,workspace local,true,true,true,,yes,nightly cron OK,PASS,GREEN,yes,Internal only
+media,browser_open,browser-cdp:18800,true,false,false,browser bridge offline,no,blocked,BLOCKED_BY_INFRASTRUCTURE,YELLOW,no,
+media,social_account_create,browser-cdp:18800,true,false,false,bridge + 2FA + captcha + phone,no,frozen,FROZEN,ORANGE,YES (per platform; manual finish step),Per SOCIAL_ACCOUNT_SETUP_PROTOCOL.md
+media,social_post_publish,browser/api,true,false,false,no api creds + bridge offline,no,frozen,FROZEN,RED,YES (per post),
+auditor,audit_read,openclaw.tools,true,true,true,,yes,reconciliation runs,PASS,GREEN,yes,
+auditor,score_event_write,_shared/scoring,true,true,true,,yes,append jsonl,PASS,GREEN,yes,
+auditor,subagent_log_inspect,~/.openclaw/agents/*/sessions,true,true,true,,yes,jsonl readable,PASS,GREEN,yes,
+auditor,verdict_block,workspace POLICY.md,true,true,true,,yes,bootstrap-extra-files honors,PASS,GREEN,yes,SENTINEL veto via POLICY.md
+all,payment_live,not configured,false,false,false,no Stripe live key,no,frozen,FROZEN,RED,no,
+all,trading_live,not configured,false,false,false,no broker creds,no,frozen,FROZEN,RED,no,
+all,betting_gambling,not configured,false,false,false,no creds,no,frozen,FROZEN,RED,no,
+all,destructive_fs,exec,true,true,true,,no,frozen,FROZEN,RED,no,Path-allowlist enforced via POLICY.md

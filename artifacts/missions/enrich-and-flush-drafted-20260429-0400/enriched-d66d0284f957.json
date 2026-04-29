@@ -1,0 +1,10 @@
+{
+  "lead_id": "d66d0284f957",
+  "name": "COS Plumbing",
+  "score": 55,
+  "email": "cosplumbing14@gmail.com",
+  "url": null,
+  "audit": null,
+  "status": "skipped_no_url",
+  "note": "No website URL in CRM or draft. Cannot run live audit API."
+}

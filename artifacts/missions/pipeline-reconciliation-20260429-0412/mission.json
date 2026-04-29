@@ -1,0 +1,28 @@
+{
+  "mission_id": "pipeline-reconciliation-20260429-0412",
+  "goal": "Reconcile the full outreach pipeline by matching 31 outreach_sent leads against email-ledger evidence, identifying ghost claims, and producing a clean verified-send ledger for operator review.",
+  "success_criteria": [
+    "Every outreach_sent lead matched to a provider_accepted or unverified_claim email_attempt row with evidence cited",
+    "operator-facing pipeline health report with verified/suspect/ghost breakdown and exact next-send priority queue"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Run python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py email-ledger to get full ledger. Run python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/crm.py leads to get all leads. Join: for every lead in outreach_sent stage, find its matching email_attempt row(s). For each match, classify as: (a) provider_accepted with message_id = verified, (b) unverified_claim = suspect, (c) no match = ghost. Produce a table with columns: lead_id, name, score, email, stage, email_attempt_id, status, provider_message_id, classification. Write to artifacts/missions/pipeline-reconciliation-20260429-0412/bridge-pipeline-audit.md. Identify the top 5 highest-scored leads that have verified emails but NO email_attempt row (unsent inventory).",
+      "expected_artifact": "bridge-pipeline-audit.md"
+    },
+    {
+      "agent": "engineering",
+      "task": "Check the OA audit funnel conversion path end-to-end: (1) curl outboundautonomy.com/ and confirm 200, (2) curl /try and confirm 200 with form visible, (3) POST https://outboundautonomy.com/api/audit with {\"url\":\"https://denverroofingco.com\"} (a real SMB prospect site) and capture the full JSON response \u2014 record all score fields and response time, (4) curl /sample-report and confirm 200, (5) curl /pricing and confirm 200. Write full results with response codes, timing, and JSON structure to artifacts/missions/pipeline-reconciliation-20260429-0412/forge-funnel-check.md. If any step returns non-200 or malformed JSON, file a ticket at artifacts/engineering/repair-tickets.jsonl.",
+      "expected_artifact": "forge-funnel-check.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read bridge-pipeline-audit.md and forge-funnel-check.md. Independently verify: (a) run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,status,provider_message_id FROM email_attempts ORDER BY id DESC LIMIT 31' and cross-check against the bridge pipeline classification table \u2014 flag any mismatch, (b) independently curl each URL from forge-funnel-check.md and confirm HTTP codes match. Write artifacts/missions/pipeline-reconciliation-20260429-0412/sentinel-verify.md with: per-file verdict (approved|blocked|needs-evidence), a verified-send count, a ghost-lead count, and the exact list of lead_ids where CRM stage says 'sent' but no provider_accepted evidence exists. Append SCORE_EVENT to _shared/scoring/history.jsonl for each agent audited.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "31 leads in outreach_sent + 13 in outreach_drafted = 44 total pipeline. But the ledger shows only 47 provider_accepted + 7 unverified_claim = 54 total attempts across ALL leads. The pipeline reconciliation is the highest-value next move because: (1) it identifies which 'sent' emails are ghosts (no evidence), enabling re-sends, (2) it surfaces the exact high-scoring unsent inventory for immediate dispatch, (3) it gives the operator a single-source-of-truth pipeline health report. No sends in this mission \u2014 pure evidence reconciliation \u2014 making it safe even if RUNTIME_FREEZE is still active."
+}
