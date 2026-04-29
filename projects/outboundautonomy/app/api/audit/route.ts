@@ -303,18 +303,7 @@ async function runPageSpeed(url: URL): Promise<LighthouseSummary> {
     const data = await response.json()
 
     if (!response.ok) {
-      return {
-        available: false,
-        source: 'Google PageSpeed Insights',
-        strategy: 'mobile',
-        performance: null,
-        accessibility: null,
-        bestPractices: null,
-        seo: null,
-        screenshotDataUrl: null,
-        audits: [],
-        error: data?.error?.message || `PageSpeed request failed with status ${response.status}`,
-      }
+      return runLighthouseFallback(url.toString())
     }
 
     return {
@@ -329,18 +318,8 @@ async function runPageSpeed(url: URL): Promise<LighthouseSummary> {
       audits: getLighthouseAuditNotes(data),
     }
   } catch (error) {
-    return {
-      available: false,
-      source: 'Google PageSpeed Insights',
-      strategy: 'mobile',
-      performance: null,
-      accessibility: null,
-      bestPractices: null,
-      seo: null,
-      screenshotDataUrl: null,
-      audits: [],
-      error: error instanceof Error ? error.message : 'PageSpeed request failed',
-    }
+    // Fall back to local Lighthouse CLI if PageSpeed API fails
+    return runLighthouseFallback(url.toString())
   } finally {
     clearTimeout(timeout)
   }
@@ -358,6 +337,44 @@ function accessFlags(access?: AuditAccessContext): string[] {
   if (access.accessInstructions && access.accessInstructions.trim().length >= 10) flags.push('Access instructions provided')
   if (access.testCredentials && access.testCredentials.trim().length >= 6) flags.push('Temporary test credentials provided')
   return flags
+
+/** Fall back to local Lighthouse CLI when PageSpeed API is unavailable */
+async function runLighthouseFallback(url: string): Promise<LighthouseSummary> {
+  const localUrl = process.env.LIGHTHOUSE_SERVER_URL || 'http://127.0.0.1:18900'
+  try {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 90000)
+    const response = await fetch(`${localUrl}/audit?url=${encodeURIComponent(url)}`, { signal: controller.signal })
+    clearTimeout(timeout)
+    if (!response.ok) {
+      return {
+        available: false, source: 'Lighthouse CLI', strategy: 'mobile',
+        performance: null, accessibility: null, bestPractices: null, seo: null,
+        screenshotDataUrl: null, audits: [],
+        error: `Local Lighthouse returned ${response.status}`
+      }
+    }
+    const data = await response.json()
+    return {
+      available: data.available ?? true,
+      source: 'Lighthouse CLI (local)',
+      strategy: 'mobile',
+      performance: data.performance ?? null,
+      accessibility: data.accessibility ?? null,
+      bestPractices: data.bestPractices ?? null,
+      seo: data.seo ?? null,
+      screenshotDataUrl: data.screenshotDataUrl ?? null,
+      audits: (data.topIssues || []).map((i: any) => `${i.title}: ${i.score}/100`)
+    }
+  } catch (e) {
+    return {
+      available: false, source: 'Lighthouse CLI', strategy: 'mobile',
+      performance: null, accessibility: null, bestPractices: null, seo: null,
+      screenshotDataUrl: null, audits: [],
+      error: `Local Lighthouse unavailable: ${e instanceof Error ? e.message : 'unknown'}`
+    }
+  }
+}
 }
 
 function analyze(
