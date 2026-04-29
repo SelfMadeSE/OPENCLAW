@@ -156,6 +156,17 @@ const posts: BlogPostMeta[] = [
     ctaVariant: "A",
     wordCount: 1600,
   },
+  {
+    slug: "denver-landscaping-website-audit-case-study",
+    title: "What Our Website Audit Found at a Denver Landscaping Company",
+    description:
+      "The contact page returned a 404. No phone number was on the site. No form. The owner thought everything was fine. Here's what our four-signal audit actually revealed.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology (Case Study)",
+    keywords: ["website audit case study", "Denver landscaping website", "conversion audit", "service business website problems", "website audit real example"],
+    ctaVariant: "C",
+    wordCount: 1350,
+  },
 ]
 
 export function getBlogPosts(): BlogPostMeta[] {

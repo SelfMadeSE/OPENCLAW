@@ -18,6 +18,7 @@ import LocalSEOStarterKitPost from "@/components/blog/LocalSEOStarterKitPost"
 import WebsiteCostPost from "@/components/blog/WebsiteCostPost"
 import AutomationServiceBusinessesPost from "@/components/blog/AutomationServiceBusinessesPost"
 import AuditToBookingPost from "@/components/blog/AuditToBookingPost"
+import DenverLandscapingPost from "@/components/blog/DenverLandscapingPost"
 
 // Map slug to component — each post gets its own rich component
 const postComponents: Record<string, React.ComponentType> = {
@@ -34,6 +35,7 @@ const postComponents: Record<string, React.ComponentType> = {
   "service-business-website-cost-2026": WebsiteCostPost,
   "automation-for-service-businesses": AutomationServiceBusinessesPost,
   "from-audit-to-booking": AuditToBookingPost,
+  "denver-landscaping-website-audit-case-study": DenverLandscapingPost,
 }
 
 export function generateStaticParams() {
