@@ -13,7 +13,7 @@ const steps = [
     title: 'Audit',
     icon: Search,
     description:
-      'Enter your URL. Our system crawls your pages, scores your design, conversion, technical signals, and Lighthouse data. You get a read-only report immediately — no email required.',
+      'Enter your URL. Our system crawls your pages, scores your design, conversion, and technical signals, plus Lighthouse estimates when available. You get a read-only report immediately — no email required.',
     outcome: 'A live audit report. Zero commitment. Takes 90 seconds.',
   },
   {

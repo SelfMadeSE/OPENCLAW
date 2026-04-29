@@ -20,8 +20,8 @@ const fadeUp = {
 };
 
 const features = [
-  "Live URL scan with design, conversion, technical, and Lighthouse signals",
-  "Targeted fixes, implementation examples, and an estimated build range",
+  "Live URL scan with design, conversion, technical, and estimated Lighthouse signals",
+  "Fixes ranked by impact with implementation examples and cost estimates",
   "Proposal path for redesign, lead capture, automation, and follow-up systems",
 ];
 
