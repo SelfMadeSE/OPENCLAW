@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-prospect-research-<slug>",
+  "template_name":"MISSION_PROSPECT_RESEARCH",
+  "version":1,
+  "purpose":"Build a vetted prospect dossier for one lead.",
+  "lead":"outreach",
+  "default_sub_agents":["marketing","auditor"],
+  "risk_envelope":"green",
+  "inputs":{"company":"required","website":"required","target_persona":"required","lane":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/dossier.md","min_bytes":1200,"required":true},
+    {"path":"artifacts/lead.json","min_bytes":300,"required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","outreach","marketing"],
+  "memory_write":["outreach"],
+  "approval":{"required":false},
+  "skills_used":["Market Research Agent","multi-search-engine","x-search","content-research","Sales Pipeline Tracker"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true},
+  "notes":"No prospect leaves this template without a dossier; lead.json appended to _shared/revenue/leads/leads.jsonl on close."
+}

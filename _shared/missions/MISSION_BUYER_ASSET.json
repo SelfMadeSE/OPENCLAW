@@ -1,0 +1,20 @@
+{
+  "id_pattern":"mission-buyer-asset-<slug>",
+  "template_name":"MISSION_BUYER_ASSET",
+  "version":1,
+  "purpose":"Produce one buyer-facing asset (one-pager, demo deck, case framing).",
+  "lead":"marketing",
+  "default_sub_agents":["creative","media","auditor"],
+  "risk_envelope":"yellow",
+  "inputs":{"asset_type":"required","target_buyer":"required","offer_ref":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/asset.md","min_bytes":1200,"required":true},
+    {"path":"artifacts/asset-source/","required":false}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","marketing","creative"],
+  "memory_write":["marketing","creative"],
+  "approval":{"required":false},
+  "skills_used":["business-writing","article-writing","sales-mastery","SocialPack Multi-Platform Social Media Generator"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true}
+}

@@ -1,0 +1,32 @@
+{
+  "active": false,
+  "activated_at": "2026-04-29T12:17:00+03:00",
+  "activated_by": "principal-engineer",
+  "reason": "Autonomy framework repair in progress. Sub-agent instability, broad-permission misuse, ledger/CRM mismatch, duplicate draft queues, and ignored BLOCKED headers.",
+  "blocked_actions": [],
+  "allowed_actions": [
+    "*"
+  ],
+  "lift_requires": "explicit operator approval per-action and successful proof mission",
+  "override_audit": [
+    {
+      "ts": "2026-04-29T09:22:14.427559+00:00",
+      "action": "smtp_send",
+      "approval_id": "test-approval-001"
+    }
+  ],
+  "lifted_at": "2026-04-29T12:55:14.049753",
+  "lifted_by": "operator-directive (revenue-autonomy)",
+  "lifted_reason": "Operator clarified: NEXUS owns mission generation; only true RED is money-out / live trading / public posts to unapproved accounts. Outbound email, account creation, drafts, and deploys are autonomous.",
+  "hard_wall_actions": [
+    "payment_live",
+    "ads_spend",
+    "trading_live",
+    "betting_live",
+    "gambling",
+    "withdraw",
+    "deposit",
+    "credential_change",
+    "destructive_fs"
+  ]
+}

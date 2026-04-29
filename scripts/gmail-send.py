@@ -17,6 +17,7 @@ import sys
 import time
 import urllib.parse
 import websocket
+from email_ledger import DuplicateEmailAttemptError, begin_attempt, get_db, update_attempt
 
 
 CDP_PORT = 18800
@@ -59,8 +60,26 @@ def find_compose_tab():
     return None, None
 
 
-def send_email_via_browser(to, subject, body):
+def send_email_via_browser(to, subject, body, lead_id="unknown", force_resend=False, reason=""):
     """Send an email by opening compose in Gmail and clicking Send."""
+    db = get_db()
+    try:
+        attempt = begin_attempt(
+            db,
+            lead_id=lead_id,
+            recipient=to,
+            subject=subject,
+            body=body,
+            provider="gmail_browser_cdp",
+            sender=GMAIL_ACCOUNT,
+            initial_status="attempted_ui",
+            force_resend=force_resend,
+            reason=reason,
+        )
+    except DuplicateEmailAttemptError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return False
+
     # Step 1: Open compose URL in new tab
     compose_url = (
         f"https://mail.google.com/mail/u/0/?view=cm&fs=1"
@@ -88,6 +107,7 @@ def send_email_via_browser(to, subject, body):
         tab_id, ws_url = find_gmail_tab()
     
     if not tab_id:
+        update_attempt(db, attempt["id"], status="failed", error="Could not find Gmail tab")
         print("ERROR: Could not find Gmail tab", file=sys.stderr)
         return False
     
@@ -115,10 +135,23 @@ def send_email_via_browser(to, subject, body):
         result = cdp_send(ws, "Runtime.evaluate", {"expression": js})
         ws.close()
         
-        print(f"Email sent to {to}: {subject}")
+        row = update_attempt(
+            db,
+            attempt["id"],
+            status="unverified_claim",
+            error="Browser automation clicked Send; no provider-side evidence",
+        )
+        print(json.dumps({
+            "status": row["status"],
+            "attempt_id": row["id"],
+            "to": to,
+            "subject": subject,
+            "evidence": row["error"],
+        }))
         return True
         
     except Exception as e:
+        update_attempt(db, attempt["id"], status="failed", error=str(e))
         print(f"ERROR: {e}", file=sys.stderr)
         return False
 
@@ -129,6 +162,9 @@ def main():
     parser.add_argument("--subject", required=True, help="Email subject")
     parser.add_argument("--body", help="Email body (use - for stdin)")
     parser.add_argument("--body-file", help="File with email body")
+    parser.add_argument("--lead-id", default="unknown", help="CRM lead id for idempotency")
+    parser.add_argument("--force-resend", action="store_true", help="Allow resending the same lead/recipient/subject/body")
+    parser.add_argument("--reason", default="", help="Required reason when using --force-resend")
     
     args = parser.parse_args()
     
@@ -143,7 +179,18 @@ def main():
         print("ERROR: Provide --body or --body-file", file=sys.stderr)
         sys.exit(1)
     
-    success = send_email_via_browser(args.to, args.subject, body)
+    if args.force_resend and not args.reason.strip():
+        print("ERROR: --force-resend requires --reason", file=sys.stderr)
+        sys.exit(1)
+
+    success = send_email_via_browser(
+        args.to,
+        args.subject,
+        body,
+        lead_id=args.lead_id,
+        force_resend=args.force_resend,
+        reason=args.reason,
+    )
     sys.exit(0 if success else 1)
 
 
