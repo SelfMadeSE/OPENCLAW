@@ -199,6 +199,37 @@ const posts: BlogPostMeta[] = [
     ctaVariant: "B",
     wordCount: 1600,
   },
+  {
+    slug: "your-website-making-people-leave",
+    title: "Your Website Is Making People Leave — Here's Proof",
+    description:
+      "Your website looks fine to you. But data shows the average service business site has 6–9 fixable issues costing leads every day. Here's the evidence — and the fix.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology (Pillar)",
+    keywords: ["website audit", "service business website issues", "website not getting leads", "website conversion problems", "website proof"],
+    ctaVariant: "A",
+    wordCount: 1750,
+  },
+  {
+    slug: "3-plumbing-websites-1-scorecard",
+    title: "3 Plumbing Websites, 1 Scorecard: What Our Audit Found",
+    description: "Three plumbing companies. Different markets, different budgets, different builders. They all had the same three problems — and none of them knew.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology",
+    keywords: ["plumbing website audit", "plumber website review", "plumbing website design", "service business website problems"],
+    ctaVariant: "C",
+    wordCount: 1950,
+  },
+  {
+    slug: "5-highest-impact-fixes-service-website",
+    title: "The 5 Highest-Impact Fixes for Any Service Website (Ranked)",
+    description: "From a 10-minute form addition to a 1-hour hero rewrite — ranked by effort and return. Most of these are free to implement.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology",
+    keywords: ["service website optimization", "website fixes for service businesses", "website conversion improvements", "service business website tips"],
+    ctaVariant: "B",
+    wordCount: 1950,
+  },
 ]
 
 export function getBlogPosts(): BlogPostMeta[] {
