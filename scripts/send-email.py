@@ -18,6 +18,7 @@ import subprocess
 import sys
 import time
 import urllib.parse
+from email_ledger import DuplicateEmailAttemptError, begin_attempt, get_db, update_attempt
 
 
 def get_gmail_tab():
@@ -33,10 +34,29 @@ def get_gmail_tab():
     return None
 
 
-def open_compose_and_send(to, subject, body):
+def open_compose_and_send(to, subject, body, lead_id="unknown", force_resend=False, reason=""):
     """Open Gmail compose URL in existing tab, then send via JavaScript."""
+    db = get_db()
+    try:
+        attempt = begin_attempt(
+            db,
+            lead_id=lead_id,
+            recipient=to,
+            subject=subject,
+            body=body,
+            provider="gmail_browser_cdp",
+            sender="owner@outboundautonomy.com",
+            initial_status="attempted_ui",
+            force_resend=force_resend,
+            reason=reason,
+        )
+    except DuplicateEmailAttemptError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        return False
+
     gmail_tab = get_gmail_tab()
     if not gmail_tab:
+        update_attempt(db, attempt["id"], status="failed", error="No Gmail tab found")
         print("ERROR: No Gmail tab found. Ensure browser is open with Gmail logged in.", file=sys.stderr)
         return False
 
@@ -90,10 +110,12 @@ def open_compose_and_send(to, subject, body):
     if not compose_tab:
         # Compose might be inline in the Gmail tab
         print("Compose window opened inline. Email is ready to send via browser automation.")
+        update_attempt(db, attempt["id"], status="unverified_claim", error="Browser compose opened inline; no provider evidence")
         return True
     
     print(f"Compose tab found: {compose_tab['id']}")
     print("Email composition opened. Use browser automation to click Send, or send manually.")
+    update_attempt(db, attempt["id"], status="unverified_claim", error="Browser compose opened; no provider evidence")
     return True
 
 
@@ -104,6 +126,9 @@ def main():
     parser.add_argument("--body", help="Email body text (use - for stdin, or --body-file)")
     parser.add_argument("--body-file", help="File containing email body")
     parser.add_argument("--from", default="owner@outboundautonomy.com", help="From address")
+    parser.add_argument("--lead-id", default="unknown", help="CRM lead id for idempotency")
+    parser.add_argument("--force-resend", action="store_true", help="Allow resending the same lead/recipient/subject/body")
+    parser.add_argument("--reason", default="", help="Required reason when using --force-resend")
     
     args = parser.parse_args()
     
@@ -118,7 +143,18 @@ def main():
         print("ERROR: Provide --body or --body-file", file=sys.stderr)
         sys.exit(1)
     
-    success = open_compose_and_send(args.to, args.subject, body)
+    if args.force_resend and not args.reason.strip():
+        print("ERROR: --force-resend requires --reason", file=sys.stderr)
+        sys.exit(1)
+
+    success = open_compose_and_send(
+        args.to,
+        args.subject,
+        body,
+        lead_id=args.lead_id,
+        force_resend=args.force_resend,
+        reason=args.reason,
+    )
     sys.exit(0 if success else 1)
 
 

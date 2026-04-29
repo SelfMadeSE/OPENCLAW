@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-follow-up-<slug>",
+  "template_name":"MISSION_FOLLOW_UP",
+  "version":1,
+  "purpose":"Author and (with approval) send a follow-up message on an existing thread.",
+  "lead":"outreach",
+  "default_sub_agents":["marketing","auditor"],
+  "risk_envelope":"orange",
+  "inputs":{"lead_id":"required","previous_message_ref":"required","reply_state":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/follow-up-draft.md","min_bytes":400,"required":true},
+    {"path":"artifacts/approval-request.md","min_bytes":300,"required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["outreach","shared"],
+  "memory_write":["outreach"],
+  "approval":{"required":true,"target":"telegram-owner"},
+  "skills_used":["business-writing","sales-mastery","Sales Pipeline Tracker"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true,"approval_granted":true},
+  "notes":"Append to _shared/revenue/attempts.jsonl with state='approved' on grant; only flip to 'sent' after delivery evidence is captured."
+}

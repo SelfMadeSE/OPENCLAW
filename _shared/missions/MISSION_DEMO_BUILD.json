@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-demo-build-<slug>",
+  "template_name":"MISSION_DEMO_BUILD",
+  "version":1,
+  "purpose":"Build a working demo (script/site/automation) tied to an offer.",
+  "lead":"engineering",
+  "default_sub_agents":["creative","auditor"],
+  "risk_envelope":"yellow",
+  "inputs":{"offer_ref":"required","demo_scope":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/demo/","required":true},
+    {"path":"artifacts/demo-readme.md","min_bytes":600,"required":true},
+    {"path":"artifacts/healthcheck.json","min_bytes":100,"required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["engineering","shared"],
+  "memory_write":["engineering"],
+  "approval":{"required":false},
+  "skills_used":["coding-agent","skill-creator","tmux","healthcheck"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true}
+}

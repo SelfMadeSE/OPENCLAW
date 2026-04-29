@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "openclaw://scoring/schema/v1",
+  "title": "OpenClaw Scoring Schema v1 (machine-readable)",
+  "description": "Machine-readable counterpart to _shared/scoring/SCHEMA.md. Validates every entry in history.jsonl and the structure of standings.json.",
+  "version": 1,
+  "agents": [
+    "orchestrator", "engineering", "marketing", "outreach", "creative", "media", "auditor"
+  ],
+  "classes": {
+    "positive": [
+      "revenue_contribution",
+      "artifact_quality",
+      "reliability",
+      "persuasion_accuracy",
+      "risk_discipline",
+      "collaboration_usefulness",
+      "strategic_novelty",
+      "memory_usefulness",
+      "approval_efficiency",
+      "audit_pass_rate",
+      "execution_clarity",
+      "coordination_usefulness"
+    ],
+    "negative": [
+      "hallucinated_completion",
+      "low_value_artifact",
+      "bad_escalation",
+      "noisy_messaging",
+      "risky_action_unjustified",
+      "audit_flag"
+    ]
+  },
+  "weights": {
+    "orchestrator": {"coordination_usefulness": 2.0, "reliability": 1.5, "strategic_novelty": 1.0, "audit_pass_rate": 1.0},
+    "engineering":  {"reliability": 2.0, "artifact_quality": 1.5, "risk_discipline": 1.0},
+    "marketing":    {"persuasion_accuracy": 2.0, "strategic_novelty": 1.5, "artifact_quality": 1.0},
+    "outreach":     {"revenue_contribution": 2.0, "persuasion_accuracy": 1.5, "reliability": 1.0},
+    "creative":     {"strategic_novelty": 2.0, "artifact_quality": 1.5, "memory_usefulness": 1.0},
+    "media":        {"artifact_quality": 1.5, "persuasion_accuracy": 1.5, "collaboration_usefulness": 1.0},
+    "auditor":      {"audit_pass_rate": 2.0, "risk_discipline": 1.5, "reliability": 1.0}
+  },
+  "auditor_only_classes": [
+    "audit_pass_rate",
+    "audit_flag",
+    "hallucinated_completion",
+    "low_value_artifact"
+  ],
+  "self_report_allowed_by_agent": {
+    "orchestrator": ["reliability","collaboration_usefulness","strategic_novelty","execution_clarity","memory_usefulness","coordination_usefulness"],
+    "engineering":  ["reliability","artifact_quality","collaboration_usefulness","memory_usefulness"],
+    "marketing":    ["persuasion_accuracy","strategic_novelty","artifact_quality","memory_usefulness"],
+    "outreach":     ["revenue_contribution","persuasion_accuracy","reliability","memory_usefulness"],
+    "creative":     ["strategic_novelty","artifact_quality","memory_usefulness"],
+    "media":        ["artifact_quality","persuasion_accuracy","collaboration_usefulness"],
+    "auditor":      ["audit_pass_rate","risk_discipline","reliability"]
+  },
+  "history_event": {
+    "type": "object",
+    "required": ["ts","agent_id","mission_id","class","delta","reason"],
+    "additionalProperties": false,
+    "properties": {
+      "ts":         {"type":"string","format":"date-time"},
+      "agent_id":   {"type":"string","enum":["orchestrator","engineering","marketing","outreach","creative","media","auditor"]},
+      "mission_id": {"type":"string","pattern":"^mission-[A-Za-z0-9_-]+$"},
+      "class":      {"type":"string"},
+      "delta":      {"type":"number","minimum":-1.0,"maximum":1.0},
+      "reason":     {"type":"string","minLength":3},
+      "auditor_id": {"type":"string"},
+      "evidence":   {"type":"array","items":{"type":"string"}},
+      "approval_ref": {"type":"string"}
+    }
+  },
+  "standings_object": {
+    "type": "object",
+    "required": ["version","agents"],
+    "properties": {
+      "version": {"type":"integer","const":1},
+      "description": {"type":"string"},
+      "agents": {
+        "type": "object",
+        "patternProperties": {
+          "^(orchestrator|engineering|marketing|outreach|creative|media|auditor)$": {
+            "type":"object",
+            "required":["total","by_class","last_updated"],
+            "properties":{
+              "total":{"type":"number"},
+              "by_class":{"type":"object","additionalProperties":{"type":"number"}},
+              "last_updated":{"type":["string","null"],"format":"date-time"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "behavior_thresholds": {
+    "pause_orange_for_agent_when": {"audit_pass_rate_window_10": {"lt": 0.6}},
+    "force_review_before_orange_when": {"reliability": {"lt": 0.4}},
+    "downgrade_to_green_only_when": {"hallucinated_completion_in_last_5": {"gte": 1}}
+  },
+  "rebuild": {
+    "frequency": "nightly",
+    "owner": "auditor",
+    "cron_job": "audit-nightly-rebuild"
+  },
+  "files": {
+    "history": "_shared/scoring/history.jsonl",
+    "standings": "_shared/scoring/standings.json",
+    "human_doc": "_shared/scoring/SCHEMA.md",
+    "scorecards_per_agent": "workspaces/<agent>/SCORECARD.md",
+    "trust_matrix": "_shared/social_memory/trust_matrix.json"
+  }
+}

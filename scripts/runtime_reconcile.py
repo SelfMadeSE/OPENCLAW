@@ -106,6 +106,54 @@ def crm_summary() -> dict:
                 "FROM leads ORDER BY updated_at DESC LIMIT 10"
             )
         ]
+        email_attempts_exists = db.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='email_attempts'"
+        ).fetchone()
+        if email_attempts_exists:
+            email_by_status = {
+                row["status"]: row["count"]
+                for row in db.execute(
+                    "SELECT status, COUNT(*) AS count FROM email_attempts GROUP BY status"
+                )
+            }
+            recent_email_attempts = [
+                dict(row)
+                for row in db.execute(
+                    """
+                    SELECT id, lead_id, recipient, provider, sender, status,
+                           provider_message_id, error, created_at, updated_at
+                    FROM email_attempts
+                    ORDER BY updated_at DESC, id DESC
+                    LIMIT 12
+                    """
+                )
+            ]
+            ledger_sent_leads = {
+                row["lead_id"]
+                for row in db.execute(
+                    """
+                    SELECT DISTINCT lead_id FROM email_attempts
+                    WHERE status IN ('provider_accepted', 'sent_verified')
+                    """
+                )
+            }
+        else:
+            email_by_status = {}
+            recent_email_attempts = []
+            ledger_sent_leads = set()
+        crm_sent_leads = {
+            row["id"]
+            for row in db.execute(
+                "SELECT id FROM leads WHERE stage IN ('outreach_sent', 'responded', 'negotiating', 'won')"
+            )
+        }
+        email_truth_blockers = [
+            {
+                "lead_id": lead_id,
+                "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists",
+            }
+            for lead_id in sorted(crm_sent_leads - ledger_sent_leads)
+        ]
     finally:
         db.close()
 
@@ -114,6 +162,11 @@ def crm_summary() -> dict:
         "stages": stages,
         "recent_leads": recent_leads,
         "recent_actions": recent_actions,
+        "email_attempts": {
+            "by_status": email_by_status,
+            "recent": recent_email_attempts,
+            "truth_blockers": email_truth_blockers,
+        },
     }
 
 
@@ -216,6 +269,22 @@ def to_markdown(report: dict) -> str:
                 f"  - {action['created_at']} {action['agent']} {action['action_type']} "
                 f"lead={action['lead_id']}: {action['description']}"
             )
+        email = crm.get("email_attempts", {})
+        lines.append(f"- Email ledger statuses: `{json.dumps(email.get('by_status', {}), sort_keys=True)}`")
+        if email.get("truth_blockers"):
+            lines.append("- Email truth blockers:")
+            for blocker in email["truth_blockers"][:8]:
+                lines.append(f"  - lead={blocker['lead_id']}: {blocker['issue']}")
+        else:
+            lines.append("- Email truth blockers: none from CRM sent-stage vs ledger provider evidence check")
+        if email.get("recent"):
+            lines.append("- Recent email attempts:")
+            for attempt in email["recent"][:5]:
+                evidence = attempt.get("provider_message_id") or attempt.get("error") or "no provider evidence"
+                lines.append(
+                    f"  - {attempt['updated_at']} #{attempt['id']} {attempt['status']} "
+                    f"lead={attempt['lead_id']} to={attempt['recipient']} via={attempt['provider']}: {evidence}"
+                )
 
     lines.extend(["", "## Runtime Log Signals", ""])
     lines.append(f"- Recent gateway lines scanned: {report['logs']['window_lines']}")
@@ -231,7 +300,7 @@ def to_markdown(report: dict) -> str:
             "",
             "## Reporting Rule",
             "",
-            "Agents must report only verified facts backed by CRM rows, artifacts, transcripts, logs, or external confirmation. Anything else is `unverified` or `blocked`.",
+            "Agents must report only verified facts backed by CRM rows, email_attempts provider evidence, artifacts, transcripts, logs, or external confirmation. Browser/CDP send claims without provider evidence remain `unverified_claim`; anything else is `unverified` or `blocked`.",
             "",
         ]
     )

@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-outreach-draft-<slug>",
+  "template_name":"MISSION_OUTREACH_DRAFT",
+  "version":1,
+  "purpose":"Produce a polished outreach draft tied to a vetted lead. Drafting only — no sending.",
+  "lead":"outreach",
+  "default_sub_agents":["marketing","auditor"],
+  "risk_envelope":"yellow",
+  "inputs":{"lead_id":"required","channel":"required (email|telegram|form)","offer_ref":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/outreach-draft.md","min_bytes":700,"required":true},
+    {"path":"artifacts/personalization-notes.md","min_bytes":300,"required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","outreach","marketing"],
+  "memory_write":["outreach","marketing"],
+  "approval":{"required":false},
+  "skills_used":["sales-mastery","business-writing","human-writing","Sales Pipeline Tracker"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true},
+  "notes":"Outreach status remains 'draft' until a separate MISSION_FOLLOW_UP or operator-approved orange mission moves it to 'approved' then 'sent'."
+}
