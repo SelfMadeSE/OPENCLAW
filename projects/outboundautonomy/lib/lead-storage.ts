@@ -164,12 +164,12 @@ async function createGoogleAppsScriptLead(lead: ContactFormData, context: LeadCo
 
 async function createSqliteLead(lead: ContactFormData): Promise<StoredLeadResult> {
   const id = await createLead(lead)
-  if (id === undefined || id === null) {
+  if (!id) {
     throw new Error('Failed to create lead')
   }
 
   return {
-    id: id,
+    id: id as string | number,
     destination: 'sqlite',
     durable: !process.env.VERCEL,
   }

@@ -23,7 +23,7 @@ export async function POST(request: Request) {
       )
     }
     
-    if (entryId === undefined || entryId === null) {
+    if (entryId === undefined || entryId === 0) {
       return NextResponse.json(
         { error: 'Failed to create waitlist entry' },
         { status: 500 }

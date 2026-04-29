@@ -113,11 +113,11 @@ describe('storeLead', () => {
       await expect(storeLead(validLead(), validContext)).rejects.toThrow('Failed to create lead')
     })
 
-    it('handles bigint return from createLead', async () => {
-      mockCreateLead.mockReturnValue(BigInt(9007199254740991))
+    it('handles a large numeric id from createLead', async () => {
+      mockCreateLead.mockReturnValue(9007199254740991)
       const result = await storeLead(validLead(), validContext)
 
-      expect(result.id).toBe('9007199254740991')
+      expect(result.id).toBe(9007199254740991)
       expect(result.destination).toBe('sqlite')
     })
 
