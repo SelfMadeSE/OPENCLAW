@@ -18,6 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://outboundautonomy.com'),
   title: 'Outbound Autonomy — Free Website Audit With Targeted Fixes',
   description: 'Enter your URL to get a website audit with design, conversion, technical, and lead-capture insights, plus targeted fixes and a proposal path.',
   openGraph: {

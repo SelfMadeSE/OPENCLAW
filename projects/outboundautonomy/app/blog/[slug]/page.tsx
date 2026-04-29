@@ -12,6 +12,9 @@ import CTADeepDivePost from "@/components/blog/CTADeepDivePost"
 import GrandePrairieSEOPost from "@/components/blog/GrandePrairieSEOPost"
 import FormDeepDivePost from "@/components/blog/FormDeepDivePost"
 import SchemaMarkupPost from "@/components/blog/SchemaMarkupPost"
+import LocalSEOStarterKitPost from "@/components/blog/LocalSEOStarterKitPost"
+import WebsiteCostPost from "@/components/blog/WebsiteCostPost"
+import AutomationServiceBusinessesPost from "@/components/blog/AutomationServiceBusinessesPost"
 
 // Map slug to component — each post gets its own rich component
 const postComponents: Record<string, React.ComponentType> = {
@@ -24,6 +27,9 @@ const postComponents: Record<string, React.ComponentType> = {
   "grande-prairie-local-seo-google-maps": GrandePrairieSEOPost,
   "form-deep-dive": FormDeepDivePost,
   "schema-markup-local-seo": SchemaMarkupPost,
+  "local-seo-starter-kit": LocalSEOStarterKitPost,
+  "service-business-website-cost-2026": WebsiteCostPost,
+  "automation-for-service-businesses": AutomationServiceBusinessesPost,
 }
 
 export function generateStaticParams() {

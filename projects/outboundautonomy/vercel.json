@@ -9,6 +9,11 @@
   ],
   "routes": [
     {
+      "src": "^/demo/?$",
+      "dest": "/sample-report",
+      "status": 307
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }

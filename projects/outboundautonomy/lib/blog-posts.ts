@@ -112,6 +112,39 @@ const posts: BlogPostMeta[] = [
     ctaVariant: "B",
     wordCount: 900,
   },
+  {
+    slug: "local-seo-starter-kit",
+    title: "Local SEO Starter Kit for HVAC, Plumbing & Electrical Contractors",
+    description:
+      "Most service businesses lose local leads because Google can't figure out who they are, where they serve, or what they do. A complete starter kit covering GBP, schema, NAP, citations, and review strategy.",
+    date: "2026-04-29",
+    cluster: "Local SEO for Trades (Pillar)",
+    keywords: ["local SEO for contractors", "local SEO for HVAC", "local SEO for plumbers", "local SEO for electricians", "Google Business Profile for trades"],
+    ctaVariant: "A",
+    wordCount: 1800,
+  },
+  {
+    slug: "service-business-website-cost-2026",
+    title: "How Much Should a Service Business Website Cost in 2026?",
+    description:
+      "Service business websites cost $0 to $15,000+. Here's how to know what you actually need before you spend anything — using a free audit. Audit-first scoping, flat pricing, priority sequencing.",
+    date: "2026-04-29",
+    cluster: "Business Case / ROI (Pillar)",
+    keywords: ["service business website cost", "website redesign cost", "affordable website for contractors", "small business website pricing"],
+    ctaVariant: "B",
+    wordCount: 1700,
+  },
+  {
+    slug: "automation-for-service-businesses",
+    title: "Automation for Service Businesses — Forms, Follow-Up, and CRM",
+    description:
+      "Your website audit found a leak. The fix isn't a prettier page — it's automation that closes the gap between a lead filling out a form and a tech showing up. Three layers every service business needs.",
+    date: "2026-04-29",
+    cluster: "Business Case / ROI",
+    keywords: ["service business automation", "automated follow-up contractors", "CRM for trades", "website form automation", "lead response time", "HVAC booking automation"],
+    ctaVariant: "A",
+    wordCount: 1200,
+  },
 ]
 
 export function getBlogPosts(): BlogPostMeta[] {

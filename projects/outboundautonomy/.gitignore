@@ -31,6 +31,16 @@ yarn-error.log*
 # vercel
 .vercel
 
+# auto-generated runtime reports (oa_focus_guard, runtime_reconcile, etc.)
+artifacts/runtime-reports/
+
+# auto-generated site-health reports (heartbeat output)
+artifacts/site-health/
+
+# archived / engineering notes
+artifacts/archive/
+artifacts/engineering-notes/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
