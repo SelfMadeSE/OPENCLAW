@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { z } from 'zod'
-import { insertIntoSupabase } from '@/lib/supabase'
+import { storeLead } from '@/lib/lead-storage'
 
 const unlockSchema = z.object({
   email: z.string().email(),
@@ -18,25 +18,27 @@ export async function POST(request: Request) {
 
     const { email, company } = parsed.data
 
-    const result = await insertIntoSupabase('preview_unlocks', {
-      email,
-      company,
-      source: 'try-preview',
-      submitted_at: new Date().toISOString(),
+    const result = await storeLead(
+      {
+        name: company || 'Preview unlock lead',
+        email,
+        company: company || '',
+        service_interest: 'other',
+        message: `Preview report unlock from /try page for ${company}.`,
+      },
+      {}
+    )
+
+    return NextResponse.json({
+      success: true,
+      id: result.id,
+      destination: result.destination,
     })
-
-    if (!result.ok) {
-      return NextResponse.json(
-        {
-          error: 'Unable to save unlock request right now.',
-          details: result.error,
-        },
-        { status: result.status }
-      )
-    }
-
-    return NextResponse.json({ success: true })
-  } catch {
-    return NextResponse.json({ error: 'Unexpected server error.' }, { status: 500 })
+  } catch (error) {
+    console.error('try/unlock error:', error)
+    return NextResponse.json(
+      { error: 'Unable to save unlock request right now.' },
+      { status: 500 }
+    )
   }
 }

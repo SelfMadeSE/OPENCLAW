@@ -13,9 +13,11 @@ export function TrustBar() {
       <Container>
         <AnimatedSection>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-muted text-sm">
-            {signals.map((signal) => (
+            {signals.map((signal, i) => (
               <span key={signal} className="flex items-center gap-2 text-center">
-                <span className="h-1.5 w-1.5 rounded-full bg-signal shrink-0" />
+                <span
+                  className={`h-1.5 w-1.5 rounded-full bg-signal shrink-0 ${i === 0 ? "animate-pulse-signal" : ""}`}
+                />
                 {signal}
               </span>
             ))}

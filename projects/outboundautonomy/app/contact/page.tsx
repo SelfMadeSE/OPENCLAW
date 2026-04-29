@@ -27,6 +27,21 @@ export default function Contact({ searchParams }: ContactPageProps) {
   const auditUrl = firstValue(searchParams?.url)
   const auditHostname = getHostname(auditUrl)
   const isAuditIntent = intent === 'audit'
+  const isDiscoveryIntent = intent === 'discovery'
+
+  const heading = isAuditIntent
+    ? 'Request your proposal and implementation plan.'
+    : isDiscoveryIntent
+      ? 'Book your free 30-minute audit review.'
+      : 'Tell us which site or funnel needs attention.'
+
+  const subheading = isAuditIntent
+    ? auditHostname
+      ? `We captured ${auditHostname} from the audit flow. Use this form to turn the findings into a scoped implementation plan.`
+      : 'Use this form to turn the audit findings into a scoped implementation plan.'
+    : isDiscoveryIntent
+      ? 'Share your URL below so we can prepare the audit before the call. You will leave knowing the 2-3 fixes that matter most and exactly what they cost.'
+      : 'Share the website, page, or funnel you want reviewed and we\'ll focus on the highest-impact fixes first.'
 
   return (
     <>
@@ -36,14 +51,10 @@ export default function Contact({ searchParams }: ContactPageProps) {
             <Section className="py-24">
               <div className="text-center">
                 <h1 className="text-5xl font-bold text-static mb-4">
-                  {isAuditIntent ? 'Request your proposal and implementation plan.' : 'Tell us which site or funnel needs attention.'}
+                  {heading}
                 </h1>
                 <p className="text-xl text-muted max-w-3xl mx-auto">
-                  {isAuditIntent
-                    ? auditHostname
-                      ? `We captured ${auditHostname} from the audit flow. Use this form to turn the findings into a scoped implementation plan.`
-                      : 'Use this form to turn the audit findings into a scoped implementation plan.'
-                    : 'Share the website, page, or funnel you want reviewed and we’ll focus on the highest-impact fixes first.'}
+                  {subheading}
                 </p>
               </div>
             </Section>
@@ -88,17 +99,17 @@ export default function Contact({ searchParams }: ContactPageProps) {
 }
 
 export const metadata = {
-  title: 'Contact — Outbound Autonomy',
+  title: 'Contact - Outbound Autonomy',
   description: 'Request a proposal review based on your website audit, URL analysis, and highest-impact conversion fixes.',
   openGraph: {
-    title: 'Contact — Outbound Autonomy',
+    title: 'Contact - Outbound Autonomy',
     description: 'Request a proposal review based on your website audit, URL analysis, and highest-impact conversion fixes.',
     type: 'website',
     url: 'https://outboundautonomy.com/contact',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact — Outbound Autonomy',
+    title: 'Contact - Outbound Autonomy',
     description: 'Request a proposal review based on your website audit, URL analysis, and highest-impact conversion fixes.',
   },
 }
