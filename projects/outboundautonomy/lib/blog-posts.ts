@@ -99,7 +99,7 @@ const posts: BlogPostMeta[] = [
     cluster: "Service Business Website Conversion",
     keywords: ["website form", "lead capture website", "contact form service business", "form conversion rate"],
     ctaVariant: "A",
-    wordCount: 900,
+    wordCount: 1600,
   },
   {
     slug: "schema-markup-local-seo",
@@ -110,7 +110,7 @@ const posts: BlogPostMeta[] = [
     cluster: "Local SEO for Trades",
     keywords: ["schema markup", "LocalBusiness schema", "structured data local business", "local SEO for contractors"],
     ctaVariant: "B",
-    wordCount: 900,
+    wordCount: 2200,
   },
   {
     slug: "local-seo-starter-kit",
