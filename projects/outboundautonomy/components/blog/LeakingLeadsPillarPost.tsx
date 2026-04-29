@@ -1,7 +1,7 @@
 export default function LeakingLeadsPillarPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Three-quarters of service business websites share the same three conversion killers: no CTA above the fold, no lead form on the homepage, and no clarity on service areas. A 90-second audit surfaces exactly which ones apply to your site and what to fix first.</p>
 
@@ -81,6 +81,15 @@ export default function LeakingLeadsPillarPost() {
       <p><strong>Week 1:</strong> Add a lead form and a visible CTA. Three fields: name, phone, message plus one button above the fold.</p>
       <p><strong>Week 2:</strong> Fix local signals — LocalBusiness schema, homepage copy update, NAP consistency.</p>
       <p><strong>Week 3:</strong> Measure. Compare lead volume before and after.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/cta-deep-dive" className="text-signal hover:underline">The CTA Fix That Changes Everything for Service Businesses</a></li>
+  <li><a href="/blog/form-deep-dive" className="text-signal hover:underline">The One Form Every Service Business Needs Above the Fold</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }

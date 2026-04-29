@@ -1,7 +1,7 @@
 export default function CTADeepDivePost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> A high-converting CTA is not about design — it&apos;s about placement, action language, and repeatability. Most service business websites have zero CTAs above the fold. Adding one consistently lifts leads 80–200%.</p>
 
@@ -86,6 +86,15 @@ export default function CTADeepDivePost() {
       <p>Adding one CTA button above the fold takes five minutes if you have site access. Making it sticky on mobile takes about fifteen. The lift — 80–200% more leads — compounds every single month as long as the button is there.</p>
 
       <p>That&apos;s the highest-ROI five minutes in service business marketing, and we can prove it with a 30-second URL scan.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/form-deep-dive" className="text-signal hover:underline">The One Form Every Service Business Website Needs Above the Fold</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }

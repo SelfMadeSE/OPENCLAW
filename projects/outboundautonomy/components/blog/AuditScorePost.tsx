@@ -1,7 +1,7 @@
 export default function AuditScorePost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — April 2026</p>
 
       <p><strong>TL;DR:</strong> A single number like &quot;58/100&quot; doesn&apos;t tell you much. The real value is in the breakdown — which signal is dragging your score down and what to fix first. Here&apos;s how to read an audit score the same way we do.</p>
 
@@ -89,6 +89,15 @@ export default function AuditScorePost() {
         <li><strong>Don&apos;t fix everything at once.</strong> Prioritize by impact on lead generation.</li>
         <li><strong>Re-audit after every change.</strong> Scores shift when you fix things. A quarterly audit catches new issues before they become expensive problems.</li>
       </ol>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/4-signals-website-audit" className="text-signal hover:underline">The 4 Signals That Matter in a Website Audit</a></li>
+  <li><a href="/blog/free-website-audit-what-it-checks" className="text-signal hover:underline">What a Free Website Audit Actually Checks</a></li>
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+</ul>
     </>
   )
-}
+    }

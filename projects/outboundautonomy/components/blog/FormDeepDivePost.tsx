@@ -1,7 +1,7 @@
 export default function FormDeepDivePost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Four out of four Grande Prairie service businesses we audited were missing a lead form on their homepage. That single omission costs them 15–20% of potential leads. Here&apos;s what they need instead.</p>
 
@@ -73,6 +73,15 @@ export default function FormDeepDivePost() {
       <p>Each answer feeds your <strong>Conversion Score</strong>. If you&apos;re missing any of these, your audit will tell you exactly how much that gap is worth.</p>
 
       <p><strong>Enter your URL.</strong> We&apos;ll show you your form — and every other conversion signal — in about 30 seconds.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/cta-deep-dive" className="text-signal hover:underline">The CTA Fix That Changes Everything</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }

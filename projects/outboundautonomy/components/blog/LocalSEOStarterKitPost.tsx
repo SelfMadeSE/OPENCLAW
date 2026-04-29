@@ -1,7 +1,7 @@
 export default function LocalSEOStarterKitPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Most service businesses lose local leads not because their website is bad, but because Google can&apos;t confidently figure out who they are, where they serve, or what they do. This starter kit covers the five local SEO fundamentals that determine whether you show up in the local pack — or don&apos;t.</p>
 
@@ -57,7 +57,7 @@ export default function LocalSEOStarterKitPost() {
 
       <h2>Gap 2: Your Website Has No Local Content</h2>
 
-      <p>Google wants to see that your business is rooted in the community you serve. The strongest signal: <strong>city-specific pages or content.</strong></p>
+      <p>Google wants to see that your business is rooted in the community you serve. The strongest signal: <strong>city-specific pages or content.</strong> For a deep dive on local map rankings, see our <a href="/blog/grande-prairie-local-seo-google-maps" className="text-signal hover:underline">Grande Prairie Google Maps visibility guide</a>.</p>
 
       <h3>The Wrong Approach</h3>
       <p>One &quot;Service Areas&quot; page that lists 15 cities in a single paragraph. Google reads this as thin content, not as evidence of local relevance.</p>
@@ -251,6 +251,15 @@ export default function LocalSEOStarterKitPost() {
       </ul>
 
       <p><strong>Enter your URL for a free audit →</strong> If your site is missing local SEO fundamentals, you&apos;ll see it flagged immediately — no account required, no sales call, no hidden upsells.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/schema-markup-local-seo" className="text-signal hover:underline">Using Schema Markup to Steal Local Search Traffic</a></li>
+  <li><a href="/blog/grande-prairie-local-seo-google-maps" className="text-signal hover:underline">Why Your Grande Prairie Business Isn't Showing Up on Google Maps</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }

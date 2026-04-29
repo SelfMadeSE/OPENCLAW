@@ -1,7 +1,7 @@
 export default function WebsiteCostPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> A service business website costs anywhere from $0 (DIY) to $15,000+ (full rebuild). The right price depends on your audit score, not your budget. Most businesses overpay for design and underinvest in conversion.</p>
 
@@ -141,6 +141,15 @@ export default function WebsiteCostPost() {
       <p>Spending $5,000 on a redesign when you needed $1,500 in CTAs is waste. Spending $1,500 on CTAs when your site is fundamentally broken is delay.</p>
 
       <p><strong>The audit tells you which one you are. It takes 90 seconds and costs nothing.</strong></p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/automation-for-service-businesses" className="text-signal hover:underline">Automation for Service Businesses — Forms, Follow-Up, and CRM</a></li>
+  <li><a href="/blog/from-audit-to-booking" className="text-signal hover:underline">From Audit to Booking: The Full Service Business Workflow</a></li>
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+</ul>
     </>
   )
-}
+    }

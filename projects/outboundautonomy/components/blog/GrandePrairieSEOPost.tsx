@@ -1,7 +1,7 @@
 export default function GrandePrairieSEOPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Most service businesses in Grande Prairie are invisible on Google Maps not because they&apos;re bad at their job, but because Google looks for specific signals that most local sites don&apos;t have. Here&apos;s what&apos;s probably missing — and exactly how to fix it.</p>
 
@@ -117,6 +117,15 @@ export default function GrandePrairieSEOPost() {
       <p>You can spend hours digging through GBP settings, checking directory listings, and inspecting your website code. Or you can run a <strong>free website audit</strong> that checks all of these signals automatically.</p>
 
       <p>Enter your URL. In about 90 seconds, you&apos;ll get a score across design, conversion, technical, and local SEO — including specific issues flagged for your exact business.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/local-seo-starter-kit" className="text-signal hover:underline">Local SEO Starter Kit for HVAC, Plumbing & Electrical</a></li>
+  <li><a href="/blog/schema-markup-local-seo" className="text-signal hover:underline">Using Schema Markup to Steal Local Search Traffic</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }

@@ -1,7 +1,7 @@
 export default function FreeAuditChecksPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Free tools like PageSpeed Insights and GTmetrix are great for speed. They tell you almost nothing about whether your website actually converts visitors into leads. A real website audit checks four signals — and most business owners have only ever seen one of them.</p>
 
@@ -81,6 +81,15 @@ export default function FreeAuditChecksPost() {
       </ul>
 
       <p>That&apos;s what a full audit is for.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/4-signals-website-audit" className="text-signal hover:underline">The 4 Signals That Matter in a Website Audit</a></li>
+  <li><a href="/blog/how-to-read-website-audit-score" className="text-signal hover:underline">How to Read Your Website Audit Score</a></li>
+  <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+</ul>
     </>
   )
-}
+    }
