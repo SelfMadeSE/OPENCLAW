@@ -25,8 +25,9 @@ Primary message: "Enter your URL. Get a website audit with targeted fixes."
 2. **Artifact written** — `oa-prospect-emails-resolved-2026-04-29.md` with updated outreach angles and full contact details.
 3. **Day 0 template updated** — Quinn's email corrected from quinn@quinnsheating.ca→quinnpotoski@gmail.com, subject line updated, outreach angle corrected (site is live and well-built, not down).
 4. **Quinn's site correction** — Previous assessment flagged `quinnshvac.ca` as DNS down, but `quinnsheatingandairconditioning.ca` resolves fine. The short domain is the one that fails. Site is a professional Wix build — outreach angle updated accordingly.
-4. **Tested himalaya** — Confirmed IMAP/SMTP still blocked. No change.
-5. **Blockers remaining:** #1 (PageSpeed API key — needs Google Cloud key in Vercel env), #2 (social accounts), #3 (Gmail app password — ~3 min fix, instructions at `oa-gmail-app-password-guide-2026-04-28.md`).
+5. **Referral & partner program page copy written** — `oa-referral-partner-program-copy-2026-04-29.md`. Covers partner white-label (3 tiers) and referral commission (15%) programs. Fills last remaining content gap.
+6. **Tested himalaya** — Confirmed IMAP/SMTP still blocked. No change.
+7. **Blockers remaining:** #1 (PageSpeed API key — needs Google Cloud key in Vercel env), #2 (social accounts), #3 (Gmail app password — ~3 min fix, instructions at `oa-gmail-app-password-guide-2026-04-28.md`).
 
 ### Content Pipeline Progress ✅✅✅ ALL 13 ARTICLES ON SITE ✅✅✅
 
@@ -55,9 +56,7 @@ Primary message: "Enter your URL. Get a website audit with targeted fixes."
 2. **Social accounts** — No X or LinkedIn. All campaign content blocked.
 3. **Gmail App Password** — IMAP/SMTP rejects current password. Email is GREEN per shared state but cannot send without credentials. Instructions at `oa-gmail-app-password-guide-2026-04-28.md`.
 4. ~~Blog route — not implemented~~ ✅ **RESOLVED — All 13 articles deployed and live.**
-5. ~~Prospect email research — Only Alpine HVAC had confirmed email~~ ✅ **RESOLVED — All 4 emails found:** Alpine (ryan@), Hardline (info@), Silvertip (info@), Quinn's (quinnpotoski@gmail.com)
-6. ~~OG images — not deployed~~ ✅ **RESOLVED — All 13 OG images verified serving at `outboundautonomy.com/og/blog/{slug}.png`**
+5. ~~Prospect email research — Only Alpine HVAC had confirmed email~~ ✅ **RESOLVED — All 4 emails found**
+6. ~~OG images — not deployed~~ ✅ **RESOLVED — All 13 OG images verified serving**
 
-**Standing:** HEARTBEAT_OK — Vercel deploy completed. All 13 blog articles live at `outboundautonomy.com/blog/{slug}` with OG images. Build clean (46 pages). Blocker #4 and #6 resolved.
-
-**Next:** Remaining blockers — PageSpeed API key (#1), social accounts (#2), Gmail app password (#3). All prospect emails resolved ✅
+**Standing:** HEARTBEAT_OK — All content assets drafted (13 blog posts, referral/partner page, one-pager, case study template). No remaining content gaps. Blockers unchanged.

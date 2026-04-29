@@ -1,0 +1,12 @@
+{
+  "mission_id": "failed-retry-20260429-0731",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-retry-results.md"
+    }
+  ],
+  "completed_at": "2026-04-29T13:35:22.600804+00:00"
+}

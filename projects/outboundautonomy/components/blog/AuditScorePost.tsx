@@ -97,6 +97,7 @@ export default function AuditScorePost() {
   <li><a href="/blog/4-signals-website-audit" className="text-signal hover:underline">The 4 Signals That Matter in a Website Audit</a></li>
   <li><a href="/blog/free-website-audit-what-it-checks" className="text-signal hover:underline">What a Free Website Audit Actually Checks</a></li>
   <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/competitive-gap-website-audit" className="text-signal hover:underline">Competitor Website Analysis for Service Businesses</a></li>
 </ul>
     </>
   )

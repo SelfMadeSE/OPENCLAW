@@ -1,0 +1,72 @@
+     "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 08:25 MDT] MISSION nexus-direct-terminal-20260429-0824 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: I execute the terminal brief myself as NEXUS \\u2014 query the ledger, curl the site, and write the operator-facing close-out artifact directly without delegating..\\nYour task: Read this entire instruction before acting. You are SENTINEL. Your only task: write a single terminal brief file. Do NOT propose more missions. Do NOT spawn children. Step 1: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status'. Step 2: sqlite3 ... 'SELECT stage, COUNT(*) FROM leads GROUP BY stage'. Step 3: curl -s -o /dev/null -w '%{http_code} ' outboundautonomy.com/ /try /sample-report /pricing /case-studies /faq. Step 4: Write ALL findings to ONE file at artifacts/missions/nexus-direct-terminal-20260429-0824/sentinel-closeout.md formatted as: '# Terminal Brief \\u2014 2026-04-29 08:24 MDT', then '## Pipeline: 94 provider_accepted | 11 failed | 7 reconciled', then '## Site: all pages 200', then '## Blockers: waitlist API (ORANGE), CDP (YELLOW), CRM Python (YELLOW)', then '## Operator Action: Wait 24-48h for replies. If reply detected \\u2192 respond personally (RED). If no replies by Apr 30 PM \\u2192 authorize follow-up batch.', then '## CYCLE CLOSED'. End the file. Do nothing else.\\nWrite your output to: artifacts/missions/nexus-direct-terminal-20260429-0824/sentinel-closeout.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/nexus-direct-terminal-20260429-0824/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Terminal brief written. Pipeline: 95 provider_accepted, 11 failed, 7 reconciled. Site: all 6 pages 200. Close-out file at sentinel-closeout.md. CYCLE CLOSED.",
+      "finalAssistantRawText": "STATE: PROCEED — Terminal brief written. Pipeline: 95 provider_accepted, 11 failed, 7 reconciled. Site: all 6 pages 200. Close-out file at sentinel-closeout.md. CYCLE CLOSED.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 3,
+        "tools": [
+          "exec",
+          "process",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

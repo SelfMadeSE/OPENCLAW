@@ -1,0 +1,12 @@
+{
+  "mission_id": "terminal-20260429-0844",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-close.md"
+    }
+  ],
+  "completed_at": "2026-04-29T14:47:24.013619+00:00"
+}

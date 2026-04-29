@@ -1,0 +1,12 @@
+{
+  "mission_id": "reply-check-v2-20260429-1112",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-reply.md"
+    }
+  ],
+  "completed_at": "2026-04-29T17:14:04.051730+00:00"
+}

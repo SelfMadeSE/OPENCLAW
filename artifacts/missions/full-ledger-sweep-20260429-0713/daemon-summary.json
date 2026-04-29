@@ -1,0 +1,12 @@
+{
+  "mission_id": "full-ledger-sweep-20260429-0713",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-sweep-results.md"
+    }
+  ],
+  "completed_at": "2026-04-29T13:16:45.779981+00:00"
+}

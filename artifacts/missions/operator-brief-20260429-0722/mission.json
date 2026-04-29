@@ -1,0 +1,18 @@
+{
+  "mission_id": "operator-brief-20260429-0722",
+  "goal": "Produce a single concise operator-facing brief with the current revenue pipeline state: total sends, reply status, site health, open blockers, and exact recommended next action \u2014 no planning, just facts.",
+  "success_criteria": [
+    "Operator receives a complete pipeline snapshot: 75 provider_accepted, 7 failed, 7 reconciled, site status, blocker list",
+    "Single recommended next action with exact command or instruction"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Produce the operator brief. Step 1: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' \u2014 ledger summary. Step 2: sqlite3 ... 'SELECT stage, COUNT(*) FROM leads GROUP BY stage' \u2014 pipeline snapshot. Step 3: sqlite3 ... 'SELECT l.name,l.score,l.stage FROM leads l WHERE l.stage IN (\"outreach_sent\",\"outreach_drafted\") ORDER BY l.score DESC LIMIT 10' \u2014 top of pipeline. Step 4: curl -s -o /dev/null -w '%{http_code}' outboundautonomy.com/ /try /sample-report /pricing /case-studies \u2014 site health check. Step 5: Compile into a single operator brief at artifacts/missions/operator-brief-20260429-0722/bridge-brief.md with: (A) Pipeline header: 75 sent via SMTP, 7 failed, 7 reconciled, (B) Top 5 leads by score with stage, (C) Site health: all 200, (D) Open blockers: waitlist API (ORANGE), CDP down (YELLOW), CRM Python fd error (YELLOW), (E) Recommended next action: 'Wait 24-48h for replies to 75 sends. If no replies, send follow-up batch to top 10. If replies detected, operator must respond personally (RED).' (F) Estimated reply window: 24-72 hours from first send batch (~04:00 UTC today).",
+      "expected_artifact": "bridge-brief.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "75 provider_accepted sends. The pipeline has been pushing sends for ~3 hours. At this volume the highest-value move shifts from 'send more' to 'surface results.' The operator needs a single concise brief showing exactly what was done, what the pipeline looks like, and what to do next. This is the natural cycle-close: proposal \u2192 execution \u2192 brief. 1-slice read-only mission producing the exact intelligence the operator needs to make the next decision."
+}

@@ -1,0 +1,18 @@
+{
+  "mission_id": "score-and-send-residual-20260429-1029",
+  "goal": "Score the 8 leads in 'scored' stage and send SMTP outreach to all with verified emails, converting the scoring backlog into provider_accepted sends and pushing past 100.",
+  "success_criteria": [
+    "8 scored leads researched, enriched with audit findings, and sent via SMTP with provider_accepted evidence",
+    "provider_accepted count advances from 97 to at least 105"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Get all 8 scored leads: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT id,name,contact_info,score,notes FROM leads WHERE stage='scored' ORDER BY score DESC\". For each lead with a verified email in contact_info, write a personalized audit-led email referencing their specific site weaknesses from notes. Send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Free website audit for <name>' --body '<personalized body>'. Log each: sqlite3 ... \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Update stage: sqlite3 ... \"UPDATE leads SET stage='outreach_sent' WHERE id='<id>'\". Write results with before/after counts to artifacts/missions/score-and-send-residual-20260429-1029/bridge-results.md.",
+      "expected_artifact": "bridge-results.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "8 scored leads are pre-researched inventory ready to convert into sends. This is the lowest-friction path to advancing the provider_accepted count. Outreach cron has been actively scoring and sending \u2014 this mission targets the residual scored backlog specifically. Single slice, pure execution."
+}

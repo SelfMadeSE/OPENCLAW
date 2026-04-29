@@ -1,7 +1,7 @@
 # BRIDGE Active Memory
 
 Reset: 2026-04-29 (early)
-Last heartbeat: 2026-04-29 ~6:02 AM MT (28th cycle)
+Last heartbeat: 2026-04-29 ~12:31 PM MT (30th cycle)
 
 Canonical mission: read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md`.
 
@@ -61,12 +61,55 @@ Live sending is GREEN. SMTP working.
 ### 6:02 AM MT — 28th Cycle (Apr 29)
 
 #### ✅ New Prospects Found (2 added)
-- **Denver Tree Removal Service** (tree-service) — Site: https://denvertreeremovalservice.com — Copyright 2018, basic HTML, no mobile optimization. Contact discovered: michael@astumpman.com / 303-777-5757. Strong target for audit-led outreach.
-- **Martin Mowing** (landscaping) — Site: https://martinmowingllc.com — Copyright 2021, basic WordPress template, phone-only. Needs email discovery.
+- **Denver Tree Removal Service** (tree-service) — sent successfully (michael@astumpman.com, ledger IDs 129-130)
+- **Martin Mowing** (landscaping) — email discovered via site scrape (taylormartin@martinmowingllc.com), sent
 
 #### Pipeline
 - 68 total — 45 outreach_sent, 2 scored (awaiting Rylee), 2 outreach_drafted_email_missing, 2 prospect (new), 1 prospect (existing)
 - 14 archived, 2 lost
 
-#### SMTP
-- Still WORKING. No new sends this cycle (focusing on prospect research).
+### 12:31 PM MT — 30th Cycle (Apr 29)
+
+#### Pipeline Growth
+- **102 total leads** — **74 outreach_sent**, **7 scored**, **3 prospect**, 16 archived, 2 lost
+- **121 provider_accepted** emails (up from 112 at 11:54 AM)
+- SMTP WORKING — IDs 131-141 all provider_accepted (intermittent 535 on script-based sends but direct SMTP works)
+
+#### New Sends This Cycle (30th)
+- **303 Plumber** (ID 131) — info@mydenverplumber.net (service@303plumber.com reported but the ledger shows info@mydenverplumber.net as ID 140)
+- **Tobin HVAC** (ID 132) — info@tobinhvac.com
+- **Denver Heating & AC** (ID 133) — info@denverheating-airconditioning.com
+- **Colorado Roofing Co** (ID 134) — info@coloradoroofingcompany.com
+- **Denver Plumbing Co** (ID 135) — info@denverplumbingcompany.com
+- **Letali LLC** (ID 139) — nick@letali.com ✅ NEW — remodeling, score 35/100 (raw URLs, duplicate pages)
+- **MacDonald Hardwoods** (ID 141) — info@macwoods.com ✅ NEW — flooring, score 58/100 (single-page site)
+
+#### Email Discoveries This Cycle
+- **MacDonald Hardwoods** — info@macwoods.com found on contact page (mailto redirects to scott@macwoods.com)
+- **Letali LLC** — nick@letali.com found on contact page
+- **Denver Flooring Collective** — No email (phone/form only) — remains unpursued
+
+#### 7 Scored Leads — Blocker Status (Unchanged)
+- **2 near-perfect sites** (awaiting Rylee): Affordable Pest (97/A), Window Replacement Denver (98/A)
+- **5 no-email leads** (email discovery confirmed failed):
+  - DenverHVACPros.com — HACKED (Chinese casino content injected)
+  - Denver Carpet Cleaning — Dated template, keyword-stuffed, form-only
+  - FB Mobile Detailing Denver — 404 pages, phone-only
+  - Denver Concrete Inc — Domain doesn't resolve
+  - JusPainting LLC — Weebly template, form-only
+
+#### 3 Prospects (Not Actionable)
+- Garcia Pest Management (Wix, no email)
+- L & L Heating (Texas-based, not Colorado)
+- Denver Flooring Collective (form/phone only, no email)
+
+#### Email Ledger
+- 121 provider_accepted (+9 from 29th cycle)
+- 13 failed (includes 6 earlier + 4 accidental 535 script errors + previous)
+- 7 reconciled_superseded
+
+#### Next Actions
+- Await Rylee decisions on 2 near-perfect scored leads
+- 5 scored no-email leads: consider archiving or flag for phone-based outreach (needs approval)
+- Continue finding prospects with discoverable emails AND visible site problems
+- SMTP intermittent via script (535 errors) but direct SMTP_SSL connections work fine — script may have stale env handling

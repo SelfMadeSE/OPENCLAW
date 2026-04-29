@@ -1482,8 +1482,426 @@
       "prospect_id": "bluespring-cleaning-20260429-161002",
       "created_at": "2026-04-29T16:10:02.091414",
       "updated_at": "2026-04-29T16:10:02.091416"
+    },
+    "eagle-eye-renovations-20260429-200944": {
+      "businessName": "Eagle Eye Renovations",
+      "niche": "Roofing / Gutter Services / Exterior Renovations",
+      "website": "https://www.eagleeyerenovations.com",
+      "source": "Google Search Weebly discovery",
+      "description": "Roofing and gutter contractor serving Parker, Aurora, Castle Rock, and Franktown CO. A+ BBB rating. Has a proper main site (eagleeyerenovations.com) AND a Weebly blog (eagleeyerenovationscolorado.weebly.com). The Weebly blog still shows default placeholder text: \"Write something about yourself. No need to be fancy, just an overview.\" Blog-only site with no dedicated lead capture form or CTA beyond phone number. Main site is functional but the Weebly presence is severely neglected.",
+      "contact": {
+        "phone": "(720) 333-1613",
+        "email": null,
+        "address": "12760 Stroh Ranch Way, Suite 100A, Parker, CO 80134",
+        "social": {
+          "facebook": "https://www.facebook.com/Eagle-Eye-Renovations-LLC-2267250520159450",
+          "twitter": "https://twitter.com/EagleEyeReno",
+          "youtube": "https://www.youtube.com/channel/UC0gE0lTdTtcLedRIg5xaYAQ"
+        },
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:11:50.555962"
+          },
+          "address": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:11:50.586548"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "audit_findings": [
+        "Weebly blog has default placeholder text visible",
+        "No lead capture form on Weebly blog",
+        "Blog content outdated - last meaningful post Jan 2025",
+        "Untitled placeholder blog post still published",
+        "Main site lacks prominent conversion-focused CTA above fold",
+        "No live chat or instant quote tool"
+      ],
+      "verified_contact": {
+        "phone": true,
+        "address": true,
+        "email": false
+      },
+      "prospect_id": "eagle-eye-renovations-20260429-200944",
+      "created_at": "2026-04-29T20:09:44.764074",
+      "updated_at": "2026-04-29T20:11:50.614688",
+      "status": "new"
+    },
+    "watertight-roofing-inc-20260429-200959": {
+      "businessName": "WaterTight Roofing, Inc.",
+      "niche": "Roofing / Storm Restoration",
+      "website": "https://watertightroofinginc.weebly.com",
+      "source": "Google Search Weebly discovery",
+      "description": "Roofing contractor operating in Colorado, Texas, and Louisiana. Weebly blog-only site (watertightroofinginc.weebly.com). Most recent post April 2026 about roof evaluations. No dedicated website beyond the Weebly blog, no lead capture form, no online booking. Multi-state operations suggest they have revenue but are underspending on their web presence.",
+      "contact": {
+        "phone": null,
+        "email": null,
+        "address": null,
+        "social": {},
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "address": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "audit_findings": [
+        "Weebly blog-only presence - no professional business website",
+        "No lead capture form or contact form visible on blog",
+        "No phone number or email publicly listed on blog",
+        "No CTA beyond blog posts",
+        "Multi-state operation with inadequate web presence",
+        "No Google Maps or GBP integration visible"
+      ],
+      "verified_contact": {
+        "phone": false,
+        "address": false,
+        "email": false
+      },
+      "prospect_id": "watertight-roofing-inc-20260429-200959",
+      "created_at": "2026-04-29T20:09:59.795791",
+      "updated_at": "2026-04-29T20:11:58.126211",
+      "status": "new"
+    },
+    "standard-fence-company-20260429-201011": {
+      "businessName": "Standard Fence Company",
+      "niche": "Fencing / Gate Services",
+      "website": "https://standardfencecompany.weebly.com",
+      "source": "Google Search Weebly discovery",
+      "description": "Fence company serving Denver, CO with automatic gate operators and professional fencing services. Weebly blog-only site. Phone number (303) 433-7301 visible on blog. No dedicated business website beyond the Weebly blog platform. No contact form, no quote request mechanism, no photo gallery or portfolio. Basic blog posts with SEO-focused content but weak conversion path.",
+      "contact": {
+        "phone": "(303) 433-7301",
+        "email": null,
+        "address": null,
+        "social": {},
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:12:05.772591"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "address": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "audit_findings": [
+        "Weebly blog-only - no professional business website",
+        "No lead capture/contact form",
+        "No portfolio or project gallery",
+        "No online quote/estimate request",
+        "No SSL on blog (Weebly subdomain)",
+        "Blog articles lack clear CTAs to convert readers",
+        "No Google Maps embed or directions"
+      ],
+      "verified_contact": {
+        "phone": true,
+        "address": false,
+        "email": false
+      },
+      "prospect_id": "standard-fence-company-20260429-201011",
+      "created_at": "2026-04-29T20:10:11.772941",
+      "updated_at": "2026-04-29T20:12:05.832754",
+      "status": "new"
+    },
+    "snowdriftco-inc-20260429-201023": {
+      "businessName": "SnowdriftCO, Inc.",
+      "niche": "Digital Marketing Agency / SEO / Web Design",
+      "website": "https://snowdriftco.com",
+      "source": "Google Maps / Search agency discovery",
+      "description": "Boutique digital marketing agency in Englewood, CO serving small businesses to law firms. Services: local SEO, web design, PPC, GBP optimization. Clean website with contact form and phone (303) 578-0150. Potential referral partner for Outbound Autonomy - they handle marketing/SEO, we handle website audits and fixes. Their site has basic conversion elements but could benefit from stronger differentiation and case study presentation.",
+      "contact": {
+        "phone": "(303) 578-0150",
+        "email": null,
+        "address": "Englewood, CO",
+        "social": {},
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:12:13.353286"
+          },
+          "address": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:12:13.380781"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "audit_findings": [
+        "Contact form exists but no live chat or instant booking",
+        "Limited case studies or portfolio visible on homepage",
+        "No prominent client logo/reputation bar",
+        "Could benefit from stronger visual differentiation vs competitors",
+        "Good local SEO content but conversion optimization opportunities exist"
+      ],
+      "verified_contact": {
+        "phone": true,
+        "address": true,
+        "email": false
+      },
+      "prospect_id": "snowdriftco-inc-20260429-201023",
+      "created_at": "2026-04-29T20:10:23.026648",
+      "updated_at": "2026-04-29T20:12:13.408372",
+      "status": "new"
+    },
+    "denver-digital-agency-dda-local-20260429-201046": {
+      "businessName": "Denver Digital Agency (DDA Local)",
+      "niche": "Digital Marketing Agency / SEO / PPC / Web Design",
+      "website": "https://denverdigitalagency.com",
+      "source": "Google Maps / Search agency discovery",
+      "description": "Denver-based SEO and digital marketing agency serving clients nationwide. Services: Local SEO, PPC management, SEO audits/consulting, web design. Strong Google reviews. Client base includes legal and healthcare. Positioned as potential referral partner - they offer SEO audits but not full technical website fixes that Outbound Autonomy does.",
+      "contact": {
+        "phone": "(303) 529-6979",
+        "email": null,
+        "address": "Denver, CO",
+        "social": {},
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:12:20.820632"
+          },
+          "address": {
+            "verified": true,
+            "verified_at": "2026-04-29T20:12:20.848139"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "audit_findings": [
+        "Website functional but design feels dated",
+        "No live chat or instant demo booking",
+        "Case studies mentioned but not prominently featured",
+        "Could partner for mutual client referrals",
+        "Their SEO audit service complements our technical fixes"
+      ],
+      "verified_contact": {
+        "phone": true,
+        "address": true,
+        "email": false
+      },
+      "prospect_id": "denver-digital-agency-dda-local-20260429-201046",
+      "created_at": "2026-04-29T20:10:46.694238",
+      "updated_at": "2026-04-29T20:12:20.874228",
+      "status": "new"
+    },
+    "sander--sons-20260429-210928": {
+      "businessName": "Sander & Sons",
+      "niche": "Kitchen Remodeling / Cabinetry",
+      "website": "https://kitchensofdenver.com",
+      "source": "Google organic search - Denver kitchen remodeling contractor",
+      "description": "Family-owned Denver kitchen and bathroom remodeling company with 20+ years experience. Website has content but lacks dedicated landing pages for specific services, no clear conversion CTAs above the fold, no live chat or instant quote tool, and appears to use a basic WordPress template with dated design. No visible lead magnet or email capture mechanism.",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "address": "Denver, CO",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.697720"
+          }
+        }
+      },
+      "website_gaps": {
+        "design": "Basic WordPress template, dated visual design, no modern hero section with value proposition",
+        "conversion": "No lead capture form above fold, no instant quote, no chat widget, weak CTAs",
+        "technical": "Likely no schema markup for local business, potential page speed issues with large images",
+        "seo": "No dedicated service area pages, minimal blog content, thin meta descriptions",
+        "competitors": "Kitchen Creations Ltd, The Kitchen Showcase have more modern sites with gallery/portfolio features"
+      },
+      "funnel_stage": "identified",
+      "priority": "medium",
+      "prospect_id": "sander--sons-20260429-210928",
+      "created_at": "2026-04-29T21:09:28.696057",
+      "updated_at": "2026-04-29T21:09:28.697722",
+      "status": "new"
+    },
+    "macdonald-hardwoods-20260429-210928": {
+      "businessName": "MacDonald Hardwoods",
+      "niche": "Hardwood Flooring / Floor Installation",
+      "website": "https://www.macwoods.com",
+      "source": "Google Maps - Denver flooring company search",
+      "description": "Denver hardwood flooring company with 40+ years experience, 12,000+ customers. Website is a basic single-page site with minimal content. No online scheduling, no pricing transparency, no project gallery with filtering, no blog/content marketing. The site relies on generic testimonials without photos or verification.",
+      "contact": {
+        "email": null,
+        "phone": "(303) 825-3006",
+        "address": "929 W 1st Ave, Denver, CO 80223",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.701131"
+          },
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.700290"
+          }
+        }
+      },
+      "website_gaps": {
+        "design": "Simplistic single-page layout, no project gallery with filtering, generic stock-style imagery",
+        "conversion": "No online estimate tool, no scheduling, contact form buried at bottom, no phone click-to-call on mobile",
+        "technical": "No visible SSL issues but likely no structured data, no Google Maps integration, potential slow load",
+        "seo": "Thin content, no neighborhood/area pages, no blog, weak internal linking",
+        "competitors": "Denver Flooring Collective has a more modern site with online booking and clearer pricing hooks"
+      },
+      "funnel_stage": "identified",
+      "priority": "high",
+      "prospect_id": "macdonald-hardwoods-20260429-210928",
+      "created_at": "2026-04-29T21:09:28.698856",
+      "updated_at": "2026-04-29T21:09:28.701133",
+      "status": "new"
+    },
+    "denver-flooring-collective-20260429-210928": {
+      "businessName": "Denver Flooring Collective",
+      "niche": "Flooring Installation / Home Improvement",
+      "website": "https://denverflooringcollective.com",
+      "source": "Google Maps - Denver flooring company search",
+      "description": "Denver flooring installation company offering hardwood, laminate, vinyl, and tile. Website has a temporary/urgency-based 40% off promotion expiring soon (likely always running). Uses a generic lead capture form but has no portfolio gallery, no before/after images, and relies on a basic template. No reviews integration, no trust badges.",
+      "contact": {
+        "email": null,
+        "phone": "(720) 599-1664",
+        "address": "11068 E Louisiana Pl, Denver, CO",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.703815"
+          },
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.702973"
+          }
+        }
+      },
+      "website_gaps": {
+        "design": "Template-based single-page site, generic stock photos, no real project portfolio",
+        "conversion": "Fake urgency (countdown/expiring discount), single lead form, no multi-step qualification",
+        "technical": "Built by Grain of Salt agency, likely basic SEO setup, no schema markup visible",
+        "seo": "No blog, no area pages, no educational content, thin page copy",
+        "competitors": "MacDonald Hardwoods has stronger brand trust and longevity messaging"
+      },
+      "funnel_stage": "identified",
+      "priority": "high",
+      "prospect_id": "denver-flooring-collective-20260429-210928",
+      "created_at": "2026-04-29T21:09:28.701995",
+      "updated_at": "2026-04-29T21:09:28.703816",
+      "status": "new"
+    },
+    "next-step-innovations-20260429-210928": {
+      "businessName": "Next Step Innovations",
+      "niche": "Kitchen & Bath Remodeling / Cabinetry",
+      "website": "https://nextstepkitchens.com",
+      "source": "Google organic search - Denver kitchen remodeling",
+      "description": "Denver kitchen and bath remodeling company with a physical showroom. Website has good content about their process and press features, but the design is cluttered, no clear primary CTA, duplicate content blocks, and no lead qualification form. Featured in Colorado's Best Kitchens magazine which is a trust asset not well leveraged on site.",
+      "contact": {
+        "email": null,
+        "phone": "(303) 722-0585",
+        "address": "Denver, CO",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.706966"
+          },
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.705897"
+          }
+        }
+      },
+      "website_gaps": {
+        "design": "Cluttered layout, duplicate content sections, inconsistent spacing, dated visual style",
+        "conversion": "No clear primary CTA, phone number buried in text, no consultation booking widget, no email capture",
+        "technical": "Duplicate content blocks suggest template issues, likely no structured data, no speed optimization visible",
+        "seo": "Press features not properly leveraged for SEO, no blog, thin area pages, missed backlink opportunities",
+        "competitors": "SKB Remodel has a much cleaner, more modern website with clearer process documentation"
+      },
+      "funnel_stage": "identified",
+      "priority": "medium",
+      "prospect_id": "next-step-innovations-20260429-210928",
+      "created_at": "2026-04-29T21:09:28.704715",
+      "updated_at": "2026-04-29T21:09:28.706968",
+      "status": "new"
+    },
+    "letali-llc-20260429-210928": {
+      "businessName": "Letali, LLC",
+      "niche": "Home Remodeling / Kitchen & Bath",
+      "website": "https://www.letali.com",
+      "source": "Google organic search - Denver kitchen remodeling contractor",
+      "description": "Denver home remodeling company offering kitchen, bathroom, basement, and home office remodeling. Website has raw HTML links visible (URLs displayed as text), generic template design, no professional photography of completed projects, testimonials without verification links, and no clear lead capture mechanism beyond a basic contact page.",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "address": "Denver, CO",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "website": {
+            "verified": true,
+            "verified_at": "2026-04-29T21:09:28.708925"
+          }
+        }
+      },
+      "website_gaps": {
+        "design": "Amateur template, raw URLs visible as text instead of styled links, no visual hierarchy",
+        "conversion": "No lead magnet, no quote calculator, no chat, basic contact form only",
+        "technical": "Raw URL rendering indicates poor CMS/template configuration, likely no SSL redirect issues, no schema",
+        "seo": "Thin content across service pages, no blog, no local SEO optimization, no GBP integration",
+        "competitors": "Sander & Sons and Next Step Innovations have significantly better web presences"
+      },
+      "funnel_stage": "identified",
+      "priority": "high",
+      "prospect_id": "letali-llc-20260429-210928",
+      "created_at": "2026-04-29T21:09:28.707881",
+      "updated_at": "2026-04-29T21:09:28.708927",
+      "status": "new"
     }
   },
-  "last_updated": "2026-04-29T16:10:02.091417",
+  "last_updated": "2026-04-29T21:09:28.708928",
   "version": "1.0"
 }

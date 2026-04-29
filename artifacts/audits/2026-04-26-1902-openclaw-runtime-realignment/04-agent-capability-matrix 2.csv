@@ -1,0 +1,568 @@
+agent,skill,eligibility,risk,status_2026-04-26,notes
+orchestrator,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+orchestrator,agent-dream,eligible,GREEN,UNTESTED,
+orchestrator,apple-notes,eligible,GREEN,UNTESTED,
+orchestrator,apple-reminders,eligible,GREEN,UNTESTED,
+orchestrator,article-writing,eligible,GREEN,UNTESTED,
+orchestrator,business-writing,eligible,GREEN,UNTESTED,
+orchestrator,clawhub,eligible,YELLOW,UNTESTED,
+orchestrator,coding-agent,eligible,YELLOW,UNTESTED,
+orchestrator,content-research,eligible,ORANGE,UNTESTED,
+orchestrator,gog,eligible,YELLOW,UNTESTED,
+orchestrator,google-workspace,eligible,GREEN,UNTESTED,
+orchestrator,healthcheck,eligible,GREEN,UNTESTED,
+orchestrator,heartbeat-pro,eligible,GREEN,WORKING,
+orchestrator,himalaya,eligible,YELLOW,UNTESTED,
+orchestrator,human-writing,eligible,GREEN,UNTESTED,
+orchestrator,Market Research Agent,eligible,ORANGE,UNTESTED,
+orchestrator,mcporter,eligible,YELLOW,UNTESTED,
+orchestrator,memory-tiering,eligible,GREEN,WORKING,
+orchestrator,microsoft-foundry,eligible,YELLOW,UNTESTED,
+orchestrator,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+orchestrator,neural-memory,eligible,GREEN,WORKING,
+orchestrator,node-connect,eligible,YELLOW,UNTESTED,
+orchestrator,openclaw-auto-dream,eligible,GREEN,WORKING,
+orchestrator,pollyreach,eligible,YELLOW,UNTESTED,
+orchestrator,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+orchestrator,sales-mastery,eligible,ORANGE,UNTESTED,
+orchestrator,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+orchestrator,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+orchestrator,session-logs,eligible,GREEN,WORKING,
+orchestrator,skill-creator,eligible,YELLOW,UNTESTED,
+orchestrator,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+orchestrator,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+orchestrator,taskflow,eligible,YELLOW,UNTESTED,
+orchestrator,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+orchestrator,tmux,eligible,GREEN,UNTESTED,
+orchestrator,video-frames,eligible,GREEN,UNTESTED,
+orchestrator,weather,eligible,GREEN,UNTESTED,
+orchestrator,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+orchestrator,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+orchestrator,xurl,eligible,YELLOW,UNTESTED,
+orchestrator,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+orchestrator,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+orchestrator,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+orchestrator,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+engineering,agent-dream,eligible,GREEN,UNTESTED,
+engineering,apple-notes,eligible,GREEN,UNTESTED,
+engineering,apple-reminders,eligible,GREEN,UNTESTED,
+engineering,article-writing,eligible,GREEN,UNTESTED,
+engineering,business-writing,eligible,GREEN,UNTESTED,
+engineering,clawhub,eligible,YELLOW,UNTESTED,
+engineering,coding-agent,eligible,YELLOW,UNTESTED,
+engineering,content-research,eligible,ORANGE,UNTESTED,
+engineering,gog,eligible,YELLOW,UNTESTED,
+engineering,google-workspace,eligible,GREEN,UNTESTED,
+engineering,healthcheck,eligible,GREEN,UNTESTED,
+engineering,heartbeat-pro,eligible,GREEN,WORKING,
+engineering,himalaya,eligible,YELLOW,UNTESTED,
+engineering,human-writing,eligible,GREEN,UNTESTED,
+engineering,Market Research Agent,eligible,ORANGE,UNTESTED,
+engineering,mcporter,eligible,YELLOW,UNTESTED,
+engineering,memory-tiering,eligible,GREEN,WORKING,
+engineering,microsoft-foundry,eligible,YELLOW,UNTESTED,
+engineering,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+engineering,neural-memory,eligible,GREEN,WORKING,
+engineering,node-connect,eligible,YELLOW,UNTESTED,
+engineering,openclaw-auto-dream,eligible,GREEN,WORKING,
+engineering,pollyreach,eligible,YELLOW,UNTESTED,
+engineering,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+engineering,sales-mastery,eligible,ORANGE,UNTESTED,
+engineering,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+engineering,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+engineering,session-logs,eligible,GREEN,WORKING,
+engineering,skill-creator,eligible,YELLOW,UNTESTED,
+engineering,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+engineering,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+engineering,taskflow,eligible,YELLOW,UNTESTED,
+engineering,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+engineering,tmux,eligible,GREEN,UNTESTED,
+engineering,video-frames,eligible,GREEN,UNTESTED,
+engineering,weather,eligible,GREEN,UNTESTED,
+engineering,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+engineering,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+engineering,xurl,eligible,YELLOW,UNTESTED,
+engineering,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+engineering,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+engineering,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+engineering,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+marketing,agent-dream,eligible,GREEN,UNTESTED,
+marketing,apple-notes,eligible,GREEN,UNTESTED,
+marketing,apple-reminders,eligible,GREEN,UNTESTED,
+marketing,article-writing,eligible,GREEN,UNTESTED,
+marketing,business-writing,eligible,GREEN,UNTESTED,
+marketing,clawhub,eligible,YELLOW,UNTESTED,
+marketing,coding-agent,eligible,YELLOW,UNTESTED,
+marketing,content-research,eligible,ORANGE,UNTESTED,
+marketing,gog,eligible,YELLOW,UNTESTED,
+marketing,google-workspace,eligible,GREEN,UNTESTED,
+marketing,healthcheck,eligible,GREEN,UNTESTED,
+marketing,heartbeat-pro,eligible,GREEN,WORKING,
+marketing,himalaya,eligible,YELLOW,UNTESTED,
+marketing,human-writing,eligible,GREEN,UNTESTED,
+marketing,Market Research Agent,eligible,ORANGE,UNTESTED,
+marketing,mcporter,eligible,YELLOW,UNTESTED,
+marketing,memory-tiering,eligible,GREEN,WORKING,
+marketing,microsoft-foundry,eligible,YELLOW,UNTESTED,
+marketing,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+marketing,neural-memory,eligible,GREEN,WORKING,
+marketing,node-connect,eligible,YELLOW,UNTESTED,
+marketing,openclaw-auto-dream,eligible,GREEN,WORKING,
+marketing,pollyreach,eligible,YELLOW,UNTESTED,
+marketing,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+marketing,sales-mastery,eligible,ORANGE,UNTESTED,
+marketing,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+marketing,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+marketing,session-logs,eligible,GREEN,WORKING,
+marketing,skill-creator,eligible,YELLOW,UNTESTED,
+marketing,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+marketing,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+marketing,taskflow,eligible,YELLOW,UNTESTED,
+marketing,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+marketing,tmux,eligible,GREEN,UNTESTED,
+marketing,video-frames,eligible,GREEN,UNTESTED,
+marketing,weather,eligible,GREEN,UNTESTED,
+marketing,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+marketing,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+marketing,xurl,eligible,YELLOW,UNTESTED,
+marketing,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+marketing,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+marketing,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+marketing,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+outreach,agent-dream,eligible,GREEN,UNTESTED,
+outreach,apple-notes,eligible,GREEN,UNTESTED,
+outreach,apple-reminders,eligible,GREEN,UNTESTED,
+outreach,article-writing,eligible,GREEN,UNTESTED,
+outreach,business-writing,eligible,GREEN,UNTESTED,
+outreach,clawhub,eligible,YELLOW,UNTESTED,
+outreach,coding-agent,eligible,YELLOW,UNTESTED,
+outreach,content-research,eligible,ORANGE,UNTESTED,
+outreach,gog,eligible,YELLOW,UNTESTED,
+outreach,google-workspace,eligible,GREEN,UNTESTED,
+outreach,healthcheck,eligible,GREEN,UNTESTED,
+outreach,heartbeat-pro,eligible,GREEN,WORKING,
+outreach,himalaya,eligible,YELLOW,UNTESTED,
+outreach,human-writing,eligible,GREEN,UNTESTED,
+outreach,Market Research Agent,eligible,ORANGE,UNTESTED,
+outreach,mcporter,eligible,YELLOW,UNTESTED,
+outreach,memory-tiering,eligible,GREEN,WORKING,
+outreach,microsoft-foundry,eligible,YELLOW,UNTESTED,
+outreach,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+outreach,neural-memory,eligible,GREEN,WORKING,
+outreach,node-connect,eligible,YELLOW,UNTESTED,
+outreach,openclaw-auto-dream,eligible,GREEN,WORKING,
+outreach,pollyreach,eligible,YELLOW,UNTESTED,
+outreach,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+outreach,sales-mastery,eligible,ORANGE,UNTESTED,
+outreach,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+outreach,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+outreach,session-logs,eligible,GREEN,WORKING,
+outreach,skill-creator,eligible,YELLOW,UNTESTED,
+outreach,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+outreach,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+outreach,taskflow,eligible,YELLOW,UNTESTED,
+outreach,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+outreach,tmux,eligible,GREEN,UNTESTED,
+outreach,video-frames,eligible,GREEN,UNTESTED,
+outreach,weather,eligible,GREEN,UNTESTED,
+outreach,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+outreach,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+outreach,xurl,eligible,YELLOW,UNTESTED,
+outreach,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+outreach,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+outreach,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+outreach,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+creative,agent-dream,eligible,GREEN,UNTESTED,
+creative,apple-notes,eligible,GREEN,UNTESTED,
+creative,apple-reminders,eligible,GREEN,UNTESTED,
+creative,article-writing,eligible,GREEN,UNTESTED,
+creative,business-writing,eligible,GREEN,UNTESTED,
+creative,clawhub,eligible,YELLOW,UNTESTED,
+creative,coding-agent,eligible,YELLOW,UNTESTED,
+creative,content-research,eligible,ORANGE,UNTESTED,
+creative,gog,eligible,YELLOW,UNTESTED,
+creative,google-workspace,eligible,GREEN,UNTESTED,
+creative,healthcheck,eligible,GREEN,UNTESTED,
+creative,heartbeat-pro,eligible,GREEN,WORKING,
+creative,himalaya,eligible,YELLOW,UNTESTED,
+creative,human-writing,eligible,GREEN,UNTESTED,
+creative,Market Research Agent,eligible,ORANGE,UNTESTED,
+creative,mcporter,eligible,YELLOW,UNTESTED,
+creative,memory-tiering,eligible,GREEN,WORKING,
+creative,microsoft-foundry,eligible,YELLOW,UNTESTED,
+creative,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+creative,neural-memory,eligible,GREEN,WORKING,
+creative,node-connect,eligible,YELLOW,UNTESTED,
+creative,openclaw-auto-dream,eligible,GREEN,WORKING,
+creative,pollyreach,eligible,YELLOW,UNTESTED,
+creative,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+creative,sales-mastery,eligible,ORANGE,UNTESTED,
+creative,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+creative,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+creative,session-logs,eligible,GREEN,WORKING,
+creative,skill-creator,eligible,YELLOW,UNTESTED,
+creative,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+creative,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+creative,taskflow,eligible,YELLOW,UNTESTED,
+creative,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+creative,tmux,eligible,GREEN,UNTESTED,
+creative,video-frames,eligible,GREEN,UNTESTED,
+creative,weather,eligible,GREEN,UNTESTED,
+creative,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+creative,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+creative,xurl,eligible,YELLOW,UNTESTED,
+creative,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+creative,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+creative,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+creative,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+media,agent-dream,eligible,GREEN,UNTESTED,
+media,apple-notes,eligible,GREEN,UNTESTED,
+media,apple-reminders,eligible,GREEN,UNTESTED,
+media,article-writing,eligible,GREEN,UNTESTED,
+media,business-writing,eligible,GREEN,UNTESTED,
+media,clawhub,eligible,YELLOW,UNTESTED,
+media,coding-agent,eligible,YELLOW,UNTESTED,
+media,content-research,eligible,ORANGE,UNTESTED,
+media,gog,eligible,YELLOW,UNTESTED,
+media,google-workspace,eligible,GREEN,UNTESTED,
+media,healthcheck,eligible,GREEN,UNTESTED,
+media,heartbeat-pro,eligible,GREEN,WORKING,
+media,himalaya,eligible,YELLOW,UNTESTED,
+media,human-writing,eligible,GREEN,UNTESTED,
+media,Market Research Agent,eligible,ORANGE,UNTESTED,
+media,mcporter,eligible,YELLOW,UNTESTED,
+media,memory-tiering,eligible,GREEN,WORKING,
+media,microsoft-foundry,eligible,YELLOW,UNTESTED,
+media,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+media,neural-memory,eligible,GREEN,WORKING,
+media,node-connect,eligible,YELLOW,UNTESTED,
+media,openclaw-auto-dream,eligible,GREEN,WORKING,
+media,pollyreach,eligible,YELLOW,UNTESTED,
+media,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+media,sales-mastery,eligible,ORANGE,UNTESTED,
+media,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+media,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+media,session-logs,eligible,GREEN,WORKING,
+media,skill-creator,eligible,YELLOW,UNTESTED,
+media,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+media,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+media,taskflow,eligible,YELLOW,UNTESTED,
+media,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+media,tmux,eligible,GREEN,UNTESTED,
+media,video-frames,eligible,GREEN,UNTESTED,
+media,weather,eligible,GREEN,UNTESTED,
+media,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+media,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+media,xurl,eligible,YELLOW,UNTESTED,
+media,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+media,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+media,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+media,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,read,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,edit,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,list,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,glob,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,grep,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,view,core,GREEN,WORKING,"proven via mission-001 (FORGE read POLICY.md, SENTINEL edit MEMORY.md)"
+auditor,agent-dream,eligible,GREEN,UNTESTED,
+auditor,apple-notes,eligible,GREEN,UNTESTED,
+auditor,apple-reminders,eligible,GREEN,UNTESTED,
+auditor,article-writing,eligible,GREEN,UNTESTED,
+auditor,business-writing,eligible,GREEN,UNTESTED,
+auditor,clawhub,eligible,YELLOW,UNTESTED,
+auditor,coding-agent,eligible,YELLOW,UNTESTED,
+auditor,content-research,eligible,ORANGE,UNTESTED,
+auditor,gog,eligible,YELLOW,UNTESTED,
+auditor,google-workspace,eligible,GREEN,UNTESTED,
+auditor,healthcheck,eligible,GREEN,UNTESTED,
+auditor,heartbeat-pro,eligible,GREEN,WORKING,
+auditor,himalaya,eligible,YELLOW,UNTESTED,
+auditor,human-writing,eligible,GREEN,UNTESTED,
+auditor,Market Research Agent,eligible,ORANGE,UNTESTED,
+auditor,mcporter,eligible,YELLOW,UNTESTED,
+auditor,memory-tiering,eligible,GREEN,WORKING,
+auditor,microsoft-foundry,eligible,YELLOW,UNTESTED,
+auditor,multi-search-engine,eligible,ORANGE,PARTIAL,PARTIAL: Cloudflare on directories
+auditor,neural-memory,eligible,GREEN,WORKING,
+auditor,node-connect,eligible,YELLOW,UNTESTED,
+auditor,openclaw-auto-dream,eligible,GREEN,WORKING,
+auditor,pollyreach,eligible,YELLOW,UNTESTED,
+auditor,Sales Pipeline Tracker,eligible,ORANGE,UNTESTED,
+auditor,sales-mastery,eligible,ORANGE,UNTESTED,
+auditor,Self-Improving + Proactive Agent,eligible,YELLOW,UNTESTED,
+auditor,seo-competitor-analysis,eligible,ORANGE,UNTESTED,
+auditor,session-logs,eligible,GREEN,WORKING,
+auditor,skill-creator,eligible,YELLOW,UNTESTED,
+auditor,Social Media Scheduler,eligible,ORANGE,UNTESTED,
+auditor,SocialPack Multi-Platform Social Media Generator,eligible,ORANGE,UNTESTED,
+auditor,taskflow,eligible,YELLOW,UNTESTED,
+auditor,taskflow-inbox-triage,eligible,GREEN,UNTESTED,
+auditor,tmux,eligible,GREEN,UNTESTED,
+auditor,video-frames,eligible,GREEN,UNTESTED,
+auditor,weather,eligible,GREEN,UNTESTED,
+auditor,website-seo,eligible,ORANGE,PARTIAL,PARTIAL
+auditor,x-search,eligible,ORANGE,BROKEN,BROKEN: 403 (xAI no credits)
+auditor,xurl,eligible,YELLOW,UNTESTED,
+auditor,gh-issues,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+auditor,github,blocked,YELLOW,BLOCKED,requires GitHub auth credential
+auditor,1password,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,autonomous-research,missingRequirements,ORANGE,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,bear-notes,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,blogwatcher,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,blucli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,bluebubbles,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,camsnap,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,discord,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,eightctl,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,gemini,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,gifgrep,missingRequirements,GREEN,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,goplaces,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,imsg,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,model-usage,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,nano-pdf,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,notion,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,obsidian,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,openai-whisper,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,openai-whisper-api,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,openhue,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,oracle,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,ordercli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,peekaboo,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,sag,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,sherpa-onnx-tts,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,slack,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,songsee,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,sonoscli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,spotify-player,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,summarize,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,things-mac,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,trello,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,voice-call,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path
+auditor,wacli,missingRequirements,YELLOW,NOT_INSTALLED,see skills.check.json missingRequirements for install path

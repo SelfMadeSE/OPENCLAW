@@ -1,0 +1,83 @@
+          "name": "session_status",
+              "summaryChars": 336,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 08:46 MDT] MISSION terminal-20260429-0844 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: Terminal cycle close-out. No more missions. Pipeline summary: 96 provider_accepted | 11 failed | 7 reconciled. Site healthy. Await replies..\\nYour task: TERMINAL. Write ONE file to artifacts/missions/terminal-20260429-0844/sentinel-close.md containing: (1) Pipeline: 96 provider_accepted, 11 failed, 7 reconciled, (2) Site: all critical pages 200, (3) Blockers: waitlist API ORANGE, CDP YELLOW, CRM Python fd error YELLOW, (4) OPERATOR: 96 outreach emails sent via SMTP. Reply window now open \\u2014 24-72 hours. Any reply = RED (operator must respond personally per BOOT.md). If no replies by April 30 evening, authorize follow-up batch. (5) CYCLE CLOSED. Do not propose any more missions. Do not spawn children. Write the file and stop.\\nWrite your output to: artifacts/missions/terminal-20260429-0844/sentinel-close.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/terminal-20260429-0844/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.\n\n[Bootstrap truncation warning]\nSome workspace bootstrap files were truncated before injection.\nTreat Project Context as partial and read the relevant files directly if details seem missing.\n- HEARTBEAT.md: 1785 raw -> 868 injected (~51% removed).\n- If unintentional, raise agents.defaults.bootstrapMaxChars and/or agents.defaults.bootstrapTotalMaxChars.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Terminal close written. 96 provider_accepted, site healthy, CYCLE CLOSED. Await operator.",
+      "finalAssistantRawText": "STATE: PROCEED — Terminal close written. 96 provider_accepted, site healthy, CYCLE CLOSED. Await operator.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 2,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

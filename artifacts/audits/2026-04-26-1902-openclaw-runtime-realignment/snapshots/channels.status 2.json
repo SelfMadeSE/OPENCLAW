@@ -1,0 +1,60 @@
+{
+  "ts": 1777230275019,
+  "channelOrder": [
+    "telegram"
+  ],
+  "channelLabels": {
+    "telegram": "Telegram"
+  },
+  "channelDetailLabels": {
+    "telegram": "Telegram Bot"
+  },
+  "channelSystemImages": {
+    "telegram": "paperplane"
+  },
+  "channelMeta": [
+    {
+      "id": "telegram",
+      "label": "Telegram",
+      "detailLabel": "Telegram Bot",
+      "systemImage": "paperplane"
+    }
+  ],
+  "channels": {
+    "telegram": {
+      "configured": true,
+      "running": true,
+      "lastStartAt": 1777229584167,
+      "lastStopAt": null,
+      "lastError": null,
+      "tokenSource": "config",
+      "lastProbeAt": null,
+      "mode": "polling"
+    }
+  },
+  "channelAccounts": {
+    "telegram": [
+      {
+        "accountId": "default",
+        "enabled": true,
+        "configured": true,
+        "running": true,
+        "lastStartAt": 1777229584167,
+        "lastStopAt": null,
+        "lastError": null,
+        "restartPending": false,
+        "reconnectAttempts": 0,
+        "lastInboundAt": null,
+        "lastOutboundAt": 1777229655640,
+        "tokenSource": "config",
+        "tokenStatus": "available",
+        "mode": "polling",
+        "allowUnmentionedGroups": false
+      }
+    ]
+  },
+  "channelDefaultAccountId": {
+    "telegram": "default"
+  }
+}
+[31m[bedrock-discovery][39m [33mFailed to discover Bedrock models[39m

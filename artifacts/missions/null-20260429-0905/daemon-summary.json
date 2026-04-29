@@ -1,0 +1,12 @@
+{
+  "mission_id": "null-20260429-0905",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "null.md"
+    }
+  ],
+  "completed_at": "2026-04-29T15:08:20.958153+00:00"
+}

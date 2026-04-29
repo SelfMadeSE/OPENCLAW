@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Mic } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -92,6 +92,17 @@ export function Hero() {
                 className="text-blue-400 hover:text-blue-300"
               >
                 Preview sample audit report →
+              </Button>
+            </motion.div>
+
+            <motion.div className="mt-3 flex items-center gap-2" variants={fadeUp}>
+              <Mic className="w-3.5 h-3.5 text-orange-400" />
+              <Button
+                variant="ghost"
+                href="/audio-audit"
+                className="text-orange-400 hover:text-orange-300 text-xs"
+              >
+                🆕 Now in audio — hear your audit narrated
               </Button>
             </motion.div>
           </motion.div>

@@ -1,0 +1,120 @@
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░▄▄▄░██░▄▄░██░▄▄▄██░▀██░██░▄▄▀██░████░▄▄▀██░███░██
+██░███░██░▀▀░██░▄▄▄██░█░█░██░█████░████░▀▀░██░█░█░██
+██░▀▀▀░██░█████░▀▀▀██░██▄░██░▀▀▄██░▀▀░█░██░██▄▀▄▀▄██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+                  🦞 OPENCLAW 🦞                    
+ 
+┌  OpenClaw doctor
+│
+◇  State integrity ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Found 1 agent directory on disk without a matching agents.list      │
+│    entry.                                                              │
+│    These agents can still have sessions/auth state on disk, but        │
+│    config-driven routing, identity, and model selection will ignore    │
+│    them.                                                               │
+│    Examples: main                                                      │
+│    Restore the missing agents.list entries or remove stale dirs after  │
+│    confirming they are no longer needed: ~/.openclaw/agents            │
+│  - Found 164 orphan transcript files in                                │
+│    ~/.openclaw/agents/orchestrator/sessions.                           │
+│    These .jsonl files are no longer referenced by sessions.json, so    │
+│    they are not part of any active session history.                    │
+│    Doctor can archive them safely by renaming each file to             │
+│    *.deleted.<timestamp>.                                              │
+│    Examples: 00b0c900-69c3-4b5a-922e-2e54ddc19484.jsonl,               │
+│    041d789e-a9c0-47ca-8a8a-c7f736a6a868.jsonl,                         │
+│    05464e21-4490-4b07-b044-93f7222b23fa.jsonl, and 161 more            │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+◇  Session locks ──────────────────────────────────────────────────────────────╮
+│                                                                              │
+│  - Found 2 session lock files.                                               │
+│  - ~/.openclaw/agents/orchestrator/sessions/1036075a-9d23-4b5b-a9f3-7b35cd8  │
+│  bf457.jsonl.lock                                                            │
+│    pid=19151 (alive) age=1m20s stale=no                                      │
+│  - ~/.openclaw/agents/outreach/sessions/89a6c4b4-1634-4614-9b82-a769d7b86ae  │
+│  3.jsonl.lock                                                                │
+│    pid=19151 (alive) age=20s stale=no                                        │
+│                                                                              │
+├──────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Other gateway-like services detected ──────────────────────────────────────╮
+│                                                                             │
+│  - ai.openclaw.lmstudio-proxy (user, plist:                                 │
+│                                                                             │
+│  /Users/ryleebenson/Library/LaunchAgents/ai.openclaw.lmstudio-proxy.plist)  │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Cleanup hints ─────────────────────────────────────────╮
+│                                                         │
+│  - launchctl bootout gui/$UID/ai.openclaw.gateway       │
+│  - rm ~/Library/LaunchAgents/ai.openclaw.gateway.plist  │
+│                                                         │
+├─────────────────────────────────────────────────────────╯
+│
+◇  Gateway recommendation ───────────────────────────────────────────────╮
+│                                                                        │
+│  Recommendation: run a single gateway per machine for most setups.     │
+│  One gateway supports multiple agents.                                 │
+│  If you need multiple gateways (e.g., a rescue bot on the same host),  │
+│  isolate ports + config/state (see docs:                               │
+│  /gateway#multiple-gateways-same-host).                                │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+◇  Gateway service config ─────────────────────────────────────────────────╮
+│                                                                          │
+│  - Gateway service PATH includes version managers or package managers;   │
+│    recommend a minimal PATH.                                             │
+│    (/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin)                  │
+│  - Gateway service uses Node from a version manager; it can break after  │
+│    upgrades. (/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin/node)   │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  Security ─────────────────────────────────╮
+│                                            │
+│  - No channel security warnings detected.  │
+│  - Run: openclaw security audit --deep     │
+│                                            │
+├────────────────────────────────────────────╯
+│
+◇  Skills status ────────────╮
+│                            │
+│  Eligible: 39              │
+│  Missing requirements: 34  │
+│  Blocked by allowlist: 2   │
+│                            │
+├────────────────────────────╯
+│
+◇  Plugins ──────╮
+│                │
+│  Loaded: 57    │
+│  Imported: 58  │
+│  Disabled: 41  │
+│  Errors: 0     │
+│                │
+├────────────────╯
+Telegram: configured
+Agents: orchestrator (default), engineering, marketing, outreach, creative, media, auditor
+Heartbeat interval: 30m (orchestrator)
+Session store (orchestrator): /Users/ryleebenson/.openclaw/agents/orchestrator/sessions/sessions.json (93 entries)
+- agent:orchestrator:main (1m ago)
+- agent:orchestrator:main:heartbeat (8m ago)
+- agent:orchestrator:cron:440c356d-4ac1-4ca3-92d3-84d814bffd31 (21m ago)
+- agent:orchestrator:cron:440c356d-4ac1-4ca3-92d3-84d814bffd31:run:08075a39-e456-4c80-882d-53a1b72574ae (21m ago)
+- agent:orchestrator:telegram:direct:8331613806 (32m ago)
+│
+◇  Memory search ──────────────────────────────────────────╮
+│                                                          │
+│  Memory search is explicitly disabled (enabled: false).  │
+│                                                          │
+├──────────────────────────────────────────────────────────╯
+Run "openclaw doctor --fix" to apply changes.
+│
+└  Doctor complete.
+

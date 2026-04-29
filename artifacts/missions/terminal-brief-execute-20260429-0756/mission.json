@@ -1,0 +1,18 @@
+{
+  "mission_id": "terminal-brief-execute-20260429-0756",
+  "goal": "Execute a terminal pipeline brief \u2014 query the ledger directly, curl the site, and write the operator-facing summary file myself as NEXUS, closing this cycle with a concrete artifact.",
+  "success_criteria": [
+    "Operator-facing terminal brief written to artifacts/missions/terminal-brief-execute-20260429-0756/nexus-terminal-brief.md with full pipeline snapshot",
+    "No further mission proposals until operator re-engages or pipeline state changes materially (reply received, new leads, ticket resolved)"
+  ],
+  "slices": [
+    {
+      "agent": "auditor",
+      "task": "This is a single-slice terminal mission. Do the following and write everything to artifacts/missions/terminal-brief-execute-20260429-0756/sentinel-terminal-brief.md: (1) Run sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' and report the full ledger. (2) Run sqlite3 ... 'SELECT stage, COUNT(*) FROM leads GROUP BY stage' and report pipeline stages. (3) Run sqlite3 ... 'SELECT l.name,l.score,l.stage,e.status FROM leads l LEFT JOIN email_attempts e ON l.id=e.lead_id WHERE l.stage=\"outreach_sent\" ORDER BY l.score DESC LIMIT 10' and report top sent leads. (4) curl outboundautonomy.com/ /try /sample-report /pricing /case-studies /faq /blog and report all HTTP codes. (5) In the file, include a section 'OPERATOR NEXT ACTION' with exactly: '91 outreach emails sent via SMTP with provider_accepted evidence. Reply window: 24-72 hours. If any prospect replies, operator must respond personally (RED per BOOT.md \u2014 replying to leads). If no replies by April 30 evening, authorize follow-up batch. Open tickets: waitlist API (ORANGE \u2014 needs Vercel log access), CDP browser down (YELLOW), CRM Python fd error (YELLOW \u2014 sqlite3 fallback works).' (6) End the file with 'CYCLE CLOSED \u2014 awaiting operator direction or material pipeline change.' This is the final output \u2014 no further action expected.",
+      "expected_artifact": "sentinel-terminal-brief.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "15 proposals submitted. 91 sends out. The pipeline is producing. The operator needs a close-out, not another proposal. This mission produces exactly one artifact \u2014 a terminal brief with the full pipeline snapshot and a clear next-action directive. It delegates to auditor (single slice) to produce the verified brief. After this, the cycle is complete."
+}

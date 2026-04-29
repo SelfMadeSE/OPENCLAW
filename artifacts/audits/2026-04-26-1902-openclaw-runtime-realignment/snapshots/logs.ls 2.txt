@@ -1,0 +1,8 @@
+cache-trace.jsonl
+commands.log
+config-audit.jsonl
+config-health.json
+gateway.err.log
+gateway.log
+openclaw-gateway.stderr.log
+openclaw-gateway.stdout.log

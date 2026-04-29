@@ -1,0 +1,37 @@
+{
+  "research_date": "2026-04-29 08:06 MDT",
+  "lead_name": "CO Energy Electric LLC",
+  "vertical": "electrical",
+  "website": "https://www.coenergyelectric.com",
+  "score": 6,
+  "contact": {
+    "email": "info@coenergyelectric.com",
+    "phone": "(719) 402-1300",
+    "email_verified": true
+  },
+  "audit": {
+    "designScore": 45,
+    "conversionScore": 35,
+    "technicalScore": 55,
+    "overallScore": 45,
+    "grade": "F"
+  },
+  "weaknesses": [
+    "Extremely bare-bones single-page site — no service detail pages",
+    "No online booking or estimate request tool",
+    "No blog/content marketing for SEO",
+    "No city/service area landing pages despite serving Colorado Springs metro",
+    "No portfolio/gallery of electrical work",
+    "No testimonials showcased on site (mentions Yelp but doesn't embed them)",
+    "Basic template site with minimal content depth",
+    "No SSL/HTTPS enforcement concern (check needed)",
+    "No team/about page beyond generic description"
+  ],
+  "strengths": [
+    "Clear email and phone on site",
+    "Lists specific services (remodeling, new construction, panel upgrades, lighting design)",
+    "Mentions military discount — veteran-friendly",
+    "Free consultation offer clearly stated"
+  ],
+  "notes": "Colorado Springs electrical contractor. Very basic single-page site with minimal content. No online booking or estimate request despite offering 'free, at home & job site consultations.' Email (info@coenergyelectric.com) clearly listed. Phone: 719-402-1300. Has 5-star Yelp rating but doesn't integrate reviews on site. Major lead capture gap — no conversion mechanism beyond a phone number and email."
+}

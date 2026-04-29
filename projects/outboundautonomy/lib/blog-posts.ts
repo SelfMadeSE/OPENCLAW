@@ -167,6 +167,38 @@ const posts: BlogPostMeta[] = [
     ctaVariant: "C",
     wordCount: 1350,
   },
+  {
+    slug: "design-trust-signals-website-audit",
+    title: "Design & Trust Signals: What Your Website Says Before Anyone Reads a Word",
+    description:
+      "Your website has three seconds to earn trust. Most service business sites fail the visual test before visitors see a single service. Here's what our audits check — and how to fix it.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology",
+    keywords: ["website design for service businesses", "website trust signals", "service business website credibility", "mobile design for trades"],
+    ctaVariant: "B",
+    wordCount: 1600,
+  },
+  {
+    slug: "competitive-gap-website-audit",
+    title: "Competitor Website Analysis for Service Businesses — The 4th Audit Signal",
+    description:
+      "Most service business owners never compare their website to competitors'. A competitive gap analysis reveals what's costing you leads — and what your competitors are doing better.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology",
+    keywords: ["competitor website analysis", "competitive gap analysis", "service business website comparison", "local SEO competitive audit"],
+    ctaVariant: "C",
+    wordCount: 1750,
+  },
+  {
+    slug: "audio-website-audit-service-businesses",
+    title: "Your Website Audit, Now in Audio: Listen to Your Lead Leaks",
+    description: "We built the audio audit so you can hear exactly where your site is losing calls and new customers — without reading a single page. Free, narrated, 30 seconds.",
+    date: "2026-04-29",
+    cluster: "Website Audit Methodology (Pillar)",
+    keywords: ["audio website audit", "website audit audio", "listen to website audit", "narrated website review"],
+    ctaVariant: "B",
+    wordCount: 1600,
+  },
 ]
 
 export function getBlogPosts(): BlogPostMeta[] {

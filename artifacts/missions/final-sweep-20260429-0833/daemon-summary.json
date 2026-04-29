@@ -1,0 +1,12 @@
+{
+  "mission_id": "final-sweep-20260429-0833",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-terminal.md"
+    }
+  ],
+  "completed_at": "2026-04-29T14:39:38.068464+00:00"
+}

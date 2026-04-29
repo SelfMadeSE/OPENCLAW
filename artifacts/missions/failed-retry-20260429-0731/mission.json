@@ -1,0 +1,18 @@
+{
+  "mission_id": "failed-retry-20260429-0731",
+  "goal": "Investigate the 11 failed email attempts and retry any that failed due to transient errors (auth, timeout) rather than permanent bounces, recovering lost send opportunities.",
+  "success_criteria": [
+    "Root cause identified for all 11 failed attempts (transient vs permanent)",
+    "Any transient-failure leads re-sent with provider_accepted evidence, reducing failed count"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Step 1: Get all 11 failed attempts with details: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT e.id,e.lead_id,e.recipient,e.status,e.error,e.created_at,l.name,l.score FROM email_attempts e LEFT JOIN leads l ON e.lead_id=l.id WHERE e.status=\"failed\" ORDER BY e.id'. Step 2: Classify each failure: 'BadCredentials' = auth issue (possibly transient if app password rotation), 'timeout' = network, 'bounce' = bad email (permanent), null/empty error = unknown. Step 3: For any failure that is NOT a confirmed bounce (BadCredentials on fresh attempt, timeout, unknown), retry the send: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Your website audit \u2014 free report' --body 'Hi, I run Outbound Autonomy. We scan business websites and show exactly what is costing you leads with a free audit and specific fixes. Drop your URL at outboundautonomy.com/try \u2014 no pitch, just the report.' Step 4: For each successful retry, log: sqlite3 ... \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Step 5: For permanent bounces, mark the original failed row note: sqlite3 ... \"UPDATE email_attempts SET error=error||' | classified_permanent_bounce' WHERE id=<id>\". Write full findings to artifacts/missions/failed-retry-20260429-0731/bridge-retry-results.md with: original failure table, classification, retry results, final failed count.",
+      "expected_artifact": "bridge-retry-results.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "80 provider_accepted but 11 failed \u2014 up from 6 earlier. Each failed send is either a lost touchpoint (if transient) or a bad contact (if permanent). Recovering even 3-5 of the 11 failed sends would add directly to the provider_accepted count. Single-slice execution: diagnose + retry. No research, no new leads \u2014 just recovering value from existing pipeline inventory that already has prospect research and email copy prepared."
+}

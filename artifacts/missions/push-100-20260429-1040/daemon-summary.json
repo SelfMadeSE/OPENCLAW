@@ -1,0 +1,12 @@
+{
+  "mission_id": "push-100-20260429-1040",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-done.md"
+    }
+  ],
+  "completed_at": "2026-04-29T16:47:24.526971+00:00"
+}

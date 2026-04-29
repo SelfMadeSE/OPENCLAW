@@ -1,0 +1,12 @@
+{
+  "mission_id": "cycle-close-20260429-0749",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-terminal-brief.md"
+    }
+  ],
+  "completed_at": "2026-04-29T13:51:21.718843+00:00"
+}

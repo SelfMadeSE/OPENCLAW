@@ -1,0 +1,12 @@
+{
+  "mission_id": "terminal-brief-execute-20260429-0756",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-terminal-brief.md"
+    }
+  ],
+  "completed_at": "2026-04-29T14:00:38.018166+00:00"
+}

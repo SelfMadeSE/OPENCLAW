@@ -1,0 +1,38 @@
+{
+  "research_date": "2026-04-29 08:06 MDT",
+  "lead_name": "FB Mobile Detailing Denver",
+  "vertical": "auto-detailing",
+  "website": "https://fbmobiledetailingdenver.com",
+  "score": 5,
+  "contact": {
+    "email": "unverified — no email found on site or WHOIS (privacy protected)",
+    "phone": "(720) 253-5383",
+    "email_verified": false
+  },
+  "audit": {
+    "designScore": 65,
+    "conversionScore": 55,
+    "technicalScore": 40,
+    "overallScore": 53,
+    "grade": "F"
+  },
+  "weaknesses": [
+    "No email address anywhere on the site — critical lead capture gap",
+    "Contact page returns 404 error",
+    "About page returns 404 error",
+    "FAQ page returns 404 error — broken site navigation",
+    "No team/business info page",
+    "No service area detail pages despite listing Denver metro coverage",
+    "No blog or content for SEO",
+    "Multiple 404 errors suggest abandoned or incomplete site",
+    "Very new domain (registered Nov 2025) — limited authority"
+  ],
+  "strengths": [
+    "Clear pricing displayed ($149-$299 packages)",
+    "Mobile-friendly design",
+    "Online booking process explained clearly",
+    "Good Google reviews (4.5 stars, 50+ reviews)",
+    "Add-on services menu clearly listed"
+  ],
+  "notes": "Denver mobile auto detailing service. Website is relatively new (domain registered Nov 2025). CRITICAL ISSUES: No email on site, multiple 404 pages (contact, about, faq). Phone-only contact: 720-253-5383. Pricing is clear but site feels incomplete. Major opportunity: fix broken pages, add email contact, build out service areas for lead generation. Contact status: unverified — no email found."
+}

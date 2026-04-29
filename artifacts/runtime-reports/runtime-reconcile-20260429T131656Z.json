@@ -1,0 +1,710 @@
+{
+  "generated_at": "2026-04-29T13:16:56.351641+00:00",
+  "sources": {
+    "jobs": "/Users/ryleebenson/.openclaw/cron/jobs.json",
+    "gateway_err": "/Users/ryleebenson/.openclaw/logs/gateway.err.log",
+    "crm": "/Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite",
+    "workspaces": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces"
+  },
+  "cron": {
+    "total": 18,
+    "enabled": 16,
+    "by_status": {
+      "ok": 18
+    },
+    "active": [
+      {
+        "id": "381d081b-7c33-438e-8831-79c6de82f50e",
+        "name": "Memory Dreaming Promotion",
+        "agent": "main",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 3 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "not-requested"
+      },
+      {
+        "id": "9f89293b-c84e-4d53-8f65-d92b3d790a1d",
+        "name": "Daily Outbound Autonomy Audit-Funnel Content",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 10 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2feb992a-b776-42c9-86b1-e443515ed000",
+        "name": "Weekly Outbound Autonomy Revenue Audit",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 14 * * 5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "89c41ab6-4e8b-4d46-a15b-602c3fb5c05e",
+        "name": "Nightly OA Ops Review",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "f132dcaf-c513-4aa1-8a80-46c41cab199c",
+        "name": "Nightly OA Engineering Review",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "ba63bff8-9466-4911-b61c-920bb84fcf04",
+        "name": "Nightly OA Creative Review",
+        "agent": "creative",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "76b08b88-8345-42a3-ac04-46b571a36234",
+        "name": "Nightly OA Marketing Review",
+        "agent": "marketing",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 1 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "1b1a95dd-bd9e-492a-a529-ec7bea86cbf4",
+        "name": "Nightly OA Outreach Review",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "d6890a24-cd54-4916-acc5-7347dd2b631c",
+        "name": "Nightly OA Media Review",
+        "agent": "media",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "15 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "54e26ca0-3af8-4856-aba4-dba8bc8bc7e4",
+        "name": "Nightly OA Audit Review",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "30 2 * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "95e59f59-c103-4f0b-bc61-fb1986460d9b",
+        "name": "Morning Mission Snapshot",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "0 8 * * 1-5",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "32d19920-635e-4ebe-88fc-7683794b454b",
+        "name": "Runtime Evidence Reconciliation",
+        "agent": "auditor",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "2bf2b12a-0a8b-4243-b59e-bbf941b3a75d",
+        "name": "Site Health Check",
+        "agent": "engineering",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "*/30 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "dfa29b48-e80c-4eab-850d-f9120221e3ef",
+        "name": "Hourly Prospect Research",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "5 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "210d6add-b9d4-45f3-8c90-b77191e95006",
+        "name": "Hourly Outreach Draft Queue",
+        "agent": "outreach",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "20 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      },
+      {
+        "id": "440c356d-4ac1-4ca3-92d3-84d814bffd31",
+        "name": "Hourly Agent Roundtable Audit",
+        "agent": "orchestrator",
+        "enabled": true,
+        "schedule": {
+          "kind": "cron",
+          "expr": "45 * * * *",
+          "tz": "America/Denver"
+        },
+        "last_status": "ok",
+        "last_error": "",
+        "delivery": "delivered"
+      }
+    ],
+    "failed": []
+  },
+  "crm": {
+    "exists": true,
+    "stages": {
+      "archived": 14,
+      "lost": 2,
+      "outreach_sent": 55,
+      "prospect": 1,
+      "scored": 3
+    },
+    "recent_leads": [
+      {
+        "id": "09045987-6c5",
+        "name": "Competition Auto Glass",
+        "type": "auto-glass",
+        "stage": "scored",
+        "score": 5,
+        "updated_at": "2026-04-29T13:16:10.854317+00:00"
+      },
+      {
+        "id": "85df6e45-3c7",
+        "name": "Colorado Green Landscaping",
+        "type": "landscaping",
+        "stage": "outreach_sent",
+        "score": 7,
+        "updated_at": "2026-04-29T13:16:06.711326+00:00"
+      },
+      {
+        "id": "18205fea-e6f",
+        "name": "Front Range Locksmith",
+        "type": "locksmith",
+        "stage": "outreach_sent",
+        "score": 8,
+        "updated_at": "2026-04-29T13:16:06.684924+00:00"
+      },
+      {
+        "id": "red-star-plumbing-batch5-20260429",
+        "name": "Red Star Plumbing Inc.",
+        "type": "plumbing",
+        "stage": "outreach_sent",
+        "score": 65,
+        "updated_at": "2026-04-29T12:58:10+00:00"
+      },
+      {
+        "id": "balanced-plumbing-batch5-20260429",
+        "name": "Balanced Plumbing LLC",
+        "type": "plumbing",
+        "stage": "outreach_sent",
+        "score": 40,
+        "updated_at": "2026-04-29T12:58:10+00:00"
+      },
+      {
+        "id": "colorado-landscaping-batch5-20260429",
+        "name": "Colorado Landscaping and Concrete",
+        "type": "landscaping",
+        "stage": "outreach_sent",
+        "score": 55,
+        "updated_at": "2026-04-29T12:58:10+00:00"
+      },
+      {
+        "id": "57f24908a5ef",
+        "name": "Martin Mowing",
+        "type": "landscaping",
+        "stage": "outreach_sent",
+        "score": 6,
+        "updated_at": "2026-04-29T12:05:14.418963+00:00"
+      },
+      {
+        "id": "84ba777d9b27",
+        "name": "Denver Tree Removal Service",
+        "type": "tree-service",
+        "stage": "outreach_sent",
+        "score": 0,
+        "updated_at": "2026-04-29T12:05:10.118379+00:00"
+      },
+      {
+        "id": "d1f9105318c8",
+        "name": "--name",
+        "type": "Denver Tree Removal Service",
+        "stage": "outreach_sent",
+        "score": 0,
+        "updated_at": "2026-04-29T12:05:00.888002+00:00"
+      },
+      {
+        "id": "20308a88-a43",
+        "name": "A.P. Pest Control",
+        "type": "pest-control",
+        "stage": "outreach_sent",
+        "score": 6,
+        "updated_at": "2026-04-29T10:24:12.498742+00:00"
+      }
+    ],
+    "recent_actions": [
+      {
+        "lead_id": "09045987-6c5",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 scored: Competition Auto Glass \u2014 100/A perfect site. Moved to scored for Rylee decision (low urgency per near-perfect site policy).",
+        "result": "",
+        "created_at": "2026-04-29T13:16:10.854449+00:00"
+      },
+      {
+        "lead_id": "85df6e45-3c7",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: SMTP send. Colorado Green Landscaping \u2014 92/A, missing meta+service pages. Provider accepted ID 89.",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T13:16:08.039716+00:00"
+      },
+      {
+        "lead_id": "18205fea-e6f",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: SMTP send. Front Range Locksmith \u2014 90/A, no lead form. Provider accepted ID 88.",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T13:16:08.013395+00:00"
+      },
+      {
+        "lead_id": "6792b00dccf4",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: SMTP send. DenTech \u2014 96/A, no lead form. Provider accepted ID 87.",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T13:16:07.986587+00:00"
+      },
+      {
+        "lead_id": "fdc4a754e86d",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_drafted \u2192 outreach_sent: SMTP send. MVM \u2014 site 404, email discovered. Provider accepted ID 86.",
+        "result": "provider_accepted",
+        "created_at": "2026-04-29T13:16:07.960199+00:00"
+      },
+      {
+        "lead_id": "85df6e45-3c7",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_sent \u2192 outreach_sent: SMTP send. Colorado Green Landscaping \u2014 92/A, missing meta desc, Wix site. Provider accepted ID 89.",
+        "result": "",
+        "created_at": "2026-04-29T13:16:06.711463+00:00"
+      },
+      {
+        "lead_id": "18205fea-e6f",
+        "agent": "outreach",
+        "action_type": "stage_change",
+        "description": "outreach_sent \u2192 outreach_sent: SMTP send. Front Range Locksmith \u2014 90/A, no lead form, weak CTA. Provider accepted ID 88.",
+        "result": "",
+        "created_at": "2026-04-29T13:16:06.685049+00:00"
+      },
+      {
+        "lead_id": "18205fea-e6f",
+        "agent": "outreach",
+        "action_type": "lead_added",
+        "description": "Added Front Range Locksmith \u2014 locksmith prospect. Score: 8/10. Audit research saved to artifacts/prospects/.",
+        "result": "added",
+        "created_at": "2026-04-29T13:05:18.108392+00:00"
+      },
+      {
+        "lead_id": "09045987-6c5",
+        "agent": "outreach",
+        "action_type": "lead_added",
+        "description": "Added Competition Auto Glass \u2014 auto-glass prospect. Score: 5/10. Audit research saved to artifacts/prospects/.",
+        "result": "added",
+        "created_at": "2026-04-29T13:05:18.108392+00:00"
+      },
+      {
+        "lead_id": "85df6e45-3c7",
+        "agent": "outreach",
+        "action_type": "lead_added",
+        "description": "Added Colorado Green Landscaping \u2014 landscaping prospect. Score: 7/10. Audit research saved to artifacts/prospects/.",
+        "result": "added",
+        "created_at": "2026-04-29T13:05:18.108392+00:00"
+      }
+    ],
+    "email_attempts": {
+      "by_status": {
+        "failed": 7,
+        "provider_accepted": 75,
+        "reconciled_superseded": 7
+      },
+      "recent": [
+        {
+          "id": 89,
+          "lead_id": "85df6e45-3c7",
+          "recipient": "george@coloradogreenlandscaping.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746854771.85684.3936760959077917822@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T13:15:47.714428+00:00",
+          "updated_at": "2026-04-29T13:15:50.076132+00:00"
+        },
+        {
+          "id": 88,
+          "lead_id": "18205fea-e6f",
+          "recipient": "frontrangelocksmith@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746853857.85667.3849130273826125323@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T13:15:38.572037+00:00",
+          "updated_at": "2026-04-29T13:15:40.715949+00:00"
+        },
+        {
+          "id": 85,
+          "lead_id": "18205fea-e6f",
+          "recipient": "frontrangelocksmith@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "secret://gmail_address",
+          "status": "failed",
+          "provider_message_id": "<177746853502.85660.13652053353322266564@secret://gmail_address>",
+          "error": "(535, b'5.7.8 Username and Password not accepted. For more information, go to\\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-447b3d48131sm5737864f8f.3 - gsmtp')",
+          "created_at": "2026-04-29T13:14:28.975547+00:00",
+          "updated_at": "2026-04-29T13:15:36.491384+00:00"
+        },
+        {
+          "id": 87,
+          "lead_id": "6792b00dccf4",
+          "recipient": "dentechvac@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746853016.85651.6236726682017357410@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T13:15:30.159821+00:00",
+          "updated_at": "2026-04-29T13:15:31.776755+00:00"
+        },
+        {
+          "id": 86,
+          "lead_id": "fdc4a754e86d",
+          "recipient": "mvmheatingandcooling@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746851939.85620.17464157687110153322@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T13:15:19.397290+00:00",
+          "updated_at": "2026-04-29T13:15:21.741524+00:00"
+        },
+        {
+          "id": 84,
+          "lead_id": "colorado-landscaping-batch5-20260429",
+          "recipient": "coloradolandscapingandconcrete@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746756970.84016.2115301719008050407@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:59:29.700665+00:00",
+          "updated_at": "2026-04-29T12:59:31.867804+00:00"
+        },
+        {
+          "id": 83,
+          "lead_id": "balanced-plumbing-batch5-20260429",
+          "recipient": "joshblair86@yahoo.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746755965.84003.15002940334937670724@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:59:19.653315+00:00",
+          "updated_at": "2026-04-29T12:59:21.339165+00:00"
+        },
+        {
+          "id": 82,
+          "lead_id": "red-star-plumbing-batch5-20260429",
+          "recipient": "redstar.plumbinginc@yahoo.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746755002.83999.14812164246464506128@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:58:18.915368+00:00",
+          "updated_at": "2026-04-29T12:59:11.791966+00:00"
+        },
+        {
+          "id": 81,
+          "lead_id": "57f24908a5ef",
+          "recipient": "taylormartin@martinmowingllc.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746661198.81871.11980246293247279802@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:43:31.979960+00:00",
+          "updated_at": "2026-04-29T12:43:34.084763+00:00"
+        },
+        {
+          "id": 80,
+          "lead_id": "peak-to-peak-roofing-20260428-195619",
+          "recipient": "info@peaktopeakroofing.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746655862.81619.8085399503654412924@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:42:38.627266+00:00",
+          "updated_at": "2026-04-29T12:42:40.797104+00:00"
+        },
+        {
+          "id": 79,
+          "lead_id": "colorado-chiropractic-20260428-012200",
+          "recipient": "coloradochiropracticcenter@gmail.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746655485.81619.16876552894524529315@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:42:34.852364+00:00",
+          "updated_at": "2026-04-29T12:42:38.624955+00:00"
+        },
+        {
+          "id": 78,
+          "lead_id": "cherry-medical-aesthetics-20260428-012200",
+          "recipient": "reception@cherrymedispa.com",
+          "provider": "gmail_smtp",
+          "sender": "owner@outboundautonomy.com",
+          "status": "provider_accepted",
+          "provider_message_id": "<177746655192.81619.6016186682840833243@outboundautonomy.com>",
+          "error": null,
+          "created_at": "2026-04-29T12:42:31.927112+00:00",
+          "updated_at": "2026-04-29T12:42:34.850468+00:00"
+        }
+      ],
+      "truth_blockers": [
+        {
+          "lead_id": "008cfdf01de9",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "478a4070a54b",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "d1f9105318c8",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "d66d0284f957",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        },
+        {
+          "lead_id": "f379ad620e03",
+          "issue": "CRM stage implies sent/replied but no provider_accepted or sent_verified email_attempt row exists"
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "recent": [
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/marketing/prospect-case-study-deploy-2026-04-29.md",
+        "mtime": "2026-04-29T13:16:13.022039+00:00",
+        "size": 2028
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/heartbeat-2026-04-29-0711MDT.md",
+        "mtime": "2026-04-29T13:12:47.616204+00:00",
+        "size": 1956
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/marketing/prospect-case-study-blog-2026-04-29.md",
+        "mtime": "2026-04-29T13:11:45.638599+00:00",
+        "size": 8290
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/roundtable/latest.md",
+        "mtime": "2026-04-29T13:11:19.259496+00:00",
+        "size": 2904
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/2026-04-29-hourly-prospect-research-cycle-7am.md",
+        "mtime": "2026-04-29T13:11:14.520638+00:00",
+        "size": 6869
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/bluespring-cleaning-20260429-161002_website_audit_research_2026-04-29_161047.json",
+        "mtime": "2026-04-29T13:10:47.110240+00:00",
+        "size": 1789
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/jjc-auto-collision-center-20260429-160953_website_audit_research_2026-04-29_161037.json",
+        "mtime": "2026-04-29T13:10:37.687075+00:00",
+        "size": 1610
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/garcias-auto-repair-llc-20260429-160946_website_audit_research_2026-04-29_161029.json",
+        "mtime": "2026-04-29T13:10:29.818601+00:00",
+        "size": 1773
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/mobile-mechanic-of-denver-20260429-160938_website_audit_research_2026-04-29_161020.json",
+        "mtime": "2026-04-29T13:10:20.801484+00:00",
+        "size": 1838
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/ddl-cleaning-services-20260429-160930_website_audit_research_2026-04-29_161011.json",
+        "mtime": "2026-04-29T13:10:11.718044+00:00",
+        "size": 1597
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/landscaping-2-placeholder-20260429-0658_website_audit_research.json",
+        "mtime": "2026-04-29T13:07:36.851342+00:00",
+        "size": 446
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/prospects/mover-placeholder-20260429-0658_website_audit_research.json",
+        "mtime": "2026-04-29T13:07:36.851342+00:00",
+        "size": 479
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/site-health/site-health-2026-04-29-0700MDT.md",
+        "mtime": "2026-04-29T13:03:08.823666+00:00",
+        "size": 5361
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/blog-post-design-trust-signals-2026-04-29.md",
+        "mtime": "2026-04-29T12:58:48.299372+00:00",
+        "size": 10208
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/auditor/artifacts/audit-reports/heartbeat-2026-04-29-0656.md",
+        "mtime": "2026-04-29T12:57:02.744050+00:00",
+        "size": 4936
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-day0-send-ready-mml-templates-2026-04-29.md",
+        "mtime": "2026-04-29T12:55:46.884682+00:00",
+        "size": 7700
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/marketing/artifacts/oa-content-drafts/oa-prospect-emails-resolved-2026-04-29.md",
+        "mtime": "2026-04-29T12:55:09.088004+00:00",
+        "size": 3624
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/engineering/artifacts/engineering/waitlist-fix-2026-04-29.md",
+        "mtime": "2026-04-29T12:52:32.113657+00:00",
+        "size": 2520
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/creative/demo-walkthrough-assets-2026-04-29.md",
+        "mtime": "2026-04-29T12:50:09.907595+00:00",
+        "size": 12511
+      },
+      {
+        "path": "/Users/ryleebenson/Desktop/OPENCLAW/workspaces/orchestrator/artifacts/auditor/latest-audit-2026-04-29-0645.md",
+        "mtime": "2026-04-29T12:50:01.904164+00:00",
+        "size": 7148
+      }
+    ]
+  },
+  "logs": {
+    "window_lines": 500,
+    "counts": {
+      "n8n_404": 0,
+      "elephant_model": 0,
+      "memory_no_vectors": 0,
+      "bootstrap_truncated": 4,
+      "incomplete_turn": 0,
+      "telegram_socket": 0
+    },
+    "examples": {
+      "bootstrap_truncated": "2026-04-29T16:08:25.991+03:00 [agent/embedded] workspace bootstrap file HEARTBEAT.md is 47191 chars (limit 12000); truncating in injected context (sessionKey=agent:creative:main:heartbeat)"
+    }
+  }
+}

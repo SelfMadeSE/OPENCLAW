@@ -1,0 +1,11 @@
+COMMAND     PID        USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+Google     1032 ryleebenson   41u  IPv4 0xc0a87979846aff21      0t0  TCP 127.0.0.1:57025->127.0.0.1:18789 (ESTABLISHED)
+OpenClaw   1067 ryleebenson   11u  IPv4 0x8dfc860587d6f049      0t0  TCP 127.0.0.1:57016->127.0.0.1:18789 (ESTABLISHED)
+OpenClaw   1067 ryleebenson   12u  IPv4 0x549ff4444db082cf      0t0  TCP 127.0.0.1:57017->127.0.0.1:18789 (ESTABLISHED)
+node      19151 ryleebenson   15u  IPv4 0xf8ff2e13ddf50790      0t0  TCP 127.0.0.1:18789 (LISTEN)
+node      19151 ryleebenson   16u  IPv6 0x40b0f2ea03d2b461      0t0  TCP [::1]:18789 (LISTEN)
+node      19151 ryleebenson   29u  IPv4  0xcd64cdb67348754      0t0  TCP 127.0.0.1:18789->127.0.0.1:57016 (ESTABLISHED)
+node      19151 ryleebenson   30u  IPv4 0x7a053464cfa3c1b4      0t0  TCP 127.0.0.1:18789->127.0.0.1:57017 (ESTABLISHED)
+node      19151 ryleebenson   32u  IPv4  0xf06f309b5bc5025      0t0  TCP 127.0.0.1:18789->127.0.0.1:57025 (ESTABLISHED)
+node      19151 ryleebenson   40u  IPv4 0xf275bec69278d8b2      0t0  TCP 127.0.0.1:57032->127.0.0.1:18789 (ESTABLISHED)
+node      19151 ryleebenson   41u  IPv4 0xe08504197491911b      0t0  TCP 127.0.0.1:18789->127.0.0.1:57032 (ESTABLISHED)

@@ -1,0 +1,18 @@
+{
+  "mission_id": "reply-check-cdp-20260429-1104",
+  "goal": "Scan Gmail inbox via authenticated browser for any prospect replies to the 112 sent outreach emails, surfacing responders as RED hot leads requiring immediate operator attention.",
+  "success_criteria": [
+    "Gmail inbox scanned for replies from sent-to addresses",
+    "Any detected reply documented with lead_id, sender, excerpt, and RED flag for operator"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Check for prospect replies. Method 1: If browser CDP is reachable at 127.0.0.1:18800 (test with curl first), open Gmail at https://mail.google.com/mail/u/0/#inbox using profile='user' and search for replies \u2014 use Gmail search 'newer_than:2d' and scan inbox for any threads from sent-to addresses. Get sent-to addresses: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT DISTINCT e.recipient FROM email_attempts e WHERE e.status='provider_accepted' ORDER BY e.id DESC LIMIT 112\". Method 2 (fallback if CDP down): use web_fetch to check Gmail or grep SMTP send logs for bounce/reply patterns. Write findings to artifacts/missions/reply-check-cdp-20260429-1104/bridge-reply-scan.md with: yes/no replies found, reply details if any, RED flags. If no replies: document that the 112-send reply window is still open (24-72h from first sends ~04:00 UTC).",
+      "expected_artifact": "bridge-reply-scan.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "112 sends out. The highest-value action is detecting replies \u2014 a prospect reply is the single strongest revenue signal. Every other mission type (send more, research, deploy) has been proposed exhaustively. Reply detection is the one thing that changes pipeline state: no replies = wait, replies found = RED operator action. YELLOW for CDP browser dependency."
+}

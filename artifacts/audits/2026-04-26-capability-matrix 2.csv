@@ -1,0 +1,86 @@
+agent,skill,available,eligible,missing_requirements,risk_class,approval_required,tested,test_result,notes
+orchestrator,clawhub,yes,yes,,green,no,no,,coordination/handoff
+orchestrator,session-logs,yes,yes,,green,no,no,,visibility into runs
+orchestrator,heartbeat-pro,yes,yes,,green,no,no,,heartbeat capture
+orchestrator,memory-tiering,yes,yes,,green,no,no,,memory routing
+orchestrator,neural-memory,yes,yes,,green,no,no,,vector recall
+orchestrator,openclaw-auto-dream,yes,yes,,green,no,no,,reflection cron
+orchestrator,Self-Improving + Proactive Agent,yes,yes,,green,no,no,,planner skill
+orchestrator,taskflow,yes,yes,,yellow,no,no,,task graph mutation
+orchestrator,taskflow-inbox-triage,yes,yes,,yellow,no,no,,inbox triage
+orchestrator,multi-search-engine,yes,yes,,green,no,no,,research
+orchestrator,content-research,yes,yes,,green,no,no,,research
+orchestrator,microsoft-foundry,yes,yes,,orange,yes,no,,cloud agent ops
+engineering,coding-agent,yes,yes,,yellow,no,no,,code edits in workspace
+engineering,skill-creator,yes,yes,,yellow,no,no,,creates new skills
+engineering,tmux,yes,yes,,green,no,no,,session mgmt
+engineering,xurl,yes,yes,,green,no,no,,curl wrapper read-only
+engineering,session-logs,yes,yes,,green,no,no,,log inspection
+engineering,healthcheck,yes,yes,,green,no,no,,probes
+engineering,memory-tiering,yes,yes,,green,no,no,,memory ops
+engineering,neural-memory,yes,yes,,green,no,no,,memory ops
+engineering,microsoft-foundry,yes,yes,,orange,yes,no,,cloud deploy
+engineering,mcporter,yes,yes,,yellow,no,no,,mcp server scaffolding
+engineering,multi-search-engine,yes,yes,,green,no,no,,research
+engineering,Self-Improving + Proactive Agent,yes,yes,,green,no,no,,planner
+marketing,article-writing,yes,yes,,green,no,no,,blog drafts
+marketing,business-writing,yes,yes,,green,no,no,,asset drafts
+marketing,human-writing,yes,yes,,green,no,no,,natural copy
+marketing,sales-mastery,yes,yes,,green,no,no,,offer ladders
+marketing,Sales Pipeline Tracker,yes,yes,,yellow,no,no,,CRM ops local
+marketing,Market Research Agent,yes,yes,,green,no,no,,prospect research
+marketing,seo-competitor-analysis,yes,yes,,green,no,no,,SEO analysis
+marketing,website-seo,yes,yes,,green,no,no,,site audit
+marketing,content-research,yes,yes,,green,no,no,,research
+marketing,multi-search-engine,yes,yes,,green,no,no,,research
+marketing,SocialPack Multi-Platform Social Media Generator,yes,yes,,yellow,no,no,,social drafts only
+marketing,Social Media Scheduler,yes,yes,,orange,yes,no,,scheduling = sending later
+outreach,sales-mastery,yes,yes,,green,no,no,,outbound playbook
+outreach,Sales Pipeline Tracker,yes,yes,,yellow,no,no,,CRM ops
+outreach,pollyreach,yes,yes,,orange,yes,no,,outbound delivery surface
+outreach,Market Research Agent,yes,yes,,green,no,no,,prospect research
+outreach,multi-search-engine,yes,yes,,green,no,no,,research
+outreach,himalaya,yes,yes,,orange,yes,no,,email sender CLI
+outreach,xurl,yes,yes,,green,no,no,,read curl
+outreach,x-search,yes,yes,,green,no,no,,X/Twitter search
+outreach,google-workspace,yes,yes,,orange,yes,no,,gmail/calendar; needs auth scoping
+outreach,clawhub,yes,yes,,green,no,no,,coordination
+creative,article-writing,yes,yes,,green,no,no,,creative copy
+creative,business-writing,yes,yes,,green,no,no,,creative copy
+creative,human-writing,yes,yes,,green,no,no,,creative copy
+creative,video-frames,yes,yes,,green,no,no,,frame extraction
+creative,Self-Improving + Proactive Agent,yes,yes,,green,no,no,,creative ideation
+creative,content-research,yes,yes,,green,no,no,,research
+creative,multi-search-engine,yes,yes,,green,no,no,,research
+creative,SocialPack Multi-Platform Social Media Generator,yes,yes,,yellow,no,no,,drafts only
+media,video-frames,yes,yes,,green,no,no,,frame extraction
+media,SocialPack Multi-Platform Social Media Generator,yes,yes,,yellow,no,no,,drafts only
+media,Social Media Scheduler,yes,yes,,orange,yes,no,,scheduling
+media,article-writing,yes,yes,,green,no,no,,captions/copy
+media,multi-search-engine,yes,yes,,green,no,no,,research
+auditor,session-logs,yes,yes,,green,no,no,,review transcripts
+auditor,healthcheck,yes,yes,,green,no,no,,probes
+auditor,heartbeat-pro,yes,yes,,green,no,no,,heartbeat audit
+auditor,memory-tiering,yes,yes,,green,no,no,,memory audit
+auditor,neural-memory,yes,yes,,green,no,no,,memory audit
+auditor,openclaw-auto-dream,yes,yes,,green,no,no,,dream review
+auditor,multi-search-engine,yes,yes,,green,no,no,,verification
+auditor,xurl,yes,yes,,green,no,no,,verification fetches
+all,gh-issues,no,no,blocked-by-skill-loader,yellow,no,no,,blocked at registry
+all,github,no,no,blocked-by-skill-loader,yellow,no,no,,blocked at registry
+all,1password,no,no,bins=op,green,no,no,,install op CLI
+all,autonomous-research,no,no,env=BRAVE_API_KEY,green,no,no,,set BRAVE_API_KEY
+all,bear-notes,no,no,bins=grizzly,green,no,no,,optional
+all,bluebubbles,no,no,config=channels.bluebubbles,orange,yes,no,,iMessage out
+all,discord,no,no,config=channels.discord.token,orange,yes,no,,Discord channel
+all,gemini,no,no,bins=gemini,green,no,no,,not used
+all,goplaces,no,no,bins=goplaces+env=GOOGLE_PLACES_API_KEY,green,no,no,,prospect enrichment
+all,notion,no,no,env=NOTION_API_KEY,yellow,no,no,,doc store
+all,openai-whisper,no,no,bins=whisper,green,no,no,,local transcription
+all,openai-whisper-api,no,no,env=OPENAI_API_KEY,green,no,no,,api transcription
+all,slack,no,no,config=channels.slack,orange,yes,no,,Slack channel
+all,trello,no,no,env=TRELLO_API_KEY+TRELLO_TOKEN,yellow,no,no,,task board
+all,sherpa-onnx-tts,no,no,env=SHERPA_ONNX_RUNTIME_DIR+MODEL_DIR,green,no,no,,local TTS
+all,voice-call,no,no,config=plugins.entries.voice-call.enabled,red,yes,no,,real phone calls — Red
+all,sag,no,no,bins=sag+env=ELEVENLABS_API_KEY,orange,yes,no,,voice gen
+all,model-usage,no,no,bins=codexbar,green,no,no,,observability

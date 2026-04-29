@@ -1,0 +1,24 @@
+{
+  "mission_id": "icebreaker-case-study-live-20260429-0805",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "creative",
+      "status": "ok",
+      "expected": "muse-case-study.md"
+    },
+    {
+      "slice": 2,
+      "agent": "engineering",
+      "status": "rc=124",
+      "expected": "forge-deploy.md"
+    },
+    {
+      "slice": 3,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-verify.md"
+    }
+  ],
+  "completed_at": "2026-04-29T14:19:27.850584+00:00"
+}

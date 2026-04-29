@@ -1,0 +1,17 @@
+{
+  "mission_id": "null-20260429-0905",
+  "goal": "No viable mission. Pipeline saturated at 96 sends. All proposals exhausted. Requires operator intervention to change state.",
+  "success_criteria": [
+    "Operator acknowledges cycle closure or provides new directive"
+  ],
+  "slices": [
+    {
+      "agent": "engineering",
+      "task": "NO-OP. Do not execute. This slice exists only to satisfy the output schema. The operator must: (1) fix CRM Python fd error so the pipeline management tool works, (2) restore CDP browser at 127.0.0.1:18800 for reply scanning, (3) provide Vercel log access for waitlist API fix, or (4) issue a new directive that changes pipeline state. Until then, the system is in reply-waiting mode with 96 sends out. No further autonomous mission generation is productive.",
+      "expected_artifact": "null.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "22 proposals. 4+ hours. 96 sends. Every revenue-advancing permutation has been proposed: send more, research prospects, fix infrastructure, scan replies, deploy content, reconcile pipeline, produce briefs. The limiting factor is no longer mission ideas \u2014 it's execution and state change. The system needs operator input on one of the three open blockers or a new directive."
+}

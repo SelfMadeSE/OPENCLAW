@@ -1,0 +1,536 @@
+{
+  "prospects": {
+    "denver-lawn--landscape-20260426-110754": {
+      "business_name": "Denver Lawn & Landscape",
+      "website": "https://www.denverlawnlandscape.com",
+      "phone": null,
+      "email": null,
+      "service_area": "Denver Metro (Highlands Ranch to Castle Rock)",
+      "niche": "Landscaping",
+      "opportunity_score": 95,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T10:44:00Z",
+          "method": "TBD",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0444am.md",
+          "notes": "Critical: No phone, no email, no contact form, contact page 404. Complete lead capture failure. Needs contact discovery before send. Highest urgency prospect."
+        }
+      ]
+    },
+    "denver-roofing-co-20260426-110754": {
+      "business_name": "Denver Roofing Co.",
+      "website": "https://denverroofingco.com",
+      "phone": "(720) 547-9446",
+      "email": "bids@denverroofingco.com",
+      "service_area": "Denver Metro / Highlands Ranch",
+      "niche": "Roofing",
+      "opportunity_score": 78,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T10:44:00Z",
+          "method": "email (verified: bids@denverroofingco.com)",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0444am.md",
+          "notes": "Modern site but missing: online inspection booking, live chat, instant quote tool, city landing pages. Email verified on site. Lowest friction to send."
+        }
+      ]
+    },
+    "dc-plumbing-colorado-20260426-110754": {
+      "business_name": "DC Plumbing Colorado",
+      "website": "https://www.dcplumbingcolorado.com",
+      "phone": "(720) 810-7933",
+      "email": "sales@dcplumbingcolorado.com",
+      "service_area": "Parker / Denver Metro",
+      "niche": "Plumbing",
+      "opportunity_score": 91,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T10:44:00Z",
+          "method": "phone (720) 810-7933 verified; email TBD",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0444am.md",
+          "notes": "30+ years in business. Extremely basic single-page template. No contact form, no booking, no service pages. Phone verified on site footer. Email needs inference (info@dcplumbingcolorado.com) or alternate discovery."
+        }
+      ],
+      "status": "outreach_drafted",
+      "contact": {
+        "name": "Brad",
+        "role": "Owner/Manager"
+      },
+      "notes": "30+ years serving Denver. Licensed plumbing contractor (PC.0004324, MP.03000695). Wix site, extremely minimal content, no online scheduling, no reviews/testimonials on site, no service area pages. Audit draft saved 4:20pm 4/28.",
+      "last_contacted": "2026-04-28T22:20:00Z",
+      "outreach_history": [
+        {
+          "date": "2026-04-28T22:20:00Z",
+          "action": "drafted",
+          "status": "pending_send",
+          "channel": "email",
+          "message": "Audit-led outreach email drafted to sales@dcplumbingcolorado.com"
+        }
+      ]
+    },
+    "payless-rooter-20260426-121158": {
+      "business_name": "Payless Rooter",
+      "website": "https://www.paylessrooterdenver.com",
+      "phone": "(303) 981-0079",
+      "email": null,
+      "service_area": "Denver Metro / Wheat Ridge",
+      "niche": "Plumbing & Drain Services",
+      "opportunity_score": 85,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T11:23:29.636047+00:00",
+          "method": "TBD (email needs discovery)",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-payless-rooter-audit-draft.md",
+          "notes": "Yext template placeholder text visible on live contact page. 40+ year business with half-built site. Contact page has blank business hours."
+        }
+      ]
+    },
+    "atlantic-dental-20260426-110754": {
+      "business_name": "Atlantic Dental",
+      "website": "https://myatlanticdental.com",
+      "phone": null,
+      "email": null,
+      "service_area": "Denver, Colorado",
+      "niche": "Dental Practice",
+      "opportunity_score": 88,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T11:23:29.636047+00:00",
+          "method": "TBD (no contact info found on site)",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-atlantic-dental-audit-draft.md",
+          "notes": "Site has no booking, no contact form, no phone, no dentist bios. Complete lead capture void. Competitors have booking, portals, and insurance checkers."
+        }
+      ]
+    },
+    "the-weather-changers-20260426-110754": {
+      "business_name": "The Weather Changers",
+      "website": "https://theweatherchangers.com",
+      "phone": "303-340-0077",
+      "email": null,
+      "service_area": "Denver Metro",
+      "niche": "HVAC Services",
+      "opportunity_score": 78,
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T11:23:29.636047+00:00",
+          "method": "phone verified; email TBD",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-the-weather-changers-audit-draft.md",
+          "notes": "Coupon-first CTA undersells emergency service positioning. No online booking, no live chat, no emergency CTA above fold."
+        }
+      ]
+    },
+    "berry-best-plumbing-20260426-121158": {
+      "business_name": "Berry Best Plumbing",
+      "website": "https://www.berrybestplumbing.com",
+      "phone": "(303) 763-1956",
+      "email": "info@berrybestplumbing.com",
+      "service_area": "Denver, Castle Rock, CO",
+      "niche": "Plumbing Services",
+      "opportunity_score": 85,
+      "live_audit": {
+        "timestamp": "2026-04-28T16:57:33.726Z",
+        "endpoint": "POST https://outboundautonomy.com/api/audit",
+        "overall_score": 100,
+        "grade": "A",
+        "design_score": 100,
+        "conversion_score": 100,
+        "technical_score": 100,
+        "issues": [
+          "About Us page title says 'Florissant, CO' \u2014 business serves Denver & Castle Rock (SEO inconsistency)",
+          "No online booking/scheduling system \u2014 contact form only",
+          "Weekend/holiday hours: closed Sat-Sun, no emergency CTA",
+          "108 links on homepage dilutes primary CTA focus",
+          "No dedicated Denver or Castle Rock city landing pages",
+          "Full Lighthouse data unavailable (PageSpeed quota exceeded)"
+        ],
+        "top_recommendations": [
+          "Conversion-first homepage pass ($1,500-$3,500)",
+          "Lead capture + follow-up system ($2,500-$6,500)",
+          "Full implementation plan ($1,500-$4,500)"
+        ]
+      },
+      "actions": [
+        {
+          "type": "crm_import",
+          "timestamp": "2026-04-28T12:35:48.727Z",
+          "method": "manual CRM add via mission-sync subagent",
+          "status": "imported",
+          "notes": "Live audit API returned 100/100 A grade. Polished Duda template site. Upsell recs: booking flow, lead capture automation, conversion homepage pass. Email verified (info@berrybestplumbing.com) and MX validated (Google Workspace)."
+        },
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-28T16:58:18.919294+00:00",
+          "method": "email (verified: info@berrybestplumbing.com)",
+          "status": "drafted",
+          "draft_path": "artifacts/outreach/berry-best-pipeline-2026-04-28.md",
+          "stage": "outreach_drafted",
+          "notes": "3-email sequence drafted from live audit results. Specific finding: 'Florissant, CO' page title inconsistency on interior pages (About Us, Plumbing Repairs, etc.) while serving Denver & Castle Rock. No online booking vs competitor Bell Plumbing. Lead: specific audit finding. Follow-up: competitor comparison. Last: direct with pricing range.",
+          "danger_level": "RED \u2014 do NOT send",
+          "approval_required": true,
+          "from": "Oden Botney / owner@outboundautonomy.com",
+          "emails": [
+            {
+              "subject": "Your site's page titles are pointing people to the wrong town",
+              "preview": "Email 1 \u2014 Audit finding lead"
+            },
+            {
+              "subject": "How Bell Plumbing is booking online while you're not",
+              "preview": "Email 2 \u2014 Competitor comparison"
+            },
+            {
+              "subject": "One more thing on your plumbing site",
+              "preview": "Email 3 \u2014 Last attempt with pricing"
+            }
+          ]
+        }
+      ],
+      "status": "outreach_drafted",
+      "updated_at": "2026-04-28T16:58:18.919432+00:00"
+    },
+    "oak--canyon-landscape-20260428-154532": {
+      "businessName": "Oak & Canyon Landscape",
+      "niche": "Landscaping",
+      "website": "https://oakandcanyon.com",
+      "source": "DuckDuckGo search - Denver landscaping companies",
+      "description": "Owner-operated Denver landscape company (Jason Bonser). Minimal website with bare-bones contact page. No online booking, no instant quote tool, no service area pages beyond basic description. No email visible on site. Phone visible. Small operator-led SMB with clear lead capture gaps.",
+      "service_area": "Denver Metro (historic neighborhoods)",
+      "phone": "(720) 878-5435",
+      "email": "info@oakandcanyon.com",
+      "opportunity_score": 82,
+      "contact": {
+        "name": "Jason Bonser",
+        "role": "Owner"
+      },
+      "prospect_id": "oak--canyon-landscape-20260428-154532",
+      "created_at": "2026-04-28T15:45:32.785154",
+      "updated_at": "2026-04-28T15:45:32.785155",
+      "status": "outreach_drafted",
+      "business_name": "Oak & Canyon Landscape",
+      "notes": "Owner-operated landscape company in Denver historic neighborhoods. Squarespace site, beautiful brand but ~700 words total content. No portfolio/gallery, no booking, minimal contact page. Audit draft saved 4:20pm 4/28.",
+      "last_contacted": "2026-04-28T22:20:00Z",
+      "outreach_history": [
+        {
+          "date": "2026-04-28T22:20:00Z",
+          "action": "drafted",
+          "status": "pending_send",
+          "channel": "email",
+          "message": "Audit-led outreach email drafted to info@oakandcanyon.com"
+        }
+      ]
+    },
+    "harris-family-chiropractic-and-massage-20260428-154532": {
+      "businessName": "Harris Family Chiropractic and Massage",
+      "niche": "Chiropractic",
+      "website": "https://hfcmdenver.com",
+      "source": "DuckDuckGo search - Denver chiropractors",
+      "description": "Small chiropractic practice in Denver (303) 691-2225. Very basic WordPress site with minimal content. Contact page only shows business hours. No embedded contact form extracted, no online booking, no service descriptions visible. No email visible on site (CleanTalk email encoder obscures it). No patient portal links.",
+      "service_area": "Denver, CO (Bellaire St)",
+      "phone": "(303) 691-2225",
+      "email": null,
+      "opportunity_score": 86,
+      "contact": {
+        "phone_verified": true,
+        "email_verified": false,
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-28T12:44:00Z"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospect_id": "harris-family-chiropractic-and-massage-20260428-154532",
+      "created_at": "2026-04-28T15:45:32.786570",
+      "updated_at": "2026-04-28T15:45:32.786571",
+      "status": "new"
+    },
+    "cherry-medical-aesthetics-20260428-154532": {
+      "businessName": "Cherry Medical Aesthetics",
+      "niche": "Med Spa",
+      "website": "https://cherrymedispa.com",
+      "source": "DuckDuckGo search - Denver med spa website",
+      "description": "Upscale med spa in LoHi Denver. Elementor-built site with contact form embedded via external Growth99 iframe. Contact page has very thin content (Have A Question? Let us get in touch! SEE YOU SOON XOXO). Phone and email found in HTML header. No visible online booking system on contact page.",
+      "service_area": "Denver, CO (LoHi - 2200 W 29th Ave)",
+      "phone": "(720) 479-8793",
+      "email": "reception@cherrymedispa.com",
+      "opportunity_score": 74,
+      "contact": {
+        "phone_verified": true,
+        "email_verified": true,
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-28T12:44:00Z"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-28T12:44:00Z"
+          }
+        }
+      },
+      "prospect_id": "cherry-medical-aesthetics-20260428-154532",
+      "created_at": "2026-04-28T15:45:32.787569",
+      "updated_at": "2026-04-28T15:45:32.787570",
+      "status": "outreach_drafted",
+      "business_name": "Cherry Medical Aesthetics",
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-29T01:22:07.465961+00:00",
+          "method": "email (verified: reception@cherrymedispa.com)",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0720pm.md",
+          "notes": "Audit-led outreach. Lead: contact page conversion gap. Top recs: inline booking, contact page overhaul, local SEO."
+        }
+      ],
+      "last_contacted": "2026-04-29T01:22:07.465961+00:00",
+      "outreach_history": [
+        {
+          "date": "2026-04-29T01:22:07.465961+00:00",
+          "action": "drafted",
+          "status": "pending_send",
+          "channel": "email",
+          "message": "Audit-led outreach email drafted to reception@cherrymedispa.com"
+        }
+      ]
+    },
+    "be-services-inc-20260428-154532": {
+      "businessName": "B&E Services Inc.",
+      "niche": "Landscaping",
+      "website": "https://www.beservicesdenver.com",
+      "source": "DuckDuckGo search - Denver landscaping companies",
+      "description": "Denver landscaping company serving since 1981. Basic template site with phone visible (303-452-0289) but no email. No online booking, no instant quote tool, no project gallery or portfolio pages. Minimal conversion elements - just a phone CTA. Established business (40+ years) with outdated web presence.",
+      "service_area": "Denver, CO (City Park, Capitol Hill, Hilltop, Washington Park, Cherry Creek, Stapleton, Aurora)",
+      "phone": "(303) 452-0289",
+      "email": "beservices@live.com",
+      "opportunity_score": 80,
+      "contact": {
+        "role": "Owner/Manager"
+      },
+      "prospect_id": "be-services-inc-20260428-154532",
+      "created_at": "2026-04-28T15:45:32.787911",
+      "updated_at": "2026-04-28T15:45:32.787912",
+      "status": "outreach_drafted",
+      "business_name": "B&E Services Inc.",
+      "notes": "Denver landscaping since 1981. Wix site, template-style repetitive content, no portfolio photos on homepage, Request Estimate is a generic form not real-time booking, blog not leveraged for local SEO. Audit draft saved 4:20pm 4/28.",
+      "last_contacted": "2026-04-28T22:20:00Z",
+      "outreach_history": [
+        {
+          "date": "2026-04-28T22:20:00Z",
+          "action": "drafted",
+          "status": "pending_send",
+          "channel": "email",
+          "message": "Audit-led outreach email drafted to beservices@live.com"
+        }
+      ]
+    },
+    "little-foot-landscaping-20260428-154532": {
+      "businessName": "Little Foot Landscaping",
+      "niche": "Landscaping",
+      "website": "https://littlefootlandscaping.com",
+      "source": "DuckDuckGo search - Denver landscaping companies",
+      "description": "Family-owned landscaping company since 1979 in Lakewood/Denver. Owner Tim Jukola. Site has blog and testimonials but no online booking, no instant quote form, no online payment. Phone not easily discoverable from page content. Free consultation link exists but no streamlined booking flow. Named Best Denver Landscaper in 2024.",
+      "service_area": "Denver Metro / Lakewood, CO",
+      "phone": null,
+      "email": null,
+      "opportunity_score": 77,
+      "contact": {
+        "phone_verified": false,
+        "email_verified": false,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospect_id": "little-foot-landscaping-20260428-154532",
+      "created_at": "2026-04-28T15:45:32.788735",
+      "updated_at": "2026-04-28T15:45:32.788736",
+      "status": "new"
+    },
+    "peak-to-peak-roofing--exteriors-20260428-195619": {
+      "businessName": "Peak to Peak Roofing & Exteriors",
+      "niche": "Roofing Services",
+      "website": "https://peaktopeakroofing.com",
+      "source": "web_fetch direct audit 2026-04-28 10:52 MT",
+      "description": "Denver roofing company since ~2004. Contact page has phone (720) 893-3823 and contact form with CAPTCHA friction. Missing: live chat, instant quote tool, online booking/scheduling, visible email address. Content-rich site but zero conversion automation. Address: 4155 E Jewell Ave #1100, Denver, CO 80222. Facebook link present.",
+      "contact": {
+        "phone": "(720) 893-3823",
+        "email": "unverified",
+        "address": "4155 E Jewell Ave #1100, Denver, CO 80222",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-28T10:52:00-06:00"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospectScore": 65,
+      "auditGaps": [
+        "no live chat",
+        "no instant quote tool",
+        "no online booking",
+        "no visible email",
+        "CAPTCHA friction on contact form"
+      ],
+      "discoveryMethod": "direct URL fetch + site audit",
+      "priority": "medium",
+      "prospect_id": "peak-to-peak-roofing--exteriors-20260428-195619",
+      "created_at": "2026-04-28T19:56:19.783000",
+      "updated_at": "2026-04-28T19:56:19.783002",
+      "status": "outreach_drafted",
+      "business_name": "Peak to Peak Roofing & Exteriors",
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-29T01:22:07.465961+00:00",
+          "method": "TBD (email needs discovery)",
+          "status": "drafted_blocked_no_email",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0720pm.md",
+          "notes": "Audit drafted but email not found on site. Needs WHOIS/social/common-pattern discovery before send. Flagged for NEXUS/SENTINEL."
+        }
+      ],
+      "outreach_history": [
+        {
+          "date": "2026-04-29T01:22:07.465961+00:00",
+          "action": "drafted",
+          "status": "blocked_no_email",
+          "channel": "TBD",
+          "message": "Audit drafted. Email address not found on peaktopeakroofing.com. Needs discovery."
+        }
+      ]
+    },
+    "colorado-chiropractic-and-rehabilitation-center-20260428-195628": {
+      "businessName": "Colorado Chiropractic and Rehabilitation Center",
+      "niche": "Chiropractic / Rehabilitation",
+      "website": "https://cccwalker.com",
+      "source": "web_fetch direct audit 2026-04-28 10:52 MT",
+      "description": "Denver chiropractic/rehab center. Phone (720) 954-2940 and email coloradochiropracticcenter@gmail.com verified on contact page. Uses external Schedulicity for booking. Basic WordPress template. Address: 2460 W 26th Ave Suite 40-C, Denver, CO 80211. Gaps: no live chat, no patient intake automation, external booking (no native integration), outdated contact form, no lead scoring or follow-up automation.",
+      "contact": {
+        "phone": "(720) 954-2940",
+        "email": "coloradochiropracticcenter@gmail.com",
+        "address": "2460 W 26th Ave Suite 40-C, Denver, CO 80211",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-28T10:52:00-06:00"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-28T10:52:00-06:00"
+          }
+        }
+      },
+      "prospectScore": 60,
+      "auditGaps": [
+        "no live chat",
+        "external booking only (Schedulicity)",
+        "no patient intake automation",
+        "basic contact form",
+        "no lead scoring",
+        "outdated WordPress template"
+      ],
+      "discoveryMethod": "direct URL fetch + site audit",
+      "priority": "medium",
+      "prospect_id": "colorado-chiropractic-and-rehabilitation-center-20260428-195628",
+      "created_at": "2026-04-28T19:56:28.737795",
+      "updated_at": "2026-04-28T19:56:28.737797",
+      "status": "outreach_drafted",
+      "business_name": "Colorado Chiropractic and Rehabilitation Center",
+      "actions": [
+        {
+          "type": "outreach_draft",
+          "timestamp": "2026-04-29T01:22:07.465961+00:00",
+          "method": "email (verified: coloradochiropracticcenter@gmail.com)",
+          "status": "drafted_queued",
+          "draft_path": "artifacts/outreach-drafts/2026-04-28-hourly-outreach-draft-queue-0720pm.md",
+          "notes": "Audit-led outreach. Lead: broken testimonial 'read more' links. Top recs: testimonial fix, local SEO, inline Schedulicity booking."
+        }
+      ],
+      "last_contacted": "2026-04-29T01:22:07.465961+00:00",
+      "outreach_history": [
+        {
+          "date": "2026-04-29T01:22:07.465961+00:00",
+          "action": "drafted",
+          "status": "pending_send",
+          "channel": "email",
+          "message": "Audit-led outreach email drafted to coloradochiropracticcenter@gmail.com"
+        }
+      ]
+    },
+    "denver-lawn--landscape-20260428-195635": {
+      "businessName": "Denver Lawn & Landscape",
+      "niche": "Landscaping / Lawn Care",
+      "website": "https://www.denverlawnlandscape.com",
+      "source": "web_fetch direct audit 2026-04-28 10:52 MT",
+      "description": "Family-run Denver landscaping company. CRITICAL GAP: Contact page returns 404. No phone number or email visible anywhere on the site. Very thin single-page feel with minimal content. No online booking, no quoting system, no live chat. Serves: Highlands Ranch, Parker, Castle Rock, Littleton, Castle Pines, Lone Tree, Centennial, Englewood, Greenwood Village. Missing all key conversion features.",
+      "contact": {
+        "phone": "unverified",
+        "email": "unverified",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospectScore": 88,
+      "auditGaps": [
+        "contact page 404",
+        "no phone number on site",
+        "no email on site",
+        "no online booking",
+        "no quoting system",
+        "no live chat",
+        "single-page thin content"
+      ],
+      "discoveryMethod": "direct URL fetch + site audit",
+      "priority": "high",
+      "prospect_id": "denver-lawn--landscape-20260428-195635",
+      "created_at": "2026-04-28T19:56:35.809134",
+      "updated_at": "2026-04-28T19:56:35.809136",
+      "status": "new"
+    }
+  },
+  "last_updated": "2026-04-29T03:22:58Z",
+  "version": "1.1",
+  "last_outreach_session": {
+    "session_id": "210d6add-b9d4-45f3-8c90-b77191e95006",
+    "timestamp": "2026-04-29T03:22:58Z",
+    "task": "Hourly Outreach Draft Queue 9:20 PM MT \u2014 3 audit-led emails drafted",
+    "emails_drafted": 3,
+    "priority_level": "MEDIUM-HIGH",
+    "leads": [
+      "Bug Man Inc. (Denver Pest Control)",
+      "Mountain Cat Tree Care",
+      "A&W Auto Body Inc."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "research_date": "2026-04-29 08:06 MDT",
+  "lead_name": "Denver Carpet Cleaning (denvercarpet-cleaning.net)",
+  "vertical": "carpet-cleaning",
+  "website": "https://www.denvercarpet-cleaning.net",
+  "score": 4,
+  "contact": {
+    "email": "unverified — form-only contact, no email visible on site",
+    "phone": "(303) 317-3420",
+    "email_verified": false
+  },
+  "audit": {
+    "designScore": 30,
+    "conversionScore": 30,
+    "technicalScore": 40,
+    "overallScore": 33,
+    "grade": "F"
+  },
+  "weaknesses": [
+    "Extremely dated design — looks like early 2000s template",
+    "Massive text-wall content with no formatting, headers, or readability",
+    "No online booking or scheduling tool",
+    "Form-only contact — no email address visible anywhere on site",
+    "No portfolio or before/after gallery",
+    "No service area pages despite serving wide Denver area",
+    "No blog or modern content marketing",
+    "URL contains hyphens (carpet-cleaning.net) — looks spammy/SEO-bait",
+    "No SSL certificate enforcement check needed",
+    "No mobile-responsive design evident from structure",
+    "Overly long paragraphs on homepage with keyword stuffing feel",
+    "Claims 24/7 emergency service but no prominent emergency CTA"
+  ],
+  "strengths": [
+    "24/7 emergency water/fire damage restoration service",
+    "Offers broad service range (carpet, rug, upholstery, tile, air duct, boat/RV)",
+    "100% satisfaction guarantee mentioned",
+    "Has structured service descriptions (though overly long)"
+  ],
+  "notes": "Denver carpet cleaning company also offering water/fire damage restoration. Site is extremely dated with text-wall formatting, no online booking, form-only contact. Phone: 303-317-3420. No email visible on site. URL structure (denvercarpet-cleaning.net with hyphens) appears SEO-focused. The site has heavy keyword stuffing and reads more like a text directory than a professional service business. Massive conversion opportunity — the business offers 24/7 emergency services but has virtually no emergency CTA on site."
+}

@@ -1,0 +1,104 @@
+gui/501/ai.openclaw.gateway = {
+	active count = 1
+	path = /Users/ryleebenson/Library/LaunchAgents/ai.openclaw.gateway.plist
+	type = LaunchAgent
+	state = running
+
+	program = /Users/ryleebenson/.nvm/versions/node/v24.11.0/bin/node
+	arguments = {
+		/Users/ryleebenson/.nvm/versions/node/v24.11.0/bin/node
+		/opt/homebrew/lib/node_modules/openclaw/dist/index.js
+		gateway
+		--port
+		18789
+	}
+
+	stdout path = /Users/ryleebenson/.openclaw/logs/gateway.log
+	stderr path = /Users/ryleebenson/.openclaw/logs/gateway.err.log
+	inherited environment = {
+		SSH_AUTH_SOCK => /var/run/com.apple.launchd.OQJKzXzyIF/Listeners
+	}
+
+	default environment = {
+		PATH => /usr/bin:/bin:/usr/sbin:/sbin
+	}
+
+	environment = {
+		OSLogRateLimit => 64
+		OPENCLAW_GATEWAY_PORT => 18789
+		N8N_MCP_URL => https://outboundautonomy.app.n8n.cloud/mcp-server/sse
+		TWILIO_ACCOUNT_SID => secret://twilio_account_sid
+		STRIPE_SK_LIVE => secret://stripe_sk_live
+		NODE_USE_SYSTEM_CA => 1
+		OPENCLAW_SERVICE_VERSION => 2026.4.15
+		OPENCLAW_SYSTEMD_UNIT => openclaw-gateway.service
+		GMAIL_ADDRESS => secret://gmail_address
+		TWILIO_AUTH_TOKEN => secret://twilio_auth_token
+		OPENCLAW_SERVICE_MANAGED_ENV_KEYS => GMAIL_ADDRESS,GMAIL_PASSWORD,GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE,GOOGLE_WORKSPACE_PROJECT_ID,N8N_MCP_TOKEN,N8N_MCP_URL,STRIPE_PK_LIVE,STRIPE_PK_TEST,STRIPE_SK_LIVE,STRIPE_SK_TEST,TWILIO_ACCOUNT_SID,TWILIO_AUTH_TOKEN,TWILIO_PHONE_NUMBER
+		OPENCLAW_WINDOWS_TASK_NAME => OpenClaw Gateway
+		NODE_EXTRA_CA_CERTS => /etc/ssl/cert.pem
+		GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE => /Users/ryleebenson/.config/gcloud/application_default_credentials.json
+		OPENCLAW_LAUNCHD_LABEL => ai.openclaw.gateway
+		PATH => /Users/ryleebenson/.nvm/versions/node/v24.11.0/bin:/Users/ryleebenson/.local/bin:/Users/ryleebenson/.npm-global/bin:/Users/ryleebenson/bin:/Users/ryleebenson/.volta/bin:/Users/ryleebenson/.asdf/shims:/Users/ryleebenson/.bun/bin:/Users/ryleebenson/Library/Application Support/fnm/aliases/default/bin:/Users/ryleebenson/.fnm/aliases/default/bin:/Users/ryleebenson/Library/pnpm:/Users/ryleebenson/.local/share/pnpm:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Users/ryleebenson/.nvm
+		STRIPE_PK_LIVE => secret://stripe_pk_live
+		STRIPE_SK_TEST => secret://stripe_sk_test
+		N8N_MCP_TOKEN => secret://n8n_mcp_token
+		GMAIL_PASSWORD => secret://gmail_password
+		XAI_API_KEY => REDACTED
+		HOME => /Users/ryleebenson
+		GOOGLE_WORKSPACE_PROJECT_ID => cool-clarity-494115-n2
+		TWILIO_PHONE_NUMBER => secret://twilio_phone_number
+		OPENCLAW_SERVICE_KIND => gateway
+		OPENCLAW_SERVICE_MARKER => openclaw
+		TMPDIR => /var/folders/72/12sh5cyj3nnbqqql0qhkpm6r0000gn/T/
+		STRIPE_PK_TEST => secret://stripe_pk_test
+		NEURALMEMORY_BRAIN => /Users/ryleebenson/.neuralmemory
+		XPC_SERVICE_NAME => ai.openclaw.gateway
+	}
+
+	domain = gui/501 [100140]
+	umask = 77
+	asid = 100140
+	minimum runtime = 1
+	exit timeout = 5
+	runs = 3
+	pid = 19151
+	immediate reason = inefficient
+	forks = 222
+	execs = 1
+	initialized = 1
+	trampolined = 1
+	started suspended = 0
+	proxy started suspended = 0
+	checked allocations = 0 (queried = 1)
+	checked allocations reason = no host
+	checked allocations flags = 0x0
+	last exit code = 0
+
+	resource coalition = {
+		ID = 2990
+		type = resource
+		state = active
+		active count = 1
+		name = ai.openclaw.gateway
+	}
+
+	jetsam coalition = {
+		ID = 2991
+		type = jetsam
+		state = active
+		active count = 1
+		name = ai.openclaw.gateway
+	}
+
+	spawn type = daemon (3)
+	jetsam priority = 40
+	jetsam memory limit (active) = (unlimited)
+	jetsam memory limit (inactive) = (unlimited)
+	jetsamproperties category = daemon
+	jetsam thread limit = 32
+	cpumon = default
+	job state = running
+
+	properties = partial import | keepalive | runatload | inferred program
+}

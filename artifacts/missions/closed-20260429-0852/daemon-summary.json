@@ -1,0 +1,12 @@
+{
+  "mission_id": "closed-20260429-0852",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "closed.md"
+    }
+  ],
+  "completed_at": "2026-04-29T14:54:34.829308+00:00"
+}

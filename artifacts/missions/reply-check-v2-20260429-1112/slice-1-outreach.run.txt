@@ -1,0 +1,71 @@
+ "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 11:13 MDT] MISSION reply-check-v2-20260429-1112 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: Detect any prospect replies to the 112 sent outreach emails using web_fetch of Gmail or SMTP log analysis as CDP-independent fallback..\\nYour task: Detect replies WITHOUT CDP dependency. Step 1: Get latest SMTP send logs for bounce/reply patterns: ls -t /Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/outreach-drafts/*send* /Users/ryleebenson/Desktop/OPENCLAW/workspaces/outreach/artifacts/*send* 2>/dev/null | head -5 \\u2014 read the most recent for any reply/bounce notes. Step 2: Check CRM for any stage changes that indicate replies: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT l.id,l.name,l.stage FROM leads l WHERE l.stage IN ('negotiating','won','responded') OR l.notes LIKE '%reply%' OR l.notes LIKE '%responded%'\". Step 3: Attempt web_fetch of https://mail.google.com/mail/u/0/#inbox (may fail due to auth wall \\u2014 note if so). Step 4: Compile findings into a single yes/no determination. Write to artifacts/missions/reply-check-v2-20260429-1112/bridge-reply.md with: method used, findings, reply status (YES/NO), timeline (first sends ~04:00 UTC, now ~17:00 UTC = 13 hours elapsed, reply window 24-72h still open).\\nWrite your output to: artifacts/missions/reply-check-v2-20260429-1112/bridge-reply.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/reply-check-v2-20260429-1112/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Zero prospect replies detected across all CDP-independent methods. No leads in negotiating/won/responded stages. No notes referencing replies. Timeline: first sends 13h old, last sends 6h old — reply window 24-72h still fully open.",
+      "finalAssistantRawText": "STATE: PROCEED — Zero prospect replies detected across all CDP-independent methods. No leads in negotiating/won/responded stages. No notes referencing replies. Timeline: first sends 13h old, last sends 6h old — reply window 24-72h still fully open.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 7,
+        "tools": [
+          "exec",
+          "read",
+          "web_fetch",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

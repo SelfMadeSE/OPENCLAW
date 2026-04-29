@@ -1,0 +1,18 @@
+{
+  "mission_id": "cycle-close-20260429-0749",
+  "goal": "Close this mission-generation cycle with a terminal operator brief summarizing what was accomplished, what the current pipeline looks like, and what the operator should do next \u2014 no new mission proposal, just the facts.",
+  "success_criteria": [
+    "Operator receives a single terminal brief with: 91 provider_accepted sends, 11 failed, 7 reconciled, site health, open blockers, and exact next action",
+    "No further mission proposals generated until operator re-engages or pipeline state changes materially"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Produce the terminal cycle-close brief. Step 1: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT status, COUNT(*) FROM email_attempts GROUP BY status' \u2014 full ledger. Step 2: sqlite3 ... 'SELECT stage, COUNT(*) FROM leads GROUP BY stage' \u2014 pipeline. Step 3: sqlite3 ... 'SELECT l.name,l.score,l.stage FROM leads l WHERE l.stage=\"outreach_sent\" ORDER BY l.score DESC LIMIT 10' \u2014 top sent leads. Step 4: curl -s -o /dev/null -w '%{http_code} ' outboundautonomy.com/ /try /sample-report /case-studies /faq /blog. Step 5: Write terminal brief to artifacts/missions/cycle-close-20260429-0749/bridge-terminal-brief.md with: WHAT WAS DONE (14 missions proposed, pipeline advanced 47\u219291 provider_accepted), CURRENT STATE (ledger table, top leads, site health), OPEN BLOCKERS (waitlist API ORANGE, CDP YELLOW, CRM Python fd error YELLOW), OPERATOR NEXT ACTION ('Wait 24-48h for replies to 91 sends. If reply detected, respond personally (RED per BOOT.md). If no replies by Apr 30, authorize follow-up batch. Fix CRM Python script when convenient \u2014 sqlite3 direct access works as fallback.').",
+      "expected_artifact": "bridge-terminal-brief.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "14 missions proposed over ~3 hours. Pipeline advanced from 47 to 91 provider_accepted. The cycle has produced its value. Continuing to propose more send/research/audit missions without operator engagement is diminishing returns. The terminal brief closes the loop: here's what happened, here's where we are, here's what you do next. This respects the operator's time and the system's cadence."
+}

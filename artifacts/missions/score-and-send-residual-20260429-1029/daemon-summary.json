@@ -1,0 +1,12 @@
+{
+  "mission_id": "score-and-send-residual-20260429-1029",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-results.md"
+    }
+  ],
+  "completed_at": "2026-04-29T16:35:13.303522+00:00"
+}

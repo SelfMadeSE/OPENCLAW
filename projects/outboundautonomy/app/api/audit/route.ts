@@ -285,6 +285,34 @@ function getLighthouseAuditNotes(result: unknown): string[] {
   })
 }
 
+/** Fall back to local Lighthouse CLI when PageSpeed API is unavailable */
+async function runLighthouseFallback(url: string): Promise<LighthouseSummary> {
+  const localUrl = process.env.LIGHTHOUSE_SERVER_URL || 'http://127.0.0.1:18900'
+  try {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 90000)
+    const response = await fetch(`${localUrl}/audit?url=${encodeURIComponent(url)}`, { signal: controller.signal })
+    clearTimeout(timeout)
+    if (!response.ok) {
+      return { available: false, source: 'Lighthouse CLI', strategy: 'mobile', performance: null, accessibility: null, bestPractices: null, seo: null, screenshotDataUrl: null, audits: [], error: `Local Lighthouse returned ${response.status}` }
+    }
+    const data = await response.json()
+    return {
+      available: data.available ?? true,
+      source: 'Lighthouse CLI (local)',
+      strategy: 'mobile',
+      performance: data.performance ?? null,
+      accessibility: data.accessibility ?? null,
+      bestPractices: data.bestPractices ?? null,
+      seo: data.seo ?? null,
+      screenshotDataUrl: data.screenshotDataUrl ?? null,
+      audits: (data.topIssues || []).map((i: any) => `${i.title}: ${i.score}/100`)
+    }
+  } catch (e) {
+    return { available: false, source: 'Lighthouse CLI', strategy: 'mobile', performance: null, accessibility: null, bestPractices: null, seo: null, screenshotDataUrl: null, audits: [], error: `Local Lighthouse unavailable: ${e instanceof Error ? e.message : 'unknown'}` }
+  }
+}
+
 async function runPageSpeed(url: URL): Promise<LighthouseSummary> {
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), 18000)
@@ -339,42 +367,6 @@ function accessFlags(access?: AuditAccessContext): string[] {
   return flags
 
 /** Fall back to local Lighthouse CLI when PageSpeed API is unavailable */
-async function runLighthouseFallback(url: string): Promise<LighthouseSummary> {
-  const localUrl = process.env.LIGHTHOUSE_SERVER_URL || 'http://127.0.0.1:18900'
-  try {
-    const controller = new AbortController()
-    const timeout = setTimeout(() => controller.abort(), 90000)
-    const response = await fetch(`${localUrl}/audit?url=${encodeURIComponent(url)}`, { signal: controller.signal })
-    clearTimeout(timeout)
-    if (!response.ok) {
-      return {
-        available: false, source: 'Lighthouse CLI', strategy: 'mobile',
-        performance: null, accessibility: null, bestPractices: null, seo: null,
-        screenshotDataUrl: null, audits: [],
-        error: `Local Lighthouse returned ${response.status}`
-      }
-    }
-    const data = await response.json()
-    return {
-      available: data.available ?? true,
-      source: 'Lighthouse CLI (local)',
-      strategy: 'mobile',
-      performance: data.performance ?? null,
-      accessibility: data.accessibility ?? null,
-      bestPractices: data.bestPractices ?? null,
-      seo: data.seo ?? null,
-      screenshotDataUrl: data.screenshotDataUrl ?? null,
-      audits: (data.topIssues || []).map((i: any) => `${i.title}: ${i.score}/100`)
-    }
-  } catch (e) {
-    return {
-      available: false, source: 'Lighthouse CLI', strategy: 'mobile',
-      performance: null, accessibility: null, bestPractices: null, seo: null,
-      screenshotDataUrl: null, audits: [],
-      error: `Local Lighthouse unavailable: ${e instanceof Error ? e.message : 'unknown'}`
-    }
-  }
-}
 }
 
 function analyze(

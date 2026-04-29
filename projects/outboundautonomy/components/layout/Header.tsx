@@ -27,6 +27,7 @@ export default function Header() {
     { name: 'Blog', href: '/blog' },
     { name: 'FAQ', href: '/faq' },
     { name: 'About', href: '/about' },
+    { name: 'Audio Audit', href: '/audio-audit' },
     { name: 'Contact', href: '/contact' },
   ]
 

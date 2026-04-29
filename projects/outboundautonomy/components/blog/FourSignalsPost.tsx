@@ -125,6 +125,8 @@ export default function FourSignalsPost() {
   <li><a href="/blog/free-website-audit-what-it-checks" className="text-signal hover:underline">What a Free Website Audit Actually Checks (tools comparison)</a></li>
   <li><a href="/blog/how-to-read-website-audit-score" className="text-signal hover:underline">How to Read Your Website Audit Score (score breakdown guide)</a></li>
   <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/design-trust-signals-website-audit" className="text-signal hover:underline">Deep dive: what design and trust signals actually look for</a></li>
+  <li><a href="/blog/competitive-gap-website-audit" className="text-signal hover:underline">Deep dive: how to analyze competitor websites for your market</a></li>
 </ul>
     </>
   )

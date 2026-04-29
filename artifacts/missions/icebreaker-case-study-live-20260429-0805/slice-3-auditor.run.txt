@@ -1,0 +1,82 @@
+hars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 08:15 MDT] MISSION icebreaker-case-study-live-20260429-0805 \\u2014 slice 3/3.\\nLead is NEXUS. Goal: Deploy a polished internal case study to outboundautonomy.com/case-studies that 91 prospects will see when they click through from outreach emails, converting site visits into credibility..\\nYour task: Read muse-case-study.md and forge-deploy.md. Verify: (a) the case study contains the 'Illustrative Composite' disclaimer, (b) curl https://outboundautonomy.com/case-studies and grep for key content from the new study to confirm deployment, (c) verify the page includes an audit-funnel CTA linking to /try or /sample-report. Write verdict to artifacts/missions/icebreaker-case-study-live-20260429-0805/sentinel-verify.md. Append SCORE_EVENT to _shared/scoring/history.jsonl for creative and engineering.\\nWrite your output to: artifacts/missions/icebreaker-case-study-live-20260429-0805/sentinel-verify.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/icebreaker-case-study-live-20260429-0805/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Peak Roofing case study live at /case-studies. Disclaimer present, content verified via curl, audit-funnel CTA functional. No forge-deploy.md (subagent timeout) but live page confirms successful deployment — page grew from 50KB to 56KB, content swapped from Denver Legal Marketing to Peak Roofing.",
+      "finalAssistantRawText": "STATE: PROCEED — Peak Roofing case study live at /case-studies. Disclaimer present, content verified via curl, audit-funnel CTA functional. No forge-deploy.md (subagent timeout) but live page confirms successful deployment — page grew from 50KB to 56KB, content swapped from Denver Legal Marketing to Peak Roofing.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 7,
+        "tools": [
+          "exec",
+          "read",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

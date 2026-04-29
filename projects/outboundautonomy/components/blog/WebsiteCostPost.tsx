@@ -149,6 +149,7 @@ export default function WebsiteCostPost() {
   <li><a href="/blog/automation-for-service-businesses" className="text-signal hover:underline">Automation for Service Businesses — Forms, Follow-Up, and CRM</a></li>
   <li><a href="/blog/from-audit-to-booking" className="text-signal hover:underline">From Audit to Booking: The Full Service Business Workflow</a></li>
   <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/competitive-gap-website-audit" className="text-signal hover:underline">Your competitive position score directly affects your implementation budget</a></li>
 </ul>
     </>
   )

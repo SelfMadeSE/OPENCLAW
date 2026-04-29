@@ -1,0 +1,28 @@
+{
+  "mission_id": "icebreaker-case-study-live-20260429-0805",
+  "goal": "Deploy a polished internal case study to outboundautonomy.com/case-studies that 91 prospects will see when they click through from outreach emails, converting site visits into credibility.",
+  "success_criteria": [
+    "outboundautonomy.com/case-studies returns 200 with a complete audit-led case study including scores, fixes, and CTA",
+    "Case study is clearly labeled 'Illustrative Composite' and links to /try for audit requests"
+  ],
+  "slices": [
+    {
+      "agent": "creative",
+      "task": "Write a concrete internal case study using the template at /Users/ryleebenson/Desktop/OPENCLAW/workspaces/creative/artifacts/site-copy/case-study-template-2026-04-28.md. Choose a composite SMB (roofing company with broken contact form, no mobile optimization, missing schema, 5-second load time). Structure: Problem (leaking leads) \u2192 Audit Scores (Design 45, Conversion 28, Technical 52 \u2014 clearly labeled 'illustrative composite') \u2192 What We Fixed (contact form rebuild, mobile responsive, schema markup, image optimization) \u2192 Results (load time 1.2s, mobile score 92, form completions +340% \u2014 labeled 'projected') \u2192 CTA ('Get your free audit at our site'). The case study must feel real enough to convince a prospect but be clearly labeled as illustrative. Write to artifacts/missions/icebreaker-case-study-live-20260429-0805/muse-case-study.md.",
+      "expected_artifact": "muse-case-study.md"
+    },
+    {
+      "agent": "engineering",
+      "task": "Read muse-case-study.md. Deploy it to the live /case-studies page: (1) Read the current page source at /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/app/case-studies/page.tsx, (2) Replace the content with the new case study, preserving the page wrapper/layout, (3) git add + git commit + git push from /Users/ryleebenson/Desktop/OPENCLAW/projects/outboundautonomy/, (4) Run vercel --prod to deploy. After deploy, curl https://outboundautonomy.com/case-studies and confirm 200 with new content. Write results with commit hash and HTTP status to artifacts/missions/icebreaker-case-study-live-20260429-0805/forge-deploy.md.",
+      "expected_artifact": "forge-deploy.md"
+    },
+    {
+      "agent": "auditor",
+      "task": "Read muse-case-study.md and forge-deploy.md. Verify: (a) the case study contains the 'Illustrative Composite' disclaimer, (b) curl https://outboundautonomy.com/case-studies and grep for key content from the new study to confirm deployment, (c) verify the page includes an audit-funnel CTA linking to /try or /sample-report. Write verdict to artifacts/missions/icebreaker-case-study-live-20260429-0805/sentinel-verify.md. Append SCORE_EVENT to _shared/scoring/history.jsonl for creative and engineering.",
+      "expected_artifact": "sentinel-verify.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "91 provider_accepted sends. Prospects ARE clicking through. The /case-studies page is what they'll see when evaluating credibility. Right now it's a generic composite that doesn't showcase OA's specific audit\u2192fix\u2192results methodology. This mission produces a concrete, shippable artifact that directly converts outreach traffic into trust. Not another research or send mission \u2014 a visible site improvement that 91 prospects are inbound to see. YELLOW for Vercel production deploy."
+}

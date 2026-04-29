@@ -1,0 +1,54 @@
+
+🦞 OpenClaw 2026.4.15 (041266a) — The only crab in your contacts you actually want to hear from. 🦞
+
+Usage: openclaw memory [options] [command]
+
+Search, inspect, and reindex memory files
+
+Options:
+  -h, --help       Display help for command
+
+Commands:
+  help             Display help for command
+  index            Reindex memory files
+  promote          Rank short-term recalls and optionally append top entries to
+                   MEMORY.md
+  promote-explain  Explain a specific promotion candidate and its score
+                   breakdown
+  rem-backfill     Write grounded historical REM summaries into DREAMS.md for UI
+                   review
+  rem-harness      Preview REM reflections, candidate truths, and deep
+                   promotions without writing
+  search           Search memory files
+  status           Show memory search index status
+
+Examples:
+  openclaw memory status
+    Show index and provider status.
+  openclaw memory status --fix
+    Repair stale recall locks and normalize promotion metadata.
+  openclaw memory status --deep
+    Probe embedding provider readiness.
+  openclaw memory index --force
+    Force a full reindex.
+  openclaw memory search "meeting notes"
+    Quick search using positional query.
+  openclaw memory search --query "deployment" --max-results 20
+    Limit results for focused troubleshooting.
+  openclaw memory promote --limit 10 --min-score 0.75
+    Review weighted short-term candidates for long-term memory.
+  openclaw memory promote --apply
+    Append top-ranked short-term candidates into MEMORY.md.
+  openclaw memory promote-explain "router vlan"
+    Explain why a specific candidate would or would not promote.
+  openclaw memory rem-harness --json
+    Preview REM reflections, candidate truths, and deep promotion output.
+  openclaw memory rem-backfill --path ./memory
+    Write grounded historical REM entries into DREAMS.md for UI review.
+  openclaw memory rem-backfill --path ./memory --stage-short-term
+    Also seed durable grounded candidates into the live short-term promotion store.
+  openclaw memory status --json
+    Output machine-readable JSON (good for scripts).
+
+Docs: https://docs.openclaw.ai/cli/memory
+

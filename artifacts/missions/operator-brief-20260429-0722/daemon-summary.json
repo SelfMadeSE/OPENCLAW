@@ -1,0 +1,12 @@
+{
+  "mission_id": "operator-brief-20260429-0722",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-brief.md"
+    }
+  ],
+  "completed_at": "2026-04-29T13:26:32.344555+00:00"
+}

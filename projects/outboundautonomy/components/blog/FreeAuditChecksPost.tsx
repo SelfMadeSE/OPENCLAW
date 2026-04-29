@@ -89,6 +89,7 @@ export default function FreeAuditChecksPost() {
   <li><a href="/blog/4-signals-website-audit" className="text-signal hover:underline">The 4 Signals That Matter in a Website Audit</a></li>
   <li><a href="/blog/how-to-read-website-audit-score" className="text-signal hover:underline">How to Read Your Website Audit Score</a></li>
   <li><a href="/blog/service-business-website-leads" className="text-signal hover:underline">Is Your Service Business Website Costing You Leads?</a></li>
+  <li><a href="/blog/competitive-gap-website-audit" className="text-signal hover:underline">What most tools miss: the competitive gap analysis</a></li>
 </ul>
     </>
   )

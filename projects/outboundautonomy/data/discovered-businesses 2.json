@@ -1,0 +1,90 @@
+{
+  "discovery_info": {
+    "location": "Grand Prairie, Alberta",
+    "discovered_at": "2026-04-24T12:28:40.855356",
+    "total_businesses": 10,
+    "script_version": "1.0.0"
+  },
+  "businesses": [
+    {
+      "name": "Grande Prairie Pizza Palace",
+      "website": "https://gppizza.example.com",
+      "category": "restaurant",
+      "address": "9830 99 Ave, Grande Prairie, AB T8V 0R4",
+      "phone": "(780) 532-1234",
+      "description": "Local pizza restaurant with outdated website"
+    },
+    {
+      "name": "Northern Lights Diner",
+      "website": "https://northernlightsdiner.example.com",
+      "category": "restaurant",
+      "address": "10210 98 Ave, Grande Prairie, AB T8V 2V7",
+      "phone": "(780) 814-5678",
+      "description": "Classic diner with basic HTML site"
+    },
+    {
+      "name": "Prairie Burger Co",
+      "website": "https://prairieburger.example.com",
+      "category": "restaurant",
+      "address": "8715 108 St, Grande Prairie, AB T8V 4L5",
+      "phone": "(780) 539-9012",
+      "description": "Gourmet burger restaurant with mobile-responsive needs"
+    },
+    {
+      "name": "Peace Country Plumbing",
+      "website": "https://peacecountryplumbing.example.com",
+      "category": "contractor",
+      "address": "11315 100 Ave, Grande Prairie, AB T8V 0T1",
+      "phone": "(780) 832-3456",
+      "description": "Plumbing contractor with basic website"
+    },
+    {
+      "name": "Grande Prairie HVAC Solutions",
+      "website": "https://gphvac.example.com",
+      "category": "contractor",
+      "address": "9501 97 St, Grande Prairie, AB T8V 1G7",
+      "phone": "(780) 538-7890",
+      "description": "HVAC services with outdated mobile design"
+    },
+    {
+      "name": "Northern Alberta Electric",
+      "website": "https://northernabelectric.example.com",
+      "category": "contractor",
+      "address": "7215 108 Ave, Grande Prairie, AB T8V 3H4",
+      "phone": "(780) 830-1234",
+      "description": "Electrical contractor with conversion issues"
+    },
+    {
+      "name": "Prairie Sports & Outdoors",
+      "website": "https://prairiesports.example.com",
+      "category": "retail",
+      "address": "10320 99 Ave, Grande Prairie, AB T8V 0X1",
+      "phone": "(780) 532-5678",
+      "description": "Sporting goods store with e-commerce needs"
+    },
+    {
+      "name": "Grande Prairie Home Hardware",
+      "website": "https://gphomehardware.example.com",
+      "category": "retail",
+      "address": "8525 100 Ave, Grande Prairie, AB T8V 0N8",
+      "phone": "(780) 814-9012",
+      "description": "Hardware store with inventory display issues"
+    },
+    {
+      "name": "Peace Country Auto Repair",
+      "website": "https://peacecountryauto.example.com",
+      "category": "automotive",
+      "address": "11410 100 Ave, Grande Prairie, AB T8V 0X9",
+      "phone": "(780) 539-3456",
+      "description": "Auto repair shop with booking system needed"
+    },
+    {
+      "name": "Grande Prairie Tire & Auto",
+      "website": "https://gptireauto.example.com",
+      "category": "automotive",
+      "address": "9610 108 St, Grande Prairie, AB T8V 4A6",
+      "phone": "(780) 832-7890",
+      "description": "Tire shop with mobile optimization needs"
+    }
+  ]
+}

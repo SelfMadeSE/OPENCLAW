@@ -81,6 +81,7 @@ export default function ServiceBusinessLeadsPost() {
   <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
   <li><a href="/blog/cta-deep-dive" className="text-signal hover:underline">The CTA Fix That Changes Everything</a></li>
   <li><a href="/blog/form-deep-dive" className="text-signal hover:underline">The One Form Every Service Business Website Needs Above the Fold</a></li>
+  <li><a href="/blog/competitive-gap-website-audit" className="text-signal hover:underline">See how your site stacks up against competitors</a></li>
 </ul>
     </>
   )

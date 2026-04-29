@@ -1,0 +1,91 @@
+           },
+            {
+              "name": "subagents",
+              "summaryChars": 105,
+              "schemaChars": 191,
+              "propertiesCount": 4
+            },
+            {
+              "name": "session_status",
+              "summaryChars": 336,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 09:06 MDT] MISSION null-20260429-0905 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: No viable mission. Pipeline saturated at 96 sends. All proposals exhausted. Requires operator intervention to change state..\\nYour task: NO-OP. Do not execute. This slice exists only to satisfy the output schema. The operator must: (1) fix CRM Python fd error so the pipeline management tool works, (2) restore CDP browser at 127.0.0.1:18800 for reply scanning, (3) provide Vercel log access for waitlist API fix, or (4) issue a new directive that changes pipeline state. Until then, the system is in reply-waiting mode with 96 sends out. No further autonomous mission generation is productive.\\nWrite your output to: artifacts/missions/null-20260429-0905/null.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/null-20260429-0905/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: BLOCKER — NO-OP complete. CRM is already functional (diagnosed earlier). Remaining blockers need operator: restore CDP browser at 127.0.0.1:18800 for reply scanning, provide Vercel log access for waitlist persistence. System in reply-waiting mode with 96 sends out.",
+      "finalAssistantRawText": "STATE: BLOCKER — NO-OP complete. CRM is already functional (diagnosed earlier). Remaining blockers need operator: restore CDP browser at 127.0.0.1:18800 for reply scanning, provide Vercel log access for waitlist persistence. System in reply-waiting mode with 96 sends out.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 2,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

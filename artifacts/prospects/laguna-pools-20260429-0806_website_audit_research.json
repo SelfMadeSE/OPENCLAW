@@ -1,0 +1,37 @@
+{
+  "research_date": "2026-04-29 08:06 MDT",
+  "lead_name": "Laguna Pools LLC",
+  "vertical": "pool-service",
+  "website": "https://lagunapoolsllc.us",
+  "score": 6,
+  "contact": {
+    "email": "unverified — not visible on site",
+    "phone": "(720) 768-8260",
+    "email_verified": false
+  },
+  "audit": {
+    "designScore": 50,
+    "conversionScore": 50,
+    "technicalScore": 60,
+    "overallScore": 53,
+    "grade": "F"
+  },
+  "weaknesses": [
+    "No email address visible anywhere on the site",
+    "No blog or content marketing for SEO",
+    "Extremely thin site — only homepage with minimal text",
+    "No individual service pages (pool cleaning, construction, renovation lumped together)",
+    "No gallery/portfolio of pool projects — critical for a construction/service business",
+    "No team/about page",
+    "No service area landing pages despite serving Denver metro",
+    "Jobber booking link exists but isn't prominent as a primary CTA",
+    ".us TLD and minimal site raise trust signals"
+  ],
+  "strengths": [
+    "Jobber integration for work requests (clienthub.getjobber.com)",
+    "20+ years of experience",
+    "Google reviews embedded as testimonials",
+    "Clear phone number prominently displayed"
+  ],
+  "notes": "Denver pool construction, cleaning, and maintenance company with 20+ years experience. Site is extremely thin — essentially a single homepage with Jobber booking integration. No email on site (critical lead capture gap). Phone: 720-768-8260. Has .us TLD which combined with the thin site may hurt trust. Good reviews on Google but not leveraged on site. Major opportunity: build out service pages, gallery, and add email/contact form."
+}

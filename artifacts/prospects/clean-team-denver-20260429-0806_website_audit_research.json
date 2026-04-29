@@ -1,0 +1,36 @@
+{
+  "research_date": "2026-04-29 08:06 MDT",
+  "lead_name": "The Clean Team",
+  "vertical": "carpet-cleaning",
+  "website": "https://cleanteamdenver.com",
+  "score": 7,
+  "contact": {
+    "email": "Keegan@cleanteamdenver.com",
+    "phone": "(303) 235-8005",
+    "email_verified": true
+  },
+  "audit": {
+    "designScore": 55,
+    "conversionScore": 40,
+    "technicalScore": 65,
+    "overallScore": 53,
+    "grade": "F"
+  },
+  "weaknesses": [
+    "Copyright stuck at 2019 — site appears abandoned/neglected",
+    "No online booking/scheduling despite being in business since 1995",
+    "Contact form only — no instant estimate or quote tool",
+    "Homepage is extremely thin text content — minimal substance for SEO",
+    "No service area landing pages (serves entire Denver metro)",
+    "No blog or content marketing — zero organic growth strategy",
+    "No gallery/portfolio of work — critical for a cleaning service",
+    "Basic template site with no unique branding"
+  ],
+  "strengths": [
+    "30-day guarantee unique selling point",
+    "27+ years of experience, 60,000+ happy customers",
+    "Owner email directly on contact page",
+    "Multiple service pages (carpet, wood, upholstery, rug, tile)"
+  ],
+  "notes": "Family-owned Denver carpet cleaning company since 1995. Site is a basic WordPress template with copyright 2019 — clear neglect signal. No online booking despite 60k+ customers over 27 years. Contact page uses a basic form, no instant quote or automated scheduling. Good reputation but the site is holding them back from lead generation."
+}

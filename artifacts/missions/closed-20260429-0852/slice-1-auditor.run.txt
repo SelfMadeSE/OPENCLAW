@@ -1,0 +1,105 @@
+              "schemaChars": 274,
+              "propertiesCount": 5
+            },
+            {
+              "name": "sessions_yield",
+              "summaryChars": 97,
+              "schemaChars": 60,
+              "propertiesCount": 1
+            },
+            {
+              "name": "sessions_spawn",
+              "summaryChars": 302,
+              "schemaChars": 1333,
+              "propertiesCount": 18
+            },
+            {
+              "name": "subagents",
+              "summaryChars": 105,
+              "schemaChars": 191,
+              "propertiesCount": 4
+            },
+            {
+              "name": "session_status",
+              "summaryChars": 336,
+              "schemaChars": 89,
+              "propertiesCount": 2
+            },
+            {
+              "name": "web_fetch",
+              "summaryChars": 129,
+              "schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 08:53 MDT] MISSION closed-20260429-0852 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: Cycle closed. 96 provider_accepted. Awaiting operator re-engagement or material pipeline change..\\nYour task: NO-OP. Cycle is closed. Do nothing. Write nothing. The pipeline summary stands: 96 provider_accepted sends, 11 failed, 7 reconciled. Site healthy (all pages 200). Blockers: waitlist API (ORANGE), CDP down (YELLOW), CRM Python fd error (YELLOW). Operator action: await replies to 96 sends (24-72h window). Any reply = RED (operator must respond personally). If no replies by April 30 evening \\u2192 authorize follow-up batch. END.\\nWrite your output to: artifacts/missions/closed-20260429-0852/closed.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/closed-20260429-0852/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — Cycle closed. 96 provider_accepted. Awaiting operator re-engagement.",
+      "finalAssistantRawText": "STATE: PROCEED — Cycle closed. 96 provider_accepted. Awaiting operator re-engagement.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 2,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}
