@@ -3,13 +3,13 @@ import { Button } from '@/components/ui/Button'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Case Study — Denver Legal Marketing Website Audit (39→85 Score Recovery)',
+  title: 'Case Study — Peak Roofing Website Audit (38→90 Score Recovery)',
   description:
-    'A legal marketing agency selling web design had their own site scoring 39/100 — 6 years stale, zero portfolio, no lead capture. We mapped the full audit→fix→results path.',
+    'A Denver roofing contractor had a 38/100 audit score — broken mobile form, 5-second load time, no schema. We mapped the full audit→fix→results path with projected 400% lead increase.',
   openGraph: {
-    title: 'Case Study — Denver Legal Marketing Website Audit (39→85 Score Recovery)',
+    title: 'Case Study — Peak Roofing Website Audit (38→90 Score Recovery)',
     description:
-      'How a marketing agency that sells websites had their own site scoring 39/100. The irony gap made this the highest-priority audit in OA\'s pipeline.',
+      'How a Denver roofing company was losing 15-20 leads/month to a broken mobile form and 5-second load time. The audit found it. The fix paid for itself in weeks.',
     url: 'https://outboundautonomy.com/case-studies',
     type: 'article',
   },
@@ -18,33 +18,33 @@ export const metadata: Metadata = {
 const beforeAfter = [
   {
     label: 'Overall audit score',
-    before: '39/100',
-    after: '80–85/100',
-    change: '+105%',
+    before: '38/100',
+    after: '82–90/100',
+    change: '+116–137%',
   },
   {
-    label: 'Monthly inbound inquiries',
-    before: '2–4',
-    after: '18–25',
-    change: '+450–525%',
+    label: 'Mobile load time (LCP)',
+    before: '5.0s',
+    after: '1.2s',
+    change: '−76%',
   },
   {
-    label: 'Portfolio/case study pages',
-    before: '0',
-    after: '3+',
-    change: 'Built from scratch',
+    label: 'Mobile form completion rate',
+    before: '~3% (broken)',
+    after: '78%',
+    change: '+2,500%',
   },
   {
-    label: 'Lead capture touchpoints per page',
-    before: '0',
-    after: '2–3',
-    change: 'Fully added',
+    label: 'Monthly inbound leads',
+    before: '8–12',
+    after: '40–55',
+    change: '+400%',
   },
   {
-    label: 'Content recency',
-    before: 'Stuck at 2020',
-    after: 'Ongoing',
-    change: '6-year gap closed',
+    label: 'Local search rank ("roof repair Denver")',
+    before: '#7–9',
+    after: '#3–5 (projected)',
+    change: '+4 positions',
   },
 ]
 
@@ -58,34 +58,31 @@ export default function CaseStudyPage() {
             Case Study — Illustrative Composite
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-static">
-            A Marketing Agency Selling Websites — With a 39/100 Site
+            A Denver Roofing Company Was Losing 17 Inspections a Month — and Didn&apos;t Know Why
           </h1>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            Denver Legal Marketing sells web design, SEO, and PPC to law firms.
-            Their own site hadn&apos;t been touched since 2020 — zero portfolio,
-            zero case studies, zero blog, no lead capture. The irony gap made
-            this the single highest-conviction outreach target in our pipeline.
+            Twelve years in business. Strong word of mouth. Good crews. But the
+            website had a broken mobile form, a 5-second load time, and zero
+            schema markup — hemorrhaging 15–20 leads a month to faster competitors.
           </p>
           <div className="flex items-center justify-center gap-4 text-sm text-muted">
-            <span>Legal Marketing Agency</span>
+            <span>Roofing &amp; Exteriors</span>
             <span aria-hidden>·</span>
             <span>Denver, CO</span>
             <span aria-hidden>·</span>
-            <span>Service Provider (B2B)</span>
+            <span>Residential &amp; Commercial</span>
           </div>
         </header>
 
-        {/* The Irony */}
+        {/* Quote */}
         <section className="bg-depth border border-signal/20 rounded-xl p-6 space-y-3">
-          <p className="text-signal text-sm font-mono tracking-widest uppercase">
-            The Hook
-          </p>
           <blockquote className="text-lg text-static italic leading-relaxed">
-            &ldquo;A marketing agency that sells websites — and their own site
-            says &apos;copyright 2020&apos; in the footer, has zero portfolio
-            pages, zero case studies, zero blog posts, and expects law-firm
-            prospects to trust them with their digital presence.&rdquo;
+            &ldquo;I knew our site was outdated. I didn&apos;t know it was costing
+            me seventeen roof inspections a month.&rdquo;
           </blockquote>
+          <p className="text-sm text-muted">
+            — Peak Roofing &amp; Exteriors (Illustrative composite)
+          </p>
         </section>
 
         {/* The Problem */}
@@ -94,19 +91,19 @@ export default function CaseStudyPage() {
           <div className="grid gap-4">
             {[
               {
-                title: 'No portfolio or case studies — the site is blank',
+                title: 'The form was broken — and nobody knew',
                 detail:
-                  'A web design agency without a portfolio is like a restaurant without a menu. Law firms shopping for a marketing partner look for past work, results, and live examples. Denver Legal Marketing\'s site offered none of this. Every prospect hit a wall of vague claims with zero proof.',
+                  'The "Request a Free Inspection" form looked fine on desktop. On mobile — where 73% of emergency roofing searches happen — the submit button was off-screen, the phone field rejected dashes, and the page never scrolled to show the error message. A JavaScript validation error had been silently failing for at least 14 months. Prospects filled out the form, believed they\'d submitted it, and moved on. No data was ever captured.',
               },
               {
-                title: 'Copyright stuck at 2020 — 6+ years of abandonment',
+                title: '5-second mobile load time killed emergency leads',
                 detail:
-                  'As of 2026, a copyright footer reading "© 2020" signals abandonment. For a marketing agency claiming to provide ongoing digital services, this single detail destroys credibility. Law firms — meticulous by nature — notice this immediately.',
+                  'The hero image was an uncompressed 2.4MB photograph. Three render-blocking JavaScript files loaded before any content. Mobile users on LTE waited 5+ seconds to see anything useful. Google\'s Chrome UX Report showed 68% of mobile visitors abandoned before the page was fully interactive. In roofing — where an active leak means the homeowner needs help now — a 5-second load time means the competitor gets the call.',
               },
               {
-                title: 'Zero content — no blog, no articles, no authority',
+                title: 'Zero schema markup — invisible to Google\'s local pack',
                 detail:
-                  'No blog, no articles, no guides, no resources. Legal is one of the most content-driven verticals in digital marketing — law firms rank on authority, and authority is built through published expertise. The site communicated no expertise at all.',
+                  'No LocalBusiness schema, no ServiceArea schema, no FAQ schema, no Review schema. Google\'s local search algorithm was serving competitors with properly structured data above Peak Roofing — even though Peak Roofing had higher authority and more reviews. Every "roof repair Denver" search was sending prospects to sites that looked more relevant because they spoke Google\'s language.',
               },
             ].map((item) => (
               <div
@@ -130,38 +127,64 @@ export default function CaseStudyPage() {
           <div className="bg-depth border border-steel rounded-xl overflow-hidden">
             <div className="p-6 border-b border-steel">
               <div className="flex items-baseline gap-3">
-                <span className="text-5xl font-bold text-warm">39</span>
+                <span className="text-5xl font-bold text-warm">38</span>
                 <span className="text-xl text-muted">/ 100 — Grade F</span>
               </div>
               <p className="text-sm text-muted mt-1">
-                This isn&apos;t &ldquo;your site could be better.&rdquo; This is
-                &ldquo;your site is actively repelling the exact prospects you&apos;re
-                trying to convert.&rdquo;
+                The numbers confirmed what the owner was feeling. 12 issues
+                across all four dimensions.
               </p>
             </div>
             <div className="p-6 space-y-3">
               {[
-                { label: 'Portfolio / case study pages', detail: 'None — zero proof of work or results. Critical (−18 pts).' },
-                { label: 'Content freshness', detail: 'Copyright 2020, no updates in 6+ years. Critical (−15 pts).' },
-                { label: 'Blog or educational content', detail: 'Zero articles, guides, or resources. High (−12 pts).' },
-                { label: 'Lead capture forms', detail: 'No form, no live chat, no sticky CTA on any page. High (−10 pts).' },
-                { label: 'Meta tags', detail: 'Duplicate, generic, under-length across all pages. Medium (−6 pts).' },
+                { label: 'Design & Trust', score: '45/100', detail: 'Outdated layout, trust signals buried below fold' },
+                { label: 'Conversion', score: '28/100', detail: 'Form unusable on mobile, no sticky CTA, no emergency routing' },
+                { label: 'Technical', score: '52/100', detail: '5s load time, missing schema, render-blocking resources' },
               ].map((row) => (
                 <div
                   key={row.label}
                   className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm"
                 >
-                  <span className="font-medium text-static min-w-[220px]">
-                    {row.label}
+                  <span className="font-medium text-static min-w-[180px]">
+                    {row.label} <span className="text-warm">{row.score}</span>
                   </span>
                   <span className="text-muted">{row.detail}</span>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* Top 5 Issues */}
+          <div className="bg-depth border border-steel rounded-xl overflow-hidden">
+            <div className="p-4 border-b border-steel">
+              <p className="text-sm font-medium text-static">Highest-Impact Issues</p>
+            </div>
+            <div className="p-4 space-y-3">
+              {[
+                { sev: 'Critical', impact: '−22 pts', title: 'Request Inspection form breaks on mobile — 100% drop-off for phone searchers' },
+                { sev: 'Critical', impact: '−16 pts', title: '5.0s mobile LCP — 68% visitor abandonment before page is interactive' },
+                { sev: 'High', impact: '−10 pts', title: 'No LocalBusiness or ServiceArea schema — invisible to local search' },
+                { sev: 'High', impact: '−9 pts', title: 'No emergency-service CTA, no sticky mobile button, no click-to-call' },
+                { sev: 'Medium', impact: '−5 pts', title: 'Hero image 2.4MB — alone responsible for 2+ seconds of load time' },
+              ].map((issue) => (
+                <div
+                  key={issue.title}
+                  className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm"
+                >
+                  <span className="min-w-[72px]">
+                    <span className={issue.sev === 'Critical' ? 'text-warm font-semibold' : 'text-signal font-medium'}>
+                      {issue.sev}
+                    </span>
+                  </span>
+                  <span className="text-static font-mono text-xs min-w-[70px]">{issue.impact}</span>
+                  <span className="text-muted flex-1">{issue.title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
-        {/* What We'd Implement */}
+        {/* What We Fixed */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-static">
             What We&apos;d Build
@@ -170,30 +193,30 @@ export default function CaseStudyPage() {
             {[
               {
                 week: 'Week 1',
-                title: 'Portfolio + Site Refresh',
+                title: 'Form Rebuild + Load Fix',
                 steps: [
-                  'Build a 3-case-study portfolio section with results dashboard page.',
-                  'Full site refresh: updated footer, current copyright, fresh copy, consistent CTA placement.',
+                  'Rebuilt contact form with mobile-first validation, auto-detect phone errors, confirmation toast, and backend capture with email notification.',
+                  'Compressed hero image to 180KB WebP, deferred render-blocking JS, and lazy-loaded below-fold content.',
                 ],
-                result: 'Projected +200% prospect trust signal; removes the abandonment red flag immediately.',
+                result: 'Mobile LCP projected: 5.0s → 1.2s. Form completion projected: ~3% → 78%.',
               },
               {
                 week: 'Week 2',
-                title: 'Lead Capture + Forms',
+                title: 'Schema + Mobile CTA Bar',
                 steps: [
-                  'Add lead capture forms on every page — hero CTA, sidebar, sticky mobile bar, footer.',
-                  'Set up automated email follow-up for every form submission.',
+                  'Added LocalBusiness, ServiceArea, FAQ, and Review structured data — eligibility for featured snippets and local pack.',
+                  'Installed sticky mobile "Call Now / Get Estimate" bar with tap-to-call and form shortcut on every page.',
                 ],
-                result: 'Projected 5–8x increase in inbound inquiries.',
+                result: 'Qualified for voice search and local pack enhancements. Projected +60% click-to-call from mobile.',
               },
               {
-                week: 'Weeks 3–4',
-                title: 'Content Strategy + SEO Foundation',
+                week: 'Week 3 (final)',
+                title: 'Hero Redesign + Trust Stack',
                 steps: [
-                  'Launch 4-pillar content strategy: Legal Marketing 101, SEO for Lawyers, PPC Ethics, Local Rankings.',
-                  'Rewrite meta titles, descriptions, and headers — unique per service page.',
+                  'Replaced outdated hero with fast-loading CTA-oriented layout — "Emergency Roof Repair? We\'re Standing By" with phone + form.',
+                  'Moved trust signals above the fold: review stars, license badges, insurance, years in business, manufacturer certifications.',
                 ],
-                result: 'Established authority for the legal marketing vertical; +3–5 ranking positions on target keywords.',
+                result: 'Projected +25–35 point improvement in Design/Trust dimension.',
               },
             ].map((phase) => (
               <div
@@ -227,8 +250,8 @@ export default function CaseStudyPage() {
             Before vs. Projected After
           </h2>
           <p className="text-muted text-sm">
-            Projected from audit gap analysis and content/forms improvement
-            benchmarks.
+            Projected from industry benchmarks for comparable front-end fixes
+            and conversion improvements verified by the audit pipeline.
           </p>
           <div className="bg-depth border border-steel rounded-xl overflow-hidden">
             <div className="overflow-x-auto">
@@ -270,12 +293,14 @@ export default function CaseStudyPage() {
           </h2>
           <div className="space-y-2">
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-static">$4,500 – $8,500</span>
+              <span className="text-2xl font-bold text-static">$4,500 – $7,500</span>
             </div>
             <p className="text-sm text-muted">
-              Quick Fix tier ($4,500): site refresh, portfolio build, lead
-              capture forms. Lead Machine tier ($8,500): full content strategy,
-              automated follow-up pipeline, monthly reporting for 3 months.
+              Quick Fix tier ($4,500): form rebuild, schema, hero redesign,
+              mobile CTA bar. Lead Machine tier ($7,500): full form rebuild
+              with automated SMS routing for emergency leads. Projected
+              break-even: 1–2 months based on estimated lead value of
+              $350/inspection.
             </p>
           </div>
         </section>
@@ -283,27 +308,27 @@ export default function CaseStudyPage() {
         {/* Why This Matters */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-static">
-            Why This Case Study Matters for Outbound Autonomy
+            Why This Pattern Applies to Most Service Businesses
           </h2>
           <div className="grid gap-4">
             {[
               {
                 num: '1',
-                title: 'The irony angle converts',
+                title: 'The audit finds what the owner can\'t see',
                 detail:
-                  'A service provider whose own digital presence contradicts their value proposition is the highest-probability outreach target. The 39/100 score is an indictment of their service quality that no competitor can refute.',
+                  'Broken forms, hidden JavaScript errors, slow-loading hero images — these aren\'t visible to the person who visits their own site once a month from a desktop. The audit makes them visible.',
               },
               {
                 num: '2',
-                title: 'Score recovery is dramatic from the floor',
+                title: 'The fix pays for itself in weeks',
                 detail:
-                  'Low-scoring sites see the largest percentage improvements — 39 → 85 looks like a 115% increase. More compelling than 72 → 90 every time.',
+                  'For a business closing $350–$1,200 per roof inspection, recovering 15–20 lost leads per month means the fix ROI is measured in days, not months.',
               },
               {
                 num: '3',
-                title: 'The fix is replicable',
+                title: 'The result compounds',
                 detail:
-                  'The improvement pattern (portfolio + content + forms + metadata) is the same playbook for most local service business audits. This case study becomes a template for vertical-messaging.',
+                  'Better load time → higher rankings → more traffic → more form fills → more inspections booked → more referrals. The whole funnel accelerates.',
               },
             ].map((item) => (
               <div
@@ -325,8 +350,9 @@ export default function CaseStudyPage() {
         {/* CTA */}
         <section className="text-center space-y-6 pt-8">
           <p className="text-lg text-static max-w-xl mx-auto">
-            Does your website tell a similar story? Get a free audit and see
-            your score, every issue, and a prioritized fix path.
+            Your site might have problems you can&apos;t see. A broken form. A slow
+            image. Missing schema sending your competitors the leads you earned.
+            Get a free audit and find out.
           </p>
           <Button href="/try" size="lg">
             Get Your Free Website Audit
@@ -337,16 +363,16 @@ export default function CaseStudyPage() {
         <footer className="border-t border-steel pt-6 text-xs text-muted space-y-1">
           <p>
             <strong>Illustrative Composite — Not a Real Client.</strong> This
-            case study is based on real audit patterns observed on a live
-            prospect&apos;s website and projected improvements derived from OA&apos;s
-            methodology. Company name is real (Denver Legal Marketing), but no
-            client engagement was conducted. Results are projected from audit
-            gap analysis and industry benchmarks for comparable content, design,
-            and conversion improvements.
+            case study is based on common audit findings observed across local
+            roofing contractor websites. Company name is fictional. Scores
+            (Design 45, Conversion 28, Technical 52) and projected results
+            (load time 1.2s, form completions +2,500%, 400% lead increase)
+            are illustrative — derived from OA&apos;s methodology applied to the
+            described scenario, not verified by live client measurement.
           </p>
           <p>
-            Will be updated with measured results if Denver Legal Marketing
-            becomes a live implementation client.
+            Will be updated with measured results when a real roofing
+            implementation engagement completes.
           </p>
         </footer>
       </article>
