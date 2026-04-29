@@ -1,0 +1,22 @@
+{
+  "id_pattern": "mission-site-audit-<slug>",
+  "template_name": "MISSION_SITE_AUDIT",
+  "version": 1,
+  "purpose": "Audit a single prospect website for revenue-leakage signals before any outreach.",
+  "lead": "marketing",
+  "default_sub_agents": ["engineering","auditor"],
+  "risk_envelope": "green",
+  "inputs": {"target_url":"required","target_buyer":"required","pain_hypothesis":"required"},
+  "expected_artifacts": [
+    {"path":"artifacts/site-audit.md","min_bytes":1500,"required":true},
+    {"path":"artifacts/score-breakdown.json","min_bytes":200,"required":true},
+    {"path":"artifacts/screenshots/","required":false}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","marketing","engineering"],
+  "memory_write":["marketing","auditor"],
+  "approval":{"required":false},
+  "skills_used":["website-seo","seo-competitor-analysis","content-research","multi-search-engine"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true},
+  "notes":"Green-risk: read-only research + draft. Site audits never include cold outreach in the same mission."
+}

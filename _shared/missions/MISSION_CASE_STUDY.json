@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-case-study-<slug>",
+  "template_name":"MISSION_CASE_STUDY",
+  "version":1,
+  "purpose":"Document a delivered piece of work as a buyer-facing case study.",
+  "lead":"marketing",
+  "default_sub_agents":["creative","auditor"],
+  "risk_envelope":"yellow",
+  "inputs":{"engagement_ref":"required","outcome_metrics":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/case-study.md","min_bytes":1500,"required":true},
+    {"path":"artifacts/proof/","required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","marketing"],
+  "memory_write":["marketing"],
+  "approval":{"required":false},
+  "skills_used":["article-writing","business-writing","content-research"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true},
+  "notes":"No fabricated outcomes. Every metric must reference a file under artifacts/proof/."
+}

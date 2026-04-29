@@ -19,6 +19,7 @@ import sys
 import os
 import hashlib
 from datetime import datetime, timezone
+from email_ledger import ensure_schema as ensure_email_ledger_schema, summary as email_ledger_summary
 
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'crm.sqlite')
 
@@ -64,6 +65,7 @@ def get_db():
             description TEXT DEFAULT ''
         )
     """)
+    ensure_email_ledger_schema(db)
     # Seed default scoring criteria if empty
     cursor = db.execute("SELECT COUNT(*) FROM scoring_criteria")
     if cursor.fetchone()[0] == 0:
@@ -345,6 +347,21 @@ def cmd_criteria(args):
     criteria = [dict(r) for r in db.execute("SELECT * FROM scoring_criteria ORDER BY weight DESC").fetchall()]
     print(json.dumps(criteria, indent=2))
 
+def cmd_email_ledger(args):
+    """Report email attempt ledger. Usage: email-ledger [--limit N]"""
+    db = get_db()
+    data = email_ledger_summary(db)
+    limit = 20
+    i = 0
+    while i < len(args):
+        if args[i] == '--limit' and i + 1 < len(args):
+            limit = int(args[i + 1])
+            i += 2
+        else:
+            i += 1
+    data["recent"] = data["recent"][:limit]
+    print(json.dumps(data, indent=2))
+
 COMMANDS = {
     'add-lead': cmd_add_lead,
     'score-lead': cmd_score_lead,
@@ -354,6 +371,7 @@ COMMANDS = {
     'report': cmd_report,
     'search': cmd_search,
     'criteria': cmd_criteria,
+    'email-ledger': cmd_email_ledger,
 }
 
 if __name__ == '__main__':

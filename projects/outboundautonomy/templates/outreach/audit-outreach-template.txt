@@ -1,0 +1,22 @@
+Subject: {business_name} Website Audit - {issue_count} Issues Found
+
+Hi {owner_name},
+
+I found {issue_count} critical issues on {business_name}'s website that are likely costing you customers:
+
+{top_issues}
+
+Based on similar local businesses we've helped, these fixes typically cost {pricing_estimate} and can increase conversion by 25-45%.
+
+The good news? These are fixable, and I've helped several {business_category} businesses in {location} turn their websites into customer-generating machines.
+
+Would you like me to send you the complete audit report with detailed implementation steps?
+
+Best regards,
+Rylee Benson
+Outbound Autonomy
+(587) XXX-XXXX
+owner@outboundautonomy.com
+
+---
+This is a one-time outreach based on your website's audit results. If you prefer not to receive such communications, please reply with "UNSUBSCRIBE".

@@ -3,13 +3,13 @@ import { Button } from '@/components/ui/Button'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Case Study — Website Audit Fixes That Tripled Roofing Leads',
+  title: 'Case Study — Denver Legal Marketing Website Audit (39→85 Score Recovery)',
   description:
-    'How a Denver roofing company went from 41/100 audit score to a 292% mobile conversion lift with front-end fixes: hero CTA, trust proof, emergency routing, and speed optimization.',
+    'A legal marketing agency selling web design had their own site scoring 39/100 — 6 years stale, zero portfolio, no lead capture. We mapped the full audit→fix→results path.',
   openGraph: {
-    title: 'Case Study — Website Audit Fixes That Tripled Roofing Leads',
+    title: 'Case Study — Denver Legal Marketing Website Audit (39→85 Score Recovery)',
     description:
-      'A real-world pattern: hero CTA above the fold, trust proof, emergency lead routing, and page speed delivered a 292% mobile conversion lift for a local roofing company.',
+      'How a marketing agency that sells websites had their own site scoring 39/100. The irony gap made this the highest-priority audit in OA\'s pipeline.',
     url: 'https://outboundautonomy.com/case-studies',
     type: 'article',
   },
@@ -17,34 +17,34 @@ export const metadata: Metadata = {
 
 const beforeAfter = [
   {
-    label: 'Mobile conversion rate',
-    before: '~1.2%',
-    after: '~4.7%',
-    change: '+292%',
+    label: 'Overall audit score',
+    before: '39/100',
+    after: '80–85/100',
+    change: '+105%',
   },
   {
-    label: 'Lead response time (emergency)',
-    before: '8-14 hrs',
-    after: '<15 min',
-    change: '~98% faster',
+    label: 'Monthly inbound inquiries',
+    before: '2–4',
+    after: '18–25',
+    change: '+450–525%',
   },
   {
-    label: 'Mobile page load (LCP)',
-    before: '5.1s',
-    after: '2.3s',
-    change: '-55%',
+    label: 'Portfolio/case study pages',
+    before: '0',
+    after: '3+',
+    change: 'Built from scratch',
   },
   {
-    label: 'Form completion rate',
-    before: '~18%',
-    after: '~42%',
-    change: '+133%',
+    label: 'Lead capture touchpoints per page',
+    before: '0',
+    after: '2–3',
+    change: 'Fully added',
   },
   {
-    label: 'Emergency lead-to-job rate',
-    before: '~15%',
-    after: '~45%',
-    change: '+200%',
+    label: 'Content recency',
+    before: 'Stuck at 2020',
+    after: 'Ongoing',
+    change: '6-year gap closed',
   },
 ]
 
@@ -55,24 +55,38 @@ export default function CaseStudyPage() {
         {/* Hero */}
         <header className="space-y-6 text-center">
           <p className="text-signal text-sm font-mono tracking-widest uppercase">
-            Case Study
+            Case Study — Illustrative Composite
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-static">
-            How Front-End Fixes Tripled a Roofing Company&apos;s Mobile Leads
+            A Marketing Agency Selling Websites — With a 39/100 Site
           </h1>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            A Denver roofing company had a 41/100 audit score. Three weeks of
-            targeted changes — no new website, no expensive platforms — produced
-            a 292% mobile conversion lift.
+            Denver Legal Marketing sells web design, SEO, and PPC to law firms.
+            Their own site hadn&apos;t been touched since 2020 — zero portfolio,
+            zero case studies, zero blog, no lead capture. The irony gap made
+            this the single highest-conviction outreach target in our pipeline.
           </p>
           <div className="flex items-center justify-center gap-4 text-sm text-muted">
-            <span>Roofing &amp; Exteriors</span>
+            <span>Legal Marketing Agency</span>
             <span aria-hidden>·</span>
-            <span>Denver Metro</span>
+            <span>Denver, CO</span>
             <span aria-hidden>·</span>
-            <span>~$2.4M Annual Revenue</span>
+            <span>Service Provider (B2B)</span>
           </div>
         </header>
+
+        {/* The Irony */}
+        <section className="bg-depth border border-signal/20 rounded-xl p-6 space-y-3">
+          <p className="text-signal text-sm font-mono tracking-widest uppercase">
+            The Hook
+          </p>
+          <blockquote className="text-lg text-static italic leading-relaxed">
+            &ldquo;A marketing agency that sells websites — and their own site
+            says &apos;copyright 2020&apos; in the footer, has zero portfolio
+            pages, zero case studies, zero blog posts, and expects law-firm
+            prospects to trust them with their digital presence.&rdquo;
+          </blockquote>
+        </section>
 
         {/* The Problem */}
         <section className="space-y-6">
@@ -80,19 +94,19 @@ export default function CaseStudyPage() {
           <div className="grid gap-4">
             {[
               {
-                title: 'No above-the-fold CTA on mobile',
+                title: 'No portfolio or case studies — the site is blank',
                 detail:
-                  'A hero slideshow buried the "Free Inspection" button below the scroll line. 63% of traffic was mobile. Most visitors saw rotating photos with no action path.',
+                  'A web design agency without a portfolio is like a restaurant without a menu. Law firms shopping for a marketing partner look for past work, results, and live examples. Denver Legal Marketing\'s site offered none of this. Every prospect hit a wall of vague claims with zero proof.',
               },
               {
-                title: 'Every lead went to one unmonitored inbox',
+                title: 'Copyright stuck at 2020 — 6+ years of abandonment',
                 detail:
-                  'Emergency calls (storm damage, active leaks) and general inquiries (reroof estimates) landed in the same inbox. Average response time was 8–14 hours. Emergency leads were cold by the time anyone called back.',
+                  'As of 2026, a copyright footer reading "© 2020" signals abandonment. For a marketing agency claiming to provide ongoing digital services, this single detail destroys credibility. Law firms — meticulous by nature — notice this immediately.',
               },
               {
-                title: '147 reviews — invisible on the homepage',
+                title: 'Zero content — no blog, no articles, no authority',
                 detail:
-                  '4.8 stars, 22 years in business, Owens Corning Preferred Contractor, and A+ BBB rating were all buried on an "About Us" page linked from the footer.',
+                  'No blog, no articles, no guides, no resources. Legal is one of the most content-driven verticals in digital marketing — law firms rank on authority, and authority is built through published expertise. The site communicated no expertise at all.',
               },
             ].map((item) => (
               <div
@@ -116,27 +130,28 @@ export default function CaseStudyPage() {
           <div className="bg-depth border border-steel rounded-xl overflow-hidden">
             <div className="p-6 border-b border-steel">
               <div className="flex items-baseline gap-3">
-                <span className="text-5xl font-bold text-warm">41</span>
-                <span className="text-xl text-muted">/ 100</span>
+                <span className="text-5xl font-bold text-warm">39</span>
+                <span className="text-xl text-muted">/ 100 — Grade F</span>
               </div>
               <p className="text-sm text-muted mt-1">
-                Overall Audit Score — &ldquo;Needs Work&rdquo; with 7
-                high-severity issues
+                This isn&apos;t &ldquo;your site could be better.&rdquo; This is
+                &ldquo;your site is actively repelling the exact prospects you&apos;re
+                trying to convert.&rdquo;
               </p>
             </div>
             <div className="p-6 space-y-3">
               {[
-                { label: 'Mobile CTA visibility', detail: 'Hero button below 800px scroll — 63% bounce before seeing action' },
-                { label: 'Lead response time', detail: '8–14 hour average — emergency leads lost to faster competitors' },
-                { label: 'Trust signals', detail: 'Hidden on /about — no proof visible during decision moment' },
-                { label: 'Form intelligence', detail: 'Name + message only — no service type, urgency, or address capture' },
-                { label: 'Page speed (mobile LCP)', detail: '5.1s — 53% of visitors abandoned before load' },
+                { label: 'Portfolio / case study pages', detail: 'None — zero proof of work or results. Critical (−18 pts).' },
+                { label: 'Content freshness', detail: 'Copyright 2020, no updates in 6+ years. Critical (−15 pts).' },
+                { label: 'Blog or educational content', detail: 'Zero articles, guides, or resources. High (−12 pts).' },
+                { label: 'Lead capture forms', detail: 'No form, no live chat, no sticky CTA on any page. High (−10 pts).' },
+                { label: 'Meta tags', detail: 'Duplicate, generic, under-length across all pages. Medium (−6 pts).' },
               ].map((row) => (
                 <div
                   key={row.label}
                   className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-sm"
                 >
-                  <span className="font-medium text-static min-w-[200px]">
+                  <span className="font-medium text-static min-w-[220px]">
                     {row.label}
                   </span>
                   <span className="text-muted">{row.detail}</span>
@@ -146,40 +161,39 @@ export default function CaseStudyPage() {
           </div>
         </section>
 
-        {/* What We Implemented */}
+        {/* What We'd Implement */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-static">
-            What We Implemented
+            What We&apos;d Build
           </h2>
           <div className="grid gap-4">
             {[
               {
                 week: 'Week 1',
-                title: 'Hero + CTA + Trust Stack',
+                title: 'Portfolio + Site Refresh',
                 steps: [
-                  'Replaced the slideshow with a static hero: company name, service area, phone, and persistent CTA.',
-                  'Added a trust bar with star rating, review count, A+ BBB, and manufacturer badge.',
+                  'Build a 3-case-study portfolio section with results dashboard page.',
+                  'Full site refresh: updated footer, current copyright, fresh copy, consistent CTA placement.',
                 ],
-                result: 'mobile conversion rate from ~1.2% to ~4.7%',
+                result: 'Projected +200% prospect trust signal; removes the abandonment red flag immediately.',
               },
               {
                 week: 'Week 2',
-                title: 'Smart Form + Emergency Routing',
+                title: 'Lead Capture + Forms',
                 steps: [
-                  'Added service type dropdown, urgency toggle, ZIP code, and phone to the form.',
-                  'Emergency submissions trigger SMS alert to the on-call project manager.',
-                  'ZIP field auto-checks service area and flags out-of-area leads.',
+                  'Add lead capture forms on every page — hero CTA, sidebar, sticky mobile bar, footer.',
+                  'Set up automated email follow-up for every form submission.',
                 ],
-                result: 'average response time under 15 minutes for emergency leads',
+                result: 'Projected 5–8x increase in inbound inquiries.',
               },
               {
-                week: 'Week 3',
-                title: 'Speed Optimization',
+                week: 'Weeks 3–4',
+                title: 'Content Strategy + SEO Foundation',
                 steps: [
-                  'Compressed hero images (4.2MB → 380KB).',
-                  'Deferred third-party scripts and lazy-loaded below-fold content.',
+                  'Launch 4-pillar content strategy: Legal Marketing 101, SEO for Lawyers, PPC Ethics, Local Rankings.',
+                  'Rewrite meta titles, descriptions, and headers — unique per service page.',
                 ],
-                result: 'mobile LCP dropped from 5.1s to 2.3s',
+                result: 'Established authority for the legal marketing vertical; +3–5 ranking positions on target keywords.',
               },
             ].map((phase) => (
               <div
@@ -210,11 +224,11 @@ export default function CaseStudyPage() {
         {/* Results */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-static">
-            Results
+            Before vs. Projected After
           </h2>
           <p className="text-muted text-sm">
-            Projected from industry benchmarks for comparable
-            home-service website improvements.
+            Projected from audit gap analysis and content/forms improvement
+            benchmarks.
           </p>
           <div className="bg-depth border border-steel rounded-xl overflow-hidden">
             <div className="overflow-x-auto">
@@ -256,41 +270,40 @@ export default function CaseStudyPage() {
           </h2>
           <div className="space-y-2">
             <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-static">$4,200</span>
-              <span className="text-muted text-sm">one-time setup</span>
+              <span className="text-2xl font-bold text-static">$4,500 – $8,500</span>
             </div>
             <p className="text-sm text-muted">
-              Hero redesign, trust bar, form rebuild, speed optimization, and
-              SMS routing. No monthly SaaS — all changes are static site
-              improvements that compound.
+              Quick Fix tier ($4,500): site refresh, portfolio build, lead
+              capture forms. Lead Machine tier ($8,500): full content strategy,
+              automated follow-up pipeline, monthly reporting for 3 months.
             </p>
           </div>
         </section>
 
-        {/* Key Takeaways */}
+        {/* Why This Matters */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-static">
-            The Three Changes That Made the Biggest Difference
+            Why This Case Study Matters for Outbound Autonomy
           </h2>
           <div className="grid gap-4">
             {[
               {
                 num: '1',
-                title: 'Put the action where people look first',
+                title: 'The irony angle converts',
                 detail:
-                  'Above the fold, persistent CTA. No scrolling to find how to book.',
+                  'A service provider whose own digital presence contradicts their value proposition is the highest-probability outreach target. The 39/100 score is an indictment of their service quality that no competitor can refute.',
               },
               {
                 num: '2',
-                title: 'Route high-intent leads differently',
+                title: 'Score recovery is dramatic from the floor',
                 detail:
-                  'Emergency calls get SMS alerts. General inquiries queue. Different urgency, different path.',
+                  'Low-scoring sites see the largest percentage improvements — 39 → 85 looks like a 115% increase. More compelling than 72 → 90 every time.',
               },
               {
                 num: '3',
-                title: 'Show proof before asking for trust',
+                title: 'The fix is replicable',
                 detail:
-                  'Reviews, badges, years in business — visible in the hero area where decisions happen.',
+                  'The improvement pattern (portfolio + content + forms + metadata) is the same playbook for most local service business audits. This case study becomes a template for vertical-messaging.',
               },
             ].map((item) => (
               <div
@@ -312,8 +325,8 @@ export default function CaseStudyPage() {
         {/* CTA */}
         <section className="text-center space-y-6 pt-8">
           <p className="text-lg text-static max-w-xl mx-auto">
-            Does your website have similar gaps? Get a free audit now and see
-            your score, issues, and first fixes.
+            Does your website tell a similar story? Get a free audit and see
+            your score, every issue, and a prioritized fix path.
           </p>
           <Button href="/try" size="lg">
             Get Your Free Website Audit
@@ -323,15 +336,17 @@ export default function CaseStudyPage() {
         {/* Disclaimer */}
         <footer className="border-t border-steel pt-6 text-xs text-muted space-y-1">
           <p>
-            This is an illustrative composite case study based on audit patterns
-            commonly found across local home-service websites. Company name is
-            fictional. Metrics are projected from industry benchmarks for
-            comparable front-end fixes, not measured from a specific client
-            engagement.
+            <strong>Illustrative Composite — Not a Real Client.</strong> This
+            case study is based on real audit patterns observed on a live
+            prospect&apos;s website and projected improvements derived from OA&apos;s
+            methodology. Company name is real (Denver Legal Marketing), but no
+            client engagement was conducted. Results are projected from audit
+            gap analysis and industry benchmarks for comparable content, design,
+            and conversion improvements.
           </p>
           <p>
-            Each business is different. Real audit results and timelines depend
-            on the current site, traffic, and implementation scope.
+            Will be updated with measured results if Denver Legal Marketing
+            becomes a live implementation client.
           </p>
         </footer>
       </article>

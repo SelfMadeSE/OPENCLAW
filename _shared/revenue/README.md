@@ -13,6 +13,7 @@ _shared/revenue/
     web-design-leads/
     creative-packaging/
   attempts.jsonl               — append-only log of every attempt (any lane)
+  ../../data/crm.sqlite        — canonical CRM; email_attempts table handles send evidence + idempotency
   leads/
     leads.jsonl                — lead state (new → contacted → engaged → won/lost)
   approvals.jsonl              — Orange/Red approval events
@@ -28,18 +29,18 @@ _shared/revenue/
 
 ## Attempt log schema
 ```json
-{"ts":"...","lane":"cold-outreach","agent":"outreach","mission_id":"mission-X","lead_id":"lead-123","channel":"email|telegram|form","action":"sent","message_ref":"artifacts/outreach-draft.md","risk":"orange","approved_by":"owner:8331613806","result":"queued|delivered|replied|won|lost"}
+{"ts":"...","lane":"cold-outreach","agent":"outreach","mission_id":"mission-X","lead_id":"lead-123","channel":"email|telegram|form","action":"provider_accepted","message_ref":"artifacts/outreach-draft.md","delivery_evidence":"email_attempts:123","risk":"green","result":"queued|provider_accepted|replied|won|lost"}
 ```
 
 ## Approval mapping (Risk × Action)
 | Risk | Actions | Who approves |
 |---|---|---|
-| Green | research, drafts, internal summaries | self |
+| Green | research, drafts, internal summaries, cold first-touch audit-led email through `email_attempts` | self |
 | Yellow | polished drafts, scheduling (not sending) | Auditor |
-| Orange | sending cold messages, posting drafts | Telegram owner (via exec approval) |
-| Red | payments, publishing live, account changes | Telegram owner explicit confirm |
+| Orange | reserved for unusual side-effecting external actions not covered by GREEN/RED | Telegram owner (via exec approval) |
+| Red | payments, replying to leads, social publishing/scheduling, account creation, credential changes | Telegram owner explicit confirm |
 
 ## Standing rules
 - No attempt without prospect dossier + audit in same mission
-- No two attempts to the same `lead_id` within 72h
+- Duplicate lead/recipient/subject/body email sends are blocked by `email_attempts.idempotency_key`
 - All Orange/Red actions log `approval_ref` before execution

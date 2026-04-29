@@ -1,0 +1,21 @@
+{
+  "id_pattern":"mission-pilot-offer-<slug>",
+  "template_name":"MISSION_PILOT_OFFER",
+  "version":1,
+  "purpose":"Construct a pilot-offer package (scope, price, timeline, SLA) for a target persona.",
+  "lead":"marketing",
+  "default_sub_agents":["engineering","outreach","auditor"],
+  "risk_envelope":"yellow",
+  "inputs":{"target_persona":"required","lane":"required","price_range":"required"},
+  "expected_artifacts":[
+    {"path":"artifacts/pilot-offer.md","min_bytes":1200,"required":true},
+    {"path":"artifacts/scope-of-work.md","min_bytes":800,"required":true},
+    {"path":"artifacts/pricing.json","min_bytes":150,"required":true}
+  ],
+  "scoring_schema":"default-v1",
+  "memory_read":["shared","marketing","engineering"],
+  "memory_write":["marketing"],
+  "approval":{"required":false},
+  "skills_used":["sales-mastery","business-writing","Market Research Agent"],
+  "completion":{"all_artifacts_present":true,"audit_pass":true}
+}
