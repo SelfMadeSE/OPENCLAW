@@ -145,6 +145,17 @@ const posts: BlogPostMeta[] = [
     ctaVariant: "A",
     wordCount: 1200,
   },
+  {
+    slug: "from-audit-to-booking",
+    title: "From Audit to Booking: The Full Service Business Workflow",
+    description:
+      "A website doesn't generate customers by itself. It's the first link in a chain — audit, fix, automate, track, book. Here's how that chain works from start to finish.",
+    date: "2026-04-29",
+    cluster: "Business Case / ROI (Capstone)",
+    keywords: ["service business website workflow", "website audit to booking", "online booking for contractors", "service business lead generation system", "website to customer pipeline"],
+    ctaVariant: "A",
+    wordCount: 1600,
+  },
 ]
 
 export function getBlogPosts(): BlogPostMeta[] {

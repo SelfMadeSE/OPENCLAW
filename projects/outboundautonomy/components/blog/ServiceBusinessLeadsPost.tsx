@@ -1,7 +1,7 @@
 export default function ServiceBusinessLeadsPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Most service business websites have the same 2-3 problems: no clear CTA, no lead form, and no local trust signals. A free website audit finds these in under 2 minutes — no email required.</p>
 
@@ -73,6 +73,15 @@ export default function ServiceBusinessLeadsPost() {
       </ol>
 
       <p>If any of these fail, the audit will show you what to change and in what order — and give you a flat price to implement it.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+  <li><a href="/blog/cta-deep-dive" className="text-signal hover:underline">The CTA Fix That Changes Everything</a></li>
+  <li><a href="/blog/form-deep-dive" className="text-signal hover:underline">The One Form Every Service Business Website Needs Above the Fold</a></li>
+</ul>
     </>
   )
-}
+    }

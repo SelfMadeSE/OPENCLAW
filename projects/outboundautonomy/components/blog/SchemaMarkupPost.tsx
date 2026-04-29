@@ -1,7 +1,7 @@
 export default function SchemaMarkupPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Schema markup is code you add to your site that tells Google exactly who you are, what you do, and where you serve. Most service businesses don&apos;t have it. The ones that do rank higher in local pack results.</p>
 
@@ -63,6 +63,15 @@ export default function SchemaMarkupPost() {
       <p>It&apos;s a one-time setup that compounds every time someone searches for your service.</p>
 
       <p><strong>Our audit checks for schema as part of your Technical score. Enter your URL. If it&apos;s missing, we&apos;ll flag it immediately.</strong></p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/local-seo-starter-kit" className="text-signal hover:underline">Local SEO Starter Kit for HVAC, Plumbing & Electrical</a></li>
+  <li><a href="/blog/grande-prairie-local-seo-google-maps" className="text-signal hover:underline">Why Your Grande Prairie Business Isn't Showing Up on Google Maps</a></li>
+  <li><a href="/blog/service-business-website-cost-2026" className="text-signal hover:underline">How Much Should a Service Business Website Cost in 2026?</a></li>
+</ul>
     </>
   )
-}
+    }

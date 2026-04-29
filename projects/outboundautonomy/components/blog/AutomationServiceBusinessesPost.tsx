@@ -1,7 +1,7 @@
 export default function AutomationServiceBusinessesPost() {
   return (
     <>
-      <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
+            <p className="text-sm text-muted italic">By Outbound Autonomy — Last updated April 2026</p>
 
       <p><strong>TL;DR:</strong> Your website audit found a leak. The fix isn&apos;t a prettier page — it&apos;s automation that closes the gap between a lead filling out a form and a tech showing up.</p>
 
@@ -151,6 +151,15 @@ export default function AutomationServiceBusinessesPost() {
       <p><em>Next in this series: From Audit to Booking — the full workflow for service businesses who want their website to actually produce customers.</em></p>
 
       <p>Want to know exactly where your automation is leaking? <strong>Enter your URL.</strong> We&apos;ll scan your forms, response time, and lead tracking — and show you what&apos;s missing.</p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/service-business-website-cost-2026" className="text-signal hover:underline">How Much Should a Service Business Website Cost in 2026?</a></li>
+  <li><a href="/blog/from-audit-to-booking" className="text-signal hover:underline">From Audit to Booking: The Full Service Business Workflow</a></li>
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+</ul>
     </>
   )
-}
+    }

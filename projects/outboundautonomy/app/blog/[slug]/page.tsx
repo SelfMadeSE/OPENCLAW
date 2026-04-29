@@ -2,6 +2,8 @@ import { notFound } from "next/navigation"
 import { getBlogPost, getBlogSlugs } from "@/lib/blog-posts"
 import { Container, Section } from "@/components/ui"
 import SiteAuditTool from "@/components/site-audit/SiteAuditTool"
+import RelatedPosts from "@/components/blog/RelatedPosts"
+import ArticleJsonLd from "@/components/blog/ArticleJsonLd"
 import Link from "next/link"
 import FourSignalsPost from "@/components/blog/FourSignalsPost"
 import FreeAuditChecksPost from "@/components/blog/FreeAuditChecksPost"
@@ -15,6 +17,7 @@ import SchemaMarkupPost from "@/components/blog/SchemaMarkupPost"
 import LocalSEOStarterKitPost from "@/components/blog/LocalSEOStarterKitPost"
 import WebsiteCostPost from "@/components/blog/WebsiteCostPost"
 import AutomationServiceBusinessesPost from "@/components/blog/AutomationServiceBusinessesPost"
+import AuditToBookingPost from "@/components/blog/AuditToBookingPost"
 
 // Map slug to component — each post gets its own rich component
 const postComponents: Record<string, React.ComponentType> = {
@@ -30,6 +33,7 @@ const postComponents: Record<string, React.ComponentType> = {
   "local-seo-starter-kit": LocalSEOStarterKitPost,
   "service-business-website-cost-2026": WebsiteCostPost,
   "automation-for-service-businesses": AutomationServiceBusinessesPost,
+  "from-audit-to-booking": AuditToBookingPost,
 }
 
 export function generateStaticParams() {
@@ -39,6 +43,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = getBlogPost(params.slug)
   if (!post) return { title: "Not Found" }
+  const ogImage = `https://outboundautonomy.com/og/blog/${post.slug}.png`
   return {
     title: `${post.title} | Outbound Autonomy Blog`,
     description: post.description,
@@ -47,11 +52,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
       description: post.description,
       type: "article",
       url: `https://outboundautonomy.com/blog/${post.slug}`,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${post.title} | Outbound Autonomy Blog`,
       description: post.description,
+      images: [ogImage],
     },
   }
 }
@@ -103,6 +110,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 <span>·</span>
                 <span>{post.wordCount.toLocaleString()} words</span>
               </div>
+
+              {/* JSON-LD Article Schema */}
+              <ArticleJsonLd post={post} />
             </div>
           </Section>
         </Container>
@@ -116,6 +126,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <article className="prose prose-invert prose-lg max-w-none">
                 {PostContent ? <PostContent /> : <p>Content coming soon.</p>}
               </article>
+
+              {/* Internal Links — Pillar-Cluster Architecture */}
+              <RelatedPosts currentSlug={post.slug} cluster={post.cluster} />
             </div>
           </Section>
         </Container>

@@ -1,7 +1,7 @@
 export default function FourSignalsPost() {
   return (
     <>
-      <p className="lead text-xl text-muted">
+            <p className="lead text-xl text-muted">
         Most &quot;audits&quot; are fluff. Here&apos;s what actually determines whether your site drives calls — or drives visitors away.
       </p>
 
@@ -117,6 +117,15 @@ export default function FourSignalsPost() {
       <p>These tools aren&apos;t wrong — they&apos;re just incomplete. They measure what&apos;s measurable in a lab environment, not what matters in a real purchasing decision.</p>
 
       <p><em>Scores are estimated based on automated analysis of page content, structure, performance, and conversion elements. No automated tool catches everything.</em></p>
+
+      <hr className="my-12 border-steel/20" />
+
+<h3 className="text-xl font-bold text-static">Related Articles</h3>
+<ul className="text-sm text-muted space-y-2">
+  <li><a href="/blog/free-website-audit-what-it-checks" className="text-signal hover:underline">What a Free Website Audit Actually Checks (tools comparison)</a></li>
+  <li><a href="/blog/how-to-read-website-audit-score" className="text-signal hover:underline">How to Read Your Website Audit Score (score breakdown guide)</a></li>
+  <li><a href="/blog/website-leaking-leads-pillar" className="text-signal hover:underline">Why Your Service Business Website Is Leaking Leads</a></li>
+</ul>
     </>
   )
-}
+    }
