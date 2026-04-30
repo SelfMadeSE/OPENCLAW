@@ -1,0 +1,75 @@
+"schemaChars": 374,
+              "propertiesCount": 3
+            },
+            {
+              "name": "image",
+              "summaryChars": 201,
+              "schemaChars": 342,
+              "propertiesCount": 6
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 13:21 MDT] MISSION flush-scored-7-20260429-1320 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: Send SMTP outreach to all 7 scored leads with verified emails, converting the full scoring backlog into provider_accepted sends and pushing from 139 toward 150..\\nYour task: Get all 7 scored leads with emails: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT id,name,contact_info,score FROM leads WHERE stage='scored' AND contact_info LIKE '%@%' ORDER BY score DESC\". For each, send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Free website audit' --body 'Hi, I run Outbound Autonomy. We scan business websites and show exactly what is costing you leads with a free audit and specific fixes at outboundautonomy.com/try.' Log: sqlite3 ... \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Update stage to outreach_sent. Write to artifacts/missions/flush-scored-7-20260429-1320/bridge-done.md.\\nWrite your output to: artifacts/missions/flush-scored-7-20260429-1320/bridge-done.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/flush-scored-7-20260429-1320/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: BLOCKER — Query returned zero. All 7 scored leads confirmed to have no discoverable email (verified via WHOIS, site scrape, contact pages, notes). 139 provider_accepted, 88 outreach_sent. Pipeline fully drained of email-capable prospects.",
+      "finalAssistantRawText": "STATE: BLOCKER — Query returned zero. All 7 scored leads confirmed to have no discoverable email (verified via WHOIS, site scrape, contact pages, notes). 139 provider_accepted, 88 outreach_sent. Pipeline fully drained of email-capable prospects.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-flash",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 7,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

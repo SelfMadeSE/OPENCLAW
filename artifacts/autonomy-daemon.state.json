@@ -1,16 +1,16 @@
 {
-  "ts": "2026-04-29T17:14:04.051878+00:00",
-  "last_cycle": 45,
+  "ts": "2026-04-29T22:23:38.554807+00:00",
+  "last_cycle": 99,
   "last_mission": {
-    "mission_id": "reply-check-v2-20260429-1112",
+    "mission_id": "flush-queue-28-20260429-1620",
     "slices": [
       {
         "slice": 1,
         "agent": "outreach",
         "status": "ok",
-        "expected": "bridge-reply.md"
+        "expected": "bridge-results.md"
       }
     ],
-    "completed_at": "2026-04-29T17:14:04.051730+00:00"
+    "completed_at": "2026-04-29T22:23:38.554651+00:00"
   }
 }

@@ -1,0 +1,170 @@
+{
+  "prospects": {
+    "high-impact-roofing-20260430-061139": {
+      "businessName": "High Impact Roofing",
+      "niche": "Roofing Contractor / Residential & Commercial",
+      "website": "https://www.highimpactco.com",
+      "source": "Google Search → \"Denver roofing contractor company website\"",
+      "description": "Denver roofing contractor (repair, replacement, commercial, HOA). .co TLD, bare-bones homepage — single text block. No contact form, no CTAs, no portfolio, no trust badges, no phone visible. Site reads like an About paragraph, not a landing page.",
+      "contact": {
+        "phone": "",
+        "email": "",
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "prospect_id": "high-impact-roofing-20260430-061139",
+      "created_at": "2026-04-30T06:11:39.417666",
+      "updated_at": "2026-04-30T06:11:39.417667",
+      "status": "new"
+    },
+    "kg-facility-solutions-20260430-061428": {
+      "businessName": "KG Facility Solutions",
+      "niche": "Commercial Cleaning / Janitorial Services",
+      "website": "https://www.kgfs.co",
+      "source": "Google Search → Denver commercial cleaning company",
+      "description": "Denver commercial cleaning and janitorial services. Website uses .co TLD. No contact form visible, no prominent CTAs, text-heavy with sparse design. Missing lead capture and conversion elements.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "kg-facility-solutions-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "simple-cleaning-20260430-061428": {
+      "businessName": "Simple Cleaning",
+      "niche": "Commercial Cleaning / Janitorial Services",
+      "website": "https://www.simplecleaning.co",
+      "source": "Google Search → Denver commercial cleaning company",
+      "description": "Denver commercial cleaning service. .co TLD, basic design, unclear quote/booking funnel, no pricing visible. Weak conversion path.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "simple-cleaning-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "aspire-technology-solutions-20260430-061428": {
+      "businessName": "Aspire Technology Solutions",
+      "niche": "IT Services / Managed Service Provider",
+      "website": "https://www.aspiredenver.com",
+      "source": "Google Search → Denver IT support managed services",
+      "description": "Denver MSP / IT services. No visible lead form on homepage, no pricing packages, text-heavy content, no client logos or social proof. Missing conversion-focused design.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "aspire-technology-solutions-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "outsource-it-20260430-061428": {
+      "businessName": "Outsource IT",
+      "niche": "IT Services / Managed Service Provider",
+      "website": "https://www.outsourceit.com",
+      "source": "Google Search → Denver IT support managed services",
+      "description": "Denver MSP with extremely dated website design (2010-era aesthetic). Uses .html page extensions, no modern conversion elements, no visible lead capture mechanism.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "outsource-it-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "evara-events-design-20260430-061428": {
+      "businessName": "Evara Events Design",
+      "niche": "Event Planning / Wedding Planning",
+      "website": "https://www.evaraeventsdesign.com",
+      "source": "Google Search → Denver event planning wedding planner",
+      "description": "Denver event and wedding planning. Extremely thin homepage content, no portfolio visible, no clear booking workflow, weak SEO presence.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "evara-events-design-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "colorado-roofing-company-20260430-061428": {
+      "businessName": "Colorado Roofing Company",
+      "niche": "Roofing Contractor / Residential & Commercial Roofing",
+      "website": "https://coloradoroofingcompany.com",
+      "source": "Google Search → Denver roofing contractor company website",
+      "description": "Established Denver roofing contractor. Website has keyword-stuffed, repetitive content with dated design. No portfolio/gallery, no trust badges, basic phone-only CTA. Content reads as SEO filler rather than persuasive copy.",
+      "contact": {
+        "phone": "303-329-6363",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Phone listed on website. Email unverified."
+      },
+      "status": "new",
+      "prospect_id": "colorado-roofing-company-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:15:32.580375"
+    },
+    "denver-lawn--landscape-20260430-061428": {
+      "businessName": "Denver Lawn & Landscape",
+      "niche": "Landscaping / Lawn Care Services",
+      "website": "https://www.denverlawnlandscape.com",
+      "source": "Google Search → Denver landscaping lawn care company website",
+      "description": "Woman-owned Denver landscaping company. Extremely thin website — ~3 paragraphs on homepage. No portfolio images, no contact form, no CTAs, no service detail pages. Zero conversion engineering; essentially a placeholder site.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "denver-lawn--landscape-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "sundog-electric-20260430-061428": {
+      "businessName": "Sundog Electric",
+      "niche": "Residential & Commercial Electrical Services",
+      "website": "https://www.sundogelectric.com",
+      "source": "Google Search → Denver electrician residential company website",
+      "description": "Littleton/Denver electrician with generic template website. Services section has placeholder text: 'Here are four services Sundog Electric LLC can offer' with no actual descriptions. Testimonials and portfolio sections appear empty/unpopulated. Template appears unfinished.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "sundog-electric-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "williams-and-sons-electric-20260430-060815": {
+      "prospect_id": "williams-and-sons-electric-20260430-060815",
+      "businessName": "Williams and Sons Electric",
+      "niche": "Residential Electrical Services / Electrician",
+      "website": "https://www.denverhomeelectricians.com",
+      "source": "Google Search → Denver electrician residential company website",
+      "description": "Long-standing Denver electrician (since 1957). Extremely thin website — the homepage is essentially one paragraph of text plus a phone number. No service breakdown, no project photos, no about page detail, no testimonials, no lead capture form beyond a link to a generic estimate page. Major missed opportunity for a company with 65+ years of history.",
+      "contact": {
+        "phone": "303-762-9484",
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Phone listed. Email unverified."
+      },
+      "status": "new",
+      "created_at": "2026-04-30T06:08:15",
+      "updated_at": "2026-04-30T06:15:24.750148"
+    }
+  },
+  "last_updated": "2026-04-30T06:15:32.580387",
+  "version": "1.0"
+}

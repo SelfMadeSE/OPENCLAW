@@ -3,6 +3,7 @@
 
 import json
 import os
+import shutil
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -32,8 +33,29 @@ class CRMManager:
                     return json.load(f)
             except (json.JSONDecodeError, IOError) as e:
                 print(f"Warning: Could not load CRM data: {e}", file=sys.stderr)
+                # Try to recover by finding the first complete JSON object
+                try:
+                    with open(self.crm_data_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                    decoder = json.JSONDecoder()
+                    data, _ = decoder.raw_decode(content)
+                    if 'prospects' in data:
+                        # Backup corrupted file before recovery
+                        backup_path = self.crm_data_path.with_suffix('.json.bak')
+                        import shutil
+                        shutil.copy2(self.crm_data_path, backup_path)
+                        print(f"Recovered {len(data.get('prospects', {}))} prospects from partially corrupted file. Backup saved to {backup_path}", file=sys.stderr)
+                        return data
+                except Exception as recovery_error:
+                    print(f"Recovery failed: {recovery_error}", file=sys.stderr)
+                    # Backup corrupted file so we don't lose it
+                    backup_path = self.crm_data_path.with_suffix('.json.bak')
+                    import shutil
+                    shutil.copy2(self.crm_data_path, backup_path)
+                    print(f"Backed up corrupted CRM to {backup_path}", file=sys.stderr)
         
         # Create new CRM structure
+        print("CRITICAL: Creating new empty CRM. Prior data may be lost.", file=sys.stderr)
         return {
             "prospects": {},
             "last_updated": datetime.now().isoformat(),

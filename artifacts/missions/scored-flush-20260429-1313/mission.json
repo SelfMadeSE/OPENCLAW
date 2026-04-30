@@ -1,0 +1,18 @@
+{
+  "mission_id": "scored-flush-20260429-1313",
+  "goal": "Send SMTP outreach to the 7 scored leads, converting the full scoring backlog into provider_accepted sends and pushing past 145.",
+  "success_criteria": [
+    "All 7 scored leads with verified emails sent via SMTP with provider_accepted evidence",
+    "provider_accepted count advances from 139 by at least 5"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Get all 7 scored leads: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT id,name,contact_info,score,notes FROM leads WHERE stage='scored' AND contact_info LIKE '%@%' ORDER BY score DESC\". For each with a verified email, send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Free website audit for <name>' --body 'Hi, I run Outbound Autonomy. We scan business websites and show exactly what is costing you leads with a free audit and specific fixes at outboundautonomy.com/try.' Log each to ledger and update stage to outreach_sent. Write results to artifacts/missions/scored-flush-20260429-1313/bridge-results.md with before/after counts.",
+      "expected_artifact": "bridge-results.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "CRM visibility restored \u2014 7 scored leads at avg 50 score, pre-researched, ready to convert. Daemon is handling new prospect scoring autonomously. This mission targets the existing scored backlog. 139\u2192144+ gets us to the 150 milestone within reach."
+}

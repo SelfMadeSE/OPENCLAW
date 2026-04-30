@@ -1,0 +1,18 @@
+{
+  "mission_id": "audit-unverified-claim-20260429-1402",
+  "goal": "Investigate the new unverified_claim email_attempt row, determine if it was a real CDP send or a phantom claim, and flag if it needs SMTP re-send.",
+  "success_criteria": [
+    "New unverified_claim row identified with lead_id, recipient, and source",
+    "Determination: phantom (needs SMTP re-send) or real CDP send (needs manual verification)"
+  ],
+  "slices": [
+    {
+      "agent": "auditor",
+      "task": "Investigate the new unverified_claim row: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT id,lead_id,recipient,provider,sender,status,error,provider_message_id,created_at FROM email_attempts WHERE status='unverified_claim' ORDER BY id DESC LIMIT 3\". Check if this is a new row (id > 7) or one of the original 7 batch. If new: trace the lead_id back to CRM to find the prospect name and score. Check if there's a matching sending artifact in outreach/artifacts/. Determine: is this a real CDP send attempt that needs SMTP re-send for evidence, or a phantom claim? Write findings to artifacts/missions/audit-unverified-claim-20260429-1402/sentinel-findings.md with: row details, lead context, determination, and recommended action (re-send via SMTP / ignore / flag for operator).",
+      "expected_artifact": "sentinel-findings.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "A new unverified_claim appeared in the ledger \u2014 first status change in the claims category in hours. This could be a CDP send (bad evidence) or a daemon artifact. Either way, it needs audit. If it's a real send without SMTP evidence, re-sending via SMTP converts a suspect claim into a verified send. 1-slice green mission \u2014 read-only investigation."
+}

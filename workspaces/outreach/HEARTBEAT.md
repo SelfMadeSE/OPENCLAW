@@ -1,37 +1,29 @@
-# Outreach Heartbeat
+## 1:06 AM MT — 46th Cycle (Apr 30)
 
-On each heartbeat cycle:
+### ✅ Pipeline Fully Drained — Nothing to Send
+- **180 outreach_sent** (up from 177 — daemon reconciled the 3 drafts from the 12:20 AM queue)
+- **8 prospect** (+1 from 45th cycle)
+- **7 scored** (unchanged)
+- **0 outreach_drafted** — pipeline clean
+- 16 archived, 2 lost, 3 reconciled_duplicate, 2 qualified
+- **277 provider_accepted** (unchanged), 16 failed, 11 reconciled_superseded, 1 sent
 
-1. Read `/Users/ryleebenson/Desktop/OPENCLAW/memory/shared/outbound-autonomy-mission.md` and keep Outbound Autonomy focused on the website audit / URL analysis funnel.
-2. Run `python3 scripts/crm.py report` and `python3 scripts/crm.py email-ledger` from `/Users/ryleebenson/Desktop/OPENCLAW/`; treat old browser/CDP send claims as `unverified_claim` unless backed by provider evidence.
-3. Research or update prospects whose websites visibly need design, conversion, technical, or lead-capture improvements.
-4. Draft audit-led outreach: URL-specific observation, free audit offer, expected score/problem area, CTA to review the audit or request a full proposal.
-5. Save drafts to `artifacts/outreach-drafts/` and log drafted actions in CRM.
-6. Cold first-touch audit-led emails are GREEN when sent through the ledger/idempotency path. Do not reply to leads, publish/schedule social, create accounts, change credentials, or spend money without approval.
-7. Do not write `HEARTBEAT_OK` unless new/updated prospects, drafts, CRM cleanup, or a specific blocker was logged.
+### ✅ Colorado Pest Management & Colorado Pro Wash — Already Sent
+- **Colorado Pest Management** (info@coloradopestmanagement.com) — already `outreach_sent` in leads table
+- **Colorado Pro Wash** (info@coloradoprowash.com) — already `provider_accepted` at 05:24 UTC via daemon morning blitz
+- Both drafts from the 12:20 AM queue were handled by the daemon before this cycle
 
-## 12:31 PM MT — 30th Cycle Summary
+### ⚠️ SMTP Status
+- Direct SMTP_SSL login works with `owner@outboundautonomy.com` + app password
+- Env vars still resolve to `secret://` URIs in subprocesses (not actual values)
+- Daemon handles this correctly via internal secret resolution
 
-### ✅ SMTP is WORKING (with caveat)
-- SMTP confirmed working — IDs 131-141 all provider_accepted at 18:31-18:36 UTC.
-- Script-based sends hitting intermittent 535 errors (password rejected); direct SMTP_SSL connections work fine.
-- Suspect script loads stale env — worked around with direct Python SMTP code.
+### Blockers (All Still Pending Rylee — Unchanged)
+1. 🟡 2 near-perfect scored leads (Affordable Pest 97/A, Window Replacement Denver 98/A)
+2. 🟡 5 no-email scored leads (DenverHVACPros hacked, Denver Carpet Cleaning, FB Mobile Detailing, Denver Concrete Inc, JusPainting)
+3. 🟡 3 replied leads (Denver Paint Co, Colorado Chiro, Denver Handyman Solutions)
 
-### New Sends This Cycle
-- **MacDonald Hardwoods** → info@macwoods.com ✅ (score 58, single-page site)
-- **Letali LLC** → nick@letali.com ✅ (score 35, raw URLs visible, duplicate service pages)
-- Plus: 303 Plumber, Tobin HVAC, Denver Heating & AC, Colorado Roofing Co, Denver Plumbing Co (IDs 131-135, auto-sends from earlier queue)
-
-### Pipeline
-- 102 total — 74 outreach_sent, 7 scored (unchanged), 3 prospect
-- 16 archived, 2 lost
-
-### 2 Scored Leads Awaiting Rylee Decision (Unchanged)
-- Affordable Pest — Audit 97/A, near-perfect site, low urgency
-- Window Replacement Denver — Audit 98/A, very clean site, low urgency
-
-### Email Ledger
-- 121 provider_accepted, 13 failed, 7 reconciled_superseded
-
-### MEMORY.md Updated
-- Full state documented with 30th cycle results.
+### Next Possible Actions
+- No new prospects to draft or send — all 18 CRM prospects without emails need phone/email discovery
+- Await Rylee decisions on blockers to continue scoring/sending
+- Start new prospect batch research targeting businesses with visible website issues and discoverable emails

@@ -1,0 +1,68 @@
+
+            },
+            {
+              "name": "pdf",
+              "summaryChars": 275,
+              "schemaChars": 400,
+              "propertiesCount": 6
+            },
+            {
+              "name": "browser",
+              "summaryChars": 1066,
+              "schemaChars": 2799,
+              "propertiesCount": 48
+            },
+            {
+              "name": "code_execution",
+              "summaryChars": 139,
+              "schemaChars": 199,
+              "propertiesCount": 1
+            },
+            {
+              "name": "x_search",
+              "summaryChars": 184,
+              "schemaChars": 823,
+              "propertiesCount": 7
+            }
+          ]
+        }
+      },
+      "finalPromptText": "[Wed 2026-04-29 14:06 MDT] MISSION smtp-credential-alert-20260429-1404 \\u2014 slice 1/1.\\nLead is NEXUS. Goal: Verify whether the Gmail SMTP app password has actually expired and quantify the blast radius \\u2014 how many of the 139 provider_accepted sends are at risk of follow-up failure..\\nYour task: Step 1: Test SMTP right now: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to owner@outboundautonomy.com --subject 'SMTP credential test' --body 'Testing Gmail app password validity \\u2014 2026-04-29 14:04 MDT'. Capture the full output including any 535 error. Step 2: Check the last 5 successful sends for timing: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,recipient,status,created_at FROM email_attempts WHERE status=\"provider_accepted\" ORDER BY id DESC LIMIT 5'. Step 3: Write findings to artifacts/missions/smtp-credential-alert-20260429-1404/forge-smtp-test.md with: test result (working/expired), last successful send timestamp, and blast radius assessment. If SMTP is expired, this is ORANGE \\u2014 the heartbeat action #331 already documented the 535 error, but we need independent verification before alerting.\\nWrite your output to: artifacts/missions/smtp-credential-alert-20260429-1404/forge-smtp-test.md\\nUse absolute path /Users/ryleebenson/Desktop/OPENCLAW/artifacts/missions/smtp-credential-alert-20260429-1404/.\\nHard wall actions are forbidden: payment_live, ads_spend, trading_live, betting_live, gambling, withdraw, deposit, credential_change, destructive_fs.\\nEverything else is in-policy. Do NOT ask the operator anything. End with a single line: STATE: PROCEED|APPROVAL_REQUEST|BLOCKER and one-line summary.",
+      "finalAssistantVisibleText": "STATE: PROCEED — SMTP credentials are valid, not expired. Test send authenticated successfully (attempt #161, provider_accepted). Last 5 sends all succeeded within the past 1.5 hours. Blast radius: 140 provider_accepted sends would be at risk if credentials expire, but currently zero risk. No escalation needed.",
+      "finalAssistantRawText": "STATE: PROCEED — SMTP credentials are valid, not expired. Test send authenticated successfully (attempt #161, provider_accepted). Last 5 sends all succeeded within the past 1.5 hours. Blast radius: 140 provider_accepted sends would be at risk if credentials expire, but currently zero risk. No escalation needed.",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "deepseek",
+        "winnerModel": "deepseek-v4-pro",
+        "attempts": [
+          {
+            "provider": "deepseek",
+            "model": "deepseek-v4-pro",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "authMode": "auth-profile",
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 7,
+        "tools": [
+          "exec",
+          "write"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      }
+    }
+  }
+}

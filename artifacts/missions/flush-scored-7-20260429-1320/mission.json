@@ -1,0 +1,18 @@
+{
+  "mission_id": "flush-scored-7-20260429-1320",
+  "goal": "Send SMTP outreach to all 7 scored leads with verified emails, converting the full scoring backlog into provider_accepted sends and pushing from 139 toward 150.",
+  "success_criteria": [
+    "7 scored leads with verified emails sent via SMTP with provider_accepted evidence",
+    "provider_accepted count advances by at least 5"
+  ],
+  "slices": [
+    {
+      "agent": "outreach",
+      "task": "Get all 7 scored leads with emails: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite \"SELECT id,name,contact_info,score FROM leads WHERE stage='scored' AND contact_info LIKE '%@%' ORDER BY score DESC\". For each, send via SMTP: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to <email> --subject 'Free website audit' --body 'Hi, I run Outbound Autonomy. We scan business websites and show exactly what is costing you leads with a free audit and specific fixes at outboundautonomy.com/try.' Log: sqlite3 ... \"INSERT INTO email_attempts (lead_id,recipient,provider,sender,status,provider_message_id) VALUES ('<id>','<email>','gmail_smtp','owner@outboundautonomy.com','provider_accepted','<msg_id>')\". Update stage to outreach_sent. Write to artifacts/missions/flush-scored-7-20260429-1320/bridge-done.md.",
+      "expected_artifact": "bridge-done.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "GREEN",
+  "reasoning": "7 scored at avg 50, pre-researched, daemon handles new leads. This clears the scored backlog. Single agent, single slice, no overhead."
+}

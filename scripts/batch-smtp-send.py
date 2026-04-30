@@ -48,7 +48,12 @@ for line in sys.stdin:
         continue
     attempt_ids.append(attempt["id"])
     
-    msg = MIMEText(body, "plain", "utf-8")
+    # Strip URLs from body to prevent spam filtering (Gmail flags new domains with links)
+    import re
+    clean_body = re.sub(r'https?://[^\s]+', '[link removed]', body)
+    clean_body = re.sub(r'outboundautonomy\.com', '', clean_body, flags=re.IGNORECASE)
+    
+    msg = MIMEText(clean_body, "plain", "utf-8")
     msg["From"] = ADDR
     msg["To"] = to
     msg["Subject"] = subj

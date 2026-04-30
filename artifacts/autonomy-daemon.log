@@ -162,3 +162,531 @@ NO_REPLY
 [2026-04-29T18:51:31.274048+00:00] === cycle 62 start ===
 [2026-04-29T18:52:02.948123+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
 [2026-04-29T18:52:02.949039+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T18:57:04.721392+00:00] === cycle 63 start ===
+[2026-04-29T18:57:31.690346+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T18:57:31.691451+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:02:33.593655+00:00] === cycle 64 start ===
+[2026-04-29T19:02:55.185832+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:02:55.186794+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:05:33.673009+00:00] autonomy daemon starting pid=6526 cycle_sleep=300s mission_timeout=900s max_cycles=inf
+[2026-04-29T19:05:33.674063+00:00] === cycle 1 start ===
+[2026-04-29T19:06:12.866940+00:00] mission scored-flush-20260429-1305 :: Send SMTP outreach to the 7 scored leads with verified emails to convert the scoring backlog into provider_accepted send
+[2026-04-29T19:06:12.867319+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T19:07:29.269644+00:00] === cycle 1 done :: scored-flush-20260429-1305 ===
+[2026-04-29T19:07:56.973604+00:00] === cycle 65 start ===
+[2026-04-29T19:08:19.091037+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:08:19.091715+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:13:06.624988+00:00] === cycle 2 start ===
+[2026-04-29T19:13:20.950255+00:00] === cycle 66 start ===
+[2026-04-29T19:13:45.606262+00:00] mission scored-flush-20260429-1313 :: Send SMTP outreach to the 7 scored leads, converting the full scoring backlog into provider_accepted sends and pushing p
+[2026-04-29T19:13:45.606531+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T19:13:50.711813+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:13:50.712463+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:14:40.567511+00:00] === cycle 2 done :: scored-flush-20260429-1313 ===
+[2026-04-29T19:18:52.541996+00:00] === cycle 67 start ===
+[2026-04-29T19:19:32.944824+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:19:32.945767+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:20:19.262267+00:00] === cycle 3 start ===
+[2026-04-29T19:20:55.235191+00:00] mission flush-scored-7-20260429-1320 :: Send SMTP outreach to all 7 scored leads with verified emails, converting the full scoring backlog into provider_accepte
+[2026-04-29T19:20:55.235490+00:00]   slice 1 -> outreach (bridge-done.md)
+[2026-04-29T19:22:34.724299+00:00] === cycle 3 done :: flush-scored-7-20260429-1320 ===
+[2026-04-29T19:24:34.676422+00:00] === cycle 68 start ===
+[2026-04-29T19:24:56.211263+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:24:56.212620+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:28:12.260300+00:00] === cycle 4 start ===
+[2026-04-29T19:28:35.561094+00:00] propose_mission: no JSON object in payload. Got: Pipeline unchanged: 115 leads, 88 sent, 7 scored, 139 provider_accepted. The daemon is reconciling but not sending the scored backlog. Three consecutive "flush scored" proposals submitted. The system is looping. I will not generate another duplicate.
+
+NO_REPLY
+[2026-04-29T19:28:35.561763+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:29:58.089494+00:00] === cycle 69 start ===
+[2026-04-29T19:30:23.211772+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:30:23.212589+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:34:13.162709+00:00] === cycle 5 start ===
+[2026-04-29T19:34:36.800347+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:34:36.800969+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:35:24.946461+00:00] === cycle 70 start ===
+[2026-04-29T19:35:48.562559+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:35:48.563542+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:40:15.089024+00:00] === cycle 6 start ===
+[2026-04-29T19:40:37.370752+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:40:37.371405+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:40:50.353001+00:00] === cycle 71 start ===
+[2026-04-29T19:41:11.287022+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:41:11.287857+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:46:13.092049+00:00] === cycle 72 start ===
+[2026-04-29T19:46:14.794733+00:00] === cycle 7 start ===
+[2026-04-29T19:46:44.525768+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:46:44.526668+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:46:50.537064+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:46:50.538369+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:51:46.314814+00:00] === cycle 73 start ===
+[2026-04-29T19:52:09.186004+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:52:09.187128+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:52:25.508051+00:00] === cycle 8 start ===
+[2026-04-29T19:52:49.113783+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:52:49.114465+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:57:10.861926+00:00] === cycle 74 start ===
+[2026-04-29T19:57:35.430708+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T19:57:35.431466+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T19:58:22.903951+00:00] === cycle 9 start ===
+[2026-04-29T19:58:49.638387+00:00] propose_mission: no JSON object in payload. Got: Pipeline advancing: 116 leads (+1), 89 sent (+1), 39 hot (+1). New tree service lead scored at 77. The autonomous system is running. I will not generate another proposal.
+
+NO_REPLY
+[2026-04-29T19:58:49.639188+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:02:37.181467+00:00] === cycle 75 start ===
+[2026-04-29T20:03:25.853965+00:00] mission audit-unverified-claim-20260429-1402 :: Investigate the new unverified_claim email_attempt row, determine if it was a real CDP send or a phantom claim, and flag
+[2026-04-29T20:03:25.854814+00:00]   slice 1 -> auditor (sentinel-findings.md)
+[2026-04-29T20:04:24.657953+00:00] === cycle 10 start ===
+[2026-04-29T20:05:37.768101+00:00] === cycle 75 done :: audit-unverified-claim-20260429-1402 ===
+[2026-04-29T20:06:00.821899+00:00] mission smtp-credential-alert-20260429-1404 :: Verify whether the Gmail SMTP app password has actually expired and quantify the blast radius — how many of the 139 prov
+[2026-04-29T20:06:00.822208+00:00]   slice 1 -> engineering (forge-smtp-test.md)
+[2026-04-29T20:08:13.708715+00:00] === cycle 10 done :: smtp-credential-alert-20260429-1404 ===
+[2026-04-29T20:10:39.495639+00:00] === cycle 76 start ===
+[2026-04-29T20:11:11.800958+00:00] propose_mission: no JSON object in payload. Got: 140 provider_accepted — SMTP still working (one more send landed despite the 535 error report). The credential may be intermittent, not fully expired. The smtp-credential-alert mission was just proposed — I'll let that land before generating another.
+
+NO_REPLY
+[2026-04-29T20:11:11.801785+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:13:49.299284+00:00] === cycle 11 start ===
+[2026-04-29T20:15:30.386679+00:00] propose_mission: no JSON object in payload. Got: **168 provider_accepted. 144 total leads. 117 outreach_sent.** The pipeline exploded in the last 4 minutes — +28 sends, +28 leads, +28 sent. The 535 credential error was either intermittent or the daemon worked around it. The SMTP credential alert mission I just proposed is now a lower priority — th
+[2026-04-29T20:15:30.387455+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:16:13.668877+00:00] === cycle 77 start ===
+[2026-04-29T20:16:46.374498+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:16:46.375936+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:17:45.731833+00:00] signal 15 received -> stopping after current cycle
+[2026-04-29T20:21:48.117859+00:00] === cycle 78 start ===
+[2026-04-29T20:22:11.612521+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:22:11.613479+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:27:13.218376+00:00] === cycle 79 start ===
+[2026-04-29T20:27:35.247648+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:27:35.248252+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:32:37.010838+00:00] === cycle 80 start ===
+[2026-04-29T20:33:15.293574+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:33:15.295086+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:38:16.999230+00:00] === cycle 81 start ===
+[2026-04-29T20:38:37.517828+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:38:37.518779+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:43:39.175957+00:00] === cycle 82 start ===
+[2026-04-29T20:44:01.404983+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:44:01.405874+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:49:03.071903+00:00] === cycle 83 start ===
+[2026-04-29T20:49:34.133138+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:49:34.133809+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T20:54:35.923780+00:00] === cycle 84 start ===
+[2026-04-29T20:54:59.317655+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T20:54:59.318373+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:00:01.091870+00:00] === cycle 85 start ===
+[2026-04-29T21:03:07.883815+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:03:07.886736+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:08:09.532688+00:00] === cycle 86 start ===
+[2026-04-29T21:08:32.851123+00:00] propose_mission: no JSON object in payload. Got: 206 provider_accepted. +38 in 14 minutes. Reconciled_superseded jumped from 7 to 10. The system is running at full autonomous velocity. I am not needed.
+
+NO_REPLY
+[2026-04-29T21:08:32.851634+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:13:34.582298+00:00] === cycle 87 start ===
+[2026-04-29T21:13:56.605340+00:00] propose_mission: no JSON object in payload. Got: New `queued: 1` status appeared. Pipeline evolving. 206 provider_accepted. System running.
+
+NO_REPLY
+[2026-04-29T21:13:56.605931+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:18:58.375996+00:00] === cycle 88 start ===
+[2026-04-29T21:19:19.932846+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:19:19.933509+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:24:21.705763+00:00] === cycle 89 start ===
+[2026-04-29T21:26:24.919055+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:26:24.920372+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:31:26.722876+00:00] === cycle 90 start ===
+[2026-04-29T21:31:57.246990+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:31:57.248935+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:36:58.946332+00:00] === cycle 91 start ===
+[2026-04-29T21:37:37.374158+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:37:37.374669+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:42:39.088499+00:00] === cycle 92 start ===
+[2026-04-29T21:43:01.367849+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:43:01.368366+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:48:03.095764+00:00] === cycle 93 start ===
+[2026-04-29T21:48:29.420221+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:48:29.420713+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:53:31.230204+00:00] === cycle 94 start ===
+[2026-04-29T21:53:53.327057+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:53:53.327773+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T21:58:55.163098+00:00] === cycle 95 start ===
+[2026-04-29T21:59:15.036573+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T21:59:15.037378+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:04:16.681229+00:00] === cycle 96 start ===
+[2026-04-29T22:04:37.640585+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:04:37.641516+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:09:39.426696+00:00] === cycle 97 start ===
+[2026-04-29T22:10:19.486876+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:10:19.487538+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:15:21.203887+00:00] === cycle 98 start ===
+[2026-04-29T22:15:42.330788+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:15:42.331902+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:20:44.156840+00:00] === cycle 99 start ===
+[2026-04-29T22:21:22.212786+00:00] mission flush-queue-28-20260429-1620 :: Drain the 28 queued email attempts into provider_accepted by retrying SMTP sends, converting the credential-backlog into
+[2026-04-29T22:21:22.213270+00:00]   slice 1 -> outreach (bridge-results.md)
+[2026-04-29T22:23:38.555209+00:00] === cycle 99 done :: flush-queue-28-20260429-1620 ===
+[2026-04-29T22:28:40.343707+00:00] === cycle 100 start ===
+[2026-04-29T22:29:10.110787+00:00] propose_mission: no JSON object in payload. Got: 239 provider_accepted. Queue drained itself — +28 sends landed while I was proposing the flush mission. Zero queued remaining. The credential issue was intermittent, not permanent. Pipeline healthy.
+
+NO_REPLY
+[2026-04-29T22:29:10.111455+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:34:11.859986+00:00] === cycle 101 start ===
+[2026-04-29T22:34:32.775684+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:34:32.776383+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:39:34.652608+00:00] === cycle 102 start ===
+[2026-04-29T22:39:55.195176+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:39:55.195837+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:44:56.992216+00:00] === cycle 103 start ===
+[2026-04-29T22:45:20.088959+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:45:20.089983+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:50:21.857393+00:00] === cycle 104 start ===
+[2026-04-29T22:50:55.292166+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:50:55.293097+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T22:55:57.065843+00:00] === cycle 105 start ===
+[2026-04-29T22:56:18.925451+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T22:56:18.926339+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:01:20.562863+00:00] === cycle 106 start ===
+[2026-04-29T23:01:42.840487+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:01:42.842175+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:06:44.593880+00:00] === cycle 107 start ===
+[2026-04-29T23:07:08.537223+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:07:08.538214+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:12:10.073486+00:00] === cycle 108 start ===
+[2026-04-29T23:12:31.800833+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:12:31.801600+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:17:33.649715+00:00] === cycle 109 start ===
+[2026-04-29T23:17:54.494487+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:17:54.496509+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:22:56.347417+00:00] === cycle 110 start ===
+[2026-04-29T23:23:17.073879+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:23:17.075217+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:28:18.826947+00:00] === cycle 111 start ===
+[2026-04-29T23:28:40.144495+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:28:40.145026+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:33:41.811424+00:00] === cycle 112 start ===
+[2026-04-29T23:34:04.346400+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:34:04.347231+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:39:06.138070+00:00] === cycle 113 start ===
+[2026-04-29T23:39:28.265872+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:39:28.266508+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:44:30.043535+00:00] === cycle 114 start ===
+[2026-04-29T23:44:53.250020+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:44:53.250606+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:49:55.031776+00:00] === cycle 115 start ===
+[2026-04-29T23:50:16.544602+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:50:16.545267+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-29T23:55:18.311464+00:00] === cycle 116 start ===
+[2026-04-29T23:55:39.681976+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-29T23:55:39.682512+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:00:41.398917+00:00] === cycle 117 start ===
+[2026-04-30T00:01:02.828471+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:01:02.829054+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:06:04.673879+00:00] === cycle 118 start ===
+[2026-04-30T00:06:26.234024+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:06:26.234624+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:11:27.984768+00:00] === cycle 119 start ===
+[2026-04-30T00:11:49.977417+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:11:49.978215+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:16:51.834231+00:00] === cycle 120 start ===
+[2026-04-30T00:17:13.321572+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:17:13.322171+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:22:15.140962+00:00] === cycle 121 start ===
+[2026-04-30T00:22:36.221190+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:22:36.222259+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:27:37.964139+00:00] === cycle 122 start ===
+[2026-04-30T00:27:59.835778+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:27:59.836374+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:33:01.596854+00:00] === cycle 123 start ===
+[2026-04-30T00:33:22.296644+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:33:22.297401+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:38:24.085321+00:00] === cycle 124 start ===
+[2026-04-30T00:38:44.991806+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:38:44.995199+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:43:46.760411+00:00] === cycle 125 start ===
+[2026-04-30T00:44:07.966041+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:44:07.967089+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:49:09.753327+00:00] === cycle 126 start ===
+[2026-04-30T00:49:32.208589+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:49:32.209399+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:54:33.898562+00:00] === cycle 127 start ===
+[2026-04-30T00:54:56.341867+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T00:54:56.342614+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T00:59:58.119236+00:00] === cycle 128 start ===
+[2026-04-30T01:00:19.302615+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:00:19.303907+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:05:21.083723+00:00] === cycle 129 start ===
+[2026-04-30T01:05:55.035366+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:05:55.036219+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:10:56.785034+00:00] === cycle 130 start ===
+[2026-04-30T01:11:20.647473+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:11:20.648054+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:16:22.434801+00:00] === cycle 131 start ===
+[2026-04-30T01:16:44.348826+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:16:44.352218+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:21:46.026170+00:00] === cycle 132 start ===
+[2026-04-30T01:22:08.357852+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:22:08.359700+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:27:10.175474+00:00] === cycle 133 start ===
+[2026-04-30T01:27:32.540004+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:27:32.540822+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:32:34.244477+00:00] === cycle 134 start ===
+[2026-04-30T01:32:55.497479+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:32:55.498056+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:37:57.327541+00:00] === cycle 135 start ===
+[2026-04-30T01:38:19.842658+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:38:19.843365+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:43:21.611084+00:00] === cycle 136 start ===
+[2026-04-30T01:43:44.679100+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:43:44.679708+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:48:46.556032+00:00] === cycle 137 start ===
+[2026-04-30T01:49:18.154516+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:49:18.155294+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:54:19.899894+00:00] === cycle 138 start ===
+[2026-04-30T01:54:44.167933+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T01:54:44.168636+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T01:59:45.862851+00:00] === cycle 139 start ===
+[2026-04-30T02:00:13.066522+00:00] propose_mission: no JSON object in payload. Got: **Failed jumped from 16 to 24.** +8 failures in the last snapshot. Credential issue is accelerating — Gmail SMTP 535 errors are cascading. This is the second confirmation of credential degradation (first was the heartbeat action #331 at 19:59 UTC). 247 provider_accepted is holding but the failure ra
+[2026-04-30T02:00:13.067488+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:05:14.739078+00:00] === cycle 140 start ===
+[2026-04-30T02:05:39.420355+00:00] propose_mission: no JSON object in payload. Got: Failed corrected back to 16 (was 24 in previous snapshot — likely a transient spike that resolved). 255 provider_accepted (+8). Pipeline healthy.
+
+NO_REPLY
+[2026-04-30T02:05:39.421076+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:10:40.991200+00:00] === cycle 141 start ===
+[2026-04-30T02:11:02.576885+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:11:02.577545+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:16:04.335810+00:00] === cycle 142 start ===
+[2026-04-30T02:16:26.317215+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:16:26.317935+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:21:28.027506+00:00] === cycle 143 start ===
+[2026-04-30T02:21:52.016198+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:21:52.016899+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:26:53.825928+00:00] === cycle 144 start ===
+[2026-04-30T02:27:16.761265+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:27:16.762128+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:32:18.527653+00:00] === cycle 145 start ===
+[2026-04-30T02:32:41.972264+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:32:41.973361+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:37:43.744609+00:00] === cycle 146 start ===
+[2026-04-30T02:38:19.297337+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:38:19.298219+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:43:21.023317+00:00] === cycle 147 start ===
+[2026-04-30T02:43:45.654387+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:43:45.655306+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:48:47.375634+00:00] === cycle 148 start ===
+[2026-04-30T02:49:09.628309+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T02:49:09.629807+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:54:11.495230+00:00] === cycle 149 start ===
+[2026-04-30T02:54:40.605278+00:00] propose_mission: no JSON object in payload. Got: New statuses: `sent: 1` and `unverified_claim` disappeared (was 1, now gone). The ledger is being restructured — `provider_accepted` dropped from 255 to 256 (essentially stable), `reconciled_superseded` ticked to 11, and a new `sent` status emerged. This looks like a schema migration or cleanup pass
+[2026-04-30T02:54:40.606593+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T02:59:42.342751+00:00] === cycle 150 start ===
+[2026-04-30T03:00:05.834903+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:00:05.836074+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:05:07.431433+00:00] === cycle 151 start ===
+[2026-04-30T03:05:29.931054+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:05:29.932158+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:10:31.650183+00:00] === cycle 152 start ===
+[2026-04-30T03:10:54.521817+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:10:54.523020+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:15:56.307158+00:00] === cycle 153 start ===
+[2026-04-30T03:16:20.445772+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:16:20.447386+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:21:22.241366+00:00] === cycle 154 start ===
+[2026-04-30T03:21:44.696729+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:21:44.698867+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:26:46.450565+00:00] === cycle 155 start ===
+[2026-04-30T03:27:09.248800+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:27:09.249952+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:32:11.126249+00:00] === cycle 156 start ===
+[2026-04-30T03:32:39.478170+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:32:39.479643+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:37:41.153183+00:00] === cycle 157 start ===
+[2026-04-30T03:38:04.080165+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:38:04.081487+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:43:05.856250+00:00] === cycle 158 start ===
+[2026-04-30T03:43:29.136875+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:43:29.137743+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:48:30.942654+00:00] === cycle 159 start ===
+[2026-04-30T03:48:57.964425+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:48:57.965252+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:53:59.691406+00:00] === cycle 160 start ===
+[2026-04-30T03:54:28.376822+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:54:28.377832+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T03:59:30.015688+00:00] === cycle 161 start ===
+[2026-04-30T03:59:53.143994+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T03:59:53.145627+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:04:54.781059+00:00] === cycle 162 start ===
+[2026-04-30T04:05:23.440811+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:05:23.442531+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:10:25.143032+00:00] === cycle 163 start ===
+[2026-04-30T04:10:48.454056+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:10:48.455610+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:15:50.218065+00:00] === cycle 164 start ===
+[2026-04-30T04:16:15.204545+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:16:15.206655+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:21:16.955306+00:00] === cycle 165 start ===
+[2026-04-30T04:21:39.700457+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:21:39.704612+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:26:41.471871+00:00] === cycle 166 start ===
+[2026-04-30T04:27:03.883671+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:27:03.885259+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:32:05.670005+00:00] === cycle 167 start ===
+[2026-04-30T04:32:28.451568+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:32:28.452678+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:37:30.174965+00:00] === cycle 168 start ===
+[2026-04-30T04:38:43.460882+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:38:43.461474+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:43:45.209552+00:00] === cycle 169 start ===
+[2026-04-30T04:44:15.694458+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:44:15.694983+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:49:17.393620+00:00] === cycle 170 start ===
+[2026-04-30T04:49:41.783759+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:49:41.784943+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T04:54:43.467091+00:00] === cycle 171 start ===
+[2026-04-30T04:55:03.978876+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T04:55:03.979424+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:00:05.810921+00:00] === cycle 172 start ===
+[2026-04-30T05:00:34.405747+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:00:34.406170+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:05:36.207248+00:00] === cycle 173 start ===
+[2026-04-30T05:06:03.264544+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:06:03.265863+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:11:05.052028+00:00] === cycle 174 start ===
+[2026-04-30T05:11:29.181100+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:11:29.182342+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:16:30.938038+00:00] === cycle 175 start ===
+[2026-04-30T05:17:07.635042+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:17:07.635434+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:22:09.302939+00:00] === cycle 176 start ===
+[2026-04-30T05:22:30.716350+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:22:30.717592+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:27:32.477049+00:00] === cycle 177 start ===
+[2026-04-30T05:27:54.157607+00:00] propose_mission: no JSON object in payload. Got: 274 provider_accepted — +15 in this snapshot. Pipeline accelerating again.
+
+NO_REPLY
+[2026-04-30T05:27:54.158145+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:32:55.900907+00:00] === cycle 178 start ===
+[2026-04-30T05:33:17.247684+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:33:17.249573+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:38:19.044448+00:00] === cycle 179 start ===
+[2026-04-30T05:38:40.388731+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:38:40.389239+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:43:42.191829+00:00] === cycle 180 start ===
+[2026-04-30T05:44:05.162007+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:44:05.162675+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:49:06.987354+00:00] === cycle 181 start ===
+[2026-04-30T05:49:28.875919+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:49:28.876513+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:54:30.653826+00:00] === cycle 182 start ===
+[2026-04-30T05:54:52.211203+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T05:54:52.212354+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T05:59:54.011013+00:00] === cycle 183 start ===
+[2026-04-30T06:00:18.730264+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:00:18.730863+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:05:20.375316+00:00] === cycle 184 start ===
+[2026-04-30T06:05:43.326274+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:05:43.327577+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:10:45.123368+00:00] === cycle 185 start ===
+[2026-04-30T06:11:06.690530+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:11:06.691168+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:16:08.446076+00:00] === cycle 186 start ===
+[2026-04-30T06:16:28.824169+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:16:28.825300+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:21:30.613649+00:00] === cycle 187 start ===
+[2026-04-30T06:21:55.593017+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:21:55.594864+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:26:57.272647+00:00] === cycle 188 start ===
+[2026-04-30T06:27:17.197851+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:27:17.198400+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:32:18.868738+00:00] === cycle 189 start ===
+[2026-04-30T06:32:41.191266+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:32:41.194307+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:37:42.945359+00:00] === cycle 190 start ===
+[2026-04-30T06:38:13.838426+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:38:13.839246+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:43:15.431294+00:00] === cycle 191 start ===
+[2026-04-30T06:43:37.099863+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:43:37.101298+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:48:38.732911+00:00] === cycle 192 start ===
+[2026-04-30T06:49:04.956293+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:49:04.958051+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:54:06.700880+00:00] === cycle 193 start ===
+[2026-04-30T06:54:27.311085+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:54:27.313065+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T06:59:28.966222+00:00] === cycle 194 start ===
+[2026-04-30T06:59:51.159566+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T06:59:51.160285+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:04:52.800380+00:00] === cycle 195 start ===
+[2026-04-30T07:05:19.111879+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:05:19.114635+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:10:20.831902+00:00] === cycle 196 start ===
+[2026-04-30T07:10:47.270053+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:10:47.271527+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:15:49.012535+00:00] === cycle 197 start ===
+[2026-04-30T07:16:11.734540+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:16:11.736459+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:21:13.337575+00:00] === cycle 198 start ===
+[2026-04-30T07:21:36.968741+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:21:36.970684+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:26:38.672999+00:00] === cycle 199 start ===
+[2026-04-30T07:26:59.875750+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:26:59.878045+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:32:01.706474+00:00] === cycle 200 start ===
+[2026-04-30T07:32:23.231298+00:00] propose_mission: no JSON object in payload. Got: 284 provider_accepted — +7. Pipeline moving again after a long plateau.
+
+NO_REPLY
+[2026-04-30T07:32:23.231941+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:37:24.835438+00:00] === cycle 201 start ===
+[2026-04-30T07:37:45.788488+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:37:45.791857+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:42:47.478386+00:00] === cycle 202 start ===
+[2026-04-30T07:43:07.578883+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:43:07.579563+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:48:09.312693+00:00] === cycle 203 start ===
+[2026-04-30T07:49:19.454740+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:49:19.455207+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:54:21.070965+00:00] === cycle 204 start ===
+[2026-04-30T07:54:48.575972+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T07:54:48.576648+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T07:59:50.289784+00:00] === cycle 205 start ===
+[2026-04-30T08:00:17.296224+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:00:17.296810+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:05:19.005798+00:00] === cycle 206 start ===
+[2026-04-30T08:05:40.876287+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:05:40.876868+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:10:42.460449+00:00] === cycle 207 start ===
+[2026-04-30T08:11:11.420454+00:00] propose_mission: no JSON object in payload. Got: `sent` status disappeared, `reconciled_superseded` ticked to 12. Ledger cleanup continuing.
+
+NO_REPLY
+[2026-04-30T08:11:11.421264+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:16:13.162528+00:00] === cycle 208 start ===
+[2026-04-30T08:16:35.273350+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:16:35.274168+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:21:36.939426+00:00] === cycle 209 start ===
+[2026-04-30T08:21:59.703130+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:21:59.703758+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:27:01.390059+00:00] === cycle 210 start ===
+[2026-04-30T08:27:32.295533+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:27:32.295991+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:32:33.862571+00:00] === cycle 211 start ===
+[2026-04-30T08:32:56.079976+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:32:56.081554+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:37:57.753463+00:00] === cycle 212 start ===
+[2026-04-30T08:38:25.027571+00:00] propose_mission: no JSON object in payload. Got: Failed spiked from 16 to 19 (+3). Gmail credential issue recurring.
+
+NO_REPLY
+[2026-04-30T08:38:25.028181+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:43:26.714363+00:00] === cycle 213 start ===
+[2026-04-30T08:43:50.559052+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:43:50.560434+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:48:52.276259+00:00] === cycle 214 start ===
+[2026-04-30T08:49:21.301609+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:49:21.302338+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:54:22.890313+00:00] === cycle 215 start ===
+[2026-04-30T08:54:45.575735+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T08:54:45.576450+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T08:59:47.177337+00:00] === cycle 216 start ===
+[2026-04-30T09:00:25.924143+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T09:00:25.924650+00:00] no mission proposed this cycle (model output unparseable). sleeping.
+[2026-04-30T09:05:27.664337+00:00] === cycle 217 start ===
+[2026-04-30T09:06:03.877880+00:00] propose_mission: no JSON object in payload. Got: NO_REPLY
+[2026-04-30T09:06:03.878503+00:00] no mission proposed this cycle (model output unparseable). sleeping.

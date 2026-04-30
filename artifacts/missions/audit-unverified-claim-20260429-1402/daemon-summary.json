@@ -1,0 +1,12 @@
+{
+  "mission_id": "audit-unverified-claim-20260429-1402",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "auditor",
+      "status": "ok",
+      "expected": "sentinel-findings.md"
+    }
+  ],
+  "completed_at": "2026-04-29T20:05:37.767505+00:00"
+}

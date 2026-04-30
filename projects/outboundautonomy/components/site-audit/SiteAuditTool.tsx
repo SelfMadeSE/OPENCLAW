@@ -659,7 +659,7 @@ export default function SiteAuditTool() {
             {error && <p className="mt-4 text-sm text-red-300">{error}</p>}
 
             <div className="mt-8 grid gap-3 text-left text-sm text-muted md:grid-cols-3">
-              <p className="rounded-xl border border-steel bg-void/60 p-4">Design, conversion, technical, and Lighthouse scoring.</p>
+              <p className="rounded-xl border border-steel bg-void/60 p-4">Design, conversion, and technical signal scoring.</p>
               <p className="rounded-xl border border-steel bg-void/60 p-4">Same-origin crawl map plus screenshot when available.</p>
               <p className="rounded-xl border border-steel bg-void/60 p-4">Optional gated-page context for deeper implementation review.</p>
             </div>

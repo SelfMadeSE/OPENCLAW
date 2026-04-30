@@ -55,3 +55,22 @@ Reporting rule: claim only verified facts. Mark old send/publish/deploy claims a
 - BRIDGE: PROCEED — CRM query: 59 email_attempts (47 provider_accepted, 7 unverified_claim, 5 failed). Gmail SMTP auth failing (BadCredentials on attempt id=59).
 - SENTINEL: PROCEED — Both outputs approved with independent sqlite3 verification.
 - RUNTIME_FREEZE active throughout; no external sends attempted.
+
+---
+2026-04-30T04:30:00Z heartbeat-cycle-2229
+- Engineering: Null Message-ID bug fixed in send_outreach_email.py (3 lines, forward patch). 40 existing NULL rows remain.
+- Outreach: Sub-agent still running (SMTP blocked on Gmail app password auth failure).
+- Outreach: Added 4 leads (212→216), demoted 1 outreach_sent→prospect, added 1 drafted stage.
+- CRM: 216 leads, 284 attempts, 256 provider_accepted, 0 unverified_claim, 40 null mid.
+- Site: outboundautonomy.com /try /api/health all 200.
+- BLOCKERS: Gmail GMAIL_APP_PASSWORD stale since ~8:19 PM MDT, GMAIL_ADDRESS env unresolved.
+- Action required from Rylee: new Gmail app password + fix GMAIL_ADDRESS env var + handle 3 replied leads.
+
+## Promoted From Short-Term Memory (2026-04-30)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-23.md:7:7 -->
+- **Team Artifacts**: Multiple new artifacts landed across all workspaces since last heartbeat: [score=0.835 recalls=0 avg=0.620 source=memory/2026-04-23.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-23.md:15:15 -->
+- **Pending Work**: Hold-state lifted by operator override at 15:56 UTC. All systems cleared for autonomous execution. Money-or-memories revenue lane remains active with immediate execution priority. [score=0.835 recalls=0 avg=0.620 source=memory/2026-04-23.md:15-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-23.md:17:17 -->
+- **Priority**: Execute revenue tasks immediately. No blockers detected. All agents proceeding autonomously without approval gates. [score=0.835 recalls=0 avg=0.620 source=memory/2026-04-23.md:17-17]

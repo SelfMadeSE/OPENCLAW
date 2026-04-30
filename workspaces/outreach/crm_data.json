@@ -1,1547 +1,423 @@
 {
   "prospects": {
-    "denver-concrete-pros-20260429-104853": {
-      "businessName": "Denver Concrete Pros",
-      "niche": "Concrete Contractors / Flatwork",
-      "website": "https://www.denverconcretepros.com",
-      "source": "web_research",
-      "description": "Denver/Boulder concrete flatwork contractor (driveways, patios, sidewalks, foundations). Website has SEVERE content duplication - entire homepage sections repeated back-to-back verbatim. No online booking or instant quote tool. Phone-only contact (720-677-8930). No email visible anywhere. No contact form. No portfolio/gallery of past concrete projects despite claiming to be Rated #1. No pricing info. No blog or SEO content. Thin service descriptions. Content appears AI-generated. No testimonials embedded despite claiming 5-star service.",
-      "serviceArea": "Denver Metro, Boulder, CO",
-      "phone": "720-677-8930",
-      "email": "unverified",
-      "opportunityScore": 84,
-      "funnelStage": "prospecting",
-      "prospect_id": "denver-concrete-pros-20260429-104853",
-      "created_at": "2026-04-29T10:48:53.056027",
-      "updated_at": "2026-04-29T10:50:36.034670",
-      "status": "new",
+    "high-impact-roofing-20260430-061139": {
+      "businessName": "High Impact Roofing",
+      "niche": "Roofing Contractor / Residential & Commercial",
+      "website": "https://www.highimpactco.com",
+      "source": "Google Search → \"Denver roofing contractor company website\"",
+      "description": "Denver roofing contractor (repair, replacement, commercial, HOA). .co TLD, bare-bones homepage — single text block. No contact form, no CTAs, no portfolio, no trust badges, no phone visible. Site reads like an About paragraph, not a landing page.",
       "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T10:50:36.034667"
-          }
-        }
-      }
-    },
-    "denver-appliance-repair-pros-20260429-104853": {
-      "businessName": "Denver Appliance Repair Pros",
-      "niche": "Appliance Repair Services",
-      "website": "https://denverappliancerepairpros.com",
-      "source": "web_research",
-      "description": "Denver-area appliance repair service. Website uses referral/aggregator model (techs we connect you with). No email visible on site. Phone-only contact (970-486-8715, area code suggests not Denver-local). No online scheduling despite claiming same-day service. No pricing info. Thin content with no portfolio, reviews, or before/after. No about page with company details. Generic stock-feel copy.",
-      "serviceArea": "Denver, CO",
-      "phone": "(970) 486-8715",
-      "email": "unverified",
-      "opportunityScore": 68,
-      "funnelStage": "prospecting",
-      "prospect_id": "denver-appliance-repair-pros-20260429-104853",
-      "created_at": "2026-04-29T10:48:53.062228",
-      "updated_at": "2026-04-29T10:50:36.034083",
-      "status": "new",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T10:50:36.034074"
-          }
-        }
-      }
-    },
-    "denver-paint-co-20260429-104923": {
-      "businessName": "Denver Paint Co",
-      "niche": "Painting Services / Home Exteriors",
-      "website": "https://www.denverpaintco.com",
-      "source": "web_research",
-      "description": "Denver painting company offering interior, exterior, residential, and commercial painting. Website uses thin AI-generated content with generic descriptions. No portfolio/gallery showing past work. No online booking or instant quote tool. Phone-only contact (720-807-7543). Contact form exists but no email disclosed. No pricing info. No testimonials displayed. No service area pages. SEO content is generic and unhelpful.",
-      "serviceArea": "Denver Metro, CO",
-      "phone": "720-807-7543",
-      "email": "unverified",
-      "opportunityScore": 72,
-      "funnelStage": "prospecting",
-      "prospect_id": "denver-paint-co-20260429-104923",
-      "created_at": "2026-04-29T10:49:23.176030",
-      "updated_at": "2026-04-29T10:50:24.163459",
-      "status": "new",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T10:50:24.163449"
-          }
-        }
-      }
-    },
-    "danny-joes-lock-and-key-20260429-104923": {
-      "businessName": "Danny Joe's Lock and Key",
-      "niche": "Locksmith Services",
-      "website": "https://dannyjoeslockandkey.com",
-      "source": "web_research",
-      "description": "Denver-area locksmith (residential, commercial, automotive, emergency). GoDaddy Website Builder site with heavy duplicated content throughout. Contact page returns 404 error. Phone-only contact (720-708-9534). No email visible. No online scheduling. No quote form. Content appears AI-generated with repetitive section headers. Corporate template feel. No service-specific landing pages. Gallery exists but not connected to services. No service area pages.",
-      "serviceArea": "Denver Metro, CO",
-      "phone": "720-708-9534",
-      "email": "unverified",
-      "opportunityScore": 76,
-      "funnelStage": "prospecting",
-      "prospect_id": "danny-joes-lock-and-key-20260429-104923",
-      "created_at": "2026-04-29T10:49:23.176419",
-      "updated_at": "2026-04-29T10:50:36.034423",
-      "status": "new",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T10:50:36.034420"
-          }
-        }
+        "phone": "",
+        "email": "",
+        "verification_status": {},
+        "notes": "Contact details unverified."
       },
-      "email_history": [
-        {
-          "action": "draft_created",
-          "timestamp": "2026-04-29T11:21:55Z",
-          "type": "outreach_draft",
-          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
-          "status": "blocked_send",
-          "block_reason": "email_attempts_ledger_not_ready",
-          "subject": "Audit-led outreach draft — Danny Joe's Lock and Key"
-        }
-      ],
-      "last_contacted": "2026-04-29T11:21:55Z",
-      "stage": "drafted"
-    },
-    "front-range-appliance-20260429-104923": {
-      "businessName": "Front Range Appliance",
-      "niche": "Used Appliances / Appliance Repair",
-      "website": "https://frontrangeappliance.com",
-      "source": "web_research",
-      "description": "Thornton-based used appliance and repair business. Website is extremely thin with repetitive content (same paragraphs repeated 5+ times). No contact form on homepage. No email visible. No online booking. No pricing. Content mentions only Thornton appliance repair despite claiming service from Littleton to Fort Collins. 90-day warranty claim used repeatedly as filler. No portfolio. No before/after photos. No blog or SEO content. Poor site architecture with no navigation depth. Phone number not visible on homepage.",
-      "serviceArea": "Denver Metro, Thornton, Littleton, Fort Collins, Greeley, Aurora, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 82,
-      "funnelStage": "prospecting",
-      "prospect_id": "front-range-appliance-20260429-104923",
-      "created_at": "2026-04-29T10:49:23.176696",
-      "updated_at": "2026-04-29T10:50:36.034883",
-      "status": "new",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "denver-roof-pros-20260429-102231": {
-      "businessName": "Denver Roof Pros",
-      "niche": "Roofing / Home Exteriors",
-      "website": "https://denverroofpros.com",
-      "source": "website_research",
-      "description": "Denver roofing, painting, and deck company. Website is extremely heavy (750KB+ content), slow load potential. Multiple brand entities (Roof Pros, Paint Pros, Deck Pros) on one domain. Video autoplay, complex layout. Opportunities: performance optimization, simplify navigation, separate brand pages, improve mobile experience.",
-      "funnelStage": "prospecting",
-      "status": "new",
-      "prospect_id": "denver-roof-pros-20260429-102231",
-      "created_at": "2026-04-29T10:22:31.694472",
-      "updated_at": "2026-04-29T10:22:31.694473"
-    },
-    "mile-high-auto-glass-20260429-102807": {
-      "businessName": "Mile High Auto Glass",
-      "niche": "Auto Glass Repair / Windshield Replacement",
-      "website": "https://www.milehighautoglass.com",
-      "source": "web_research",
-      "description": "Denver-based mobile auto glass repair and windshield replacement serving Front Range. Well-designed website with good content depth but CRITICAL conversion gaps: no email address visible on site (phone/text only at 303-241-8079), no online booking despite 'Schedule at Your Convenience' claim, no instant quote tool, no blog/SEO content, no before/after photos, no pricing info. All lead generation bottlenecks through phone call or text message only — no email capture for follow-up.",
-      "serviceArea": "Denver Metro, Aurora, Lakewood, Boulder, Colorado Springs, Front Range, CO",
-      "phone": "(303) 241-8079",
-      "email": "unverified",
-      "opportunityScore": 75,
-      "funnelStage": "prospecting",
-      "contact": {
-        "phone_verified": true,
-        "email_verified": false,
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T01:23:00Z"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "mile-high-auto-glass-20260429-102807",
-      "created_at": "2026-04-29T10:28:07.740382",
-      "updated_at": "2026-04-29T10:28:07.740383",
+      "prospect_id": "high-impact-roofing-20260430-061139",
+      "created_at": "2026-04-30T06:11:39.417666",
+      "updated_at": "2026-04-30T06:11:39.417667",
       "status": "new"
     },
-    "denver-express-movers-20260429-102807": {
-      "businessName": "Denver Express Movers",
-      "niche": "Moving Services",
-      "website": "https://www.denverexpressmovers.com",
-      "source": "web_research",
-      "description": "Denver full-service moving company (residential, commercial, labor-only, packing, junk removal). Template-driven site with thin content. Uses Gmail (Denverexpressmovers1@gmail.com) undermining credibility. Contact page shows phone/email but no quote form. No online booking, no live chat, no instant quote calculator. No pricing/rate info. 400+ reviews claimed but no embedded testimonials or schema.",
-      "serviceArea": "Denver Metro, Aurora, Glendale, CO",
-      "phone": "720-403-2633",
-      "email": "Denverexpressmovers1@gmail.com",
-      "opportunityScore": 78,
-      "funnelStage": "prospecting",
+    "kg-facility-solutions-20260430-061428": {
+      "businessName": "KG Facility Solutions",
+      "niche": "Commercial Cleaning / Janitorial Services",
+      "website": "https://www.kgfs.co",
+      "source": "Google Search → Denver commercial cleaning company",
+      "description": "Denver commercial cleaning and janitorial services. Website uses .co TLD. No contact form visible, no prominent CTAs, text-heavy with sparse design. Missing lead capture and conversion elements.",
       "contact": {
-        "phone_verified": true,
-        "email_verified": true,
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T01:23:00Z"
-          },
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-29T01:23:00Z"
-          }
-        }
+        "verification_status": {},
+        "notes": "Contact details unverified."
       },
-      "prospect_id": "denver-express-movers-20260429-102807",
-      "created_at": "2026-04-29T10:28:07.740576",
-      "updated_at": "2026-04-29T10:28:07.740577",
       "status": "new",
-      "email_history": [
-        {
-          "action": "draft_created",
-          "timestamp": "2026-04-29T11:21:55Z",
-          "type": "outreach_draft",
-          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
-          "status": "blocked_send",
-          "block_reason": "email_attempts_ledger_not_ready",
-          "subject": "Audit-led outreach draft — Denver Express Movers"
-        }
-      ],
-      "last_contacted": "2026-04-29T11:21:55Z",
-      "stage": "drafted"
+      "prospect_id": "kg-facility-solutions-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
     },
-    "denver-landscaping-pros-20260429-102807": {
-      "businessName": "Denver Landscaping Pros",
-      "niche": "Landscaping / Lawn Care",
-      "website": "https://www.denverlandscapingpros.com",
-      "source": "web_research",
-      "description": "Denver landscaping company offering residential and commercial services. WEBSITE IS EXTREMELY THIN — barely 900 chars extractable text total. No visible phone, email, or contact form on homepage. No about, contact, portfolio, or service detail pages. NO PORTFOLIO/GALLERY — critical gap for landscaping. No online booking, no instant quote. Apostrophe error in business name ('Pro\\'s'). Extremely high opportunity.",
-      "serviceArea": "Denver Metro, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 85,
-      "funnelStage": "prospecting",
+    "simple-cleaning-20260430-061428": {
+      "businessName": "Simple Cleaning",
+      "niche": "Commercial Cleaning / Janitorial Services",
+      "website": "https://www.simplecleaning.co",
+      "source": "Google Search → Denver commercial cleaning company",
+      "description": "Denver commercial cleaning service. .co TLD, basic design, unclear quote/booking funnel, no pricing visible. Weak conversion path.",
       "contact": {
-        "phone_verified": false,
-        "email_verified": false,
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
+        "verification_status": {},
+        "notes": "Contact details unverified."
       },
-      "prospect_id": "denver-landscaping-pros-20260429-102807",
-      "created_at": "2026-04-29T10:28:07.740974",
-      "updated_at": "2026-04-29T10:28:07.740974",
-      "status": "new"
-    },
-    "peakview-dentistry-20260429-102807": {
-      "businessName": "PeakView Dentistry",
-      "niche": "Dentist / Dental Services",
-      "website": "https://www.peakviewdentistry.com",
-      "source": "web_research",
-      "description": "Boulder, CO cosmetic and implant dentistry (Dr. Adam Kwiatkowski). Beautiful Elementor/WordPress site with extensive service pages. CRITICAL: /contact/ URL returns 404 error. No online appointment scheduling. Phone-only booking (303-417-1644). 4.9-star rated practice losing high-intent dental patients through broken contact path and no self-service booking.",
-      "serviceArea": "Boulder, CO",
-      "phone": "(303) 417-1644",
-      "email": "unverified",
-      "opportunityScore": 82,
-      "funnelStage": "prospecting",
-      "contact": {
-        "phone_verified": true,
-        "email_verified": false,
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T01:23:00Z"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "peakview-dentistry-20260429-102807",
-      "created_at": "2026-04-29T10:28:07.741076",
-      "updated_at": "2026-04-29T10:28:07.741077",
-      "status": "new"
-    },
-    "front-range-locksmith-20260429-102807": {
-      "businessName": "Front Range Locksmith",
-      "niche": "Locksmith Services",
-      "website": "https://www.frontrangelocksmith.com",
-      "source": "web_research",
-      "description": "Denver-metro locksmith (residential, commercial, car lockout, rekey). 17-min avg arrival, 24/7. Dated HTML/PHP site (contact.php, about.php). Blog last updated April 2017 (9+ years stale). No email visible anywhere. Phone-only contact (720-439-4081). No online scheduling despite 24/7 claim. No live chat. No instant quote. No service area landing pages.",
-      "serviceArea": "Denver Metro, Littleton, Lakewood, CO",
-      "phone": "720-439-4081",
-      "email": "unverified",
-      "opportunityScore": 80,
-      "funnelStage": "prospecting",
-      "contact": {
-        "phone_verified": true,
-        "email_verified": false,
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T01:23:00Z"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "prospect_id": "front-range-locksmith-20260429-102807",
-      "created_at": "2026-04-29T10:28:07.741168",
-      "updated_at": "2026-04-29T10:28:07.741168",
-      "status": "new"
-    },
-    "denver-carpet-cleaning-20260429-110441": {
-      "businessName": "Denver Carpet Cleaning",
-      "website": "https://denvercarpetcleaning.com",
-      "niche": "Carpet Cleaning / Home Services",
-      "source": "Denver local business search via web_fetch",
-      "description": "Professional carpet cleaning company serving the Denver metro area for over a decade. Uses biodegradable non-toxic cleaning products. Offers residential and commercial carpet, upholstery, and power washing services.",
-      "contact": {
-        "phone": "(303) 905-9668",
-        "email": "info@denvercarpetcleaning.com",
-        "address": "1312 17th Street #701, Denver, CO 80202",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "website_findings": {
-        "platform": "WordPress",
-        "has_phone_on_site": true,
-        "has_email_on_site": true,
-        "has_online_booking": false,
-        "has_live_chat": false,
-        "has_instant_quote": false,
-        "has_blog": false,
-        "has_service_pages": false,
-        "thin_content": true,
-        "conversion_gaps": [
-          "No online booking/scheduling",
-          "No live chat",
-          "No instant quote tool",
-          "No blog or content marketing",
-          "Single generic contact page",
-          "No service page SEO optimization",
-          "Thin homepage content"
-        ]
-      },
-      "opportunity_score": 78,
-      "estimated_value": "medium",
-      "prospect_id": "denver-carpet-cleaning-20260429-110441",
-      "created_at": "2026-04-29T11:04:41.569703",
-      "updated_at": "2026-04-29T11:04:41.569705",
-      "status": "new"
-    },
-    "junk-genius-denver-junk-removal-20260429-110502": {
-      "businessName": "Junk Genius (Denver Junk Removal)",
-      "website": "https://denverjunkremoval.com",
-      "niche": "Junk Removal / Home Services",
-      "source": "Denver local business search via web_fetch",
-      "description": "Full-service junk removal company serving Denver, CO and surrounding areas. Locally-owned small business offering residential and commercial junk removal, clean outs, hot tub removal, yard waste debris removal. Volume-based pricing. Eco-friendly with recycling and donation focus.",
-      "contact": {
-        "phone": "(303) 388-7780",
-        "email": "denver@junkgenius.com",
-        "address": "Englewood, CO",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "website_findings": {
-        "platform": "Likely WordPress or custom CMS",
-        "has_phone_on_site": true,
-        "has_email_on_site": true,
-        "has_online_booking": true,
-        "has_live_chat": false,
-        "has_instant_quote": true,
-        "has_blog": true,
-        "has_service_pages": true,
-        "thin_content": false,
-        "conversion_gaps": [
-          "No live chat for quick questions",
-          "Email on contact page only (not homepage)",
-          "Booking flow could be optimized",
-          "No SMS/text option",
-          "No customer portal/reviews integration"
-        ]
-      },
-      "opportunity_score": 65,
-      "estimated_value": "medium-low",
-      "prospect_id": "junk-genius-denver-junk-removal-20260429-110502",
-      "created_at": "2026-04-29T11:05:02.002748",
-      "updated_at": "2026-04-29T11:05:02.002750",
-      "status": "new"
-    },
-    "colorado-pro-wash-denver-pressure-washing-20260429-110526": {
-      "businessName": "Colorado Pro Wash (Denver Pressure Washing)",
-      "website": "https://www.coloradoprowash.com",
-      "niche": "Pressure Washing / Exterior Cleaning",
-      "source": "Denver local business search via web_fetch",
-      "description": "Premier Denver pressure washing service company serving residential, commercial, and industrial clients for 15+ years. A+ BBB rated. Services include house washing, driveway cleaning, fleet washing, parking garage cleaning, graffiti removal. 24/7 availability.",
-      "contact": {
-        "phone": "(303) 518-3291",
-        "email": "info@coloradoprowash.com",
-        "address": "1312 17th Street #701, Denver, CO 80202",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "website_findings": {
-        "platform": "Likely WordPress",
-        "has_phone_on_site": true,
-        "has_email_on_site": true,
-        "has_online_booking": false,
-        "has_live_chat": false,
-        "has_instant_quote": false,
-        "has_blog": false,
-        "has_service_pages": "basic content on homepage only",
-        "thin_content": true,
-        "conversion_gaps": [
-          "No online booking/scheduling",
-          "No live chat",
-          "No instant quote tool",
-          "No separate service pages for SEO",
-          "No blog or content",
-          "Same shared address with Denver Carpet Cleaning - possible shared template",
-          "Thin content across entire site"
-        ]
-      },
-      "opportunity_score": 82,
-      "estimated_value": "medium-high",
-      "prospect_id": "colorado-pro-wash-denver-pressure-washing-20260429-110526",
-      "created_at": "2026-04-29T11:05:26.540286",
-      "updated_at": "2026-04-29T11:05:26.540288",
-      "status": "new"
-    },
-    "diamond-hand-garage-doors-20260429-110553": {
-      "businessName": "Diamond Hand Garage Doors",
-      "website": "https://www.coloradogaragedoorrepair.com",
-      "niche": "Garage Door Services",
-      "source": "Denver-area business search via web_fetch",
-      "description": "Garage door service company serving Fort Collins, Loveland, Windsor, Greeley and Northern Colorado. Offers repair, installation, and maintenance of garage doors and openers. Locally owned. Same-day service. 5-star rated. Claims faith-driven values.",
-      "contact": {
-        "phone": "(970) 408-9827",
-        "email": "not found on site",
-        "address": "Fort Collins, CO",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "website_findings": {
-        "platform": "Likely custom or premium WordPress",
-        "has_phone_on_site": true,
-        "has_email_on_site": false,
-        "has_online_booking": false,
-        "has_live_chat": false,
-        "has_instant_quote": false,
-        "has_blog": false,
-        "has_service_pages": true,
-        "thin_content": false,
-        "conversion_gaps": [
-          "No email address on site at all",
-          "No online booking/scheduling",
-          "No live chat",
-          "No instant quote tool",
-          "No blog or content marketing",
-          "Site explicitly admits recent email system issues causing lost inquiries",
-          "Only contact form + phone available"
-        ]
-      },
-      "opportunity_score": 85,
-      "estimated_value": "medium-high",
-      "prospect_id": "diamond-hand-garage-doors-20260429-110553",
-      "created_at": "2026-04-29T11:05:53.591534",
-      "updated_at": "2026-04-29T11:05:53.591535",
-      "status": "new"
-    },
-    "denver-dog-walkers-20260429-110616": {
-      "businessName": "Denver Dog Walkers",
-      "website": "https://www.denverdogwalkers.com",
-      "niche": "Pet Services / Dog Walking",
-      "source": "Denver local business search via web_fetch",
-      "description": "Dog walking and pet sitting service serving central Denver neighborhoods including Capitol Hill, Cherry Creek, Five Points, Highlands, LoDo, Washington Park. Owner Jeff Rayburn with 25 years professional pet care experience. Requires ongoing weekly service (no short-term walks).",
-      "contact": {
-        "phone": "not found on site",
-        "email": "not found on site",
-        "address": "Denver, CO",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "website_findings": {
-        "platform": "Likely older custom site",
-        "has_phone_on_site": false,
-        "has_email_on_site": false,
-        "has_online_booking": true,
-        "has_live_chat": false,
-        "has_instant_quote": false,
-        "has_blog": false,
-        "has_service_pages": false,
-        "thin_content": true,
-        "conversion_gaps": [
-          "No phone number on site at all",
-          "No email on site at all",
-          "No live chat",
-          "No instant quote",
-          "No blog",
-          "No service-specific pages",
-          "Very thin content overall",
-          "Only contact method is the sign-up form",
-          "No social media links found"
-        ]
-      },
-      "opportunity_score": 80,
-      "estimated_value": "medium",
-      "prospect_id": "denver-dog-walkers-20260429-110616",
-      "created_at": "2026-04-29T11:06:16.967344",
-      "updated_at": "2026-04-29T11:06:16.967345",
-      "status": "new"
-    },
-    "crystal-clear-pools--spas-inc-20260429-112251": {
-      "businessName": "Crystal Clear Pools & Spas Inc.",
-      "niche": "Pool Service / Construction / Maintenance",
-      "website": "https://crystalclearpoolscolorado.com",
-      "source": "web_research_browser",
-      "description": "Denver pool company founded 1974 (50+ years). SEVERE CONTENT DUPLICATION: entire service sections repeated back-to-back 4-5 times. No online booking, no pricing info, no portfolio gallery, thin AI-feel content, no blog.",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 88,
-      "funnelStage": "prospecting",
       "status": "new",
-      "serviceArea": "Denver Metro, CO",
-      "prospect_id": "crystal-clear-pools--spas-inc-20260429-112251",
-      "created_at": "2026-04-29T11:22:51.133137",
-      "updated_at": "2026-04-29T11:24:27.602163",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
+      "prospect_id": "simple-cleaning-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
     },
-    "clear-water-pools-denver-pool-service-20260429-112258": {
-      "businessName": "Clear Water Pools (Denver Pool Service)",
-      "niche": "Pool Service / Cleaning / Maintenance",
-      "website": "https://www.poolandspaservice.biz",
-      "source": "web_research_browser",
-      "description": "Family owned Denver pool/spa service at poolandspaservice DOT biz. EXTREMELY THIN CONTENT: barely 1000 chars total across entire homepage. Uses .biz TLD undermining credibility. No online booking, no instant quote tool, no email on homepage, no portfolio/gallery, no blog, no service-specific landing pages. 20 years experience but zero web presence investment. Phone is primary (likely only) contact method. No testimonials visible despite claiming quality service.",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 83,
-      "funnelStage": "prospecting",
+    "aspire-technology-solutions-20260430-061428": {
+      "businessName": "Aspire Technology Solutions",
+      "niche": "IT Services / Managed Service Provider",
+      "website": "https://www.aspiredenver.com",
+      "source": "Google Search → Denver IT support managed services",
+      "description": "Denver MSP / IT services. No visible lead form on homepage, no pricing packages, text-heavy content, no client logos or social proof. Missing conversion-focused design.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "outreach_sent",
+      "prospect_id": "aspire-technology-solutions-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:07:15.070782+00:00",
+      "last_draft_file": "2026-04-29-hourly-outreach-draft-queue-1020pm.md"
+    },
+    "outsource-it-20260430-061428": {
+      "businessName": "Outsource IT",
+      "niche": "IT Services / Managed Service Provider",
+      "website": "https://www.outsourceit.com",
+      "source": "Google Search → Denver IT support managed services",
+      "description": "Denver MSP with extremely dated website design (2010-era aesthetic). Uses .html page extensions, no modern conversion elements, no visible lead capture mechanism.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
       "status": "new",
-      "serviceArea": "Denver Metro, CO",
-      "prospect_id": "clear-water-pools-denver-pool-service-20260429-112258",
-      "created_at": "2026-04-29T11:22:58.476895",
-      "updated_at": "2026-04-29T11:24:27.656035",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
+      "prospect_id": "outsource-it-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
     },
-    "blue-tech-pools-20260429-112311": {
-      "businessName": "Blue Tech Pools",
-      "niche": "Pool Service / Maintenance",
-      "website": "https://www.bluetechpools.com",
-      "source": "web_research_browser",
-      "description": "Denver Metro pool service owned by Nathan (20+ years experience). EXTREMELY THIN WEBSITE: barely 600 chars extractable text total. Single-page style with minimal content. No phone number visible on site. No email visible. No online booking. No service pages. No portfolio/gallery. No pricing info. No blog. Single-person operation with extremely limited web presence. High opportunity for a full website build.",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 86,
-      "funnelStage": "prospecting",
+    "evara-events-design-20260430-061428": {
+      "businessName": "Evara Events Design",
+      "niche": "Event Planning / Wedding Planning",
+      "website": "https://www.evaraeventsdesign.com",
+      "source": "Google Search → Denver event planning wedding planner",
+      "description": "Denver event and wedding planning. Extremely thin homepage content, no portfolio visible, no clear booking workflow, weak SEO presence.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
       "status": "new",
-      "serviceArea": "Denver Metro, CO",
-      "prospect_id": "blue-tech-pools-20260429-112311",
-      "created_at": "2026-04-29T11:23:11.988007",
-      "updated_at": "2026-04-29T11:24:27.704955",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
+      "prospect_id": "evara-events-design-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
     },
-    "dominion-chiropractic-dr-wayne-buessing-20260429-112359": {
-      "businessName": "Dominion Chiropractic (Dr. Wayne Buessing)",
-      "niche": "Chiropractic / Healthcare",
-      "website": "https://www.mycoloradospringschiro.com",
-      "source": "web_research_browser",
-      "description": "Colorado Springs chiropractor at Dominion Way. DATED TEMPLATE WEBSITE: standard chiropractic template with no custom design elements. No online booking or appointment scheduling despite having appointment page link. Phone-only booking (719-599-4343). No live chat. No pricing info. Thin service descriptions. No video content. No blog. Email link exists but goes to generic contact form, not direct email. Office hours show half-day closures and Thursday closed entirely, creating patient confusion. No service-specific landing pages for different conditions.",
-      "phone": "(719) 599-4343",
-      "email": "unverified",
-      "opportunityScore": 74,
-      "funnelStage": "prospecting",
-      "status": "new",
-      "serviceArea": "Colorado Springs, CO",
-      "prospect_id": "dominion-chiropractic-dr-wayne-buessing-20260429-112359",
-      "created_at": "2026-04-29T11:23:59.139884",
-      "updated_at": "2026-04-29T11:24:33.559864",
+    "colorado-roofing-company-20260430-061428": {
+      "businessName": "Colorado Roofing Company",
+      "niche": "Roofing Contractor / Residential & Commercial Roofing",
+      "website": "https://coloradoroofingcompany.com",
+      "source": "Google Search → Denver roofing contractor company website",
+      "description": "Established Denver roofing contractor. Website has keyword-stuffed, repetitive content with dated design. No portfolio/gallery, no trust badges, basic phone-only CTA. Content reads as SEO filler rather than persuasive copy.",
       "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T11:24:33.523817"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "colorado-springs-chiropractic-dr-david-doyle-20260429-112408": {
-      "businessName": "Colorado Springs Chiropractic (Dr. David Doyle)",
-      "niche": "Chiropractic / Healthcare",
-      "website": "https://www.cspringschiro.com",
-      "source": "web_research_browser",
-      "description": "Colorado Springs chiropractor (Dr. David Doyle, DC, CSCS) at 1259 Lake Plaza Dr. Has email (frontdesk@cspringschiro.com) and phone (719-358-5170). WEBSITE GAPS: No online appointment scheduling despite being primary healthcare provider. Dated site design with basic HTML feel. No blog or SEO content. No pricing or insurance info. No patient portal integration. No before/after or outcome data. No service-specific landing pages. No video content. No online intake forms. Content is wall-of-text heavy with no visual hierarchy. No mobile-optimized contact flow.",
-      "phone": "(719) 358-5170",
-      "email": "frontdesk@cspringschiro.com",
-      "opportunityScore": 72,
-      "funnelStage": "prospecting",
-      "status": "new",
-      "serviceArea": "Colorado Springs, CO",
-      "prospect_id": "colorado-springs-chiropractic-dr-david-doyle-20260429-112408",
-      "created_at": "2026-04-29T11:24:08.885521",
-      "updated_at": "2026-04-29T11:24:33.608330",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T11:24:33.584621"
-          },
-          "email": {
-            "verified": true,
-            "verified_at": "2026-04-29T11:24:33.608324"
-          }
-        }
-      },
-      "email_history": [
-        {
-          "action": "draft_created",
-          "timestamp": "2026-04-29T11:21:55Z",
-          "type": "outreach_draft",
-          "draft_file": "2026-04-29-hourly-outreach-draft-queue-0520am.md",
-          "status": "blocked_send",
-          "block_reason": "email_attempts_ledger_not_ready",
-          "subject": "Audit-led outreach draft — Colorado Springs Chiropractic (Dr. David Doyle)"
-        }
-      ],
-      "last_contacted": "2026-04-29T11:21:55Z",
-      "stage": "drafted"
-    },
-    "urban-forestry-tree-service-20260429-121028": {
-      "businessName": "Urban Forestry Tree Service",
-      "niche": "Tree Service / Arborist",
-      "website": "https://urbanforestrytreeservice.weebly.com",
-      "source": "Google Search (site:weebly.com for Denver tree services)",
-      "description": "Free Weebly subdomain site for Denver-area tree service. Critical issues: (1) Free Weebly subdomain (looks unprofessional), (2) No online booking/quote request, (3) Generic template with placeholder images labeled \"Picture\", (4) No reviews or testimonials visible, (5) Links to urbanforestrytreeservice.com (redirect unknown), (6) No service pages with pricing, (7) Weebly footer branding visible. Contact: 720-650-2039, Address: 5121 Meade St, Denver CO 80221.",
-      "contact": {
-        "phone": "720-650-2039",
-        "email": "unverified",
-        "address": "5121 Meade St, Denver CO 80221",
+        "phone": "303-329-6363",
         "verification_status": {
           "phone": {
             "verified": false,
             "verified_at": null
           }
-        }
-      },
-      "funnelStage": "research",
-      "priority": "high",
-      "prospect_id": "urban-forestry-tree-service-20260429-121028",
-      "created_at": "2026-04-29T12:10:28.367289",
-      "updated_at": "2026-04-29T12:12:40.523186",
-      "status": "new"
-    },
-    "the-earnest-chop-20260429-121112": {
-      "businessName": "The Earnest Chop",
-      "niche": "Tree Service / Stump Grinding / Weed Management",
-      "website": "https://eagleranker.wixsite.com/the-earnest-chop",
-      "source": "Google Search (site:wixsite.com for Denver tree services)",
-      "description": "Wix subdomain site for Denver/Aurora tree service. Critical issues: (1) Free Wix subdomain, (2) Heavy reliance on external links (Google Maps, tecservices.com pages), (3) No online booking, (4) Generic template content repeated across sections, (5) Wix banner branding visible, (6) No portfolio or before/after photos, (7) No reviews on site, (8) All service links redirect through Google Share URL shorteners. Contact: 303-909-6519, Email: TheEarnestChopLLC@gmail.com, Address: Aurora, CO.",
-      "contact": {
-        "phone": "303-909-6519",
-        "email": "TheEarnestChopLLC@gmail.com",
-        "address": "Aurora, CO",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "funnelStage": "research",
-      "priority": "high",
-      "prospect_id": "the-earnest-chop-20260429-121112",
-      "created_at": "2026-04-29T12:11:12.122931",
-      "updated_at": "2026-04-29T12:12:40.572501",
-      "status": "new"
-    },
-    "keep-it-green-tree-care-20260429-121118": {
-      "businessName": "Keep It Green Tree Care",
-      "niche": "Tree Care / Arborist Services",
-      "website": "https://keepitgreentreecare.weebly.com",
-      "source": "Google Search (site:weebly.com for Denver tree services)",
-      "description": "Free Weebly subdomain site for Arvada/Denver tree care company. Critical issues: (1) Free Weebly subdomain, (2) Extremely dated template design with table-based layout, (3) Placeholder images labeled \"Picture\", (4) No online booking or quote system beyond basic form, (5) Site looks abandoned - ISA certification and BBB links but design is 10+ years outdated, (6) Weebly footer branding visible, (7) Very slow/dated user experience. Business is ISA-certified and BBB-accredited but website does not reflect professionalism. Contact: 303-945-9220, Email: andrew3980@hotmail.com",
-      "contact": {
-        "phone": "303-945-9220",
-        "email": "andrew3980@hotmail.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "funnelStage": "research",
-      "priority": "high",
-      "prospect_id": "keep-it-green-tree-care-20260429-121118",
-      "created_at": "2026-04-29T12:11:18.788155",
-      "updated_at": "2026-04-29T12:12:40.620416",
-      "status": "new"
-    },
-    "solares-lawn--landscaping-20260429-121127": {
-      "businessName": "Solares Lawn & Landscaping",
-      "niche": "Landscaping / Lawn Care",
-      "website": "https://solareslandscaping.wixsite.com/landscapingdenver",
-      "source": "Google Search (site:wixsite.com for Denver landscaping)",
-      "description": "Wix subdomain site for Denver landscaping company. Critical issues: (1) Free Wix subdomain, (2) Generic template copy with no specific value proposition, (3) Site copyright is 2015 - clearly not updated in 10+ years, (4) No blog or SEO content strategy, (5) Wix banner branding visible, (6) Photos in gallery show some work but no service descriptions or pricing, (7) No online booking/scheduling integration, (8) No schema markup detected. Contact: 720-569-1369 and 720-621-8361.",
-      "contact": {
-        "phone": "720-569-1369 / 720-621-8361",
-        "email": "unverified",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "funnelStage": "research",
-      "priority": "medium",
-      "prospect_id": "solares-lawn--landscaping-20260429-121127",
-      "created_at": "2026-04-29T12:11:27.313803",
-      "updated_at": "2026-04-29T12:12:40.644444",
-      "status": "new"
-    },
-    "deker-lawn-services-20260429-121205": {
-      "businessName": "Deker Lawn Services",
-      "niche": "Lawn Care / Landscaping",
-      "website": "https://dekerlawnservices.weebly.com",
-      "source": "Google Search (site:weebly.com for Denver lawn/landscaping)",
-      "description": "Free Weebly subdomain site for Denver-area lawn service (licensed, bonded, insured since 2007). Critical issues: (1) Free Weebly subdomain, (2) Extremely outdated design with photo gallery showing WhatsApp images from 2018-2019 - appears abandoned, (3) No online booking, (4) No service pages with descriptions or pricing, (5) No contact form, (6) Very basic/barebones layout with gallery dump, (7) Weebly footer branding visible. Has real work photos showing capability but website does not inspire trust. Contact: 303-257-0540 or 720-298-9091, Email: edlawnservice@gmail.com (also Edlawnservices@gmail.com).",
-      "contact": {
-        "phone": "303-257-0540 / 720-298-9091",
-        "email": "edlawnservice@gmail.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "funnelStage": "research",
-      "priority": "high",
-      "prospect_id": "deker-lawn-services-20260429-121205",
-      "created_at": "2026-04-29T12:12:05.832407",
-      "updated_at": "2026-04-29T12:12:40.692304",
-      "status": "new"
-    },
-    "affordable-pest-services-20260429-131043": {
-      "businessName": "Affordable Pest Services",
-      "niche": "Pest Control / Home Services",
-      "website": "https://affordablepestserviceshrco.com/",
-      "source": "Google Search - Denver pest control",
-      "description": "Pest control company serving Denver Metro / Highlands Ranch area. Website built on GoDaddy platform — template-based design with weak CTA placement, no online booking, thin service-specific content, no SSL concerns flagged, and poor lead-capture flow. Strong reviews on Google but website fails to convert.",
-      "contact": {
-        "phone": "(303) 435-9766",
-        "email": "unknown",
-        "address": "Highlands Ranch, CO 80129",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "websiteGaps": [
-        "GoDaddy template site with limited customization",
-        "No online scheduling / booking",
-        "Weak call-to-action visibility above fold",
-        "Thin service-specific landing pages",
-        "No blog or content marketing",
-        "Slow page load (GoDaddy hosting)"
-      ],
-      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
-      "prospect_id": "affordable-pest-services-20260429-131043",
-      "created_at": "2026-04-29T13:10:43.101078",
-      "updated_at": "2026-04-29T13:10:43.101080",
-      "status": "new"
-    },
-    "pure-pest-company-20260429-131049": {
-      "businessName": "Pure Pest Company",
-      "niche": "Pest Control / Home Services",
-      "website": "https://purepestco.com/",
-      "source": "Google Search - Denver pest control",
-      "description": "Eco-friendly pest control serving Denver metro area. Extremely basic website with minimal content — no contact form, no online booking, no images of services, and almost no CTA presence. Site by St. George Design. The homepage reads more like a brochure than a lead-generation tool.",
-      "contact": {
-        "phone": "(720) 325-4500",
-        "email": "unknown",
-        "address": "Denver, CO",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "websiteGaps": [
-        "No contact form on site",
-        "No online scheduling or booking integration",
-        "Extremely thin content — few pages",
-        "No visible lead capture mechanism",
-        "No blog or educational content",
-        "No SSL mention / trust signals weak",
-        "No customer reviews displayed on site"
-      ],
-      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
-      "prospect_id": "pure-pest-company-20260429-131049",
-      "created_at": "2026-04-29T13:10:49.451035",
-      "updated_at": "2026-04-29T13:10:49.451037",
-      "status": "new",
-      "funnelStage": "outreach_sent",
-      "outreach_email_sent": "2026-04-29T11:00:00Z"
-    },
-    "ap-pest-control-20260429-131056": {
-      "businessName": "A.P. Pest Control",
-      "niche": "Pest Control / Home Services",
-      "website": "https://appestcontrol.net/",
-      "source": "Google Search - Denver pest control",
-      "description": "Family-owned Denver pest control since 2014. Uses a Yahoo email address (ap_pestcontrol@yahoo.com) which undermines trust. Elementor-built WordPress site but cluttered design with heavy images, slow load time, and poor mobile experience. Multiple location pages but no city-specific content differentiation.",
-      "contact": {
-        "phone": "(720) 327-1750",
-        "email": "ap_pestcontrol@yahoo.com",
-        "address": "2514 Champa St, Denver CO 80205",
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": null
-          },
-          "email": {
-            "verified": true,
-            "verified_at": null
-          }
-        }
-      },
-      "websiteGaps": [
-        "Yahoo email address hurts credibility",
-        "Elementor site with heavy image assets — slow load",
-        "Cluttered layout with poor visual hierarchy",
-        "Multiple thin location pages with duplicate content risk",
-        "No online booking integration",
-        "Poor mobile responsiveness",
-        "Header contact info hard to find"
-      ],
-      "emailPurpose": "Website audit funnel - identify conversion, technical, and lead capture gaps",
-      "prospect_id": "ap-pest-control-20260429-131056",
-      "created_at": "2026-04-29T13:10:56.034466",
-      "updated_at": "2026-04-29T13:10:56.034468",
-      "status": "new"
-    },
-    "sphere-electric-llc-20260429-131116": {
-      "businessName": "Sphere Electric LLC",
-      "niche": "Electrical Contractors / Home Services",
-      "website": "https://www.sphereelectric.net/",
-      "source": "Google Search - Denver electrician free estimate",
-      "description": "Newer Denver electrical contractor. Wix-built site using Gmail for business. Thin service content, no booking, weak SEO.",
-      "contact": {
-        "phone": "(720) 705-8991",
-        "email": "sphere.electric@gmail.com",
-        "address": "1550 N Raleigh St #229, Denver, CO 80204",
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": null
-          },
-          "email": {
-            "verified": true,
-            "verified_at": null
-          }
-        }
-      },
-      "websiteGaps": [
-        "Wix platform limits SEO/performance",
-        "Uses Gmail instead of domain email",
-        "Thin service page content",
-        "No online scheduling",
-        "No blog"
-      ],
-      "emailPurpose": "Website audit funnel",
-      "prospect_id": "sphere-electric-llc-20260429-131116",
-      "created_at": "2026-04-29T13:11:16.066017",
-      "updated_at": "2026-04-29T13:11:16.066018",
-      "status": "new"
-    },
-    "window-replacement-denver-20260429-131122": {
-      "businessName": "Window Replacement Denver",
-      "niche": "Window Replacement / Home Improvement",
-      "website": "https://windowreplacementdenver.com/",
-      "source": "Google Search - Denver window replacement company",
-      "description": "Denver window/door replacement company serving Pella products. Content-heavy site with poor UX patterns. Phone number formatting broken (tel:720207012202 instead of 720-701-2202). No service area pages with unique content. Lead capture form exists but no booking integration. No blog differentiation despite long content.",
-      "contact": {
-        "phone": "(720) 701-2202",
-        "email": "unknown",
-        "address": "1480 N Humboldt St, Denver, CO 80218",
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "websiteGaps": [
-        "Broken phone link in header (tel:720207012202)",
-        "Content-heavy but poor visual hierarchy",
-        "No online scheduling / booking integration",
-        "Thin city-specific pages",
-        "No customer review display on homepage",
-        "Weak conversion optimization",
-        "Poor mobile UX"
-      ],
-      "emailPurpose": "Website audit funnel",
-      "prospect_id": "window-replacement-denver-20260429-131122",
-      "created_at": "2026-04-29T13:11:22.634007",
-      "updated_at": "2026-04-29T13:11:22.634009",
-      "status": "new"
-    },
-    "colby-plumbing-company-20260429": {
-      "businessName": "Colby Plumbing Company",
-      "niche": "Plumbing / Home Services",
-      "website": "https://colbyplumbingcompany.weebly.com",
-      "source": "web_research",
-      "description": "Denver plumbing company on a free Weebly subdomain. Blog-only site with extremely thin, poorly-written content with frequent grammar errors. No email visible. No online booking. No portfolio. Free subdomain undermines credibility for a business where trust is critical.",
-      "serviceArea": "Denver Metro, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 84,
-      "funnelStage": "prospecting",
-      "status": "new"
-    },
-    "aplus-electric-denver-20260429": {
-      "businessName": "A+ Electric Services",
-      "niche": "Electrical Contractors",
-      "website": "https://aplus-electric.weebly.com",
-      "source": "web_research",
-      "description": "Denver electrician on a free Weebly subdomain. Extremely thin, generic content. No phone or email visible on homepage. Free Weebly subdomain destroys trust for an electrical contractor where licensing credibility is critical. No online scheduling. No portfolio.",
-      "serviceArea": "Denver Metro, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 82,
-      "funnelStage": "prospecting",
-      "status": "new"
-    },
-    "rocky-mountain-seamless-gutters-20260429": {
-      "businessName": "Rocky Mountain Seamless Gutters",
-      "niche": "Gutters / Exterior Home Services",
-      "website": "https://rockymountainseamless.com",
-      "source": "web_research",
-      "description": "Denver seamless gutter company with a \"Coming Soon\" page on SquareSpace. Domain is registered but site was never launched. Zero online lead capture, zero local SEO presence. Massive opportunity for a full website build and launch.",
-      "serviceArea": "Denver Metro / Front Range, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 88,
-      "funnelStage": "prospecting",
-      "status": "new"
-    },
-    "restore-honor-restoration-plumbing-20260429": {
-      "businessName": "Restore Honor Restoration and Plumbing",
-      "niche": "Plumbing / Restoration",
-      "website": "https://restorehonorrestorationandplumbing.weebly.com",
-      "source": "web_research",
-      "description": "Denver/Aurora plumbing and restoration company on a free Weebly subdomain. Extremely thin AI-written content with heavy external link reliance. No email visible. Free subdomain undermines trust for an emergency services company. No online booking. No restoration portfolio.",
-      "serviceArea": "Denver Metro, Aurora, CO",
-      "phone": "unverified",
-      "email": "unverified",
-      "opportunityScore": 80,
-      "funnelStage": "prospecting",
-      "status": "new"
-    },
-    "the-pool-man-inc-20260429-140646": {
-      "businessName": "The Pool Man Inc",
-      "niche": "Pool Service / Maintenance / Supplies / Denver",
-      "website": "https://poolmanusa.co",
-      "phone": "(303) 781-4409",
-      "contactName": "The Pool Man Inc",
-      "location": "Denver, CO",
-      "source": "Google Search - Denver pool service company",
-      "description": "Denver pool service since 1976 offering cover installation, renovation, leak detection, supplies, and maintenance. Website runs on basic platform with no lead capture form, no SSL on main domain, no blog/content marketing, heavy wall-of-text layout with no conversion optimization. Phone number visible but no booking widget or contact form.",
-      "websiteIssues": "No SSL redirect from HTTP; no contact form on site (only phone number); bloated homepage text with no scannable layout; no social proof integration or review widgets; no blog or educational content; no online scheduling or estimate request tool; poor mobile responsiveness",
-      "leadCaptureGaps": [
-        "No contact form",
-        "No scheduling widget",
-        "No estimate request tool",
-        "No email capture",
-        "No live chat"
-      ],
-      "conversionGaps": [
-        "No clear CTA above fold",
-        "No click-to-call tracking",
-        "No testimonials prominently displayed",
-        "No before/after portfolio visible on homepage"
-      ],
-      "technicalGaps": [
-        "HTTP not redirecting to HTTPS",
-        "No CMS framework visible",
-        "Basic static HTML likely unoptimized for speed",
-        "No schema markup expected"
-      ],
-      "auditPriority": "high",
-      "funnelStage": "research",
-      "status": "new",
-      "prospect_id": "the-pool-man-inc-20260429-140646",
-      "created_at": "2026-04-29T14:06:46.540096",
-      "updated_at": "2026-04-29T14:08:06.779792",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "denver-home-repairs-llc-20260429-140654": {
-      "businessName": "Denver Home Repairs LLC",
-      "niche": "Handyman / Home Services / Denver",
-      "website": "https://denverhomerepairsllc.com",
-      "phone": "(256) 601-0983",
-      "contactName": "Denver Home Repairs LLC",
-      "location": "Denver, CO",
-      "source": "Google Search - Denver handyman service",
-      "description": "Denver handyman service claiming to serve greater Denver area but using Alabama area code (256). WordPress site with Elementor. Decent structure but major trust signals missing. Alabama phone number for a Denver business is a red flag for local customers. Testimonials section present but no third-party review integration.",
-      "websiteIssues": "Alabama (256) area code for Denver business creates trust gap; WordPress/Elementor site feels template-driven; no service area page with location-specific content; Google Maps embed missing; no click-to-call tracking; generic stock imagery",
-      "leadCaptureGaps": [
-        "Free estimate form present but buried",
-        "No SMS/chat option",
-        "No newsletter or email capture",
-        "No booking calendar"
-      ],
-      "conversionGaps": [
-        "CTA uses generic Get A Free Estimate with no urgency",
-        "No service pricing transparency",
-        "No Google Reviews badge or rating stars",
-        "No guarantee shown prominently enough"
-      ],
-      "technicalGaps": [
-        "Possible slow load from Elementor bloat",
-        "No obvious SEO meta optimization",
-        "Unoptimized images on homepage",
-        "No local business schema expected"
-      ],
-      "auditPriority": "high",
-      "funnelStage": "research",
-      "status": "new",
-      "prospect_id": "denver-home-repairs-llc-20260429-140654",
-      "created_at": "2026-04-29T14:06:54.035375",
-      "updated_at": "2026-04-29T14:08:06.828047",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "the-handymen-denver-20260429-140702": {
-      "businessName": "The Handymen (Denver)",
-      "niche": "Handyman / Home Services / Denver",
-      "website": "http://thehandymenonline.com",
-      "phone": "(303) 232-3347",
-      "contactName": "Paul Faustini",
-      "location": "2164 South Yates Street, Denver, CO 80219",
-      "source": "Google Search - Denver handyman service",
-      "description": "Family-run Denver handyman business since 1984 (42 years). Website is a bare-bones single-page HTML site with no CMS. No mobile responsiveness, no SSL, no contact form, no booking. Links to a blogspot page and Facebook. Minimal design — literally just text on white background. Runs on http only. Huge opportunity for a full website overhaul and digital presence transformation.",
-      "websiteIssues": "HTTP no SSL; single-page HTML site (not responsive); no contact form or lead capture; no CTA structure; links to external blogspot blog; no local SEO optimization; no Google Business integration on site; no testimonials or portfolio on site",
-      "leadCaptureGaps": [
-        "No contact form",
-        "No phone tracking",
-        "No email capture",
-        "No booking/scheduling",
-        "No chat",
-        "No estimate request"
-      ],
-      "conversionGaps": [
-        "No call-to-action buttons",
-        "No service menu with pricing",
-        "No trust signals (BBB, Google Reviews)",
-        "No portfolio or gallery"
-      ],
-      "technicalGaps": [
-        "No SSL certificate",
-        "No responsive/mobile design",
-        "Bare HTML with no schema markup",
-        "No analytics tracking visible",
-        "No CDN or performance optimization"
-      ],
-      "auditPriority": "critical",
-      "funnelStage": "research",
-      "status": "new",
-      "prospect_id": "the-handymen-denver-20260429-140702",
-      "created_at": "2026-04-29T14:07:02.024797",
-      "updated_at": "2026-04-29T14:08:06.876225",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "welcome-home-handyman-of-denver-20260429-140709": {
-      "businessName": "Welcome Home Handyman of Denver",
-      "niche": "Handyman / Home Services / Denver",
-      "website": "https://welcomehomehandymanofdenver.com",
-      "phone": "(720) 312-0607",
-      "contactName": "Charlie",
-      "location": "Denver Metro, CO",
-      "source": "Google Search - Denver handyman service",
-      "description": "Solo handyman operator with a cleaner single-page site than competitors. Has service pages and a schedule form but the contact form is basic HTML/PHP with no CRM integration. Good Google reviews but not embedded on site. No blog, no case studies, no portfolio. Excellent prospect for audit — site is decent but missing conversion optimization and technical polish.",
-      "websiteIssues": "Homepage is single-page scroll with no breadcrumbs; contact form is basic PHP with no CRM/webhook integration; no SSL issues (good), but no blog or content marketing; no service pricing listed; no Google Reviews embed/widget; no portfolio/gallery of work; no analytics visible",
-      "leadCaptureGaps": [
-        "Schedule form present but basic",
-        "No email capture/newsletter",
-        "No live chat",
-        "No automated estimate follow-up"
-      ],
-      "conversionGaps": [
-        "No pricing transparency",
-        "No trust badges (insurance, license)",
-        "Service links are just anchor jumps, no dedicated pages",
-        "No before/after photos"
-      ],
-      "technicalGaps": [
-        "No obvious schema markup",
-        "No lazy loading on images",
-        "No caching/CDN visible",
-        "Single HTML form with no validation feedback"
-      ],
-      "auditPriority": "medium",
-      "funnelStage": "research",
-      "status": "new",
-      "prospect_id": "welcome-home-handyman-of-denver-20260429-140709",
-      "created_at": "2026-04-29T14:07:09.141118",
-      "updated_at": "2026-04-29T14:08:06.925234",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "ernies-gutter-20260429-140723": {
-      "businessName": "Ernie's Gutter",
-      "niche": "Gutters / Exterior Home Services / Denver",
-      "website": "https://erniesgutter.com",
-      "phone": "(720) 346-7663",
-      "contactName": "Ernie's Gutter",
-      "location": "Denver, CO",
-      "source": "Google Search - Denver gutter service ad listing",
-      "description": "Denver gutter company established in 1978 with 45+ years of experience. Site has good SEO structure and content with dedicated service pages. However misses on conversion: no online booking, no automated estimate request, no review widget integration, heavy text blocks without scannable hierarchy. No click-to-call tracking.",
-      "websiteIssues": "No online booking or appointment scheduling; no automated estimate request flow; heavy text without scannable design; no Google Reviews widget or trust badges; no blog or educational content",
-      "leadCaptureGaps": [
-        "Contact page but no automated estimate",
-        "No SMS or text option",
-        "No live chat",
-        "No newsletter capture"
-      ],
-      "conversionGaps": [
-        "CTA is basic Request Online link",
-        "No pricing page",
-        "No click-to-call tracking",
-        "No before-after case studies"
-      ],
-      "technicalGaps": [
-        "WordPress with possible plugin bloat",
-        "Image optimization unknown",
-        "No visible speed optimization",
-        "Basic schema but no rich results"
-      ],
-      "auditPriority": "high",
-      "funnelStage": "research",
-      "status": "new",
-      "prospect_id": "ernies-gutter-20260429-140723",
-      "created_at": "2026-04-29T14:07:23.586588",
-      "updated_at": "2026-04-29T14:08:06.973808",
-      "contact": {
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      }
-    },
-    "ddl-cleaning-services-20260429-160930": {
-      "businessName": "DDL Cleaning Services",
-      "niche": "Cleaning Services / Residential & Commercial",
-      "website": "https://luzelena994.wixsite.com/website",
-      "source": "Google Search (site:wixsite.com for Denver cleaning services)",
-      "description": "Denver cleaning service using Wix free subdomain. Wix branding banner visible. Generic template content. Service booking buttons all say Call us - no true online booking system. Copyright 2021 suggests site has not been meaningfully updated. Missing custom domain, SEO optimization, proper online booking, service-specific landing pages.",
-      "location": "Denver, CO (serves Denver Metro Area)",
-      "contact": {
-        "phone": "(720)-347-8906",
-        "email": "luzelena@ddlcleaningservices.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "issues_score": 75,
-      "identified_gaps": [
-        "Free Wix subdomain with Wix branding banner",
-        "Generic template placeholder content",
-        "No custom domain",
-        "Call us buttons instead of real online booking",
-        "Copyright 2021 - outdated footer",
-        "No SEO optimization visible",
-        "No portfolio/gallery of actual work",
-        "Minimal service differentiation"
-      ],
-      "status": "new",
-      "prospect_id": "ddl-cleaning-services-20260429-160930",
-      "created_at": "2026-04-29T16:09:30.285806",
-      "updated_at": "2026-04-29T16:09:30.285808"
-    },
-    "mobile-mechanic-of-denver-20260429-160938": {
-      "businessName": "Mobile Mechanic of Denver",
-      "niche": "Auto Repair / Mobile Mechanic",
-      "website": "https://mobilemechaincdenv.wixsite.com/mobile-mechanic-of-d",
-      "source": "Google Search (site:wixsite.com for Denver auto repair)",
-      "description": "Mobile mechanic in Lakewood/Denver using Wix free subdomain. Wix branding banner visible on site. Sections contain generic Wix template placeholder text like This is your Price Quote section paragraph. Encourage your site visitors to provide their information. Site appears to be a basic out-of-box Wix template with minimal customization. No customer reviews or testimonials visible. No work portfolio showing completed jobs. Has an ecommerce cart feature that seems irrelevant for a mobile mechanic. Missing custom domain, SEO optimization, before/after photos, customer trust signals.",
-      "location": "Lakewood / Denver, CO",
-      "contact": {
-        "phone": "720-681-7474",
-        "email": "mobilemechaincdenverco@gmail.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "issues_score": 80,
-      "identified_gaps": [
-        "Free Wix subdomain with Wix branding banner",
-        "Generic placeholder template text visible (This is your Price Quote section)",
-        "No custom domain",
-        "Ecommerce cart feature irrelevant for mechanic service",
-        "No customer reviews or trust signals",
-        "No work portfolio or before/after photos",
-        "Minimal SEO optimization",
-        "Generic template layout throughout"
-      ],
-      "status": "new",
-      "prospect_id": "mobile-mechanic-of-denver-20260429-160938",
-      "created_at": "2026-04-29T16:09:38.367832",
-      "updated_at": "2026-04-29T16:09:38.367834"
-    },
-    "garcias-auto-repair-llc-20260429-160946": {
-      "businessName": "Garcias Auto Repair LLC",
-      "niche": "Auto Repair / Auto Shop",
-      "website": "https://garciasautorepair558.wixsite.com/garciasautorepairllc",
-      "source": "Google Search (site:wixsite.com for Denver auto repair)",
-      "description": "Denver auto repair shop using Wix free subdomain. Wix branding banner visible on site. Image gallery contains placeholder text still showing (I am a title, I am a description). Copyright 2013 in footer - site appears extremely outdated (13+ years without meaningful update). Slide show gallery only has 2 slides. Minimal services page content. No online booking, reviews, or social proof on site. Missing: custom domain, modern design, booking system, testimonials, service descriptions, SEO.",
-      "location": "3011 W. 49th Ave, Denver, CO 80221",
-      "contact": {
-        "phone": "(720)-447-9323",
-        "email": "garciasautorepair558@gmail.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "issues_score": 85,
-      "identified_gaps": [
-        "Free Wix subdomain with Wix branding banner",
-        "Placeholder text I am a title still visible in gallery",
-        "Copyright 2013 - site is 13+ years outdated",
-        "Only 2 slides in gallery",
-        "No online booking system",
-        "No customer reviews or testimonials",
-        "No SEO optimization",
-        "Very basic content with minimal service descriptions",
-        "No custom domain"
-      ],
-      "status": "new",
-      "prospect_id": "garcias-auto-repair-llc-20260429-160946",
-      "created_at": "2026-04-29T16:09:46.426490",
-      "updated_at": "2026-04-29T16:09:46.426492"
-    },
-    "jjc-auto-collision-center-20260429-160953": {
-      "businessName": "JJC Auto Collision Center",
-      "niche": "Auto Body / Collision Repair",
-      "website": "https://jjccautorepair.wixsite.com/mysite",
-      "source": "Google Search (site:wixsite.com for Denver auto repair)",
-      "description": "Denver auto collision center using Wix free subdomain with Wix branding banner visible. Extremely minimal site with only 6 pages (HOME, PROJECTS, SERVICES, SOCIAL MEDIA, ABOUT US, CONTACT) but all are sparse. Homepage has only a 2-slide image gallery and a link to contact page. No service descriptions, no pricing, no business history. The site functions as a digital business card/brochure at best. Missing: service details, portfolio of collision work, online estimates, SEO, customer reviews, trust signals, custom domain.",
-      "location": "Denver, CO",
-      "contact": {
-        "phone": "303-623-0172",
-        "email": null,
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "issues_score": 82,
-      "identified_gaps": [
-        "Free Wix subdomain with Wix branding banner",
-        "Extremely minimal content - functions as digital business card",
-        "No service descriptions or pricing",
-        "No portfolio of collision repair work",
-        "No online estimate or booking capability",
-        "No customer reviews or testimonials",
-        "Very basic template layout",
-        "No SEO optimization",
-        "No custom domain"
-      ],
-      "status": "new",
-      "prospect_id": "jjc-auto-collision-center-20260429-160953",
-      "created_at": "2026-04-29T16:09:53.672000",
-      "updated_at": "2026-04-29T16:09:53.672002"
-    },
-    "bluespring-cleaning-20260429-161002": {
-      "businessName": "BlueSpring Cleaning",
-      "niche": "Cleaning Services / House Cleaning",
-      "website": "https://bluespringcleaning.weebly.com",
-      "source": "Google Search (site:weebly.com for Denver cleaning services)",
-      "description": "Denver cleaning company using Weebly free subdomain (bluespringcleaning.weebly.com) despite owning bluespringcleaning.com domain which does not appear to be actively used as the primary site. Weebly footer branding visible. Single-page site with all content on one long page. No blog or SEO content strategy - site is essentially one SEO-optimized article repeated. No portfolio or before/after photos despite being a visual service. Heavy link spam at bottom with 20+ external profile links to about.me, angel.co, gravatar, etc. - looks like aggressive backlink building. No online booking system (just a phone number). Missing: custom domain usage, proper site structure, portfolio, booking system, clean design.",
-      "location": "2255 W EXPOSITION AVE, Denver, CO 80223",
-      "contact": {
-        "phone": "(303) 309-4226",
-        "email": "info@bluespringcleaning.com",
-        "verification_status": {
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "issues_score": 70,
-      "identified_gaps": [
-        "Free Weebly subdomain despite owning custom domain",
-        "Weebly footer branding visible",
-        "Single long page with all content - no site structure",
-        "No blog or real SEO content strategy",
-        "No portfolio/before-after photos",
-        "Heavy link spam (20+ external profile links) at bottom",
-        "No online booking system - phone call only",
-        "Generic template content"
-      ],
-      "status": "new",
-      "prospect_id": "bluespring-cleaning-20260429-161002",
-      "created_at": "2026-04-29T16:10:02.091414",
-      "updated_at": "2026-04-29T16:10:02.091416"
-    },
-    "eagle-eye-renovations-20260429-200944": {
-      "businessName": "Eagle Eye Renovations",
-      "niche": "Roofing / Gutter Services / Exterior Renovations",
-      "website": "https://www.eagleeyerenovations.com",
-      "source": "Google Search Weebly discovery",
-      "description": "Roofing and gutter contractor serving Parker, Aurora, Castle Rock, and Franktown CO. A+ BBB rating. Has a proper main site (eagleeyerenovations.com) AND a Weebly blog (eagleeyerenovationscolorado.weebly.com). The Weebly blog still shows default placeholder text: \"Write something about yourself. No need to be fancy, just an overview.\" Blog-only site with no dedicated lead capture form or CTA beyond phone number. Main site is functional but the Weebly presence is severely neglected.",
-      "contact": {
-        "phone": "(720) 333-1613",
-        "email": null,
-        "address": "12760 Stroh Ranch Way, Suite 100A, Parker, CO 80134",
-        "social": {
-          "facebook": "https://www.facebook.com/Eagle-Eye-Renovations-LLC-2267250520159450",
-          "twitter": "https://twitter.com/EagleEyeReno",
-          "youtube": "https://www.youtube.com/channel/UC0gE0lTdTtcLedRIg5xaYAQ"
         },
+        "notes": "Phone listed on website. Email unverified."
+      },
+      "status": "outreach_sent",
+      "prospect_id": "colorado-roofing-company-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:07:15.070782+00:00",
+      "last_draft_file": "2026-04-29-hourly-outreach-draft-queue-1020pm.md"
+    },
+    "denver-lawn--landscape-20260430-061428": {
+      "businessName": "Denver Lawn & Landscape",
+      "niche": "Landscaping / Lawn Care Services",
+      "website": "https://www.denverlawnlandscape.com",
+      "source": "Google Search → Denver landscaping lawn care company website",
+      "description": "Woman-owned Denver landscaping company. Extremely thin website — ~3 paragraphs on homepage. No portfolio images, no contact form, no CTAs, no service detail pages. Zero conversion engineering; essentially a placeholder site.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "denver-lawn--landscape-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "sundog-electric-20260430-061428": {
+      "businessName": "Sundog Electric",
+      "niche": "Residential & Commercial Electrical Services",
+      "website": "https://www.sundogelectric.com",
+      "source": "Google Search → Denver electrician residential company website",
+      "description": "Littleton/Denver electrician with generic template website. Services section has placeholder text: 'Here are four services Sundog Electric LLC can offer' with no actual descriptions. Testimonials and portfolio sections appear empty/unpopulated. Template appears unfinished.",
+      "contact": {
+        "verification_status": {},
+        "notes": "Contact details unverified."
+      },
+      "status": "new",
+      "prospect_id": "sundog-electric-20260430-061428",
+      "created_at": "2026-04-30T06:14:28.879254",
+      "updated_at": "2026-04-30T06:14:28.879254"
+    },
+    "williams-and-sons-electric-20260430-060815": {
+      "prospect_id": "williams-and-sons-electric-20260430-060815",
+      "businessName": "Williams and Sons Electric",
+      "niche": "Residential Electrical Services / Electrician",
+      "website": "https://www.denverhomeelectricians.com",
+      "source": "Google Search → Denver electrician residential company website",
+      "description": "Long-standing Denver electrician (since 1957). Extremely thin website — the homepage is essentially one paragraph of text plus a phone number. No service breakdown, no project photos, no about page detail, no testimonials, no lead capture form beyond a link to a generic estimate page. Major missed opportunity for a company with 65+ years of history.",
+      "contact": {
+        "phone": "303-762-9484",
         "verification_status": {
           "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:11:50.555962"
-          },
-          "address": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:11:50.586548"
-          },
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Phone listed. Email unverified."
+      },
+      "status": "new",
+      "created_at": "2026-04-30T06:08:15",
+      "updated_at": "2026-04-30T06:15:24.750148"
+    },
+    "ap-pest-control-20260430-071341": {
+      "businessName": "AP Pest Control",
+      "niche": "Pest Control / Exterminator Services",
+      "website": "https://appestcontrol.net",
+      "source": "Google Search → \"Denver pest control company website contact form\"",
+      "description": "Denver-area pest control company serving residential and commercial clients. Family-owned and operated with satisfaction guarantee. Covers Arvada, Aurora, Boulder, Brighton, and surrounding areas.",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "verification_status": {
           "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
             "verified": false,
             "verified_at": null
           }
         }
       },
-      "audit_findings": [
-        "Weebly blog has default placeholder text visible",
-        "No lead capture form on Weebly blog",
-        "Blog content outdated - last meaningful post Jan 2025",
-        "Untitled placeholder blog post still published",
-        "Main site lacks prominent conversion-focused CTA above fold",
-        "No live chat or instant quote tool"
+      "email": null,
+      "phone": null,
+      "website_gaps": [
+        "WordPress/Elementor site with no dedicated contact page (404 on /contact-us/)",
+        "No visible phone number or email on homepage — missing primary conversion element",
+        "Thin content: relies heavily on generic promises without specific proof points",
+        "No before/after photos or project gallery",
+        "No trust badges, certifications, or licenses displayed",
+        "Generic CTA buttons without specific offers or urgency",
+        "Mobile responsiveness issues likely with templated Elementor design"
       ],
-      "verified_contact": {
-        "phone": true,
-        "address": true,
-        "email": false
-      },
-      "prospect_id": "eagle-eye-renovations-20260429-200944",
-      "created_at": "2026-04-29T20:09:44.764074",
-      "updated_at": "2026-04-29T20:11:50.614688",
+      "prospect_id": "ap-pest-control-20260430-071341",
+      "created_at": "2026-04-30T07:13:41.380425",
+      "updated_at": "2026-04-30T07:16:15.669272",
       "status": "new"
     },
-    "watertight-roofing-inc-20260429-200959": {
-      "businessName": "WaterTight Roofing, Inc.",
-      "niche": "Roofing / Storm Restoration",
-      "website": "https://watertightroofinginc.weebly.com",
-      "source": "Google Search Weebly discovery",
-      "description": "Roofing contractor operating in Colorado, Texas, and Louisiana. Weebly blog-only site (watertightroofinginc.weebly.com). Most recent post April 2026 about roof evaluations. No dedicated website beyond the Weebly blog, no lead capture form, no online booking. Multi-state operations suggest they have revenue but are underspending on their web presence.",
+    "denver-door-to-door-movers-20260430-071415": {
+      "businessName": "Denver Door To Door Movers",
+      "niche": "Moving Company / Residential & Commercial Moving",
+      "website": "https://denverdoor2doormovers.com",
+      "source": "Google Search → Denver moving company local website quote form",
+      "description": "Family-owned local moving company in Denver, CO. Licensed (PUC# HHG-00510, DOT #3184789, MC-1195769). Offers residential and commercial moving, packing, loading/unloading, storage, senior moving, and junk removal. Same-day/next-day availability.",
+      "contact": {
+        "email": null,
+        "phone": "720-755-0999",
+        "address": "5686 Logan Ct Unit E, Denver, CO 80216",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T07:16:22.384220"
+          }
+        }
+      },
+      "email": null,
+      "phone": "720-755-0999",
+      "website_gaps": [
+        "Basic design with limited visual hierarchy",
+        "Contact form requires CAPTCHA — adds friction to lead capture",
+        "No visible testimonials or customer reviews on homepage",
+        "No trust badges, BBB rating, or association memberships displayed",
+        "No before/after or project photo gallery of moves",
+        "CTA buried — Check Availability link easy to miss",
+        "Limited service detail pages; descriptions are brief",
+        "No clear pricing transparency or ballpark estimates visible"
+      ],
+      "prospect_id": "denver-door-to-door-movers-20260430-071415",
+      "created_at": "2026-04-30T07:14:15.761316",
+      "updated_at": "2026-04-30T07:16:22.410028",
+      "status": "new"
+    },
+    "denver-commercial-coatings-20260430-071435": {
+      "businessName": "Denver Commercial Coatings",
+      "niche": "Commercial Painting / Industrial Coatings Contractor",
+      "website": "https://commercialpaintingdenver.co",
+      "source": "Google Search → Denver commercial painting company website contact",
+      "description": "Denver-based commercial painting and sealants contractor with 30+ years experience. Services front range properties from Colorado Springs to Ft Collins and mountain communities. Completed over 100 million sq ft of projects across all asset classes. Family business with commercial real estate and institutional investment management background.",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "email": null,
+      "phone": null,
+      "website_gaps": [
+        "Uses .co TLD — less professional/trustworthy than .com for established company",
+        "No contact form found — only 'Request a Bid' anchor links that may be broken",
+        "No phone number or email visible on homepage",
+        "No customer testimonials, reviews, or case studies displayed",
+        "No project gallery or portfolio despite 100M+ sq ft completed",
+        "No trust badges, safety certifications, or insurance info visible",
+        "Heavy reliance on generic marketing language without concrete proof points",
+        "No clear team/about section with faces or credentials"
+      ],
+      "prospect_id": "denver-commercial-coatings-20260430-071435",
+      "created_at": "2026-04-30T07:14:35.749760",
+      "updated_at": "2026-04-30T07:16:28.332039",
+      "status": "new"
+    },
+    "the-good-move-20260430-071454": {
+      "businessName": "The Good Move",
+      "niche": "Moving Company / Residential Moving Services",
+      "website": "https://www.thegoodmovellc.com",
+      "source": "Google Search → Denver moving company local website quote form",
+      "description": "Locally owned, fully insured moving company serving Boulder and Denver for 13+ years. Offers residential moving with strong Google review presence. Brand positions around #MoveHappy concept with good customer testimonials on homepage.",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "email": null,
+      "phone": null,
+      "website_gaps": [
+        "Extremely thin homepage — only 2 testimonials and a CTA",
+        "No service detail pages visible (only Get an Estimate form)",
+        "No phone number or email found on homepage",
+        "No trust badges, insurance details, or licensing info displayed",
+        "No photo gallery of moves, trucks, or team",
+        "No pricing information or ballpark estimates",
+        "No staff/team photos or bios",
+        "Generic website structure with minimal conversion optimization"
+      ],
+      "prospect_id": "the-good-move-20260430-071454",
+      "created_at": "2026-04-30T07:14:54.362799",
+      "updated_at": "2026-04-30T06:07:15.070782+00:00",
+      "status": "outreach_sent",
+      "last_draft_file": "2026-04-29-hourly-outreach-draft-queue-1020pm.md"
+    },
+    "colorado-pest-management-20260430-071515": {
+      "businessName": "Colorado Pest Management",
+      "niche": "Pest Control / Exterminator & Wildlife Removal",
+      "website": "https://www.coloradopestmanagement.com",
+      "source": "Google Search → Denver pest control company website contact form",
+      "description": "Veteran-founded pest control company serving Denver since 1989. Uses Integrated Pest Management (IPM) methods. Specializes in bed bug extermination, rodent control, and wildlife removal (squirrels, raccoons, bats). Licensed and insured professional pest management focused on eco-friendly solutions.",
+      "contact": {
+        "email": "info@coloradopestmanagement.com",
+        "phone": "303-927-0136",
+        "address": "7006 S Alton Way Bldg D, Centennial, CO 80112",
+        "verification_status": {
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T07:16:40.457442"
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T07:16:40.482431"
+          }
+        }
+      },
+      "email": "info@coloradopestmanagement.com",
+      "phone": "303-927-0136",
+      "website_gaps": [
+        "Homepage content is very thin — essentially one paragraph of text",
+        "No before/after photos or pest treatment gallery",
+        "No customer testimonials or reviews displayed on homepage",
+        "No trust badges, BBB rating, or industry certifications shown",
+        "No team photos or technician bios (weak for trust-driven pest control)",
+        "Limited service area information — minimal local SEO optimization",
+        "Contact page has full info but homepage lacks strong CTA visibility",
+        "Generic WordPress/template feel with minimal custom branding"
+      ],
+      "prospect_id": "colorado-pest-management-20260430-071515",
+      "created_at": "2026-04-30T07:15:15.331296",
+      "updated_at": "2026-04-30T07:16:40.482440",
+      "status": "new"
+    },
+    "denver-chimney-sweep-20260430-081504": {
+      "businessName": "Denver Chimney Sweep",
+      "niche": "Chimney Sweep / Fireplace Inspection & Cleaning",
+      "website": "https://www.denverchimneysweep.com",
+      "source": "web_research_ddg",
+      "description": "Denver-area chimney sweep and fireplace inspection company. Website appears dated with thin, article-style content and no modern lead capture or conversion elements.",
+      "contact": {
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospect_id": "denver-chimney-sweep-20260430-081504",
+      "created_at": "2026-04-30T08:15:04.736793",
+      "updated_at": "2026-04-30T08:15:04.736795",
+      "status": "new"
+    },
+    "mile-high-drywall-llc-20260430-081512": {
+      "businessName": "Mile High Drywall LLC",
+      "niche": "Commercial Drywall / Specialty Construction Contractor",
+      "website": "https://www.milehighdrywall.com",
+      "source": "web_research_ddg",
+      "description": "Denver-based commercial drywall contractor with 20 years experience. Website has significant template/placeholder issues: uses ATTORNEYS template text, generic Wix-style placeholders, no phone links, weak testimonial formatting.",
+      "contact": {
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "verified_at": null
+          },
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "prospect_id": "mile-high-drywall-llc-20260430-081512",
+      "created_at": "2026-04-30T08:15:12.867404",
+      "updated_at": "2026-04-30T08:15:12.867406",
+      "status": "new"
+    },
+    "comfort-now-hvac-20260430-082131": {
+      "businessName": "Comfort Now HVAC",
+      "niche": "HVAC / Heating & Cooling Services",
+      "website": "https://comfortnowhvac.com",
+      "source": "Web research — Google/Bing local business search",
+      "description": "Denver-area HVAC company. Website shows bare WordPress default install (Hello World post dated Feb 2025), indicating the site was set up but never completed. Zero service pages, no contact info on homepage, no lead capture mechanism, no online booking, no SEO content. This is a textbook abandoned website that represents a complete conversion gap — the business exists but has no functional web presence to generate leads.",
+      "websiteIssues": [
+        "Bare WordPress default install — only Hello World post visible",
+        "No service pages, pricing, or about page",
+        "No contact form or phone number visible",
+        "No online booking or quote request",
+        "No SEO content or meta optimization",
+        "Site likely invisible in search results",
+        "Massive missed lead opportunity"
+      ],
       "contact": {
         "phone": null,
         "email": null,
         "address": null,
-        "social": {},
         "verification_status": {
           "phone": {
             "verified": false,
@@ -1550,138 +426,41 @@
           "email": {
             "verified": false,
             "verified_at": null
-          },
-          "address": {
-            "verified": false,
-            "verified_at": null
           }
         }
       },
-      "audit_findings": [
-        "Weebly blog-only presence - no professional business website",
-        "No lead capture form or contact form visible on blog",
-        "No phone number or email publicly listed on blog",
-        "No CTA beyond blog posts",
-        "Multi-state operation with inadequate web presence",
-        "No Google Maps or GBP integration visible"
-      ],
-      "verified_contact": {
-        "phone": false,
-        "address": false,
-        "email": false
-      },
-      "prospect_id": "watertight-roofing-inc-20260429-200959",
-      "created_at": "2026-04-29T20:09:59.795791",
-      "updated_at": "2026-04-29T20:11:58.126211",
+      "location": "Denver, CO metro area",
+      "urgency": "high",
+      "prospect_id": "comfort-now-hvac-20260430-082131",
+      "created_at": "2026-04-30T08:21:31.799235",
+      "updated_at": "2026-04-30T08:24:00.045814",
       "status": "new"
     },
-    "standard-fence-company-20260429-201011": {
-      "businessName": "Standard Fence Company",
-      "niche": "Fencing / Gate Services",
-      "website": "https://standardfencecompany.weebly.com",
-      "source": "Google Search Weebly discovery",
-      "description": "Fence company serving Denver, CO with automatic gate operators and professional fencing services. Weebly blog-only site. Phone number (303) 433-7301 visible on blog. No dedicated business website beyond the Weebly blog platform. No contact form, no quote request mechanism, no photo gallery or portfolio. Basic blog posts with SEO-focused content but weak conversion path.",
-      "contact": {
-        "phone": "(303) 433-7301",
-        "email": null,
-        "address": null,
-        "social": {},
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:12:05.772591"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "address": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "audit_findings": [
-        "Weebly blog-only - no professional business website",
-        "No lead capture/contact form",
-        "No portfolio or project gallery",
-        "No online quote/estimate request",
-        "No SSL on blog (Weebly subdomain)",
-        "Blog articles lack clear CTAs to convert readers",
-        "No Google Maps embed or directions"
+    "denver-window-cleaning-20260430-082158": {
+      "businessName": "Denver Window Cleaning",
+      "niche": "Window Cleaning / Exterior Cleaning Services",
+      "website": "https://denverwindowcleaning.com",
+      "source": "Web research via Google/Bing local business search",
+      "description": "Denver-based window cleaning company serving residential and commercial clients for 10+ years. Site is a basic WordPress install with thin content, no online booking, no pricing estimator, no live chat, and no lead magnet. Contact page lacks an email address — only a form. No clear conversion path beyond a phone call. Dated design with generic stock imagery. The business claims A+ BBB rating but does not leverage it with trust badges. Good business with poor digital conversion infrastructure.",
+      "websiteIssues": [
+        "No online booking or scheduling tool",
+        "No pricing estimator or instant quote tool",
+        "No email address on contact page",
+        "No live chat or chatbot",
+        "No lead magnet or downloadable content",
+        "Thin content with no blog or resources",
+        "Dated WordPress theme with generic stock imagery",
+        "No trust badges despite A+ BBB rating",
+        "Mobile experience not optimized"
       ],
-      "verified_contact": {
-        "phone": true,
-        "address": false,
-        "email": false
-      },
-      "prospect_id": "standard-fence-company-20260429-201011",
-      "created_at": "2026-04-29T20:10:11.772941",
-      "updated_at": "2026-04-29T20:12:05.832754",
-      "status": "new"
-    },
-    "snowdriftco-inc-20260429-201023": {
-      "businessName": "SnowdriftCO, Inc.",
-      "niche": "Digital Marketing Agency / SEO / Web Design",
-      "website": "https://snowdriftco.com",
-      "source": "Google Maps / Search agency discovery",
-      "description": "Boutique digital marketing agency in Englewood, CO serving small businesses to law firms. Services: local SEO, web design, PPC, GBP optimization. Clean website with contact form and phone (303) 578-0150. Potential referral partner for Outbound Autonomy - they handle marketing/SEO, we handle website audits and fixes. Their site has basic conversion elements but could benefit from stronger differentiation and case study presentation.",
       "contact": {
-        "phone": "(303) 578-0150",
-        "email": null,
-        "address": "Englewood, CO",
-        "social": {},
-        "verification_status": {
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:12:13.353286"
-          },
-          "address": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:12:13.380781"
-          },
-          "email": {
-            "verified": false,
-            "verified_at": null
-          }
-        }
-      },
-      "audit_findings": [
-        "Contact form exists but no live chat or instant booking",
-        "Limited case studies or portfolio visible on homepage",
-        "No prominent client logo/reputation bar",
-        "Could benefit from stronger visual differentiation vs competitors",
-        "Good local SEO content but conversion optimization opportunities exist"
-      ],
-      "verified_contact": {
-        "phone": true,
-        "address": true,
-        "email": false
-      },
-      "prospect_id": "snowdriftco-inc-20260429-201023",
-      "created_at": "2026-04-29T20:10:23.026648",
-      "updated_at": "2026-04-29T20:12:13.408372",
-      "status": "new"
-    },
-    "denver-digital-agency-dda-local-20260429-201046": {
-      "businessName": "Denver Digital Agency (DDA Local)",
-      "niche": "Digital Marketing Agency / SEO / PPC / Web Design",
-      "website": "https://denverdigitalagency.com",
-      "source": "Google Maps / Search agency discovery",
-      "description": "Denver-based SEO and digital marketing agency serving clients nationwide. Services: Local SEO, PPC management, SEO audits/consulting, web design. Strong Google reviews. Client base includes legal and healthcare. Positioned as potential referral partner - they offer SEO audits but not full technical website fixes that Outbound Autonomy does.",
-      "contact": {
-        "phone": "(303) 529-6979",
+        "phone": null,
         "email": null,
         "address": "Denver, CO",
-        "social": {},
         "verification_status": {
           "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:12:20.820632"
-          },
-          "address": {
-            "verified": true,
-            "verified_at": "2026-04-29T20:12:20.848139"
+            "verified": false,
+            "verified_at": null
           },
           "email": {
             "verified": false,
@@ -1689,29 +468,850 @@
           }
         }
       },
-      "audit_findings": [
-        "Website functional but design feels dated",
-        "No live chat or instant demo booking",
-        "Case studies mentioned but not prominently featured",
-        "Could partner for mutual client referrals",
-        "Their SEO audit service complements our technical fixes"
-      ],
-      "verified_contact": {
-        "phone": true,
-        "address": true,
-        "email": false
-      },
-      "prospect_id": "denver-digital-agency-dda-local-20260429-201046",
-      "created_at": "2026-04-29T20:10:46.694238",
-      "updated_at": "2026-04-29T20:12:20.874228",
+      "location": "Denver, CO",
+      "urgency": "medium",
+      "prospect_id": "denver-window-cleaning-20260430-082158",
+      "created_at": "2026-04-30T08:21:58.839034",
+      "updated_at": "2026-04-30T08:24:05.315390",
       "status": "new"
     },
-    "sander--sons-20260429-210928": {
-      "businessName": "Sander & Sons",
-      "niche": "Kitchen Remodeling / Cabinetry",
-      "website": "https://kitchensofdenver.com",
-      "source": "Google organic search - Denver kitchen remodeling contractor",
-      "description": "Family-owned Denver kitchen and bathroom remodeling company with 20+ years experience. Website has content but lacks dedicated landing pages for specific services, no clear conversion CTAs above the fold, no live chat or instant quote tool, and appears to use a basic WordPress template with dated design. No visible lead magnet or email capture mechanism.",
+    "5280-garage-doors-20260430-082213": {
+      "businessName": "5280 Garage Doors",
+      "niche": "Garage Door Installation & Repair",
+      "website": "https://www.5280garagedoors.com",
+      "source": "Web research via Google/Bing local business search",
+      "description": "Military and family-owned garage door company based in Littleton, CO serving the Denver metro area. Led by owner Bob with 20+ years of experience. Site has good content and clear service descriptions, but no online booking functionality, no instant quote tool, and no live chat. Contact form exists but is basic. No trust signals beyond a BBB link. Good business fundamentals but the website converts poorly — leaves money on the table by not offering self-serve scheduling or pricing transparency.",
+      "websiteIssues": [
+        "No online booking or self-serve scheduling",
+        "No instant quote or pricing estimator",
+        "No live chat or chatbot widget",
+        "Basic contact form with no conditional logic",
+        "No Google Reviews integration visible",
+        "No lead magnet or downloadable guide",
+        "BBB badge linked but not prominently displayed",
+        "No retargeting or email capture popup",
+        "Service area not visually mapped"
+      ],
+      "contact": {
+        "phone": "720-499-6262",
+        "email": null,
+        "address": "8670 S Zephyr St, Littleton, CO 80128",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:24:11.565891"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "location": "Littleton, CO (Denver metro)",
+      "urgency": "medium",
+      "prospect_id": "5280-garage-doors-20260430-082213",
+      "created_at": "2026-04-30T08:22:13.505635",
+      "updated_at": "2026-04-30T08:24:11.590537",
+      "status": "new"
+    },
+    "colorado-pro-wash-20260430-082227": {
+      "businessName": "Colorado Pro Wash",
+      "niche": "Pressure Washing / Exterior Cleaning",
+      "website": "https://www.coloradoprowash.com",
+      "source": "Web research via Google/Bing local business search (also denverpressurewashing.com redirects here)",
+      "description": "Denver pressure washing company operating for 15+ years serving residential and commercial clients. A+ BBB accredited. Site has static content with no booking, no quote tool, no chat, and no lead magnet. Contact page has phone and email but the overall site lacks modern conversion features. Could add significant value with before/after galleries, online booking, and seasonal service reminders. Service pages exist but are generic with no social proof or review integration.",
+      "websiteIssues": [
+        "No online booking or scheduling",
+        "No instant pricing or estimator tool",
+        "No live chat or customer support widget",
+        "No before/after project gallery",
+        "No review or testimonial integration",
+        "No seasonal service reminder or email capture",
+        "Static HTML feel despite WordPress",
+        "No mobile call-to-action buttons",
+        "Long form text with poor scannability"
+      ],
+      "contact": {
+        "phone": "303-518-3291",
+        "email": "info@coloradoprowash.com",
+        "address": "1312 17th Street #701 Denver, CO 80202",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:24:17.631102"
+          },
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:24:17.656461"
+          }
+        }
+      },
+      "location": "Denver, CO",
+      "urgency": "medium",
+      "prospect_id": "colorado-pro-wash-20260430-082227",
+      "created_at": "2026-04-30T08:22:27.296588",
+      "updated_at": "2026-04-30T08:24:17.656468",
+      "status": "new"
+    },
+    "mile-high-fence-20260430-082242": {
+      "businessName": "Mile High Fence",
+      "niche": "Fencing Contractor / Residential & Commercial Fencing",
+      "website": "https://www.milehighfence.com",
+      "source": "Web research via Google/Bing local business search",
+      "description": "Local fence company serving Aurora, Parker, CO, and Denver metro area with 20+ years of experience. Offers residential and commercial fencing, gates, welding repairs, handrail services, and emergency repairs. 2-decade workmanship warranty is a strong differentiator but is buried in text. Site built on Duda platform with basic template design. Contact page has a form but also 404 errors on some internal links. No online booking, no instant quote, no project visualizer or gallery. Strong business fundamentals but website fails to convert visitors into leads effectively.",
+      "websiteIssues": [
+        "Contact page has internal 404 errors and broken navigation",
+        "No online booking or scheduling tool",
+        "No instant quote or cost calculator",
+        "No project gallery or visual portfolio",
+        "No live chat or customer support widget",
+        "Duda template feels generic and dated",
+        "2-decade warranty not prominently featured",
+        "No Google Reviews or social proof integration",
+        "Service area not visually mapped",
+        "No SEO blog or resource content",
+        "No email capture or lead magnet"
+      ],
+      "contact": {
+        "phone": "303-946-1931",
+        "email": null,
+        "address": "Aurora, CO 80015",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:24:23.626634"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "location": "Aurora, CO (Denver metro)",
+      "urgency": "high",
+      "prospect_id": "mile-high-fence-20260430-082242",
+      "created_at": "2026-04-30T08:22:42.781507",
+      "updated_at": "2026-04-30T08:24:23.650934",
+      "status": "new"
+    },
+    "colorado-native-plumbing-20260430-090922": {
+      "businessName": "Colorado Native Plumbing",
+      "niche": "Plumbing / Residential Plumbing Services",
+      "website": "https://www.coloradonativeplumbing.com",
+      "source": "DuckDuckGo Search → Denver plumbing company residential website",
+      "description": "Licensed and insured master plumber serving Denver metro since 2016. Specializes in new construction, remodels, water heaters, filtration systems, and general plumbing. Website is barely a business card — essentially a bullet list of services with no lead capture form, no CTAs, no portfolio/gallery, no testimonials, no trust badges, and no online booking. Missing nearly every conversion element a modern plumbing site needs.",
+      "websiteIssues": [
+        "Extremely thin homepage — essentially a bullet list with no persuasive copy",
+        "No contact form or lead capture mechanism visible",
+        "No online booking or scheduling",
+        "No photo gallery or project portfolio",
+        "No customer testimonials or reviews",
+        "No trust badges, certifications, insurance info displayed",
+        "No phone number prominently displayed above the fold",
+        "No service area map or location SEO",
+        "No blog content or resources",
+        "No pricing transparency or estimate tool"
+      ],
+      "contact": {
+        "phone": null,
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Contact details unverified. Phone/email not visible on site."
+      },
+      "location": "Denver, CO metro area",
+      "urgency": "high",
+      "prospect_id": "colorado-native-plumbing-20260430-090922",
+      "created_at": "2026-04-30T09:09:22.690503",
+      "updated_at": "2026-04-30T09:12:21.833925",
+      "status": "new"
+    },
+    "denver-concrete-company-20260430-090939": {
+      "businessName": "Denver Concrete Company",
+      "niche": "Concrete Contractor / Residential & Commercial Flatwork",
+      "website": "https://denverconcretecompany.net",
+      "source": "DuckDuckGo Search → Denver concrete contractor company website",
+      "description": "Denver-based concrete contractor with 20+ years experience offering driveways, patios, stamped concrete, sidewalks, fire pits, outdoor kitchens, and artificial turf. Family-run business serving Denver metro. Website uses dated architecture (.html page extensions), has a basic contact form but no online booking, no review integration, no trust badges. Content is keyword-stuffed and reads as SEO filler rather than persuasive sales copy.",
+      "websiteIssues": [
+        "Uses .html page extensions — dated architecture, poor for SEO and user trust",
+        "No online booking or instant quoting",
+        "Basic contact form with no conditional logic or smart routing",
+        "No Google Reviews or testimonial integration on homepage",
+        "No trust badges, BBB, or industry certifications displayed",
+        "No project gallery or visual portfolio despite 20+ years of work",
+        "Keyword-stuffed content reads as SEO filler, not persuasive copy",
+        "No service area map or visual location markers",
+        "No mobile-optimized CTAs",
+        "90-day response claim buried in text; no urgency mechanics"
+      ],
+      "contact": {
+        "phone": "303-848-8447",
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T09:12:21.781949"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Phone listed on website and confirmed. Email unverified."
+      },
+      "location": "Denver, CO metro area",
+      "urgency": "medium",
+      "prospect_id": "denver-concrete-company-20260430-090939",
+      "created_at": "2026-04-30T09:09:39.688109",
+      "updated_at": "2026-04-30T09:12:21.996454",
+      "status": "new"
+    },
+    "denver-emergency-locksmith-20260430-090955": {
+      "businessName": "Denver Emergency Locksmith",
+      "niche": "Locksmith / 24/7 Emergency Residential, Commercial & Automotive",
+      "website": "https://locksmithsdenver.co",
+      "source": "DuckDuckGo Search → Denver locksmith company website local",
+      "description": "Denver-area 24/7 locksmith providing residential, commercial, and automotive lock/security services. Uses .co TLD. Website is a generic template with repetitive filler text. No contact form, no phone number visible above the fold, no online booking, no customer reviews, no trust signals. Content is a wall of text with no visual hierarchy. Appears to be a generic lead-gen landing page rather than a legitimate local business site.",
+      "websiteIssues": [
+        "Uses .co TLD — undermines trust for a security-focused business",
+        "No contact form or lead capture mechanism",
+        "No phone number visible on homepage (only in title tag)",
+        "No online booking or emergency dispatch system",
+        "No customer reviews or testimonials displayed",
+        "No trust badges, license numbers, or insurance info shown",
+        "Generic template with repetitive filler content",
+        "No service area map or location-specific pages",
+        "No emergency click-to-call mobile button",
+        "Wall of text with no visual hierarchy or scannable sections"
+      ],
+      "contact": {
+        "phone": null,
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Contact details unverified. No phone number visible on site body."
+      },
+      "location": "Denver, CO",
+      "urgency": "high",
+      "prospect_id": "denver-emergency-locksmith-20260430-090955",
+      "created_at": "2026-04-30T09:09:55.775583",
+      "updated_at": "2026-04-30T09:12:21.880410",
+      "status": "new"
+    },
+    "denver-junk-removal-service-20260430-091029": {
+      "businessName": "Denver Junk Removal Service",
+      "niche": "Junk Removal / Residential & Commercial Hauling",
+      "website": "https://denverjunkremovalservice.com",
+      "source": "DuckDuckGo Search -> Denver junk removal company website local",
+      "description": "Denver-area junk removal company offering residential and commercial hauling, appliance removal, estate cleanouts, yard waste, construction debris, hot tub/pool removal, and tree removal. Website has generic template feel with suspiciously identical reviews (same text for different names). No phone number visible, no contact form found on homepage, no online booking system. Pricing transparency is vague. Content is heavily padded with repetitive service descriptions.",
+      "websiteIssues": [
+        "No phone number visible on homepage",
+        "No contact form found - only a Call Today CTA with no linked number",
+        "No online booking or scheduling system",
+        "Suspicious/fake-looking reviews - identical text for different reviewer names",
+        "No before/after photo gallery of junk removal jobs",
+        "No pricing estimator or ballpark pricing transparency",
+        "Generic template design with no unique branding",
+        "No Google Reviews or third-party review integration",
+        "No trust badges, recycling certifications, or insurance info",
+        "Repetitive service descriptions padded for SEO rather than user value"
+      ],
+      "contact": {
+        "phone": null,
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Contact details unverified. No phone/email visible."
+      },
+      "location": "Denver, CO metro area",
+      "urgency": "medium",
+      "prospect_id": "denver-junk-removal-service-20260430-091029",
+      "created_at": "2026-04-30T09:10:29.882000",
+      "updated_at": "2026-04-30T09:12:21.927208",
+      "status": "new"
+    },
+    "christophers-plumbing-20260430-091050": {
+      "businessName": "Christopher's Plumbing",
+      "niche": "Plumbing / Residential Plumbing Services",
+      "website": "https://christophersplumbing.com",
+      "source": "DuckDuckGo Search -> Denver plumbing company residential website",
+      "description": "Family-owned Denver plumbing company with 65+ years of history serving the Denver metro area. Based in Englewood. Offers full residential plumbing services including emergency repairs, remodels, and routine maintenance. Despite 65 years of business history, the website is extremely thin - essentially just 2 paragraphs of introductory text. No service detail pages, no contact form, no portfolio/gallery, no testimonials, no trust badges. A legacy business with deep community roots that has almost zero digital conversion infrastructure.",
+      "websiteIssues": [
+        "Extremely thin homepage - only 2 paragraphs of intro text",
+        "No contact form or lead capture mechanism visible",
+        "No online booking or scheduling",
+        "No customer testimonials or reviews despite 65+ years of service",
+        "No project portfolio, photo gallery, or before/after images",
+        "No trust badges, licensing info, or BBB accreditation shown",
+        "No service detail pages breaking down specific offerings",
+        "No pricing information or estimate tool",
+        "No blog or resource content for local SEO",
+        "65+ years of history is completely invisible - massive missed trust signal",
+        "No team photos or about page building personal connection"
+      ],
+      "contact": {
+        "phone": null,
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false,
+            "verified_at": null
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        },
+        "notes": "Contact details unverified. Location mentioned as Englewood. Phone/email not visible."
+      },
+      "location": "Englewood, CO (Denver metro)",
+      "urgency": "high",
+      "prospect_id": "christophers-plumbing-20260430-091050",
+      "created_at": "2026-04-30T09:10:50.726290",
+      "updated_at": "2026-04-30T09:12:21.973840",
+      "status": "new"
+    },
+    "knots-flooring-20260430-101105": {
+      "businessName": "Knots Flooring",
+      "niche": "Flooring Contractor / Hardwood, Tile, Carpet Installation",
+      "website": "https://knotsflooring.com",
+      "source": "DuckDuckGo search - Denver flooring company",
+      "description": "Denver-based family-owned flooring company est. 2007. Specializes in hardwood installation, refinishing, repairs, plus carpet and tile. Residential and commercial. BBB accredited, strong Google/HomeAdvisor ratings. Showroom by appointment in Aurora.",
+      "contact": {
+        "email": "dmccarty@knotsflooring.com",
+        "phone": "(720) 233-7186",
+        "secondary_email": "athena@knotsflooring.com",
+        "address": "500 Laredo St A-5, Aurora, CO 80011",
+        "verification_status": {
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:08.377158"
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:08.406190"
+          },
+          "address": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:08.432864"
+          }
+        }
+      },
+      "website_gaps": {
+        "lead_capture": "No prominent CTA above the fold. Contact form is buried on /contact page. No popup, no sticky CTA, no instant quote tool.",
+        "conversion": "No online booking/scheduling. Free estimate requires form submit or phone call only. No chat widget.",
+        "technical": "404 on /about page. Missing proper structured data. No visible page speed optimization evidence - large imagery likely uncompressed.",
+        "design": "Clean but dated layout. No social proof section (testimonials exist but not prominently surfaced). No portfolio gallery on homepage.",
+        "seo": "Title tag is basic. Missing meta descriptions. No blog/content marketing. Local SEO could be stronger with location pages.",
+        "gap_summary": "Strong business with referral pipeline but website is underperforming for lead generation. Missing modern conversion elements, has broken pages, no online booking."
+      },
+      "prospect_id": "knots-flooring-20260430-101105",
+      "created_at": "2026-04-30T10:11:05.180025",
+      "updated_at": "2026-04-30T10:14:08.432874",
+      "status": "new"
+    },
+    "big-orange-planet-20260430-101123": {
+      "businessName": "Big Orange Planet",
+      "niche": "Web Design Agency / Digital Marketing & Branding",
+      "website": "https://www.bigorangeplanet.com",
+      "source": "DuckDuckGo search - Denver web design agency",
+      "description": "Denver web design, SEO, branding, and digital marketing agency with 20+ years experience. Part of the Stempora organization. Builds custom WordPress sites, logos, and full brand identities. Serves diverse industries: construction, medical, legal, ecommerce, nonprofits. Emphasizes SEO-friendly builds and client code ownership.",
+      "contact": {
+        "phone": "720-272-0770",
+        "email": "",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:14.979760"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_gaps": {
+        "lead_capture": "Contact form buried on dedicated page - no homepage CTA. No lead magnet, no free audit offering. No chat bot.",
+        "conversion": "No online booking/calendar integration. No pricing transparency. No case study download. No portfolio filtering on homepage.",
+        "technical": "404 on /about-us page (navigation link is broken). No SSL issues observed. WordPress-based but heavy content could slow loading.",
+        "design": "Text-heavy homepage with dated layout structure. Mobile responsiveness needs audit. Very verbose - content not scannable. No visual portfolio above fold.",
+        "seo": "Self-proclaimed SEO expertise but own site has basic implementation. Blog exists but inconsistent publishing. Can check page speed.",
+        "gap_summary": "Irony: web design agency with broken about page, no above-fold portfolio, and text-heavy UX. Perfect candidate for audit partnership conversation - they build sites for others but their own needs work."
+      },
+      "prospect_id": "big-orange-planet-20260430-101123",
+      "created_at": "2026-04-30T10:11:23.112190",
+      "updated_at": "2026-04-30T10:14:15.010336",
+      "status": "new"
+    },
+    "peak-builders-denver-20260430-101141": {
+      "businessName": "Peak Builders Denver",
+      "niche": "Home Remodeling / General Contractor",
+      "website": "https://peakbuildersdenver.com",
+      "source": "DuckDuckGo search - Denver remodeling contractor",
+      "description": "Denver remodeling and general contracting company est. 1999, licensed since then. 500+ projects completed, 4.9-star rating (85+ reviews). BBB A+ accredited, NRCA member. Specializes in kitchens ($35K-$85K), bathrooms ($20K-$50K), basements ($30K-$75K), ADUs ($150K-$300K), and whole-home remodels. Serves Denver metro including Highlands Ranch, Lakewood, Cherry Creek, Arvada, Capitol Hill, Washington Park.",
+      "contact": {
+        "email": "info@peakbuildersdenver.com",
+        "phone": "+1-720-605-7785",
+        "address": "2727 Bryant St, Suite 230, Denver, CO 80211",
+        "verification_status": {
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:22.499978"
+          },
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:22.530852"
+          },
+          "address": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:22.558365"
+          }
+        }
+      },
+      "website_gaps": {
+        "lead_capture": "CTA exists but basic - \"Free Consultation\" button. No lead magnet, no cost calculator, no project planner download. Form is standard contact form.",
+        "conversion": "No online scheduling/calendar. Testimonials exist but no video testimonials. No before/after gallery slider on homepage. Financing mentioned but no instant application.",
+        "technical": "Homepage claims \"500+ projects since 2018\" but also \"since 1999\" and \"8+ years in business\" - inconsistent messaging may indicate dated or rushed content. Title tag is basic. No evidence of schema markup.",
+        "design": "Professional but generic template feel. Heavy text blocks. Reviews are present but buried. No interactive elements.",
+        "seo": "Service area pages exist but thin. No blog/content visible. Meta tags could be stronger. No local schema markup evidence.",
+        "gap_summary": "Solid business with great reviews but website is a brochure. No lead magnets, no calculators, no interactive tools. Could 2-3x lead conversion with better CRO."
+      },
+      "prospect_id": "peak-builders-denver-20260430-101141",
+      "created_at": "2026-04-30T10:11:41.946012",
+      "updated_at": "2026-04-30T10:14:22.558377",
+      "status": "new"
+    },
+    "carspa-denver-20260430-101159": {
+      "businessName": "CarSpa Denver",
+      "niche": "Mobile Auto Detailing / Ceramic Coating",
+      "website": "https://carspadenver.com",
+      "source": "DuckDuckGo search - Denver auto detailing company",
+      "description": "Denver mobile auto detailing company est. 2010, founded by the Duncan family. Offers 9 service tiers from $125 exterior to $1,600 lifetime ceramic coating. Also details motorcycles, RVs, boats, and planes. Has booking app (Google Play + Apple). Serves Denver metro: Lakewood, Sheridan, Golden, Littleton, Arvada, Highlands Ranch, Ken Caryl, Greenwood Village, Aurora, Grand Junction.",
+      "contact": {
+        "phone": "(720) 248-7542",
+        "email": "",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:28.722431"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_gaps": {
+        "lead_capture": "Has booking app but website itself only has form-based contact. No direct online purchase flow on site. No popup/exit intent. No email capture for marketing.",
+        "conversion": "Service packages listed but no instant-add-to-cart style booking on site. Gift cards mentioned but purchase flow unclear. No review aggregation widget.",
+        "technical": "Content is heavily duplicated on homepage (pricing packages repeated 2-3 times). Text bleed suggests template rendering issues. Likely heavy JS affecting load speed.",
+        "design": "Pricing-heavy layout - good transparency but overwhelming. Duplicate content bloats page. No team photos. No video of the mobile detailing process.",
+        "seo": "Location pages exist for individual suburbs. Good content volume. Could improve with structured data and blog content.",
+        "gap_summary": "Solid mobile business with strong pricing transparency but website has duplicate content issues, no direct online booking, and no email marketing capture. Leaving money on the table."
+      },
+      "prospect_id": "carspa-denver-20260430-101159",
+      "created_at": "2026-04-30T10:11:59.890510",
+      "updated_at": "2026-04-30T10:14:28.749665",
+      "status": "new"
+    },
+    "verified-builders-20260430-101215": {
+      "businessName": "Verified Builders",
+      "niche": "Home Remodeling & Construction / General Contractor",
+      "website": "https://verifiedbuilders.us",
+      "source": "DuckDuckGo search - Denver home remodeling contractor",
+      "description": "Denver family-owned remodeling and construction company est. 2016. Licensed (#LIC00253513) and insured. Offers kitchen, bathroom, basement, full-home remodels, ADUs, room additions, exterior renovations, and custom home builds. Design-focused team with end-to-end project management. Strong reviews across Google, Yelp, Houzz, HomeAdvisor, Facebook, BBB. Serves Denver metro plus suburbs.",
+      "contact": {
+        "phone": "(720) 788-2230",
+        "email": "",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T10:14:28.778098"
+          },
+          "email": {
+            "verified": false,
+            "verified_at": null
+          }
+        }
+      },
+      "website_gaps": {
+        "lead_capture": "Contact form on dedicated page only. No homepage CTA above fold. No lead magnets (cost guide, project planner, etc). No chat/chatbot.",
+        "conversion": "No online scheduling. No instant estimate tool. No financing calculator. Video testimonials mentioned but not prominently surfaced. Portfolio is text-heavy.",
+        "technical": "Images referenced as .webp but no optimization evidence in page source. No structured data/schema markup visible. No breadcrumb navigation.",
+        "design": "Clean modern layout but very text-heavy. Process section is strong but no visual differentiation. Project gallery not interactive. No team photos.",
+        "seo": "Individual city pages exist. Blog section exists but may be thin. Title tags could be more location-targeted. No FAQ schema.",
+        "gap_summary": "Well-reviewed business with solid process. Website is a good brochure but lacks conversion optimization. No lead magnets or interactive tools to capture high-intent visitors."
+      },
+      "prospect_id": "verified-builders-20260430-101215",
+      "created_at": "2026-04-30T10:12:15.505556",
+      "updated_at": "2026-04-30T10:14:28.804320",
+      "status": "new"
+    },
+    "fort-comfort-gutters-20260430-111736": {
+      "businessName": "Fort Comfort Gutters",
+      "niche": "Gutter Installation & Cleaning",
+      "website": "https://fortcomfortgutters.com",
+      "source": "DuckDuckGo Search → Denver gutter installation company",
+      "description": "Full-service gutter contractor serving Denver/Boulder/Front Range. Services: seamless gutter installation, repair, cleaning, gutter guards, soffit & fascia, commercial gutters. Founded in Denver, 100+ Google reviews (4.8 stars). Licensed & insured. Offers free estimates in 48 hours.",
+      "contact": {
+        "phone": "303-970-9900",
+        "email": null,
+        "address": "605 E 70th Ave, Unit 7, Denver, CO 80229",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:17:00Z"
+          }
+        }
+      },
+      "website_audit": {
+        "gaps": [
+          "No testimonials/reviews visible on homepage (mentions 100+ reviews but doesnt display them)",
+          "No photo gallery of completed projects (only empty sections)",
+          "No trust badges or certifications displayed",
+          "No team photos or bio section",
+          "CTA buried in footer - no prominent above-fold CTA button",
+          "No pricing indicators or cost ranges",
+          "No video content",
+          "No social proof integration (Google reviews not embedded)"
+        ],
+        "strengths": [
+          "Clean modern design",
+          "Clear service descriptions with dedicated subpages",
+          "Solid copywriting - authentic, not salesy",
+          "Strong warranty messaging",
+          "Mobile-responsive"
+        ],
+        "score": "B-",
+        "scanned_at": "2026-04-30T08:15:56Z"
+      },
+      "prospect_id": "fort-comfort-gutters-20260430-111736",
+      "created_at": "2026-04-30T11:17:36.864532",
+      "updated_at": "2026-04-30T11:17:36.864537",
+      "status": "new"
+    },
+    "denver-foundation-solutions-20260430-111753": {
+      "businessName": "Denver Foundation Solutions",
+      "niche": "Foundation Repair & Basement Waterproofing",
+      "website": "https://denverfoundationsolutions.com",
+      "source": "DuckDuckGo Search → Denver foundation repair contractor",
+      "description": "Certified foundation repair and basement waterproofing contractor based in Castle Rock, CO. 30+ years experience (Tony Plescia, President). 5,000+ homes/commercial jobs completed. Licensed SafeBasements Gold Standard Dealer. Services: foundation settlement repair, crawl space repair, basement waterproofing, bowed wall repair, sump pump installation.",
+      "contact": {
+        "phone": "303-660-6508",
+        "email": null,
+        "address": "Castle Rock, CO (serves Denver Metro)",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:17:00Z"
+          }
+        }
+      },
+      "website_audit": {
+        "gaps": [
+          "Messy navigation structure - raw URLs visible in content (links showing full paths instead of anchor text)",
+          "No dedicated contact page found (returns 404 on /contact-us)",
+          "BBB certificate linked as PDF instead of embedded badge",
+          "No testimonials or customer review section on homepage",
+          "No photo gallery of before/after foundation repairs",
+          "No team photos or crew bios",
+          "No video content",
+          "Footer lacks proper business info (no address, no hours)",
+          "No social media links visible",
+          "Thin content on service subpages"
+        ],
+        "strengths": [
+          "30+ years experience clearly stated",
+          "SafeBasements Gold Standard dealer certification",
+          "BBB accreditation mentioned",
+          "Clear service categories in navigation",
+          "Free consultation CTA",
+          "Phone number prominent in header"
+        ],
+        "score": "C+",
+        "scanned_at": "2026-04-30T08:15:58Z"
+      },
+      "prospect_id": "denver-foundation-solutions-20260430-111753",
+      "created_at": "2026-04-30T11:17:53.317874",
+      "updated_at": "2026-04-30T11:17:53.317876",
+      "status": "new"
+    },
+    "best-service-company-appliance-repair-20260430-111811": {
+      "businessName": "Best Service Company Appliance Repair",
+      "niche": "Appliance Repair / Factory Authorized Service",
+      "website": "https://bscappliancerepair.com",
+      "source": "DuckDuckGo Search → Denver appliance repair company",
+      "description": "Locally owned Denver appliance repair company since 1964. Factory authorized for Whirlpool, Maytag, JennAir, KitchenAid, Frigidaire, Electrolux, Bosch, Asko, Fisher & Paykel, Amana, Thermador. 16 in-home technicians servicing 50-mile radius. 3,700+ 5-star reviews. BBB accredited. 24-hour booking available. Owner: Tom Hankins.",
+      "contact": {
+        "phone": null,
+        "email": "tomhankins@bscappliancerepair.com",
+        "verification_status": {
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:17:00Z"
+          }
+        }
+      },
+      "website_audit": {
+        "gaps": [
+          "No phone number found in page scans - contact details buried or missing from extracted content",
+          "Homepage design feels dated - could benefit from modern layout",
+          "No trust badges visible (BBB seal referenced but not clearly embedded)",
+          "No before/after repair photos or project gallery",
+          "No video content",
+          "Contact page extremely thin - only newsletter signup found",
+          "No pricing transparency - no service call fee or hourly rates shown",
+          "No team photos (though About page lists staff names)",
+          "Heavy reliance on newsletter popup vs clear CTA",
+          "No mobile-optimized elements evident in markup"
+        ],
+        "strengths": [
+          "Established 1964 - 60+ years in business",
+          "3,700+ reviews with strong testimonials displayed",
+          "Factory authorized for 20+ major brands",
+          "BBB accredited",
+          "DIY tips section adds value",
+          "24-hour booking available",
+          "Clear brand authority"
+        ],
+        "score": "B-",
+        "scanned_at": "2026-04-30T08:16:44Z"
+      },
+      "prospect_id": "best-service-company-appliance-repair-20260430-111811",
+      "created_at": "2026-04-30T11:18:11.203991",
+      "updated_at": "2026-04-30T11:18:11.203993",
+      "status": "new"
+    },
+    "level-up-insulation-co-20260430-111831": {
+      "businessName": "Level Up Insulation Co.",
+      "niche": "Insulation Contractor / Energy Efficiency",
+      "website": "https://levelupinsulationco.com",
+      "source": "DuckDuckGo Search → Denver insulation contractor company",
+      "description": "BPI GoldStar certified insulation contractor serving Denver, Boulder, Colorado Springs, Fort Collins, and Front Range. Xcel Energy Registered Trade Partner. Services: spray foam, blown-in/loose fill, insulation removal, crawl space encapsulation, attic sealing, pest control insulation. Free estimates, financing available.",
+      "contact": {
+        "phone": null,
+        "email": "info@levelupinsulationco.com",
+        "address": "6850 Broadway St, Denver, CO 80221",
+        "verification_status": {
+          "email": {
+            "verified": true,
+            "verified_at": "2026-04-30T08:17:00Z"
+          }
+        }
+      },
+      "website_audit": {
+        "gaps": [
+          "No phone number visible - only email contact found",
+          "No real customer photos or project gallery",
+          "Testimonials appear generic (Michael Rodriguez, Sarah Mitchell, David Lee, Jennifer Kim - no photos or review links)",
+          "No trust badges displayed (BPI, Xcel Energy partner logos not shown)",
+          "No team photos or crew bios",
+          "No video content",
+          "Service descriptions are short/thin - no technical details about R-values or installation methods",
+          "No pricing indicators or cost ranges for insulation types",
+          "No social proof integration despite claiming 150+ Google reviews",
+          "Footer lacks phone number"
+        ],
+        "strengths": [
+          "Clean modern design",
+          "Clear 4-step process explanation",
+          "BPI GoldStar certified + Xcel Energy partner",
+          "4.8 stars / 150+ reviews claimed",
+          "Financing available",
+          "Free estimates",
+          "Service area clearly listed",
+          "Saturday hours available"
+        ],
+        "score": "B-",
+        "scanned_at": "2026-04-30T08:16:44Z"
+      },
+      "prospect_id": "level-up-insulation-co-20260430-111831",
+      "created_at": "2026-04-30T11:18:31.858246",
+      "updated_at": "2026-04-30T11:18:31.858248",
+      "status": "new"
+    },
+    "urgent-mold-removal-denver-20260430-111847": {
+      "businessName": "Urgent Mold Removal Denver",
+      "niche": "Mold Remediation & Prevention",
+      "website": "https://urgentmoldremovaldenver1.com",
+      "source": "DuckDuckGo Search → Denver mold remediation company",
+      "description": "Denver-based mold remediation company with 10+ years field experience. Services: mold inspections & moisture mapping, black mold removal, crawl space & basement mold cleanup, attic mold removal, air quality testing & HEPA filtration, structural drying, mold odor removal, vapor barrier installation, preventive treatments. 24/7 emergency service. Locally owned. Licensed & insured.",
+      "contact": {
+        "phone": null,
+        "email": null,
+        "verification_status": {
+          "phone": {
+            "verified": false
+          },
+          "email": {
+            "verified": false
+          }
+        }
+      },
+      "website_audit": {
+        "gaps": [
+          "No phone number visible on site",
+          "No email address visible on site",
+          "Contact page returns 404 - critical conversion failure",
+          "No physical address listed",
+          "No team photos or technician bios",
+          "No before/after remediation photos",
+          "No trust badges or certifications displayed (claims licensed/insured but no proof)",
+          "No customer testimonials or reviews embedded",
+          "Generic stock-looking content with no local proof points",
+          "Domain name has \"1\" suffix - looks spammy/SEO-driven",
+          "No social media links",
+          "No Google Maps integration",
+          "WordPress site with no visible business hours"
+        ],
+        "strengths": [
+          "Detailed service descriptions",
+          "Clear black mold process explanation",
+          "10+ years experience claimed",
+          "24/7 emergency service",
+          "Locally owned messaging"
+        ],
+        "score": "D+",
+        "scanned_at": "2026-04-30T08:16:44Z"
+      },
+      "prospect_id": "urgent-mold-removal-denver-20260430-111847",
+      "created_at": "2026-04-30T11:18:47.045305",
+      "updated_at": "2026-04-30T11:18:47.045307",
+      "status": "new"
+    },
+    "10-star-tree-care-llc-20260430-120751": {
+      "businessName": "10 Star Tree Care LLC",
+      "niche": "Tree Service / Arborist",
+      "website": "https://10startreecare.com",
+      "source": "DuckDuckGo → Boulder tree service arborist company search",
+      "description": "Boulder-area tree service offering pruning, removal, stump grinding, cabling, pest management, and plant health care. ISA Certified Arborist on staff. Serves Boulder, Niwot, Lafayette, Louisville, Longmont, Broomfield, and surrounding areas.",
+      "key_gaps": [
+        "Extremely thin single-page website with minimal content",
+        "No phone number visible above the fold or in header",
+        "No contact form on the page",
+        "No customer reviews or testimonials displayed",
+        "No before/after project gallery or portfolio",
+        "No trust badges despite claiming ISA certification",
+        "No team bios or crew photos",
+        "No pricing information",
+        "No blog or educational content for SEO",
+        "Mobile optimization appears basic"
+      ],
+      "score": "D+",
+      "contact": {
+        "email": null,
+        "phone": null,
+        "address": "Boulder, CO area",
+        "verification_status": {
+          "email": {
+            "verified": false,
+            "note": "No email found on website"
+          },
+          "phone": {
+            "verified": false,
+            "note": "Phone not visible on website"
+          },
+          "address": {
+            "verified": false,
+            "note": "General Boulder area only - no street address"
+          }
+        }
+      },
+      "location": "Boulder, CO",
+      "outreach_status": "not_contacted",
+      "prospect_id": "10-star-tree-care-llc-20260430-120751",
+      "created_at": "2026-04-30T12:07:51.139979",
+      "updated_at": "2026-04-30T12:07:51.139982",
+      "status": "new"
+    },
+    "colorado-custom-painting-inc-20260430-120806": {
+      "businessName": "Colorado Custom Painting Inc.",
+      "niche": "Residential & Commercial Painting",
+      "website": "https://coloradospringscopainting.com",
+      "source": "DuckDuckGo → Colorado Springs painting company search",
+      "description": "Established in 2000, Colorado Custom Painting provides residential and commercial painting services in Greater Colorado Springs. BBB accredited, locally owned and operated by Mike and Michelle L'Hotta. Offers interior/exterior painting, decorative painting, staining, and senior/veteran discounts.",
+      "key_gaps": [
+        "Outdated website design with poor visual hierarchy",
+        "No customer reviews or testimonials visible on site",
+        "No before/after project gallery or portfolio",
+        "No trust badges despite BBB accreditation claim",
+        "No team photos or crew bios",
+        "Content sections are thin and repetitive",
+        "No blog or educational content",
+        "No online booking or quote request form found in extracted content",
+        "No social media links visible",
+        "Limited SEO optimization - thin on-page content"
+      ],
+      "score": "C+",
+      "contact": {
+        "phone": "719-900-3906",
+        "email": null,
+        "address": "Colorado Springs, CO",
+        "verification_status": {
+          "phone": {
+            "verified": true,
+            "note": "Phone 719-900-3906 listed prominently on website"
+          },
+          "email": {
+            "verified": false,
+            "note": "No email found on website"
+          },
+          "address": {
+            "verified": false,
+            "note": "General Colorado Springs area only - no street address"
+          }
+        }
+      },
+      "location": "Colorado Springs, CO",
+      "outreach_status": "not_contacted",
+      "prospect_id": "colorado-custom-painting-inc-20260430-120806",
+      "created_at": "2026-04-30T12:08:06.201355",
+      "updated_at": "2026-04-30T12:08:06.201358",
+      "status": "new"
+    },
+    "mothershed-design-co-20260430-120846": {
+      "businessName": "Mothershed Design Co.",
+      "niche": "Web Design Agency / Branding & Digital Marketing",
+      "website": "https://www.mothersheddesign.com",
+      "source": "DuckDuckGo search: Denver web design marketing agency small business",
+      "description": "Denver-based husband-wife web design and branding agency (Josiah and Meg Mothershed) specializing in brand identity, logo design, web design, and creative support for small businesses. Offers packaged branding + website solutions with a clear 3-step process.",
+      "key_gaps": [
+        "No portfolio or case studies section visible on main site",
+        "No pricing - packages mentioned but no pricing tiers shown",
+        "Limited SEO content - very little text for search engines",
+        "No blog or resources section despite claiming to offer resources",
+        "Testimonials are text-only with no linked profiles or social verification",
+        "No clear conversion path beyond Book a Call - no lead magnet",
+        "Limited service detail pages",
+        "No visible social proof counters (years in business, clients served, etc.)",
+        "Agency website itself could use stronger conversion optimization",
+        "No team headshots on homepage"
+      ],
+      "score": "B-",
       "contact": {
         "email": null,
         "phone": null,
@@ -1719,189 +1319,26 @@
         "verification_status": {
           "email": {
             "verified": false,
-            "verified_at": null
+            "note": "No email directly visible on scraped content"
           },
           "phone": {
             "verified": false,
-            "verified_at": null
+            "note": "No phone number found on website"
           },
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.697720"
+          "address": {
+            "verified": false,
+            "note": "General Denver area only"
           }
         }
       },
-      "website_gaps": {
-        "design": "Basic WordPress template, dated visual design, no modern hero section with value proposition",
-        "conversion": "No lead capture form above fold, no instant quote, no chat widget, weak CTAs",
-        "technical": "Likely no schema markup for local business, potential page speed issues with large images",
-        "seo": "No dedicated service area pages, minimal blog content, thin meta descriptions",
-        "competitors": "Kitchen Creations Ltd, The Kitchen Showcase have more modern sites with gallery/portfolio features"
-      },
-      "funnel_stage": "identified",
-      "priority": "medium",
-      "prospect_id": "sander--sons-20260429-210928",
-      "created_at": "2026-04-29T21:09:28.696057",
-      "updated_at": "2026-04-29T21:09:28.697722",
-      "status": "new"
-    },
-    "macdonald-hardwoods-20260429-210928": {
-      "businessName": "MacDonald Hardwoods",
-      "niche": "Hardwood Flooring / Floor Installation",
-      "website": "https://www.macwoods.com",
-      "source": "Google Maps - Denver flooring company search",
-      "description": "Denver hardwood flooring company with 40+ years experience, 12,000+ customers. Website is a basic single-page site with minimal content. No online scheduling, no pricing transparency, no project gallery with filtering, no blog/content marketing. The site relies on generic testimonials without photos or verification.",
-      "contact": {
-        "email": null,
-        "phone": "(303) 825-3006",
-        "address": "929 W 1st Ave, Denver, CO 80223",
-        "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.701131"
-          },
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.700290"
-          }
-        }
-      },
-      "website_gaps": {
-        "design": "Simplistic single-page layout, no project gallery with filtering, generic stock-style imagery",
-        "conversion": "No online estimate tool, no scheduling, contact form buried at bottom, no phone click-to-call on mobile",
-        "technical": "No visible SSL issues but likely no structured data, no Google Maps integration, potential slow load",
-        "seo": "Thin content, no neighborhood/area pages, no blog, weak internal linking",
-        "competitors": "Denver Flooring Collective has a more modern site with online booking and clearer pricing hooks"
-      },
-      "funnel_stage": "identified",
-      "priority": "high",
-      "prospect_id": "macdonald-hardwoods-20260429-210928",
-      "created_at": "2026-04-29T21:09:28.698856",
-      "updated_at": "2026-04-29T21:09:28.701133",
-      "status": "new"
-    },
-    "denver-flooring-collective-20260429-210928": {
-      "businessName": "Denver Flooring Collective",
-      "niche": "Flooring Installation / Home Improvement",
-      "website": "https://denverflooringcollective.com",
-      "source": "Google Maps - Denver flooring company search",
-      "description": "Denver flooring installation company offering hardwood, laminate, vinyl, and tile. Website has a temporary/urgency-based 40% off promotion expiring soon (likely always running). Uses a generic lead capture form but has no portfolio gallery, no before/after images, and relies on a basic template. No reviews integration, no trust badges.",
-      "contact": {
-        "email": null,
-        "phone": "(720) 599-1664",
-        "address": "11068 E Louisiana Pl, Denver, CO",
-        "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.703815"
-          },
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.702973"
-          }
-        }
-      },
-      "website_gaps": {
-        "design": "Template-based single-page site, generic stock photos, no real project portfolio",
-        "conversion": "Fake urgency (countdown/expiring discount), single lead form, no multi-step qualification",
-        "technical": "Built by Grain of Salt agency, likely basic SEO setup, no schema markup visible",
-        "seo": "No blog, no area pages, no educational content, thin page copy",
-        "competitors": "MacDonald Hardwoods has stronger brand trust and longevity messaging"
-      },
-      "funnel_stage": "identified",
-      "priority": "high",
-      "prospect_id": "denver-flooring-collective-20260429-210928",
-      "created_at": "2026-04-29T21:09:28.701995",
-      "updated_at": "2026-04-29T21:09:28.703816",
-      "status": "new"
-    },
-    "next-step-innovations-20260429-210928": {
-      "businessName": "Next Step Innovations",
-      "niche": "Kitchen & Bath Remodeling / Cabinetry",
-      "website": "https://nextstepkitchens.com",
-      "source": "Google organic search - Denver kitchen remodeling",
-      "description": "Denver kitchen and bath remodeling company with a physical showroom. Website has good content about their process and press features, but the design is cluttered, no clear primary CTA, duplicate content blocks, and no lead qualification form. Featured in Colorado's Best Kitchens magazine which is a trust asset not well leveraged on site.",
-      "contact": {
-        "email": null,
-        "phone": "(303) 722-0585",
-        "address": "Denver, CO",
-        "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "phone": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.706966"
-          },
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.705897"
-          }
-        }
-      },
-      "website_gaps": {
-        "design": "Cluttered layout, duplicate content sections, inconsistent spacing, dated visual style",
-        "conversion": "No clear primary CTA, phone number buried in text, no consultation booking widget, no email capture",
-        "technical": "Duplicate content blocks suggest template issues, likely no structured data, no speed optimization visible",
-        "seo": "Press features not properly leveraged for SEO, no blog, thin area pages, missed backlink opportunities",
-        "competitors": "SKB Remodel has a much cleaner, more modern website with clearer process documentation"
-      },
-      "funnel_stage": "identified",
-      "priority": "medium",
-      "prospect_id": "next-step-innovations-20260429-210928",
-      "created_at": "2026-04-29T21:09:28.704715",
-      "updated_at": "2026-04-29T21:09:28.706968",
-      "status": "new"
-    },
-    "letali-llc-20260429-210928": {
-      "businessName": "Letali, LLC",
-      "niche": "Home Remodeling / Kitchen & Bath",
-      "website": "https://www.letali.com",
-      "source": "Google organic search - Denver kitchen remodeling contractor",
-      "description": "Denver home remodeling company offering kitchen, bathroom, basement, and home office remodeling. Website has raw HTML links visible (URLs displayed as text), generic template design, no professional photography of completed projects, testimonials without verification links, and no clear lead capture mechanism beyond a basic contact page.",
-      "contact": {
-        "email": null,
-        "phone": null,
-        "address": "Denver, CO",
-        "verification_status": {
-          "email": {
-            "verified": false,
-            "verified_at": null
-          },
-          "phone": {
-            "verified": false,
-            "verified_at": null
-          },
-          "website": {
-            "verified": true,
-            "verified_at": "2026-04-29T21:09:28.708925"
-          }
-        }
-      },
-      "website_gaps": {
-        "design": "Amateur template, raw URLs visible as text instead of styled links, no visual hierarchy",
-        "conversion": "No lead magnet, no quote calculator, no chat, basic contact form only",
-        "technical": "Raw URL rendering indicates poor CMS/template configuration, likely no SSL redirect issues, no schema",
-        "seo": "Thin content across service pages, no blog, no local SEO optimization, no GBP integration",
-        "competitors": "Sander & Sons and Next Step Innovations have significantly better web presences"
-      },
-      "funnel_stage": "identified",
-      "priority": "high",
-      "prospect_id": "letali-llc-20260429-210928",
-      "created_at": "2026-04-29T21:09:28.707881",
-      "updated_at": "2026-04-29T21:09:28.708927",
+      "location": "Denver, CO",
+      "outreach_status": "not_contacted",
+      "prospect_id": "mothershed-design-co-20260430-120846",
+      "created_at": "2026-04-30T12:08:46.276540",
+      "updated_at": "2026-04-30T12:08:46.276543",
       "status": "new"
     }
   },
-  "last_updated": "2026-04-29T21:09:28.708928",
+  "last_updated": "2026-04-30T12:08:46.276544",
   "version": "1.0"
 }

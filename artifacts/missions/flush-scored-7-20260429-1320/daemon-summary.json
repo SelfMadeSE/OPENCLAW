@@ -1,0 +1,12 @@
+{
+  "mission_id": "flush-scored-7-20260429-1320",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "outreach",
+      "status": "ok",
+      "expected": "bridge-done.md"
+    }
+  ],
+  "completed_at": "2026-04-29T19:22:34.723915+00:00"
+}

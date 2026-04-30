@@ -1,0 +1,18 @@
+{
+  "mission_id": "smtp-credential-alert-20260429-1404",
+  "goal": "Verify whether the Gmail SMTP app password has actually expired and quantify the blast radius \u2014 how many of the 139 provider_accepted sends are at risk of follow-up failure.",
+  "success_criteria": [
+    "SMTP credential status confirmed (working vs expired) with test send",
+    "Operator alerted if credentials are expired \u2014 this is ORANGE (credential change needed, but not credential_change itself \u2014 alert only)"
+  ],
+  "slices": [
+    {
+      "agent": "engineering",
+      "task": "Step 1: Test SMTP right now: GMAIL_ADDRESS='owner@outboundautonomy.com' python3 /Users/ryleebenson/Desktop/OPENCLAW/scripts/gmail-smtp-send.py --to owner@outboundautonomy.com --subject 'SMTP credential test' --body 'Testing Gmail app password validity \u2014 2026-04-29 14:04 MDT'. Capture the full output including any 535 error. Step 2: Check the last 5 successful sends for timing: sqlite3 /Users/ryleebenson/Desktop/OPENCLAW/data/crm.sqlite 'SELECT id,lead_id,recipient,status,created_at FROM email_attempts WHERE status=\"provider_accepted\" ORDER BY id DESC LIMIT 5'. Step 3: Write findings to artifacts/missions/smtp-credential-alert-20260429-1404/forge-smtp-test.md with: test result (working/expired), last successful send timestamp, and blast radius assessment. If SMTP is expired, this is ORANGE \u2014 the heartbeat action #331 already documented the 535 error, but we need independent verification before alerting.",
+      "expected_artifact": "forge-smtp-test.md"
+    }
+  ],
+  "lead_agent": "orchestrator",
+  "risk": "YELLOW",
+  "reasoning": "CRM action #331 documents 'SMTP password expired (535 error)' \u2014 if true, the entire 139-send pipeline's follow-up capability is at risk. This is the single most important diagnostic right now. YELLOW for the test (read-only API call), but the finding may escalate to ORANGE (credential issue requiring operator attention). Single engineering slice \u2014 independent test of the credential before raising an alarm."
+}

@@ -6,7 +6,7 @@ const faqs = [
   {
     question: 'What do I get from the free website audit?',
     answer:
-      'You get a read-only audit preview with design, conversion, and technical signals, plus Lighthouse estimates when available. The report surfaces your biggest issues from a live scan.',
+      'You get a read-only audit preview with design, conversion, and technical signal scoring. The report surfaces your biggest issues from a live scan.',
   },
   {
     question: 'Do I need to enter my email to see the audit?',

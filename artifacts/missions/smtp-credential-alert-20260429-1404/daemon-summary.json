@@ -1,0 +1,12 @@
+{
+  "mission_id": "smtp-credential-alert-20260429-1404",
+  "slices": [
+    {
+      "slice": 1,
+      "agent": "engineering",
+      "status": "ok",
+      "expected": "forge-smtp-test.md"
+    }
+  ],
+  "completed_at": "2026-04-29T20:08:13.708188+00:00"
+}
