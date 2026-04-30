@@ -9,12 +9,12 @@ const nextConfig = {
     serverComponentsExternalPackages: ['sql.js'],
     // Force Next.js to trace sql.js WASM files into serverless function bundles.
     outputFileTracingIncludes: {
-      '/api/waitlist': ['./node_modules/sql.js/dist/*.wasm'],
-      '/api/contact': ['./node_modules/sql.js/dist/*.wasm'],
-      '/api/demo': ['./node_modules/sql.js/dist/*.wasm'],
-      '/api/demo/hero': ['./node_modules/sql.js/dist/*.wasm'],
-      '/api/webhook/stripe': ['./node_modules/sql.js/dist/*.wasm'],
-      '/api/try/unlock': ['./node_modules/sql.js/dist/*.wasm'],
+      '/api/waitlist': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
+      '/api/contact': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
+      '/api/demo': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
+      '/api/demo/hero': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
+      '/api/webhook/stripe': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
+      '/api/try/unlock': ['./lib/vendor/sql-wasm.wasm', './node_modules/sql.js/dist/*.wasm', './db/schema.sql'],
     },
   },
 }
